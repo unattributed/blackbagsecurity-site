@@ -12,7 +12,7 @@ permalink: /research/
     </div>
 
     <div class="split">
-      <div class="stack reveal" data-reveal style="--delay: 0.05s;">
+      <div class="stack reveal delay-1" data-reveal>
         <h3>Focus areas</h3>
         <ul class="outcomes">
           <li>Firmware, embedded systems, and protocol security.</li>
@@ -20,7 +20,7 @@ permalink: /research/
           <li>AI/LLM security and data leakage prevention.</li>
         </ul>
       </div>
-      <div class="stack reveal" data-reveal style="--delay: 0.1s;">
+      <div class="stack reveal delay-2" data-reveal>
         <h3>Research outputs</h3>
         <ul class="outcomes">
           <li>Root cause analysis and proof of impact.</li>
@@ -39,7 +39,7 @@ permalink: /research/
       <p>Coordinated disclosure aligned to client constraints and vendor timelines.</p>
     </div>
 
-    <div class="stack reveal" data-reveal style="--delay: 0.05s;">
+    <div class="stack reveal delay-1" data-reveal>
       <ul class="outcomes">
         <li>We coordinate disclosure plans before work begins.</li>
         <li>Client approvals guide any external communication.</li>
@@ -53,15 +53,15 @@ permalink: /research/
 <section class="section">
   <div class="wrap">
     <div class="model-grid">
-      <article class="model-card reveal" data-reveal style="--delay: 0.05s;">
+      <article class="model-card reveal delay-1" data-reveal>
         <h3>Exploit validation</h3>
         <p>Controlled exploit paths used to validate impact and likelihood.</p>
       </article>
-      <article class="model-card reveal" data-reveal style="--delay: 0.1s;">
+      <article class="model-card reveal delay-2" data-reveal>
         <h3>Adversary tradecraft</h3>
         <p>Technique development aligned to realistic threat behaviors.</p>
       </article>
-      <article class="model-card reveal" data-reveal style="--delay: 0.15s;">
+      <article class="model-card reveal delay-3" data-reveal>
         <h3>Systems hardening</h3>
         <p>Mitigation guidance delivered with every finding.</p>
       </article>

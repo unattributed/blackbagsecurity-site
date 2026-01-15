@@ -12,7 +12,7 @@ permalink: /services/
     </div>
 
     <div class="cap-grid">
-      <article class="cap-card reveal" data-reveal style="--delay: 0.05s;">
+      <article class="cap-card reveal delay-1" data-reveal>
         <h3>Objective-based red team and adversary emulation</h3>
         <ul class="outcomes">
           <li><span class="mono">What it is:</span> Objective-led campaigns that mirror realistic adversary tradecraft.</li>
@@ -23,7 +23,7 @@ permalink: /services/
         </ul>
       </article>
 
-      <article class="cap-card reveal" data-reveal style="--delay: 0.1s;">
+      <article class="cap-card reveal delay-2" data-reveal>
         <h3>Penetration testing and attack path validation</h3>
         <ul class="outcomes">
           <li><span class="mono">What it is:</span> Scoped testing of defined assets to validate exploitability and impact.</li>
@@ -34,7 +34,7 @@ permalink: /services/
         </ul>
       </article>
 
-      <article class="cap-card reveal" data-reveal style="--delay: 0.15s;">
+      <article class="cap-card reveal delay-3" data-reveal>
         <h3>Vulnerability research and exploit validation</h3>
         <ul class="outcomes">
           <li><span class="mono">What it is:</span> Deep technical analysis of binaries, firmware, and protocols beyond scanners.</li>
@@ -45,7 +45,7 @@ permalink: /services/
         </ul>
       </article>
 
-      <article class="cap-card reveal" data-reveal style="--delay: 0.2s;">
+      <article class="cap-card reveal delay-4" data-reveal>
         <h3>AI / LLM security evaluation</h3>
         <ul class="outcomes">
           <li><span class="mono">What it is:</span> Testing of model abuse paths, data leakage, and control effectiveness.</li>
@@ -67,15 +67,15 @@ permalink: /services/
     </div>
 
     <div class="model-grid">
-      <article class="model-card reveal" data-reveal style="--delay: 0.05s;">
+      <article class="model-card reveal delay-1" data-reveal>
         <h3>Fixed scope</h3>
         <p>Defined assets, timeline, and deliverables. Best for compliance and time-boxed validation.</p>
       </article>
-      <article class="model-card reveal" data-reveal style="--delay: 0.1s;">
+      <article class="model-card reveal delay-2" data-reveal>
         <h3>Objective-based</h3>
         <p>Outcome-driven scope with flexible tradecraft. Best for detection and response validation.</p>
       </article>
-      <article class="model-card reveal" data-reveal style="--delay: 0.15s;">
+      <article class="model-card reveal delay-3" data-reveal>
         <h3>Retainer</h3>
         <p>Ongoing support for continuous testing, advisory, and rapid response needs.</p>
       </article>
@@ -86,7 +86,7 @@ permalink: /services/
 <section class="section">
   <div class="wrap">
     <div class="split">
-      <div class="stack reveal" data-reveal style="--delay: 0.05s;">
+      <div class="stack reveal delay-1" data-reveal>
         <h3>Deliverables</h3>
         <ul class="outcomes">
           <li>Evidence pack with reproduction steps and artifacts.</li>
@@ -94,7 +94,7 @@ permalink: /services/
           <li>Remediation guidance and retest validation.</li>
         </ul>
       </div>
-      <div class="stack reveal" data-reveal style="--delay: 0.1s;">
+      <div class="stack reveal delay-2" data-reveal>
         <h3>Engagement inputs</h3>
         <ul class="outcomes">
           <li>Clear objectives and risk owners.</li>

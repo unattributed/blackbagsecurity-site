@@ -12,15 +12,15 @@ permalink: /trust/
     </div>
 
     <div class="model-grid">
-      <article class="model-card reveal" data-reveal style="--delay: 0.05s;">
+      <article class="model-card reveal delay-1" data-reveal>
         <h3>Evidence integrity</h3>
         <p>Reproduction steps and proof artifacts attached to every finding.</p>
       </article>
-      <article class="model-card reveal" data-reveal style="--delay: 0.1s;">
+      <article class="model-card reveal delay-2" data-reveal>
         <h3>Confidential handling</h3>
         <p>Minimal data capture and controlled storage aligned to retention policies.</p>
       </article>
-      <article class="model-card reveal" data-reveal style="--delay: 0.15s;">
+      <article class="model-card reveal delay-3" data-reveal>
         <h3>Operational safety</h3>
         <p>Explicit stop conditions and production safety checks.</p>
       </article>
@@ -36,7 +36,7 @@ permalink: /trust/
     </div>
 
     <div class="split">
-      <div class="stack reveal" data-reveal style="--delay: 0.05s;">
+      <div class="stack reveal delay-1" data-reveal>
         <h3>Secure communication</h3>
         <ul class="outcomes">
           <li>Email by default, PGP on request.</li>
@@ -44,7 +44,7 @@ permalink: /trust/
           <li>No third-party analytics or tracking scripts.</li>
         </ul>
       </div>
-      <div class="stack reveal" data-reveal style="--delay: 0.1s;">
+      <div class="stack reveal delay-2" data-reveal>
         <h3>Data handling</h3>
         <ul class="outcomes">
           <li>We collect only what is needed to prove impact.</li>
@@ -63,7 +63,7 @@ permalink: /trust/
       <p>Coordinated disclosure aligned to client constraints and vendor timelines.</p>
     </div>
 
-    <div class="stack reveal" data-reveal style="--delay: 0.05s;">
+    <div class="stack reveal delay-1" data-reveal>
       <ul class="outcomes">
         <li>We do not publish client findings without explicit approval.</li>
         <li>Vendor coordination follows your legal and policy requirements.</li>
@@ -80,7 +80,7 @@ permalink: /trust/
       <p>Findings can be mapped to the frameworks your governance teams rely on.</p>
     </div>
 
-    <div class="pill-row reveal" data-reveal style="--delay: 0.05s;">
+    <div class="pill-row reveal delay-1" data-reveal>
       <span class="pill">NIST</span>
       <span class="pill">MITRE ATT&amp;CK</span>
       <span class="pill">OWASP</span>

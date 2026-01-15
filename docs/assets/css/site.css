@@ -24,3 +24,11 @@
   color: var(--muted);
   max-width: 72ch;
 }
+
+.delay-0 { --delay: 0s; }
+.delay-1 { --delay: 0.05s; }
+.delay-2 { --delay: 0.1s; }
+.delay-3 { --delay: 0.15s; }
+.delay-4 { --delay: 0.2s; }
+.delay-5 { --delay: 0.25s; }
+.delay-6 { --delay: 0.3s; }

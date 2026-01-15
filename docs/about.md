@@ -12,12 +12,12 @@ permalink: /about/
     </div>
 
     <div class="split">
-      <div class="stack reveal" data-reveal style="--delay: 0.05s;">
+      <div class="stack reveal delay-1" data-reveal>
         <h3>Operating model</h3>
         <p>Senior-led delivery with direct operator involvement from scoping through retest.</p>
         <p>Engagements prioritize evidence integrity, confidentiality, and realistic adversary tradecraft.</p>
       </div>
-      <div class="stack reveal" data-reveal style="--delay: 0.1s;">
+      <div class="stack reveal delay-2" data-reveal>
         <h3>Principles</h3>
         <ul class="outcomes">
           <li>Scoped, risk-aligned objectives with clear stop conditions.</li>
@@ -37,7 +37,7 @@ permalink: /about/
     </div>
 
     <div class="cap-grid">
-      <article class="cap-card reveal" data-reveal style="--delay: 0.05s;">
+      <article class="cap-card reveal delay-1" data-reveal>
         <h3>Core capabilities</h3>
         <ul class="outcomes">
           <li>Objective-based red team and adversary emulation.</li>
@@ -46,7 +46,7 @@ permalink: /about/
           <li>AI/LLM security testing and control validation.</li>
         </ul>
       </article>
-      <article class="cap-card reveal" data-reveal style="--delay: 0.1s;">
+      <article class="cap-card reveal delay-2" data-reveal>
         <h3>Delivery and assurance</h3>
         <ul class="outcomes">
           <li>Evidence packs with reproduction steps and artifacts.</li>
@@ -55,7 +55,7 @@ permalink: /about/
           <li>Secure handling aligned to client requirements.</li>
         </ul>
       </article>
-      <article class="cap-card reveal" data-reveal style="--delay: 0.15s;">
+      <article class="cap-card reveal delay-3" data-reveal>
         <h3>Engagement fit</h3>
         <ul class="outcomes">
           <li>Regulated and high-consequence environments.</li>

@@ -12,7 +12,7 @@ permalink: /methodology/
     </div>
 
     <div class="split">
-      <div class="stack reveal" data-reveal style="--delay: 0.05s;">
+      <div class="stack reveal delay-1" data-reveal>
         <h3>Engagement lifecycle</h3>
         <ol class="steps">
           <li><span>01 Align</span>Define objectives, access paths, and stop conditions.</li>
@@ -21,7 +21,7 @@ permalink: /methodology/
           <li><span>04 Retest</span>Validate closures and document closure statements.</li>
         </ol>
       </div>
-      <div class="stack reveal" data-reveal style="--delay: 0.1s;">
+      <div class="stack reveal delay-2" data-reveal>
         <h3>Scope control</h3>
         <ul class="outcomes">
           <li>Rules of engagement with escalation paths and stop conditions.</li>
@@ -41,15 +41,15 @@ permalink: /methodology/
     </div>
 
     <div class="model-grid">
-      <article class="model-card reveal" data-reveal style="--delay: 0.05s;">
+      <article class="model-card reveal delay-1" data-reveal>
         <h3>Evidence pack</h3>
         <p>Artifacts, reproduction steps, and proof of impact for each finding.</p>
       </article>
-      <article class="model-card reveal" data-reveal style="--delay: 0.1s;">
+      <article class="model-card reveal delay-2" data-reveal>
         <h3>Executive brief</h3>
         <p>Risk framing, objectives achieved, and priority remediation actions.</p>
       </article>
-      <article class="model-card reveal" data-reveal style="--delay: 0.15s;">
+      <article class="model-card reveal delay-3" data-reveal>
         <h3>Remediation support</h3>
         <p>Fix guidance and retest validation with closure statements.</p>
       </article>
@@ -65,7 +65,7 @@ permalink: /methodology/
     </div>
 
     <div class="split">
-      <div class="stack reveal" data-reveal style="--delay: 0.05s;">
+      <div class="stack reveal delay-1" data-reveal>
         <h3>Operational safety</h3>
         <ul class="outcomes">
           <li>Pre-approved tooling and safe testing windows.</li>
@@ -73,7 +73,7 @@ permalink: /methodology/
           <li>Immediate pause procedures for production risk.</li>
         </ul>
       </div>
-      <div class="stack reveal" data-reveal style="--delay: 0.1s;">
+      <div class="stack reveal delay-2" data-reveal>
         <h3>Data handling</h3>
         <ul class="outcomes">
           <li>Collect only what is required to prove impact.</li>
