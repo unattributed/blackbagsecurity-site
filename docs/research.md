@@ -8,7 +8,7 @@ permalink: /research/
   <div class="wrap">
     <div class="section__head reveal" data-reveal>
       <h1>Research</h1>
-      <p>Focused research on attack surfaces that impact high-consequence systems and regulated environments.</p>
+      <p>Deep technical research for systems where generic scanning is not enough.</p>
     </div>
 
     <div class="split">
@@ -21,10 +21,31 @@ permalink: /research/
         </ul>
       </div>
       <div class="stack reveal" data-reveal style="--delay: 0.1s;">
-        <h3>Disclosure posture</h3>
-        <p>Coordinated disclosure aligned to client constraints and vendor timelines.</p>
-        <p class="mono">Disclosure contact: <a href="mailto:security@blackbagsecurity.com">security@blackbagsecurity.com</a></p>
+        <h3>Research outputs</h3>
+        <ul class="outcomes">
+          <li>Root cause analysis and proof of impact.</li>
+          <li>Mitigation guidance and validation steps.</li>
+          <li>Optional advisory content for internal stakeholders.</li>
+        </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head reveal" data-reveal>
+      <h2>Disclosure posture</h2>
+      <p>Coordinated disclosure aligned to client constraints and vendor timelines.</p>
+    </div>
+
+    <div class="stack reveal" data-reveal style="--delay: 0.05s;">
+      <ul class="outcomes">
+        <li>We coordinate disclosure plans before work begins.</li>
+        <li>Client approvals guide any external communication.</li>
+        <li>Vendor coordination follows your legal and policy requirements.</li>
+      </ul>
+      <p class="mono">Disclosure contact: <a href="mailto:security@blackbagsecurity.com">security@blackbagsecurity.com</a></p>
     </div>
   </div>
 </section>
@@ -42,7 +63,7 @@ permalink: /research/
       </article>
       <article class="model-card reveal" data-reveal style="--delay: 0.15s;">
         <h3>Systems hardening</h3>
-        <p>Fix guidance and mitigations delivered with each finding.</p>
+        <p>Mitigation guidance delivered with every finding.</p>
       </article>
     </div>
   </div>

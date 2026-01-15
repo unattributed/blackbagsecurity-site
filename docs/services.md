@@ -1,36 +1,83 @@
 ---
 layout: default
 title: Services | Black Bag Security
-description: Offensive security services for red team operations, penetration testing, and vulnerability research.
+description: Objective-based red team operations, penetration testing, and vulnerability research with evidence-driven reporting.
 permalink: /services/
 ---
 <section class="section">
   <div class="wrap">
     <div class="section__head reveal" data-reveal>
       <h1>Services</h1>
-      <p>Offense-led engagements designed for high-consequence environments, scoped delivery, and board-ready evidence.</p>
+      <p>Offense-led engagements for high-consequence systems, delivered with secure handling, clear reporting, and retest support.</p>
     </div>
 
     <div class="cap-grid">
       <article class="cap-card reveal" data-reveal style="--delay: 0.05s;">
-        <h3>Adversary emulation</h3>
-        <p>Full-scope red team operations aligned to your threat models and detection goals.</p>
-        <span class="cap-tag">MITRE ATT&amp;CK aligned</span>
+        <h3>Objective-based red team and adversary emulation</h3>
+        <ul class="outcomes">
+          <li><span class="mono">What it is:</span> Objective-led campaigns that mirror realistic adversary tradecraft.</li>
+          <li><span class="mono">What you get:</span> Campaign plan, evidence pack, executive brief, remediation priorities, retest memo.</li>
+          <li><span class="mono">Typical timeline:</span> 4 to 8 weeks, scope dependent.</li>
+          <li><span class="mono">What we need from you:</span> Objectives, rules of engagement, access paths, test accounts, safe windows.</li>
+          <li><span class="mono">How findings are delivered:</span> Weekly checkpoints and a final report with artifacts and reproduction steps.</li>
+        </ul>
       </article>
+
       <article class="cap-card reveal" data-reveal style="--delay: 0.1s;">
-        <h3>Penetration testing</h3>
-        <p>Targeted validation of control gaps, misconfigurations, and exploitable paths.</p>
-        <span class="cap-tag">risk validation</span>
+        <h3>Penetration testing and attack path validation</h3>
+        <ul class="outcomes">
+          <li><span class="mono">What it is:</span> Scoped testing of defined assets to validate exploitability and impact.</li>
+          <li><span class="mono">What you get:</span> Prioritized findings, evidence, remediation guidance, optional retest.</li>
+          <li><span class="mono">Typical timeline:</span> 2 to 4 weeks, scope dependent.</li>
+          <li><span class="mono">What we need from you:</span> Asset inventory, test accounts, network ranges, change windows.</li>
+          <li><span class="mono">How findings are delivered:</span> Structured report with impact context and supporting evidence.</li>
+        </ul>
       </article>
+
       <article class="cap-card reveal" data-reveal style="--delay: 0.15s;">
-        <h3>Vulnerability research</h3>
-        <p>Binary, firmware, and protocol analysis with exploit path validation.</p>
-        <span class="cap-tag">proof of impact</span>
+        <h3>Vulnerability research and exploit validation</h3>
+        <ul class="outcomes">
+          <li><span class="mono">What it is:</span> Deep technical analysis of binaries, firmware, and protocols beyond scanners.</li>
+          <li><span class="mono">What you get:</span> Root cause analysis, proof of impact, and remediation guidance.</li>
+          <li><span class="mono">Typical timeline:</span> 4 to 12 weeks in research sprints.</li>
+          <li><span class="mono">What we need from you:</span> Target artifacts, build context, lab access, and reproduction environment.</li>
+          <li><span class="mono">How findings are delivered:</span> Technical report with artifacts, evidence, and fix recommendations.</li>
+        </ul>
       </article>
+
       <article class="cap-card reveal" data-reveal style="--delay: 0.2s;">
-        <h3>AI / LLM security</h3>
-        <p>Threat modeling, prompt abuse testing, and leakage prevention for AI systems.</p>
-        <span class="cap-tag">no data egress</span>
+        <h3>AI / LLM security evaluation</h3>
+        <ul class="outcomes">
+          <li><span class="mono">What it is:</span> Testing of model abuse paths, data leakage, and control effectiveness.</li>
+          <li><span class="mono">What you get:</span> Attack narratives, control gaps, and mitigation guidance.</li>
+          <li><span class="mono">Typical timeline:</span> 2 to 6 weeks, scope dependent.</li>
+          <li><span class="mono">What we need from you:</span> Model access, policy constraints, and data handling rules.</li>
+          <li><span class="mono">How findings are delivered:</span> Evidence pack and prioritized mitigation plan.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head reveal" data-reveal>
+      <h2>How we engage</h2>
+      <p>Choose the model that matches your risk posture, timeline, and internal constraints.</p>
+    </div>
+
+    <div class="model-grid">
+      <article class="model-card reveal" data-reveal style="--delay: 0.05s;">
+        <h3>Fixed scope</h3>
+        <p>Defined assets, timeline, and deliverables. Best for compliance and time-boxed validation.</p>
+      </article>
+      <article class="model-card reveal" data-reveal style="--delay: 0.1s;">
+        <h3>Objective-based</h3>
+        <p>Outcome-driven scope with flexible tradecraft. Best for detection and response validation.</p>
+      </article>
+      <article class="model-card reveal" data-reveal style="--delay: 0.15s;">
+        <h3>Retainer</h3>
+        <p>Ongoing support for continuous testing, advisory, and rapid response needs.</p>
       </article>
     </div>
   </div>
@@ -42,17 +89,17 @@ permalink: /services/
       <div class="stack reveal" data-reveal style="--delay: 0.05s;">
         <h3>Deliverables</h3>
         <ul class="outcomes">
-          <li>Evidence packs with reproduction steps, impact, and fix guidance.</li>
-          <li>Executive-ready summaries aligned to risk and compliance needs.</li>
-          <li>Retest confirmation with closure statements.</li>
+          <li>Evidence pack with reproduction steps and artifacts.</li>
+          <li>Executive brief with risk framing and priority fixes.</li>
+          <li>Remediation guidance and retest validation.</li>
         </ul>
       </div>
       <div class="stack reveal" data-reveal style="--delay: 0.1s;">
-        <h3>Engagement options</h3>
+        <h3>Engagement inputs</h3>
         <ul class="outcomes">
-          <li>Time-boxed assessments with explicit boundaries.</li>
-          <li>Continuous red team retainer support.</li>
-          <li>Embedded research sprints for high-risk systems.</li>
+          <li>Clear objectives and risk owners.</li>
+          <li>Rules of engagement and escalation paths.</li>
+          <li>Access methods and approved test windows.</li>
         </ul>
       </div>
     </div>

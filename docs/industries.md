@@ -27,24 +27,52 @@ permalink: /industries/
     <div class="cap-grid">
       <article class="cap-card reveal" data-reveal style="--delay: 0.05s;">
         <h3>Critical infrastructure</h3>
-        <p>Assessment of operational technology, safety systems, and segmented networks.</p>
+        <p>Operational technology, segmented networks, and safety systems with strict change windows.</p>
         <span class="cap-tag">safety-first testing</span>
       </article>
       <article class="cap-card reveal" data-reveal style="--delay: 0.1s;">
         <h3>Regulated healthcare</h3>
-        <p>Data protection, device security, and clinical operations resilience.</p>
+        <p>Patient data protection, device security, and clinical operations resilience.</p>
         <span class="cap-tag">PHI-sensitive</span>
       </article>
       <article class="cap-card reveal" data-reveal style="--delay: 0.15s;">
         <h3>Financial systems</h3>
-        <p>Fraud paths, identity controls, and transaction integrity testing.</p>
+        <p>Identity assurance, transaction integrity, and fraud pathways.</p>
         <span class="cap-tag">audit-aligned</span>
       </article>
       <article class="cap-card reveal" data-reveal style="--delay: 0.2s;">
         <h3>Cloud-native platforms</h3>
-        <p>Identity, configuration, and supply-chain exposure mapping.</p>
+        <p>Identity, configuration, and supply-chain exposure across complex environments.</p>
         <span class="cap-tag">zero trust ready</span>
       </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head reveal" data-reveal>
+      <h2>Outcome focus</h2>
+      <p>Engagements are scoped to outcomes that support mission continuity and regulatory assurance.</p>
+    </div>
+
+    <div class="split">
+      <div class="stack reveal" data-reveal style="--delay: 0.05s;">
+        <h3>Typical objectives</h3>
+        <ul class="outcomes">
+          <li>Validate detection and response for high-impact scenarios.</li>
+          <li>Confirm exploitability of critical exposure paths.</li>
+          <li>Reduce time-to-remediate for known weaknesses.</li>
+        </ul>
+      </div>
+      <div class="stack reveal" data-reveal style="--delay: 0.1s;">
+        <h3>Delivery constraints</h3>
+        <ul class="outcomes">
+          <li>Scoped tradecraft aligned to safety and uptime requirements.</li>
+          <li>Evidence handling aligned to internal governance.</li>
+          <li>Clear reporting for both technical and executive stakeholders.</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>

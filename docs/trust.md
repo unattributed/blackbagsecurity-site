@@ -31,6 +31,51 @@ permalink: /trust/
 <section class="section">
   <div class="wrap">
     <div class="section__head reveal" data-reveal>
+      <h2>Trust and security</h2>
+      <p>Plain-language commitments for secure communication, data handling, and disclosure.</p>
+    </div>
+
+    <div class="split">
+      <div class="stack reveal" data-reveal style="--delay: 0.05s;">
+        <h3>Secure communication</h3>
+        <ul class="outcomes">
+          <li>Email by default, PGP on request.</li>
+          <li>We can use your secure portal or file transfer.</li>
+          <li>No third-party analytics or tracking scripts.</li>
+        </ul>
+      </div>
+      <div class="stack reveal" data-reveal style="--delay: 0.1s;">
+        <h3>Data handling</h3>
+        <ul class="outcomes">
+          <li>We collect only what is needed to prove impact.</li>
+          <li>Retention periods are agreed up front.</li>
+          <li>Artifacts are transferred using approved channels.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head reveal" data-reveal>
+      <h2>Responsible disclosure</h2>
+      <p>Coordinated disclosure aligned to client constraints and vendor timelines.</p>
+    </div>
+
+    <div class="stack reveal" data-reveal style="--delay: 0.05s;">
+      <ul class="outcomes">
+        <li>We do not publish client findings without explicit approval.</li>
+        <li>Vendor coordination follows your legal and policy requirements.</li>
+        <li>Disclosure windows are agreed before work begins.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head reveal" data-reveal>
       <h2>Framework alignment</h2>
       <p>Findings can be mapped to the frameworks your governance teams rely on.</p>
     </div>

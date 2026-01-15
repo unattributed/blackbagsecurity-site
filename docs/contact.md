@@ -8,7 +8,7 @@ permalink: /contact/
   <div class="wrap">
     <div class="section__head reveal" data-reveal>
       <h1>Contact</h1>
-      <p>Start with email. For sensitive details, request PGP.</p>
+      <p>Start with email. For sensitive details, request PGP or use your secure portal.</p>
     </div>
 
     <div class="contact">
@@ -34,13 +34,23 @@ permalink: /contact/
 
 <section class="section">
   <div class="wrap">
-    <div class="stack reveal" data-reveal style="--delay: 0.05s;">
-      <h3>What to include</h3>
-      <ul class="outcomes">
-        <li>Desired outcomes or threat scenarios.</li>
-        <li>Environment type (cloud, on-prem, hybrid, air-gapped).</li>
-        <li>Preferred time window and any blackout dates.</li>
-      </ul>
+    <div class="split">
+      <div class="stack reveal" data-reveal style="--delay: 0.05s;">
+        <h3>What to include</h3>
+        <ul class="outcomes">
+          <li>Desired outcomes or threat scenarios.</li>
+          <li>Environment type (cloud, on-prem, hybrid, air-gapped).</li>
+          <li>Preferred time window and any blackout dates.</li>
+        </ul>
+      </div>
+      <div class="stack reveal" data-reveal style="--delay: 0.1s;">
+        <h3>Secure communication</h3>
+        <ul class="outcomes">
+          <li>Email by default, PGP on request.</li>
+          <li>We can use your secure file transfer or portal.</li>
+          <li>We avoid third-party messaging tools.</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
