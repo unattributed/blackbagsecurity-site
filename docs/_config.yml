@@ -1,0 +1,9 @@
+title: Black Bag Security
+description: >-
+  Black Bag Security, offensive security, red team operations, vulnerability
+  research, and adversary emulation.
+url: "https://www.blackbagsecurity.com"
+baseurl: ""
+
+include:
+  - .well-known
