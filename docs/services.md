@@ -46,6 +46,28 @@ permalink: /services/
       </article>
 
       <article class="cap-card reveal delay-4" data-reveal>
+        <h3>Reverse engineering and binary analysis</h3>
+        <ul class="outcomes">
+          <li><span class="mono">What it is:</span> Reverse engineering to validate exploit paths and defensive assumptions, embedded in red team or standalone.</li>
+          <li><span class="mono">What you get:</span> Technical findings, annotated artifacts, and mitigation guidance.</li>
+          <li><span class="mono">Typical timeline:</span> 2 to 6 weeks, scope dependent.</li>
+          <li><span class="mono">What we need from you:</span> Binaries, symbols where available, test environment, and access constraints.</li>
+          <li><span class="mono">How findings are delivered:</span> Evidence pack with reproducible steps and validated impact.</li>
+        </ul>
+      </article>
+
+      <article class="cap-card reveal delay-5" data-reveal>
+        <h3>Secure code review (SAST/DAST)</h3>
+        <ul class="outcomes">
+          <li><span class="mono">What it is:</span> Manual review plus SAST/DAST coverage for critical paths, embedded in red team or standalone.</li>
+          <li><span class="mono">What you get:</span> Findings with prioritization, remediation guidance, and retest support.</li>
+          <li><span class="mono">Typical timeline:</span> 2 to 6 weeks, codebase dependent.</li>
+          <li><span class="mono">What we need from you:</span> Repo access, build context, test data handling rules, and environment access.</li>
+          <li><span class="mono">How findings are delivered:</span> Evidence pack and secure report, using IDPRO and other best-of-breed tooling.</li>
+        </ul>
+      </article>
+
+      <article class="cap-card reveal delay-6" data-reveal>
         <h3>AI / LLM security evaluation</h3>
         <ul class="outcomes">
           <li><span class="mono">What it is:</span> Testing of model abuse paths, data leakage, and control effectiveness.</li>
