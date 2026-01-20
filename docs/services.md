@@ -108,7 +108,7 @@ permalink: /services/
 <section class="section">
   <div class="wrap">
     <div class="split">
-      <div class="stack reveal delay-1" data-reveal>
+      <div class="stack stack--signal stack--deliverables reveal delay-1" data-reveal>
         <h3>Deliverables</h3>
         <ul class="outcomes">
           <li>Evidence pack with reproduction steps and artifacts.</li>
@@ -116,7 +116,7 @@ permalink: /services/
           <li>Remediation guidance and retest validation.</li>
         </ul>
       </div>
-      <div class="stack reveal delay-2" data-reveal>
+      <div class="stack stack--signal stack--inputs reveal delay-2" data-reveal>
         <h3>Engagement inputs</h3>
         <ul class="outcomes">
           <li>Clear objectives and risk owners.</li>

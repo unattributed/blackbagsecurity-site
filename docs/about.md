@@ -15,6 +15,7 @@ permalink: /about/
       <div class="stack stack--signal stack--operating reveal delay-1" data-reveal>
         <h3>Operating model</h3>
         <p>Senior-led delivery with direct operator involvement from scoping through retest.</p>
+        <p>Experience spans 40+ years. In 1985, our founder began with computerized accounting systems running on mainframe and microcomputer platforms with telephonic connectivity, where data had to be auditable, controlled, and safeguarded. That work shaped our focus on reliable, secure software and protecting the confidentiality of users.</p>
         <p>Engagements prioritize evidence integrity, confidentiality, and realistic adversary tradecraft.</p>
       </div>
       <div class="stack stack--signal stack--principles reveal delay-2" data-reveal>

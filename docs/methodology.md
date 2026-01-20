@@ -65,7 +65,7 @@ permalink: /methodology/
     </div>
 
     <div class="split">
-      <div class="stack reveal delay-1" data-reveal>
+      <div class="stack stack--signal stack--transparency reveal delay-1" data-reveal>
         <h3>Operational transparency</h3>
         <ul class="outcomes">
           <li>SOW execution plan approved before kickoff.</li>
@@ -73,7 +73,7 @@ permalink: /methodology/
           <li>End-of-day progress updates with findings and blockers.</li>
         </ul>
       </div>
-      <div class="stack reveal delay-2" data-reveal>
+      <div class="stack stack--signal stack--evidence reveal delay-2" data-reveal>
         <h3>Audit-ready evidence</h3>
         <ul class="outcomes">
           <li>Secure client dashboard with 24/7 access to activity logs and artifacts.</li>
@@ -93,7 +93,7 @@ permalink: /methodology/
     </div>
 
     <div class="split">
-      <div class="stack reveal delay-1" data-reveal>
+      <div class="stack stack--signal stack--safety reveal delay-1" data-reveal>
         <h3>Operational safety</h3>
         <ul class="outcomes">
           <li>Pre-approved tooling and safe testing windows.</li>
@@ -101,7 +101,7 @@ permalink: /methodology/
           <li>Immediate pause procedures for production risk.</li>
         </ul>
       </div>
-      <div class="stack reveal delay-2" data-reveal>
+      <div class="stack stack--signal stack--data-handling reveal delay-2" data-reveal>
         <h3>Data handling</h3>
         <ul class="outcomes">
           <li>Collect only what is required to prove impact.</li>
