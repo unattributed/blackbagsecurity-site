@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://blackbagsecurity.com/sitemap.xml
+Sitemap: https://www.blackbagsecurity.com/sitemap.xml
