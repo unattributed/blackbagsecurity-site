@@ -21,9 +21,11 @@ permalink: /about/
       <div class="stack stack--signal stack--principles reveal delay-2" data-reveal>
         <h3>Principles</h3>
         <ul class="outcomes">
-          <li>Scoped, risk-aligned objectives with clear stop conditions.</li>
-          <li>Transparent reporting, prioritization, and remediation guidance.</li>
-          <li>No third-party analytics, tracking, or data resale.</li>
+          <li>Relentless adversary focus: we design for complex attack chains, AI-assisted automation, and real-world tradecraft.</li>
+          <li>Decisive execution with clear objectives, stop conditions, and escalation paths that protect uptime and safety.</li>
+          <li>Evidence-first reporting: reproducible findings, measurable impact, and remediation guidance that holds under audit.</li>
+          <li>Scale-ready delivery: workflow, tooling, and cadence built for high-stakes environments and rapid response.</li>
+          <li>Privacy and confidentiality by default: minimal data collection, controlled handling, and zero third-party analytics.</li>
         </ul>
       </div>
     </div>
