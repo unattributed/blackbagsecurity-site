@@ -25,7 +25,7 @@ permalink: /about/
           <li>Decisive execution with clear objectives, stop conditions, and escalation paths that protect uptime and safety.</li>
           <li>Evidence-first reporting: reproducible findings, measurable impact, and remediation guidance that holds under audit.</li>
           <li>Scale-ready delivery: workflow, tooling, and cadence built for high-stakes environments and rapid response.</li>
-          <li>Privacy and confidentiality by default: minimal data collection, controlled handling, and zero third-party analytics.</li>
+          <li>Privacy and confidentiality by default: zero disclosure, minimal collection, cryptographically protected handling, and no client data retained post-engagement.</li>
         </ul>
       </div>
     </div>
