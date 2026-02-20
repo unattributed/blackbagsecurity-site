@@ -1,0 +1,9 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Black Bag Security",
+  "url": "https://www.blackbagsecurity.com",
+  "logo": "https://www.blackbagsecurity.com/assets/img/logo.svg",
+  "email": "hello@blackbagsecurity.com",
+  "sameAs": []
+}

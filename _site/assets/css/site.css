@@ -1,0 +1,34 @@
+/* Site-level refinements for the multi-page skeleton. */
+
+.site-main {
+  min-height: 60vh;
+}
+
+.nav {
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+
+.footer.wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section__head h1 {
+  font-size: 2.1rem;
+  margin: 0;
+}
+
+.section__head h1 + p {
+  margin-top: 8px;
+  color: var(--muted);
+  max-width: 72ch;
+}
+
+.delay-0 { --delay: 0s; }
+.delay-1 { --delay: 0.05s; }
+.delay-2 { --delay: 0.1s; }
+.delay-3 { --delay: 0.15s; }
+.delay-4 { --delay: 0.2s; }
+.delay-5 { --delay: 0.25s; }
+.delay-6 { --delay: 0.3s; }

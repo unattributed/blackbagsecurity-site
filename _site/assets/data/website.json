@@ -1,0 +1,7 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Black Bag Security",
+  "url": "https://www.blackbagsecurity.com",
+  "description": "Black Bag Security, offensive security, red team operations, vulnerability research, and adversary emulation."
+}
