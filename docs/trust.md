@@ -50,6 +50,7 @@ permalink: /trust/
           <li>We collect only what is needed to prove impact.</li>
           <li>Retention periods are agreed up front.</li>
           <li>Artifacts are transferred using approved channels.</li>
+          <li>Private client data remains safeguarded at all times and is never placed in unmanaged third-party AI systems.</li>
         </ul>
       </div>
     </div>

@@ -66,6 +66,15 @@ permalink: /about/
           <li>Teams that need defensible evidence and clear outcomes.</li>
         </ul>
       </article>
+      <article class="cap-card reveal delay-4" data-reveal>
+        <h3>Agentic engineering skillset</h3>
+        <ul class="outcomes">
+          <li>Decades of operator experience applied to agentic system design for cybersecurity delivery.</li>
+          <li>Human-in-the-loop workflows for recon, hypothesis generation, and execution planning.</li>
+          <li>Operator validation gates before outputs are accepted into evidence or reporting.</li>
+          <li>Private client data is safeguarded at all times through minimal collection and controlled handling.</li>
+        </ul>
+      </article>
     </div>
   </div>
 </section>

@@ -77,6 +77,17 @@ permalink: /services/
           <li><span class="mono">How findings are delivered:</span> Evidence pack and prioritized mitigation plan.</li>
         </ul>
       </article>
+
+      <article class="cap-card reveal delay-6" data-reveal>
+        <h3>Agentic engineering for cybersecurity operations</h3>
+        <ul class="outcomes">
+          <li><span class="mono">What it is:</span> Human-directed agentic workflow engineering for offensive security and technical research tasks.</li>
+          <li><span class="mono">What you get:</span> Faster analysis cycles, broader scenario coverage, and operator-verified evidence quality.</li>
+          <li><span class="mono">Typical timeline:</span> 2 to 6 weeks standalone or embedded in active engagements.</li>
+          <li><span class="mono">What we need from you:</span> Workflow boundaries, approved tooling paths, and explicit data handling requirements.</li>
+          <li><span class="mono">Data protection:</span> Private client data is safeguarded at all times through minimal collection, strict access control, and approved transfer channels only.</li>
+        </ul>
+      </article>
     </div>
   </div>
 </section>
