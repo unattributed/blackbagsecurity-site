@@ -76,5 +76,6 @@ permalink: /about/
         </ul>
       </article>
     </div>
+    <p class="mono reveal delay-5" data-reveal><a href="{{ '/on-site-engagements/' | relative_url }}">On-site engagements -></a> | <a href="{{ '/policies/' | relative_url }}">Policies -></a></p>
   </div>
 </section>

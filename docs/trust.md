@@ -25,6 +25,7 @@ permalink: /trust/
         <p>Explicit stop conditions and production safety checks.</p>
       </article>
     </div>
+    <p class="mono reveal delay-4" data-reveal><a href="{{ '/on-site-engagements/' | relative_url }}">On-site engagement controls -></a></p>
   </div>
 </section>
 
@@ -54,6 +55,7 @@ permalink: /trust/
         </ul>
       </div>
     </div>
+    <p class="mono reveal delay-3" data-reveal><a href="{{ '/policies/' | relative_url }}">Policy surface: anti-bribery, confidentiality, and disclosure -></a></p>
   </div>
 </section>
 
