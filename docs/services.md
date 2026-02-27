@@ -17,7 +17,6 @@ permalink: /services/
         <ul class="outcomes">
           <li><span class="mono">What it is:</span> Objective-led campaigns that mirror realistic adversary tradecraft.</li>
           <li><span class="mono">What you get:</span> Campaign plan, evidence pack, executive brief, remediation priorities, retest memo.</li>
-          <li><span class="mono">Typical timeline:</span> 4 to 8 weeks, scope dependent.</li>
           <li><span class="mono">What we need from you:</span> Objectives, rules of engagement, access paths, test accounts, safe windows.</li>
           <li><span class="mono">How findings are delivered:</span> Weekly checkpoints and a final report with artifacts and reproduction steps.</li>
         </ul>
