@@ -1,5 +1,7 @@
 ---
 layout: default
+lang: en
+ref: contact
 title: Contact | Black Bag Security
 description: Contact Black Bag Security for offensive security engagements or disclosure coordination.
 permalink: /contact/

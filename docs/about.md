@@ -1,5 +1,7 @@
 ---
 layout: default
+lang: en
+ref: about
 title: About | Black Bag Security
 description: Boutique offensive security practice delivering evidence-driven red team and vulnerability research.
 permalink: /about/
