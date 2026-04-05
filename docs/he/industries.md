@@ -1,0 +1,11 @@
+---
+layout: default
+title: מגזרים | Black Bag Security
+description: אבטחה התקפית עבור מגזרים מוסדרים ומערכות בעלות השלכות גבוהות.
+permalink: /he/industries/
+lang: he
+ref: industries
+---
+<section class="section"><div class="wrap"><div class="section__head reveal" data-reveal><h1>מגזרים</h1><p>כיסוי ממוקד למערכות המשפיעות על בטיחות הציבור, ביטחון לאומי והמשכיות עסקית.</p></div><div class="pill-row reveal delay-1" data-reveal><span class="pill">בריאות ומכשור רפואי</span><span class="pill">שירותים פיננסיים</span><span class="pill">אנרגיה ותשתיות</span><span class="pill">אוויר וחלל</span><span class="pill">ביטחון וממשלה</span><span class="pill">SaaS ופלטפורמות ענן</span></div></div></section>
+<section class="section"><div class="wrap"><div class="cap-grid"><article class="cap-card reveal delay-1" data-reveal><h3>תשתיות קריטיות</h3><p>טכנולוגיה תפעולית, רשתות מפולחות ומערכות בטיחות עם חלונות שינוי מחמירים.</p><span class="cap-tag">בדיקות עם בטיחות תחילה</span></article><article class="cap-card reveal delay-2" data-reveal><h3>בריאות מוסדרת</h3><p>הגנת נתוני מטופלים, אבטחת מכשור ועמידות תפעולית קלינית.</p><span class="cap-tag">רגיש ל-PHI</span></article><article class="cap-card reveal delay-3" data-reveal><h3>מערכות פיננסיות</h3><p>אימות זהות, שלמות עסקאות ומסלולי הונאה.</p><span class="cap-tag">תואם ביקורת</span></article><article class="cap-card reveal delay-4" data-reveal><h3>פלטפורמות ענן-נייטיב</h3><p>זהות, תצורה וחשיפת שרשרת אספקה בסביבות מורכבות.</p><span class="cap-tag">מוכנות לאפס אמון</span></article></div></div></section>
+<section class="section"><div class="wrap"><div class="section__head reveal" data-reveal><h2>מיקוד בתוצאות</h2><p>התקשרויות מוגדרות סביב תוצאות התומכות בהמשכיות משימה ובהבטחה רגולטורית.</p></div><div class="split"><div class="stack reveal delay-1" data-reveal><h3>יעדים טיפוסיים</h3><ul class="outcomes"><li>אימות גילוי ותגובה לתרחישים בעלי השפעה גבוהה.</li><li>אישור יכולת ניצול של מסלולי חשיפה קריטיים.</li><li>צמצום זמן התיקון לחולשות ידועות.</li></ul></div><div class="stack reveal delay-2" data-reveal><h3>אילוצי מסירה</h3><ul class="outcomes"><li>סחרור התקפי תחום בהתאם לדרישות בטיחות וזמינות.</li><li>טיפול בראיות בהתאם לממשל פנימי.</li><li>דיווח ברור לבעלי עניין טכניים והנהלתיים כאחד.</li></ul></div></div></div></section>

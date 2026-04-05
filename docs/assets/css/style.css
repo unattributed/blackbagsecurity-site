@@ -36,8 +36,8 @@
   --accent-4: #59f2c7;
   --shadow: 0 26px 70px rgba(0, 0, 0, 0.45);
   --radius: 18px;
-  --font-sans: "Space Grotesk", sans-serif;
-  --font-mono: "Space Mono", monospace;
+  --font-sans: "Space Grotesk", "Noto Sans", "Noto Sans CJK KR", "Noto Sans CJK JP", "Noto Sans Thai", "Noto Sans Arabic", "Noto Sans Hebrew", sans-serif;
+  --font-mono: "Space Mono", "Noto Sans Mono CJK KR", "Noto Sans Mono CJK JP", monospace;
   --surface: rgba(10, 16, 24, 0.88);
   --surface-2: rgba(12, 20, 30, 0.72);
   --surface-3: rgba(7, 12, 18, 0.92);

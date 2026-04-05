@@ -1,5 +1,5 @@
 Contact: mailto:security@blackbagsecurity.com
-Preferred-Languages: en, ja, ko, pt-BR, ar
+Preferred-Languages: en, th, fr, de, es, ja, ko, pt-BR, ar, he
 Policy: https://blackbagsecurity.com/
 Hiring: https://blackbagsecurity.com/
 Expires: 2026-12-31T00:00:00.000Z

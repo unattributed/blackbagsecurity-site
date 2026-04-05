@@ -11,68 +11,27 @@
   {% assign ko_page = site.pages | where: "ref", current_ref | where: "lang", "ko" | first %}
   {% assign ptbr_page = site.pages | where: "ref", current_ref | where: "lang", "pt-BR" | first %}
   {% assign ar_page = site.pages | where: "ref", current_ref | where: "lang", "ar" | first %}
+  {% assign he_page = site.pages | where: "ref", current_ref | where: "lang", "he" | first %}
 {% endif %}
 
 <div class="lang-switcher" aria-label="Language switcher">
-  {% if en_page %}
-    <a href="{{ en_page.url | relative_url }}"{% if current_lang == 'en' %} aria-current="true"{% endif %} data-lang-switch="en">EN</a>
-  {% else %}
-    <a href="{{ '/' | relative_url }}"{% if current_lang == 'en' %} aria-current="true"{% endif %} data-lang-switch="en">EN</a>
-  {% endif %}
+  {% if en_page %}<a href="{{ en_page.url | relative_url }}"{% if current_lang == 'en' %} aria-current="true"{% endif %} data-lang-switch="en">EN</a>{% else %}<a href="{{ '/' | relative_url }}"{% if current_lang == 'en' %} aria-current="true"{% endif %} data-lang-switch="en">EN</a>{% endif %}
   <span>/</span>
-
-  {% if th_page %}
-    <a href="{{ th_page.url | relative_url }}"{% if current_lang == 'th' %} aria-current="true"{% endif %} data-lang-switch="th">TH</a>
-  {% else %}
-    <a href="{{ '/th/' | relative_url }}"{% if current_lang == 'th' %} aria-current="true"{% endif %} data-lang-switch="th">TH</a>
-  {% endif %}
+  {% if th_page %}<a href="{{ th_page.url | relative_url }}"{% if current_lang == 'th' %} aria-current="true"{% endif %} data-lang-switch="th">TH</a>{% else %}<a href="{{ '/th/' | relative_url }}"{% if current_lang == 'th' %} aria-current="true"{% endif %} data-lang-switch="th">TH</a>{% endif %}
   <span>/</span>
-
-  {% if fr_page %}
-    <a href="{{ fr_page.url | relative_url }}"{% if current_lang == 'fr' %} aria-current="true"{% endif %} data-lang-switch="fr">FR</a>
-  {% else %}
-    <a href="{{ '/fr/' | relative_url }}"{% if current_lang == 'fr' %} aria-current="true"{% endif %} data-lang-switch="fr">FR</a>
-  {% endif %}
+  {% if fr_page %}<a href="{{ fr_page.url | relative_url }}"{% if current_lang == 'fr' %} aria-current="true"{% endif %} data-lang-switch="fr">FR</a>{% else %}<a href="{{ '/fr/' | relative_url }}"{% if current_lang == 'fr' %} aria-current="true"{% endif %} data-lang-switch="fr">FR</a>{% endif %}
   <span>/</span>
-
-  {% if de_page %}
-    <a href="{{ de_page.url | relative_url }}"{% if current_lang == 'de' %} aria-current="true"{% endif %} data-lang-switch="de">DE</a>
-  {% else %}
-    <a href="{{ '/de/' | relative_url }}"{% if current_lang == 'de' %} aria-current="true"{% endif %} data-lang-switch="de">DE</a>
-  {% endif %}
+  {% if de_page %}<a href="{{ de_page.url | relative_url }}"{% if current_lang == 'de' %} aria-current="true"{% endif %} data-lang-switch="de">DE</a>{% else %}<a href="{{ '/de/' | relative_url }}"{% if current_lang == 'de' %} aria-current="true"{% endif %} data-lang-switch="de">DE</a>{% endif %}
   <span>/</span>
-
-  {% if es_page %}
-    <a href="{{ es_page.url | relative_url }}"{% if current_lang == 'es' %} aria-current="true"{% endif %} data-lang-switch="es">ES</a>
-  {% else %}
-    <a href="{{ '/es/' | relative_url }}"{% if current_lang == 'es' %} aria-current="true"{% endif %} data-lang-switch="es">ES</a>
-  {% endif %}
+  {% if es_page %}<a href="{{ es_page.url | relative_url }}"{% if current_lang == 'es' %} aria-current="true"{% endif %} data-lang-switch="es">ES</a>{% else %}<a href="{{ '/es/' | relative_url }}"{% if current_lang == 'es' %} aria-current="true"{% endif %} data-lang-switch="es">ES</a>{% endif %}
   <span>/</span>
-
-  {% if ja_page %}
-    <a href="{{ ja_page.url | relative_url }}"{% if current_lang == 'ja' %} aria-current="true"{% endif %} data-lang-switch="ja">JA</a>
-  {% else %}
-    <a href="{{ '/ja/' | relative_url }}"{% if current_lang == 'ja' %} aria-current="true"{% endif %} data-lang-switch="ja">JA</a>
-  {% endif %}
+  {% if ja_page %}<a href="{{ ja_page.url | relative_url }}"{% if current_lang == 'ja' %} aria-current="true"{% endif %} data-lang-switch="ja">JA</a>{% else %}<a href="{{ '/ja/' | relative_url }}"{% if current_lang == 'ja' %} aria-current="true"{% endif %} data-lang-switch="ja">JA</a>{% endif %}
   <span>/</span>
-
-  {% if ko_page %}
-    <a href="{{ ko_page.url | relative_url }}"{% if current_lang == 'ko' %} aria-current="true"{% endif %} data-lang-switch="ko">KO</a>
-  {% else %}
-    <a href="{{ '/ko/' | relative_url }}"{% if current_lang == 'ko' %} aria-current="true"{% endif %} data-lang-switch="ko">KO</a>
-  {% endif %}
+  {% if ko_page %}<a href="{{ ko_page.url | relative_url }}"{% if current_lang == 'ko' %} aria-current="true"{% endif %} data-lang-switch="ko">KO</a>{% else %}<a href="{{ '/ko/' | relative_url }}"{% if current_lang == 'ko' %} aria-current="true"{% endif %} data-lang-switch="ko">KO</a>{% endif %}
   <span>/</span>
-
-  {% if ptbr_page %}
-    <a href="{{ ptbr_page.url | relative_url }}"{% if current_lang == 'pt-BR' %} aria-current="true"{% endif %} data-lang-switch="pt-BR">PT-BR</a>
-  {% else %}
-    <a href="{{ '/pt-br/' | relative_url }}"{% if current_lang == 'pt-BR' %} aria-current="true"{% endif %} data-lang-switch="pt-BR">PT-BR</a>
-  {% endif %}
+  {% if ptbr_page %}<a href="{{ ptbr_page.url | relative_url }}"{% if current_lang == 'pt-BR' %} aria-current="true"{% endif %} data-lang-switch="pt-BR">PT-BR</a>{% else %}<a href="{{ '/pt-br/' | relative_url }}"{% if current_lang == 'pt-BR' %} aria-current="true"{% endif %} data-lang-switch="pt-BR">PT-BR</a>{% endif %}
   <span>/</span>
-
-  {% if ar_page %}
-    <a href="{{ ar_page.url | relative_url }}"{% if current_lang == 'ar' %} aria-current="true"{% endif %} data-lang-switch="ar">AR</a>
-  {% else %}
-    <a href="{{ '/ar/' | relative_url }}"{% if current_lang == 'ar' %} aria-current="true"{% endif %} data-lang-switch="ar">AR</a>
-  {% endif %}
+  {% if ar_page %}<a href="{{ ar_page.url | relative_url }}"{% if current_lang == 'ar' %} aria-current="true"{% endif %} data-lang-switch="ar">AR</a>{% else %}<a href="{{ '/ar/' | relative_url }}"{% if current_lang == 'ar' %} aria-current="true"{% endif %} data-lang-switch="ar">AR</a>{% endif %}
+  <span>/</span>
+  {% if he_page %}<a href="{{ he_page.url | relative_url }}"{% if current_lang == 'he' %} aria-current="true"{% endif %} data-lang-switch="he">HE</a>{% else %}<a href="{{ '/he/' | relative_url }}"{% if current_lang == 'he' %} aria-current="true"{% endif %} data-lang-switch="he">HE</a>{% endif %}
 </div>

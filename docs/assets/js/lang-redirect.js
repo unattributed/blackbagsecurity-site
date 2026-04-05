@@ -12,7 +12,8 @@
     lang.startsWith("ko") ||
     lang === "pt-br" ||
     lang.startsWith("pt") ||
-    lang.startsWith("ar")
+    lang.startsWith("ar") ||
+    lang.startsWith("he")
   );
 
   if (!target) return;
@@ -31,5 +32,9 @@
   }
   if (target.startsWith("ar")) {
     window.location.replace("/ar/");
+    return;
+  }
+  if (target.startsWith("he")) {
+    window.location.replace("/he/");
   }
 })();

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ page.lang | default: 'en' }}"{% if page.lang == 'ar' %} dir="rtl"{% endif %}>
+<html lang="{{ page.lang | default: 'en' }}"{% if page.lang == 'ar' or page.lang == 'he' %} dir="rtl"{% endif %}>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -104,6 +104,21 @@
       {% assign footer_onsite = 'المهام الميدانية' %}
       {% assign footer_policies = 'السياسات' %}
       {% assign lang_prefix = '/ar' %}
+    {% when 'he' %}
+      {% assign skip_label = 'דלג לתוכן' %}
+      {% assign home_label = 'דף הבית של Black Bag Security' %}
+      {% assign brand_tag = 'אבטחה התקפית מוכוונת תקיפה עבור מערכות בעלות השלכות גבוהות' %}
+      {% assign nav_services = 'שירותים' %}
+      {% assign nav_methodology = 'מתודולוגיה' %}
+      {% assign nav_industries = 'מגזרים' %}
+      {% assign nav_trust = 'אמון' %}
+      {% assign nav_research = 'מחקר' %}
+      {% assign nav_about = 'אודות' %}
+      {% assign nav_contact = 'יצירת קשר' %}
+      {% assign footer_rights = 'כל הזכויות שמורות.' %}
+      {% assign footer_onsite = 'התקשרויות באתר הלקוח' %}
+      {% assign footer_policies = 'מדיניות' %}
+      {% assign lang_prefix = '/he' %}
     {% else %}
       {% assign skip_label = 'Skip to content' %}
       {% assign home_label = 'Black Bag Security home' %}
