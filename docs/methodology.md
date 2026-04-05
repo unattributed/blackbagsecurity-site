@@ -1,10 +1,10 @@
 ---
 layout: default
-lang: en
-ref: methodology
 title: Methodology | Black Bag Security
 description: Deterministic offensive security methodology with scoped delivery, evidence handling, and clear reporting.
 permalink: /methodology/
+lang: en
+ref: methodology
 ---
 <section class="section">
   <div class="wrap">

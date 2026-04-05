@@ -1,10 +1,10 @@
 ---
 layout: default
-lang: en
-ref: trust
 title: Trust | Black Bag Security
 description: Governance, evidence handling, and operational safety for offensive security engagements.
 permalink: /trust/
+lang: en
+ref: trust
 ---
 <section class="section">
   <div class="wrap">

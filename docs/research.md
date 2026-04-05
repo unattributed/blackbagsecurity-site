@@ -1,10 +1,10 @@
 ---
 layout: default
-lang: en
-ref: research
 title: Research | Black Bag Security
 description: Vulnerability research and adversary techniques for high-impact systems.
 permalink: /research/
+lang: en
+ref: research
 ---
 <section class="section">
   <div class="wrap">

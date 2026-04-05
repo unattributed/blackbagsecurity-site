@@ -1,10 +1,10 @@
 ---
 layout: default
-lang: en
-ref: policies
 title: Policies | Black Bag Security
 description: Lightweight policy overview for anti-bribery, confidentiality and data handling, and coordinated disclosure.
 permalink: /policies/
+lang: en
+ref: policies
 ---
 <section class="section">
   <div class="wrap">

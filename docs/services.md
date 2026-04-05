@@ -1,10 +1,10 @@
 ---
 layout: default
-lang: en
-ref: services
 title: Services | Black Bag Security
 description: Objective-based red team operations, penetration testing, and vulnerability research with evidence-driven reporting.
 permalink: /services/
+lang: en
+ref: services
 ---
 <section class="section">
   <div class="wrap">

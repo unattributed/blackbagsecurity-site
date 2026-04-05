@@ -1,10 +1,10 @@
 ---
 layout: default
-lang: en
-ref: on_site
 title: On-Site Engagements | Black Bag Security
 description: On-site offensive security engagements with scoped access, safety controls, and evidence-driven reporting.
 permalink: /on-site-engagements/
+lang: en
+ref: on-site-engagements
 ---
 <section class="section">
   <div class="wrap">

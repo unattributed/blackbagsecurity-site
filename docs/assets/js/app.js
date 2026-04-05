@@ -1,9 +1,22 @@
 (() => {
   "use strict";
 
-  // Zero dependencies, no external calls
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
+
+  const languageLinks = document.querySelectorAll(".lang-switch a");
+  languageLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      try {
+        const value = link.textContent && link.textContent.trim().toLowerCase();
+        if (value === "en" || value === "fr") {
+          window.localStorage.setItem("bbs-language-choice", value);
+        }
+      } catch (err) {
+        // ignore storage errors
+      }
+    });
+  });
 
   const reveals = document.querySelectorAll("[data-reveal]");
   if (!reveals.length) return;

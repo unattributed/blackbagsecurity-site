@@ -1,10 +1,10 @@
 ---
 layout: default
-lang: en
-ref: industries
 title: Industries | Black Bag Security
 description: Offensive security for regulated industries and high-consequence systems.
 permalink: /industries/
+lang: en
+ref: industries
 ---
 <section class="section">
   <div class="wrap">

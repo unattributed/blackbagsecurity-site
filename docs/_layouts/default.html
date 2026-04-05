@@ -8,16 +8,6 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; frame-ancestors 'none'; form-action 'self'" />
   <meta name="theme-color" content="#0b0f14" />
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
-  {% if page.ref %}
-    {% assign alternate_pages = site.pages | where: "ref", page.ref %}
-    {% for alt in alternate_pages %}
-      <link rel="alternate" hreflang="{{ alt.lang | default: 'en' }}" href="{{ alt.url | absolute_url }}" />
-    {% endfor %}
-    {% assign en_version = alternate_pages | where: "lang", "en" | first %}
-    {% if en_version %}
-      <link rel="alternate" hreflang="x-default" href="{{ en_version.url | absolute_url }}" />
-    {% endif %}
-  {% endif %}
   <title>{{ page.title | default: site.title }}</title>
 
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}" />
@@ -31,6 +21,14 @@
   <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}" />
   <meta name="twitter:description" content="{{ page.description | default: site.description | strip | escape }}" />
 
+  {% if page.ref %}
+    {% assign alt_pages = site.pages | where: "ref", page.ref %}
+    {% for alt in alt_pages %}
+      <link rel="alternate" hreflang="{{ alt.lang }}" href="{{ alt.url | absolute_url }}" />
+    {% endfor %}
+  {% endif %}
+  <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}" />
+
   <link rel="preload" href="{{ '/assets/css/style.css' | relative_url }}" as="style" />
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
@@ -39,33 +37,33 @@
 
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
-  {% if page.url == '/services/' or page.url == '/th/services/' %}
+  {% if page.url == '/services/' or page.url == '/fr/services/' %}
   <script type="application/ld+json" src="{{ '/assets/data/service.json' | relative_url }}"></script>
   {% endif %}
 </head>
 <body>
-  <a class="skip" href="#content">{% if page.lang == 'th' %}ข้ามไปยังเนื้อหา{% else %}Skip to content{% endif %}</a>
+  <a class="skip" href="#content">{% if page.lang == 'fr' %}Aller au contenu{% else %}Skip to content{% endif %}</a>
 
   <header class="site-header">
     <div class="wrap header__inner">
-      <a class="brand" href="{% if page.lang == 'th' %}{{ '/th/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" aria-label="Black Bag Security home">
+      <a class="brand" href="{% if page.lang == 'fr' %}{{ '/fr/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" aria-label="{% if page.lang == 'fr' %}Accueil Black Bag Security{% else %}Black Bag Security home{% endif %}">
         <img class="brand__mark" src="{{ '/assets/img/logo.svg' | relative_url }}" width="36" height="36" alt="" />
         <span class="brand__text">
           <span class="brand__name">BLACK BAG SECURITY</span>
-          <span class="brand__tag">{% if page.lang == 'th' %}offense-led security for high-consequence systems{% else %}offense-led security for high-consequence systems{% endif %}</span>
+          <span class="brand__tag">{% if page.lang == 'fr' %}sécurité offensive pilotée par l'attaque pour les systèmes à fortes conséquences{% else %}offense-led security for high-consequence systems{% endif %}</span>
         </span>
       </a>
 
-      <div class="header__controls">
-        <nav class="nav" aria-label="Primary">
-          {% if page.lang == 'th' %}
-          <a href="{{ '/th/services/' | relative_url }}">บริการ</a>
-          <a href="{{ '/th/methodology/' | relative_url }}">วิธีดำเนินงาน</a>
-          <a href="{{ '/th/industries/' | relative_url }}">อุตสาหกรรม</a>
-          <a href="{{ '/th/trust/' | relative_url }}">ความน่าเชื่อถือ</a>
-          <a href="{{ '/th/research/' | relative_url }}">งานวิจัย</a>
-          <a href="{{ '/th/about/' | relative_url }}">เกี่ยวกับ</a>
-          <a href="{{ '/th/contact/' | relative_url }}">ติดต่อ</a>
+      <div class="nav-group">
+        <nav class="nav" aria-label="{% if page.lang == 'fr' %}Navigation principale{% else %}Primary{% endif %}">
+          {% if page.lang == 'fr' %}
+          <a href="{{ '/fr/services/' | relative_url }}">services</a>
+          <a href="{{ '/fr/methodology/' | relative_url }}">méthodologie</a>
+          <a href="{{ '/fr/industries/' | relative_url }}">secteurs</a>
+          <a href="{{ '/fr/trust/' | relative_url }}">confiance</a>
+          <a href="{{ '/fr/research/' | relative_url }}">recherche</a>
+          <a href="{{ '/fr/about/' | relative_url }}">à propos</a>
+          <a href="{{ '/fr/contact/' | relative_url }}">contact</a>
           {% else %}
           <a href="{{ '/services/' | relative_url }}">services</a>
           <a href="{{ '/methodology/' | relative_url }}">methodology</a>
@@ -86,17 +84,19 @@
   </main>
 
   <footer class="footer wrap">
-    <div>&copy; <span id="year"></span> Black Bag Security. {% if page.lang == 'th' %}สงวนสิทธิ์ทุกประการ{% else %}All rights reserved.{% endif %}</div>
+    <div>&copy; <span id="year"></span> Black Bag Security. {% if page.lang == 'fr' %}Tous droits réservés.{% else %}All rights reserved.{% endif %}</div>
     <div>
       <a href="{{ '/security.txt' | relative_url }}">security.txt</a>
       | <a href="{{ '/.well-known/security.txt' | relative_url }}">.well-known/security.txt</a>
-      | <a href="{% if page.lang == 'th' %}{{ '/th/on-site-engagements/' | relative_url }}{% else %}{{ '/on-site-engagements/' | relative_url }}{% endif %}">{% if page.lang == 'th' %}การดำเนินงานนอกสถานที่{% else %}on-site engagements{% endif %}</a>
-      | <a href="{% if page.lang == 'th' %}{{ '/th/policies/' | relative_url }}{% else %}{{ '/policies/' | relative_url }}{% endif %}">{% if page.lang == 'th' %}นโยบาย{% else %}policies{% endif %}</a>
-      | <a href="{% if page.lang == 'th' %}{{ '/th/contact/' | relative_url }}{% else %}{{ '/contact/' | relative_url }}{% endif %}">{% if page.lang == 'th' %}ติดต่อ{% else %}contact{% endif %}</a>
+      | <a href="{% if page.lang == 'fr' %}{{ '/fr/on-site-engagements/' | relative_url }}{% else %}{{ '/on-site-engagements/' | relative_url }}{% endif %}">{% if page.lang == 'fr' %}missions sur site{% else %}on-site engagements{% endif %}</a>
+      | <a href="{% if page.lang == 'fr' %}{{ '/fr/policies/' | relative_url }}{% else %}{{ '/policies/' | relative_url }}{% endif %}">{% if page.lang == 'fr' %}politiques{% else %}policies{% endif %}</a>
+      | <a href="{% if page.lang == 'fr' %}{{ '/fr/contact/' | relative_url }}{% else %}{{ '/contact/' | relative_url }}{% endif %}">contact</a>
     </div>
   </footer>
 
   <script src="{{ '/assets/js/app.js' | relative_url }}" defer></script>
+  {% if page.lang == 'en' %}
   <script src="{{ '/assets/js/lang-redirect.js' | relative_url }}" defer></script>
+  {% endif %}
 </body>
 </html>
