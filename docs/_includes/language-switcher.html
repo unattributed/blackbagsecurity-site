@@ -2,39 +2,39 @@
 {% assign current_lang = page.lang | default: 'en' %}
 {% if current_ref %}
   {% assign en_page = site.pages | where: "ref", current_ref | where: "lang", "en" | first %}
-  {% assign th_page = site.pages | where: "ref", current_ref | where: "lang", "th" | first %}
-  {% assign fr_page = site.pages | where: "ref", current_ref | where: "lang", "fr" | first %}
-  {% assign de_page = site.pages | where: "ref", current_ref | where: "lang", "de" | first %}
-  {% assign es_page = site.pages | where: "ref", current_ref | where: "lang", "es" | first %}
+  {% assign ja_page = site.pages | where: "ref", current_ref | where: "lang", "ja" | first %}
+  {% assign ko_page = site.pages | where: "ref", current_ref | where: "lang", "ko" | first %}
+  {% assign ptbr_page = site.pages | where: "ref", current_ref | where: "lang", "pt-BR" | first %}
+  {% assign ar_page = site.pages | where: "ref", current_ref | where: "lang", "ar" | first %}
 {% endif %}
-<div class="language-switcher" aria-label="Language selector">
+<div class="lang-switcher" aria-label="Language switcher">
   {% if en_page %}
     <a href="{{ en_page.url | relative_url }}"{% if current_lang == 'en' %} aria-current="true"{% endif %} data-lang-switch="en">EN</a>
   {% else %}
     <a href="{{ '/' | relative_url }}"{% if current_lang == 'en' %} aria-current="true"{% endif %} data-lang-switch="en">EN</a>
   {% endif %}
-  <span class="language-switcher__sep">/</span>
-  {% if th_page %}
-    <a href="{{ th_page.url | relative_url }}"{% if current_lang == 'th' %} aria-current="true"{% endif %} data-lang-switch="th">TH</a>
+  <span>/</span>
+  {% if ja_page %}
+    <a href="{{ ja_page.url | relative_url }}"{% if current_lang == 'ja' %} aria-current="true"{% endif %} data-lang-switch="ja">JA</a>
   {% else %}
-    <a href="{{ '/th/' | relative_url }}"{% if current_lang == 'th' %} aria-current="true"{% endif %} data-lang-switch="th">TH</a>
+    <a href="{{ '/ja/' | relative_url }}"{% if current_lang == 'ja' %} aria-current="true"{% endif %} data-lang-switch="ja">JA</a>
   {% endif %}
-  <span class="language-switcher__sep">/</span>
-  {% if fr_page %}
-    <a href="{{ fr_page.url | relative_url }}"{% if current_lang == 'fr' %} aria-current="true"{% endif %} data-lang-switch="fr">FR</a>
+  <span>/</span>
+  {% if ko_page %}
+    <a href="{{ ko_page.url | relative_url }}"{% if current_lang == 'ko' %} aria-current="true"{% endif %} data-lang-switch="ko">KO</a>
   {% else %}
-    <a href="{{ '/fr/' | relative_url }}"{% if current_lang == 'fr' %} aria-current="true"{% endif %} data-lang-switch="fr">FR</a>
+    <a href="{{ '/ko/' | relative_url }}"{% if current_lang == 'ko' %} aria-current="true"{% endif %} data-lang-switch="ko">KO</a>
   {% endif %}
-  <span class="language-switcher__sep">/</span>
-  {% if de_page %}
-    <a href="{{ de_page.url | relative_url }}"{% if current_lang == 'de' %} aria-current="true"{% endif %} data-lang-switch="de">DE</a>
+  <span>/</span>
+  {% if ptbr_page %}
+    <a href="{{ ptbr_page.url | relative_url }}"{% if current_lang == 'pt-BR' %} aria-current="true"{% endif %} data-lang-switch="pt-BR">PT-BR</a>
   {% else %}
-    <a href="{{ '/de/' | relative_url }}"{% if current_lang == 'de' %} aria-current="true"{% endif %} data-lang-switch="de">DE</a>
+    <a href="{{ '/pt-br/' | relative_url }}"{% if current_lang == 'pt-BR' %} aria-current="true"{% endif %} data-lang-switch="pt-BR">PT-BR</a>
   {% endif %}
-  <span class="language-switcher__sep">/</span>
-  {% if es_page %}
-    <a href="{{ es_page.url | relative_url }}"{% if current_lang == 'es' %} aria-current="true"{% endif %} data-lang-switch="es">ES</a>
+  <span>/</span>
+  {% if ar_page %}
+    <a href="{{ ar_page.url | relative_url }}"{% if current_lang == 'ar' %} aria-current="true"{% endif %} data-lang-switch="ar">AR</a>
   {% else %}
-    <a href="{{ '/es/' | relative_url }}"{% if current_lang == 'es' %} aria-current="true"{% endif %} data-lang-switch="es">ES</a>
+    <a href="{{ '/ar/' | relative_url }}"{% if current_lang == 'ar' %} aria-current="true"{% endif %} data-lang-switch="ar">AR</a>
   {% endif %}
 </div>

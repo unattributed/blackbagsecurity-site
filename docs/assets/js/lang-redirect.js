@@ -1,30 +1,35 @@
 (() => {
   "use strict";
+  const path = window.location.pathname || "/";
+  const rootPaths = ["/", "/index.html"];
+  if (!rootPaths.includes(path)) return;
 
-  if (window.location.pathname !== "/" && window.location.pathname !== "/index.html") return;
+  const langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+  const normalized = langs.map((lang) => String(lang).toLowerCase());
 
-  try {
-    const langPref = (navigator.languages && navigator.languages[0]) || navigator.language || "";
-    const normalized = String(langPref).toLowerCase();
+  const target = normalized.find((lang) =>
+    lang.startsWith("ja") ||
+    lang.startsWith("ko") ||
+    lang === "pt-br" ||
+    lang.startsWith("pt") ||
+    lang.startsWith("ar")
+  );
 
-    if (normalized.startsWith("th")) {
-      window.location.replace("/th/");
-      return;
-    }
+  if (!target) return;
 
-    if (normalized.startsWith("fr")) {
-      window.location.replace("/fr/");
-      return;
-    }
-
-    if (normalized.startsWith("de")) {
-      window.location.replace("/de/");
-      return;
-    }
-
-    if (normalized.startsWith("es")) {
-      window.location.replace("/es/");
-    }
-  } catch (err) {
+  if (target.startsWith("ja")) {
+    window.location.replace("/ja/");
+    return;
+  }
+  if (target.startsWith("ko")) {
+    window.location.replace("/ko/");
+    return;
+  }
+  if (target === "pt-br" || target.startsWith("pt")) {
+    window.location.replace("/pt-br/");
+    return;
+  }
+  if (target.startsWith("ar")) {
+    window.location.replace("/ar/");
   }
 })();

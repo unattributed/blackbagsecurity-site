@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ page.lang | default: 'en' }}">
+<html lang="{{ page.lang | default: 'en' }}"{% if page.lang == 'ar' %} dir="rtl"{% endif %}>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -39,58 +39,110 @@
 
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
-  {% if page.url == '/services/' or page.url == '/th/services/' or page.url == '/fr/services/' or page.url == '/de/services/' or page.url == '/es/services/' %}
+  {% if page.ref == 'services' %}
   <script type="application/ld+json" src="{{ '/assets/data/service.json' | relative_url }}"></script>
   {% endif %}
+
+  {% case page.lang %}
+    {% when 'ja' %}
+      {% assign skip_label = 'コンテンツへ移動' %}
+      {% assign home_label = 'Black Bag Security ホーム' %}
+      {% assign brand_tag = '高影響システム向けの攻撃主導型セキュリティ' %}
+      {% assign nav_services = 'サービス' %}
+      {% assign nav_methodology = '方法論' %}
+      {% assign nav_industries = '業界' %}
+      {% assign nav_trust = '信頼' %}
+      {% assign nav_research = '研究' %}
+      {% assign nav_about = '会社情報' %}
+      {% assign nav_contact = 'お問い合わせ' %}
+      {% assign footer_rights = '無断転載を禁じます。' %}
+      {% assign footer_onsite = 'オンサイト対応' %}
+      {% assign footer_policies = 'ポリシー' %}
+      {% assign lang_prefix = '/ja' %}
+    {% when 'ko' %}
+      {% assign skip_label = '본문으로 건너뛰기' %}
+      {% assign home_label = 'Black Bag Security 홈' %}
+      {% assign brand_tag = '고위험 시스템을 위한 공격 주도형 보안' %}
+      {% assign nav_services = '서비스' %}
+      {% assign nav_methodology = '방법론' %}
+      {% assign nav_industries = '산업' %}
+      {% assign nav_trust = '신뢰' %}
+      {% assign nav_research = '연구' %}
+      {% assign nav_about = '회사 소개' %}
+      {% assign nav_contact = '문의' %}
+      {% assign footer_rights = '모든 권리 보유.' %}
+      {% assign footer_onsite = '현장 참여' %}
+      {% assign footer_policies = '정책' %}
+      {% assign lang_prefix = '/ko' %}
+    {% when 'pt-BR' %}
+      {% assign skip_label = 'Ir para o conteúdo' %}
+      {% assign home_label = 'Página inicial da Black Bag Security' %}
+      {% assign brand_tag = 'segurança ofensiva orientada por ataque para sistemas de alto impacto' %}
+      {% assign nav_services = 'serviços' %}
+      {% assign nav_methodology = 'metodologia' %}
+      {% assign nav_industries = 'setores' %}
+      {% assign nav_trust = 'confiança' %}
+      {% assign nav_research = 'pesquisa' %}
+      {% assign nav_about = 'sobre' %}
+      {% assign nav_contact = 'contato' %}
+      {% assign footer_rights = 'Todos os direitos reservados.' %}
+      {% assign footer_onsite = 'atuações presenciais' %}
+      {% assign footer_policies = 'políticas' %}
+      {% assign lang_prefix = '/pt-br' %}
+    {% when 'ar' %}
+      {% assign skip_label = 'الانتقال إلى المحتوى' %}
+      {% assign home_label = 'الصفحة الرئيسية لـ Black Bag Security' %}
+      {% assign brand_tag = 'أمن هجومي قائم على الهجوم للأنظمة عالية التأثير' %}
+      {% assign nav_services = 'الخدمات' %}
+      {% assign nav_methodology = 'المنهجية' %}
+      {% assign nav_industries = 'القطاعات' %}
+      {% assign nav_trust = 'الثقة' %}
+      {% assign nav_research = 'البحث' %}
+      {% assign nav_about = 'من نحن' %}
+      {% assign nav_contact = 'اتصل' %}
+      {% assign footer_rights = 'جميع الحقوق محفوظة.' %}
+      {% assign footer_onsite = 'المهام الميدانية' %}
+      {% assign footer_policies = 'السياسات' %}
+      {% assign lang_prefix = '/ar' %}
+    {% else %}
+      {% assign skip_label = 'Skip to content' %}
+      {% assign home_label = 'Black Bag Security home' %}
+      {% assign brand_tag = 'offense-led security for high-consequence systems' %}
+      {% assign nav_services = 'services' %}
+      {% assign nav_methodology = 'methodology' %}
+      {% assign nav_industries = 'industries' %}
+      {% assign nav_trust = 'trust' %}
+      {% assign nav_research = 'research' %}
+      {% assign nav_about = 'about' %}
+      {% assign nav_contact = 'contact' %}
+      {% assign footer_rights = 'All rights reserved.' %}
+      {% assign footer_onsite = 'on-site engagements' %}
+      {% assign footer_policies = 'policies' %}
+      {% assign lang_prefix = '' %}
+  {% endcase %}
 </head>
 <body>
-  <a class="skip" href="#content">{% if page.lang == 'fr' %}Aller au contenu{% elsif page.lang == 'de' %}Zum Inhalt springen{% elsif page.lang == 'es' %}Saltar al contenido{% else %}Skip to content{% endif %}</a>
+  <a class="skip" href="#content">{{ skip_label }}</a>
 
   <header class="site-header">
     <div class="wrap header__inner">
-      <a class="brand" href="{% if page.lang == 'th' %}{{ '/th/' | relative_url }}{% elsif page.lang == 'fr' %}{{ '/fr/' | relative_url }}{% elsif page.lang == 'de' %}{{ '/de/' | relative_url }}{% elsif page.lang == 'es' %}{{ '/es/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" aria-label="{% if page.lang == 'fr' %}Accueil Black Bag Security{% elsif page.lang == 'de' %}Startseite von Black Bag Security{% elsif page.lang == 'es' %}Inicio de Black Bag Security{% elsif page.lang == 'th' %}หน้าหลัก Black Bag Security{% else %}Black Bag Security home{% endif %}">
+      <a class="brand" href="{% if lang_prefix == '' %}{{ '/' | relative_url }}{% else %}{{ lang_prefix | append: '/' | relative_url }}{% endif %}" aria-label="{{ home_label }}">
         <img class="brand__mark" src="{{ '/assets/img/logo.svg' | relative_url }}" width="36" height="36" alt="" />
         <span class="brand__text">
           <span class="brand__name">BLACK BAG SECURITY</span>
-          <span class="brand__tag">{% if page.lang == 'fr' %}sécurité offensive pilotée par l'attaque pour les systèmes à fortes conséquences{% elsif page.lang == 'de' %}angriffsorientierte sicherheit für systeme mit hohen auswirkungen{% elsif page.lang == 'es' %}seguridad ofensiva orientada al ataque para sistemas de alto impacto{% else %}offense-led security for high-consequence systems{% endif %}</span>
+          <span class="brand__tag">{{ brand_tag }}</span>
         </span>
       </a>
 
       <div class="nav-group">
-        <nav class="nav" aria-label="{% if page.lang == 'fr' %}Navigation principale{% elsif page.lang == 'de' %}Hauptnavigation{% elsif page.lang == 'es' %}Navegación principal{% else %}Primary{% endif %}">
-          {% if page.lang == 'fr' %}
-          <a href="{{ '/fr/services/' | relative_url }}">services</a>
-          <a href="{{ '/fr/methodology/' | relative_url }}">méthodologie</a>
-          <a href="{{ '/fr/industries/' | relative_url }}">secteurs</a>
-          <a href="{{ '/fr/trust/' | relative_url }}">confiance</a>
-          <a href="{{ '/fr/research/' | relative_url }}">recherche</a>
-          <a href="{{ '/fr/about/' | relative_url }}">à propos</a>
-          <a href="{{ '/fr/contact/' | relative_url }}">contact</a>
-          {% elsif page.lang == 'de' %}
-          <a href="{{ '/de/services/' | relative_url }}">leistungen</a>
-          <a href="{{ '/de/methodology/' | relative_url }}">methodik</a>
-          <a href="{{ '/de/industries/' | relative_url }}">branchen</a>
-          <a href="{{ '/de/trust/' | relative_url }}">vertrauen</a>
-          <a href="{{ '/de/research/' | relative_url }}">forschung</a>
-          <a href="{{ '/de/about/' | relative_url }}">über uns</a>
-          <a href="{{ '/de/contact/' | relative_url }}">kontakt</a>
-          {% elsif page.lang == 'es' %}
-          <a href="{{ '/es/services/' | relative_url }}">servicios</a>
-          <a href="{{ '/es/methodology/' | relative_url }}">metodología</a>
-          <a href="{{ '/es/industries/' | relative_url }}">sectores</a>
-          <a href="{{ '/es/trust/' | relative_url }}">confianza</a>
-          <a href="{{ '/es/research/' | relative_url }}">investigación</a>
-          <a href="{{ '/es/about/' | relative_url }}">nosotros</a>
-          <a href="{{ '/es/contact/' | relative_url }}">contacto</a>
-          {% else %}
-          <a href="{{ '/services/' | relative_url }}">services</a>
-          <a href="{{ '/methodology/' | relative_url }}">methodology</a>
-          <a href="{{ '/industries/' | relative_url }}">industries</a>
-          <a href="{{ '/trust/' | relative_url }}">trust</a>
-          <a href="{{ '/research/' | relative_url }}">research</a>
-          <a href="{{ '/about/' | relative_url }}">about</a>
-          <a href="{{ '/contact/' | relative_url }}">contact</a>
-          {% endif %}
+        <nav class="nav" aria-label="Primary">
+          <a href="{% if lang_prefix == '' %}{{ '/services/' | relative_url }}{% else %}{{ lang_prefix | append: '/services/' | relative_url }}{% endif %}">{{ nav_services }}</a>
+          <a href="{% if lang_prefix == '' %}{{ '/methodology/' | relative_url }}{% else %}{{ lang_prefix | append: '/methodology/' | relative_url }}{% endif %}">{{ nav_methodology }}</a>
+          <a href="{% if lang_prefix == '' %}{{ '/industries/' | relative_url }}{% else %}{{ lang_prefix | append: '/industries/' | relative_url }}{% endif %}">{{ nav_industries }}</a>
+          <a href="{% if lang_prefix == '' %}{{ '/trust/' | relative_url }}{% else %}{{ lang_prefix | append: '/trust/' | relative_url }}{% endif %}">{{ nav_trust }}</a>
+          <a href="{% if lang_prefix == '' %}{{ '/research/' | relative_url }}{% else %}{{ lang_prefix | append: '/research/' | relative_url }}{% endif %}">{{ nav_research }}</a>
+          <a href="{% if lang_prefix == '' %}{{ '/about/' | relative_url }}{% else %}{{ lang_prefix | append: '/about/' | relative_url }}{% endif %}">{{ nav_about }}</a>
+          <a href="{% if lang_prefix == '' %}{{ '/contact/' | relative_url }}{% else %}{{ lang_prefix | append: '/contact/' | relative_url }}{% endif %}">{{ nav_contact }}</a>
         </nav>
         {% include language-switcher.html %}
       </div>
@@ -102,13 +154,13 @@
   </main>
 
   <footer class="footer wrap">
-    <div>&copy; <span id="year"></span> Black Bag Security. {% if page.lang == 'fr' %}Tous droits réservés.{% elsif page.lang == 'de' %}Alle Rechte vorbehalten.{% elsif page.lang == 'es' %}Todos los derechos reservados.{% else %}All rights reserved.{% endif %}</div>
+    <div>&copy; <span id="year"></span> Black Bag Security. {{ footer_rights }}</div>
     <div>
       <a href="{{ '/security.txt' | relative_url }}">security.txt</a>
       | <a href="{{ '/.well-known/security.txt' | relative_url }}">.well-known/security.txt</a>
-      | <a href="{% if page.lang == 'fr' %}{{ '/fr/on-site-engagements/' | relative_url }}{% elsif page.lang == 'de' %}{{ '/de/on-site-engagements/' | relative_url }}{% elsif page.lang == 'es' %}{{ '/es/on-site-engagements/' | relative_url }}{% else %}{{ '/on-site-engagements/' | relative_url }}{% endif %}">{% if page.lang == 'fr' %}missions sur site{% elsif page.lang == 'de' %}einsätze vor ort{% elsif page.lang == 'es' %}intervenciones presenciales{% else %}on-site engagements{% endif %}</a>
-      | <a href="{% if page.lang == 'fr' %}{{ '/fr/policies/' | relative_url }}{% elsif page.lang == 'de' %}{{ '/de/policies/' | relative_url }}{% elsif page.lang == 'es' %}{{ '/es/policies/' | relative_url }}{% else %}{{ '/policies/' | relative_url }}{% endif %}">{% if page.lang == 'fr' %}politiques{% elsif page.lang == 'de' %}richtlinien{% elsif page.lang == 'es' %}políticas{% else %}policies{% endif %}</a>
-      | <a href="{% if page.lang == 'fr' %}{{ '/fr/contact/' | relative_url }}{% elsif page.lang == 'de' %}{{ '/de/contact/' | relative_url }}{% elsif page.lang == 'es' %}{{ '/es/contact/' | relative_url }}{% else %}{{ '/contact/' | relative_url }}{% endif %}">contact</a>
+      | <a href="{% if lang_prefix == '' %}{{ '/on-site-engagements/' | relative_url }}{% else %}{{ lang_prefix | append: '/on-site-engagements/' | relative_url }}{% endif %}">{{ footer_onsite }}</a>
+      | <a href="{% if lang_prefix == '' %}{{ '/policies/' | relative_url }}{% else %}{{ lang_prefix | append: '/policies/' | relative_url }}{% endif %}">{{ footer_policies }}</a>
+      | <a href="{% if lang_prefix == '' %}{{ '/contact/' | relative_url }}{% else %}{{ lang_prefix | append: '/contact/' | relative_url }}{% endif %}">{{ nav_contact }}</a>
     </div>
   </footer>
 

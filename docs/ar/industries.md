@@ -1,0 +1,11 @@
+---
+layout: default
+title: القطاعات | Black Bag Security
+description: أمن هجومي للقطاعات المنظمة والأنظمة عالية التأثير.
+permalink: /ar/industries/
+lang: ar
+ref: industries
+---
+<section class="section"><div class="wrap"><div class="section__head reveal" data-reveal><h1>القطاعات</h1><p>تغطية مركزة للأنظمة التي تؤثر في السلامة العامة والأمن الوطني واستمرارية الأعمال.</p></div><div class="pill-row reveal delay-1" data-reveal><span class="pill">الرعاية الصحية + الأجهزة الطبية</span><span class="pill">الخدمات المالية</span><span class="pill">الطاقة + المرافق</span><span class="pill">الفضاء والطيران</span><span class="pill">الدفاع + الحكومة</span><span class="pill">SaaS + المنصات السحابية</span></div></div></section>
+<section class="section"><div class="wrap"><div class="cap-grid"><article class="cap-card reveal delay-1" data-reveal><h3>البنية التحتية الحرجة</h3><p>تقنية تشغيل وشبكات مقسمة وأنظمة سلامة ضمن نوافذ تغيير صارمة.</p><span class="cap-tag">اختبار يقدّم السلامة أولاً</span></article><article class="cap-card reveal delay-2" data-reveal><h3>الرعاية الصحية المنظمة</h3><p>حماية بيانات المرضى وأمن الأجهزة ومرونة العمليات السريرية.</p><span class="cap-tag">حساسية PHI</span></article><article class="cap-card reveal delay-3" data-reveal><h3>الأنظمة المالية</h3><p>ضمان الهوية وسلامة المعاملات ومسارات الاحتيال.</p><span class="cap-tag">متوافق مع التدقيق</span></article><article class="cap-card reveal delay-4" data-reveal><h3>المنصات السحابية الأصلية</h3><p>تعرض الهوية والإعدادات وسلسلة التوريد عبر بيئات معقدة.</p><span class="cap-tag">جاهز لعدم الثقة</span></article></div></div></section>
+<section class="section"><div class="wrap"><div class="section__head reveal" data-reveal><h2>التركيز على النتائج</h2><p>يتم تحديد الارتباطات لدعم استمرارية المهمة والضمان التنظيمي.</p></div><div class="split"><div class="stack reveal delay-1" data-reveal><h3>أهداف نموذجية</h3><ul class="outcomes"><li>التحقق من الكشف والاستجابة لسيناريوهات عالية الأثر.</li><li>تأكيد قابلية استغلال مسارات التعرض الحرجة.</li><li>تقليل وقت المعالجة لنقاط الضعف المعروفة.</li></ul></div><div class="stack reveal delay-2" data-reveal><h3>قيود التسليم</h3><ul class="outcomes"><li>تنفيذ محدد النطاق ومتوافق مع متطلبات السلامة والإتاحة.</li><li>تعامل مع الأدلة منسجم مع الحوكمة الداخلية.</li><li>تقارير واضحة لأصحاب المصلحة التقنيين والتنفيذيين.</li></ul></div></div></div></section>

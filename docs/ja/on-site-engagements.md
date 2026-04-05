@@ -1,0 +1,11 @@
+---
+layout: default
+title: オンサイト対応 | Black Bag Security
+description: スコープ化されたアクセス、安全統制、証拠重視の報告を伴うオンサイトのオフェンシブセキュリティ案件。
+permalink: /ja/on-site-engagements/
+lang: ja
+ref: onsite
+---
+<section class="section"><div class="wrap"><div class="section__head reveal" data-reveal><h1>オンサイト対応</h1><p>現地での状況理解が重要な評価、検証、インシデント支援、技術助言のためのオンサイト提供。</p></div><div class="split"><div class="stack stack--signal stack--scope reveal delay-1" data-reveal><h3>目的と適合</h3><ul class="outcomes"><li><span class="mono">評価:</span> 施設、ネットワーク、アプリケーション、運用者ワークフローのスコープ型テスト。</li><li><span class="mono">検証:</span> 合意済みの本番または本番近似時間帯での攻撃経路と制御確認。</li><li><span class="mono">インシデント支援:</span> 対応仮説を検証する標的型敵対者シミュレーション。</li><li><span class="mono">助言:</span> 強化優先順位と是正計画の技術ワークショップ。</li></ul></div><div class="stack stack--signal stack--safety reveal delay-2" data-reveal><h3>アクセスと安全統制</h3><ul class="outcomes"><li>オンサイト作業は指定された顧客エスコートまたは承認済み監督モデルで実施。</li><li>ROE で停止条件、対象外システム、エスカレーション経路を定義。</li><li>テスト時間帯と本番保護を事前合意。</li><li>リスクが閾値を超えた場合は即時停止。</li></ul></div></div></div></section>
+<section class="section"><div class="wrap"><div class="split"><div class="stack stack--signal stack--evidence reveal delay-1" data-reveal><h3>証拠の取り扱い</h3><ul class="outcomes"><li>収集は影響証明に必要な範囲へ最小化。</li><li>証拠搬出はチェーン・オブ・カストディ記録に従う。</li><li>写真、動画、画面取得は明示的許可がある場合のみ。</li><li>保管と転送は顧客承認済みの安全な経路を使用。</li><li>国内保管要件には、可能な範囲で運用を合わせます。</li></ul></div><div class="stack stack--signal stack--transparency reveal delay-2" data-reveal><h3>コミュニケーションと報告</h3><ul class="outcomes"><li>技術責任者と案件責任者との日次同期。</li><li>重大所見や想定外の影響は即時エスカレーション。</li><li>最終化前に文脈確認のためのドラフトレビュー。</li><li>修正後の再検証もオプションで提供。</li></ul></div></div></div></section>
+<section class="section"><div class="wrap"><div class="split"><div class="stack stack--signal stack--inputs reveal delay-1" data-reveal><h3>お客様側で必要な入力</h3><ul class="outcomes"><li>技術判断とガバナンス判断の主担当および副担当。</li><li>共有可能な範囲でのネットワーク図、データフロー、資産一覧。</li><li>最小権限でのテストアカウントとアクセス方法。</li><li>施設ルール、エスコート要件、許容使用制約。</li><li>越境制限を含む法務・契約上の制約。</li></ul></div><div class="stack stack--signal stack--secure reveal delay-2" data-reveal><h3>規制環境と越境環境</h3><p>実施と証拠取り扱いは、業界統制、プライバシー要件、移転制限に合わせて調整できます。</p><p>法的解釈はお客様の法務またはコンプライアンス部門によるものとし、私たちは承認要件と文書化された制約に沿って運用します。</p><p class="mono"><a href="{{ '/ja/contact/' | relative_url }}">オンサイト範囲を相談する -></a></p></div></div></div></section>

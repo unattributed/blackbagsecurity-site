@@ -1,0 +1,11 @@
+---
+layout: default
+title: 정책 | Black Bag Security
+description: 반부패, 기밀성 및 데이터 처리, 조정 공개에 대한 간결한 정책 개요.
+permalink: /ko/policies/
+lang: ko
+ref: policies
+---
+<section class="section"><div class="wrap"><div class="section__head reveal" data-reveal><h1>정책</h1><p>수행을 위한 평이한 정책 표면, 반부패, 기밀성과 데이터 처리, 공개.</p></div><div class="model-grid"><article class="model-card reveal delay-1" data-reveal><h3>반부패 원칙</h3><p>부적절한 지급, 선물, 편의 제공은 허용되지 않습니다. 적용 법령 준수는 필수입니다.</p></article><article class="model-card reveal delay-2" data-reveal><h3>기밀성 모델</h3><p>고객 소유 데이터, 최소 수집, 통제된 저장과 공유, 합의된 보관.</p></article><article class="model-card reveal delay-3" data-reveal><h3>공개 개요</h3><p>고객 승인과 상황별 일정에 기반한 조정 공개.</p></article></div></div></section>
+<section class="section"><div class="wrap"><div class="split"><div class="stack stack--signal stack--principles reveal delay-1" data-reveal><h3>반부패</h3><ul class="outcomes"><li>사업을 수행하는 관할의 반부패 및 뇌물방지 법을 준수합니다.</li><li>부적절한 지급, 리베이트, 편의 제공을 제안, 요청, 승인, 수락하지 않습니다.</li><li>선물이나 접대는 합법적이고 절제되어야 하며 조달이나 결과와 연계되지 않습니다.</li><li>의심되는 위반은 내부 에스컬레이션하고 필요시 합의된 채널로 보고합니다.</li></ul></div><div class="stack stack--signal stack--data-handling reveal delay-2" data-reveal><h3>기밀성과 데이터 처리</h3><ul class="outcomes"><li>고객 데이터와 증거는 고객 소유입니다.</li><li>결과 검증과 영향 증명을 위해 필요한 범위만 수집합니다.</li><li>보관과 삭제 기간은 서면 합의로 정합니다.</li><li>산출물은 통제되고 승인된 채널로 저장 및 전송합니다.</li><li>접근은 필요 최소한의 승인 인원에 한정됩니다.</li><li>고객 데이터가 포함된 AI 도구 사용은 명시적 서면 승인과 범위 합의가 필요합니다.</li></ul></div></div></div></section>
+<section class="section"><div class="wrap"><div class="split"><div class="stack stack--signal stack--disclosure reveal delay-1" data-reveal><h3>공개 정책 개요</h3><ul class="outcomes"><li>기본값으로 조정 공개와 이해관계자 정렬을 사용합니다.</li><li>외부 커뮤니케이션 전 고객 승인으로 공개 계획을 범위화합니다.</li><li>일정은 운영 위험, 개선 상태, 법적 제약에 따라 달라집니다.</li><li>법적 요구가 없는 한 서면 허가 없이 고객 결과를 공개하지 않습니다.</li></ul></div><div class="stack stack--signal stack--scope reveal delay-2" data-reveal><h3>책임 있는 수행</h3><ul class="outcomes"><li>작업은 승인된 범위와 시간대 안에서만 수행됩니다.</li><li>운영 안전, 중지 조건, 에스컬레이션 경로를 지속 적용합니다.</li><li>서면 허가 없이 고객 신원과 수행 세부를 공개하지 않습니다.</li></ul><p class="mono"><a href="{{ '/ko/trust/' | relative_url }}">신뢰 운영 -></a></p><p class="mono"><a href="{{ '/ko/contact/' | relative_url }}">정책 문의 -></a></p></div></div></div></section>
