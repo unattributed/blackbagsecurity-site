@@ -19,6 +19,11 @@
 
     if (normalized.startsWith("de")) {
       window.location.replace("/de/");
+      return;
+    }
+
+    if (normalized.startsWith("es")) {
+      window.location.replace("/es/");
     }
   } catch (err) {
   }
