@@ -1,32 +1,33 @@
+{% assign current_ref = page.ref | default: nil %}
 {% assign current_lang = page.lang | default: 'en' %}
-{% assign page_ref = page.ref | default: '' %}
-
+{% if current_ref %}
+  {% assign en_page = site.pages | where: "ref", current_ref | where: "lang", "en" | first %}
+  {% assign th_page = site.pages | where: "ref", current_ref | where: "lang", "th" | first %}
+  {% assign fr_page = site.pages | where: "ref", current_ref | where: "lang", "fr" | first %}
+  {% assign de_page = site.pages | where: "ref", current_ref | where: "lang", "de" | first %}
+{% endif %}
 <div class="language-switcher" aria-label="Language selector">
-  {% if current_lang == 'en' %}
-    <span class="language-switcher__current">EN</span>
-  {% elsif page_ref != '' %}
-    <a href="{% for p in site.pages %}{% if p.ref == page_ref and p.lang == 'en' %}{{ p.url | relative_url }}{% break %}{% endif %}{% endfor %}">EN</a>
+  {% if en_page %}
+    <a href="{{ en_page.url | relative_url }}"{% if current_lang == 'en' %} aria-current="true"{% endif %} data-lang-switch="en">EN</a>
   {% else %}
-    <a href="{{ '/' | relative_url }}">EN</a>
+    <a href="{{ '/' | relative_url }}"{% if current_lang == 'en' %} aria-current="true"{% endif %} data-lang-switch="en">EN</a>
   {% endif %}
-
   <span class="language-switcher__sep">/</span>
-
-  {% if current_lang == 'th' %}
-    <span class="language-switcher__current">TH</span>
-  {% elsif page_ref != '' %}
-    <a href="{% for p in site.pages %}{% if p.ref == page_ref and p.lang == 'th' %}{{ p.url | relative_url }}{% break %}{% endif %}{% endfor %}">TH</a>
+  {% if th_page %}
+    <a href="{{ th_page.url | relative_url }}"{% if current_lang == 'th' %} aria-current="true"{% endif %} data-lang-switch="th">TH</a>
   {% else %}
-    <a href="{{ '/th/' | relative_url }}">TH</a>
+    <a href="{{ '/th/' | relative_url }}"{% if current_lang == 'th' %} aria-current="true"{% endif %} data-lang-switch="th">TH</a>
   {% endif %}
-
   <span class="language-switcher__sep">/</span>
-
-  {% if current_lang == 'fr' %}
-    <span class="language-switcher__current">FR</span>
-  {% elsif page_ref != '' %}
-    <a href="{% for p in site.pages %}{% if p.ref == page_ref and p.lang == 'fr' %}{{ p.url | relative_url }}{% break %}{% endif %}{% endfor %}">FR</a>
+  {% if fr_page %}
+    <a href="{{ fr_page.url | relative_url }}"{% if current_lang == 'fr' %} aria-current="true"{% endif %} data-lang-switch="fr">FR</a>
   {% else %}
-    <a href="{{ '/fr/' | relative_url }}">FR</a>
+    <a href="{{ '/fr/' | relative_url }}"{% if current_lang == 'fr' %} aria-current="true"{% endif %} data-lang-switch="fr">FR</a>
+  {% endif %}
+  <span class="language-switcher__sep">/</span>
+  {% if de_page %}
+    <a href="{{ de_page.url | relative_url }}"{% if current_lang == 'de' %} aria-current="true"{% endif %} data-lang-switch="de">DE</a>
+  {% else %}
+    <a href="{{ '/de/' | relative_url }}"{% if current_lang == 'de' %} aria-current="true"{% endif %} data-lang-switch="de">DE</a>
   {% endif %}
 </div>
