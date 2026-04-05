@@ -1,17 +1,32 @@
-<div class="lang-switch" aria-label="{% if page.lang == 'fr' %}Sélecteur de langue{% else %}Language switcher{% endif %}">
-  {% assign current_ref = page.ref | default: nil %}
-  {% assign en_url = '/' %}
-  {% assign fr_url = '/fr/' %}
-  {% for p in site.pages %}
-    {% if current_ref and p.ref == current_ref %}
-      {% if p.lang == 'en' %}
-        {% assign en_url = p.url %}
-      {% elsif p.lang == 'fr' %}
-        {% assign fr_url = p.url %}
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-  <a href="{{ en_url | relative_url }}" {% if page.lang == 'en' %}aria-current="true"{% endif %}>EN</a>
-  <span>/</span>
-  <a href="{{ fr_url | relative_url }}" {% if page.lang == 'fr' %}aria-current="true"{% endif %}>FR</a>
+{% assign current_lang = page.lang | default: 'en' %}
+{% assign page_ref = page.ref | default: '' %}
+
+<div class="language-switcher" aria-label="Language selector">
+  {% if current_lang == 'en' %}
+    <span class="language-switcher__current">EN</span>
+  {% elsif page_ref != '' %}
+    <a href="{% for p in site.pages %}{% if p.ref == page_ref and p.lang == 'en' %}{{ p.url | relative_url }}{% break %}{% endif %}{% endfor %}">EN</a>
+  {% else %}
+    <a href="{{ '/' | relative_url }}">EN</a>
+  {% endif %}
+
+  <span class="language-switcher__sep">/</span>
+
+  {% if current_lang == 'th' %}
+    <span class="language-switcher__current">TH</span>
+  {% elsif page_ref != '' %}
+    <a href="{% for p in site.pages %}{% if p.ref == page_ref and p.lang == 'th' %}{{ p.url | relative_url }}{% break %}{% endif %}{% endfor %}">TH</a>
+  {% else %}
+    <a href="{{ '/th/' | relative_url }}">TH</a>
+  {% endif %}
+
+  <span class="language-switcher__sep">/</span>
+
+  {% if current_lang == 'fr' %}
+    <span class="language-switcher__current">FR</span>
+  {% elsif page_ref != '' %}
+    <a href="{% for p in site.pages %}{% if p.ref == page_ref and p.lang == 'fr' %}{{ p.url | relative_url }}{% break %}{% endif %}{% endfor %}">FR</a>
+  {% else %}
+    <a href="{{ '/fr/' | relative_url }}">FR</a>
+  {% endif %}
 </div>
