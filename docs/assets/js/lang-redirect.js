@@ -8,33 +8,17 @@
   const normalized = langs.map((lang) => String(lang).toLowerCase());
 
   const target = normalized.find((lang) =>
-    lang.startsWith("ja") ||
-    lang.startsWith("ko") ||
-    lang === "pt-br" ||
-    lang.startsWith("pt") ||
-    lang.startsWith("ar") ||
-    lang.startsWith("he")
+    lang.startsWith("th") ||
+    lang.startsWith("fr")
   );
 
   if (!target) return;
 
-  if (target.startsWith("ja")) {
-    window.location.replace("/ja/");
+  if (target.startsWith("th")) {
+    window.location.replace("/th/");
     return;
   }
-  if (target.startsWith("ko")) {
-    window.location.replace("/ko/");
-    return;
-  }
-  if (target === "pt-br" || target.startsWith("pt")) {
-    window.location.replace("/pt-br/");
-    return;
-  }
-  if (target.startsWith("ar")) {
-    window.location.replace("/ar/");
-    return;
-  }
-  if (target.startsWith("he")) {
-    window.location.replace("/he/");
+  if (target.startsWith("fr")) {
+    window.location.replace("/fr/");
   }
 })();

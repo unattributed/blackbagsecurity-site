@@ -4,12 +4,12 @@
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
 
-  const languageLinks = document.querySelectorAll(".lang-switch a");
+  const languageLinks = document.querySelectorAll(".lang-switcher a");
   languageLinks.forEach((link) => {
     link.addEventListener("click", () => {
       try {
-        const value = link.textContent && link.textContent.trim().toLowerCase();
-        if (value === "en" || value === "fr") {
+        const value = link.dataset.langSwitch;
+        if (value === "en" || value === "th" || value === "fr") {
           window.localStorage.setItem("bbs-language-choice", value);
         }
       } catch (err) {
