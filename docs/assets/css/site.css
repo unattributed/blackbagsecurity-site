@@ -81,3 +81,118 @@ html[dir="rtl"] .footer {
     width: 100%;
   }
 }
+
+/* Temporary operational maintenance notice. Remove this block and the layout include when complete. */
+.maintenance-popover {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 60;
+  width: min(420px, calc(100vw - 32px));
+  color: var(--ink);
+  pointer-events: none;
+}
+
+.maintenance-popover__shell {
+  position: relative;
+  overflow: hidden;
+  padding: 22px;
+  border: 1px solid rgba(245, 185, 66, 0.58);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(150deg, rgba(12, 20, 30, 0.98), rgba(7, 12, 18, 0.94)),
+    radial-gradient(circle at 20% 0%, rgba(245, 185, 66, 0.16), transparent 44%);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.52), 0 0 32px rgba(245, 185, 66, 0.12);
+  pointer-events: auto;
+}
+
+.maintenance-popover__shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(245, 185, 66, 0.1), transparent 46%),
+    repeating-linear-gradient(90deg, rgba(148, 163, 184, 0.08) 0 1px, transparent 1px 26px);
+  opacity: 0.62;
+  pointer-events: none;
+}
+
+.maintenance-popover__shell > * {
+  position: relative;
+  z-index: 1;
+}
+
+.maintenance-popover__eyebrow {
+  display: inline-flex;
+  margin: 0 0 12px;
+  padding: 6px 12px;
+  border: 1px solid rgba(245, 185, 66, 0.62);
+  color: var(--accent-3);
+  background: rgba(10, 16, 24, 0.68);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.maintenance-popover h2 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  line-height: 1.22;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.maintenance-popover p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.maintenance-popover__facts {
+  display: grid;
+  gap: 10px;
+  margin: 16px 0;
+  padding: 14px 0;
+  border-top: 1px dashed rgba(148, 163, 184, 0.35);
+  border-bottom: 1px dashed rgba(148, 163, 184, 0.35);
+}
+
+.maintenance-popover__facts div {
+  display: grid;
+  grid-template-columns: 0.85fr 1.5fr;
+  gap: 12px;
+}
+
+.maintenance-popover__facts dt {
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.maintenance-popover__facts dd {
+  margin: 0;
+  color: var(--muted);
+}
+
+.maintenance-popover__note {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+}
+
+@media (max-width: 700px) {
+  .maintenance-popover {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .maintenance-popover__shell {
+    padding: 18px;
+  }
+
+  .maintenance-popover__facts div {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
