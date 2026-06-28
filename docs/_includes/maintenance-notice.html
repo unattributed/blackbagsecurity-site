@@ -1,24 +1,68 @@
-<aside class="maintenance-popover" role="status" aria-live="polite" aria-label="Service maintenance notice">
+{% case page.lang %}
+  {% when 'fr' %}
+    {% assign maintenance_aria = 'Avis de maintenance du service' %}
+    {% assign maintenance_close = 'Fermer l’avis de maintenance' %}
+    {% assign maintenance_eyebrow = 'avis de maintenance' %}
+    {% assign maintenance_title = 'Les services du domaine sont temporairement indisponibles.' %}
+    {% assign maintenance_intro = 'Une maintenance des services est actuellement en cours.' %}
+    {% assign maintenance_services_label = 'services du domaine' %}
+    {% assign maintenance_services = 'courriel, VPN, et administration des comptes sont indisponibles.' %}
+    {% assign maintenance_scope_label = 'périmètre' %}
+    {% assign maintenance_scope = 'mail.blackbagsecurity.com et les services de domaine associés.' %}
+    {% assign maintenance_status_label = 'statut' %}
+    {% assign maintenance_status = 'le service reviendra lorsque la maintenance sera terminée.' %}
+    {% assign maintenance_note = 'Le site public reste disponible. Aucune action n’est requise de la part des clients ou des titulaires de compte.' %}
+  {% when 'th' %}
+    {% assign maintenance_aria = 'ประกาศการบำรุงรักษาบริการ' %}
+    {% assign maintenance_close = 'ปิดประกาศการบำรุงรักษา' %}
+    {% assign maintenance_eyebrow = 'ประกาศการบำรุงรักษา' %}
+    {% assign maintenance_title = 'บริการโดเมนไม่พร้อมใช้งานชั่วคราว' %}
+    {% assign maintenance_intro = 'ขณะนี้กำลังดำเนินการบำรุงรักษาบริการ' %}
+    {% assign maintenance_services_label = 'บริการโดเมน' %}
+    {% assign maintenance_services = 'เมล, VPN, และการดูแลบัญชีไม่พร้อมใช้งาน' %}
+    {% assign maintenance_scope_label = 'ขอบเขต' %}
+    {% assign maintenance_scope = 'mail.blackbagsecurity.com และบริการโดเมนที่เกี่ยวข้อง' %}
+    {% assign maintenance_status_label = 'สถานะ' %}
+    {% assign maintenance_status = 'บริการจะกลับมาเมื่อการบำรุงรักษาเสร็จสมบูรณ์' %}
+    {% assign maintenance_note = 'เว็บไซต์สาธารณะยังใช้งานได้ ลูกค้าและผู้ถือบัญชีไม่ต้องดำเนินการใด ๆ' %}
+  {% else %}
+    {% assign maintenance_aria = 'Service maintenance notice' %}
+    {% assign maintenance_close = 'Close maintenance notice' %}
+    {% assign maintenance_eyebrow = 'maintenance advisory' %}
+    {% assign maintenance_title = 'Domain services are temporarily unavailable.' %}
+    {% assign maintenance_intro = 'Service maintenance is currently in progress.' %}
+    {% assign maintenance_services_label = 'domain services' %}
+    {% assign maintenance_services = 'mail, VPN, and account administration are unavailable.' %}
+    {% assign maintenance_scope_label = 'scope' %}
+    {% assign maintenance_scope = 'mail.blackbagsecurity.com and related domain services.' %}
+    {% assign maintenance_status_label = 'status' %}
+    {% assign maintenance_status = 'service will return when maintenance is complete.' %}
+    {% assign maintenance_note = 'The public website remains available. No action is required from clients or account holders.' %}
+{% endcase %}
+
+<input class="maintenance-toggle" type="checkbox" id="maintenance-dismiss" aria-label="{{ maintenance_close }}" />
+<aside class="maintenance-popover" role="dialog" aria-live="polite" aria-labelledby="maintenance-title" aria-label="{{ maintenance_aria }}">
   <div class="maintenance-popover__shell">
-    <p class="maintenance-popover__eyebrow">maintenance advisory</p>
-    <h2>mail.blackbagsecurity.com is temporarily offline.</h2>
-    <p>Hardware maintenance is in progress while the CPU heat-sink and fan assembly is replaced.</p>
+    <label class="maintenance-popover__close" for="maintenance-dismiss" role="button" aria-label="{{ maintenance_close }}" title="{{ maintenance_close }}">×</label>
+    <p class="maintenance-popover__eyebrow">{{ maintenance_eyebrow }}</p>
+    <h2 id="maintenance-title">{{ maintenance_title }}</h2>
+    <p>{{ maintenance_intro }}</p>
 
     <dl class="maintenance-popover__facts">
       <div>
-        <dt>domain services</dt>
-        <dd>mail, VPN, and account administration are unavailable.</dd>
+        <dt>{{ maintenance_services_label }}</dt>
+        <dd>{{ maintenance_services }}</dd>
       </div>
       <div>
-        <dt>scope</dt>
-        <dd>mail.blackbagsecurity.com and related domain services.</dd>
+        <dt>{{ maintenance_scope_label }}</dt>
+        <dd>{{ maintenance_scope }}</dd>
       </div>
       <div>
-        <dt>status</dt>
-        <dd>service will return when maintenance is complete.</dd>
+        <dt>{{ maintenance_status_label }}</dt>
+        <dd>{{ maintenance_status }}</dd>
       </div>
     </dl>
 
-    <p class="maintenance-popover__note">The public website remains available. No action is required from clients or account holders.</p>
+    <p class="maintenance-popover__note">{{ maintenance_note }}</p>
   </div>
 </aside>
