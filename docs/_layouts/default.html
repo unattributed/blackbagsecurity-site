@@ -164,7 +164,9 @@
     </div>
   </header>
 
-  {% include maintenance-notice.html %}
+  {% if site.maintenance_notice_enabled %}
+    {% include maintenance-notice.html %}
+  {% endif %}
 
   <main id="content" class="site-main">
     {{ content }}

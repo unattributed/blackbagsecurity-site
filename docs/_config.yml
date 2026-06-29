@@ -10,3 +10,6 @@ include:
 
 plugins:
   - jekyll-sitemap
+
+# Temporary maintenance notice toggle.
+maintenance_notice_enabled: false
