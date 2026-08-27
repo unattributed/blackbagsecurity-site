@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Black Bag Security bag mark">
+  <rect width="64" height="64" rx="8" fill="#ffffff"/>
+  <path d="M18 22h28a4 4 0 0 1 4 4v22a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4V26a4 4 0 0 1 4-4Z" fill="#090909"/>
+  <path d="M24 22v-5.5A8.5 8.5 0 0 1 32.5 8h0A8.5 8.5 0 0 1 41 16.5V22" fill="none" stroke="#090909" stroke-width="3" stroke-linecap="round"/>
+  <path d="M14 30 32 39l18-9v8L32 47 14 38Z" fill="#ffffff"/>
+  <path d="M28 35h8v8h-8z" fill="#090909"/>
+</svg>
