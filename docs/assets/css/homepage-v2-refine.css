@@ -98,8 +98,9 @@
   letter-spacing: .01em;
 }
 
-/* The previous timeline used generic Unicode glyphs for three milestones,
- * which looked like placeholders. Use the site's own coherent icon family. */
+/* Timeline milestones use the site's existing SVGs as masks instead of
+ * background images. The source SVGs are white-stroked assets intended for
+ * masks, so rendering them directly on a white tile made them invisible. */
 .home-v2-timeline {
   padding-top: 16px;
   padding-bottom: 13px;
@@ -117,6 +118,7 @@
 }
 
 .home-v2-timeline__icon {
+  position: relative;
   width: 42px;
   height: 42px;
   font-size: 16px;
@@ -134,19 +136,37 @@
   line-height: 1.42;
 }
 
-.home-v2-timeline__item:nth-child(3) .home-v2-timeline__icon {
+.home-v2-timeline__item:nth-child(n+3) .home-v2-timeline__icon {
   font-size: 0;
-  background: #fff url("../img/icon-code.svg") center / 22px 22px no-repeat;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f5f2 100%);
 }
 
-.home-v2-timeline__item:nth-child(4) .home-v2-timeline__icon {
-  font-size: 0;
-  background: #fff url("../img/icon-target.svg") center / 22px 22px no-repeat;
+.home-v2-timeline__item:nth-child(n+3) .home-v2-timeline__icon::before {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  background: #151817;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
 }
 
-.home-v2-timeline__item:nth-child(5) .home-v2-timeline__icon {
-  font-size: 0;
-  background: #fff url("../img/icon-chip.svg") center / 22px 22px no-repeat;
+.home-v2-timeline__item:nth-child(3) .home-v2-timeline__icon::before {
+  mask-image: url("../img/icon-code.svg");
+  -webkit-mask-image: url("../img/icon-code.svg");
+}
+
+.home-v2-timeline__item:nth-child(4) .home-v2-timeline__icon::before {
+  mask-image: url("../img/icon-target.svg");
+  -webkit-mask-image: url("../img/icon-target.svg");
+}
+
+.home-v2-timeline__item:nth-child(5) .home-v2-timeline__icon::before {
+  mask-image: url("../img/icon-chip.svg");
+  -webkit-mask-image: url("../img/icon-chip.svg");
 }
 
 /* Principal panel: stop credential wrapping and give the biography enough
