@@ -41,13 +41,16 @@
   <link rel="stylesheet" href="{{ '/assets/css/homepage-v2-depth.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/homepage-v2-silhouette.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/homepage-v2-refine.css' | relative_url }}" />
+  {% if page.services_v2 %}
+  <link rel="stylesheet" href="{{ '/assets/css/services-v2.css' | relative_url }}" />
+  {% endif %}
 
   <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml" />
 
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
 </head>
-<body class="home-v2">
+<body class="home-v2{% if page.services_v2 %} services-v2-body{% endif %}">
   <a class="skip" href="#content">Skip to content</a>
 
   <header class="site-header site-header--v2">
