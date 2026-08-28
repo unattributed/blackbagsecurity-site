@@ -1,0 +1,8 @@
+/* Principal silhouette fidelity override. */
+.home-v2-principal__portrait {
+  background: #f2f2f0 url("../img/principal-silhouette-approved.png") center bottom / contain no-repeat;
+}
+
+.home-v2-principal__portrait img {
+  opacity: 0;
+}
