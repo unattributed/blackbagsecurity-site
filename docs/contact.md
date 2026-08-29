@@ -1,58 +1,27 @@
 ---
-layout: default
+layout: home-v2
 title: Contact | Black Bag Security
-description: Contact Black Bag Security for offensive security engagements or disclosure coordination.
+description: Contact Black Bag Security for security assessments, engineering work, research collaboration, or coordinated vulnerability disclosure.
 permalink: /contact/
 lang: en
 ref: contact
+inner_v3: true
 ---
-<section class="section">
-  <div class="wrap">
-    <div class="section__head reveal" data-reveal>
-      <h1>Contact</h1>
-      <p>Start with email. For sensitive details, request PGP or use your secure portal.</p>
+<div class="inner-v3 editorial-v3">
+  <section class="iv3-hero" aria-labelledby="contact-title">
+    <div class="wrap iv3-hero__grid">
+      <div><p class="iv3-eyebrow">Contact</p><h1 id="contact-title">start with the problem.<br>we can shape the work.</h1><p class="iv3-hero__lead">You do not need a finished scope or the perfect service name. A useful first message explains what you are trying to protect, understand, validate, or improve.</p><div class="iv3-actions"><a class="home-btn home-btn--accent" href="mailto:hello@blackbagsecurity.com">hello@blackbagsecurity.com</a><a class="home-btn" href="#brief">What to include</a></div></div>
+      <aside class="iv3-signal-panel" aria-label="Contact expectations"><div class="iv3-signal"><span>01</span><div><strong>Plain email is fine</strong><p>Start with enough context to understand the request. Sensitive material can follow through an agreed secure channel.</p></div></div><div class="iv3-signal"><span>02</span><div><strong>No perfect scope required</strong><p>Early conversations can be used to turn a concern into a workable engagement.</p></div></div><div class="iv3-signal"><span>03</span><div><strong>Security disclosures stay separate</strong><p>Use the dedicated security address for vulnerability disclosure.</p></div></div></aside>
     </div>
+  </section>
 
-    <div class="contact">
-      <div class="contact__card reveal delay-1" data-reveal>
-        <h3>Engagements</h3>
-        <p class="mono"><a href="mailto:hello@blackbagsecurity.com">hello@blackbagsecurity.com</a></p>
-        <p>Include scope, constraints, and desired timeline.</p>
-      </div>
-      <div class="contact__card reveal delay-2" data-reveal>
-        <h3>Security</h3>
-        <p class="mono"><a href="mailto:security@blackbagsecurity.com">security@blackbagsecurity.com</a></p>
-        <p>Coordinated disclosure details:</p>
-        <p><a class="mono" href="{{ '/.well-known/security.txt' | relative_url }}">/.well-known/security.txt</a></p>
-      </div>
-      <div class="contact__card reveal delay-3" data-reveal>
-        <h3>General</h3>
-        <p>Request availability windows or a short introductory call.</p>
-        <p class="mono"><a href="{{ '/services/' | relative_url }}">Review services -></a></p>
-      </div>
-    </div>
-  </div>
-</section>
+  <nav class="iv3-jumpbar" aria-label="Contact page sections"><div class="wrap iv3-jumpbar__inner"><a href="#routes">Contact routes</a><a href="#brief">What to include</a><a href="#secure">Sensitive information</a></div></nav>
 
-<section class="section">
-  <div class="wrap">
-    <div class="split">
-      <div class="stack reveal delay-1" data-reveal>
-        <h3>What to include</h3>
-        <ul class="outcomes">
-          <li>Desired outcomes or threat scenarios.</li>
-          <li>Environment type (cloud, on-prem, hybrid, air-gapped).</li>
-          <li>Preferred time window and any blackout dates.</li>
-        </ul>
-      </div>
-      <div class="stack reveal delay-2" data-reveal>
-        <h3>Secure communication</h3>
-        <ul class="outcomes">
-          <li>Email by default, PGP on request.</li>
-          <li>We can use your secure file transfer or portal.</li>
-          <li>We avoid third-party messaging tools.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+  <section class="iv3-section iv3-section--white" id="routes"><div class="wrap"><div class="iv3-section-head"><div><p class="iv3-eyebrow">Choose the route</p><h2>Three ways to start.</h2></div><p>Most enquiries belong in the first route. The separation simply keeps engagement work, professional conversations, and vulnerability disclosure easy to distinguish.</p></div><div class="iv3-contact-routes"><article class="iv3-contact-card" id="assessment"><span>Assessments &amp; engineering</span><h2>Bring a security problem.</h2><p>Penetration testing, adversary validation, AI security, secure systems engineering, research, architecture, or a problem that does not fit neatly into one category.</p><a href="mailto:hello@blackbagsecurity.com">hello@blackbagsecurity.com</a></article><article class="iv3-contact-card"><span>Professional enquiries</span><h2>Bring a conversation.</h2><p>Recruiting, specialist contracting, partnerships, research collaboration, technical review, or questions about fit and availability.</p><a href="mailto:hello@blackbagsecurity.com">hello@blackbagsecurity.com</a></article><article class="iv3-contact-card"><span>Security disclosure</span><h2>Report a vulnerability.</h2><p>Use the dedicated security channel for coordinated disclosure involving Black Bag Security systems or published projects.</p><a href="mailto:security@blackbagsecurity.com">security@blackbagsecurity.com</a><br><a href="{{ '/.well-known/security.txt' | relative_url }}">security.txt</a></article></div></div></section>
+
+  <section class="iv3-section iv3-section--soft" id="brief"><div class="wrap"><div class="iv3-brief"><div><p class="iv3-eyebrow">A useful first message</p><h2>Enough context to understand the decision.</h2><p style="color:#545b57;font-size:12px;line-height:1.65;">A few clear facts are more useful than a long procurement-style description. If some of these are unknown, send what you know.</p></div><div class="iv3-brief__list"><article><span>01</span><div><strong>What are you trying to understand or protect?</strong><p>For example: an application, an API, a new AI workflow, an attack path, a sensitive service, or a system design.</p></div></article><article><span>02</span><div><strong>What outcome would make the work useful?</strong><p>A penetration-test report, evidence of control effectiveness, architecture guidance, a retest, root-cause analysis, or an answer to a specific security question.</p></div></article><article><span>03</span><div><strong>What environment is involved?</strong><p>Production, staging, pre-production, cloud, on-premises, hybrid, local lab, or another constrained environment.</p></div></article><article><span>04</span><div><strong>What constraints matter?</strong><p>Timing, uptime, prohibited actions, data sensitivity, access requirements, travel, delivery deadlines, or regulatory expectations.</p></div></article><article><span>05</span><div><strong>Who needs the answer?</strong><p>Security leadership, engineering, product owners, auditors, procurement, a client, or another stakeholder group.</p></div></article></div></div></div></section>
+
+  <section class="iv3-section iv3-section--dark" id="secure"><div class="wrap"><div class="iv3-section-head"><div><p class="iv3-eyebrow">Sensitive information</p><h2>Do not put secrets in the first email.</h2></div><p>Credentials, client evidence, private keys, production data, internal diagrams, and other sensitive material should move only after the handling path is agreed.</p></div><div class="iv3-audience"><article><span>Default</span><h3>Email for initial coordination</h3><p>Use ordinary email for the first conversation and non-sensitive context.</p></article><article><span>When needed</span><h3>PGP or approved secure transfer</h3><p>Encrypted email or the client's approved secure file-transfer mechanism can be used for sensitive material.</p></article><article><span>Principle</span><h3>Collect only what the work needs</h3><p>Do not send sensitive artifacts simply because they might become useful later.</p></article></div></div></section>
+
+  <section class="iv3-cta"><div class="wrap"><div class="iv3-cta__panel"><div><h2>Not sure whether the work fits?</h2><p>Send the problem anyway. If Black Bag Security is not the right fit, that should become clear quickly rather than after a long scoping exercise.</p></div><a class="home-btn home-btn--accent" href="mailto:hello@blackbagsecurity.com">Start with email</a></div></div></section>
+</div>
