@@ -10,7 +10,7 @@ research_v2: true
 <div class="research-v2-page">
   <section class="research-detail-hero" aria-labelledby="research-detail-title">
     <div class="wrap">
-      <a class="research-detail-back" href="{{ '/research/' | relative_url }}">All research</a>
+      <a class="research-detail-back" href="{{ '/research/' | relative_url }}">All engineering</a>
       <div class="research-detail-hero__grid">
         <div>
           <div class="research-detail-hero__meta"><span class="research-status">Public engineering baseline</span></div>
@@ -28,7 +28,7 @@ research_v2: true
 
   <section class="research-detail-section" aria-labelledby="mailstack-problem">
     <div class="wrap">
-      <div class="research-detail-intro"><h2 id="mailstack-problem">A hardened service is an operating system, not a configuration file.</h2><p>Internet-facing mail combines transport, authentication, filtering, storage, databases, DNS, TLS, network policy, abuse handling, monitoring, backup, and recovery. The research question is how to make that complexity reviewable and repeatable without pretending the operator can be removed from the process.</p></div>
+      <div class="research-detail-intro"><h2 id="mailstack-problem">A hardened service is an operating system, not a configuration file.</h2><p>Internet-facing mail combines transport, authentication, filtering, storage, databases, DNS, TLS, network policy, abuse handling, monitoring, backup, and recovery. The engineering question is how to make that complexity reviewable and repeatable without pretending the operator can be removed from the process.</p></div>
       <div class="research-detail-grid">
         <article class="research-detail-card"><strong>Phased deployment</strong><p>Installation is broken into explicit phases with apply and verify steps rather than one opaque automation pass.</p></article>
         <article class="research-detail-card"><strong>Rendered configuration</strong><p>Operator-provided values are transformed into reviewable local configuration before installation.</p></article>
@@ -56,8 +56,8 @@ research_v2: true
 
   <section class="research-detail-section" aria-labelledby="mailstack-value">
     <div class="wrap">
-      <div class="research-detail-intro"><h2 id="mailstack-value">Why this belongs on a security research page.</h2><p>Infrastructure hardening is often presented as a list of settings. This project instead treats secure operations as an engineering discipline: explicit inputs, reproducible configuration, bounded secret handling, validation, maintenance, and recovery.</p></div>
-      <div class="research-detail-callout"><strong>Research outcome</strong><p>The reusable result is not one mail server. It is a method for turning a complex security-sensitive service into staged, inspectable, testable, and recoverable operations.</p></div>
+      <div class="research-detail-intro"><h2 id="mailstack-value">Why this belongs in Engineering.</h2><p>Infrastructure hardening is often presented as a list of settings. This project instead treats secure operations as an engineering discipline: explicit inputs, reproducible configuration, bounded secret handling, validation, maintenance, and recovery.</p></div>
+      <div class="research-detail-callout"><strong>Engineering outcome</strong><p>The reusable result is not one mail server. It is a method for turning a complex security-sensitive service into staged, inspectable, testable, and recoverable operations.</p></div>
     </div>
   </section>
 
