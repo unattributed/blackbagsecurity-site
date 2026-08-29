@@ -1,6 +1,3 @@
----
-permalink: /.well-known/security.txt
----
 Contact: mailto:security@blackbagsecurity.com
 Preferred-Languages: en, th, fr, de, es, ja, ko, pt-BR, ar, he
 Policy: https://blackbagsecurity.com/policies/
