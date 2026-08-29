@@ -1,83 +1,29 @@
 ---
-layout: default
+layout: home-v2
 title: About | Black Bag Security
-description: Boutique offensive security practice delivering evidence-driven red team and vulnerability research.
+description: Principal-led security engineering and offensive research shaped by decades of computing, systems work, and evidence-driven security practice.
 permalink: /about/
 lang: en
 ref: about
+inner_v3: true
 ---
-<section class="section">
-  <div class="wrap">
-    <div class="section__head reveal" data-reveal>
-      <h1>About</h1>
-      <p>Black Bag Security is a boutique offensive security firm focused on high-consequence environments.</p>
+<div class="inner-v3 editorial-v3">
+  <section class="iv3-hero" aria-labelledby="about-title">
+    <div class="wrap iv3-hero__grid">
+      <div><p class="iv3-eyebrow">About Black Bag Security</p><h1 id="about-title">experience matters.<br>judgment matters more.</h1><p class="iv3-hero__lead">Black Bag Security is a principal-led security engineering practice built around direct senior involvement, practical offensive work, secure systems thinking, and evidence that can survive technical review.</p><div class="iv3-actions"><a class="home-btn home-btn--accent" href="#principal">Meet the principal</a><a class="home-btn" href="{{ '/contact/' | relative_url }}">Start a conversation</a></div></div>
+      <aside class="iv3-signal-panel" aria-label="Operating identity"><div class="iv3-signal"><span>1984</span><div><strong>Computing since 1984</strong><p>Experience spans generations of systems, operating models, and technology shifts.</p></div></div><div class="iv3-signal"><span>01</span><div><strong>Principal-led</strong><p>The person responsible for the work remains directly involved.</p></div></div><div class="iv3-signal"><span>02</span><div><strong>Engineering-minded</strong><p>Security problems are treated as systems problems, not just scanner findings.</p></div></div><div class="iv3-signal"><span>03</span><div><strong>Evidence-first</strong><p>Important claims are expected to show their work.</p></div></div></aside>
     </div>
+  </section>
 
-    <div class="split">
-      <div class="stack stack--signal stack--operating reveal delay-1" data-reveal>
-        <h3>Operating model</h3>
-        <p>Senior-led delivery with direct operator involvement from scoping through retest.</p>
-        <p>Experience spans 40+ years. In 1985, our founder began with computerized accounting systems running on mainframe and microcomputer platforms with telephonic connectivity, where data had to be auditable, controlled, and safeguarded. That work shaped our focus on reliable, secure software and protecting the confidentiality of users.</p>
-        <p>Engagements prioritize evidence integrity, confidentiality, and realistic adversary tradecraft.</p>
-      </div>
-      <div class="stack stack--signal stack--principles reveal delay-2" data-reveal>
-        <h3>Principles</h3>
-        <ul class="outcomes">
-          <li>Relentless adversary focus: we design for complex attack chains, AI-assisted automation, and real-world tradecraft.</li>
-          <li>Decisive execution with clear objectives, stop conditions, and escalation paths that protect uptime and safety.</li>
-          <li>Evidence-first reporting: reproducible findings, measurable impact, and remediation guidance that holds under audit.</li>
-          <li>Scale-ready delivery: workflow, tooling, and cadence built for high-stakes environments and rapid response.</li>
-          <li>Privacy and confidentiality by default: zero disclosure, minimal collection, cryptographically protected handling, and no client data retained post-engagement.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+  <nav class="iv3-jumpbar" aria-label="About page sections"><div class="wrap iv3-jumpbar__inner"><a href="#principal">Principal</a><a href="#timeline">Timeline</a><a href="#working-style">Working style</a><a href="#fit">Where we fit</a></div></nav>
 
-<section class="section">
-  <div class="wrap">
-    <div class="section__head reveal" data-reveal>
-      <h2>Capability statement</h2>
-      <p>Short, buyer-safe snapshot of how we deliver and where we fit.</p>
-    </div>
+  <section class="iv3-section iv3-section--white" id="principal"><div class="wrap"><div class="iv3-story-grid"><article class="iv3-story-main"><p class="iv3-eyebrow">Principal</p><h2>Duncan Stirling</h2><p>Duncan has worked with computing since 1984, spanning mainframes, distributed systems, Unix, BSD, Linux, OpenBSD, application security, infrastructure, and modern AI-assisted security engineering.</p><p>The through-line is not a particular tool or platform. It is a way of working: understand how the system actually behaves, identify where trust and authority change hands, test the important assumptions, preserve evidence, and leave the people responsible for the system with something they can use.</p><p>Black Bag Security is structured so that clients work directly with the principal rather than handing the engagement to a rotating delivery team.</p></article><div class="iv3-story-side"><article><strong>Direct involvement</strong><p>Scoping, testing, analysis, reporting, and retest remain connected instead of being split across unrelated teams.</p></article><article><strong>Practical depth</strong><p>Offensive testing is informed by systems engineering, software behavior, operations, recovery, and architecture.</p></article><article><strong>Transparent communication</strong><p>Technical findings are explained clearly enough for both decision-makers and implementers.</p></article></div></div></div></section>
 
-    <div class="cap-grid">
-      <article class="cap-card reveal delay-1" data-reveal>
-        <h3>Core capabilities</h3>
-        <ul class="outcomes">
-          <li>Objective-based red team and adversary emulation.</li>
-          <li>Penetration testing and attack path validation.</li>
-          <li>Vulnerability research beyond automated scanners.</li>
-          <li>AI/LLM security testing and control validation.</li>
-        </ul>
-      </article>
-      <article class="cap-card reveal delay-2" data-reveal>
-        <h3>Delivery and assurance</h3>
-        <ul class="outcomes">
-          <li>Evidence packs with reproduction steps and artifacts.</li>
-          <li>Executive briefs with risk framing and priorities.</li>
-          <li>Remediation guidance and retest validation.</li>
-          <li>Secure handling aligned to client requirements.</li>
-        </ul>
-      </article>
-      <article class="cap-card reveal delay-3" data-reveal>
-        <h3>Engagement fit</h3>
-        <ul class="outcomes">
-          <li>Regulated and high-consequence environments.</li>
-          <li>Systems with strict uptime and safety constraints.</li>
-          <li>Teams that need defensible evidence and clear outcomes.</li>
-        </ul>
-      </article>
-      <article class="cap-card reveal delay-4" data-reveal>
-        <h3>Agentic engineering skillset</h3>
-        <ul class="outcomes">
-          <li>Decades of operator experience applied to agentic system design for cybersecurity delivery.</li>
-          <li>Human-in-the-loop workflows for recon, hypothesis generation, and execution planning.</li>
-          <li>Operator validation gates before outputs are accepted into evidence or reporting.</li>
-          <li>Private client data is safeguarded at all times through minimal collection and controlled handling.</li>
-        </ul>
-      </article>
-    </div>
-    <p class="mono reveal delay-5" data-reveal><a href="{{ '/on-site-engagements/' | relative_url }}">On-site engagements -></a> | <a href="{{ '/policies/' | relative_url }}">Policies -></a></p>
-  </div>
-</section>
+  <section class="iv3-section" id="timeline"><div class="wrap"><div class="iv3-section-head"><div><p class="iv3-eyebrow">Experience</p><h2>Across generations of computing.</h2></div><p>The technology changes. Core security questions keep returning: who is trusted, what authority exists, where state changes, what evidence is available, and how failure can be contained.</p></div><div class="iv3-timeline"><article><span>1984+</span><h3>Systems &amp; software</h3><p>Operating systems, programming languages, applications, integration, and the foundations of reliable computing.</p></article><article><span>Early 1990s</span><h3>Mainframes to distributed systems</h3><p>Communications, networked computing, Unix, and BSD environments.</p></article><article><span>1990s+</span><h3>Linux &amp; OpenBSD</h3><p>Open systems, hardened platforms, network services, and operator-controlled infrastructure.</p></article><article><span>1990s to today</span><h3>Offensive security</h3><p>Application testing, adversary thinking, reverse analysis, vulnerability research, and remediation validation.</p></article><article><span>2020s+</span><h3>AI &amp; agentic security</h3><p>Human-governed automation, browser-AI testing, agent authority, evidence systems, and security engineering for emerging workflows.</p></article></div></div></section>
+
+  <section class="iv3-section iv3-section--dark" id="working-style"><div class="wrap"><div class="iv3-section-head"><div><p class="iv3-eyebrow">Working style</p><h2>High standards without unnecessary theatre.</h2></div><p>The goal is disciplined technical work that clients can understand, reproduce where appropriate, and act on.</p></div><div class="iv3-process"><article><span class="iv3-process__dot">01</span><div><h3>Prepare</h3><p>Understand the system and remove avoidable ambiguity.</p></div></article><article><span class="iv3-process__dot">02</span><div><h3>Structure</h3><p>Use repeatable workflows and clear authority.</p></div></article><article><span class="iv3-process__dot">03</span><div><h3>Test</h3><p>Follow the evidence, not a predetermined story.</p></div></article><article><span class="iv3-process__dot">04</span><div><h3>Explain</h3><p>Make findings understandable and defensible.</p></div></article><article><span class="iv3-process__dot">05</span><div><h3>Improve</h3><p>Turn lessons into better systems and better tooling.</p></div></article></div></div></section>
+
+  <section class="iv3-section iv3-section--soft" id="fit"><div class="wrap"><div class="iv3-section-head"><div><p class="iv3-eyebrow">Where Black Bag Security fits</p><h2>Best used where judgment matters.</h2></div><p>The practice is a strong fit when the system is important, the answer must be defensible, or the problem does not fit neatly into a commodity testing template.</p></div><div class="iv3-audience"><article><span>Clients</span><h3>Security-sensitive systems</h3><p>Applications, APIs, infrastructure, AI workflows, and environments where failure has meaningful business impact.</p></article><article><span>Teams</span><h3>Engineering-led organizations</h3><p>Teams that want findings tied to root cause, architecture, remediation, and verification rather than a list of alerts.</p></article><article><span>Partners &amp; Recruiters</span><h3>Senior specialist capability</h3><p>Situations that benefit from direct principal involvement, broad systems experience, and the ability to move between offensive testing and engineering.</p></article></div><div class="iv3-quote"><div class="iv3-quote__mark">“</div><div><blockquote>Security is engineering from the attacker’s perspective.</blockquote><p>That idea connects the assessment work, the research, and the systems we build.</p></div></div></div></section>
+
+  <section class="iv3-cta"><div class="wrap"><div class="iv3-cta__panel"><div><h2>If the problem is difficult to categorize, that is fine.</h2><p>Describe the system, the concern, and what a useful outcome would look like. We can determine the right path from there.</p></div><a class="home-btn home-btn--accent" href="{{ '/contact/' | relative_url }}">Contact Black Bag Security</a></div></div></section>
+</div>
