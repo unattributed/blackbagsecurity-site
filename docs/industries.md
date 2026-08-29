@@ -1,80 +1,20 @@
 ---
-layout: default
+layout: home-v2
 title: Industries | Black Bag Security
-description: Offensive security for regulated industries and high-consequence systems.
+description: Security engineering for environments where uptime, evidence, confidentiality, and defensible decisions matter.
 permalink: /industries/
 lang: en
 ref: industries
+inner_v3: true
 ---
-<section class="section">
-  <div class="wrap">
-    <div class="section__head reveal" data-reveal>
-      <h1>Industries</h1>
-      <p>Focused coverage for systems that impact public safety, national security, and business continuity.</p>
-    </div>
+<div class="inner-v3 editorial-v3">
+  <section class="iv3-hero" aria-labelledby="industries-title"><div class="wrap iv3-hero__grid"><div><p class="iv3-eyebrow">Where the work fits</p><h1 id="industries-title">the higher the consequence,<br>the more the method matters.</h1><p class="iv3-hero__lead">Black Bag Security is best suited to environments where security decisions have operational, financial, regulatory, or reputational consequences and where evidence quality matters as much as technical coverage.</p></div><aside class="iv3-signal-panel" aria-label="Environment characteristics"><div class="iv3-signal"><span>01</span><div><strong>High-value systems</strong><p>Compromise would affect sensitive data, business capability, or critical operations.</p></div></div><div class="iv3-signal"><span>02</span><div><strong>Operational constraints</strong><p>Testing must respect uptime, safety, or narrow change windows.</p></div></div><div class="iv3-signal"><span>03</span><div><strong>Governance pressure</strong><p>Findings must be explainable to technical and non-technical stakeholders.</p></div></div><div class="iv3-signal"><span>04</span><div><strong>Complex trust</strong><p>Identity, APIs, infrastructure, third parties, or AI workflows create interconnected risk.</p></div></div></aside></div></section>
 
-    <div class="pill-row reveal delay-1" data-reveal>
-      <span class="pill">Healthcare + medical devices</span>
-      <span class="pill">Financial services</span>
-      <span class="pill">Energy + utilities</span>
-      <span class="pill">Aerospace</span>
-      <span class="pill">Defense + government</span>
-      <span class="pill">SaaS + cloud platforms</span>
-    </div>
-  </div>
-</section>
+  <section class="iv3-section iv3-section--white"><div class="wrap"><div class="iv3-section-head"><div><p class="iv3-eyebrow">Environment patterns</p><h2>Not defined by industry labels alone.</h2></div><p>The same security engineering discipline can apply across different sectors when the underlying problems are similar: sensitive authority, strict availability, regulated data, complex workflows, or high-cost failure.</p></div><div class="iv3-card-grid"><article class="iv3-card"><span class="iv3-card__index">REGULATED SYSTEMS</span><h3>Evidence must support more than a technical opinion.</h3><p>Financial, public-sector, healthcare, and other regulated environments often require clear scope, traceability, defensible findings, and explicit limitations.</p></article><article class="iv3-card"><span class="iv3-card__index">HIGH-CONSEQUENCE OPERATIONS</span><h3>Safety and uptime constrain the test.</h3><p>Infrastructure and operationally sensitive systems require bounded execution, stop conditions, careful test data, and a bias toward minimum-impact proof.</p></article><article class="iv3-card"><span class="iv3-card__index">DIGITAL PLATFORMS</span><h3>Identity and business logic create the real attack surface.</h3><p>Cloud services, SaaS platforms, APIs, and distributed applications often fail at authorization, data movement, integration, and workflow boundaries.</p></article><article class="iv3-card"><span class="iv3-card__index">EMERGING AI SYSTEMS</span><h3>Model capability is only part of the security problem.</h3><p>Agentic and AI-enabled systems create new authority paths across browsers, retrieval, tools, identities, memory, and external services.</p></article></div></div></section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="cap-grid">
-      <article class="cap-card reveal delay-1" data-reveal>
-        <h3>Critical infrastructure</h3>
-        <p>Operational technology, segmented networks, and safety systems with strict change windows.</p>
-        <span class="cap-tag">safety-first testing</span>
-      </article>
-      <article class="cap-card reveal delay-2" data-reveal>
-        <h3>Regulated healthcare</h3>
-        <p>Patient data protection, device security, and clinical operations resilience.</p>
-        <span class="cap-tag">PHI-sensitive</span>
-      </article>
-      <article class="cap-card reveal delay-3" data-reveal>
-        <h3>Financial systems</h3>
-        <p>Identity assurance, transaction integrity, and fraud pathways.</p>
-        <span class="cap-tag">audit-aligned</span>
-      </article>
-      <article class="cap-card reveal delay-4" data-reveal>
-        <h3>Cloud-native platforms</h3>
-        <p>Identity, configuration, and supply-chain exposure across complex environments.</p>
-        <span class="cap-tag">zero trust ready</span>
-      </article>
-    </div>
-  </div>
-</section>
+  <section class="iv3-section iv3-section--dark"><div class="wrap"><div class="iv3-section-head"><div><p class="iv3-eyebrow">What changes by environment</p><h2>The method stays stable. The constraints change.</h2></div><p>Engagement design adapts to what the system can safely tolerate and what the organization needs to prove.</p></div><div class="iv3-process"><article><span class="iv3-process__dot">01</span><div><h3>Authority</h3><p>Who can approve testing and what actions are permitted?</p></div></article><article><span class="iv3-process__dot">02</span><div><h3>Availability</h3><p>What cannot be disrupted and when can testing occur?</p></div></article><article><span class="iv3-process__dot">03</span><div><h3>Data</h3><p>What information can be accessed, captured, or transferred?</p></div></article><article><span class="iv3-process__dot">04</span><div><h3>Evidence</h3><p>What proof must survive internal, client, or audit review?</p></div></article><article><span class="iv3-process__dot">05</span><div><h3>Closure</h3><p>What does remediation and verification need to establish?</p></div></article></div></div></section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="section__head reveal" data-reveal>
-      <h2>Outcome focus</h2>
-      <p>Engagements are scoped to outcomes that support mission continuity and regulatory assurance.</p>
-    </div>
+  <section class="iv3-section iv3-section--soft"><div class="wrap"><div class="iv3-section-head"><div><p class="iv3-eyebrow">Typical decision points</p><h2>Security work should answer a real question.</h2></div><p>These are examples of the decisions an engagement can support regardless of sector.</p></div><div class="iv3-glance"><article><span>Attack surface</span><strong>Can an important system be abused?</strong><p>Application, API, identity, and workflow testing.</p></article><article><span>Defensive control</span><strong>Would our controls stop the path?</strong><p>Adversary validation and detection analysis.</p></article><article><span>Architecture</span><strong>Where is too much authority concentrated?</strong><p>Secure systems engineering and trust-boundary review.</p></article><article><span>Emerging risk</span><strong>What changes when AI gets access?</strong><p>AI security, agent authority, browser-AI, and data-flow testing.</p></article></div></div></section>
 
-    <div class="split">
-      <div class="stack reveal delay-1" data-reveal>
-        <h3>Typical objectives</h3>
-        <ul class="outcomes">
-          <li>Validate detection and response for high-impact scenarios.</li>
-          <li>Confirm exploitability of critical exposure paths.</li>
-          <li>Reduce time-to-remediate for known weaknesses.</li>
-        </ul>
-      </div>
-      <div class="stack reveal delay-2" data-reveal>
-        <h3>Delivery constraints</h3>
-        <ul class="outcomes">
-          <li>Scoped tradecraft aligned to safety and uptime requirements.</li>
-          <li>Evidence handling aligned to internal governance.</li>
-          <li>Clear reporting for both technical and executive stakeholders.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+  <section class="iv3-cta"><div class="wrap"><div class="iv3-cta__panel"><div><h2>Your industry label is less important than the system and the consequence.</h2><p>Describe what must remain secure, available, confidential, or defensible. The engagement can be shaped around those requirements.</p></div><a class="home-btn home-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss the environment</a></div></div></section>
+</div>
