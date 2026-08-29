@@ -10,7 +10,7 @@ research_v2: true
 <div class="research-v2-page">
   <section class="research-detail-hero" aria-labelledby="research-detail-title">
     <div class="wrap">
-      <a class="research-detail-back" href="{{ '/research/' | relative_url }}">All research</a>
+      <a class="research-detail-back" href="{{ '/research/' | relative_url }}">All engineering</a>
       <div class="research-detail-hero__grid">
         <div>
           <div class="research-detail-hero__meta"><span class="research-status">In development</span></div>
@@ -20,7 +20,7 @@ research_v2: true
         <aside class="research-detail-summary" aria-label="Project summary">
           <div><strong>Role</strong><p>Engagement governance and control plane.</p></div>
           <div><strong>Current foundation</strong><p>Hardened engagement namespaces, authorization records, and draft executable scope records are already implemented in the predecessor codebase.</p></div>
-          <div><strong>Future relationship</strong><p>Designed to integrate with AOTP as the execution plane rather than duplicate its testing engine.</p></div>
+          <div><strong>Future relationship</strong><p>Designed to integrate with AOTP as the assessment operations plane rather than duplicate its testing engine.</p></div>
         </aside>
       </div>
     </div>
@@ -48,7 +48,7 @@ research_v2: true
         <article class="research-detail-card"><strong>CAP-003</strong><p>Engagement-bound authorization records with deterministic semantic digests and lifecycle validation.</p></article>
         <article class="research-detail-card"><strong>CAP-004</strong><p>Draft executable scope records with inclusions, exclusions, methods, actions, stop conditions, and rate ceilings.</p></article>
         <article class="research-detail-card"><strong>Later execution slices</strong><p>Operation checks, redirect and transformed-target decisions, browser and proxy dispatch, API/WSTG integration, and agent dispatch.</p></article>
-        <article class="research-detail-card"><strong>AOTP integration</strong><p>Approved engagement authority can become deterministic campaign authority for governed offensive execution.</p></article>
+        <article class="research-detail-card"><strong>AOTP integration</strong><p>Approved engagement authority can become deterministic campaign authority for governed offensive assessment operations.</p></article>
         <article class="research-detail-card"><strong>Assurance return path</strong><p>Evidence, finding state, reporting, remediation, and retest can flow back into one engagement record with retained provenance.</p></article>
       </div>
     </div>
