@@ -1,0 +1,19 @@
+<section class="bbs-system-rail" aria-labelledby="bbs-system-rail-title">
+  <div class="wrap">
+    <div class="bbs-system-rail__head">
+      <a class="bbs-system-rail__overview" href="{{ '/system/' | relative_url }}">
+        <span class="bbs-system-rail__eyebrow">The Black Bag Security system</span>
+        <strong id="bbs-system-rail-title">One mission. Connected layers.</strong>
+        <small>See how client work, methodology, research, assurance, and engineering reinforce one another.</small>
+      </a>
+      <span class="bbs-system-rail__signal" aria-hidden="true"><i></i></span>
+    </div>
+    <nav class="bbs-system-rail__grid" aria-label="Explore the Black Bag Security system">
+      <a href="{{ '/services/' | relative_url }}"{% if page.url contains '/services/' %} class="is-current" aria-current="page"{% endif %}><span>01</span><strong>Services</strong><small>Define the problem</small></a>
+      <a href="{{ '/methodology/' | relative_url }}"{% if page.url contains '/methodology/' %} class="is-current" aria-current="page"{% endif %}><span>02</span><strong>Methodology</strong><small>Control the work</small></a>
+      <a href="{{ '/research/' | relative_url }}"{% if page.url contains '/research/' or page.url contains '/system/' %} class="is-current" aria-current="page"{% endif %}><span>03</span><strong>Research</strong><small>Engineer what is missing</small></a>
+      <a href="{{ '/trust/' | relative_url }}"{% if page.url contains '/trust/' %} class="is-current" aria-current="page"{% endif %}><span>04</span><strong>Trust</strong><small>Protect the engagement</small></a>
+      <a href="{{ '/contact/' | relative_url }}"{% if page.url contains '/contact/' %} class="is-current" aria-current="page"{% endif %}><span>05</span><strong>Engage</strong><small>Start the conversation</small></a>
+    </nav>
+  </div>
+</section>
