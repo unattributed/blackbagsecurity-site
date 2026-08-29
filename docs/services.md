@@ -6,160 +6,88 @@ permalink: /services/
 lang: en
 ref: services
 services_v2: true
+inner_v3: true
 ---
-<div class="services-v2-page">
-  <section class="services-v2-hero" aria-labelledby="services-title">
-    <div class="wrap services-v2-hero__grid">
+<div class="inner-v3">
+  <section class="iv3-hero" aria-labelledby="services-title">
+    <div class="wrap iv3-hero__grid">
       <div>
-        <p class="svc-eyebrow">Services</p>
+        <p class="iv3-eyebrow">Services</p>
         <h1 id="services-title">test what matters.<br>prove what fails.<br>engineer what lasts.</h1>
-        <p class="services-v2-hero__lead">
-          Black Bag Security helps organizations understand whether important systems, controls, and assumptions will hold up under real-world pressure. The work ranges from application testing and adversary validation to AI security and secure systems engineering. Every engagement is led directly by the principal and turns technical testing into <strong>clear findings, practical priorities, and evidence you can act on.</strong>
-        </p>
-        <div class="services-v2-hero__actions">
-          <a class="home-btn home-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss an engagement</a>
-          <a class="home-btn" href="#how-we-work">See how we work</a>
-        </div>
+        <p class="iv3-hero__lead">Black Bag Security helps organizations understand whether important systems, controls, and assumptions will hold up under real-world pressure. The work is principal-led and turns technical testing into <strong>clear findings, practical priorities, and evidence people can act on.</strong></p>
+        <div class="iv3-actions"><a class="home-btn home-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss an engagement</a><a class="home-btn" href="#choose">Find the right starting point</a></div>
       </div>
-
-      <aside class="services-v2-hero__principles" aria-label="Engagement principles">
-        <div class="svc-principle">
-          <span class="icon-mask icon-target" aria-hidden="true"></span>
-          <div><strong>Start with the problem</strong><p>We begin with what you need to understand, protect, prove, or improve.</p></div>
-        </div>
-        <div class="svc-principle">
-          <span class="icon-mask icon-shield" aria-hidden="true"></span>
-          <div><strong>Work safely</strong><p>Scope, access, safety limits, escalation, and data handling are agreed before testing begins.</p></div>
-        </div>
-        <div class="svc-principle">
-          <span class="icon-mask icon-evidence" aria-hidden="true"></span>
-          <div><strong>Show the proof</strong><p>Important conclusions are supported by reproducible evidence, not scanner output or guesswork.</p></div>
-        </div>
-        <div class="svc-principle">
-          <span class="icon-mask icon-deliverables" aria-hidden="true"></span>
-          <div><strong>Help close the issue</strong><p>Findings are explained in practical terms, with remediation guidance and retesting where it adds value.</p></div>
-        </div>
+      <aside class="iv3-signal-panel" aria-label="How Black Bag Security works">
+        <div class="iv3-signal"><span>01</span><div><strong>Start with the problem</strong><p>What do you need to understand, protect, prove, or improve?</p></div></div>
+        <div class="iv3-signal"><span>02</span><div><strong>Work inside clear boundaries</strong><p>Scope, authority, safety limits, escalation, and data handling come first.</p></div></div>
+        <div class="iv3-signal"><span>03</span><div><strong>Show the proof</strong><p>Important conclusions are supported by reproducible evidence, not scanner output alone.</p></div></div>
+        <div class="iv3-signal"><span>04</span><div><strong>Close the loop</strong><p>Findings connect to remediation, residual risk, and verification where it adds value.</p></div></div>
       </aside>
     </div>
   </section>
 
-  <section class="services-v2-lines" aria-labelledby="primary-services">
+  <nav class="iv3-jumpbar" aria-label="Services page sections"><div class="wrap iv3-jumpbar__inner"><a href="#choose">Choose by question</a><a href="#services">Service lines</a><a href="#process">How it works</a><a href="#specialist">Specialist depth</a><a href="#engagements">Engagement shapes</a></div></nav>
+
+  <section class="iv3-section iv3-section--white" id="choose" aria-labelledby="choose-title">
     <div class="wrap">
-      <div class="services-v2-lines__intro">
-        <h2 id="primary-services">Four ways we help.</h2>
-        <p>Some clients need to know whether an application can be broken. Others need to know whether their defensive controls will stop a realistic attacker, whether an AI-enabled workflow can be abused, or how to build a sensitive system more securely. The service changes with the problem. The standard of work does not.</p>
-      </div>
-
-      <div class="services-v2-lines__grid">
-        <article class="svc-line-card">
-          <div class="svc-line-card__number">01<span class="icon-mask icon-model" aria-hidden="true"></span></div>
-          <h3>Application &amp; API Security</h3>
-          <p class="svc-line-card__statement">Find out whether users, APIs, sessions, or business workflows can be abused to reach data or actions they should not.</p>
-          <div class="svc-line-card__focus" aria-label="Application and API security focus areas">
-            <span>Authentication, MFA, recovery, and sessions</span>
-            <span>Authorization, roles, and object access</span>
-            <span>API security and unintended data exposure</span>
-            <span>Business logic and protected state changes</span>
-            <span>Input handling and browser attack surface</span>
-            <span>Targeted code, configuration, and dependency review</span>
-          </div>
-          <a class="svc-text-link" href="{{ '/services/application-api-security/' | relative_url }}">Explore this service</a>
-        </article>
-
-        <article class="svc-line-card">
-          <div class="svc-line-card__number">02<span class="icon-mask icon-target" aria-hidden="true"></span></div>
-          <h3>Adversary Validation</h3>
-          <p class="svc-line-card__statement">Test whether a realistic attacker can reach an important objective and whether your controls, monitoring, and response actually stop them.</p>
-          <div class="svc-line-card__focus" aria-label="Adversary validation focus areas">
-            <span>Objective-led attack paths</span>
-            <span>Identity, privilege, and trust relationships</span>
-            <span>Preventive control effectiveness</span>
-            <span>Detection and telemetry coverage</span>
-            <span>Response assumptions where in scope</span>
-            <span>Evidence-backed attack narratives</span>
-          </div>
-          <a class="svc-text-link" href="{{ '/services/adversary-validation/' | relative_url }}">Explore this service</a>
-        </article>
-
-        <article class="svc-line-card">
-          <div class="svc-line-card__number">03<span class="icon-mask icon-chip" aria-hidden="true"></span></div>
-          <h3>AI Security</h3>
-          <p class="svc-line-card__statement">Assess how AI-enabled products and workflows can be manipulated, expose information, misuse tools, or act outside their intended limits.</p>
-          <div class="svc-line-card__focus" aria-label="AI security focus areas">
-            <span>Prompt injection and source confusion</span>
-            <span>Agent and tool execution boundaries</span>
-            <span>Identity, retrieval, memory, and data exposure</span>
-            <span>Browser-AI attack paths</span>
-            <span>Guardrail and policy effectiveness</span>
-            <span>Reproducible local validation where appropriate</span>
-          </div>
-          <a class="svc-text-link" href="{{ '/services/ai-security/' | relative_url }}">Explore this service</a>
-        </article>
-
-        <article class="svc-line-card">
-          <div class="svc-line-card__number">04<span class="icon-mask icon-code" aria-hidden="true"></span></div>
-          <h3>Secure Systems Engineering</h3>
-          <p class="svc-line-card__statement">Design and harden security-sensitive systems so protection is built into the architecture, permissions, operations, and recovery process.</p>
-          <div class="svc-line-card__focus" aria-label="Secure systems engineering focus areas">
-            <span>Threat-informed architecture and data flow</span>
-            <span>Least privilege and privilege separation</span>
-            <span>Authentication, keys, secrets, and trust boundaries</span>
-            <span>Platform and service hardening</span>
-            <span>Security logging and operational evidence</span>
-            <span>Backup, rollback, recovery, and validation</span>
-          </div>
-          <a class="svc-text-link" href="{{ '/services/secure-systems-engineering/' | relative_url }}">Explore this service</a>
-        </article>
+      <div class="iv3-section-head"><div><p class="iv3-eyebrow">Choose by question</p><h2 id="choose-title">You do not need to know the service name.</h2></div><p>Start with the decision you need to make. The right engagement can be shaped from there.</p></div>
+      <div class="iv3-glance">
+        <article><span>If you are asking</span><strong>Can this application or API be abused?</strong><p>Start with Application &amp; API Security.</p></article>
+        <article><span>If you are asking</span><strong>Would our controls stop a realistic attacker?</strong><p>Start with Adversary Validation.</p></article>
+        <article><span>If you are asking</span><strong>Can this AI workflow be manipulated or overreach?</strong><p>Start with AI Security.</p></article>
+        <article><span>If you are asking</span><strong>How should this sensitive system be built or hardened?</strong><p>Start with Secure Systems Engineering.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="services-v2-process" id="how-we-work" aria-labelledby="engagement-process">
+  <section class="iv3-section" id="services" aria-labelledby="service-lines-title">
     <div class="wrap">
-      <h2 class="svc-section-title" id="engagement-process">How the work happens</h2>
-      <p class="services-v2-process__lead">Good security work should be understandable before, during, and after the technical testing. The process is designed to keep the objective clear, the work controlled, and the conclusions useful.</p>
-      <div class="services-v2-process__grid">
-        <article class="svc-process-step"><span class="svc-process-step__number">01 / DEFINE</span><h3>Define the question</h3><p>Agree what you need to know, which systems or outcomes matter, and what a useful answer should look like.</p></article>
-        <article class="svc-process-step"><span class="svc-process-step__number">02 / BOUND</span><h3>Set the boundaries</h3><p>Confirm scope, access, authority, safety constraints, escalation contacts, and handling requirements.</p></article>
-        <article class="svc-process-step"><span class="svc-process-step__number">03 / TEST</span><h3>Test the system</h3><p>Use manual analysis and purpose-fit tools to investigate realistic failure paths and challenge important assumptions.</p></article>
-        <article class="svc-process-step"><span class="svc-process-step__number">04 / PROVE</span><h3>Explain what was proven</h3><p>Document the evidence, impact, conditions, and reasoning needed to support each material conclusion.</p></article>
-        <article class="svc-process-step"><span class="svc-process-step__number">05 / VERIFY</span><h3>Help close the loop</h3><p>Turn findings into practical remediation priorities and retest the original failure path when verification is required.</p></article>
+      <div class="iv3-section-head"><div><p class="iv3-eyebrow">Core services</p><h2 id="service-lines-title">Four service lines. One standard of proof.</h2></div><p>Each service has a different technical focus, but the delivery model stays consistent: understand the objective, bound the work, test deliberately, prove what matters, and make the result useful.</p></div>
+      <div class="iv3-card-grid">
+        <article class="iv3-card"><span class="iv3-card__index">01 / APPLICATION &amp; API</span><h3>Find the trust boundary that fails.</h3><p>Test whether users, APIs, sessions, or business workflows can be abused to reach data or actions the system never intended to grant.</p><div class="iv3-deep"><details><summary>Technical focus</summary><div><ul><li>Authentication, MFA, recovery, and sessions</li><li>Authorization, roles, and object access</li><li>API security and unintended data exposure</li><li>Business logic and protected state changes</li><li>Input handling and browser attack surface</li><li>Targeted code, configuration, and dependency review</li></ul></div></details></div><div class="iv3-card__footer"><div class="iv3-chips"><span>Web</span><span>API</span><span>Auth</span><span>Business logic</span></div><a class="svc-text-link" href="{{ '/services/application-api-security/' | relative_url }}">Explore service</a></div></article>
+        <article class="iv3-card"><span class="iv3-card__index">02 / ADVERSARY VALIDATION</span><h3>Test the path to the outcome that matters.</h3><p>Determine whether a realistic attacker can reach an important objective and which controls actually prevent, constrain, detect, or fail to influence the path.</p><div class="iv3-deep"><details><summary>Technical focus</summary><div><ul><li>Objective-led attack paths</li><li>Identity, privilege, and trust relationships</li><li>Preventive control effectiveness</li><li>Detection and telemetry coverage</li><li>Response assumptions where in scope</li><li>Evidence-backed attack narratives</li></ul></div></details></div><div class="iv3-card__footer"><div class="iv3-chips"><span>Attack paths</span><span>Identity</span><span>Controls</span><span>Detection</span></div><a class="svc-text-link" href="{{ '/services/adversary-validation/' | relative_url }}">Explore service</a></div></article>
+        <article class="iv3-card"><span class="iv3-card__index">03 / AI SECURITY</span><h3>Test the authority around the model.</h3><p>Assess whether AI-enabled products and workflows can be manipulated, expose information, misuse tools, or act outside their intended limits.</p><div class="iv3-deep"><details><summary>Technical focus</summary><div><ul><li>Prompt injection and source confusion</li><li>Agent and tool execution boundaries</li><li>Identity, retrieval, memory, and data exposure</li><li>Browser-AI attack paths</li><li>Guardrail and policy effectiveness</li><li>Reproducible local validation where appropriate</li></ul></div></details></div><div class="iv3-card__footer"><div class="iv3-chips"><span>Agents</span><span>Browser AI</span><span>Tools</span><span>Data</span></div><a class="svc-text-link" href="{{ '/services/ai-security/' | relative_url }}">Explore service</a></div></article>
+        <article class="iv3-card"><span class="iv3-card__index">04 / SECURE SYSTEMS</span><h3>Make dangerous authority harder to acquire.</h3><p>Design and harden security-sensitive systems so protection is built into architecture, privilege, operations, evidence, and recovery.</p><div class="iv3-deep"><details><summary>Engineering focus</summary><div><ul><li>Threat-informed architecture and data flow</li><li>Least privilege and privilege separation</li><li>Authentication, keys, secrets, and trust boundaries</li><li>Platform and service hardening</li><li>Security logging and operational evidence</li><li>Backup, rollback, recovery, and validation</li></ul></div></details></div><div class="iv3-card__footer"><div class="iv3-chips"><span>Architecture</span><span>Privilege</span><span>Hardening</span><span>Recovery</span></div><a class="svc-text-link" href="{{ '/services/secure-systems-engineering/' | relative_url }}">Explore service</a></div></article>
       </div>
     </div>
   </section>
 
-  <section class="services-v2-specialist" aria-labelledby="specialist-capabilities">
+  <section class="iv3-section iv3-section--dark" id="process" aria-labelledby="process-title">
     <div class="wrap">
-      <div class="services-v2-specialist__head">
-        <h2 id="specialist-capabilities">When deeper analysis is needed.</h2>
-        <p>Not every problem can be answered from the surface. When necessary, deeper engineering and research techniques are brought into the engagement to understand how a system behaves and why a security failure exists.</p>
-      </div>
-      <div class="services-v2-specialist__grid">
-        <article class="svc-specialist-card"><strong>Vulnerability Research</strong><p>Investigate unfamiliar or complex security behavior when normal testing is not enough to explain the risk or demonstrate impact.</p></article>
-        <article class="svc-specialist-card"><strong>Reverse Engineering</strong><p>Analyze binaries, protocols, and implementation behavior to understand what software actually does when documentation or exposed interfaces are not enough.</p></article>
-        <article class="svc-specialist-card"><strong>Code &amp; Dependency Review</strong><p>Review targeted source code, configuration, and dependencies to identify root cause and explain behavior observed during testing.</p></article>
-        <article class="svc-specialist-card"><strong>Agentic Security Engineering</strong><p>Build human-governed automation for security research and testing while keeping operator control, evidence, and verification explicit.</p></article>
+      <div class="iv3-section-head"><div><p class="iv3-eyebrow">Engagement model</p><h2 id="process-title">Clear before. Controlled during. Useful after.</h2></div><p>Good security work should remain understandable while it is happening. The process keeps the objective visible and the technical work accountable to it.</p></div>
+      <div class="iv3-process">
+        <article><span class="iv3-process__dot">01</span><div><h3>Define</h3><p>Agree what the work must answer.</p></div></article>
+        <article><span class="iv3-process__dot">02</span><div><h3>Bound</h3><p>Set scope, authority, safety, and handling rules.</p></div></article>
+        <article><span class="iv3-process__dot">03</span><div><h3>Test</h3><p>Exercise realistic failure paths deliberately.</p></div></article>
+        <article><span class="iv3-process__dot">04</span><div><h3>Prove</h3><p>Validate what happened and preserve evidence.</p></div></article>
+        <article><span class="iv3-process__dot">05</span><div><h3>Verify</h3><p>Connect remediation to the original failure path.</p></div></article>
       </div>
     </div>
   </section>
 
-  <section class="services-v2-models" aria-labelledby="engagement-models">
+  <section class="iv3-section iv3-section--soft" id="specialist" aria-labelledby="specialist-title">
     <div class="wrap">
-      <h2 class="svc-section-title" id="engagement-models">Different problems need different engagement shapes.</h2>
-      <div class="services-v2-models__grid">
-        <article class="svc-model-card"><span>01</span><h3>Fixed scope</h3><p>Defined systems, objectives, constraints, and deliverables. A good fit when the environment and required outcome are already clear.</p></article>
-        <article class="svc-model-card"><span>02</span><h3>Objective-led</h3><p>Begin with an outcome that matters and allow the testing path to follow the evidence within agreed rules and safety limits.</p></article>
-        <article class="svc-model-card"><span>03</span><h3>Engineering or research sprint</h3><p>Focused technical work for architecture, hardening, root cause, reverse engineering, or research questions that do not fit a conventional penetration test.</p></article>
+      <div class="iv3-section-head"><div><p class="iv3-eyebrow">Specialist depth</p><h2 id="specialist-title">When the surface answer is not enough.</h2></div><p>Some security questions require deeper engineering or research. Those capabilities support the primary service lines rather than existing as disconnected offerings.</p></div>
+      <div class="iv3-audience">
+        <article><span>Research</span><h3>Vulnerability research</h3><p>Investigate unfamiliar behavior when ordinary testing does not explain the risk or prove the impact.</p></article>
+        <article><span>Analysis</span><h3>Reverse engineering</h3><p>Study binaries, protocols, and implementation behavior when exposed interfaces or documentation are insufficient.</p></article>
+        <article><span>Engineering</span><h3>Code &amp; dependency review</h3><p>Trace observed security behavior back to source, configuration, dependencies, and design assumptions.</p></article>
+      </div>
+      <div class="iv3-quote"><div class="iv3-quote__mark">“</div><div><blockquote>Automation is useful when it makes expert judgment more repeatable, not when it hides where the judgment went.</blockquote><p>Agentic security engineering is used with explicit authority, evidence, and human review.</p></div></div>
+    </div>
+  </section>
+
+  <section class="iv3-section iv3-section--white" id="engagements" aria-labelledby="engagements-title">
+    <div class="wrap">
+      <div class="iv3-section-head"><div><p class="iv3-eyebrow">Engagement shapes</p><h2 id="engagements-title">The structure follows the problem.</h2></div><p>Some work is tightly bounded. Some needs room to follow an attack path. Some is fundamentally engineering or research. The engagement shape should support the decision, not force the decision into a template.</p></div>
+      <div class="iv3-glance">
+        <article><span>01</span><strong>Fixed scope</strong><p>Defined systems, objectives, constraints, and deliverables.</p></article>
+        <article><span>02</span><strong>Objective-led</strong><p>Follow the evidence toward an agreed security outcome inside clear rules.</p></article>
+        <article><span>03</span><strong>Engineering sprint</strong><p>Focused architecture, hardening, root-cause, or implementation work.</p></article>
+        <article><span>04</span><strong>Research sprint</strong><p>Investigate a security question that does not fit conventional assessment patterns.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="services-v2-cta">
-    <div class="wrap">
-      <div class="services-v2-cta__panel">
-        <div><h2>You do not need to know the name of the service before you contact us.</h2><p>Describe the system, the concern, what you are trying to protect or understand, and any constraints we need to respect. We can work out the right engagement from there.</p></div>
-        <a class="home-btn home-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Start the conversation</a>
-      </div>
-    </div>
-  </section>
+  <section class="iv3-cta"><div class="wrap"><div class="iv3-cta__panel"><div><h2>Bring the problem. We can shape the engagement.</h2><p>Describe the system, the concern, what you are trying to protect or understand, and any constraints we need to respect.</p></div><a class="home-btn home-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Start the conversation</a></div></div></section>
 </div>
