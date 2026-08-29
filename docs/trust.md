@@ -1,97 +1,24 @@
 ---
-layout: default
+layout: home-v2
 title: Trust | Black Bag Security
-description: Governance, evidence handling, and operational safety for offensive security engagements.
+description: How Black Bag Security handles authority, evidence, sensitive data, communication, and operational safety during security work.
 permalink: /trust/
 lang: en
 ref: trust
+inner_v3: true
 ---
-<section class="section">
-  <div class="wrap">
-    <div class="section__head reveal" data-reveal>
-      <h1>Trust</h1>
-      <p>Governance-minded delivery with evidence integrity, confidentiality, and operational safety.</p>
-    </div>
+<div class="inner-v3 editorial-v3">
+  <section class="iv3-hero" aria-labelledby="trust-title"><div class="wrap iv3-hero__grid"><div><p class="iv3-eyebrow">Trust</p><h1 id="trust-title">security work should<br>not create new risk.</h1><p class="iv3-hero__lead">Offensive security often requires privileged access and produces sensitive evidence. Black Bag Security treats authority, confidentiality, evidence integrity, and operational safety as part of the technical work itself.</p></div><aside class="iv3-signal-panel" aria-label="Trust principles"><div class="iv3-signal"><span>01</span><div><strong>Explicit authority</strong><p>Work remains inside agreed scope and rules.</p></div></div><div class="iv3-signal"><span>02</span><div><strong>Minimal collection</strong><p>Evidence is collected to support conclusions, not because more data is available.</p></div></div><div class="iv3-signal"><span>03</span><div><strong>Protected handling</strong><p>Credentials, client data, and evidence are treated as sensitive material.</p></div></div><div class="iv3-signal"><span>04</span><div><strong>Clear limitations</strong><p>Uncertainty and constraints are reported rather than hidden.</p></div></div></aside></div></section>
 
-    <div class="model-grid">
-      <article class="model-card model-card--evidence reveal delay-1" data-reveal>
-        <h3>Evidence integrity</h3>
-        <p>Reproduction steps and proof artifacts attached to every finding.</p>
-      </article>
-      <article class="model-card model-card--confidential reveal delay-2" data-reveal>
-        <h3>Confidential handling</h3>
-        <p>Minimal data capture and controlled storage aligned to retention policies.</p>
-      </article>
-      <article class="model-card model-card--safety reveal delay-3" data-reveal>
-        <h3>Operational safety</h3>
-        <p>Explicit stop conditions and production safety checks.</p>
-      </article>
-    </div>
-    <p class="mono reveal delay-4" data-reveal><a href="{{ '/on-site-engagements/' | relative_url }}">On-site engagement controls -></a></p>
-  </div>
-</section>
+  <nav class="iv3-jumpbar" aria-label="Trust page sections"><div class="wrap iv3-jumpbar__inner"><a href="#commitments">Commitments</a><a href="#handling">Handling</a><a href="#disclosure">Disclosure</a><a href="#frameworks">Frameworks</a></div></nav>
 
-<section class="section">
-  <div class="wrap">
-    <div class="section__head reveal" data-reveal>
-      <h2>Trust and security</h2>
-      <p>Plain-language commitments for secure communication, data handling, and disclosure.</p>
-    </div>
+  <section class="iv3-section iv3-section--white" id="commitments"><div class="wrap"><div class="iv3-section-head"><div><p class="iv3-eyebrow">Operating commitments</p><h2>Trust is built into the engagement model.</h2></div><p>These are not marketing add-ons. They determine how the work is scoped, executed, documented, transferred, and closed.</p></div><div class="iv3-glance"><article><span>Evidence</span><strong>Support the claim.</strong><p>Material findings include enough context and proof to be reviewed and reproduced where practical.</p></article><article><span>Confidentiality</span><strong>Handle only what is needed.</strong><p>Collection and transfer are bounded by the engagement and its handling requirements.</p></article><article><span>Safety</span><strong>Protect system availability.</strong><p>Stop conditions and escalation paths are explicit when testing could affect sensitive environments.</p></article><article><span>Transparency</span><strong>State what was not proven.</strong><p>Blocked prerequisites, limitations, and unresolved questions remain visible.</p></article></div></div></section>
 
-    <div class="split">
-      <div class="stack stack--signal stack--secure reveal delay-1" data-reveal>
-        <h3>Secure communication</h3>
-        <ul class="outcomes">
-          <li>Email by default, PGP on request.</li>
-          <li>We can use your secure portal or file transfer.</li>
-          <li>No third-party analytics or tracking scripts.</li>
-        </ul>
-      </div>
-      <div class="stack stack--signal stack--data reveal delay-2" data-reveal>
-        <h3>Data handling</h3>
-        <ul class="outcomes">
-          <li>We collect only what is needed to prove impact.</li>
-          <li>Retention periods are agreed up front.</li>
-          <li>Artifacts are transferred using approved channels.</li>
-          <li>Private client data remains safeguarded at all times and is never placed in unmanaged third-party AI systems.</li>
-        </ul>
-      </div>
-    </div>
-    <p class="mono reveal delay-3" data-reveal><a href="{{ '/policies/' | relative_url }}">Policy surface: anti-bribery, confidentiality, and disclosure -></a></p>
-  </div>
-</section>
+  <section class="iv3-section iv3-section--dark" id="handling"><div class="wrap"><div class="iv3-section-head"><div><p class="iv3-eyebrow">Data &amp; evidence handling</p><h2>Collect less. Protect more. Keep provenance.</h2></div><p>Evidence should be sufficient for the technical conclusion without becoming an unnecessary copy of the client's environment.</p></div><div class="iv3-process"><article><span class="iv3-process__dot">01</span><div><h3>Minimize</h3><p>Use the smallest evidence set that supports the conclusion.</p></div></article><article><span class="iv3-process__dot">02</span><div><h3>Separate</h3><p>Keep credentials and sensitive runtime material outside ordinary source control.</p></div></article><article><span class="iv3-process__dot">03</span><div><h3>Protect</h3><p>Use approved transfer and storage paths appropriate to the engagement.</p></div></article><article><span class="iv3-process__dot">04</span><div><h3>Verify</h3><p>Use hashes, manifests, or equivalent controls when artifact integrity matters.</p></div></article><article><span class="iv3-process__dot">05</span><div><h3>Close</h3><p>Handle retention and final disposition according to the agreed requirements.</p></div></article></div></div></section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="section__head reveal" data-reveal>
-      <h2>Responsible disclosure</h2>
-      <p>Coordinated disclosure aligned to client constraints and vendor timelines.</p>
-    </div>
+  <section class="iv3-section" id="disclosure"><div class="wrap"><div class="iv3-section-head"><div><p class="iv3-eyebrow">Responsible disclosure</p><h2>Client findings stay client findings.</h2></div><p>External disclosure is not assumed. Any vendor coordination, advisory activity, or publication must respect the client's authority, legal requirements, and agreed disclosure path.</p></div><div class="iv3-audience"><article><span>Client work</span><h3>No automatic publication</h3><p>Client findings are not published simply because they are technically interesting.</p></article><article><span>Vendor coordination</span><h3>Follow the agreed process</h3><p>Vendor contact is handled according to client direction and applicable disclosure requirements.</p></article><article><span>Black Bag systems</span><h3>Dedicated security channel</h3><p>Vulnerabilities affecting Black Bag Security systems or projects can be reported through the published security contact.</p></article></div></div></section>
 
-    <div class="stack stack--signal stack--disclosure reveal delay-1" data-reveal>
-      <ul class="outcomes">
-        <li>We do not publish client findings without explicit approval.</li>
-        <li>Vendor coordination follows your legal and policy requirements.</li>
-        <li>Disclosure windows are agreed before work begins.</li>
-      </ul>
-    </div>
-  </div>
-</section>
+  <section class="iv3-section iv3-section--soft" id="frameworks"><div class="wrap"><div class="iv3-section-head"><div><p class="iv3-eyebrow">Framework alignment</p><h2>Map evidence to the language stakeholders already use.</h2></div><p>Where useful, findings and coverage can be related to standards and frameworks used by security, engineering, audit, or governance teams. Mapping supports communication; it does not replace the technical evidence.</p></div><div class="iv3-chips" style="gap:10px;"><span>NIST</span><span>MITRE ATT&amp;CK</span><span>OWASP</span><span>CIS</span><span>PCI DSS</span><span>ISO 27001</span></div><div class="iv3-deep"><details><summary>Secure communication</summary><div>Email is appropriate for initial coordination. PGP or client-approved secure transfer can be used when sensitive material requires it. No third-party analytics or tracking scripts are required by this site.</div></details><details><summary>AI and client data</summary><div>Private client information should not be placed into unmanaged third-party AI systems. AI-assisted workflows are bounded by the engagement's data-handling requirements and the authority available to the operator.</div></details></div></div></section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="section__head reveal" data-reveal>
-      <h2>Framework alignment</h2>
-      <p>Findings can be mapped to the frameworks your governance teams rely on.</p>
-    </div>
-
-    <div class="pill-row reveal delay-1" data-reveal>
-      <span class="pill">NIST</span>
-      <span class="pill">MITRE ATT&amp;CK</span>
-      <span class="pill">OWASP</span>
-      <span class="pill">CIS</span>
-      <span class="pill">PCI-DSS</span>
-      <span class="pill">ISO 27001</span>
-    </div>
-  </div>
-</section>
+  <section class="iv3-cta"><div class="wrap"><div class="iv3-cta__panel"><div><h2>Need to discuss handling requirements before scope?</h2><p>That is a reasonable place to start, especially for regulated, sensitive, or operationally constrained environments.</p></div><a class="home-btn home-btn--accent" href="{{ '/contact/' | relative_url }}">Contact Black Bag Security</a></div></div></section>
+</div>
