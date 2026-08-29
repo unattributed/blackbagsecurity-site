@@ -1,6 +1,6 @@
 ---
 layout: home-v2
-title: AOTP | The Engineering Arsenal
+title: Agentic Offensive Testing Platform | The Engineering Arsenal
 description: Authorized-only, evidence-first agentic offensive testing with governed planning, controlled execution, evidence capture, replay, validation, reporting, and retest.
 permalink: /arsenal/aotp/
 lang: en
@@ -13,11 +13,11 @@ arsenal_v2: true
       <a class="arsenal-project-back" href="{{ '/arsenal/' | relative_url }}">Back to the Engineering Arsenal</a>
       <div class="arsenal-project-hero__grid">
         <div>
-          <p class="arsenal-project-kicker">Governed Offensive Testing Platform</p>
-          <h1 id="aotp-title">AOTP</h1>
-          <p class="arsenal-project-lead">Agentic Offensive Testing Platform is an authorized-only, evidence-first system for governed offensive security testing. It combines local AI-assisted planning with deterministic campaign authority, controlled tool execution, evidence capture, replay, validation, and human-reviewed reporting.</p>
+          <p class="arsenal-project-kicker">AOTP · Governed Offensive Testing Platform</p>
+          <h1 id="aotp-title">Agentic Offensive Testing Platform</h1>
+          <p class="arsenal-project-lead">AOTP is an authorized-only, evidence-first system for governed offensive security testing. It combines local AI-assisted planning with deterministic campaign authority, controlled tool execution, evidence capture, replay, validation, and human-reviewed reporting.</p>
         </div>
-        <aside class="arsenal-project-summary" aria-label="AOTP summary">
+        <aside class="arsenal-project-summary" aria-label="Agentic Offensive Testing Platform summary">
           <div class="arsenal-project-summary__row"><strong>Purpose</strong><p>Make AI-assisted offensive testing controllable, reviewable, and evidence-backed.</p></div>
           <div class="arsenal-project-summary__row"><strong>Operating model</strong><p>Local-first, operator-controlled, explicit authority and human review.</p></div>
           <div class="arsenal-project-summary__row"><strong>Repository</strong><p>Private development repository.</p></div>
