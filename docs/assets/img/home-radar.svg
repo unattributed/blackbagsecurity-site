@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 410" role="img" aria-labelledby="title desc">
-  <title id="title">Evidence, engineering, experience, and research</title>
-  <desc id="desc">A technical radial diagram representing Black Bag Security's evidence-first engineering and research approach.</desc>
+  <title id="title">Evidence, engineering, experience, and arsenal</title>
+  <desc id="desc">A technical radial diagram representing Black Bag Security's evidence-first engineering arsenal.</desc>
   <defs>
     <style>
       .g{fill:none;stroke:#d9d9d9;stroke-width:1}.a{fill:none;stroke:#a9a9a9;stroke-width:1}.k{fill:#0a0a0a}.l{fill:#76d600}.t{font:700 10px Arial,sans-serif;letter-spacing:.08em}.s{font:12px Arial,sans-serif;fill:#111}.m{font:10px Arial,sans-serif;fill:#fff;letter-spacing:.08em}
@@ -22,5 +22,5 @@
   <rect class="k" x="83" y="20" width="62" height="24"/><text class="m" x="114" y="36" text-anchor="middle">EVIDENCE</text><text class="s" x="84" y="63">verifiable</text><text class="s" x="84" y="79">repeatable</text>
   <rect class="k" x="493" y="20" width="88" height="24"/><text class="m" x="537" y="36" text-anchor="middle">ENGINEERING</text><text class="s" x="505" y="63">secure by</text><text class="s" x="521" y="79">design</text>
   <rect class="k" x="39" y="350" width="86" height="24"/><text class="m" x="82" y="366" text-anchor="middle">EXPERIENCE</text><text class="s" x="40" y="393">since 1984</text>
-  <rect class="k" x="502" y="350" width="79" height="24"/><text class="m" x="541.5" y="366" text-anchor="middle">RESEARCH</text><text class="s" x="516" y="393">driven</text><text class="s" x="513" y="408">defense</text>
+  <rect class="k" x="502" y="350" width="79" height="24"/><text class="m" x="541.5" y="366" text-anchor="middle">ARSENAL</text><text class="s" x="519" y="393">built</text><text class="s" x="516" y="408">tested</text>
 </svg>
