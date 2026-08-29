@@ -45,12 +45,13 @@
   <link rel="stylesheet" href="{{ '/assets/css/inner-v3.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/site-intelligence.css' | relative_url }}" />
   {% endif %}
+  {% if page.aotp_v3 %}<link rel="stylesheet" href="{{ '/assets/css/aotp-v3.css' | relative_url }}" />{% endif %}
 
   <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml" />
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
 </head>
-<body class="home-v2{% if page.services_v2 %} services-v2-body{% endif %}{% if page.methodology_v2 %} methodology-v2-body{% endif %}{% if page.research_v2 %} research-v2-body{% endif %}{% if page.inner_v3 or page.services_v2 or page.methodology_v2 or page.research_v2 %} editorial-v3-body{% endif %}">
+<body class="home-v2{% if page.services_v2 %} services-v2-body{% endif %}{% if page.methodology_v2 %} methodology-v2-body{% endif %}{% if page.research_v2 %} research-v2-body{% endif %}{% if page.inner_v3 or page.services_v2 or page.methodology_v2 or page.research_v2 %} editorial-v3-body{% endif %}{% if page.aotp_v3 %} aotp-v3-body{% endif %}">
   <a class="skip" href="#content">Skip to content</a>
   <header class="site-header site-header--v2">
     <div class="wrap header-v2__inner">
