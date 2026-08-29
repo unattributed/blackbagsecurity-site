@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ page.lang | default: 'en' }}">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -8,17 +8,6 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; frame-ancestors 'none'; form-action 'self'" />
   <meta name="theme-color" content="#0b0f14" />
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
-
-  {% if page.ref %}
-    {% assign alternate_pages = site.pages | where: "ref", page.ref %}
-    {% for alt in alternate_pages %}
-      <link rel="alternate" hreflang="{{ alt.lang | default: 'en' }}" href="{{ alt.url | absolute_url }}" />
-    {% endfor %}
-    {% assign en_version = alternate_pages | where: "lang", "en" | first %}
-    {% if en_version %}
-      <link rel="alternate" hreflang="x-default" href="{{ en_version.url | absolute_url }}" />
-    {% endif %}
-  {% endif %}
 
   <title>{{ page.title | default: site.title }}</title>
 
