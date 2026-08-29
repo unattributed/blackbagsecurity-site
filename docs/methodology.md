@@ -73,7 +73,7 @@ methodology_v2: true
         <p class="method-eyebrow">Evidence-first</p>
         <h2 id="evidence-title">A lead is not automatically a finding.</h2>
         <p>A scanner alert, unusual response, suspicious state change, or promising attack path starts an investigation. Material conclusions are stronger when the behavior can be reproduced, placed in context, and connected to real impact.</p>
-        <blockquote>We would rather state an honest limitation than manufacture certainty the evidence does not support.</blockquote>
+        <blockquote>We would rather state an honest limitation than manufacture certainty unsupported by the evidence.</blockquote>
       </div>
 
       <div class="method-v2-evidence__qualities">
