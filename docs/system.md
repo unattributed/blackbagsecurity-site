@@ -1,7 +1,7 @@
 ---
 layout: home-v2
 title: The Black Bag Security System | Black Bag Security
-description: How Black Bag Security services, methodology, research, engineering projects, trust controls, evidence, and retest work together as one security system.
+description: How Black Bag Security services, methodology, platforms, engineering projects, trust controls, evidence, and retest work together as one security system.
 permalink: /system/
 lang: en
 ref: system
@@ -13,8 +13,8 @@ inner_v3: true
       <div>
         <p class="iv3-eyebrow">The Black Bag Security System</p>
         <h1 id="system-title">one mission.<br>many layers.</h1>
-        <p class="iv3-hero__lead">Black Bag Security is not a collection of disconnected services, tools, and research projects. Client work, methodology, offensive testing, secure engineering, infrastructure, AI research, evidence, and retest are designed to reinforce the same mission: reduce implicit trust, make authority explicit, test what matters, and leave behind security decisions that can be defended.</p>
-        <div class="iv3-actions"><a class="home-btn home-btn--accent" href="#architecture">See the architecture</a><a class="home-btn" href="{{ '/research/' | relative_url }}">Explore the research</a></div>
+        <p class="iv3-hero__lead">Black Bag Security is not a collection of disconnected services, tools, platforms, and experiments. Client work, methodology, offensive testing, secure engineering, infrastructure, applied research, evidence, and retest are designed to reinforce the same mission: reduce implicit trust, make authority explicit, test what matters, and leave behind security decisions that can be defended.</p>
+        <div class="iv3-actions"><a class="home-btn home-btn--accent" href="#architecture">See the architecture</a><a class="home-btn" href="{{ '/research/' | relative_url }}">Explore engineering</a></div>
       </div>
       <aside class="iv3-signal-panel" aria-label="System principles">
         <div class="iv3-signal"><span>01</span><div><strong>Authority</strong><p>Know who may do what, to which target, under which conditions.</p></div></div>
@@ -29,7 +29,7 @@ inner_v3: true
 
   <section class="iv3-section" id="mission" aria-labelledby="mission-title">
     <div class="wrap">
-      <div class="iv3-section-head"><div><p class="iv3-eyebrow">Mission</p><h2 id="mission-title">The project is never the point. The security outcome is.</h2></div><p>Every service, workflow, tool, and research line earns its place by improving one of four things: authority, adversary understanding, evidence quality, or the ability to operate and recover securely.</p></div>
+      <div class="iv3-section-head"><div><p class="iv3-eyebrow">Mission</p><h2 id="mission-title">The project is never the point. The security outcome is.</h2></div><p>Every service, workflow, platform, system, and research line earns its place by improving one of four things: authority, adversary understanding, evidence quality, or the ability to operate and recover securely.</p></div>
       <div class="iv3-glance">
         <article><span>01 / REDUCE</span><strong>Reduce implicit trust</strong><p>Make identity, privilege, data, scope, and execution boundaries visible.</p></article>
         <article><span>02 / CHALLENGE</span><strong>Test the assumption</strong><p>Follow realistic attack paths rather than validating controls only in isolation.</p></article>
