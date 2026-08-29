@@ -2,11 +2,12 @@
 layout: home-v2
 title: The Engineering Arsenal | Black Bag Security
 description: Security platforms, hardened software, testing systems, and experimental tooling built to solve difficult security problems with evidence and control.
-permalink: /research/
+permalink: /arsenal/
 lang: en
 ref: arsenal
+arsenal_v2: true
 ---
-<div class="home-v2-page">
+<div class="home-v2-page arsenal-v2-page">
   <section class="home-v2-hero" aria-labelledby="arsenal-title">
     <div class="wrap home-v2-hero__grid">
       <div class="home-v2-hero__copy">
@@ -35,37 +36,40 @@ ref: arsenal
         <h2 class="section-title" id="inside-arsenal">Inside the Engineering Arsenal</h2>
       </div>
 
-      <div class="home-v2-research__grid">
-        <article class="home-v2-research-card">
-          <span class="home-v2-research-card__mark lines" aria-hidden="true"></span>
-          <h3>Security Engagement Platform + AOTP</h3>
-          <span class="home-v2-research-card__year">ACTIVE</span>
-          <p>Converging engagement control, authorization, scope, evidence, campaign execution, reporting, and retest into a governed offensive-security system.</p>
-          <a href="{{ '/research/aotp/' | relative_url }}">Explore platform direction</a>
+      <div class="arsenal-grid">
+        <article class="arsenal-card">
+          <div class="arsenal-card__meta"><span>Platform</span><span>In development</span></div>
+          <h3>Security Engagement Platform</h3>
+          <p>The engagement control plane: identity, written authorization, executable scope, evidence boundaries, provenance, reporting, and the controls that determine what work is allowed to proceed.</p>
+          <a href="{{ '/arsenal/security-engagement-platform/' | relative_url }}">Explore the platform</a>
         </article>
 
-        <article class="home-v2-research-card">
-          <span class="home-v2-research-card__mark dots" aria-hidden="true"></span>
+        <article class="arsenal-card">
+          <div class="arsenal-card__meta"><span>Platform</span><span>Active</span></div>
+          <h3>AOTP</h3>
+          <p>Authorized-only, evidence-first agentic offensive testing with governed planning, controlled execution, evidence capture, replay, validation, human review, reporting, and retest.</p>
+          <a href="{{ '/arsenal/aotp/' | relative_url }}">Explore AOTP</a>
+        </article>
+
+        <article class="arsenal-card">
+          <div class="arsenal-card__meta"><span>Secure software</span><span>Active</span></div>
           <h3>OSMAP</h3>
-          <span class="home-v2-research-card__year">ACTIVE</span>
-          <p>Secure mail access for hardened OpenBSD hosts, designed around least privilege, safe rendering, bounded authority, and visible security state.</p>
-          <a href="{{ '/research/osmap/' | relative_url }}">Explore OSMAP</a>
+          <p>Secure browser access to a hardened OpenBSD mail system, designed around least privilege, safe rendering, bounded authority, accessible interaction, and visible security state.</p>
+          <a href="{{ '/arsenal/osmap/' | relative_url }}">Explore OSMAP</a>
         </article>
 
-        <article class="home-v2-research-card">
-          <span class="home-v2-research-card__mark network" aria-hidden="true"></span>
+        <article class="arsenal-card">
+          <div class="arsenal-card__meta"><span>Infrastructure</span><span>Public</span></div>
           <h3>OpenBSD Mailstack</h3>
-          <span class="home-v2-research-card__year">ACTIVE</span>
-          <p>Operator framework for building, validating, maintaining, hardening, and recovering a security-sensitive OpenBSD mail platform.</p>
-          <a href="{{ '/research/openbsd-mailstack/' | relative_url }}">Explore mailstack</a>
+          <p>An operator-focused framework for building, validating, maintaining, hardening, monitoring, backing up, and recovering a security-sensitive OpenBSD mail platform.</p>
+          <a href="{{ '/arsenal/openbsd-mailstack/' | relative_url }}">Explore mailstack</a>
         </article>
 
-        <article class="home-v2-research-card">
-          <span class="home-v2-research-card__mark ring" aria-hidden="true"></span>
+        <article class="arsenal-card">
+          <div class="arsenal-card__meta"><span>AI security</span><span>Public</span></div>
           <h3>Browser-Safe AI Security</h3>
-          <span class="home-v2-research-card__year">ACTIVE</span>
-          <p>Controlled local testing for browser-AI attack paths, source confusion, prompt injection, state manipulation, and reproducible evidence capture.</p>
-          <a href="{{ '/research/browser-safe-ai-security/' | relative_url }}">Explore AI testing</a>
+          <p>Controlled local testing for browser-AI attack paths, source confusion, prompt injection, state manipulation, visual deception, and reproducible evidence capture.</p>
+          <a href="{{ '/arsenal/browser-safe-ai-security/' | relative_url }}">Explore AI testing</a>
         </article>
       </div>
     </div>
