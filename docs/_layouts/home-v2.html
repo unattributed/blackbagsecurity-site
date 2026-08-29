@@ -47,6 +47,9 @@
   {% if page.methodology_v2 %}
   <link rel="stylesheet" href="{{ '/assets/css/methodology-v2.css' | relative_url }}" />
   {% endif %}
+  {% if page.arsenal_v2 %}
+  <link rel="stylesheet" href="{{ '/assets/css/arsenal-v2.css' | relative_url }}" />
+  {% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/responsive-v2.css' | relative_url }}" />
 
   <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml" />
@@ -54,7 +57,7 @@
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
 </head>
-<body class="home-v2{% if page.services_v2 %} services-v2-body{% endif %}{% if page.methodology_v2 %} methodology-v2-body{% endif %}">
+<body class="home-v2{% if page.services_v2 %} services-v2-body{% endif %}{% if page.methodology_v2 %} methodology-v2-body{% endif %}{% if page.arsenal_v2 %} arsenal-v2-body{% endif %}">
   <a class="skip" href="#content">Skip to content</a>
 
   <header class="site-header site-header--v2">
@@ -70,7 +73,7 @@
       <nav class="nav-v2" aria-label="Primary">
         <a href="{{ '/services/' | relative_url }}">Services</a>
         <a href="{{ '/methodology/' | relative_url }}">Methodology</a>
-        <a href="{{ '/research/' | relative_url }}">Arsenal</a>
+        <a href="{{ '/arsenal/' | relative_url }}">Arsenal</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
         <a href="{{ '/contact/' | relative_url }}">Contact</a>
       </nav>
@@ -92,7 +95,7 @@
       <nav aria-label="Footer">
         <a href="{{ '/services/' | relative_url }}">Services</a>
         <a href="{{ '/methodology/' | relative_url }}">Methodology</a>
-        <a href="{{ '/research/' | relative_url }}">Arsenal</a>
+        <a href="{{ '/arsenal/' | relative_url }}">Arsenal</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
         <a href="{{ '/trust/' | relative_url }}">Trust</a>
         <a href="{{ '/industries/' | relative_url }}">Industries</a>
