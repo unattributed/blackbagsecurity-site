@@ -41,69 +41,39 @@
   <link rel="stylesheet" href="{{ '/assets/css/homepage-v2-depth.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/homepage-v2-silhouette.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/homepage-v2-refine.css' | relative_url }}" />
-  {% if page.services_v2 %}
-  <link rel="stylesheet" href="{{ '/assets/css/services-v2.css' | relative_url }}" />
-  {% endif %}
-  {% if page.methodology_v2 %}
-  <link rel="stylesheet" href="{{ '/assets/css/methodology-v2.css' | relative_url }}" />
-  {% endif %}
-  {% if page.research_v2 %}
-  <link rel="stylesheet" href="{{ '/assets/css/research-v2.css' | relative_url }}" />
-  {% endif %}
+  {% if page.services_v2 %}<link rel="stylesheet" href="{{ '/assets/css/services-v2.css' | relative_url }}" />{% endif %}
+  {% if page.methodology_v2 %}<link rel="stylesheet" href="{{ '/assets/css/methodology-v2.css' | relative_url }}" />{% endif %}
+  {% if page.research_v2 %}<link rel="stylesheet" href="{{ '/assets/css/research-v2.css' | relative_url }}" />{% endif %}
+  {% if page.inner_v3 %}<link rel="stylesheet" href="{{ '/assets/css/inner-v3.css' | relative_url }}" />{% endif %}
 
   <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml" />
-
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
 </head>
-<body class="home-v2{% if page.services_v2 %} services-v2-body{% endif %}{% if page.methodology_v2 %} methodology-v2-body{% endif %}{% if page.research_v2 %} research-v2-body{% endif %}">
+<body class="home-v2{% if page.services_v2 %} services-v2-body{% endif %}{% if page.methodology_v2 %} methodology-v2-body{% endif %}{% if page.research_v2 %} research-v2-body{% endif %}{% if page.inner_v3 %} editorial-v3-body{% endif %}">
   <a class="skip" href="#content">Skip to content</a>
 
   <header class="site-header site-header--v2">
     <div class="wrap header-v2__inner">
       <a class="brand-v2" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">
         <img class="brand-v2__mark" src="{{ '/assets/img/logo-bag.svg' | relative_url }}" width="42" height="42" alt="" />
-        <span class="brand-v2__text">
-          <span class="brand-v2__name">BLACK BAG</span>
-          <span class="brand-v2__security">SECURITY</span>
-        </span>
+        <span class="brand-v2__text"><span class="brand-v2__name">BLACK BAG</span><span class="brand-v2__security">SECURITY</span></span>
       </a>
-
       <nav class="nav-v2" aria-label="Primary">
-        <a href="{{ '/services/' | relative_url }}">Services</a>
-        <a href="{{ '/methodology/' | relative_url }}">Methodology</a>
-        <a href="{{ '/research/' | relative_url }}">Research</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+        <a href="{{ '/services/' | relative_url }}">Services</a><a href="{{ '/methodology/' | relative_url }}">Methodology</a><a href="{{ '/research/' | relative_url }}">Research</a><a href="{{ '/about/' | relative_url }}">About</a><a href="{{ '/contact/' | relative_url }}">Contact</a>
       </nav>
-
-      <div class="header-v2__motto" aria-label="Security is engineering. Evidence earns trust.">
-        Security is engineering.
-        <strong>Evidence earns trust.</strong>
-      </div>
+      <div class="header-v2__motto" aria-label="Security is engineering. Evidence earns trust.">Security is engineering.<strong>Evidence earns trust.</strong></div>
     </div>
   </header>
 
-  <main id="content" class="site-main">
-    {{ content }}
-  </main>
+  <main id="content" class="site-main">{{ content }}</main>
 
   <footer class="footer-v2">
     <div class="wrap footer-v2__inner">
       <div>&copy; <span id="year"></span> Black Bag Security. All rights reserved.</div>
-      <nav aria-label="Footer">
-        <a href="{{ '/services/' | relative_url }}">Services</a>
-        <a href="{{ '/methodology/' | relative_url }}">Methodology</a>
-        <a href="{{ '/research/' | relative_url }}">Research</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-        <a href="{{ '/trust/' | relative_url }}">Trust</a>
-        <a href="{{ '/industries/' | relative_url }}">Industries</a>
-        <a href="{{ '/contact/' | relative_url }}">Contact</a>
-        <a href="{{ '/.well-known/security.txt' | relative_url }}">Security</a>
-      </nav>
+      <nav aria-label="Footer"><a href="{{ '/services/' | relative_url }}">Services</a><a href="{{ '/methodology/' | relative_url }}">Methodology</a><a href="{{ '/research/' | relative_url }}">Research</a><a href="{{ '/about/' | relative_url }}">About</a><a href="{{ '/trust/' | relative_url }}">Trust</a><a href="{{ '/industries/' | relative_url }}">Industries</a><a href="{{ '/contact/' | relative_url }}">Contact</a><a href="{{ '/.well-known/security.txt' | relative_url }}">Security</a></nav>
     </div>
   </footer>
-
   <script src="{{ '/assets/js/app.js' | relative_url }}" defer></script>
 </body>
 </html>
