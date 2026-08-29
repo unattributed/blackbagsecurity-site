@@ -59,7 +59,7 @@
       <nav class="nav-v2" aria-label="Primary">
         <a href="{{ '/services/' | relative_url }}"{% if page.url contains '/services/' %} aria-current="page"{% endif %}>Services</a>
         <a href="{{ '/methodology/' | relative_url }}"{% if page.url contains '/methodology/' %} aria-current="page"{% endif %}>Methodology</a>
-        <a href="{{ '/research/' | relative_url }}"{% if page.url contains '/research/' or page.url contains '/system/' %} aria-current="page"{% endif %}>Research</a>
+        <a href="{{ '/research/' | relative_url }}"{% if page.url contains '/research/' or page.url contains '/system/' %} aria-current="page"{% endif %}>Engineering</a>
         <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about/' %} aria-current="page"{% endif %}>About</a>
         <a href="{{ '/contact/' | relative_url }}"{% if page.url contains '/contact/' %} aria-current="page"{% endif %}>Contact</a>
       </nav>
@@ -68,7 +68,7 @@
   </header>
   <main id="content" class="site-main">{{ content }}</main>
   {% if page.inner_v3 or page.services_v2 or page.methodology_v2 or page.research_v2 %}{% include system-rail.html %}{% endif %}
-  <footer class="footer-v2"><div class="wrap footer-v2__inner"><div>&copy; <span id="year"></span> Black Bag Security. All rights reserved.</div><nav aria-label="Footer"><a href="{{ '/services/' | relative_url }}">Services</a><a href="{{ '/methodology/' | relative_url }}">Methodology</a><a href="{{ '/research/' | relative_url }}">Research</a>{% if page.inner_v3 or page.services_v2 or page.methodology_v2 or page.research_v2 %}<a href="{{ '/system/' | relative_url }}">System</a>{% endif %}<a href="{{ '/about/' | relative_url }}">About</a><a href="{{ '/trust/' | relative_url }}">Trust</a><a href="{{ '/industries/' | relative_url }}">Industries</a><a href="{{ '/contact/' | relative_url }}">Contact</a><a href="{{ '/.well-known/security.txt' | relative_url }}">Security</a></nav></div></footer>
+  <footer class="footer-v2"><div class="wrap footer-v2__inner"><div>&copy; <span id="year"></span> Black Bag Security. All rights reserved.</div><nav aria-label="Footer"><a href="{{ '/services/' | relative_url }}">Services</a><a href="{{ '/methodology/' | relative_url }}">Methodology</a><a href="{{ '/research/' | relative_url }}">Engineering</a>{% if page.inner_v3 or page.services_v2 or page.methodology_v2 or page.research_v2 %}<a href="{{ '/system/' | relative_url }}">System</a>{% endif %}<a href="{{ '/about/' | relative_url }}">About</a><a href="{{ '/trust/' | relative_url }}">Trust</a><a href="{{ '/industries/' | relative_url }}">Industries</a><a href="{{ '/contact/' | relative_url }}">Contact</a><a href="{{ '/.well-known/security.txt' | relative_url }}">Security</a></nav></div></footer>
   <script src="{{ '/assets/js/app.js' | relative_url }}" defer></script>
 </body>
 </html>
