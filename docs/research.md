@@ -45,8 +45,8 @@ arsenal_v2: true
         </article>
 
         <article class="arsenal-card">
-          <div class="arsenal-card__meta"><span>Platform</span><span>Active</span></div>
-          <h3>AOTP</h3>
+          <div class="arsenal-card__meta"><span>AOTP</span><span>Active</span></div>
+          <h3>Agentic Offensive Testing Platform</h3>
           <p>Authorized-only, evidence-first agentic offensive testing with governed planning, controlled execution, evidence capture, replay, validation, human review, reporting, and retest.</p>
           <a href="{{ '/arsenal/aotp/' | relative_url }}">Explore AOTP</a>
         </article>
