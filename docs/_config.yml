@@ -4,9 +4,23 @@ description: >-
   research with reproducible evidence and clear technical judgment.
 url: "https://www.blackbagsecurity.com"
 baseurl: ""
+lang: en
 
 include:
   - .well-known
+
+# The reimagined site is English-only. Legacy localized content remains in
+# repository history/source but is excluded from the redesigned build and sitemap.
+exclude:
+  - ar
+  - de
+  - es
+  - fr
+  - he
+  - ja
+  - ko
+  - pt-BR
+  - th
 
 plugins:
   - jekyll-sitemap
