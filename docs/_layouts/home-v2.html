@@ -50,6 +50,9 @@
   {% if page.arsenal_v2 %}
   <link rel="stylesheet" href="{{ '/assets/css/arsenal-v2.css' | relative_url }}" />
   {% endif %}
+  {% if page.supporting_v2 %}
+  <link rel="stylesheet" href="{{ '/assets/css/supporting-v2.css' | relative_url }}" />
+  {% endif %}
   {% if page.services_v2 or page.methodology_v2 or page.arsenal_v2 %}
   <link rel="stylesheet" href="{{ '/assets/css/secondary-depth-v2.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/secondary-composition-v3.css' | relative_url }}" />
@@ -59,13 +62,14 @@
   {% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/responsive-v2.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/bbs-theme-v4.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/site-consistency-v5.css' | relative_url }}" />
 
   <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml" />
 
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
 </head>
-<body class="home-v2{% if page.services_v2 %} services-v2-body{% endif %}{% if page.methodology_v2 %} methodology-v2-body{% endif %}{% if page.arsenal_v2 %} arsenal-v2-body{% endif %}">
+<body class="home-v2{% if page.services_v2 %} services-v2-body{% endif %}{% if page.methodology_v2 %} methodology-v2-body{% endif %}{% if page.arsenal_v2 %} arsenal-v2-body{% endif %}{% if page.supporting_v2 %} supporting-v2-body{% endif %}">
   <a class="skip" href="#content">Skip to content</a>
 
   <header class="site-header site-header--v2">
@@ -79,11 +83,11 @@
       </a>
 
       <nav class="nav-v2" aria-label="Primary">
-        <a href="{{ '/services/' | relative_url }}">Services</a>
-        <a href="{{ '/methodology/' | relative_url }}">Methodology</a>
-        <a href="{{ '/arsenal/' | relative_url }}">Arsenal</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+        <a{% if page.url contains '/services/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/services/' | relative_url }}">Services</a>
+        <a{% if page.url contains '/methodology/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/methodology/' | relative_url }}">Methodology</a>
+        <a{% if page.url contains '/arsenal/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/arsenal/' | relative_url }}">Arsenal</a>
+        <a{% if page.url contains '/about/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/about/' | relative_url }}">About</a>
+        <a{% if page.url contains '/contact/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/contact/' | relative_url }}">Contact</a>
       </nav>
 
       <div class="header-v2__motto" aria-label="Security is engineering. Evidence earns trust.">
