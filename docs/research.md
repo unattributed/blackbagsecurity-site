@@ -1,72 +1,109 @@
 ---
-layout: default
-title: Research | Black Bag Security
-description: Vulnerability research and adversary techniques for high-impact systems.
+layout: home-v2
+title: The Engineering Arsenal | Black Bag Security
+description: Security platforms, hardened software, testing systems, and experimental tooling built to solve difficult security problems with evidence and control.
 permalink: /research/
 lang: en
-ref: research
+ref: arsenal
 ---
-<section class="section">
-  <div class="wrap">
-    <div class="section__head reveal" data-reveal>
-      <h1>Research</h1>
-      <p>Deep technical research for systems where generic scanning is not enough.</p>
-    </div>
-
-    <div class="split">
-      <div class="stack stack--signal stack--focus reveal delay-1" data-reveal>
-        <h3>Focus areas</h3>
-        <ul class="outcomes">
-          <li>Firmware, embedded systems, and protocol security.</li>
-          <li>Identity, access, and lateral movement pathways.</li>
-          <li>AI/LLM security and data leakage prevention.</li>
-        </ul>
+<div class="home-v2-page">
+  <section class="home-v2-hero" aria-labelledby="arsenal-title">
+    <div class="wrap home-v2-hero__grid">
+      <div class="home-v2-hero__copy">
+        <p class="home-v2-hero__eyebrow">The Engineering Arsenal</p>
+        <h1 id="arsenal-title">built.<br>tested.<br>refined.</h1>
+        <p class="home-v2-hero__lead">
+          <span>Security platforms, hardened software, testing systems, and experimental tooling developed to solve real operational problems.</span>
+          <span>Not a catalogue of products. Not a collection of third-party tools.</span>
+          <span>The common thread is engineering that makes security work more controlled, observable, reproducible, and useful.</span>
+        </p>
+        <div class="home-v2-hero__actions">
+          <a class="home-btn home-btn--accent" href="#arsenal">Explore the arsenal</a>
+          <a class="home-btn" href="{{ '/methodology/' | relative_url }}">See how the work is done</a>
+        </div>
       </div>
-      <div class="stack stack--signal stack--outputs reveal delay-2" data-reveal>
-        <h3>Research outputs</h3>
-        <ul class="outcomes">
-          <li>Root cause analysis and proof of impact.</li>
-          <li>Mitigation guidance and validation steps.</li>
-          <li>Optional advisory content for internal stakeholders.</li>
-        </ul>
+
+      <div class="home-v2-hero__visual">
+        <img src="{{ '/assets/img/home-radar.svg' | relative_url }}" width="620" height="410" alt="Evidence, engineering, experience, and arsenal radial diagram" />
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="section__head reveal" data-reveal>
-      <h2>Disclosure posture</h2>
-      <p>Coordinated disclosure aligned to client constraints and vendor timelines.</p>
-    </div>
+  <section class="home-v2-research" id="arsenal" aria-labelledby="inside-arsenal">
+    <div class="wrap">
+      <div class="home-v2-research__head">
+        <h2 class="section-title" id="inside-arsenal">Inside the Engineering Arsenal</h2>
+      </div>
 
-    <div class="stack stack--signal stack--disclosure reveal delay-1" data-reveal>
-      <ul class="outcomes">
-        <li>We coordinate disclosure plans before work begins.</li>
-        <li>Client approvals guide any external communication.</li>
-        <li>Vendor coordination follows your legal and policy requirements.</li>
-      </ul>
-      <p class="mono">Disclosure contact: <a href="mailto:security@blackbagsecurity.com">security@blackbagsecurity.com</a></p>
-    </div>
-  </div>
-</section>
+      <div class="home-v2-research__grid">
+        <article class="home-v2-research-card">
+          <span class="home-v2-research-card__mark lines" aria-hidden="true"></span>
+          <h3>Security Engagement Platform + AOTP</h3>
+          <span class="home-v2-research-card__year">ACTIVE</span>
+          <p>Converging engagement control, authorization, scope, evidence, campaign execution, reporting, and retest into a governed offensive-security system.</p>
+          <a href="{{ '/research/aotp/' | relative_url }}">Explore platform direction</a>
+        </article>
 
-<section class="section">
-  <div class="wrap">
-    <div class="model-grid">
-      <article class="model-card model-card--exploit reveal delay-1" data-reveal>
-        <h3>Exploit validation</h3>
-        <p>Controlled exploit paths used to validate impact and likelihood.</p>
-      </article>
-      <article class="model-card model-card--tradecraft reveal delay-2" data-reveal>
-        <h3>Adversary tradecraft</h3>
-        <p>Technique development aligned to realistic threat behaviors.</p>
-      </article>
-      <article class="model-card model-card--hardening reveal delay-3" data-reveal>
-        <h3>Systems hardening</h3>
-        <p>Mitigation guidance delivered with every finding.</p>
-      </article>
+        <article class="home-v2-research-card">
+          <span class="home-v2-research-card__mark dots" aria-hidden="true"></span>
+          <h3>OSMAP</h3>
+          <span class="home-v2-research-card__year">ACTIVE</span>
+          <p>Secure mail access for hardened OpenBSD hosts, designed around least privilege, safe rendering, bounded authority, and visible security state.</p>
+          <a href="{{ '/research/osmap/' | relative_url }}">Explore OSMAP</a>
+        </article>
+
+        <article class="home-v2-research-card">
+          <span class="home-v2-research-card__mark network" aria-hidden="true"></span>
+          <h3>OpenBSD Mailstack</h3>
+          <span class="home-v2-research-card__year">ACTIVE</span>
+          <p>Operator framework for building, validating, maintaining, hardening, and recovering a security-sensitive OpenBSD mail platform.</p>
+          <a href="{{ '/research/openbsd-mailstack/' | relative_url }}">Explore mailstack</a>
+        </article>
+
+        <article class="home-v2-research-card">
+          <span class="home-v2-research-card__mark ring" aria-hidden="true"></span>
+          <h3>Browser-Safe AI Security</h3>
+          <span class="home-v2-research-card__year">ACTIVE</span>
+          <p>Controlled local testing for browser-AI attack paths, source confusion, prompt injection, state manipulation, and reproducible evidence capture.</p>
+          <a href="{{ '/research/browser-safe-ai-security/' | relative_url }}">Explore AI testing</a>
+        </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="home-v2-why" aria-labelledby="built-not-collected">
+    <div class="wrap">
+      <h2 class="section-title" id="built-not-collected">Built, Not Collected</h2>
+      <div class="home-v2-why__grid">
+        <div class="home-v2-why__item">
+          <span class="icon-mask icon-scope" aria-hidden="true"></span>
+          <span>
+            <h3>Authority &amp; Control</h3>
+            <p>Scope, authorization, stop conditions, and operator decisions are treated as engineering inputs, not paperwork around the edges.</p>
+          </span>
+        </div>
+        <div class="home-v2-why__item">
+          <span class="icon-mask icon-evidence" aria-hidden="true"></span>
+          <span>
+            <h3>Evidence &amp; Replay</h3>
+            <p>Important conclusions are designed to survive review, reproduction, comparison, and retest.</p>
+          </span>
+        </div>
+        <div class="home-v2-why__item">
+          <span class="icon-mask icon-code" aria-hidden="true"></span>
+          <span>
+            <h3>Secure Systems</h3>
+            <p>Least privilege, bounded authority, fail-closed behavior, recoverability, and observable state shape the implementation.</p>
+          </span>
+        </div>
+        <div class="home-v2-why__item">
+          <span class="icon-mask icon-target" aria-hidden="true"></span>
+          <span>
+            <h3>Adversarial Engineering</h3>
+            <p>Tools and platforms are developed from the attacker's perspective, then constrained by evidence, safety, and operational reality.</p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
