@@ -11,16 +11,17 @@ include:
 
 # The reimagined site is English-only. Legacy localized content remains in
 # repository history/source but is excluded from the redesigned build and sitemap.
+# Trailing slashes keep these exclusions directory-specific.
 exclude:
-  - ar
-  - de
-  - es
-  - fr
-  - he
-  - ja
-  - ko
-  - pt-BR
-  - th
+  - ar/
+  - de/
+  - es/
+  - fr/
+  - he/
+  - ja/
+  - ko/
+  - pt-br/
+  - th/
 
 plugins:
   - jekyll-sitemap
