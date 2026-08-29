@@ -24,7 +24,7 @@ supporting_v2: true
         <h3>Security</h3>
         <p class="mono"><a href="mailto:security@blackbagsecurity.com">security@blackbagsecurity.com</a></p>
         <p>For coordinated disclosure or security concerns affecting Black Bag Security:</p>
-        <p><a class="mono" href="{{ '/.well-known/security.txt' | relative_url }}">/.well-known/security.txt</a></p>
+        <p><a class="mono" href="{{ '/security.txt' | relative_url }}">/security.txt</a></p>
       </div>
       <div class="contact__card reveal delay-3" data-reveal>
         <h3>Not sure where it fits?</h3>
