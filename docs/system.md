@@ -53,7 +53,7 @@ inner_v3: true
         <div class="system-plane">
           <p class="system-plane__label">Engineering plane</p>
           <div class="system-node"><span>Govern</span><strong>Security Engagement Platform</strong><p>Deterministic engagement identity, authorization, scope, stop conditions, and evidence state.</p></div>
-          <div class="system-node"><span>Execute</span><strong>AOTP</strong><p>Governed offensive execution, local AI assistance, replay, validation, findings, and retest workflows.</p></div>
+          <div class="system-node"><span>Operate &amp; test</span><strong>AOTP</strong><p>Operator-focused offensive security assessment platform connecting campaigns, targets, governed testing, evidence, validation, findings, reporting, exports, and retests with constrained AI assistance.</p></div>
           <div class="system-node"><span>Build &amp; learn</span><strong>OSMAP · OpenBSD · Browser-AI</strong><p>Secure software, resilient infrastructure, and adversarial AI research feed practical lessons back into the whole system.</p></div>
         </div>
       </div>
@@ -78,7 +78,7 @@ inner_v3: true
       <div class="iv3-section-head"><div><p class="iv3-eyebrow">Project roles</p><h2 id="projects-title">Different projects strengthen different parts of the mission.</h2></div><p>They are intentionally complementary. None of them needs to solve every problem because the wider system is designed to combine their strengths.</p></div>
       <div class="system-projects">
         <article><span>Engagement governance</span><strong>Security Engagement Platform</strong><p>Makes authorization, scope, state, and execution boundaries deterministic.</p></article>
-        <article><span>Offensive execution</span><strong>AOTP</strong><p>Applies governed AI assistance and tool execution to authorized security work.</p></article>
+        <article><span>Assessment operations</span><strong>AOTP</strong><p>Gives security professionals a governed workspace for authorized testing from campaign definition through evidence, findings, reporting, export, and retest.</p></article>
         <article><span>Secure software</span><strong>OSMAP</strong><p>Explores narrow attack surfaces, privilege separation, and safe rendering in real software.</p></article>
         <article><span>Resilient operations</span><strong>OpenBSD Mailstack</strong><p>Turns hardening, deployment, validation, recovery, and maintenance into one operating system.</p></article>
         <article><span>AI assurance</span><strong>Browser-Safe AI Security</strong><p>Builds reproducible evidence for browser-AI attack paths and control failures.</p></article>
