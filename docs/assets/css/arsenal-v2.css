@@ -1,0 +1,292 @@
+/* Engineering Arsenal landing and project pages. */
+
+.arsenal-v2-body { background: #f2f3f0; }
+
+.arsenal-v2-page {
+  --arsenal-ink: #0b0d0c;
+  --arsenal-muted: #4a504c;
+  --arsenal-line: rgba(18, 22, 20, .13);
+  --arsenal-soft: #f5f6f3;
+  --arsenal-accent: #74ce00;
+  --arsenal-accent-dark: #4d9700;
+  color: var(--arsenal-ink);
+}
+
+.arsenal-v2-page a { color: inherit; }
+
+.arsenal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 18px 0 40px;
+}
+
+.arsenal-card {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 22px 22px;
+  border: 1px solid var(--arsenal-line);
+  background: linear-gradient(145deg, #fff 0%, #f7f8f5 100%);
+  box-shadow: 0 12px 28px rgba(13,17,15,.06);
+}
+
+.arsenal-card__meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 30px;
+  color: var(--arsenal-accent-dark);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.arsenal-card h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -.025em;
+}
+
+.arsenal-card p {
+  margin: 12px 0 22px;
+  color: var(--arsenal-muted);
+  font-size: 11px;
+  line-height: 1.62;
+}
+
+.arsenal-card a {
+  margin-top: auto;
+  width: fit-content;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+
+.arsenal-card a::after { content: "  →"; color: var(--arsenal-accent-dark); }
+
+.arsenal-project-hero {
+  padding: 52px 0 48px;
+  border-bottom: 1px solid var(--arsenal-line);
+  background:
+    linear-gradient(rgba(18,22,20,.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18,22,20,.018) 1px, transparent 1px),
+    radial-gradient(circle at 82% 30%, rgba(116,206,0,.11), transparent 24%),
+    linear-gradient(180deg, #fff 0%, #fafbf8 100%);
+  background-size: 52px 52px, 52px 52px, auto, auto;
+}
+
+.arsenal-project-back {
+  display: inline-flex;
+  margin-bottom: 26px;
+  color: #505650;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.arsenal-project-back::before { content: "←"; margin-right: 8px; color: var(--arsenal-accent-dark); }
+
+.arsenal-project-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(290px, .8fr);
+  gap: 70px;
+  align-items: end;
+}
+
+.arsenal-project-kicker {
+  margin: 0 0 14px;
+  color: var(--arsenal-accent-dark);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.arsenal-project-hero h1 {
+  margin: 0;
+  max-width: 760px;
+  font-size: clamp(42px, 5.4vw, 68px);
+  font-weight: 500;
+  line-height: .98;
+  letter-spacing: -.048em;
+}
+
+.arsenal-project-lead {
+  max-width: 760px;
+  margin: 22px 0 0;
+  color: #2d322f;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.arsenal-project-summary {
+  padding: 21px 22px;
+  border: 1px solid var(--arsenal-line);
+  background: rgba(255,255,255,.92);
+  box-shadow: 0 16px 34px rgba(13,17,15,.08);
+}
+
+.arsenal-project-summary__row + .arsenal-project-summary__row {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--arsenal-line);
+}
+
+.arsenal-project-summary strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 9px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.arsenal-project-summary p {
+  margin: 0;
+  color: var(--arsenal-muted);
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+
+.arsenal-project-section { padding: 50px 0; }
+.arsenal-project-section + .arsenal-project-section { border-top: 1px solid var(--arsenal-line); }
+
+.arsenal-project-intro {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 70px;
+  margin-bottom: 28px;
+}
+
+.arsenal-project-intro h2 {
+  margin: 0;
+  font-size: 31px;
+  font-weight: 520;
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+
+.arsenal-project-intro p {
+  margin: 0;
+  color: var(--arsenal-muted);
+  font-size: 12.5px;
+  line-height: 1.7;
+}
+
+.arsenal-project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.arsenal-project-block {
+  min-height: 180px;
+  padding: 22px;
+  border: 1px solid var(--arsenal-line);
+  background: #fff;
+}
+
+.arsenal-project-block span {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--arsenal-accent-dark);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .07em;
+}
+
+.arsenal-project-block h3 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.arsenal-project-block p {
+  margin: 0;
+  color: var(--arsenal-muted);
+  font-size: 10.5px;
+  line-height: 1.58;
+}
+
+.arsenal-project-status {
+  padding: 50px 0;
+  color: #f3f5f2;
+  background: linear-gradient(135deg, #0e1110, #171b18 65%, #101311);
+}
+
+.arsenal-project-status__grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.arsenal-project-status h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 31px;
+  font-weight: 520;
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+
+.arsenal-project-status p {
+  color: #b7beb9;
+  font-size: 11.5px;
+  line-height: 1.65;
+}
+
+.arsenal-status-list { border-top: 1px solid rgba(255,255,255,.14); }
+.arsenal-status-item { padding: 17px 0; border-bottom: 1px solid rgba(255,255,255,.14); }
+.arsenal-status-item strong { display: block; margin-bottom: 5px; color: #fff; font-size: 11px; }
+.arsenal-status-item p { margin: 0; font-size: 10.5px; }
+
+.arsenal-project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.arsenal-repo-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border: 1px solid #1b1e1c;
+  background: #fff;
+  color: #111;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.arsenal-repo-link::after { content: " ↗"; margin-left: 10px; color: var(--arsenal-accent-dark); }
+
+@media (max-width: 900px) {
+  .arsenal-grid,
+  .arsenal-project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .arsenal-project-hero__grid,
+  .arsenal-project-intro,
+  .arsenal-project-status__grid { grid-template-columns: 1fr; gap: 32px; }
+}
+
+@media (max-width: 620px) {
+  .arsenal-grid,
+  .arsenal-project-grid { grid-template-columns: 1fr; }
+  .arsenal-card { min-height: 0; }
+  .arsenal-project-hero { padding: 42px 0 40px; }
+  .arsenal-project-hero h1 { font-size: clamp(40px, 12vw, 54px); }
+  .arsenal-project-lead { font-size: 15px; }
+  .arsenal-project-intro p,
+  .arsenal-project-status p { font-size: 13px; }
+  .arsenal-project-block p,
+  .arsenal-project-summary p,
+  .arsenal-status-item p { font-size: 12px; }
+}
