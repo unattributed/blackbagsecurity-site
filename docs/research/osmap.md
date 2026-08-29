@@ -10,7 +10,7 @@ research_v2: true
 <div class="research-v2-page">
   <section class="research-detail-hero" aria-labelledby="research-detail-title">
     <div class="wrap">
-      <a class="research-detail-back" href="{{ '/research/' | relative_url }}">All research</a>
+      <a class="research-detail-back" href="{{ '/research/' | relative_url }}">All engineering</a>
       <div class="research-detail-hero__grid">
         <div>
           <div class="research-detail-hero__meta"><span class="research-status research-status--bounded">Bounded deployment evidence</span></div>
@@ -42,7 +42,7 @@ research_v2: true
 
   <section class="research-detail-section research-detail-section--dark" aria-labelledby="osmap-lessons">
     <div class="wrap">
-      <div class="research-detail-intro"><h2 id="osmap-lessons">The research value is in the design choices.</h2><p>OSMAP is useful beyond mail because it is a working study in reducing browser-facing authority. The same patterns apply to administrative interfaces, internal security tools, local operator workspaces, and any service where the exposed UI does not need direct access to the most privileged operations.</p></div>
+      <div class="research-detail-intro"><h2 id="osmap-lessons">The engineering value is in the design choices.</h2><p>OSMAP is useful beyond mail because it is a working study in reducing browser-facing authority. The same patterns apply to administrative interfaces, internal security tools, local operator workspaces, and any service where the exposed UI does not need direct access to the most privileged operations.</p></div>
       <div class="research-detail-grid">
         <article class="research-detail-card"><strong>Narrow the interface</strong><p>Fewer features and dependencies can remove entire classes of attack surface before compensating controls are considered.</p></article>
         <article class="research-detail-card"><strong>Keep privilege local</strong><p>Expose a small, explicit local capability boundary rather than placing mailbox authority inside the browser-facing service.</p></article>
@@ -57,7 +57,7 @@ research_v2: true
   <section class="research-detail-section" aria-labelledby="osmap-status">
     <div class="wrap">
       <div class="research-detail-intro"><h2 id="osmap-status">A deployed slice is not a universal claim.</h2><p>The project contains production-validated and deployed slices, including authenticated assurance and HTTP parser validation, but it explicitly does not claim universal hostile-email safety, full ASVS verification, complete Roundcube parity, or general production readiness.</p></div>
-      <div class="research-detail-callout"><strong>Public project</strong><p>OSMAP is published as an operator-integrated security-sensitive project. Its documentation, architecture, known limitations, security model, deployment guidance, and validation gates are part of the research output, not secondary packaging.</p></div>
+      <div class="research-detail-callout"><strong>Public project</strong><p>OSMAP is published as an operator-integrated security-sensitive project. Its documentation, architecture, known limitations, security model, deployment guidance, and validation gates are part of the engineering record, not secondary packaging.</p></div>
     </div>
   </section>
 
