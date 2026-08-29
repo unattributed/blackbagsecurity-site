@@ -6,118 +6,32 @@ permalink: /research/
 lang: en
 ref: research
 research_v2: true
+inner_v3: true
 ---
-<div class="research-v2-page">
-  <section class="research-hero" aria-labelledby="research-title">
-    <div class="wrap research-hero__grid">
-      <div>
-        <p class="research-eyebrow">Research &amp; Engineering</p>
-        <h1 id="research-title">build what the<br>work demands.</h1>
-        <p class="research-hero__lead">Black Bag Security research is practical by design. When existing tools do not provide enough control, evidence, safety, or operational clarity, we engineer the missing layer, test it, document its limits, and use what survives validation to improve the work.</p>
-      </div>
-      <aside class="research-hero__aside" aria-label="Research principles">
-        <div><strong>Practical</strong><p>Research begins with a real security problem, not a technology looking for a use case.</p></div>
-        <div><strong>Evidence-bound</strong><p>Capabilities are described according to what has actually been implemented and validated.</p></div>
-        <div><strong>Operator-controlled</strong><p>Automation supports human judgment. Authority, scope, review, and final decisions remain explicit.</p></div>
-        <div><strong>Reusable</strong><p>Useful lessons are turned into repeatable tooling, controls, documentation, and validation workflows.</p></div>
-      </aside>
+<div class="inner-v3">
+  <section class="iv3-hero" aria-labelledby="research-title">
+    <div class="wrap iv3-hero__grid">
+      <div><p class="iv3-eyebrow">Research &amp; Engineering</p><h1 id="research-title">build what the<br>mission demands.</h1><p class="iv3-hero__lead">Black Bag Security projects are not isolated experiments. They are parts of one security engineering system: govern the work, execute deliberately, preserve evidence, reduce implicit trust, and make the result more repeatable.</p><div class="iv3-actions"><a class="home-btn home-btn--accent" href="#ecosystem">See the ecosystem</a><a class="home-btn" href="#projects">Explore the projects</a></div></div>
+      <aside class="iv3-signal-panel" aria-label="Research principles"><div class="iv3-signal"><span>01</span><div><strong>Practical</strong><p>Research begins with a real security problem.</p></div></div><div class="iv3-signal"><span>02</span><div><strong>Evidence-bound</strong><p>Claims stay inside what has actually been implemented and validated.</p></div></div><div class="iv3-signal"><span>03</span><div><strong>Operator-controlled</strong><p>Automation supports judgment. It does not silently inherit authority.</p></div></div><div class="iv3-signal"><span>04</span><div><strong>Composable</strong><p>Projects are designed to reinforce one another and complete the wider mission.</p></div></div></aside>
     </div>
   </section>
 
-  <section class="research-lines" aria-labelledby="research-lines-title">
-    <div class="wrap">
-      <div class="research-lines__intro">
-        <h2 id="research-lines-title">One engineering philosophy. Five active lines of work.</h2>
-        <p>These projects are different in form, but they share the same questions: what is trusted, who has authority, what happens when assumptions fail, what evidence survives review, and how can the result be made safer and more repeatable?</p>
-      </div>
+  <nav class="iv3-jumpbar" aria-label="Research page sections"><div class="wrap iv3-jumpbar__inner"><a href="#ecosystem">Ecosystem</a><a href="#projects">Projects</a><a href="#principles">Research principles</a><a href="#boundaries">Claim boundaries</a></div></nav>
 
-      <div class="research-grid">
-        <article class="research-card research-card--primary">
-          <div class="research-card__meta"><span class="research-card__index">01</span><span class="research-status">In development</span></div>
-          <h3>Security Engagement Platform</h3>
-          <p class="research-card__role">Engagement control plane</p>
-          <p>A next-generation engagement platform for turning written authority, scope, rules of engagement, execution boundaries, evidence state, and delivery requirements into deterministic controls. It is evolving from internal tooling already used to structure authorized assessment work and is being designed to integrate with AOTP rather than duplicate its execution engine.</p>
-          <div class="research-card__tags"><span>Engagement identity</span><span>Authorization</span><span>Executable scope</span><span>Evidence governance</span><span>Retest lifecycle</span></div>
-          <a class="research-link" href="{{ '/research/security-engagement-platform/' | relative_url }}">Read the platform direction</a>
-        </article>
+  <section class="iv3-section iv3-section--dark" id="ecosystem" aria-labelledby="ecosystem-title"><div class="wrap"><div class="iv3-section-head"><div><p class="iv3-eyebrow">Platform convergence</p><h2 id="ecosystem-title">Govern first. Execute second. Prove everything.</h2></div><p>The Security Engagement Platform and AOTP are complementary layers. One establishes authority and engagement state. The other performs governed technical execution. Evidence, findings, reporting, and retest close the loop.</p></div><div class="iv3-flow"><div class="iv3-flow__node"><span>Control plane</span><strong>Security Engagement Platform</strong><p>Engagement identity, written authority, approved scope, exclusions, stop conditions, client constraints, evidence boundaries, and delivery state.</p></div><div class="iv3-flow__arrow">→</div><div class="iv3-flow__node"><span>Execution plane</span><strong>AOTP</strong><p>Campaign planning, governed tools, browser and API testing, local AI assistance, evidence capture, replay, candidate validation, and human review.</p></div><div class="iv3-flow__arrow">→</div><div class="iv3-flow__node"><span>Assurance loop</span><strong>Evidence, findings &amp; retest</strong><p>Traceable proof, report-safe outputs, remediation state, comparison to the original failure path, closure, and retained provenance.</p></div></div></div></section>
 
-        <article class="research-card">
-          <div class="research-card__meta"><span class="research-card__index">02</span><span class="research-status research-status--bounded">Engineering foundation</span></div>
-          <h3>AOTP</h3>
-          <p class="research-card__role">Governed offensive execution</p>
-          <p>Authorized-only, evidence-first offensive testing with local AI-assisted planning, deterministic campaign authority, controlled tool execution, replay, validation, human review, reporting, and retest workflows.</p>
-          <div class="research-card__tags"><span>Local AI</span><span>WSTG</span><span>Evidence replay</span><span>Human approval</span></div>
-          <a class="research-link" href="{{ '/research/aotp/' | relative_url }}">Read the AOTP summary</a>
-        </article>
+  <section class="iv3-section" id="projects" aria-labelledby="projects-title"><div class="wrap"><div class="iv3-section-head"><div><p class="iv3-eyebrow">Active lines of work</p><h2 id="projects-title">Five projects. One engineering philosophy.</h2></div><p>Each project attacks a different part of the same mission: controlled security work, defensible evidence, safer systems, and better operator decisions.</p></div><div class="iv3-card-grid">
+    <article class="iv3-card"><span class="iv3-card__index">01 / SECURITY ENGAGEMENT PLATFORM</span><h3>Make authority executable.</h3><p>The next-generation engagement control plane for turning written authorization, scope, rules, execution boundaries, evidence state, and delivery requirements into deterministic controls.</p><div class="iv3-deep"><details><summary>Current direction</summary><div>It is evolving from internal engagement tooling already used to structure authorized assessment work. The current migration path establishes hardened engagement identity, engagement-bound authorization, executable scope records, exclusions, stop conditions, and later operation-level controls. It is intended to integrate with AOTP rather than duplicate the execution engine.</div></details></div><div class="iv3-card__footer"><div class="iv3-chips"><span>In development</span><span>Authorization</span><span>Scope</span><span>Evidence governance</span></div><a class="research-link" href="{{ '/research/security-engagement-platform/' | relative_url }}">Platform direction</a></div></article>
+    <article class="iv3-card"><span class="iv3-card__index">02 / AOTP</span><h3>Give AI assistance boundaries.</h3><p>An authorized-only, evidence-first offensive testing platform combining local AI-assisted planning with deterministic campaign authority, controlled execution, replay, validation, human review, reporting, and retest.</p><div class="iv3-deep"><details><summary>Current boundary</summary><div>A substantial engineering foundation and local runtime MVP exist, but AOTP is not presented as production-ready, as a successful public bug-bounty system, or as a replacement for a senior tester.</div></details></div><div class="iv3-card__footer"><div class="iv3-chips"><span>Engineering foundation</span><span>Local AI</span><span>WSTG</span><span>Human review</span></div><a class="research-link" href="{{ '/research/aotp/' | relative_url }}">AOTP summary</a></div></article>
+    <article class="iv3-card"><span class="iv3-card__index">03 / OSMAP</span><h3>Reduce the public attack surface.</h3><p>A small Rust webmail access layer for hardened OpenBSD mail systems, designed around server-side rendering, no runtime JavaScript, privilege separation, bounded resources, and safe message rendering.</p><div class="iv3-deep"><details><summary>Why it exists</summary><div>OSMAP explores how a security-sensitive browser interface can stay deliberately narrow while integrating with existing mail infrastructure. Deployment evidence is real but bounded to documented environments and conditions.</div></details></div><div class="iv3-card__footer"><div class="iv3-chips"><span>Rust</span><span>OpenBSD</span><span>Privilege separation</span></div><a class="research-link" href="{{ '/research/osmap/' | relative_url }}">OSMAP summary</a></div></article>
+    <article class="iv3-card"><span class="iv3-card__index">04 / OPENBSD MAILSTACK</span><h3>Make secure operations repeatable.</h3><p>An operator-focused framework for building and maintaining a hardened OpenBSD mail platform with phased deployment, verification, monitoring, backup, recovery, and public-safe operational documentation.</p><div class="iv3-deep"><details><summary>Why it matters</summary><div>The project treats deployment, validation, maintenance, hardening, and recovery as parts of one system rather than as separate afterthoughts.</div></details></div><div class="iv3-card__footer"><div class="iv3-chips"><span>Infrastructure</span><span>Recovery</span><span>Validation</span></div><a class="research-link" href="{{ '/research/openbsd-mailstack/' | relative_url }}">Mailstack summary</a></div></article>
+    <article class="iv3-card"><span class="iv3-card__index">05 / BROWSER-SAFE AI SECURITY</span><h3>Turn browser-AI risk into reproducible evidence.</h3><p>A local browser-AI security test suite for indirect prompt injection, hidden content, source confusion, visual deception, frame boundaries, delayed content, fail-open behavior, and reviewer-grade evidence packaging.</p><div class="iv3-deep"><details><summary>What makes it different</summary><div>The research uses synthetic local targets and structured browser, DOM, screenshot, proxy, model, JSON, manifest, and hash artifacts so claims can be reviewed rather than accepted from screenshots or anecdotes.</div></details></div><div class="iv3-card__footer"><div class="iv3-chips"><span>Browser AI</span><span>Prompt injection</span><span>Playwright</span></div><a class="research-link" href="{{ '/research/browser-safe-ai-security/' | relative_url }}">Research summary</a></div></article>
+    <article class="iv3-card"><span class="iv3-card__index">SYSTEM VIEW</span><h3>The projects are designed to collaborate.</h3><p>Governance work improves offensive execution. Offensive research improves validation. Secure software work exposes real trust-boundary problems. Infrastructure engineering adds operational and recovery discipline. AI research tests the new authority surfaces emerging across all of them.</p><div class="iv3-card__footer"><div class="iv3-chips"><span>Govern</span><span>Execute</span><span>Validate</span><span>Recover</span></div></div></article>
+  </div></div></section>
 
-        <article class="research-card">
-          <div class="research-card__meta"><span class="research-card__index">03</span><span class="research-status research-status--bounded">Bounded deployment evidence</span></div>
-          <h3>OSMAP</h3>
-          <p class="research-card__role">Secure software engineering</p>
-          <p>A small Rust webmail access layer for hardened OpenBSD mail systems, designed around server-side rendering, no runtime JavaScript, privilege separation, bounded resources, safe message rendering, and a narrow public attack surface.</p>
-          <div class="research-card__tags"><span>Rust</span><span>OpenBSD</span><span>Privilege separation</span><span>Safe rendering</span></div>
-          <a class="research-link" href="{{ '/research/osmap/' | relative_url }}">Read the OSMAP summary</a>
-        </article>
+  <section class="iv3-section iv3-section--soft" id="principles"><div class="wrap"><div class="iv3-section-head"><div><p class="iv3-eyebrow">Research principles</p><h2>Research is useful when it changes how the work is done.</h2></div><p>The objective is not to accumulate projects. Each line of work should improve control, evidence, resilience, or operator judgment.</p></div><div class="iv3-glance"><article><span>01</span><strong>Reduce implicit trust</strong><p>Make authority, identity, scope, privilege, and data boundaries explicit.</p></article><article><span>02</span><strong>Fail closed on ambiguity</strong><p>Unclear scope, weak evidence, stale state, or unresolved conflicts should block a claim.</p></article><article><span>03</span><strong>Preserve provenance</strong><p>Important conclusions should trace back to source, execution state, evidence, and review.</p></article><article><span>04</span><strong>State the limits</strong><p>A project can be useful before it is finished. Claim boundaries are part of the engineering record.</p></article></div></div></section>
 
-        <article class="research-card">
-          <div class="research-card__meta"><span class="research-card__index">04</span><span class="research-status">Public engineering baseline</span></div>
-          <h3>OpenBSD Mailstack</h3>
-          <p class="research-card__role">Secure infrastructure &amp; resilience</p>
-          <p>An operator-focused framework for building and maintaining a hardened OpenBSD mail platform with phased deployment, verification, monitoring, backup, recovery, hardening, runtime-secret handling, and public-safe operational documentation.</p>
-          <div class="research-card__tags"><span>OpenBSD</span><span>Mail infrastructure</span><span>Recovery</span><span>Validation gates</span></div>
-          <a class="research-link" href="{{ '/research/openbsd-mailstack/' | relative_url }}">Read the mailstack summary</a>
-        </article>
+  <section class="iv3-section iv3-section--white" id="boundaries"><div class="wrap"><div class="iv3-quote"><div class="iv3-quote__mark">“</div><div><blockquote>A polished interface is not proof that the underlying security claim is true.</blockquote><p>Research status, validation state, known limits, and unproven claims remain visible by design.</p></div></div><div class="iv3-deep"><details><summary>Why Black Bag Security publishes bounded claims</summary><div>Security tooling is especially vulnerable to confidence inflation. A successful local test does not prove production readiness. A candidate does not become a finding because automation produced it. A platform does not become operationally mature because the UI looks complete. The research record preserves those distinctions.</div></details><details><summary>How research enters client work</summary><div>Research capability is brought into assessments or engineering engagements when normal testing does not answer the question well enough. The relevant technique is applied to the client problem; the client engagement does not become an experiment.</div></details></div></div></section>
 
-        <article class="research-card">
-          <div class="research-card__meta"><span class="research-card__index">05</span><span class="research-status">Public local validation toolkit</span></div>
-          <h3>Browser-Safe AI Security</h3>
-          <p class="research-card__role">AI security research</p>
-          <p>A local browser-AI security test suite for repeatable work on indirect prompt injection, hidden content, source confusion, visual deception, frame boundaries, delayed content, fail-open behavior, and reviewer-grade evidence packaging.</p>
-          <div class="research-card__tags"><span>Browser AI</span><span>Prompt injection</span><span>Playwright</span><span>Deterministic evidence</span></div>
-          <a class="research-link" href="{{ '/research/browser-safe-ai-security/' | relative_url }}">Read the research summary</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="research-convergence" aria-labelledby="convergence-title">
-    <div class="wrap">
-      <div class="research-convergence__head">
-        <h2 id="convergence-title">The platform direction: govern first, execute second, prove everything.</h2>
-        <p class="research-convergence__lead">Security Engagement Platform and AOTP are being designed as complementary layers. The engagement layer establishes what may happen and under what conditions. AOTP performs governed technical execution inside that authority. Evidence, findings, reporting, and retest state then close the loop.</p>
-      </div>
-      <div class="research-flow" aria-label="Future platform integration model">
-        <div class="research-flow__node"><span class="research-flow__label">Control plane</span><strong>Security Engagement Platform</strong><p>Engagement identity, written authority, approved scope, exclusions, stop conditions, client constraints, evidence boundaries, and delivery state.</p></div>
-        <div class="research-flow__arrow" aria-hidden="true">→</div>
-        <div class="research-flow__node"><span class="research-flow__label">Execution plane</span><strong>AOTP</strong><p>Campaign planning, governed tools, browser and API testing, local AI assistance, evidence capture, replay, candidate validation, and human review.</p></div>
-        <div class="research-flow__arrow" aria-hidden="true">→</div>
-        <div class="research-flow__node"><span class="research-flow__label">Assurance loop</span><strong>Evidence, Findings &amp; Retest</strong><p>Traceable evidence, defensible findings, report-safe outputs, remediation state, retest comparison, closure, and retained provenance.</p></div>
-      </div>
-      <p class="research-convergence__note">This is the intended engineering direction. The full Security Engagement Platform and AOTP integration is not presented as complete or production-ready.</p>
-    </div>
-  </section>
-
-  <section class="research-philosophy" aria-labelledby="research-philosophy-title">
-    <div class="wrap">
-      <div class="research-philosophy__head">
-        <h2 id="research-philosophy-title">Research is useful when it changes how the work is done.</h2>
-        <p class="research-philosophy__lead">The objective is not to accumulate projects. Each line of research is expected to produce a practical improvement in control, evidence, resilience, or operator judgment.</p>
-      </div>
-      <div class="research-principles">
-        <article class="research-principle"><strong>Reduce implicit trust</strong><p>Make authority, identity, scope, privilege, and data boundaries explicit wherever possible.</p></article>
-        <article class="research-principle"><strong>Fail closed on ambiguity</strong><p>Unclear scope, weak evidence, stale state, or unresolved conflicts should block a claim rather than silently widen it.</p></article>
-        <article class="research-principle"><strong>Preserve provenance</strong><p>Important technical conclusions should be traceable to source material, execution state, evidence, and review decisions.</p></article>
-        <article class="research-principle"><strong>State the limits</strong><p>A project can be valuable before it is finished. Status and claim boundaries are part of the engineering record.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="research-cta">
-    <div class="wrap">
-      <div class="research-cta__panel">
-        <div><h2>Need research applied to a real security problem?</h2><p>Research capability can be brought into an assessment or engineering engagement when standard testing does not answer the question well enough.</p></div>
-        <a class="home-btn home-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss the problem</a>
-      </div>
-    </div>
-  </section>
+  <section class="iv3-cta"><div class="wrap"><div class="iv3-cta__panel"><div><h2>Need research applied to a real security problem?</h2><p>Bring the question. The right combination of offensive testing, engineering, reverse analysis, AI security, and evidence discipline can be assembled around it.</p></div><a class="home-btn home-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss the problem</a></div></div></section>
 </div>
