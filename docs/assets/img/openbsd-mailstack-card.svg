@@ -1,32 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
-  <title id="title">OpenBSD Mailstack secure infrastructure</title>
-  <desc id="desc">Simplified secure mail infrastructure showing network controls, mail transport, OSMAP access, filtering, and recovery.</desc>
-  <rect width="1000" height="500" fill="#08111a"/>
-  <rect x="32" y="32" width="936" height="436" rx="18" fill="#0b1620" stroke="#315520" stroke-width="2"/>
-  <text x="72" y="88" fill="#b6ff3b" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="22" font-weight="700" letter-spacing="2">OPENBSD MAILSTACK / SECURE INFRASTRUCTURE</text>
-  <text x="72" y="124" fill="#9eb0bd" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="17">OPENBSD · OSMAP · NGINX · POSTFIX · DOVECOT · RSPAMD · SURICATA</text>
-  <g font-family="ui-monospace,Menlo,Consolas,monospace">
-    <rect x="72" y="184" width="230" height="144" rx="12" fill="#0a151e" stroke="#74ce00" stroke-width="2"/>
-    <text x="96" y="224" fill="#b6ff3b" font-size="17" font-weight="700">01 CONTROL</text>
-    <text x="96" y="264" fill="#eef4f8" font-size="24" font-weight="700">PF / Suricata</text>
-    <text x="96" y="298" fill="#aebbc5" font-size="17">WireGuard · TLS · bindings</text>
-
-    <rect x="385" y="184" width="230" height="144" rx="12" fill="#0a151e" stroke="#2689a0" stroke-width="2"/>
-    <text x="409" y="224" fill="#4de1ff" font-size="17" font-weight="700">02 MAIL</text>
-    <text x="409" y="264" fill="#eef4f8" font-size="24" font-weight="700">Postfix / Dovecot</text>
-    <text x="409" y="298" fill="#aebbc5" font-size="17">Rspamd · ClamAV · state</text>
-
-    <rect x="698" y="184" width="230" height="144" rx="12" fill="#0a151e" stroke="#74ce00" stroke-width="2"/>
-    <text x="722" y="224" fill="#b6ff3b" font-size="17" font-weight="700">03 OPERATE</text>
-    <text x="722" y="264" fill="#eef4f8" font-size="24" font-weight="700">OSMAP / recovery</text>
-    <text x="722" y="298" fill="#aebbc5" font-size="17">OSMAP-admin · backup · verify</text>
-
-    <path d="M302 256 H385" stroke="#4de1ff" stroke-width="3"/>
-    <polygon points="385,256 371,248 371,264" fill="#4de1ff"/>
-    <path d="M615 256 H698" stroke="#4de1ff" stroke-width="3"/>
-    <polygon points="698,256 684,248 684,264" fill="#4de1ff"/>
-
-    <rect x="72" y="374" width="856" height="54" rx="8" fill="#071019" stroke="#243746"/>
-    <text x="96" y="408" fill="#c9d4dc" font-size="17">REPRODUCIBLE · HARDENED · OPERATOR CONTROLLED · RECOVERABLE</text>
-  </g>
-</svg>
+<title id="title">OpenBSD Mailstack secure infrastructure</title><desc id="desc">A balanced three-stage OpenBSD Mailstack flow showing perimeter controls, mail services, and OSMAP recovery operations.</desc>
+<rect width="1000" height="500" fill="#08111a" /><rect x="28" y="28" width="944" height="444" rx="20" fill="#0b1620" stroke="#315520" stroke-width="2" />
+<g font-family="DejaVu Sans Mono, ui-monospace, monospace">
+<text x="68.974" y="68.190" dominant-baseline="hanging" fill="#b6ff3b" font-size="23" font-weight="700" letter-spacing="2.1" textLength="649.185" lengthAdjust="spacingAndGlyphs">OPENBSD MAILSTACK / SECURE INFRASTRUCTURE</text>
+<text x="69.088" y="106.173" dominant-baseline="hanging" fill="#9eb0bd" font-size="16" letter-spacing=".25" textLength="621.164" lengthAdjust="spacingAndGlyphs">OPENBSD · OSMAP · NGINX · POSTFIX · DOVECOT · RSPAMD · SURICATA</text>
+<rect x="60" y="168" width="270" height="158" rx="13" fill="#0a151e" stroke="#74ce00" stroke-width="2" />
+<text x="83.084" y="197.730" dominant-baseline="hanging" fill="#b6ff3b" font-size="15.5" font-weight="700" letter-spacing=".25" textLength="113.18" lengthAdjust="spacingAndGlyphs">01 / CONTROL</text>
+<text x="82.291" y="238.253" dominant-baseline="hanging" fill="#eef4f8" font-size="22" font-weight="700" textLength="169.104" lengthAdjust="spacingAndGlyphs">PF / Suricata</text>
+<text x="84.000" y="278.692" dominant-baseline="hanging" fill="#aebbc5" font-size="14" letter-spacing=".05" textLength="126.208" lengthAdjust="spacingAndGlyphs">WireGuard · TLS</text>
+<rect x="365" y="168" width="270" height="158" rx="13" fill="#0a151e" stroke="#2689a0" stroke-width="2" />
+<text x="388.089" y="197.780" dominant-baseline="hanging" fill="#4de1ff" font-size="15.5" font-weight="700" letter-spacing=".25" textLength="84.435" lengthAdjust="spacingAndGlyphs">02 / MAIL</text>
+<text x="387.403" y="239.117" dominant-baseline="hanging" fill="#eef4f8" font-size="22" font-weight="700" textLength="206.592" lengthAdjust="spacingAndGlyphs">Postfix / Dovecot</text>
+<text x="388.033" y="278.797" dominant-baseline="hanging" fill="#aebbc5" font-size="14" letter-spacing=".05" textLength="125.763" lengthAdjust="spacingAndGlyphs">Rspamd · ClamAV</text>
+<rect x="670" y="168" width="270" height="158" rx="13" fill="#0a151e" stroke="#74ce00" stroke-width="2" />
+<text x="693.087" y="197.763" dominant-baseline="hanging" fill="#b6ff3b" font-size="15.5" font-weight="700" letter-spacing=".25" textLength="112.779" lengthAdjust="spacingAndGlyphs">03 / OPERATE</text>
+<text x="693.019" y="236.556" dominant-baseline="hanging" fill="#eef4f8" font-size="22" font-weight="700" textLength="131.463" lengthAdjust="spacingAndGlyphs">OSMAP / DR</text>
+<text x="693.208" y="278.713" dominant-baseline="hanging" fill="#aebbc5" font-size="14" letter-spacing=".05" textLength="167.87" lengthAdjust="spacingAndGlyphs">OSMAP-admin · backup</text>
+<path d="M330 247 H365" stroke="#4de1ff" stroke-width="3" stroke-linecap="round" /><polygon points="365,247 352,239.5 352,254.5" fill="#4de1ff" /><path d="M635 247 H670" stroke="#4de1ff" stroke-width="3" stroke-linecap="round" /><polygon points="670,247 657,239.5 657,254.5" fill="#4de1ff" />
+<rect x="60" y="370" width="880" height="58" rx="9" fill="#071019" stroke="#243746" stroke-width="1.2" /><text x="499.941" y="397.066" dominant-baseline="hanging" text-anchor="middle" fill="#c9d4dc" font-size="15" letter-spacing=".35" textLength="419.807" lengthAdjust="spacingAndGlyphs">REPRODUCIBLE · HARDENED · OPERATOR CONTROLLED</text></g></svg>
