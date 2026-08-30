@@ -1,32 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
-  <title id="title">AOTP governed testing loop</title>
-  <desc id="desc">Simplified AOTP flow showing local AI planning, human governed execution, and evidence replay.</desc>
-  <rect width="1000" height="500" fill="#08111a"/>
-  <rect x="32" y="32" width="936" height="436" rx="18" fill="#0b1620" stroke="#315520" stroke-width="2"/>
-  <text x="72" y="88" fill="#b6ff3b" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="22" font-weight="700" letter-spacing="2">AOTP / GOVERNED OFFENSIVE TESTING</text>
-  <text x="72" y="124" fill="#9eb0bd" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="17">LOCAL AI ASSISTS · HUMAN AUTHORITY CONTROLS · EVIDENCE CLOSES THE LOOP</text>
-  <g font-family="ui-monospace,Menlo,Consolas,monospace">
-    <rect x="72" y="184" width="230" height="144" rx="12" fill="#0a151e" stroke="#2689a0" stroke-width="2"/>
-    <text x="96" y="224" fill="#4de1ff" font-size="17" font-weight="700">01 PLAN</text>
-    <text x="96" y="264" fill="#eef4f8" font-size="24" font-weight="700">Local models</text>
-    <text x="96" y="298" fill="#aebbc5" font-size="17">hypothesis · sequencing</text>
-
-    <rect x="385" y="184" width="230" height="144" rx="12" fill="#0a151e" stroke="#74ce00" stroke-width="2"/>
-    <text x="409" y="224" fill="#b6ff3b" font-size="17" font-weight="700">02 GOVERN</text>
-    <text x="409" y="264" fill="#eef4f8" font-size="24" font-weight="700">Human control</text>
-    <text x="409" y="298" fill="#aebbc5" font-size="17">scope · approval · adapters</text>
-
-    <rect x="698" y="184" width="230" height="144" rx="12" fill="#0a151e" stroke="#2689a0" stroke-width="2"/>
-    <text x="722" y="224" fill="#4de1ff" font-size="17" font-weight="700">03 PROVE</text>
-    <text x="722" y="264" fill="#eef4f8" font-size="24" font-weight="700">Replayable evidence</text>
-    <text x="722" y="298" fill="#aebbc5" font-size="17">state · provenance · replay</text>
-
-    <path d="M302 256 H385" stroke="#4de1ff" stroke-width="3"/>
-    <polygon points="385,256 371,248 371,264" fill="#4de1ff"/>
-    <path d="M615 256 H698" stroke="#4de1ff" stroke-width="3"/>
-    <polygon points="698,256 684,248 684,264" fill="#4de1ff"/>
-
-    <rect x="72" y="374" width="856" height="54" rx="8" fill="#071019" stroke="#243746"/>
-    <text x="96" y="408" fill="#c9d4dc" font-size="17">AI POWERED · HUMAN GOVERNED · EVIDENCE FIRST · SECURITY TESTING</text>
-  </g>
-</svg>
+<title id="title">AOTP governed testing loop</title><desc id="desc">A balanced three-stage AOTP flow showing local planning, human-governed execution, and evidence replay.</desc>
+<rect width="1000" height="500" fill="#08111a" /><rect x="28" y="28" width="944" height="444" rx="20" fill="#0b1620" stroke="#315520" stroke-width="2" />
+<g font-family="DejaVu Sans Mono, ui-monospace, monospace">
+<text x="69.632" y="68.187" dominant-baseline="hanging" fill="#b6ff3b" font-size="23" font-weight="700" letter-spacing="2.1" textLength="522.629" lengthAdjust="spacingAndGlyphs">AOTP / GOVERNED OFFENSIVE TESTING</text>
+<text x="68.329" y="106.197" dominant-baseline="hanging" fill="#9eb0bd" font-size="16" letter-spacing=".25" textLength="452.391" lengthAdjust="spacingAndGlyphs">LOCAL MODELS → HUMAN CONTROL → EVIDENCE REPLAY</text>
+<rect x="60" y="168" width="270" height="158" rx="13" fill="#0a151e" stroke="#2689a0" stroke-width="2" />
+<text x="83.092" y="197.812" dominant-baseline="hanging" fill="#4de1ff" font-size="15.5" font-weight="700" letter-spacing=".25" textLength="84.139" lengthAdjust="spacingAndGlyphs">01 / PLAN</text>
+<text x="81.647" y="237.196" dominant-baseline="hanging" fill="#eef4f8" font-size="22" font-weight="700" textLength="154.741" lengthAdjust="spacingAndGlyphs">Local models</text>
+<text x="82.683" y="278.733" dominant-baseline="hanging" fill="#aebbc5" font-size="14" letter-spacing=".05" textLength="175.843" lengthAdjust="spacingAndGlyphs">hypothesis · sequence</text>
+<rect x="365" y="168" width="270" height="158" rx="13" fill="#0a151e" stroke="#74ce00" stroke-width="2" />
+<text x="388.088" y="197.770" dominant-baseline="hanging" fill="#b6ff3b" font-size="15.5" font-weight="700" letter-spacing=".25" textLength="103.303" lengthAdjust="spacingAndGlyphs">02 / GOVERN</text>
+<text x="387.554" y="237.073" dominant-baseline="hanging" fill="#eef4f8" font-size="22" font-weight="700" textLength="169.222" lengthAdjust="spacingAndGlyphs">Human control</text>
+<text x="387.565" y="278.824" dominant-baseline="hanging" fill="#aebbc5" font-size="14" letter-spacing=".05" textLength="200.595" lengthAdjust="spacingAndGlyphs">scope · approval · gates</text>
+<rect x="670" y="168" width="270" height="158" rx="13" fill="#0a151e" stroke="#2689a0" stroke-width="2" />
+<text x="693.090" y="197.799" dominant-baseline="hanging" fill="#4de1ff" font-size="15.5" font-weight="700" letter-spacing=".25" textLength="93.615" lengthAdjust="spacingAndGlyphs">03 / PROVE</text>
+<text x="692.217" y="238.177" dominant-baseline="hanging" fill="#eef4f8" font-size="22" font-weight="700" textLength="196.26" lengthAdjust="spacingAndGlyphs">Evidence replay</text>
+<text x="692.560" y="278.796" dominant-baseline="hanging" fill="#aebbc5" font-size="14" letter-spacing=".05" textLength="184.479" lengthAdjust="spacingAndGlyphs">state · proof · replay</text>
+<path d="M330 247 H365" stroke="#4de1ff" stroke-width="3" stroke-linecap="round" /><polygon points="365,247 352,239.5 352,254.5" fill="#4de1ff" /><path d="M635 247 H670" stroke="#4de1ff" stroke-width="3" stroke-linecap="round" /><polygon points="670,247 657,239.5 657,254.5" fill="#4de1ff" />
+<rect x="60" y="370" width="880" height="58" rx="9" fill="#071019" stroke="#243746" stroke-width="1.2" /><text x="500.037" y="397.037" dominant-baseline="hanging" text-anchor="middle" fill="#c9d4dc" font-size="15" letter-spacing=".35" textLength="411.788" lengthAdjust="spacingAndGlyphs">AI POWERED · HUMAN GOVERNED · EVIDENCE FIRST</text></g></svg>
