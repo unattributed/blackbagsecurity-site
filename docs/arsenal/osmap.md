@@ -16,6 +16,8 @@ arsenal_v2: true
           <p class="arsenal-project-kicker">Secure Software</p>
           <h1 id="osmap-title">OSMAP</h1>
           <p class="arsenal-project-lead">OpenBSD Secure Mail Access Platform is a small, security-focused webmail application for hardened OpenBSD mail hosts. It gives users browser access to an existing mail system without replacing the underlying transport, mailbox, filtering, TLS, or firewall architecture.</p>
+          <div class="arsenal-project-tech" aria-label="OSMAP technology stack"><span>Rust</span><span>OpenBSD</span><span>nginx</span><span>Dovecot</span><span>Postfix</span><span>Unix Socket Helper</span><span>TOTP / CSRF</span></div>
+          <figure class="arsenal-project-visual"><img src="{{ '/assets/img/osmap-secure-mail.svg' | relative_url }}" alt="OSMAP architecture showing browser access through nginx to a Rust server-rendered application, a narrow Unix socket helper, Dovecot mailbox authority and Postfix submission" /></figure>
           <div class="arsenal-project-actions">
             <a class="arsenal-repo-link" href="https://github.com/unattributed/OSMAP" target="_blank" rel="noopener noreferrer">View public repository on GitHub</a>
           </div>
