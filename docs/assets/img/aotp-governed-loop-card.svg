@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
+  <title id="title">AOTP governed testing loop</title>
+  <desc id="desc">Simplified AOTP flow showing local AI planning, human governed execution, and evidence replay.</desc>
+  <rect width="1000" height="500" fill="#08111a"/>
+  <rect x="32" y="32" width="936" height="436" rx="18" fill="#0b1620" stroke="#315520" stroke-width="2"/>
+  <text x="72" y="88" fill="#b6ff3b" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="22" font-weight="700" letter-spacing="2">AOTP / GOVERNED OFFENSIVE TESTING</text>
+  <text x="72" y="124" fill="#9eb0bd" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="17">LOCAL AI ASSISTS · HUMAN AUTHORITY CONTROLS · EVIDENCE CLOSES THE LOOP</text>
+  <g font-family="ui-monospace,Menlo,Consolas,monospace">
+    <rect x="72" y="184" width="230" height="144" rx="12" fill="#0a151e" stroke="#2689a0" stroke-width="2"/>
+    <text x="96" y="224" fill="#4de1ff" font-size="17" font-weight="700">01 PLAN</text>
+    <text x="96" y="264" fill="#eef4f8" font-size="24" font-weight="700">Local models</text>
+    <text x="96" y="298" fill="#aebbc5" font-size="17">hypothesis · sequencing</text>
+
+    <rect x="385" y="184" width="230" height="144" rx="12" fill="#0a151e" stroke="#74ce00" stroke-width="2"/>
+    <text x="409" y="224" fill="#b6ff3b" font-size="17" font-weight="700">02 GOVERN</text>
+    <text x="409" y="264" fill="#eef4f8" font-size="24" font-weight="700">Human control</text>
+    <text x="409" y="298" fill="#aebbc5" font-size="17">scope · approval · adapters</text>
+
+    <rect x="698" y="184" width="230" height="144" rx="12" fill="#0a151e" stroke="#2689a0" stroke-width="2"/>
+    <text x="722" y="224" fill="#4de1ff" font-size="17" font-weight="700">03 PROVE</text>
+    <text x="722" y="264" fill="#eef4f8" font-size="24" font-weight="700">Replayable evidence</text>
+    <text x="722" y="298" fill="#aebbc5" font-size="17">state · provenance · replay</text>
+
+    <path d="M302 256 H385" stroke="#4de1ff" stroke-width="3"/>
+    <polygon points="385,256 371,248 371,264" fill="#4de1ff"/>
+    <path d="M615 256 H698" stroke="#4de1ff" stroke-width="3"/>
+    <polygon points="698,256 684,248 684,264" fill="#4de1ff"/>
+
+    <rect x="72" y="374" width="856" height="54" rx="8" fill="#071019" stroke="#243746"/>
+    <text x="96" y="408" fill="#c9d4dc" font-size="17">AI POWERED · HUMAN GOVERNED · EVIDENCE FIRST · SECURITY TESTING</text>
+  </g>
+</svg>
