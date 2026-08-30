@@ -10,8 +10,8 @@ supporting_v2: true
 <section class="section" id="assessment">
   <div class="wrap">
     <div class="section__head reveal" data-reveal>
-      <h1>Contact</h1>
-      <p>Start with the problem, the system, and the outcome you need. You do not need to know the name of the service before you get in touch.</p>
+      <h1>Start with the problem.</h1>
+      <p>Tell us about the system, the concern, and the outcome you need. You do not need to know the name of the service before you get in touch.</p>
     </div>
 
     <div class="contact">
