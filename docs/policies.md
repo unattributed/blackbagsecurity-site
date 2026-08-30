@@ -10,7 +10,7 @@ supporting_v2: true
 <section class="section">
   <div class="wrap">
     <div class="section__head reveal" data-reveal>
-      <h1>Policies</h1>
+      <h1>The rules are part of the work.</h1>
       <p>Plain-language policy surface for engagements: anti-bribery, confidentiality and data handling, and coordinated disclosure.</p>
     </div>
 
