@@ -128,6 +128,21 @@ services_v2: true
     </div>
   </section>
 
+  <section class="services-v2-evidence" aria-labelledby="engagement-evidence">
+    <div class="wrap">
+      <div class="services-v2-evidence__head">
+        <div><p class="svc-eyebrow">Evidence in practice</p><h2 id="engagement-evidence">Evidence you can take away.</h2></div>
+        <p>A security assessment should leave more than a severity label. The useful output is a defensible record of what happened, under which conditions, why it matters, and what changed when the issue was addressed.</p>
+      </div>
+      <div class="services-v2-evidence__grid">
+        <article class="services-v2-evidence__item"><span>01 / REPRODUCE</span><h3>Reproduction context</h3><p>Important findings preserve the steps, state, requests, responses, artifacts, or environmental conditions needed to understand and repeat the observed behavior where practical.</p></article>
+        <article class="services-v2-evidence__item"><span>02 / DEMONSTRATE</span><h3>Controlled demonstration</h3><p>When standard tooling is not enough, a purpose-built validator, test harness, or bounded PoC can make the security consequence observable and repeatable without turning the engagement into uncontrolled exploitation.</p></article>
+        <article class="services-v2-evidence__item"><span>03 / DECIDE</span><h3>Decision context</h3><p>Evidence is connected to affected systems, preconditions, attacker capability, material impact, uncertainty, and any limitations so leadership and engineering can make the right decision from the same facts.</p></article>
+        <article class="services-v2-evidence__item"><span>04 / CLOSE</span><h3>Closure evidence</h3><p>Where remediation and retest are in scope, the original failure path is compared against the corrected behavior and the final state is recorded as resolved, mitigated, unresolved, or unable to verify.</p></article>
+      </div>
+    </div>
+  </section>
+
   <section class="services-v2-specialist" aria-labelledby="specialist-capabilities">
     <div class="wrap">
       <div class="services-v2-specialist__head">
