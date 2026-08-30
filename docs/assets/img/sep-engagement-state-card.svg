@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
+  <title id="title">Security Engagement Platform control flow</title>
+  <desc id="desc">Simplified engagement control flow from authorization through governed execution to evidence and retest.</desc>
+  <rect width="1000" height="500" fill="#08111a"/>
+  <rect x="32" y="32" width="936" height="436" rx="18" fill="#0b1620" stroke="#1b5b6d" stroke-width="2"/>
+  <text x="72" y="88" fill="#b6ff3b" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="22" font-weight="700" letter-spacing="2">SECURITY ENGAGEMENT PLATFORM</text>
+  <text x="72" y="124" fill="#9eb0bd" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="17">AUTHORITY → EXECUTION → EVIDENCE → RETEST</text>
+  <g font-family="ui-monospace,Menlo,Consolas,monospace">
+    <rect x="72" y="180" width="230" height="150" rx="12" fill="#0a151e" stroke="#74ce00" stroke-width="2"/>
+    <text x="96" y="220" fill="#b6ff3b" font-size="17" font-weight="700">01 AUTHORIZE</text>
+    <text x="96" y="260" fill="#eef4f8" font-size="24" font-weight="700">Written scope</text>
+    <text x="96" y="294" fill="#aebbc5" font-size="17">targets · dates · limits</text>
+
+    <rect x="385" y="180" width="230" height="150" rx="12" fill="#0a151e" stroke="#2689a0" stroke-width="2"/>
+    <text x="409" y="220" fill="#4de1ff" font-size="17" font-weight="700">02 OPERATE</text>
+    <text x="409" y="260" fill="#eef4f8" font-size="24" font-weight="700">Governed tests</text>
+    <text x="409" y="294" fill="#aebbc5" font-size="17">browser · API · ZAP</text>
+
+    <rect x="698" y="180" width="230" height="150" rx="12" fill="#0a151e" stroke="#74ce00" stroke-width="2"/>
+    <text x="722" y="220" fill="#b6ff3b" font-size="17" font-weight="700">03 PROVE</text>
+    <text x="722" y="260" fill="#eef4f8" font-size="24" font-weight="700">Evidence state</text>
+    <text x="722" y="294" fill="#aebbc5" font-size="17">provenance · report · retest</text>
+
+    <path d="M302 255 H385" stroke="#4de1ff" stroke-width="3"/>
+    <polygon points="385,255 371,247 371,263" fill="#4de1ff"/>
+    <path d="M615 255 H698" stroke="#4de1ff" stroke-width="3"/>
+    <polygon points="698,255 684,247 684,263" fill="#4de1ff"/>
+
+    <rect x="72" y="374" width="856" height="54" rx="8" fill="#071019" stroke="#243746"/>
+    <text x="96" y="408" fill="#c9d4dc" font-size="17">ONE AUTHORITATIVE ENGAGEMENT STATE · HUMAN CONTROL · REVIEWABLE PROOF</text>
+  </g>
+</svg>
