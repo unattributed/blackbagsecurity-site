@@ -16,6 +16,8 @@ arsenal_v2: true
           <p class="arsenal-project-kicker">AOTP · Governed Offensive Testing Platform</p>
           <h1 id="aotp-title">Agentic Offensive Testing Platform</h1>
           <p class="arsenal-project-lead">AOTP is an authorized-only, evidence-first system for governed offensive security testing. It combines local AI-assisted planning with deterministic campaign authority, controlled tool execution, evidence capture, replay, validation, and human-reviewed reporting.</p>
+          <div class="arsenal-project-tech" aria-label="AOTP technology and architecture"><span>Local Models</span><span>Python State</span><span>Governed Adapters</span><span>Loopback Workspace</span><span>Replay</span><span>Evidence Provenance</span></div>
+          <figure class="arsenal-project-visual"><img src="{{ '/assets/img/aotp-governed-loop.svg' | relative_url }}" alt="AOTP architecture showing local model planning, Python-authoritative campaign state, governed adapters, evidence capture, replay validation and human review" /></figure>
         </div>
         <aside class="arsenal-project-summary" aria-label="Agentic Offensive Testing Platform summary">
           <div class="arsenal-project-summary__row"><strong>Purpose</strong><p>Make AI-assisted offensive testing controllable, reviewable, and evidence-backed.</p></div>
