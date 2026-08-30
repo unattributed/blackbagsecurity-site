@@ -1,0 +1,30 @@
+/* Black Bag Security graphical review step 2.
+ * Single-element change: homepage Why Black Bag Security icon scale and visual weight only.
+ */
+
+.home-v2-page:not(.arsenal-v2-page) > .home-v2-why .home-v2-why__item {
+  grid-template-columns: 68px minmax(0, 1fr);
+  gap: 20px;
+}
+
+.home-v2-page:not(.arsenal-v2-page) > .home-v2-why .home-v2-why__item .icon-mask {
+  width: 52px;
+  height: 52px;
+  align-self: start;
+  color: rgba(77, 225, 255, .96);
+  filter: drop-shadow(0 0 12px rgba(77, 225, 255, .18));
+  transform: translateY(-2px);
+}
+
+@media (max-width: 760px) {
+  .home-v2-page:not(.arsenal-v2-page) > .home-v2-why .home-v2-why__item {
+    grid-template-columns: 60px minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .home-v2-page:not(.arsenal-v2-page) > .home-v2-why .home-v2-why__item .icon-mask {
+    width: 46px;
+    height: 46px;
+    transform: none;
+  }
+}
