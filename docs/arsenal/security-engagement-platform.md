@@ -16,6 +16,8 @@ arsenal_v2: true
           <p class="arsenal-project-kicker">Engagement Control Plane</p>
           <h1 id="sep-title">Security Engagement Platform</h1>
           <p class="arsenal-project-lead">The Security Engagement Platform is the forward evolution of a reusable security-engagement workspace into a system for controlling how authorized security work is defined, executed, evidenced, reviewed, and closed. Its role is not to perform every test itself. Its role is to make the engagement state authoritative.</p>
+          <div class="arsenal-project-tech" aria-label="Security Engagement Platform control surfaces"><span>Authorization</span><span>Executable Scope</span><span>Evidence Provenance</span><span>Browser / API</span><span>ZAP / WSTG</span><span>Reporting / Retest</span></div>
+          <figure class="arsenal-project-visual"><img src="{{ '/assets/img/sep-engagement-state.svg' | relative_url }}" alt="Security Engagement Platform architecture showing authority, executable scope, governed execution, evidence provenance, reporting and retest as continuous engagement state" /></figure>
         </div>
         <aside class="arsenal-project-summary" aria-label="Security Engagement Platform summary">
           <div class="arsenal-project-summary__row"><strong>Purpose</strong><p>Turn engagement authority, scope, evidence, and operator decisions into executable control state.</p></div>
