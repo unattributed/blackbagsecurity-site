@@ -16,6 +16,8 @@ arsenal_v2: true
           <p class="arsenal-project-kicker">AI Security Validation</p>
           <h1 id="browser-ai-title">Browser-Safe AI Security</h1>
           <p class="arsenal-project-lead">A local validation toolkit and workshop track for browser-based AI security testing. It pairs synthetic attack cases with a deliberately weak local target so practitioners can study browser-AI trust failures without testing third-party systems or relying on screenshots and anecdotes as evidence.</p>
+          <div class="arsenal-project-tech" aria-label="Browser-Safe AI Security technology stack"><span>Playwright</span><span>Ollama</span><span>DOM / Frames</span><span>HTTP / Proxy Capture</span><span>JSON / JSONL</span><span>Manifests</span><span>Deterministic Hashing</span></div>
+          <figure class="arsenal-project-visual"><img src="{{ '/assets/img/browser-ai-boundaries.svg' | relative_url }}" alt="Browser AI security architecture showing untrusted page state, browser DOM and frame state, Playwright observation, a local Ollama-backed target, network capture and structured hashed evidence" /></figure>
           <div class="arsenal-project-actions">
             <a class="arsenal-repo-link" href="https://github.com/unattributed/ai-browser-security-test-suite" target="_blank" rel="noopener noreferrer">View public repository on GitHub</a>
           </div>
