@@ -1,0 +1,23 @@
+/* Black Bag Security graphical review step 1.
+ * Single-element change: homepage hero radar scale and placement only.
+ */
+
+@media (min-width: 901px) {
+  .home-v2-page:not(.arsenal-v2-page) > .home-v2-hero .home-v2-hero__visual {
+    transform: translateX(2%) scale(1.30);
+    transform-origin: center;
+  }
+
+  .home-v2-page:not(.arsenal-v2-page) > .home-v2-hero .home-v2-hero__visual img {
+    display: block;
+    width: 112%;
+    max-width: none;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 1180px) {
+  .home-v2-page:not(.arsenal-v2-page) > .home-v2-hero .home-v2-hero__visual {
+    transform: translateX(1%) scale(1.34);
+  }
+}
