@@ -1,0 +1,61 @@
+name: homepage lock
+
+on:
+  push:
+    branches:
+      - main
+      - feature/competitive-design-review
+  pull_request:
+    branches:
+      - main
+      - feature/competitive-design-review
+
+permissions:
+  contents: read
+
+jobs:
+  verify-homepage-lock:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify approved homepage baseline
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          verify_blob() {
+            local path="$1"
+            local expected="$2"
+            local actual
+
+            if [[ ! -f "$path" ]]; then
+              echo "FAIL: locked homepage file is missing: $path"
+              return 1
+            fi
+
+            actual="$(git hash-object "$path")"
+            if [[ "$actual" != "$expected" ]]; then
+              echo "FAIL: homepage lock drift detected"
+              echo "path=$path"
+              echo "expected=$expected"
+              echo "actual=$actual"
+              echo "The homepage is approved and locked. Reopen homepage review explicitly before changing this baseline."
+              return 1
+            fi
+
+            echo "PASS: $path"
+          }
+
+          verify_blob "docs/index.html" "0281bcd9284a59106f7ad453c5200a688377eb04"
+          verify_blob "docs/assets/css/homepage-v2.css" "212b41c3620e61d4faff97199085919429a4e89c"
+          verify_blob "docs/assets/css/homepage-v2-polish.css" "067a8eaf77d4cc34ec639b7d5c092ebc7e07a965"
+          verify_blob "docs/assets/css/homepage-v2-depth.css" "98ddf5556de5b9b99cfbe1845817c80599fa07a2"
+          verify_blob "docs/assets/css/homepage-v2-silhouette.css" "341017eb4578fe0a71fd1c67460f03bb23391ce3"
+          verify_blob "docs/assets/css/homepage-v2-refine.css" "3509dfb88814d7f798b1ab7501f7944be7e179de"
+          verify_blob "docs/assets/css/bbs-winning-v10.css" "be0fe1d22ac8f82727f54b3a3e14278b904aa372"
+          verify_blob "docs/assets/css/bbs-homepage-refinement-v12.css" "5b24acaa496abddbaecd6b7c0f7a8695ca66f89d"
+          verify_blob "docs/assets/css/bbs-homepage-proof-v16.css" "35d00f15007329d1e117579fd8df19fe05cb4989"
+
+          echo "PASS: approved homepage baseline is intact"
