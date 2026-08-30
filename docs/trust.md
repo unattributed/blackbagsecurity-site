@@ -10,7 +10,7 @@ supporting_v2: true
 <section class="section" id="secure-delivery">
   <div class="wrap">
     <div class="section__head reveal" data-reveal>
-      <h1>Trust</h1>
+      <h1>Trust is engineered into the work.</h1>
       <p>Security work should not create a new security problem. Authority, evidence, confidentiality, and operational safety are treated as part of the engagement design.</p>
     </div>
 
