@@ -13,7 +13,7 @@ methodology_v2: true
       <div>
         <p class="method-eyebrow">Principal-led. Black Bag engineered.</p>
         <h1 id="method-title">move faster without lowering the evidence standard.</h1>
-        <p class="method-v2-hero__lead">Black Bag Security remains principal-led. We use AOTP and the Security Engagement Platform to strengthen planning, controlled test execution, evidence preservation, coverage reconciliation, client communication, reporting, and retest. AOTP is designed around local AI-assisted planning and governed tooling, so client intellectual property and confidential engagement data do not need to become inputs to an uncontrolled third-party AI workflow. Material conclusions remain evidence-gated and accountable to the principal.</p>
+        <p class="method-v2-hero__lead">Black Bag Security remains principal-led. We strengthen every engagement with custom-engineered tools, applications, and security solutions developed by Black Bag Security, including AOTP and the Security Engagement Platform. Together, they support structured planning, controlled test execution, evidence preservation, coverage reconciliation, client communication, reporting, and retesting. AOTP is designed around local AI-assisted planning and governed execution, helping protect client intellectual property, confidential data, credentials, and engagement evidence from unnecessary third-party exposure. Technology accelerates the work. Evidence supports the conclusions. The principal remains accountable.</p>
         <div class="method-v2-hero__actions">
           <a class="home-btn home-btn--accent" href="#black-bag-tooling">See Black Bag tooling</a>
           <a class="home-btn" href="{{ '/contact/#assessment' | relative_url }}">Discuss an assessment</a>
