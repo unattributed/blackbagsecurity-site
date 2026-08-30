@@ -10,7 +10,7 @@ supporting_v2: true
 <section class="section" id="principal">
   <div class="wrap">
     <div class="section__head reveal" data-reveal>
-      <h1>About</h1>
+      <h1>Engineering depth. Direct ownership.</h1>
       <p>Black Bag Security is a principal-led security engineering practice focused on offensive testing, secure systems, and emerging AI security.</p>
     </div>
 
