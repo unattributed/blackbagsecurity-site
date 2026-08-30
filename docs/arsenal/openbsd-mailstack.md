@@ -16,6 +16,8 @@ arsenal_v2: true
           <p class="arsenal-project-kicker">Secure Infrastructure</p>
           <h1 id="mailstack-title">OpenBSD Mailstack</h1>
           <p class="arsenal-project-lead">OpenBSD Mailstack is a public, operator-focused framework for building and maintaining a hardened OpenBSD mail platform. It packages architecture, configuration patterns, staged deployment, validation, backup, recovery, monitoring, maintenance, hardening, and public-safe operational workflows into a reproducible engineering baseline.</p>
+          <div class="arsenal-project-tech" aria-label="OpenBSD Mailstack technology stack"><span>OpenBSD 7.9</span><span>Postfix</span><span>Dovecot</span><span>Rspamd</span><span>Roundcube</span><span>MariaDB / Redis</span><span>ClamAV</span><span>PF / WireGuard</span></div>
+          <figure class="arsenal-project-visual"><img src="{{ '/assets/img/openbsd-mailstack-architecture.svg' | relative_url }}" alt="OpenBSD Mailstack architecture showing network controls, Postfix transport, Dovecot mailbox services, Rspamd and ClamAV filtering, web and state services, monitoring and recovery" /></figure>
           <div class="arsenal-project-actions">
             <a class="arsenal-repo-link" href="https://github.com/unattributed/openbsd-mailstack" target="_blank" rel="noopener noreferrer">View public repository on GitHub</a>
           </div>
