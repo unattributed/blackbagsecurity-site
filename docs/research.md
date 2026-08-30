@@ -25,7 +25,7 @@ arsenal_v2: true
       </div>
 
       <div class="home-v2-hero__visual">
-        <img src="{{ '/assets/img/home-radar.svg' | relative_url }}" width="620" height="410" alt="Evidence, engineering, experience, and arsenal radial diagram" />
+        <img src="{{ '/assets/img/arsenal-lattice.svg' | relative_url }}" width="620" height="410" alt="Connected Engineering Arsenal system lattice showing authority, offensive testing, secure software, infrastructure, AI security, and evidence" />
       </div>
     </div>
   </section>
