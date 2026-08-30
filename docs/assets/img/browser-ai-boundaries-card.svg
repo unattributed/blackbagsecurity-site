@@ -1,32 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
-  <title id="title">Browser AI security test boundaries</title>
-  <desc id="desc">Simplified browser AI test flow showing browser state, local model interaction, and captured evidence.</desc>
-  <rect width="1000" height="500" fill="#08111a"/>
-  <rect x="32" y="32" width="936" height="436" rx="18" fill="#0b1620" stroke="#1b5b6d" stroke-width="2"/>
-  <text x="72" y="88" fill="#b6ff3b" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="22" font-weight="700" letter-spacing="2">BROWSER AI SECURITY / TEST BOUNDARIES</text>
-  <text x="72" y="124" fill="#9eb0bd" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="17">PLAYWRIGHT · OLLAMA · HTTP / PROXY · JSON / JSONL · HASHED EVIDENCE</text>
-  <g font-family="ui-monospace,Menlo,Consolas,monospace">
-    <rect x="72" y="184" width="230" height="144" rx="12" fill="#0a151e" stroke="#2689a0" stroke-width="2"/>
-    <text x="96" y="224" fill="#4de1ff" font-size="17" font-weight="700">01 BROWSER</text>
-    <text x="96" y="264" fill="#eef4f8" font-size="24" font-weight="700">State under test</text>
-    <text x="96" y="298" fill="#aebbc5" font-size="17">DOM · frames · navigation</text>
-
-    <rect x="385" y="184" width="230" height="144" rx="12" fill="#0a151e" stroke="#74ce00" stroke-width="2"/>
-    <text x="409" y="224" fill="#b6ff3b" font-size="17" font-weight="700">02 MODEL / TOOL</text>
-    <text x="409" y="264" fill="#eef4f8" font-size="24" font-weight="700">Boundary pressure</text>
-    <text x="409" y="298" fill="#aebbc5" font-size="17">prompt · tool · data paths</text>
-
-    <rect x="698" y="184" width="230" height="144" rx="12" fill="#0a151e" stroke="#2689a0" stroke-width="2"/>
-    <text x="722" y="224" fill="#4de1ff" font-size="17" font-weight="700">03 EVIDENCE</text>
-    <text x="722" y="264" fill="#eef4f8" font-size="24" font-weight="700">Repeatable capture</text>
-    <text x="722" y="298" fill="#aebbc5" font-size="17">proxy · JSONL · hashes</text>
-
-    <path d="M302 256 H385" stroke="#4de1ff" stroke-width="3"/>
-    <polygon points="385,256 371,248 371,264" fill="#4de1ff"/>
-    <path d="M615 256 H698" stroke="#4de1ff" stroke-width="3"/>
-    <polygon points="698,256 684,248 684,264" fill="#4de1ff"/>
-
-    <rect x="72" y="374" width="856" height="54" rx="8" fill="#071019" stroke="#243746"/>
-    <text x="96" y="408" fill="#c9d4dc" font-size="17">REPEATABLE EVIDENCE FOR BROWSER-AI ATTACK PATHS</text>
-  </g>
-</svg>
+<title id="title">Browser AI security test boundaries</title><desc id="desc">A balanced three-stage browser AI test flow showing browser state, boundary testing, and repeatable evidence capture.</desc>
+<rect width="1000" height="500" fill="#08111a" /><rect x="28" y="28" width="944" height="444" rx="20" fill="#0b1620" stroke="#1b5b6d" stroke-width="2" />
+<g font-family="DejaVu Sans Mono, ui-monospace, monospace">
+<text x="68.608" y="68.206" dominant-baseline="hanging" fill="#b6ff3b" font-size="23" font-weight="700" letter-spacing="2.1" textLength="585.16" lengthAdjust="spacingAndGlyphs">BROWSER AI SECURITY / TEST BOUNDARIES</text>
+<text x="68.468" y="106.191" dominant-baseline="hanging" fill="#9eb0bd" font-size="16" letter-spacing=".25" textLength="659.336" lengthAdjust="spacingAndGlyphs">PLAYWRIGHT · OLLAMA · HTTP / PROXY · JSON / JSONL · HASHED EVIDENCE</text>
+<rect x="60" y="168" width="270" height="158" rx="13" fill="#0a151e" stroke="#2689a0" stroke-width="2" />
+<text x="83.079" y="197.680" dominant-baseline="hanging" fill="#4de1ff" font-size="15.5" font-weight="700" letter-spacing=".25" textLength="113.801" lengthAdjust="spacingAndGlyphs">01 / BROWSER</text>
+<text x="82.675" y="236.362" dominant-baseline="hanging" fill="#eef4f8" font-size="22" font-weight="700" textLength="169.941" lengthAdjust="spacingAndGlyphs">Browser state</text>
+<text x="83.074" y="278.720" dominant-baseline="hanging" fill="#aebbc5" font-size="14" letter-spacing=".05" textLength="150.947" lengthAdjust="spacingAndGlyphs">DOM · frames · nav</text>
+<rect x="365" y="168" width="270" height="158" rx="13" fill="#0a151e" stroke="#74ce00" stroke-width="2" />
+<text x="388.087" y="197.760" dominant-baseline="hanging" fill="#b6ff3b" font-size="15.5" font-weight="700" letter-spacing=".25" textLength="94.016" lengthAdjust="spacingAndGlyphs">02 / MODEL</text>
+<text x="387.681" y="237.081" dominant-baseline="hanging" fill="#eef4f8" font-size="22" font-weight="700" textLength="169.125" lengthAdjust="spacingAndGlyphs">Boundary test</text>
+<text x="387.721" y="278.830" dominant-baseline="hanging" fill="#aebbc5" font-size="14" letter-spacing=".05" textLength="167.036" lengthAdjust="spacingAndGlyphs">prompt · tool · data</text>
+<rect x="670" y="168" width="270" height="158" rx="13" fill="#0a151e" stroke="#2689a0" stroke-width="2" />
+<text x="693.086" y="197.749" dominant-baseline="hanging" fill="#4de1ff" font-size="15.5" font-weight="700" letter-spacing=".25" textLength="122.361" lengthAdjust="spacingAndGlyphs">03 / EVIDENCE</text>
+<text x="692.340" y="239.085" dominant-baseline="hanging" fill="#eef4f8" font-size="22" font-weight="700" textLength="194.95" lengthAdjust="spacingAndGlyphs">Evidence capture</text>
+<text x="692.720" y="278.752" dominant-baseline="hanging" fill="#aebbc5" font-size="14" letter-spacing=".05" textLength="183.795" lengthAdjust="spacingAndGlyphs">proxy · JSONL · hashes</text>
+<path d="M330 247 H365" stroke="#4de1ff" stroke-width="3" stroke-linecap="round" /><polygon points="365,247 352,239.5 352,254.5" fill="#4de1ff" /><path d="M635 247 H670" stroke="#4de1ff" stroke-width="3" stroke-linecap="round" /><polygon points="670,247 657,239.5 657,254.5" fill="#4de1ff" />
+<rect x="60" y="370" width="880" height="58" rx="9" fill="#071019" stroke="#243746" stroke-width="1.2" /><text x="499.971" y="397.067" dominant-baseline="hanging" text-anchor="middle" fill="#c9d4dc" font-size="15" letter-spacing=".35" textLength="419.748" lengthAdjust="spacingAndGlyphs">REPEATABLE EVIDENCE · BROWSER-AI ATTACK PATHS</text></g></svg>
