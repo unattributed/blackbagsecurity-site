@@ -1,0 +1,222 @@
+/* Black Bag Security engineering visuals v13.
+ * Real technology signatures and contextual architecture visuals for the homepage
+ * and Engineering Arsenal project pages. No external assets or runtime dependencies.
+ */
+
+.win-project-tech,
+.arsenal-project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.win-project-tech {
+  margin-top: 22px;
+}
+
+.win-project-tech span,
+.arsenal-project-tech span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 5px 8px;
+  border: 1px solid rgba(77, 225, 255, .16);
+  background: rgba(77, 225, 255, .045);
+  color: #aebbc5;
+  font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .59rem;
+  font-weight: 650;
+  line-height: 1.25;
+  letter-spacing: .045em;
+  text-transform: uppercase;
+}
+
+.win-project-tech span:first-child,
+.arsenal-project-tech span:first-child {
+  border-color: rgba(182, 255, 59, .25);
+  background: rgba(182, 255, 59, .055);
+  color: #c9fa7b;
+}
+
+.win-engineering-visual {
+  position: absolute;
+  right: 28px;
+  bottom: 58px;
+  width: min(46%, 330px);
+  margin: 0;
+  pointer-events: none;
+}
+
+.win-engineering-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  opacity: .82;
+  filter: saturate(.9) contrast(1.03);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, .24);
+}
+
+.win-arsenal-card--platform {
+  grid-column: 1 / -1;
+  min-height: 450px;
+  padding: 34px 36px;
+  background:
+    radial-gradient(circle at 83% 22%, rgba(77, 225, 255, .075), transparent 27%),
+    radial-gradient(circle at 65% 76%, rgba(182, 255, 59, .04), transparent 30%),
+    linear-gradient(150deg, #111b27, #070b10);
+  border-top-color: rgba(77, 225, 255, .62);
+}
+
+.win-arsenal-card--platform .win-arsenal-card__content {
+  position: relative;
+  z-index: 2;
+  width: min(44%, 560px);
+}
+
+.win-arsenal-card--platform h3 {
+  margin-top: 54px;
+  max-width: 560px;
+  font-size: clamp(34px, 3.5vw, 54px);
+}
+
+.win-arsenal-card--platform > p,
+.win-arsenal-card--platform .win-arsenal-card__content > p {
+  max-width: 520px;
+}
+
+.win-arsenal-card--platform .win-engineering-visual {
+  right: 34px;
+  top: 88px;
+  bottom: auto;
+  width: min(50%, 620px);
+}
+
+.win-arsenal-card--platform .win-card-link {
+  position: absolute;
+  left: 36px;
+  bottom: 30px;
+}
+
+.win-arsenal-card:not(.win-arsenal-card--platform) {
+  min-height: 410px;
+}
+
+.win-arsenal-card:not(.win-arsenal-card--platform) h3,
+.win-arsenal-card:not(.win-arsenal-card--platform) > p,
+.win-arsenal-card:not(.win-arsenal-card--platform) .win-project-tech {
+  position: relative;
+  z-index: 2;
+  max-width: 54%;
+}
+
+.win-arsenal-card:not(.win-arsenal-card--platform) .win-card-link {
+  z-index: 3;
+}
+
+/* The v10 decorative glyphs are superseded when a real architecture visual is present. */
+.win-arsenal-card:has(.win-engineering-visual) .win-mini-flow,
+.win-arsenal-card:has(.win-engineering-visual) .win-mail-glyph,
+.win-arsenal-card:has(.win-engineering-visual) .win-stack-glyph,
+.win-arsenal-card:has(.win-engineering-visual) .win-browser-glyph {
+  display: none;
+}
+
+.arsenal-project-visual {
+  margin: 34px 0 0;
+  padding: 12px;
+  border: 1px solid rgba(77, 225, 255, .16);
+  border-top-color: rgba(77, 225, 255, .35);
+  background: rgba(5, 10, 15, .32);
+  box-shadow: 0 22px 56px rgba(0, 0, 0, .18);
+}
+
+.arsenal-project-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.arsenal-project-tech {
+  margin-top: 20px;
+}
+
+.arsenal-project-hero__grid > div:first-child .arsenal-project-visual {
+  max-width: 760px;
+}
+
+@media (max-width: 1100px) {
+  .win-arsenal-card--platform {
+    min-height: 0;
+    padding-bottom: 32px;
+  }
+
+  .win-arsenal-card--platform .win-arsenal-card__content {
+    width: 100%;
+  }
+
+  .win-arsenal-card--platform .win-engineering-visual {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    max-width: 720px;
+    margin: 34px 0 48px;
+  }
+
+  .win-arsenal-card--platform .win-card-link {
+    position: relative;
+    left: auto;
+    bottom: auto;
+  }
+
+  .win-arsenal-card:not(.win-arsenal-card--platform) h3,
+  .win-arsenal-card:not(.win-arsenal-card--platform) > p,
+  .win-arsenal-card:not(.win-arsenal-card--platform) .win-project-tech {
+    max-width: 62%;
+  }
+
+  .win-engineering-visual {
+    width: min(42%, 290px);
+  }
+}
+
+@media (max-width: 760px) {
+  .win-arsenal-card--platform,
+  .win-arsenal-card:not(.win-arsenal-card--platform) {
+    min-height: 0;
+    padding: 26px 24px 30px;
+  }
+
+  .win-arsenal-card:not(.win-arsenal-card--platform) h3,
+  .win-arsenal-card:not(.win-arsenal-card--platform) > p,
+  .win-arsenal-card:not(.win-arsenal-card--platform) .win-project-tech {
+    max-width: none;
+  }
+
+  .win-engineering-visual,
+  .win-arsenal-card--platform .win-engineering-visual {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    max-width: none;
+    margin: 30px 0 28px;
+  }
+
+  .win-project-tech span,
+  .arsenal-project-tech span {
+    font-size: .55rem;
+  }
+
+  .arsenal-project-visual {
+    margin-top: 28px;
+    padding: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .win-engineering-visual img,
+  .arsenal-project-visual img {
+    transition: none;
+  }
+}
