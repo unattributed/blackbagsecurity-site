@@ -1,0 +1,365 @@
+/* Black Bag Security site readability and visual hierarchy v14.
+ * Site-wide 100% zoom readability pass.
+ * Technical detail remains compact, but no meaningful interface copy is treated as microprint.
+ */
+
+/* ---------- global reading quality ---------- */
+body.home-v2 {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.home-v2 p,
+body.home-v2 li {
+  text-wrap: pretty;
+}
+
+body.home-v2 h1,
+body.home-v2 h2,
+body.home-v2 h3 {
+  text-wrap: balance;
+}
+
+body.home-v2 a:focus-visible,
+body.home-v2 button:focus-visible {
+  outline: 2px solid #b6ff3b;
+  outline-offset: 4px;
+}
+
+/* ---------- shared chrome ---------- */
+body.home-v2 .nav-v2 a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  font-size: .9rem;
+  letter-spacing: .035em;
+}
+
+body.home-v2 .header-v2__motto {
+  color: #a8b5bf;
+  font-size: .82rem;
+  line-height: 1.45;
+}
+
+body.home-v2 .footer-v2,
+body.home-v2 .footer-v2 a {
+  font-size: .86rem;
+  line-height: 1.55;
+}
+
+body.home-v2 .home-btn,
+body.home-v2 .arsenal-repo-link,
+body.home-v2 .svc-text-link,
+body.home-v2 .method-inline-link {
+  font-size: .88rem;
+}
+
+/* ---------- homepage labels and proof UI ---------- */
+.win-kicker {
+  font-size: .84rem;
+  letter-spacing: .085em;
+}
+
+.win-status {
+  color: #aab6c0;
+  font-size: .8rem;
+  letter-spacing: .035em;
+}
+
+.win-hero__facts span {
+  color: #a7b4be;
+  font-size: .88rem;
+  line-height: 1.5;
+}
+
+.win-dossier__topline,
+.win-dossier__footer {
+  color: #aab7c1;
+  font-size: .8rem;
+  line-height: 1.45;
+  letter-spacing: .05em;
+}
+
+.win-dossier__meta span {
+  margin-bottom: 7px;
+  color: #94a3af;
+  font-size: .72rem;
+  line-height: 1.35;
+  letter-spacing: .055em;
+}
+
+.win-dossier__meta strong {
+  color: #d4dde4;
+  font-size: .86rem;
+  line-height: 1.4;
+}
+
+.win-chain__index {
+  color: #8998a4;
+  font-size: .76rem;
+}
+
+.win-chain strong {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.win-chain small {
+  color: #aebac4;
+  font-size: .88rem;
+  line-height: 1.55;
+}
+
+.win-confidentiality__label,
+.win-card-code,
+.win-method__steps article > span,
+.win-why-grid article > span,
+.win-principal__stamp {
+  font-size: .8rem;
+  letter-spacing: .06em;
+}
+
+.win-card-link {
+  font-size: .86rem;
+  line-height: 1.4;
+}
+
+.win-surface-card p,
+.win-method__intro > p,
+.win-method__steps p,
+.win-why-grid p,
+.win-principal__copy > p,
+.win-close p {
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+/* ---------- engineering portfolio ---------- */
+.win-arsenal-card__top span,
+.win-arsenal-card__top b {
+  font-size: .76rem;
+  line-height: 1.35;
+  letter-spacing: .055em;
+}
+
+.win-arsenal-card > p,
+.win-arsenal-card .win-arsenal-card__content > p {
+  font-size: 1rem;
+  line-height: 1.62;
+}
+
+.win-project-tech span,
+.arsenal-project-tech span {
+  min-height: 34px;
+  padding: 7px 10px;
+  color: #c0cbd3;
+  font-size: .76rem;
+  line-height: 1.35;
+  letter-spacing: .025em;
+}
+
+/* Architecture visuals are evidence, not decorative thumbnails. Give them readable scale. */
+.win-arsenal-card--platform,
+.win-arsenal-card:not(.win-arsenal-card--platform) {
+  min-height: 0;
+}
+
+.win-arsenal-card--platform .win-arsenal-card__content {
+  width: 100%;
+  max-width: 780px;
+}
+
+.win-arsenal-card:not(.win-arsenal-card--platform) h3,
+.win-arsenal-card:not(.win-arsenal-card--platform) > p,
+.win-arsenal-card:not(.win-arsenal-card--platform) .win-project-tech {
+  max-width: none;
+}
+
+.win-engineering-visual,
+.win-arsenal-card--platform .win-engineering-visual {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  max-width: 980px;
+  margin: 30px 0 34px;
+  pointer-events: none;
+}
+
+.win-engineering-visual img {
+  opacity: 1;
+  filter: none;
+  border: 1px solid rgba(77, 225, 255, .14);
+}
+
+.win-arsenal-card--platform .win-card-link,
+.win-arsenal-card:not(.win-arsenal-card--platform) .win-card-link {
+  position: relative;
+  inset: auto;
+  margin-top: 8px;
+}
+
+/* ---------- services ---------- */
+.services-v2-page .svc-eyebrow,
+.services-v2-page .service-detail-hero__number,
+.services-v2-page .service-detail-back,
+.svc-line-card__number,
+.svc-process-step__number {
+  font-size: .86rem;
+}
+
+.svc-principle strong,
+.service-detail-summary strong {
+  font-size: .9rem;
+}
+
+.svc-line-card__focus span {
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.svc-principle p,
+.service-detail-summary p,
+.svc-line-card__statement,
+.svc-process-step p,
+.svc-specialist-card p,
+.svc-model-card p,
+.service-detail-card p,
+.service-outcome p,
+.service-detail-needs__panel p {
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+/* ---------- methodology ---------- */
+.method-v2-page .method-eyebrow,
+.method-step > span {
+  font-size: .86rem;
+}
+
+.method-expect p,
+.method-v2-intro > p,
+.method-v2-lifecycle__head > p,
+.method-v2-communication__head > p,
+.method-v2-readers__head > p,
+.method-promise-card p,
+.method-step p,
+.method-v2-evidence__statement > p,
+.method-v2-evidence__qualities p,
+.method-v2-standards__grid p,
+.method-v2-communication__grid p,
+.method-v2-delivery__grid p,
+.method-v2-retest p,
+.method-v2-readers__grid p {
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+/* ---------- arsenal ---------- */
+.arsenal-card__meta,
+.arsenal-project-back,
+.arsenal-project-kicker,
+.arsenal-project-summary strong {
+  font-size: .86rem;
+}
+
+.arsenal-card p,
+.arsenal-project-summary p,
+.arsenal-project-block p,
+.arsenal-status-item p,
+.arsenal-v2-page > .home-v2-why p {
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.arsenal-project-lead {
+  font-size: 1.12rem;
+  line-height: 1.74;
+}
+
+.arsenal-project-visual {
+  margin-top: 30px;
+  padding: 14px;
+}
+
+.arsenal-project-hero__grid > div:first-child .arsenal-project-visual {
+  max-width: 900px;
+}
+
+/* ---------- supporting pages ---------- */
+.supporting-v2-body .mono {
+  font-size: .94rem;
+  line-height: 1.65;
+}
+
+.supporting-v2-body .pill,
+.supporting-v2-body .cap-tag {
+  font-size: .84rem;
+}
+
+.supporting-v2-body .stack p,
+.supporting-v2-body .cap-card p,
+.supporting-v2-body .model-card p,
+.supporting-v2-body .contact__card p,
+.supporting-v2-body .outcomes li {
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 1100px) {
+  body.home-v2 .header-v2__motto {
+    font-size: .78rem;
+  }
+
+  .win-engineering-visual,
+  .win-arsenal-card--platform .win-engineering-visual {
+    max-width: none;
+  }
+}
+
+@media (max-width: 900px) {
+  body.home-v2 .nav-v2 a {
+    font-size: .84rem;
+  }
+
+  .win-kicker,
+  .win-status,
+  .win-dossier__topline,
+  .win-dossier__footer {
+    font-size: .78rem;
+  }
+}
+
+@media (max-width: 760px) {
+  body.home-v2 .footer-v2,
+  body.home-v2 .footer-v2 a,
+  .win-card-link,
+  .arsenal-repo-link,
+  .svc-text-link,
+  .method-inline-link {
+    font-size: .84rem;
+  }
+
+  .win-project-tech span,
+  .arsenal-project-tech span {
+    min-height: 32px;
+    font-size: .74rem;
+  }
+
+  .win-arsenal-card__top span,
+  .win-arsenal-card__top b {
+    font-size: .72rem;
+  }
+
+  .win-dossier__meta span {
+    font-size: .7rem;
+  }
+
+  .win-dossier__meta strong {
+    font-size: .82rem;
+  }
+
+  .win-chain small {
+    font-size: .86rem;
+  }
+}
