@@ -10,8 +10,8 @@ supporting_v2: true
 <section class="section">
   <div class="wrap">
     <div class="section__head reveal" data-reveal>
-      <h1>On-Site Engagements</h1>
-      <p>On-site delivery for assessment, validation, incident support, and technical advisory when location and operational context matter.</p>
+      <h1>When location matters.</h1>
+      <p>On-site delivery for assessment, validation, incident support, and technical advisory when physical presence and operational context materially change the work.</p>
     </div>
 
     <div class="split">
