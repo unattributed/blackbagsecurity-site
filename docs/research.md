@@ -1,7 +1,7 @@
 ---
 layout: home-v2
 title: The Engineering Arsenal | Black Bag Security
-description: Security platforms, hardened software, testing systems, and experimental tooling built to solve difficult security problems with evidence and control.
+description: Security platforms, hardened software, customer-specific testing systems, controlled proof-of-concept tooling, and experimental engineering built to solve difficult security problems with evidence and control.
 permalink: /arsenal/
 lang: en
 ref: arsenal
@@ -70,6 +70,45 @@ arsenal_v2: true
           <h3>Browser-Safe AI Security</h3>
           <p>Controlled local testing for browser-AI attack paths, source confusion, prompt injection, state manipulation, visual deception, and reproducible evidence capture.</p>
           <a href="{{ '/arsenal/browser-safe-ai-security/' | relative_url }}">Explore AI testing</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="arsenal-engagement-engineering" aria-labelledby="engagement-engineering-title">
+    <div class="wrap">
+      <div class="arsenal-engagement-engineering__intro">
+        <div>
+          <p class="arsenal-project-kicker">Customer-specific engineering</p>
+          <h2 id="engagement-engineering-title">Sometimes the proof has to be engineered.</h2>
+        </div>
+        <div class="arsenal-engagement-engineering__copy">
+          <p>Off-the-shelf scanners and testing frameworks are useful, but they do not always answer the question an engagement actually needs to resolve. When the target, protocol, workflow, control, or failure condition is specific to the customer, Black Bag Security can engineer purpose-built tooling to validate, verify, test, reproduce, and explain it.</p>
+          <p>That can include custom test harnesses, protocol or workflow tooling, validators, verifiers, controlled exploit demonstrations, and bounded proof-of-concept implementations. Where it improves understanding, a validated attack path can be reduced to a controlled "push-button" PoC so the customer can reproduce the security consequence without reconstructing the original testing environment.</p>
+          <p>The objective is practical evidence, not theatrical exploitation. The tooling is designed to show what a malicious actor with equivalent access and capability could do to the applications, infrastructure, data, operations, customer trust, or reputation in scope. The attacker model can range from opportunistic abuse to well-resourced or state-aligned threat actors when that is part of the authorized engagement.</p>
+        </div>
+      </div>
+
+      <div class="arsenal-engagement-engineering__grid">
+        <article class="arsenal-engagement-engineering__item">
+          <span>01 / VALIDATE</span>
+          <h3>Answer the actual security question</h3>
+          <p>Build the minimum purpose-fit instrumentation needed to determine whether the suspected control failure, attack path, or trust assumption is real.</p>
+        </article>
+        <article class="arsenal-engagement-engineering__item">
+          <span>02 / REPRODUCE</span>
+          <h3>Turn behavior into repeatable evidence</h3>
+          <p>Reduce important conditions to a controlled reproduction that can survive review, comparison, remediation work, and retest.</p>
+        </article>
+        <article class="arsenal-engagement-engineering__item">
+          <span>03 / DEMONSTRATE</span>
+          <h3>Make impact observable</h3>
+          <p>Use bounded PoCs and exploit demonstrations where they provide a clearer, safer explanation of what a real attacker could achieve than prose or scanner output alone.</p>
+        </article>
+        <article class="arsenal-engagement-engineering__item">
+          <span>04 / HAND OVER</span>
+          <h3>Leave the client with something useful</h3>
+          <p>Where appropriate, provide the customer-specific reproduction, evidence context, operating constraints, and retest path so remediation teams can verify the security outcome themselves.</p>
         </article>
       </div>
     </div>
