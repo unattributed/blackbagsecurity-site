@@ -1,7 +1,7 @@
 /* Black Bag Security competitive design review v15.
  * Independent visual, accessibility, and responsive correction pass.
- * Detailed architecture is reserved for full-width project views; homepage cards use
- * simplified large-type diagrams so technical content remains legible at 100% zoom.
+ * The public site uses simplified large-type system diagrams at both card and project scale.
+ * Detailed architecture remains in project documentation, while the website prioritizes clarity.
  */
 
 .bbs-visually-hidden {
@@ -40,7 +40,6 @@
   padding: 8px 11px;
 }
 
-/* Detailed project diagrams are intentionally not reused as thumbnails. */
 .win-engineering-visual,
 .win-arsenal-card--platform .win-engineering-visual {
   position: relative;
@@ -114,18 +113,41 @@
 .arsenal-project-hero__grid > div:first-child .arsenal-project-visual {
   width: 100%;
   max-width: none;
+  aspect-ratio: 2 / 1;
   margin: 38px 0 0;
   padding: 18px;
   overflow: hidden;
   border-color: rgba(77, 225, 255, .23);
   border-top-color: rgba(77, 225, 255, .48);
-  background: #071019;
+  background-color: #071019;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .arsenal-project-visual img {
-  width: 100%;
-  height: auto;
-  border-radius: 9px;
+  display: none;
+}
+
+.arsenal-project-visual:has(> img[src*="sep-engagement-state.svg"]) {
+  background-image: url("../img/sep-engagement-state-card.svg");
+}
+
+.arsenal-project-visual:has(> img[src*="aotp-governed-loop.svg"]) {
+  background-image: url("../img/aotp-governed-loop-card.svg");
+}
+
+.arsenal-project-visual:has(> img[src*="osmap-secure-mail.svg"]) {
+  background-image: url("../img/osmap-secure-mail-card.svg");
+}
+
+.arsenal-project-visual:has(> img[src*="openbsd-mailstack-secure-infrastructure.webp"]),
+.arsenal-project-visual:has(> img[src*="openbsd-mailstack-architecture.svg"]) {
+  background-image: url("../img/openbsd-mailstack-card.svg");
+}
+
+.arsenal-project-visual:has(> img[src*="browser-ai-boundaries.svg"]) {
+  background-image: url("../img/browser-ai-boundaries-card.svg");
 }
 
 .arsenal-project-summary {
@@ -152,17 +174,6 @@
 .arsenal-project-summary p {
   font-size: 1rem;
   line-height: 1.62;
-}
-
-/* The generated Mailstack WebP is retained only for repository history. Use the
- * scalable architecture source in the rendered project view. */
-.arsenal-project-visual:has(> img[src*="openbsd-mailstack-secure-infrastructure.webp"]) {
-  aspect-ratio: 1200 / 680;
-  background: #071019 url("../img/openbsd-mailstack-architecture.svg") center / contain no-repeat;
-}
-
-.arsenal-project-visual > img[src*="openbsd-mailstack-secure-infrastructure.webp"] {
-  visibility: hidden;
 }
 
 /* Valid SVG silhouette remains visible even if an older cached PNG is corrupt. */
@@ -249,14 +260,11 @@
   }
 
   .win-engineering-visual,
-  .win-arsenal-card--platform .win-engineering-visual {
-    aspect-ratio: 2 / 1;
-    margin: 26px 0 24px;
-  }
-
+  .win-arsenal-card--platform .win-engineering-visual,
   .arsenal-project-visual,
   .arsenal-project-hero__grid > div:first-child .arsenal-project-visual {
-    margin-top: 30px;
+    aspect-ratio: 2 / 1;
+    margin: 26px 0 24px;
     padding: 8px;
   }
 
