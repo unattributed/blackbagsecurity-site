@@ -3,6 +3,12 @@
  * Technical detail remains compact, but no meaningful interface copy is treated as microprint.
  */
 
+:root {
+  --bbs-readable-micro: .82rem;
+  --bbs-readable-small: .88rem;
+  --bbs-readable-body: 1rem;
+}
+
 /* ---------- global reading quality ---------- */
 body.home-v2 {
   text-rendering: optimizeLegibility;
@@ -26,13 +32,18 @@ body.home-v2 button:focus-visible {
   outline-offset: 4px;
 }
 
-/* ---------- shared chrome ---------- */
+/* ---------- shared chrome and legacy labels ---------- */
 body.home-v2 .nav-v2 a {
   min-height: 44px;
   display: inline-flex;
   align-items: center;
   font-size: .9rem;
   letter-spacing: .035em;
+}
+
+body.home-v2 .brand-v2__security {
+  font-size: .78rem;
+  letter-spacing: .1em;
 }
 
 body.home-v2 .header-v2__motto {
@@ -42,7 +53,8 @@ body.home-v2 .header-v2__motto {
 }
 
 body.home-v2 .footer-v2,
-body.home-v2 .footer-v2 a {
+body.home-v2 .footer-v2 a,
+body.home-v2 .footer-v2 nav {
   font-size: .86rem;
   line-height: 1.55;
 }
@@ -54,15 +66,30 @@ body.home-v2 .method-inline-link {
   font-size: .88rem;
 }
 
+.lang-switcher,
+.brand__tag,
+.eyebrow,
+.stamp,
+.panel__title,
+.panel__note,
+.steps span,
+.maintenance-popover__eyebrow,
+.maintenance-popover__facts dt,
+.maintenance-popover__note {
+  font-size: var(--bbs-readable-micro);
+  line-height: 1.45;
+}
+
 /* ---------- homepage labels and proof UI ---------- */
 .win-kicker {
   font-size: .84rem;
   letter-spacing: .085em;
 }
 
-.win-status {
+.win-status,
+.win-dossier__live {
   color: #aab6c0;
-  font-size: .8rem;
+  font-size: .82rem;
   letter-spacing: .035em;
 }
 
@@ -75,7 +102,7 @@ body.home-v2 .method-inline-link {
 .win-dossier__topline,
 .win-dossier__footer {
   color: #aab7c1;
-  font-size: .8rem;
+  font-size: .82rem;
   line-height: 1.45;
   letter-spacing: .05em;
 }
@@ -83,20 +110,20 @@ body.home-v2 .method-inline-link {
 .win-dossier__meta span {
   margin-bottom: 7px;
   color: #94a3af;
-  font-size: .72rem;
+  font-size: .78rem;
   line-height: 1.35;
-  letter-spacing: .055em;
+  letter-spacing: .045em;
 }
 
 .win-dossier__meta strong {
   color: #d4dde4;
-  font-size: .86rem;
+  font-size: .88rem;
   line-height: 1.4;
 }
 
 .win-chain__index {
   color: #8998a4;
-  font-size: .76rem;
+  font-size: .8rem;
 }
 
 .win-chain strong {
@@ -106,7 +133,7 @@ body.home-v2 .method-inline-link {
 
 .win-chain small {
   color: #aebac4;
-  font-size: .88rem;
+  font-size: .9rem;
   line-height: 1.55;
 }
 
@@ -114,13 +141,15 @@ body.home-v2 .method-inline-link {
 .win-card-code,
 .win-method__steps article > span,
 .win-why-grid article > span,
-.win-principal__stamp {
-  font-size: .8rem;
-  letter-spacing: .06em;
+.win-principal__stamp,
+.win-principal__tags span {
+  font-size: var(--bbs-readable-micro);
+  letter-spacing: .055em;
 }
 
-.win-card-link {
-  font-size: .86rem;
+.win-card-link,
+.win-confidentiality a {
+  font-size: .88rem;
   line-height: 1.4;
 }
 
@@ -137,9 +166,9 @@ body.home-v2 .method-inline-link {
 /* ---------- engineering portfolio ---------- */
 .win-arsenal-card__top span,
 .win-arsenal-card__top b {
-  font-size: .76rem;
+  font-size: .8rem;
   line-height: 1.35;
-  letter-spacing: .055em;
+  letter-spacing: .05em;
 }
 
 .win-arsenal-card > p,
@@ -150,12 +179,12 @@ body.home-v2 .method-inline-link {
 
 .win-project-tech span,
 .arsenal-project-tech span {
-  min-height: 34px;
-  padding: 7px 10px;
+  min-height: 36px;
+  padding: 8px 11px;
   color: #c0cbd3;
-  font-size: .76rem;
+  font-size: .8rem;
   line-height: 1.35;
-  letter-spacing: .025em;
+  letter-spacing: .02em;
 }
 
 /* Architecture visuals are evidence, not decorative thumbnails. Give them readable scale. */
@@ -166,7 +195,7 @@ body.home-v2 .method-inline-link {
 
 .win-arsenal-card--platform .win-arsenal-card__content {
   width: 100%;
-  max-width: 780px;
+  max-width: 820px;
 }
 
 .win-arsenal-card:not(.win-arsenal-card--platform) h3,
@@ -180,7 +209,7 @@ body.home-v2 .method-inline-link {
   position: relative;
   inset: auto;
   width: 100%;
-  max-width: 980px;
+  max-width: 1040px;
   margin: 30px 0 34px;
   pointer-events: none;
 }
@@ -200,16 +229,23 @@ body.home-v2 .method-inline-link {
 
 /* ---------- services ---------- */
 .services-v2-page .svc-eyebrow,
+.services-v2-page .svc-section-title,
 .services-v2-page .service-detail-hero__number,
 .services-v2-page .service-detail-back,
 .svc-line-card__number,
-.svc-process-step__number {
+.svc-process-step__number,
+.svc-model-card span,
+.service-outcome span {
   font-size: .86rem;
+  line-height: 1.4;
 }
 
 .svc-principle strong,
-.service-detail-summary strong {
-  font-size: .9rem;
+.service-detail-summary strong,
+.svc-specialist-card strong,
+.service-detail-card strong,
+.service-outcome strong {
+  font-size: .94rem;
 }
 
 .svc-line-card__focus span {
@@ -217,23 +253,35 @@ body.home-v2 .method-inline-link {
   line-height: 1.55;
 }
 
+.services-v2-hero__lead,
+.services-v2-lines__intro p,
+.services-v2-process__lead,
+.services-v2-specialist__head p,
 .svc-principle p,
 .service-detail-summary p,
 .svc-line-card__statement,
 .svc-process-step p,
 .svc-specialist-card p,
 .svc-model-card p,
+.service-detail-intro p,
 .service-detail-card p,
 .service-outcome p,
-.service-detail-needs__panel p {
+.service-detail-needs__panel p,
+.service-detail-needs__panel li {
   font-size: 1rem;
   line-height: 1.72;
 }
 
 /* ---------- methodology ---------- */
 .method-v2-page .method-eyebrow,
-.method-step > span {
+.method-step > span,
+.method-expect span,
+.method-expect__head,
+.method-promise-card__number,
+.method-v2-standards__grid span,
+.method-v2-readers__grid span {
   font-size: .86rem;
+  line-height: 1.4;
 }
 
 .method-expect p,
@@ -249,26 +297,117 @@ body.home-v2 .method-inline-link {
 .method-v2-communication__grid p,
 .method-v2-delivery__grid p,
 .method-v2-retest p,
-.method-v2-readers__grid p {
+.method-v2-retest__states p,
+.method-v2-readers__grid p,
+.method-v2-cta__panel p {
   font-size: 1rem;
   line-height: 1.72;
 }
 
+.method-v2-evidence__qualities strong,
+.method-v2-retest__states strong {
+  font-size: .96rem;
+}
+
+/* Methodology tooling had meaningful 9px to 11px copy. Treat it as engineering content. */
+.methodology-v2-body .method-tooling-hero::after {
+  font-size: .76rem;
+  letter-spacing: .1em;
+}
+
+.methodology-v2-body .method-tooling-hero .method-v2-hero__lead {
+  font-size: 1.08rem;
+  line-height: 1.74;
+}
+
+.method-tooling__intro-copy p {
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.method-tooling__loop span,
+.method-tooling__grid article > span,
+.method-tooling__control-label {
+  font-size: .8rem;
+  line-height: 1.4;
+  letter-spacing: .055em;
+}
+
+.method-tooling__loop i {
+  font-size: .9rem;
+}
+
+.method-tooling__grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.method-tooling__grid h3 {
+  font-size: 1.08rem;
+  line-height: 1.25;
+}
+
+.method-tooling__grid p {
+  font-size: 1rem;
+  line-height: 1.68;
+}
+
+.method-tooling__control {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.method-tooling__control-label {
+  grid-column: 1 / -1;
+  border-bottom: 1px solid rgba(148,163,184,.13);
+}
+
+.method-tooling__control > div:not(.method-tooling__control-label) {
+  border-left: 0;
+  border-top: 1px solid rgba(148,163,184,.13);
+}
+
+.method-tooling__control > div:nth-child(even) {
+  border-right: 1px solid rgba(148,163,184,.13);
+}
+
+.method-tooling__control strong {
+  font-size: .94rem;
+}
+
+.method-tooling__control p,
+.methodology-v2-body .method-v2-evidence__qualities p {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.methodology-v2-body .method-v2-evidence__qualities strong {
+  font-size: .96rem;
+}
+
 /* ---------- arsenal ---------- */
 .arsenal-card__meta,
+.arsenal-card a,
 .arsenal-project-back,
 .arsenal-project-kicker,
-.arsenal-project-summary strong {
+.arsenal-project-summary strong,
+.arsenal-project-block > span,
+.arsenal-repo-link {
   font-size: .86rem;
+  line-height: 1.4;
 }
 
 .arsenal-card p,
 .arsenal-project-summary p,
+.arsenal-project-intro p,
 .arsenal-project-block p,
 .arsenal-status-item p,
 .arsenal-v2-page > .home-v2-why p {
   font-size: 1rem;
   line-height: 1.72;
+}
+
+.arsenal-status-item strong {
+  font-size: 1rem;
 }
 
 .arsenal-project-lead {
@@ -282,18 +421,25 @@ body.home-v2 .method-inline-link {
 }
 
 .arsenal-project-hero__grid > div:first-child .arsenal-project-visual {
-  max-width: 900px;
+  max-width: 920px;
 }
 
-/* ---------- supporting pages ---------- */
+/* ---------- supporting and content pages ---------- */
 .supporting-v2-body .mono {
   font-size: .94rem;
   line-height: 1.65;
 }
 
 .supporting-v2-body .pill,
-.supporting-v2-body .cap-tag {
-  font-size: .84rem;
+.supporting-v2-body .cap-tag,
+.about-v8-eyebrow,
+.about-v8-fact strong,
+.about-v8-ownership strong,
+.arsenal-engagement-engineering__item span,
+.services-v2-evidence__item span,
+.contact-intake-v9__item span {
+  font-size: .86rem;
+  line-height: 1.45;
 }
 
 .supporting-v2-body .stack p,
@@ -308,25 +454,30 @@ body.home-v2 .method-inline-link {
 /* ---------- responsive ---------- */
 @media (max-width: 1100px) {
   body.home-v2 .header-v2__motto {
-    font-size: .78rem;
+    font-size: .8rem;
   }
 
   .win-engineering-visual,
   .win-arsenal-card--platform .win-engineering-visual {
     max-width: none;
   }
+
+  .method-tooling__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 900px) {
   body.home-v2 .nav-v2 a {
-    font-size: .84rem;
+    font-size: .86rem;
   }
 
   .win-kicker,
   .win-status,
+  .win-dossier__live,
   .win-dossier__topline,
   .win-dossier__footer {
-    font-size: .78rem;
+    font-size: .8rem;
   }
 }
 
@@ -337,29 +488,41 @@ body.home-v2 .method-inline-link {
   .arsenal-repo-link,
   .svc-text-link,
   .method-inline-link {
-    font-size: .84rem;
+    font-size: .86rem;
   }
 
   .win-project-tech span,
-  .arsenal-project-tech span {
-    min-height: 32px;
-    font-size: .74rem;
-  }
-
+  .arsenal-project-tech span,
   .win-arsenal-card__top span,
   .win-arsenal-card__top b {
-    font-size: .72rem;
+    font-size: .78rem;
   }
 
   .win-dossier__meta span {
-    font-size: .7rem;
+    font-size: .76rem;
   }
 
   .win-dossier__meta strong {
-    font-size: .82rem;
+    font-size: .84rem;
   }
 
   .win-chain small {
-    font-size: .86rem;
+    font-size: .88rem;
+  }
+
+  .method-tooling__grid,
+  .method-tooling__control {
+    grid-template-columns: 1fr;
+  }
+
+  .method-tooling__control-label {
+    grid-column: auto;
+  }
+
+  .method-tooling__control > div:not(.method-tooling__control-label),
+  .method-tooling__control > div:nth-child(even) {
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid rgba(148,163,184,.13);
   }
 }
