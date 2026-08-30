@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">AOTP governed offensive testing loop</title>
+  <desc id="desc">A contextual architecture diagram showing local model planning passing through campaign authority into governed adapters, evidence capture, replay validation and human review.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111b27"/><stop offset="1" stop-color="#070b10"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#8fa4b4" stroke-opacity=".055"/></pattern>
+  </defs>
+  <rect width="960" height="560" rx="18" fill="url(#bg)"/><rect width="960" height="560" rx="18" fill="url(#grid)"/>
+  <rect x="1" y="1" width="958" height="558" rx="17" fill="none" stroke="#b6ff3b" stroke-opacity=".28"/>
+  <text x="46" y="52" fill="#b6ff3b" font-family="monospace" font-size="14" font-weight="700" letter-spacing="2">AOTP / GOVERNED OFFENSIVE TESTING</text>
+  <text x="46" y="78" fill="#8fa0ad" font-family="monospace" font-size="11" letter-spacing="1.4">LOCAL AI ASSISTANCE · DETERMINISTIC AUTHORITY · EVIDENCE FIRST</text>
+
+  <g font-family="monospace">
+    <rect x="58" y="134" width="178" height="112" rx="10" fill="#0b151f" stroke="#4de1ff" stroke-opacity=".42"/>
+    <text x="78" y="164" fill="#4de1ff" font-size="11" letter-spacing="1">LOCAL MODEL</text>
+    <text x="78" y="194" fill="#eef4f8" font-size="15" font-weight="700">Plan / sequence</text>
+    <text x="78" y="219" fill="#8495a2" font-size="11">objective · context</text>
+
+    <rect x="300" y="112" width="226" height="156" rx="10" fill="#0c1720" stroke="#b6ff3b" stroke-opacity=".64"/>
+    <text x="322" y="144" fill="#b6ff3b" font-size="11" letter-spacing="1">CAMPAIGN AUTHORITY</text>
+    <text x="322" y="176" fill="#eef4f8" font-size="16" font-weight="700">Python authoritative state</text>
+    <text x="322" y="204" fill="#8495a2" font-size="11">scope · ROE · budgets</text>
+    <text x="322" y="226" fill="#8495a2" font-size="11">approvals · stop conditions</text>
+    <rect x="322" y="240" width="86" height="16" rx="8" fill="#b6ff3b" fill-opacity=".12"/><text x="336" y="252" fill="#b6ff3b" font-size="9">AUTHORIZED</text>
+
+    <rect x="594" y="134" width="306" height="112" rx="10" fill="#0b151f" stroke="#4de1ff" stroke-opacity=".42"/>
+    <text x="616" y="164" fill="#4de1ff" font-size="11" letter-spacing="1">GOVERNED ADAPTERS</text>
+    <text x="616" y="194" fill="#eef4f8" font-size="15" font-weight="700">Controlled tool execution</text>
+    <text x="616" y="219" fill="#8495a2" font-size="11">browser · HTTP · scanner · custom tools</text>
+  </g>
+  <g stroke="#4de1ff" stroke-opacity=".5" fill="none"><path d="M236 190h64"/><path d="M526 190h68"/></g>
+  <g fill="#4de1ff"><path d="m294 186 8 4-8 4z"/><path d="m588 186 8 4-8 4z"/></g>
+
+  <g font-family="monospace">
+    <rect x="90" y="332" width="188" height="112" rx="10" fill="#08121a" stroke="#90a2b1" stroke-opacity=".25"/>
+    <text x="110" y="362" fill="#4de1ff" font-size="11" letter-spacing="1">RAW EVIDENCE</text>
+    <text x="110" y="392" fill="#eef4f8" font-size="14" font-weight="700">Capture + provenance</text>
+    <text x="110" y="417" fill="#8495a2" font-size="11">requests · outputs · hashes</text>
+
+    <rect x="386" y="332" width="188" height="112" rx="10" fill="#08121a" stroke="#90a2b1" stroke-opacity=".25"/>
+    <text x="406" y="362" fill="#4de1ff" font-size="11" letter-spacing="1">VALIDATION</text>
+    <text x="406" y="392" fill="#eef4f8" font-size="14" font-weight="700">Replay + controls</text>
+    <text x="406" y="417" fill="#8495a2" font-size="11">reproduce · compare · reject</text>
+
+    <rect x="682" y="332" width="188" height="112" rx="10" fill="#08121a" stroke="#b6ff3b" stroke-opacity=".45"/>
+    <text x="702" y="362" fill="#b6ff3b" font-size="11" letter-spacing="1">HUMAN REVIEW</text>
+    <text x="702" y="392" fill="#eef4f8" font-size="14" font-weight="700">Finding decision</text>
+    <text x="702" y="417" fill="#8495a2" font-size="11">approve · report · retest</text>
+  </g>
+  <path d="M746 246v52c0 18-14 32-32 32H184" fill="none" stroke="#4de1ff" stroke-opacity=".45"/>
+  <path d="m190 326-10 4 10 4z" fill="#4de1ff"/>
+  <path d="M278 388h108M574 388h108" fill="none" stroke="#4de1ff" stroke-opacity=".45"/>
+  <path d="m380 384 8 4-8 4zM676 384l8 4-8 4z" fill="#4de1ff"/>
+  <path d="M776 444v40c0 18-14 32-32 32H414c-18 0-32-14-32-32v-40" fill="none" stroke="#b6ff3b" stroke-opacity=".35" stroke-dasharray="5 6"/>
+  <text x="46" y="520" fill="#677986" font-family="monospace" font-size="10" letter-spacing="1.2">PLAN → AUTHORIZE → EXECUTE → CAPTURE → REPLAY → HUMAN DECISION</text>
+</svg>
