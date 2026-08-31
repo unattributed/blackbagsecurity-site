@@ -1,0 +1,10 @@
+/* Black Bag Security methodology section-label correction v19.
+ * Final Methodology-only accent override for consistent section hierarchy.
+ */
+
+.methodology-v2-body .method-v2-communication .method-eyebrow,
+.methodology-v2-body .method-v2-evidence .method-eyebrow,
+.methodology-v2-body .method-v2-delivery .method-eyebrow,
+.methodology-v2-body .method-v2-readers .method-eyebrow {
+  color: #8ee21d !important;
+}
