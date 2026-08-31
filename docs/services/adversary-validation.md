@@ -1,66 +1,53 @@
 ---
 layout: home-v2
 title: Adversary Validation | Black Bag Security
-description: Objective-led adversary validation to test attack paths, control effectiveness, detection coverage, response assumptions, and supporting evidence under explicit rules of engagement.
+description: Objective-led adversary validation that tests whether identity, infrastructure, cloud, preventive controls, detection, and response can stop the outcome that matters.
 permalink: /services/adversary-validation/
 lang: en
-ref: service-adversary-validation
+ref: adversary-validation
 services_v2: true
+marketing_v3: true
 ---
-<div class="services-v2-page">
-  <section class="service-detail-hero" aria-labelledby="service-title">
-    <div class="wrap">
-      <a class="service-detail-back" href="{{ '/services/' | relative_url }}">All services</a>
-      <div class="service-detail-hero__grid">
-        <div>
-          <div class="service-detail-hero__number"><span class="icon-mask icon-target" aria-hidden="true"></span>Service 02</div>
-          <h1 id="service-title">adversary<br>validation</h1>
-          <p class="service-detail-hero__lead">Adversary validation asks a harder question than whether individual controls exist: can a realistic attacker still reach the protected outcome? The work follows the attack path, records what actually changes attacker behavior, and shows where prevention, detection, or response assumptions stop matching reality.</p>
+<div class="market-page">
+  <section class="market-hero" aria-labelledby="adv-title">
+    <div class="wrap market-hero__grid">
+      <div>
+        <p class="market-kicker">Adversary Validation</p>
+        <h1 id="adv-title">Will your defenses stop <span>the outcome that matters?</span></h1>
+        <p class="market-lead">A control is valuable only if it changes the attacker’s path. We test realistic routes to an agreed objective, then show where prevention, detection, and response assumptions hold or fail.</p>
+        <div class="market-actions"><a class="market-btn market-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss an objective</a><a class="market-btn" href="#adv-path">See the validation path</a></div>
+      </div>
+      <div class="market-visual" aria-label="Adversary validation path"><span class="market-visual__title">Objective-led attack path</span>
+        <div class="market-flow market-flow--5">
+          <article class="market-node" data-step="01"><strong>Objective</strong><p>What outcome must the organization prevent?</p></article>
+          <article class="market-node" data-step="02"><strong>Identity</strong><p>Credentials · privilege · trust</p></article>
+          <article class="market-node" data-step="03"><strong>Prevention</strong><p>Can the path be stopped?</p></article>
+          <article class="market-node" data-step="04"><strong>Detection</strong><p>Is the activity visible and actionable?</p></article>
+          <article class="market-node" data-step="05"><strong>Outcome</strong><p>Reached · blocked · detected · constrained</p></article>
         </div>
-        <aside class="service-detail-summary" aria-label="Service summary">
-          <div class="service-detail-summary__row"><strong>Best for</strong><p>Organizations that need to validate a high-value defensive assumption, critical attack path, control stack, detection capability, or response decision.</p></div>
-          <div class="service-detail-summary__row"><strong>Core question</strong><p>If an attacker pursues this objective within the agreed constraints, what stops the path, what exposes it to defenders, and what remains possible?</p></div>
-          <div class="service-detail-summary__row"><strong>Output</strong><p>A validated attack narrative, control and detection observations, reproducible evidence, priority improvements, and retest where appropriate.</p></div>
-        </aside>
+        <div class="market-outcome"><strong>Client outcome</strong><p>Evidence of which defenses materially change the attack path and where gaps remain.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="service-detail-section" aria-labelledby="adv-what-we-test">
-    <div class="wrap">
-      <div class="service-detail-intro"><h2 id="adv-what-we-test">Test the defensive assumption as a connected system.</h2><p>The exercise is bounded by explicit authority and safety controls, but the technical path is allowed to follow the evidence. That is the point: real attack paths cross products, identities, controls, and operating assumptions that isolated tests can miss.</p></div>
-      <div class="service-detail-grid">
-        <article class="service-detail-card"><strong>Objective &amp; Attack Path</strong><p>Define the protected outcome, plausible routes toward it, required conditions, trust transitions, and the assumptions the exercise must challenge.</p></article>
-        <article class="service-detail-card"><strong>Identity &amp; Privilege</strong><p>Exercise credentials, sessions, roles, service identities, trust relationships, and privilege changes that materially alter attacker capability.</p></article>
-        <article class="service-detail-card"><strong>Preventive Controls</strong><p>Determine whether controls block the attack path under realistic conditions, merely add friction, or can be bypassed without changing the objective.</p></article>
-        <article class="service-detail-card"><strong>Detection &amp; Telemetry</strong><p>Identify which meaningful attacker actions create useful defensive evidence, which signals are ambiguous, and which important steps remain quiet.</p></article>
-        <article class="service-detail-card"><strong>Response Assumptions</strong><p>Where in scope, assess whether escalation, containment, and response decisions receive the information and timing they require.</p></article>
-        <article class="service-detail-card"><strong>Replayable Evidence</strong><p>Preserve the sequence, conditions, artifacts, and control behavior needed to explain and reproduce the important parts of the attack path.</p></article>
-      </div>
+  <section class="market-section market-section--soft" id="adv-path" aria-labelledby="adv-method">
+    <div class="wrap market-split"><div class="market-message"><p class="market-kicker">How we work</p><h2 id="adv-method">Test the route to the consequence, <span>not a theatre script.</span></h2><p>The objective defines the path. The path may cross identity, cloud, infrastructure, applications, endpoint controls, monitoring, and operational assumptions. Testing stays inside explicit authority and safety boundaries.</p></div>
+      <div class="market-visual"><span class="market-visual__title">Validation logic</span><div class="market-stack">
+        <div class="market-stack__band"><strong>Define</strong><span>Protected outcome, attacker capability, starting conditions, prohibited actions, and stop conditions.</span></div>
+        <div class="market-stack__band"><strong>Attempt</strong><span>Follow realistic paths through identity, access, trust, configuration, and exposed services.</span></div>
+        <div class="market-stack__band"><strong>Observe</strong><span>Record what prevention blocked, what telemetry captured, and what response assumptions were established.</span></div>
+        <div class="market-stack__band"><strong>Reconcile</strong><span>Separate reached objectives, blocked paths, detected activity, untested prerequisites, and residual exposure.</span></div>
+      </div></div>
     </div>
   </section>
 
-  <section class="service-detail-section" aria-labelledby="adv-outcomes">
-    <div class="wrap">
-      <h2 class="svc-section-title" id="adv-outcomes">What comes back from the engagement</h2>
-      <div class="service-detail-outcomes">
-        <article class="service-outcome"><span>01</span><strong>Attack-path reality</strong><p>A grounded view of which routes remain viable, which are broken, and which conditions materially change the attacker's options.</p></article>
-        <article class="service-outcome"><span>02</span><strong>Control effect</strong><p>Evidence showing which controls prevent, constrain, expose, or fail to influence the path they are expected to govern.</p></article>
-        <article class="service-outcome"><span>03</span><strong>Detection quality</strong><p>Observations tied to attacker actions so defenders can distinguish useful visibility from telemetry that exists without supporting a decision.</p></article>
-        <article class="service-outcome"><span>04</span><strong>Risk reduction priorities</strong><p>Improvements ranked by how effectively they break the attack path, reduce authority, or improve the chance of timely detection and response.</p></article>
-      </div>
-    </div>
-  </section>
+  <section class="market-section" aria-labelledby="adv-controls"><div class="wrap"><div class="market-section__head"><div><p class="market-kicker">What gets challenged</p><h2 id="adv-controls">Controls are tested as a <span>connected defense.</span></h2></div><p>We care less about whether a product is installed and more about whether the combined system changes the attacker’s options.</p></div>
+    <div class="market-card-grid"><article class="market-card"><span class="market-card__code">Identity</span><h3>Credentials, privilege, trust, and recovery</h3><p>Access paths, privilege relationships, federation, administrative boundaries, and identity assumptions.</p></article><article class="market-card"><span class="market-card__code">Infrastructure &amp; cloud</span><h3>Reachability, services, configuration, and control plane</h3><p>Network paths, exposed management surfaces, cloud permissions, segmentation, and high-value resources.</p></article><article class="market-card"><span class="market-card__code">Prevention</span><h3>Does the control materially block the path?</h3><p>Protective controls are judged by observable effect, not by presence or policy intent.</p></article><article class="market-card"><span class="market-card__code">Detection &amp; response</span><h3>Can the organization see and act on what matters?</h3><p>Telemetry and response assumptions are validated where the engagement scope allows defensible testing.</p></article></div>
+  </div></section>
 
-  <section class="service-detail-section" aria-labelledby="adv-inputs">
-    <div class="wrap">
-      <h2 class="svc-section-title" id="adv-inputs">Inputs that materially improve the exercise</h2>
-      <div class="service-detail-needs">
-        <div class="service-detail-needs__panel"><h3>Technical context</h3><ul><li>The protected outcome or defensive assumption the exercise must validate.</li><li>Authoritative systems, identities, access paths, and environment boundaries.</li><li>Relevant control architecture, telemetry sources, or response context.</li><li>Business impact associated with the systems and outcomes being exercised.</li></ul></div>
-        <div class="service-detail-needs__panel"><h3>Operating authority</h3><ul><li>Rules of engagement, prohibited actions, stop conditions, and explicit authorization.</li><li>Escalation contacts and the conditions that require immediate coordination.</li><li>Traffic, availability, persistence, or data-handling constraints.</li><li>Blue-team coordination rules, including whether the exercise is collaborative, partially blind, or blind.</li></ul></div>
-      </div>
-    </div>
-  </section>
+  <section class="market-section market-section--grid" aria-labelledby="adv-output"><div class="wrap market-split"><div class="market-message"><p class="market-kicker">What you receive</p><h2 id="adv-output">A map of the path, the controls, and <span>the decisions that follow.</span></h2><p>The outcome is a defensible narrative of what the attacker could attempt, which controls changed the path, what was observed, and what remains exposed.</p></div>
+    <div class="market-visual"><span class="market-visual__title">Evidence-backed attack narrative</span><div class="market-flow market-flow--4"><article class="market-node" data-step="01"><strong>Starting state</strong><p>Assumptions and authorized foothold.</p></article><article class="market-node" data-step="02"><strong>Path</strong><p>Actions, pivots, and required conditions.</p></article><article class="market-node" data-step="03"><strong>Control effect</strong><p>Blocked, detected, constrained, or bypassed.</p></article><article class="market-node" data-step="04"><strong>Priority</strong><p>Where change most improves the outcome.</p></article></div><div class="market-outcome"><strong>One view for security leadership and defenders</strong></div></div>
+  </div></section>
 
-  <section class="services-v2-cta"><div class="wrap"><div class="services-v2-cta__panel"><div><h2>Need to know whether a defensive assumption survives contact with a realistic attack path?</h2><p>Bring the protected outcome, the systems that matter, and the constraints that cannot be crossed. The exercise can be designed around the decision you need to make.</p></div><a class="home-btn home-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Define the objective</a></div></div></section>
+  <section class="market-close" aria-labelledby="adv-close"><div class="wrap market-close__panel"><div><p class="market-kicker">Start with the outcome</p><h2 id="adv-close">Tell us what an attacker must not be able to achieve.</h2><p>We will define the starting assumptions, authority, safety boundaries, and evidence needed to test whether your defenses change that path.</p></div><a class="market-btn market-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss the objective</a></div></section>
 </div>
