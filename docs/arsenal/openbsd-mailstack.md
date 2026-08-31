@@ -1,78 +1,45 @@
 ---
 layout: home-v2
 title: OpenBSD Mailstack | The Engineering Arsenal
-description: A public operator-focused framework for building, validating, maintaining, hardening, monitoring, backing up, and recovering an OpenBSD mail platform.
+description: Engineering proof of reproducible hardened infrastructure using OpenBSD, staged deployment, exposure control, validation, monitoring, backup, recovery, and public-safe operational design.
 permalink: /arsenal/openbsd-mailstack/
 lang: en
 ref: arsenal-openbsd-mailstack
 arsenal_v2: true
+marketing_v3: true
 ---
-<div class="arsenal-v2-page">
-  <section class="arsenal-project-hero" aria-labelledby="mailstack-title">
-    <div class="wrap">
-      <a class="arsenal-project-back" href="{{ '/arsenal/' | relative_url }}">Back to the Engineering Arsenal</a>
-      <div class="arsenal-project-hero__grid">
-        <div>
-          <p class="arsenal-project-kicker">Secure Infrastructure</p>
-          <h1 id="mailstack-title">OpenBSD Mailstack</h1>
-          <p class="arsenal-project-lead">OpenBSD Mailstack is a public, operator-focused framework for building and maintaining a hardened OpenBSD mail platform. It packages architecture, configuration patterns, staged deployment, validation, backup, recovery, monitoring, maintenance, hardening, and public-safe operational workflows into a reproducible engineering baseline.</p>
-          <div class="arsenal-project-tech" aria-label="OpenBSD Mailstack technology stack"><span>OpenBSD</span><span>OSMAP</span><span>nginx</span><span>Postfix</span><span>Dovecot</span><span>Rspamd</span><span>MariaDB / Redis</span><span>ClamAV</span><span>PF / Suricata / WireGuard</span><span>OSMAP-admin</span></div>
-          <figure class="arsenal-project-visual"><img src="{{ '/assets/img/openbsd-mailstack-secure-infrastructure.webp' | relative_url }}" width="1672" height="941" alt="OpenBSD Mailstack architecture showing PF, Suricata and WireGuard network controls, Postfix transport, Dovecot mailbox services, Rspamd and ClamAV filtering, OSMAP web access, MariaDB and Redis state services, monitoring, backup and recovery" decoding="async" /></figure>
-          <div class="arsenal-project-actions">
-            <a class="arsenal-repo-link" href="https://github.com/unattributed/openbsd-mailstack" target="_blank" rel="noopener noreferrer">View public repository on GitHub</a>
-          </div>
-        </div>
-        <aside class="arsenal-project-summary" aria-label="OpenBSD Mailstack summary">
-          <div class="arsenal-project-summary__row"><strong>Platform</strong><p>OpenBSD mail and control-plane engineering.</p></div>
-          <div class="arsenal-project-summary__row"><strong>Core services</strong><p>OSMAP, nginx, Postfix, Dovecot, Rspamd, OSMAP-admin, MariaDB, Redis, ClamAV, PF, Suricata, WireGuard and DNS.</p></div>
-          <div class="arsenal-project-summary__row"><strong>Repository</strong><p>Public by design and deliberately sanitized from private production evidence and secrets.</p></div>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <section class="arsenal-project-section">
-    <div class="wrap">
-      <div class="arsenal-project-intro">
-        <h2>More than installation notes</h2>
-        <p>The project is designed around the operational lifecycle of a security-sensitive service. Building the host is only one phase. The framework also addresses how configuration is rendered, how changes are validated, how exposure is controlled, how failures are detected, how the system is recovered, and how the public repository avoids leaking site-specific secrets or control-plane doctrine.</p>
-      </div>
-      <div class="arsenal-project-grid">
-        <article class="arsenal-project-block"><span>01</span><h3>Staged deployment</h3><p>Phase documentation, apply scripts, verify scripts, rendering paths, and install-order guidance make deployment reviewable instead of relying on undocumented operator memory.</p></article>
-        <article class="arsenal-project-block"><span>02</span><h3>Exposure control</h3><p>PF, Suricata, WireGuard, DNS, TLS, service bindings, and operator-supplied network values are treated as part of the system architecture.</p></article>
-        <article class="arsenal-project-block"><span>03</span><h3>Validation</h3><p>QEMU lab paths, repository gates, rendered-config integrity checks, host-service checks, documentation checks, and production regression workflows support repeatable verification.</p></article>
-        <article class="arsenal-project-block"><span>04</span><h3>Secrets and state</h3><p>Tracked examples are separated from ignored local inputs, runtime secrets, private keys, provider credentials, and operator-only workspaces.</p></article>
-        <article class="arsenal-project-block"><span>05</span><h3>Resilience</h3><p>Backup, disaster recovery, monitoring, maintenance, post-install checks, and recovery procedures are part of the published engineering path.</p></article>
-        <article class="arsenal-project-block"><span>06</span><h3>Public-safe design</h3><p>The repository publishes reusable architecture and sanitized production observations without becoming a mirror of the private deployment or exposing operational evidence.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="arsenal-project-status">
-    <div class="wrap arsenal-project-status__grid">
+<div class="market-page">
+  <section class="market-hero" aria-labelledby="mailstack-title">
+    <div class="wrap market-hero__grid">
       <div>
-        <p class="arsenal-project-kicker">Public engineering baseline</p>
-        <h2>Reusable where it should be. Private where it must be.</h2>
-        <p>The public repository is intentionally substantial enough to build and operate the same class of system while keeping production evidence, restore archives, real credentials, private keys, and site-specific control-plane doctrine out of the public tree.</p>
+        <p class="market-kicker">Engineering Arsenal / Secure infrastructure</p>
+        <h1 id="mailstack-title">OpenBSD Mailstack</h1>
+        <p class="market-lead">Reproducible. Hardened. Operator controlled. The OpenBSD Mailstack treats a security-sensitive service as an operational lifecycle, not an installation recipe.</p>
+        <p class="market-support">For clients, the project demonstrates how Black Bag engineers infrastructure that can be built, validated, observed, maintained, backed up, and recovered without hiding critical security state inside operator memory.</p>
+        <div class="market-actions"><a class="market-btn market-btn--accent" href="{{ '/services/secure-systems-engineering/' | relative_url }}">See secure systems engineering</a><a class="market-btn" href="{{ '/arsenal/' | relative_url }}">Back to the Arsenal</a></div>
       </div>
-      <div class="arsenal-status-list">
-        <div class="arsenal-status-item"><strong>Published</strong><p>Phase scripts and documentation, rendered configuration paths, QEMU validation, backup and recovery, monitoring, maintenance, hardening, runtime-secret handling, and optional advanced layers.</p></div>
-        <div class="arsenal-status-item"><strong>Operator supplied</strong><p>Domains, hostnames, network exposure values, provider accounts, credentials, runtime secrets, private keys, and final environment-specific hardening choices.</p></div>
-        <div class="arsenal-status-item"><strong>Intentionally excluded</strong><p>Raw production evidence, operational telemetry, encrypted recovery payloads, private restore archives, live API keys, passwords, private keys, and private automation overlays.</p></div>
+      <div class="market-visual" aria-label="OpenBSD Mailstack architecture"><span class="market-visual__title">Defense, service, and recovery as one system</span>
+        <div class="market-flow market-flow--5"><article class="market-node" data-step="01"><strong>Edge</strong><p>PF · Suricata · WireGuard · DNS · TLS</p></article><article class="market-node" data-step="02"><strong>Transport</strong><p>Postfix · Rspamd · ClamAV</p></article><article class="market-node" data-step="03"><strong>Mailbox</strong><p>Dovecot · state · authentication</p></article><article class="market-node" data-step="04"><strong>Access &amp; admin</strong><p>OSMAP · nginx · OSMAP-admin</p></article><article class="market-node" data-step="05"><strong>Recover</strong><p>Monitoring · backup · restore · verify</p></article></div>
+        <div class="market-outcome"><strong>Security persists through deployment, operation, failure, and recovery.</strong></div>
       </div>
     </div>
   </section>
 
-  <section class="arsenal-project-section">
-    <div class="wrap">
-      <div class="arsenal-project-intro">
-        <h2>Relationship to OSMAP</h2>
-        <p>OSMAP sits above this class of hardened mail infrastructure as the browser access layer. The projects intentionally remain separate: the mailstack defines the underlying service and operational platform, while OSMAP focuses on reducing and controlling the additional browser-facing attack surface.</p>
-      </div>
-      <div class="arsenal-project-actions">
-        <a class="arsenal-repo-link" href="https://github.com/unattributed/openbsd-mailstack" target="_blank" rel="noopener noreferrer">View public repository on GitHub</a>
-        <a class="arsenal-repo-link" href="{{ '/arsenal/osmap/' | relative_url }}">OSMAP</a>
-      </div>
-    </div>
-  </section>
+  <section class="market-section market-section--soft" aria-labelledby="mailstack-why"><div class="wrap"><div class="market-section__head"><div><p class="market-kicker">More than installation notes</p><h2 id="mailstack-why">A hardened system is only useful if it can be <span>operated and recovered safely.</span></h2></div><p>The project covers the complete lifecycle: staged deployment, configuration rendering, exposure control, validation, secrets, monitoring, maintenance, backup, recovery, and regression testing.</p></div>
+    <div class="market-card-grid market-card-grid--3"><article class="market-card"><span class="market-card__code">Staged deployment</span><h3>Make change reviewable.</h3><p>Phase documentation, apply scripts, verify scripts, rendered configuration paths, and install order reduce dependence on undocumented operator knowledge.</p></article><article class="market-card"><span class="market-card__code">Exposure control</span><h3>Treat the network boundary as architecture.</h3><p>PF, Suricata, WireGuard, DNS, TLS, service bindings, and operator-supplied exposure values are deliberate parts of the system.</p></article><article class="market-card"><span class="market-card__code">Validation</span><h3>Prove the rendered system, not just the source files.</h3><p>QEMU lab paths, repository gates, rendered-config checks, host-service verification, documentation tests, and production regression workflows support repeatability.</p></article></div>
+  </div></section>
+
+  <section class="market-section market-section--grid" aria-labelledby="mailstack-lifecycle"><div class="wrap market-split"><div class="market-message"><p class="market-kicker">Operating lifecycle</p><h2 id="mailstack-lifecycle">Build the system so a future operator can <span>know its state.</span></h2><p>Hardening that cannot survive patching, maintenance, staff change, a failed service, or disaster recovery is incomplete hardening.</p></div>
+    <div class="market-visual"><span class="market-visual__title">Repeatable operating path</span><div class="market-flow market-flow--5"><article class="market-node" data-step="01"><strong>Build</strong><p>Render known configuration from controlled inputs.</p></article><article class="market-node" data-step="02"><strong>Verify</strong><p>Test service state, exposure, dependencies, and controls.</p></article><article class="market-node" data-step="03"><strong>Observe</strong><p>Monitor health, security state, logs, and drift.</p></article><article class="market-node" data-step="04"><strong>Maintain</strong><p>Patch, change, validate, and preserve known-good state.</p></article><article class="market-node" data-step="05"><strong>Recover</strong><p>Restore, rebuild, reconcile, and verify trust.</p></article></div><div class="market-outcome"><strong>The recovery path is part of the security architecture.</strong></div></div>
+  </div></section>
+
+  <section class="market-section" aria-labelledby="mailstack-client"><div class="wrap"><div class="market-section__head"><div><p class="market-kicker">What this proves about Black Bag</p><h2 id="mailstack-client">We can turn system hardening into <span>a maintainable operating discipline.</span></h2></div><p>The project shows the ability to reason across network controls, service architecture, secrets, data stores, mail transport, browser access, monitoring, automation, validation, and recovery as one security system.</p></div>
+    <div class="market-card-grid"><article class="market-card"><span class="market-card__code">Secrets &amp; state</span><h3>Separate reusable configuration from private runtime material.</h3><p>Tracked examples remain distinct from local inputs, credentials, provider accounts, runtime secrets, private keys, and operator-only workspaces.</p></article><article class="market-card"><span class="market-card__code">Resilience</span><h3>Backups are not enough without a verified restore path.</h3><p>Disaster recovery, monitoring, post-install checks, maintenance, and restoration procedures are part of the published engineering model.</p></article><article class="market-card"><span class="market-card__code">Public-safe engineering</span><h3>Share reusable architecture without leaking the live environment.</h3><p>The public repository exposes meaningful engineering while keeping production evidence, credentials, telemetry, private restores, and operational overlays out of the tree.</p></article><article class="market-card"><span class="market-card__code">Layered services</span><h3>Keep responsibilities explicit across components.</h3><p>OpenBSD, PF, Postfix, Dovecot, Rspamd, ClamAV, databases, OSMAP, monitoring, and recovery remain distinct but coordinated.</p></article></div>
+  </div></section>
+
+  <section class="market-section market-section--soft" aria-labelledby="mailstack-boundary"><div class="wrap market-split"><div class="market-message"><p class="market-kicker">Public / private boundary</p><h2 id="mailstack-boundary">Reusable where it should be. <span>Private where it must be.</span></h2><p>The repository is deliberately substantial enough to reproduce the class of system without becoming a mirror of a private production host.</p><div class="market-pill-row"><span class="market-pill">OpenBSD</span><span class="market-pill">OSMAP</span><span class="market-pill">nginx</span><span class="market-pill">Postfix</span><span class="market-pill">Dovecot</span><span class="market-pill">Rspamd</span><span class="market-pill">MariaDB / Redis</span><span class="market-pill">ClamAV</span><span class="market-pill">PF / Suricata</span><span class="market-pill">WireGuard</span></div></div>
+    <div class="market-visual"><span class="market-visual__title">What crosses the repository boundary</span><div class="market-compare"><div class="market-compare__side market-compare__side--good"><strong>Published</strong><ul><li>Architecture and phase documentation</li><li>Apply and verification paths</li><li>QEMU validation and hardening</li><li>Backup, recovery, monitoring, maintenance</li></ul></div><div class="market-compare__side"><strong>Excluded / operator supplied</strong><ul><li>Production evidence and telemetry</li><li>Credentials, private keys, API secrets</li><li>Restore archives and recovery payloads</li><li>Site-specific exposure and private overlays</li></ul></div></div></div>
+  </div></section>
+
+  <section class="market-close" aria-labelledby="mailstack-close"><div class="wrap market-close__panel"><div><p class="market-kicker">Why a client should care</p><h2 id="mailstack-close">The same discipline applies to client infrastructure that must be hardened, observable, recoverable, and understandable over time.</h2><p>Secure systems engineering is strongest when the operating lifecycle is part of the design from the beginning.</p></div><a class="market-btn market-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss a sensitive system</a></div></section>
 </div>
