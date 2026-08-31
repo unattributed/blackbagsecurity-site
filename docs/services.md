@@ -1,180 +1,106 @@
 ---
 layout: home-v2
-title: Services | Black Bag Security
-description: Principal-led application and API security, adversary validation, AI security, and secure systems engineering. Clear technical work, practical findings, and evidence you can act on.
+title: Security Services | Black Bag Security
+description: Application and API security, adversary validation, AI security, and secure systems engineering focused on clear client outcomes, evidence, remediation, and retest.
 permalink: /services/
 lang: en
 ref: services
 services_v2: true
+marketing_v3: true
 ---
-<div class="services-v2-page">
-  <section class="services-v2-hero" aria-labelledby="services-title">
-    <div class="wrap services-v2-hero__grid">
+<div class="market-page">
+  <section class="market-hero" aria-labelledby="services-title">
+    <div class="wrap market-hero__grid">
       <div>
-        <p class="svc-eyebrow">Services</p>
-        <h1 id="services-title">test what matters.<br>prove what fails.<br>engineer what lasts.</h1>
-        <p class="services-v2-hero__lead">
-          Black Bag Security helps organizations understand whether important systems, controls, and assumptions will hold up under real-world pressure. The work ranges from application testing and adversary validation to AI security and secure systems engineering. Every engagement is led directly by the principal and turns technical testing into <strong>clear findings, practical priorities, and evidence you can act on.</strong>
-        </p>
-        <div class="services-v2-hero__actions">
-          <a class="home-btn home-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss an engagement</a>
-          <a class="home-btn" href="#how-we-work">See how we work</a>
+        <p class="market-kicker">Security services built around decisions</p>
+        <h1 id="services-title">Bring the problem. <span>We will engineer the answer.</span></h1>
+        <p class="market-lead">The useful question is not which security service to buy. It is what you need to understand, prove, protect, or change before the risk becomes expensive.</p>
+        <div class="market-actions">
+          <a class="market-btn market-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss the problem</a>
+          <a class="market-btn" href="#service-map">Find your starting point</a>
         </div>
       </div>
-
-      <aside class="services-v2-hero__principles" aria-label="Engagement principles">
-        <div class="svc-principle">
-          <span class="icon-mask icon-target" aria-hidden="true"></span>
-          <div><strong>Start with the problem</strong><p>We begin with what you need to understand, protect, prove, or improve.</p></div>
+      <div class="market-visual" aria-label="Service decision map">
+        <span class="market-visual__title">What do you need to know?</span>
+        <div class="market-stack">
+          <div class="market-stack__band"><strong>Exposure</strong><span>Can an application, API, identity, or workflow be abused?</span></div>
+          <div class="market-stack__band"><strong>Resistance</strong><span>Will preventive and detective controls stop a realistic attacker?</span></div>
+          <div class="market-stack__band"><strong>AI authority</strong><span>Can AI, agents, tools, or browser state be manipulated outside intended limits?</span></div>
+          <div class="market-stack__band"><strong>System design</strong><span>How should a sensitive system be hardened, contained, observed, and recovered?</span></div>
         </div>
-        <div class="svc-principle">
-          <span class="icon-mask icon-shield" aria-hidden="true"></span>
-          <div><strong>Work safely</strong><p>Scope, access, safety limits, escalation, and data handling are agreed before testing begins.</p></div>
+        <div class="market-outcome"><strong>One standard of delivery</strong><p>Authorized testing · reviewable proof · practical remediation · verified outcome</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="market-section market-section--soft" id="service-map" aria-labelledby="services-map-title">
+    <div class="wrap">
+      <div class="market-section__head">
+        <div><p class="market-kicker">Four starting points</p><h2 id="services-map-title">Match the engagement to the <span>security decision.</span></h2></div>
+        <p>The service changes with the question. The evidence standard, confidentiality, operating discipline, and accountability do not.</p>
+      </div>
+      <div class="market-card-grid">
+        <article class="market-card"><span class="market-card__code">Application &amp; API Security</span><h3>Prove whether protected data and actions are actually protected.</h3><p>Authentication, authorization, sessions, APIs, browser behavior, input handling, and business logic are tested as connected attack paths.</p><a href="{{ '/services/application-api-security/' | relative_url }}">Explore application &amp; API security →</a></article>
+        <article class="market-card"><span class="market-card__code">Adversary Validation</span><h3>Prove whether your controls stop the outcome that matters.</h3><p>Identity, infrastructure, cloud, prevention, detection, and response assumptions are challenged against explicit attacker objectives.</p><a href="{{ '/services/adversary-validation/' | relative_url }}">Explore adversary validation →</a></article>
+        <article class="market-card"><span class="market-card__code">AI Security</span><h3>Prove where AI can be influenced, exposed, or over-authorized.</h3><p>Prompt injection, retrieval, memory, tools, browser state, agents, data flows, and guardrails are tested as one trust system.</p><a href="{{ '/services/ai-security/' | relative_url }}">Explore AI security →</a></article>
+        <article class="market-card"><span class="market-card__code">Secure Systems Engineering</span><h3>Engineer the security property into the system itself.</h3><p>Least privilege, hardening, privilege separation, observability, safe operation, rollback, and recovery become design requirements.</p><a href="{{ '/services/secure-systems-engineering/' | relative_url }}">Explore secure systems engineering →</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="market-section market-section--grid" aria-labelledby="service-process">
+    <div class="wrap market-split">
+      <div class="market-message">
+        <p class="market-kicker">What the client experiences</p>
+        <h2 id="service-process">A controlled path from <span>uncertainty to evidence.</span></h2>
+        <p>Good testing should reduce uncertainty as it progresses. Scope becomes explicit, attack paths become observable, findings become defensible, and remediation becomes verifiable.</p>
+      </div>
+      <div class="market-visual">
+        <span class="market-visual__title">Engagement lifecycle</span>
+        <div class="market-flow market-flow--5">
+          <article class="market-node" data-step="01"><strong>Define</strong><p>The decision, target, consequence, and useful outcome.</p></article>
+          <article class="market-node" data-step="02"><strong>Bound</strong><p>Authority, access, safety, data handling, and stop conditions.</p></article>
+          <article class="market-node" data-step="03"><strong>Test</strong><p>Manual analysis plus purpose-fit tooling against realistic paths.</p></article>
+          <article class="market-node" data-step="04"><strong>Prove</strong><p>Validate the claim and preserve proportionate evidence.</p></article>
+          <article class="market-node" data-step="05"><strong>Close</strong><p>Remediate, retest, and record the verified state.</p></article>
         </div>
-        <div class="svc-principle">
-          <span class="icon-mask icon-evidence" aria-hidden="true"></span>
-          <div><strong>Show the proof</strong><p>Important conclusions are supported by reproducible evidence, not scanner output or guesswork.</p></div>
-        </div>
-        <div class="svc-principle">
-          <span class="icon-mask icon-deliverables" aria-hidden="true"></span>
-          <div><strong>Help close the issue</strong><p>Findings are explained in practical terms, with remediation guidance and retesting where it adds value.</p></div>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <section class="services-v2-lines" aria-labelledby="primary-services">
-    <div class="wrap">
-      <div class="services-v2-lines__intro">
-        <h2 id="primary-services">Four ways we help.</h2>
-        <p>Some clients need to know whether an application can be broken. Others need to know whether their defensive controls will stop a realistic attacker, whether an AI-enabled workflow can be abused, or how to build a sensitive system more securely. The service changes with the problem. The standard of work does not.</p>
-      </div>
-
-      <div class="services-v2-lines__grid">
-        <article class="svc-line-card">
-          <div class="svc-line-card__number">01<span class="icon-mask icon-model" aria-hidden="true"></span></div>
-          <h3>Application &amp; API Security</h3>
-          <p class="svc-line-card__statement">Find out whether users, APIs, sessions, or business workflows can be abused to reach data or actions they should not.</p>
-          <div class="svc-line-card__focus" aria-label="Application and API security focus areas">
-            <span>Authentication, MFA, recovery, and sessions</span>
-            <span>Authorization, roles, and object access</span>
-            <span>API security and unintended data exposure</span>
-            <span>Business logic and protected state changes</span>
-            <span>Input handling and browser attack surface</span>
-            <span>Targeted code, configuration, and dependency review</span>
-          </div>
-          <a class="svc-text-link" href="{{ '/services/application-api-security/' | relative_url }}">Explore this service</a>
-        </article>
-
-        <article class="svc-line-card">
-          <div class="svc-line-card__number">02<span class="icon-mask icon-target" aria-hidden="true"></span></div>
-          <h3>Adversary Validation</h3>
-          <p class="svc-line-card__statement">Test whether a realistic attacker can reach an important objective and whether your controls, monitoring, and response actually stop them.</p>
-          <div class="svc-line-card__focus" aria-label="Adversary validation focus areas">
-            <span>Objective-led attack paths</span>
-            <span>Identity, privilege, and trust relationships</span>
-            <span>Preventive control effectiveness</span>
-            <span>Detection and telemetry coverage</span>
-            <span>Response assumptions where in scope</span>
-            <span>Evidence-backed attack narratives</span>
-          </div>
-          <a class="svc-text-link" href="{{ '/services/adversary-validation/' | relative_url }}">Explore this service</a>
-        </article>
-
-        <article class="svc-line-card">
-          <div class="svc-line-card__number">03<span class="icon-mask icon-chip" aria-hidden="true"></span></div>
-          <h3>AI Security</h3>
-          <p class="svc-line-card__statement">Assess how AI-enabled products and workflows can be manipulated, expose information, misuse tools, or act outside their intended limits.</p>
-          <div class="svc-line-card__focus" aria-label="AI security focus areas">
-            <span>Prompt injection and source confusion</span>
-            <span>Agent and tool execution boundaries</span>
-            <span>Identity, retrieval, memory, and data exposure</span>
-            <span>Browser-AI attack paths</span>
-            <span>Guardrail and policy effectiveness</span>
-            <span>Reproducible local validation where appropriate</span>
-          </div>
-          <a class="svc-text-link" href="{{ '/services/ai-security/' | relative_url }}">Explore this service</a>
-        </article>
-
-        <article class="svc-line-card">
-          <div class="svc-line-card__number">04<span class="icon-mask icon-code" aria-hidden="true"></span></div>
-          <h3>Secure Systems Engineering</h3>
-          <p class="svc-line-card__statement">Design and harden security-sensitive systems so protection is built into the architecture, permissions, operations, and recovery process.</p>
-          <div class="svc-line-card__focus" aria-label="Secure systems engineering focus areas">
-            <span>Threat-informed architecture and data flow</span>
-            <span>Least privilege and privilege separation</span>
-            <span>Authentication, keys, secrets, and trust boundaries</span>
-            <span>Platform and service hardening</span>
-            <span>Security logging and operational evidence</span>
-            <span>Backup, rollback, recovery, and validation</span>
-          </div>
-          <a class="svc-text-link" href="{{ '/services/secure-systems-engineering/' | relative_url }}">Explore this service</a>
-        </article>
+        <div class="market-outcome"><strong>Client outcome</strong><p>What failed. Why it matters. What to change. Whether the change worked.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="services-v2-process" id="how-we-work" aria-labelledby="engagement-process">
+  <section class="market-section" aria-labelledby="service-output">
     <div class="wrap">
-      <h2 class="svc-section-title" id="engagement-process">How the work happens</h2>
-      <p class="services-v2-process__lead">Good security work should be understandable before, during, and after the technical testing. The process is designed to keep the objective clear, the work controlled, and the conclusions useful.</p>
-      <div class="services-v2-process__grid">
-        <article class="svc-process-step"><span class="svc-process-step__number">01 / DEFINE</span><h3>Define the question</h3><p>Agree what you need to know, which systems or outcomes matter, and what a useful answer should look like.</p></article>
-        <article class="svc-process-step"><span class="svc-process-step__number">02 / BOUND</span><h3>Set the boundaries</h3><p>Confirm scope, access, authority, safety constraints, escalation contacts, and handling requirements.</p></article>
-        <article class="svc-process-step"><span class="svc-process-step__number">03 / TEST</span><h3>Test the system</h3><p>Use manual analysis and purpose-fit tools to investigate realistic failure paths and challenge important assumptions.</p></article>
-        <article class="svc-process-step"><span class="svc-process-step__number">04 / PROVE</span><h3>Explain what was proven</h3><p>Document the evidence, impact, conditions, and reasoning needed to support each material conclusion.</p></article>
-        <article class="svc-process-step"><span class="svc-process-step__number">05 / VERIFY</span><h3>Help close the loop</h3><p>Turn findings into practical remediation priorities and retest the original failure path when verification is required.</p></article>
+      <div class="market-section__head">
+        <div><p class="market-kicker">What leaves the engagement</p><h2 id="service-output">Useful work survives <span>delivery day.</span></h2></div>
+        <p>The goal is not a large document. It is a body of evidence that remains useful to the people who must make a decision, fix the condition, and verify closure.</p>
+      </div>
+      <div class="market-card-grid market-card-grid--3">
+        <article class="market-card"><span class="market-card__code">Leadership</span><h3>Clear decision context</h3><p>Material risk, affected business outcome, limitations, priorities, and what needs attention next.</p></article>
+        <article class="market-card"><span class="market-card__code">Engineering &amp; Security</span><h3>Enough detail to reproduce and fix</h3><p>Conditions, evidence, attack path, root cause, remediation direction, and retest context.</p></article>
+        <article class="market-card"><span class="market-card__code">Assurance</span><h3>Coverage and conclusion boundaries</h3><p>What was tested, what was established, what was blocked, and what remains unverified.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="services-v2-evidence" aria-labelledby="engagement-evidence">
+  <section class="market-section market-section--soft" aria-labelledby="engagement-shapes">
     <div class="wrap">
-      <div class="services-v2-evidence__head">
-        <div><p class="svc-eyebrow">Evidence in practice</p><h2 id="engagement-evidence">Evidence you can take away.</h2></div>
-        <p>A security assessment should leave more than a severity label. The useful output is a defensible record of what happened, under which conditions, why it matters, and what changed when the issue was addressed.</p>
+      <div class="market-section__head">
+        <div><p class="market-kicker">Engagement shape</p><h2 id="engagement-shapes">Use the structure that fits the problem.</h2></div>
+        <p>Not every difficult security question belongs in a conventional penetration-test box.</p>
       </div>
-      <div class="services-v2-evidence__grid">
-        <article class="services-v2-evidence__item"><span>01 / REPRODUCE</span><h3>Reproduction context</h3><p>Important findings preserve the steps, state, requests, responses, artifacts, or environmental conditions needed to understand and repeat the observed behavior where practical.</p></article>
-        <article class="services-v2-evidence__item"><span>02 / DEMONSTRATE</span><h3>Controlled demonstration</h3><p>When standard tooling is not enough, a purpose-built validator, test harness, or bounded PoC can make the security consequence observable and repeatable without turning the engagement into uncontrolled exploitation.</p></article>
-        <article class="services-v2-evidence__item"><span>03 / DECIDE</span><h3>Decision context</h3><p>Evidence is connected to affected systems, preconditions, attacker capability, material impact, uncertainty, and any limitations so leadership and engineering can make the right decision from the same facts.</p></article>
-        <article class="services-v2-evidence__item"><span>04 / CLOSE</span><h3>Closure evidence</h3><p>Where remediation and retest are in scope, the original failure path is compared against the corrected behavior and the final state is recorded as resolved, mitigated, unresolved, or unable to verify.</p></article>
+      <div class="market-card-grid market-card-grid--3">
+        <article class="market-card"><span class="market-card__code">Fixed scope</span><h3>Known targets, known objective</h3><p>Useful when the environment, systems, time-box, and required output are already well defined.</p></article>
+        <article class="market-card"><span class="market-card__code">Objective-led</span><h3>Follow the evidence within agreed boundaries</h3><p>Useful when the outcome matters more than prescribing the exact technical route in advance.</p></article>
+        <article class="market-card"><span class="market-card__code">Engineering / research sprint</span><h3>Answer the question standard tooling cannot</h3><p>Architecture, hardening, reverse engineering, validation tooling, or controlled proof-of-concept work.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="services-v2-specialist" aria-labelledby="specialist-capabilities">
-    <div class="wrap">
-      <div class="services-v2-specialist__head">
-        <h2 id="specialist-capabilities">When deeper analysis is needed.</h2>
-        <p>Not every problem can be answered from the surface. When necessary, deeper engineering and research techniques are brought into the engagement to understand how a system behaves and why a security failure exists.</p>
-      </div>
-      <div class="services-v2-specialist__grid">
-        <article class="svc-specialist-card"><strong>Vulnerability Research</strong><p>Investigate unfamiliar or complex security behavior when normal testing is not enough to explain the risk or demonstrate impact.</p></article>
-        <article class="svc-specialist-card"><strong>Reverse Engineering</strong><p>Analyze binaries, protocols, and implementation behavior to understand what software actually does when documentation or exposed interfaces are not enough.</p></article>
-        <article class="svc-specialist-card"><strong>Code &amp; Dependency Review</strong><p>Review targeted source code, configuration, and dependencies to identify root cause and explain behavior observed during testing.</p></article>
-        <article class="svc-specialist-card"><strong>Agentic Security Engineering</strong><p>Build human-governed automation for security research and testing while keeping operator control, evidence, and verification explicit.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="services-v2-models" aria-labelledby="engagement-models">
-    <div class="wrap">
-      <h2 class="svc-section-title" id="engagement-models">Different problems need different engagement shapes.</h2>
-      <div class="services-v2-models__grid">
-        <article class="svc-model-card"><span>01</span><h3>Fixed scope</h3><p>Defined systems, objectives, constraints, and deliverables. A good fit when the environment and required outcome are already clear.</p></article>
-        <article class="svc-model-card"><span>02</span><h3>Objective-led</h3><p>Begin with an outcome that matters and allow the testing path to follow the evidence within agreed rules and safety limits.</p></article>
-        <article class="svc-model-card"><span>03</span><h3>Engineering or research sprint</h3><p>Focused technical work for architecture, hardening, root cause, reverse engineering, or research questions that do not fit a conventional penetration test.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="services-v2-cta">
-    <div class="wrap">
-      <div class="services-v2-cta__panel">
-        <div><h2>You do not need to know the name of the service before you contact us.</h2><p>Describe the system, the concern, what you are trying to protect or understand, and any constraints we need to respect. We can work out the right engagement from there.</p></div>
-        <a class="home-btn home-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Start the conversation</a>
-      </div>
+  <section class="market-close" aria-labelledby="services-close">
+    <div class="wrap market-close__panel">
+      <div><p class="market-kicker">You do not need the service name</p><h2 id="services-close">Tell us what you cannot afford to get wrong.</h2><p>Describe the system, concern, consequence, timing, and constraints. We will shape the engagement around the decision you need to make.</p></div>
+      <a class="market-btn market-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Start the conversation</a>
     </div>
   </section>
 </div>
