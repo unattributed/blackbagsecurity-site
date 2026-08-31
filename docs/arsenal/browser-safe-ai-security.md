@@ -1,78 +1,45 @@
 ---
 layout: home-v2
 title: Browser-Safe AI Security | The Engineering Arsenal
-description: A local validation toolkit and workshop track for reproducible browser-based AI security testing using synthetic targets and evidence-first workflows.
+description: Engineering proof of reproducible browser-AI security research using local synthetic targets, Playwright observation, network capture, structured evidence, manifests, and deterministic hashing.
 permalink: /arsenal/browser-safe-ai-security/
 lang: en
 ref: arsenal-browser-safe-ai-security
 arsenal_v2: true
+marketing_v3: true
 ---
-<div class="arsenal-v2-page">
-  <section class="arsenal-project-hero" aria-labelledby="browser-ai-title">
-    <div class="wrap">
-      <a class="arsenal-project-back" href="{{ '/arsenal/' | relative_url }}">Back to the Engineering Arsenal</a>
-      <div class="arsenal-project-hero__grid">
-        <div>
-          <p class="arsenal-project-kicker">AI Security Validation</p>
-          <h1 id="browser-ai-title">Browser-Safe AI Security</h1>
-          <p class="arsenal-project-lead">A local validation toolkit and workshop track for browser-based AI security testing. It pairs synthetic attack cases with a deliberately weak local target so practitioners can study browser-AI trust failures without testing third-party systems or relying on screenshots and anecdotes as evidence.</p>
-          <div class="arsenal-project-tech" aria-label="Browser-Safe AI Security technology stack"><span>Playwright</span><span>Ollama</span><span>DOM / Frames</span><span>HTTP / Proxy Capture</span><span>JSON / JSONL</span><span>Manifests</span><span>Deterministic Hashing</span></div>
-          <figure class="arsenal-project-visual"><img src="{{ '/assets/img/browser-ai-boundaries.svg' | relative_url }}" alt="Browser AI security architecture showing untrusted page state, browser DOM and frame state, Playwright observation, a local Ollama-backed target, network capture and structured hashed evidence" /></figure>
-          <div class="arsenal-project-actions">
-            <a class="arsenal-repo-link" href="https://github.com/unattributed/ai-browser-security-test-suite" target="_blank" rel="noopener noreferrer">View public repository on GitHub</a>
-          </div>
-        </div>
-        <aside class="arsenal-project-summary" aria-label="Browser-Safe AI Security summary">
-          <div class="arsenal-project-summary__row"><strong>Purpose</strong><p>Reproducible local validation of browser-AI attack paths and control failures.</p></div>
-          <div class="arsenal-project-summary__row"><strong>Evidence</strong><p>Browser, DOM, rendered text, screenshots, frame trees, HTTP, proxy captures, JSON/JSONL, manifests and hashes.</p></div>
-          <div class="arsenal-project-summary__row"><strong>Repository</strong><p>Public AGPL-3.0-or-later project using local synthetic targets and data.</p></div>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <section class="arsenal-project-section">
-    <div class="wrap">
-      <div class="arsenal-project-intro">
-        <h2>The browser changes the AI threat model</h2>
-        <p>When AI is embedded in a browser workflow, the model is only one component in a larger trust chain. Source HTML, rendered content, hidden DOM, frames, screenshots, delayed state changes, QR handoffs, user approvals, external navigation, and tool authority can all influence what the AI sees and what the system does next.</p>
-      </div>
-      <div class="arsenal-project-grid">
-        <article class="arsenal-project-block"><span>01</span><h3>Indirect prompt injection</h3><p>Exercises how untrusted browser content can influence an AI workflow without being presented as an explicit user instruction.</p></article>
-        <article class="arsenal-project-block"><span>02</span><h3>Source confusion</h3><p>Tests hidden DOM, low-visibility content, frame trees, and DOM-versus-rendered-page mismatches that can change the model's interpretation of a page.</p></article>
-        <article class="arsenal-project-block"><span>03</span><h3>Visual deception</h3><p>Uses screenshot and rendering scenarios to examine where visual state and machine-readable state diverge.</p></article>
-        <article class="arsenal-project-block"><span>04</span><h3>State transitions</h3><p>Delayed content, navigation, QR handoff, and off-browser transitions are captured as part of the attack chain instead of treated as isolated prompts.</p></article>
-        <article class="arsenal-project-block"><span>05</span><h3>Synthetic sensitive data</h3><p>Local synthetic data allows handling and leakage behaviors to be exercised without putting real customer data or credentials at risk.</p></article>
-        <article class="arsenal-project-block"><span>06</span><h3>Evidence packaging</h3><p>Playwright, HTTP and proxy capture, structured evidence, deterministic hashing, manifests, reports, and archive sidecars support reviewer-grade reproduction.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="arsenal-project-status">
-    <div class="wrap arsenal-project-status__grid">
+<div class="market-page">
+  <section class="market-hero" aria-labelledby="browser-ai-title">
+    <div class="wrap market-hero__grid">
       <div>
-        <p class="arsenal-project-kicker">Safety boundary</p>
-        <h2>Local targets. Synthetic data. Reproducible evidence.</h2>
-        <p>The project is intentionally designed for controlled experimentation. It does not require testing production SaaS, real credentials, customer data, or third-party browser-AI products in order to study the security mechanics.</p>
+        <p class="market-kicker">Engineering Arsenal / Browser AI security</p>
+        <h1 id="browser-ai-title">Browser-Safe AI Security</h1>
+        <p class="market-lead">Repeatable evidence for browser-AI attack paths. This research makes prompt injection, source confusion, hidden browser state, frame boundaries, visual deception, and tool behavior observable without testing real customer data or third-party production systems.</p>
+        <p class="market-support">For clients, it demonstrates that Black Bag can turn a fast-moving AI threat model into controlled, inspectable security testing rather than relying on screenshots, anecdotes, or one-off model responses.</p>
+        <div class="market-actions"><a class="market-btn market-btn--accent" href="{{ '/services/ai-security/' | relative_url }}">See AI security services</a><a class="market-btn" href="{{ '/arsenal/' | relative_url }}">Back to the Arsenal</a></div>
       </div>
-      <div class="arsenal-status-list">
-        <div class="arsenal-status-item"><strong>Included</strong><p>Labs 00 through 12, Playwright-backed evidence, proxy and HTTP workflows, structured JSON/JSONL records, artifact manifests, deterministic hashing, workshop material, and validation checks.</p></div>
-        <div class="arsenal-status-item"><strong>Supported target</strong><p>A deliberately weak local Ollama-backed web UI used only as an authorized synthetic test environment.</p></div>
-        <div class="arsenal-status-item"><strong>Not claimed</strong><p>Vendor certification, production SaaS testing, hardening of third-party AI products, or exploit-development training against real systems.</p></div>
+      <div class="market-visual" aria-label="Browser AI evidence architecture"><span class="market-visual__title">Capture the whole browser-AI trust path</span>
+        <div class="market-flow market-flow--5"><article class="market-node" data-step="01"><strong>Untrusted page</strong><p>HTML · rendered text · hidden content · frames</p></article><article class="market-node" data-step="02"><strong>Browser state</strong><p>DOM · navigation · screenshot · delayed state</p></article><article class="market-node" data-step="03"><strong>AI / agent</strong><p>Model-visible context · interpretation · response</p></article><article class="market-node" data-step="04"><strong>Network &amp; action</strong><p>HTTP · proxy · navigation · tool behavior</p></article><article class="market-node" data-step="05"><strong>Evidence package</strong><p>JSONL · manifests · hashes · replay context</p></article></div>
+        <div class="market-outcome"><strong>One attack path, observed from source through consequence.</strong></div>
       </div>
     </div>
   </section>
 
-  <section class="arsenal-project-section">
-    <div class="wrap">
-      <div class="arsenal-project-intro">
-        <h2>Why it belongs in the Arsenal</h2>
-        <p>The project turns an emerging security problem into something testable and reviewable. Instead of debating whether a browser-AI behavior is dangerous in the abstract, the toolkit captures the page state, model-visible context, network behavior, model response, and resulting artifacts so the conclusion can be inspected and repeated.</p>
-      </div>
-      <div class="arsenal-project-actions">
-        <a class="arsenal-repo-link" href="https://github.com/unattributed/ai-browser-security-test-suite" target="_blank" rel="noopener noreferrer">View public repository on GitHub</a>
-        <a class="arsenal-repo-link" href="{{ '/services/ai-security/' | relative_url }}">AI Security Services</a>
-      </div>
-    </div>
-  </section>
+  <section class="market-section market-section--soft" aria-labelledby="browser-threat"><div class="wrap"><div class="market-section__head"><div><p class="market-kicker">The security problem</p><h2 id="browser-threat">The browser changes what the AI can <span>see, trust, and act on.</span></h2></div><p>A browser-integrated AI system inherits trust decisions from HTML, rendered content, frames, navigation, user state, tools, screenshots, hidden DOM, and delayed transitions. The model is only one component in that larger attack surface.</p></div>
+    <div class="market-card-grid market-card-grid--3"><article class="market-card"><span class="market-card__code">Indirect prompt injection</span><h3>Untrusted content can become instruction.</h3><p>Exercise how browser content influences an AI workflow without being presented as an explicit user command.</p></article><article class="market-card"><span class="market-card__code">Source confusion</span><h3>What the model sees may not match what the user sees.</h3><p>Hidden DOM, low-visibility content, frame trees, source order, and rendered-page differences can change interpretation.</p></article><article class="market-card"><span class="market-card__code">State transitions</span><h3>The attack path can span time and navigation.</h3><p>Delayed content, external navigation, QR handoffs, frame changes, and off-browser transitions are captured as part of one chain.</p></article></div>
+  </div></section>
+
+  <section class="market-section market-section--grid" aria-labelledby="browser-evidence"><div class="wrap market-split"><div class="market-message"><p class="market-kicker">Evidence-first research</p><h2 id="browser-evidence">Make the browser state <span>reviewable after the test.</span></h2><p>AI and browser behavior can be dynamic. The toolkit therefore captures multiple views of the same event so a reviewer can understand what content existed, what the system observed, what network activity occurred, and what result followed.</p></div>
+    <div class="market-visual"><span class="market-visual__title">Evidence views</span><div class="market-card-grid market-card-grid--2"><article class="market-card"><span class="market-card__code">Browser</span><h3>Rendered and machine-readable state</h3><p>DOM, frame trees, rendered text, screenshots, navigation, and page timing.</p></article><article class="market-card"><span class="market-card__code">Network</span><h3>What crossed the protocol boundary</h3><p>HTTP requests, responses, proxy captures, external navigation, and relevant metadata.</p></article><article class="market-card"><span class="market-card__code">Model / target</span><h3>What context produced the behavior</h3><p>Local target state, model-visible input, response, and resulting application action.</p></article><article class="market-card"><span class="market-card__code">Integrity</span><h3>What artifact belongs to the run</h3><p>Structured JSON / JSONL, manifests, deterministic hashes, reports, and archive sidecars.</p></article></div><div class="market-outcome"><strong>Evidence is designed for reproduction, not just demonstration.</strong></div></div>
+  </div></section>
+
+  <section class="market-section" aria-labelledby="browser-client"><div class="wrap"><div class="market-section__head"><div><p class="market-kicker">What this proves about Black Bag</p><h2 id="browser-client">We can turn emerging AI risk into <span>a controlled test system.</span></h2></div><p>The project combines browser automation, AI behavior, network observation, synthetic data, structured evidence, and safe local experimentation into one repeatable security workflow.</p></div>
+    <div class="market-card-grid"><article class="market-card"><span class="market-card__code">Synthetic sensitive data</span><h3>Test leakage behavior without using real client secrets.</h3><p>Local synthetic targets and data let handling, exfiltration, and trust failures be studied without creating unnecessary exposure.</p></article><article class="market-card"><span class="market-card__code">Visual deception</span><h3>Compare what the human sees to what the machine can read.</h3><p>Screenshot and rendering scenarios expose where visual state and machine-readable state diverge.</p></article><article class="market-card"><span class="market-card__code">Controlled tooling</span><h3>Observe the path instead of trusting the target’s own narrative.</h3><p>Playwright, direct HTTP, proxy capture, local Ollama-backed targets, and structured instrumentation create independent evidence views.</p></article><article class="market-card"><span class="market-card__code">Safe research boundary</span><h3>Study the mechanics without attacking production SaaS.</h3><p>The project intentionally uses local synthetic environments so security behavior can be explored responsibly and repeatedly.</p></article></div>
+  </div></section>
+
+  <section class="market-section market-section--soft" aria-labelledby="browser-stack"><div class="wrap market-split"><div class="market-message"><p class="market-kicker">Technology &amp; scope</p><h2 id="browser-stack">Local targets. Synthetic data. <span>Deterministic evidence.</span></h2><p>The workshop and validation suite are intentionally scoped to controlled experimentation. They demonstrate testing mechanics, not vendor certification or claims about third-party production AI products.</p><div class="market-pill-row"><span class="market-pill">Playwright</span><span class="market-pill">Ollama</span><span class="market-pill">DOM / Frames</span><span class="market-pill">HTTP / Proxy Capture</span><span class="market-pill">JSON / JSONL</span><span class="market-pill">Manifests</span><span class="market-pill">Deterministic hashing</span></div></div>
+    <div class="market-visual"><span class="market-visual__title">Claim boundary</span><div class="market-compare"><div class="market-compare__side market-compare__side--good"><strong>Included</strong><ul><li>Controlled labs and synthetic attack cases</li><li>Playwright-backed browser evidence</li><li>HTTP and proxy observation</li><li>Structured records, manifests, and hashes</li></ul></div><div class="market-compare__side"><strong>Not claimed</strong><ul><li>Vendor certification</li><li>Production SaaS testing by default</li><li>Hardening guarantees for third-party AI</li><li>Exploit training against real systems</li></ul></div></div></div>
+  </div></section>
+
+  <section class="market-close" aria-labelledby="browser-close"><div class="wrap market-close__panel"><div><p class="market-kicker">Why a client should care</p><h2 id="browser-close">Black Bag can instrument the new trust boundaries created when AI meets browsers, tools, and authenticated state.</h2><p>That means AI security findings can be grounded in observable attack paths rather than speculative prompt examples.</p></div><a class="market-btn market-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss an AI system</a></div></section>
 </div>
