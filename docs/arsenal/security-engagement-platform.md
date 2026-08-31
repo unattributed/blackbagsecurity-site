@@ -1,75 +1,45 @@
 ---
 layout: home-v2
 title: Security Engagement Platform | The Engineering Arsenal
-description: A developing engagement control plane for identity, written authorization, executable scope, evidence boundaries, provenance, reporting, and operation-level control.
+description: Engineering proof of how Black Bag connects authorization, executable scope, evidence provenance, coverage, reporting, and retest into authoritative engagement state.
 permalink: /arsenal/security-engagement-platform/
 lang: en
 ref: arsenal-security-engagement-platform
 arsenal_v2: true
+marketing_v3: true
 ---
-<div class="arsenal-v2-page">
-  <section class="arsenal-project-hero" aria-labelledby="sep-title">
-    <div class="wrap">
-      <a class="arsenal-project-back" href="{{ '/arsenal/' | relative_url }}">Back to the Engineering Arsenal</a>
-      <div class="arsenal-project-hero__grid">
-        <div>
-          <p class="arsenal-project-kicker">Engagement Control Plane</p>
-          <h1 id="sep-title">Security Engagement Platform</h1>
-          <p class="arsenal-project-lead">The Security Engagement Platform is the forward evolution of a reusable security-engagement workspace into a system for controlling how authorized security work is defined, executed, evidenced, reviewed, and closed. Its role is not to perform every test itself. Its role is to make the engagement state authoritative.</p>
-          <div class="arsenal-project-tech" aria-label="Security Engagement Platform control surfaces"><span>Authorization</span><span>Executable Scope</span><span>Evidence Provenance</span><span>Browser / API</span><span>ZAP / WSTG</span><span>Reporting / Retest</span></div>
-          <figure class="arsenal-project-visual"><img src="{{ '/assets/img/sep-engagement-state.svg' | relative_url }}" alt="Security Engagement Platform architecture showing authority, executable scope, governed execution, evidence provenance, reporting and retest as continuous engagement state" /></figure>
-        </div>
-        <aside class="arsenal-project-summary" aria-label="Security Engagement Platform summary">
-          <div class="arsenal-project-summary__row"><strong>Purpose</strong><p>Turn engagement authority, scope, evidence, and operator decisions into executable control state.</p></div>
-          <div class="arsenal-project-summary__row"><strong>Status</strong><p>In active forward development from an existing reusable engagement workspace.</p></div>
-          <div class="arsenal-project-summary__row"><strong>Repository</strong><p>Private development repository.</p></div>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <section class="arsenal-project-section">
-    <div class="wrap">
-      <div class="arsenal-project-intro">
-        <h2>From workspace to control plane</h2>
-        <p>The project began as a private reusable workspace for company-specific security preparation and later grew into real engagement support: engagement records, authorization records, private evidence areas, browser and ZAP workflows, reusable scripts, and evidence-driven execution. The next design step is to make those controls first-class platform objects instead of surrounding conventions.</p>
-      </div>
-      <div class="arsenal-project-grid">
-        <article class="arsenal-project-block"><span>01</span><h3>Engagement identity</h3><p>Each body of work is bound to an explicit engagement identity instead of inferring authority from directories, browser sessions, hostnames, or prior activity.</p></article>
-        <article class="arsenal-project-block"><span>02</span><h3>Written authorization</h3><p>Authority records capture the operator, target, dates, allowed actions, restrictions, and stop conditions that govern the engagement.</p></article>
-        <article class="arsenal-project-block"><span>03</span><h3>Executable scope</h3><p>The forward design turns scope into machine-checkable records so later execution layers can fail closed when a target or action is not demonstrably authorized.</p></article>
-        <article class="arsenal-project-block"><span>04</span><h3>Evidence boundaries</h3><p>Private evidence, client material, credentials, and report-safe artifacts are separated deliberately rather than mixed into the source repository.</p></article>
-        <article class="arsenal-project-block"><span>05</span><h3>Provenance and audit</h3><p>Testing decisions, evidence origins, scripts, outputs, and report conclusions can be tied back to the engagement state that authorized them.</p></article>
-        <article class="arsenal-project-block"><span>06</span><h3>Operation-level control</h3><p>Later slices are intended to extend the same authority model into browser, API, ZAP, WSTG, and agent dispatch so execution is checked against approved scope at the point of use.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="arsenal-project-status">
-    <div class="wrap arsenal-project-status__grid">
+<div class="market-page">
+  <section class="market-hero" aria-labelledby="sep-title">
+    <div class="wrap market-hero__grid">
       <div>
-        <p class="arsenal-project-kicker">Forward progression</p>
-        <h2>Authority first. Execution second.</h2>
-        <p>The architecture is deliberately being built in layers. Engagement identity and authorization exist before richer scope enforcement. Scope enforcement exists before executor integration. That order reduces the risk of adding automation faster than the platform can prove what the automation is allowed to do.</p>
+        <p class="market-kicker">Engineering Arsenal / Engagement control</p>
+        <h1 id="sep-title">Security Engagement Platform</h1>
+        <p class="market-lead">A security assessment should know what is authorized, what has been tested, what evidence exists, what remains unresolved, and what the client has been told. The Security Engagement Platform makes that state explicit.</p>
+        <p class="market-support">This is not a product pitch. It is proof that Black Bag engineers the operating system around security work, not just the test scripts inside it.</p>
+        <div class="market-actions"><a class="market-btn market-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss an engagement</a><a class="market-btn" href="{{ '/arsenal/' | relative_url }}">Back to the Arsenal</a></div>
       </div>
-      <div class="arsenal-status-list">
-        <div class="arsenal-status-item"><strong>Current foundation</strong><p>Reusable engagement records, authorization validation, private evidence handling, standardized testing scripts, browser and proxy workflows, and real engagement evidence structures.</p></div>
-        <div class="arsenal-status-item"><strong>In development</strong><p>More deterministic engagement namespaces, executable scope records, provenance, evidence controls, and a cleaner separation between governance state and execution adapters.</p></div>
-        <div class="arsenal-status-item"><strong>Planned convergence</strong><p>AOTP becomes a governed execution consumer of approved engagement state rather than maintaining a separate concept of authority.</p></div>
+      <div class="market-visual" aria-label="Security Engagement Platform architecture"><span class="market-visual__title">Authoritative engagement state</span>
+        <div class="market-flow market-flow--5"><article class="market-node" data-step="01"><strong>Authorize</strong><p>Identity · dates · targets · restrictions</p></article><article class="market-node" data-step="02"><strong>Scope</strong><p>Machine-checkable allowed operations</p></article><article class="market-node" data-step="03"><strong>Execute</strong><p>Browser · API · ZAP · WSTG · adapters</p></article><article class="market-node" data-step="04"><strong>Evidence</strong><p>Provenance · artifacts · coverage · limits</p></article><article class="market-node" data-step="05"><strong>Close</strong><p>Report · remediation · retest · state</p></article></div>
+        <div class="market-outcome"><strong>One engagement identity from authority through retest.</strong></div>
       </div>
     </div>
   </section>
 
-  <section class="arsenal-project-section">
-    <div class="wrap">
-      <div class="arsenal-project-intro">
-        <h2>Why the integration matters</h2>
-        <p>A security platform should not have one system that knows the contract and another system that knows how to test. The intended convergence is a continuous chain from written authority to scope to operation approval to evidence to reporting to retest, with the same engagement identity carrying through the lifecycle.</p>
-      </div>
-      <div class="arsenal-project-actions">
-        <a class="arsenal-repo-link" href="{{ '/arsenal/aotp/' | relative_url }}">AOTP</a>
-        <a class="arsenal-repo-link" href="{{ '/methodology/' | relative_url }}">Methodology</a>
-      </div>
-    </div>
-  </section>
+  <section class="market-section market-section--soft" aria-labelledby="sep-why"><div class="wrap"><div class="market-section__head"><div><p class="market-kicker">Why it exists</p><h2 id="sep-why">Security work becomes fragile when <span>governance and execution drift apart.</span></h2></div><p>The platform turns engagement controls that are often scattered across documents, folders, scripts, browser sessions, and operator memory into explicit state that can govern the work.</p></div>
+    <div class="market-card-grid market-card-grid--3"><article class="market-card"><span class="market-card__code">Authority</span><h3>Know why the operation is allowed.</h3><p>Engagement identity, operator, target, dates, approved actions, restrictions, and stop conditions remain attached to execution.</p></article><article class="market-card"><span class="market-card__code">Evidence</span><h3>Know where the conclusion came from.</h3><p>Scripts, outputs, artifacts, test disposition, provenance, coverage, and limitations can be reconciled to the authorized engagement.</p></article><article class="market-card"><span class="market-card__code">State</span><h3>Know what is true now.</h3><p>Reporting and retest draw from the same reconciled state instead of reconstructing the story from stale notes at the end.</p></article></div>
+  </div></section>
+
+  <section class="market-section market-section--grid" aria-labelledby="sep-control"><div class="wrap market-split"><div class="market-message"><p class="market-kicker">Control model</p><h2 id="sep-control">Authority first. <span>Execution second.</span></h2><p>The architecture is intentionally layered. Identity and authorization come before executable scope. Scope comes before executor integration. That order prevents automation from becoming more capable than the system proving what it is allowed to do.</p></div>
+    <div class="market-visual"><span class="market-visual__title">Fail-closed progression</span><div class="market-stack"><div class="market-stack__band"><strong>Engagement identity</strong><span>Which authorized body of work does this operation belong to?</span></div><div class="market-stack__band"><strong>Written authority</strong><span>Who approved what, where, when, and under which restrictions?</span></div><div class="market-stack__band"><strong>Executable scope</strong><span>Can the target and operation be machine-checked before execution?</span></div><div class="market-stack__band"><strong>Execution adapter</strong><span>Browser, API, ZAP, WSTG, or agent consumes approved state rather than inventing its own authority.</span></div></div></div>
+  </div></section>
+
+  <section class="market-section" aria-labelledby="sep-proof"><div class="wrap"><div class="market-section__head"><div><p class="market-kicker">What this proves about Black Bag</p><h2 id="sep-proof">We engineer the controls around <span>how security work is performed.</span></h2></div><p>The platform demonstrates that governance, evidence, execution safety, reporting consistency, and retest can be treated as one technical system.</p></div>
+    <div class="market-card-grid"><article class="market-card"><span class="market-card__code">Machine-checkable authority</span><h3>Turn written permission into execution constraints.</h3><p>This reduces dependence on operator memory and directory conventions as testing grows more automated.</p></article><article class="market-card"><span class="market-card__code">Evidence provenance</span><h3>Keep conclusions tied to observable work.</h3><p>Artifacts and test state remain attributable to the engagement, target, objective, and operation that produced them.</p></article><article class="market-card"><span class="market-card__code">Coverage reconciliation</span><h3>Separate completed, blocked, not applicable, and finding states.</h3><p>Coverage is not confused with security conclusions, and limitations remain visible.</p></article><article class="market-card"><span class="market-card__code">Governed automation</span><h3>Give tools a consumer role, not authority ownership.</h3><p>AOTP and other executors are intended to consume approved engagement state rather than operate as independent control planes.</p></article></div>
+  </div></section>
+
+  <section class="market-section market-section--soft" aria-labelledby="sep-tech"><div class="wrap market-split"><div class="market-message"><p class="market-kicker">Engineering surfaces</p><h2 id="sep-tech">A control plane designed to connect <span>real assessment workflows.</span></h2><p>The platform grows out of reusable engagement operations already used for browser testing, API work, ZAP, WSTG, private evidence handling, scripts, reporting, and retest.</p><div class="market-pill-row"><span class="market-pill">Authorization</span><span class="market-pill">Executable scope</span><span class="market-pill">Evidence provenance</span><span class="market-pill">Browser / API</span><span class="market-pill">ZAP / WSTG</span><span class="market-pill">Reporting / Retest</span></div></div>
+    <div class="market-visual"><span class="market-visual__title">Design trajectory</span><div class="market-flow market-flow--3"><article class="market-node" data-step="NOW"><strong>Reusable engagement workspace</strong><p>Real records, evidence areas, scripts, browser and proxy workflows.</p></article><article class="market-node" data-step="NEXT"><strong>First-class control state</strong><p>Deterministic namespaces, scope records, provenance, evidence boundaries.</p></article><article class="market-node" data-step="CONVERGE"><strong>Governed execution</strong><p>AOTP and other adapters consume the same approved authority.</p></article></div></div>
+  </div></section>
+
+  <section class="market-close" aria-labelledby="sep-close"><div class="wrap market-close__panel"><div><p class="market-kicker">Why a client should care</p><h2 id="sep-close">The same engineering discipline that governs the platform governs the engagement.</h2><p>Authorization, evidence, coverage, communication, and retest are treated as parts of one controlled delivery system.</p></div><a class="market-btn market-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss the work</a></div></section>
 </div>
