@@ -1,78 +1,45 @@
 ---
 layout: home-v2
 title: OSMAP | The Engineering Arsenal
-description: OpenBSD Secure Mail Access Platform, a Rust webmail layer for hardened OpenBSD mail hosts built around least privilege, safe rendering, bounded authority, and visible security state.
+description: Engineering proof of secure software design using Rust, OpenBSD, privilege separation, safe rendering, bounded sessions, and visible security state for high-consequence mail access.
 permalink: /arsenal/osmap/
 lang: en
 ref: arsenal-osmap
 arsenal_v2: true
+marketing_v3: true
 ---
-<div class="arsenal-v2-page">
-  <section class="arsenal-project-hero" aria-labelledby="osmap-title">
-    <div class="wrap">
-      <a class="arsenal-project-back" href="{{ '/arsenal/' | relative_url }}">Back to the Engineering Arsenal</a>
-      <div class="arsenal-project-hero__grid">
-        <div>
-          <p class="arsenal-project-kicker">Secure Software</p>
-          <h1 id="osmap-title">OSMAP</h1>
-          <p class="arsenal-project-lead">OpenBSD Secure Mail Access Platform is a small, security-focused webmail application for hardened OpenBSD mail hosts. It gives users browser access to an existing mail system without replacing the underlying transport, mailbox, filtering, TLS, or firewall architecture.</p>
-          <div class="arsenal-project-tech" aria-label="OSMAP technology stack"><span>Rust</span><span>OpenBSD</span><span>nginx</span><span>Dovecot</span><span>Postfix</span><span>Unix Socket Helper</span><span>TOTP / CSRF</span></div>
-          <figure class="arsenal-project-visual"><img src="{{ '/assets/img/osmap-secure-mail.svg' | relative_url }}" alt="OSMAP architecture showing browser access through nginx to a Rust server-rendered application, a narrow Unix socket helper, Dovecot mailbox authority and Postfix submission" /></figure>
-          <div class="arsenal-project-actions">
-            <a class="arsenal-repo-link" href="https://github.com/unattributed/OSMAP" target="_blank" rel="noopener noreferrer">View public repository on GitHub</a>
-          </div>
-        </div>
-        <aside class="arsenal-project-summary" aria-label="OSMAP summary">
-          <div class="arsenal-project-summary__row"><strong>Implementation</strong><p>Rust, server-rendered interface, no runtime JavaScript.</p></div>
-          <div class="arsenal-project-summary__row"><strong>Security model</strong><p>Least privilege, bounded sessions, safe rendering, local helper boundary, fail-closed controls.</p></div>
-          <div class="arsenal-project-summary__row"><strong>Repository</strong><p>Public by design. Production evidence remains bounded to documented deployment conditions.</p></div>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <section class="arsenal-project-section">
-    <div class="wrap">
-      <div class="arsenal-project-intro">
-        <h2>The problem</h2>
-        <p>Adding a browser to a hardened mail host creates a new attack surface. OSMAP approaches that problem without pretending the web application should become the mail server. nginx remains the TLS edge, Dovecot remains authoritative for mailbox access, Postfix remains responsible for submission, and mailbox authority is kept outside the browser-facing process.</p>
-      </div>
-      <div class="arsenal-project-grid">
-        <article class="arsenal-project-block"><span>01</span><h3>Privilege separation</h3><p>The unprivileged web process reaches mailbox authority through a narrowly scoped local helper over a permissioned Unix socket.</p></article>
-        <article class="arsenal-project-block"><span>02</span><h3>Safe rendering</h3><p>Plain-text fallback, allowlist-sanitized HTML, remote-content blocking, bounded resource use, and explicit hostile-content limits reduce browser-side exposure.</p></article>
-        <article class="arsenal-project-block"><span>03</span><h3>Bounded sessions</h3><p>Password and TOTP authentication, session limits, logout, revocation, CSRF, same-origin, Host, parsing, throttling, and worker-budget controls are part of the design.</p></article>
-        <article class="arsenal-project-block"><span>04</span><h3>Security-visible UX</h3><p>The new interface is being designed so sanitization state, blocked content, sender context, cryptographic readiness, and security controls are understandable without making the user interpret backend internals.</p></article>
-        <article class="arsenal-project-block"><span>05</span><h3>Accessible interaction</h3><p>The interface is responsive and keyboard-accessible without a frontend framework or external runtime asset dependency.</p></article>
-        <article class="arsenal-project-block"><span>06</span><h3>Operational integration</h3><p>OSMAP fits into an existing OpenBSD mail platform rather than displacing native mail, filtering, TLS, PF, WireGuard, monitoring, and recovery controls.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="arsenal-project-status">
-    <div class="wrap arsenal-project-status__grid">
+<div class="market-page">
+  <section class="market-hero" aria-labelledby="osmap-title">
+    <div class="wrap market-hero__grid">
       <div>
-        <p class="arsenal-project-kicker">Current maturity</p>
-        <h2>Production-validated slices with explicit boundaries.</h2>
-        <p>The repository contains completed governance, hardening, production deployment, WSTG assurance, WebUI modernization, accessibility, and OpenPGP foundation work. Those results are deliberately scoped to the documented host, configuration, test corpus, and selected user cohort.</p>
+        <p class="market-kicker">Engineering Arsenal / Secure software</p>
+        <h1 id="osmap-title">OSMAP</h1>
+        <p class="market-lead">Secure mail for high-consequence systems. OSMAP adds browser access to a hardened OpenBSD mail platform without allowing the web application to become the mail authority.</p>
+        <p class="market-support">For clients, the project demonstrates how Black Bag approaches security-sensitive software: reduce privilege, narrow trust boundaries, sanitize hostile content, expose security state clearly, and preserve the underlying hardened architecture.</p>
+        <div class="market-actions"><a class="market-btn market-btn--accent" href="{{ '/services/secure-systems-engineering/' | relative_url }}">See secure systems engineering</a><a class="market-btn" href="{{ '/arsenal/' | relative_url }}">Back to the Arsenal</a></div>
       </div>
-      <div class="arsenal-status-list">
-        <div class="arsenal-status-item"><strong>Deployed and validated</strong><p>Selected-cohort browser mail access, hardened request and rendering boundaries, production deployment evidence, credentialed WSTG assurance, and differential HTTP parser validation.</p></div>
-        <div class="arsenal-status-item"><strong>OpenPGP position</strong><p>Policy, diagnostics, helper scaffolding, state models, and UX states exist. Runtime decrypt, verify, sign, encrypt, PGP/MIME, and key-management operations are not yet claimed.</p></div>
-        <div class="arsenal-status-item"><strong>Not claimed</strong><p>Universal Roundcube replacement, general hostile-email safety, attachment preview safety, full ASVS verification, or turnkey general-availability deployment.</p></div>
+      <div class="market-visual" aria-label="OSMAP architecture"><span class="market-visual__title">Keep browser access outside mailbox authority</span>
+        <div class="market-flow market-flow--5"><article class="market-node" data-step="01"><strong>Browser</strong><p>Untrusted mail content and user interaction</p></article><article class="market-node" data-step="02"><strong>nginx</strong><p>TLS edge · request boundary</p></article><article class="market-node" data-step="03"><strong>Rust web app</strong><p>Unprivileged · server-rendered · bounded sessions</p></article><article class="market-node" data-step="04"><strong>Unix socket helper</strong><p>Narrow privileged operation boundary</p></article><article class="market-node" data-step="05"><strong>Mail authority</strong><p>Dovecot mailbox · Postfix submission</p></article></div>
+        <div class="market-outcome"><strong>Least privilege keeps the web layer from inheriting unnecessary mail-system authority.</strong></div>
       </div>
     </div>
   </section>
 
-  <section class="arsenal-project-section">
-    <div class="wrap">
-      <div class="arsenal-project-intro">
-        <h2>Design principle</h2>
-        <p>The security model should be visible to the user without becoming the user's problem. OSMAP is increasingly exploring that boundary directly: not just how a secure mail access layer behaves internally, but how it communicates protected states, blocked content, cryptographic readiness, and security decisions in the product experience.</p>
-      </div>
-      <div class="arsenal-project-actions">
-        <a class="arsenal-repo-link" href="https://github.com/unattributed/OSMAP" target="_blank" rel="noopener noreferrer">View public repository on GitHub</a>
-        <a class="arsenal-repo-link" href="{{ '/services/secure-systems-engineering/' | relative_url }}">Secure Systems Engineering</a>
-      </div>
-    </div>
-  </section>
+  <section class="market-section market-section--soft" aria-labelledby="osmap-problem"><div class="wrap"><div class="market-section__head"><div><p class="market-kicker">The engineering problem</p><h2 id="osmap-problem">Adding a browser should not <span>erase the hardening underneath it.</span></h2></div><p>A browser-facing mail application introduces hostile content, session state, parsing, rendering, and web-request risk. OSMAP treats those as new boundaries while preserving nginx, Dovecot, Postfix, PF, filtering, TLS, and recovery as separate authorities.</p></div>
+    <div class="market-card-grid market-card-grid--3"><article class="market-card"><span class="market-card__code">Privilege separation</span><h3>The web process does not own mailbox authority.</h3><p>Privileged operations cross a narrowly scoped local helper over a permissioned Unix socket rather than expanding the browser-facing process.</p></article><article class="market-card"><span class="market-card__code">Safe rendering</span><h3>Hostile mail content is treated as hostile.</h3><p>Plain-text fallback, allowlist-sanitized HTML, remote-content blocking, resource bounds, and explicit unsafe-content handling reduce browser-side exposure.</p></article><article class="market-card"><span class="market-card__code">Bounded sessions</span><h3>Authentication is only one part of session safety.</h3><p>Password and TOTP, limits, logout, revocation, CSRF, same-origin, Host validation, throttling, and worker budgets shape the runtime boundary.</p></article></div>
+  </div></section>
+
+  <section class="market-section market-section--grid" aria-labelledby="osmap-state"><div class="wrap market-split"><div class="market-message"><p class="market-kicker">Security-visible product design</p><h2 id="osmap-state">A secure state should be <span>understandable to the user.</span></h2><p>The project explores how security controls can be visible without exposing backend complexity. Sanitization, blocked content, sender context, cryptographic readiness, and protected states should be communicated as product behavior.</p></div>
+    <div class="market-visual"><span class="market-visual__title">User-visible protection state</span><div class="market-flow market-flow--4"><article class="market-node" data-step="01"><strong>Receive</strong><p>Message and sender context</p></article><article class="market-node" data-step="02"><strong>Sanitize</strong><p>Remove or block unsafe rendering behavior</p></article><article class="market-node" data-step="03"><strong>Signal</strong><p>Make blocked content and security state visible</p></article><article class="market-node" data-step="04"><strong>Act</strong><p>User proceeds with bounded, understandable controls</p></article></div><div class="market-outcome"><strong>The security model should be visible without becoming the user's problem.</strong></div></div>
+  </div></section>
+
+  <section class="market-section" aria-labelledby="osmap-client"><div class="wrap"><div class="market-section__head"><div><p class="market-kicker">What this proves about Black Bag</p><h2 id="osmap-client">We can translate hardening principles into <span>working application architecture.</span></h2></div><p>OSMAP connects secure software, platform hardening, privilege separation, hostile-content handling, accessibility, and production validation rather than treating them as separate disciplines.</p></div>
+    <div class="market-card-grid"><article class="market-card"><span class="market-card__code">Narrow authority</span><h3>Design components around the least power they need.</h3><p>The browser-facing application is deliberately prevented from becoming a general privileged control surface.</p></article><article class="market-card"><span class="market-card__code">Fail-closed boundaries</span><h3>Unsafe or ambiguous state should not silently become allowed behavior.</h3><p>Request validation, content handling, sessions, helpers, and operational controls are designed around explicit constraints.</p></article><article class="market-card"><span class="market-card__code">Accessible secure UX</span><h3>Security controls still have to be usable.</h3><p>The server-rendered interface remains responsive and keyboard-accessible without depending on a frontend framework or runtime JavaScript.</p></article><article class="market-card"><span class="market-card__code">Operational integration</span><h3>Secure software has to fit the system around it.</h3><p>OSMAP preserves the existing OpenBSD mail, filtering, TLS, PF, WireGuard, monitoring, and recovery architecture.</p></article></div>
+  </div></section>
+
+  <section class="market-section market-section--soft" aria-labelledby="osmap-stack"><div class="wrap market-split"><div class="market-message"><p class="market-kicker">Technology &amp; maturity</p><h2 id="osmap-stack">Production-validated slices with <span>explicit claim boundaries.</span></h2><p>The public description stops where the evidence stops. Selected-cohort browser mail access, hardened request and rendering boundaries, production deployment, credentialed WSTG assurance, and parser validation are established under documented conditions.</p><div class="market-pill-row"><span class="market-pill">Rust</span><span class="market-pill">OpenBSD</span><span class="market-pill">nginx</span><span class="market-pill">Dovecot</span><span class="market-pill">Postfix</span><span class="market-pill">Unix socket helper</span><span class="market-pill">TOTP</span><span class="market-pill">CSRF</span></div></div>
+    <div class="market-visual"><span class="market-visual__title">Claim boundary</span><div class="market-compare"><div class="market-compare__side market-compare__side--good"><strong>Established</strong><ul><li>Selected-cohort browser mail access</li><li>Hardened rendering and request boundaries</li><li>Production deployment evidence</li><li>Credentialed WSTG assurance</li></ul></div><div class="market-compare__side"><strong>Not claimed</strong><ul><li>Universal Roundcube replacement</li><li>General hostile-email safety</li><li>Full OpenPGP runtime operations</li><li>Turnkey general availability</li></ul></div></div></div>
+  </div></section>
+
+  <section class="market-close" aria-labelledby="osmap-close"><div class="wrap market-close__panel"><div><p class="market-kicker">Why a client should care</p><h2 id="osmap-close">OSMAP demonstrates that Black Bag can engineer security-sensitive software where privilege, content, UX, and operations all matter at once.</h2><p>Those same principles apply to client systems that need more than surface-level hardening.</p></div><a class="market-btn market-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss secure engineering</a></div></section>
 </div>
