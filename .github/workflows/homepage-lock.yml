@@ -5,10 +5,12 @@ on:
     branches:
       - main
       - feature/competitive-design-review
+      - feature/homepage-practice-control-graphic
   pull_request:
     branches:
       - main
       - feature/competitive-design-review
+      - feature/homepage-practice-control-graphic
 
 permissions:
   contents: read
@@ -57,5 +59,7 @@ jobs:
           verify_blob "docs/assets/css/bbs-winning-v10.css" "be0fe1d22ac8f82727f54b3a3e14278b904aa372"
           verify_blob "docs/assets/css/bbs-homepage-refinement-v12.css" "5b24acaa496abddbaecd6b7c0f7a8695ca66f89d"
           verify_blob "docs/assets/css/bbs-homepage-proof-v16.css" "35d00f15007329d1e117579fd8df19fe05cb4989"
+          verify_blob "docs/assets/css/bbs-homepage-practice-v21.css" "03f5fad6c5508190d9229e55a64a456a501e3036"
+          verify_blob "docs/assets/js/app.js" "e2d2ebd24e9ee6fc2e4082073a82519162c4c379"
 
           echo "PASS: approved homepage baseline is intact"
