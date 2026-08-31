@@ -403,3 +403,11 @@
     margin-top: 8px;
   }
 }
+
+/* Keep light-surface Methodology section labels on one established green token. */
+.methodology-v2-body .method-v2-communication .method-eyebrow,
+.methodology-v2-body .method-v2-evidence .method-eyebrow,
+.methodology-v2-body .method-v2-delivery .method-eyebrow,
+.methodology-v2-body .method-v2-readers .method-eyebrow {
+  color: var(--method-accent-dark);
+}
