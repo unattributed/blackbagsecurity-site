@@ -6,8 +6,8 @@ The site owner explicitly approved the infographic-led homepage on 2026-08-31 an
 
 ## Current approved design source
 
-- Approved homepage source commit after journey rendering correction: `c3ad66dca6deec2a209ae7150165af2f35cb087f`
-- Approved development deployment containing the correction: GitHub Pages run `81`
+- Approved homepage source commit after final journey rendering correction: `75d89858be7c950a72934768ed9596f2e9f21bab`
+- Approved development deployment containing the final correction: GitHub Pages run `82`
 - Development URL: `https://dev.blackbagsecurity.com/`
 - Homepage purpose: client acquisition, executive confidence, clear service positioning, institutional delivery discipline, evidence-backed security work, engineering depth, and a direct path to engagement
 
@@ -23,9 +23,12 @@ The correction:
 2. Increases stage-label, node, icon, and explanatory-text scale for normal browser zoom.
 3. Rebalances the five stages so they occupy the available canvas with equal visual weight.
 4. Moves the luminous journey path below the explanatory text so it no longer collides with the final verified state.
-5. Gives the final verified-outcome node stronger visual emphasis without changing its meaning.
-6. Preserves a separate stacked mobile treatment and removes the decorative path where it would reduce readability.
-7. Uses a homepage-only `bbs-homepage-journey-v25.css` layer so the correction cannot alter other site pages.
+5. Makes the luminous path span the full five-stage progression instead of being aspect-ratio constrained to the center of the SVG canvas.
+6. Gives the final verified-outcome node stronger visual emphasis without changing its meaning.
+7. Preserves a separate stacked mobile treatment and removes the decorative path where it would reduce readability.
+8. Uses a homepage-only `bbs-homepage-journey-v25.css` layer so the correction cannot alter other site pages.
+
+The final development artifact was rendered at a 1600 x 1000 desktop viewport and a 390 x 844 mobile viewport. Desktop verification confirmed the five stages remain horizontally balanced, the journey line spans the visual progression without covering the final-state copy, and the panel no longer contains the large unused lower area. Mobile verification confirmed the stages stack cleanly and the decorative line is suppressed.
 
 No homepage copy, service positioning, section order, or other homepage visual story was reopened by this correction.
 
