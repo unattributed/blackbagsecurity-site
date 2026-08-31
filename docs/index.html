@@ -1,149 +1,179 @@
 ---
 layout: home-v2
-title: Black Bag Security | Offensive Security That Leaves Proof
-description: Offensive security and security engineering for systems that matter. Clear evidence of what can fail, what to fix, and whether the fix worked.
+title: Black Bag Security | Security Testing and Engineering for High-Consequence Systems
+description: Security testing and engineering for high-consequence systems. Evidence-led assessment, secure engineering, remediation guidance, and retest.
 lang: en
 ref: home
 homepage_v2: true
 marketing_v3: true
 ---
-<div class="market-page">
-  <section class="market-hero" aria-labelledby="home-title">
-    <div class="wrap market-hero__grid">
-      <div>
-        <p class="market-kicker">Offensive security for systems that matter</p>
-        <h1 id="home-title">Know what can fail <span>before it becomes your incident.</span></h1>
-        <p class="market-lead">Black Bag Security tests high-consequence applications, APIs, identity, AI, and infrastructure, then leaves clear evidence your engineers can act on and your leaders can trust.</p>
-        <div class="market-actions">
-          <a class="market-btn market-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss an assessment</a>
-          <a class="market-btn" href="{{ '/services/' | relative_url }}">See where we help</a>
-        </div>
-        <div class="market-proofbar" aria-label="Black Bag Security engagement characteristics">
-          <span>Authorized work only</span>
-          <span>Evidence-backed findings</span>
-          <span>Remediation and retest</span>
+<div class="v24-page v24-home">
+  <section class="v24-hero" aria-labelledby="home-title">
+    <div class="wrap v24-hero__grid">
+      <div class="v24-copy">
+        <p class="v24-kicker">Black Bag Security</p>
+        <h1 id="home-title">Security testing and engineering for <span class="v24-accent">high-consequence systems.</span></h1>
+        <p class="v24-lead">Fewer surprises. Stronger systems. Evidence you can trust.</p>
+        <div class="v24-actions">
+          <a class="v24-btn v24-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss an engagement →</a>
         </div>
       </div>
 
-      <div class="market-visual" aria-label="Client security decision path">
-        <span class="market-visual__title">From concern to verified outcome</span>
-        <div class="market-flow market-flow--5">
-          <article class="market-node" data-step="01"><strong>Question</strong><p>What do you need to know, protect, or prove?</p></article>
-          <article class="market-node" data-step="02"><strong>Test path</strong><p>Challenge the real boundary under explicit authority.</p></article>
-          <article class="market-node" data-step="03"><strong>Proof</strong><p>Preserve evidence that supports the conclusion.</p></article>
-          <article class="market-node" data-step="04"><strong>Fix</strong><p>Make the control change explicit and practical.</p></article>
-          <article class="market-node" data-step="05"><strong>Verify</strong><p>Retest the original failure path.</p></article>
+      <div class="v24-canvas" aria-label="Security engagement path from uncertainty to verified outcome">
+        <span class="v24-canvas__label">From uncertainty to verified outcome</span>
+        <div class="v24-journey">
+          <div class="v24-journey__mesh" aria-hidden="true"></div>
+          <div class="v24-journey__path" aria-hidden="true">
+            <svg viewBox="0 0 800 170" role="img" aria-hidden="true">
+              <path class="glow" d="M30 108 C100 28, 160 150, 235 88 S380 120, 455 70 S610 98, 770 38" />
+              <path class="core" d="M30 108 C100 28, 160 150, 235 88 S380 120, 455 70 S610 98, 770 38" />
+            </svg>
+          </div>
+          <div class="v24-journey__nodes">
+            <div class="v24-journey-node"><small>Uncertainty</small><div class="v24-orb">?</div><strong>Question</strong><p>What could go wrong?</p></div>
+            <div class="v24-journey-node"><small>Investigate</small><div class="v24-orb">◎</div><strong>Test</strong><p>Targeted analysis and adversarial validation.</p></div>
+            <div class="v24-journey-node"><small>Understand</small><div class="v24-orb">⌁</div><strong>Evidence</strong><p>Context, impact, and reproducible proof.</p></div>
+            <div class="v24-journey-node"><small>Validate</small><div class="v24-orb">◇</div><strong>Remediate</strong><p>Fix, harden, and verify.</p></div>
+            <div class="v24-journey-node"><small>Verified outcome</small><div class="v24-orb">✓</div><strong>Close</strong><p>Risk reduced. Resolution established.</p></div>
+          </div>
         </div>
-        <div class="market-outcome"><strong>Client outcome</strong><p>Less uncertainty. Clear priorities. Verified resolution.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="market-section market-section--soft" aria-labelledby="buyer-questions">
-    <div class="wrap">
-      <div class="market-section__head">
-        <div><p class="market-kicker">Start with the risk, not the service name</p><h2 id="buyer-questions">Four questions clients bring us.</h2></div>
-        <p>You do not need to arrive with a perfectly named engagement. Bring the system, the concern, and the consequence of getting it wrong.</p>
-      </div>
-      <div class="market-card-grid">
-        <article class="market-card"><span class="market-card__code">01 / APP &amp; API</span><h3>Can someone reach data or actions they should not?</h3><p>Authentication, sessions, authorization, business logic, APIs, and browser attack paths.</p><a href="{{ '/services/application-api-security/' | relative_url }}">Application &amp; API security →</a></article>
-        <article class="market-card"><span class="market-card__code">02 / ADVERSARY</span><h3>Will our controls stop a realistic attacker?</h3><p>Objective-led attack paths across identity, infrastructure, cloud, prevention, and detection.</p><a href="{{ '/services/adversary-validation/' | relative_url }}">Adversary validation →</a></article>
-        <article class="market-card"><span class="market-card__code">03 / AI</span><h3>Can AI be manipulated beyond its intended authority?</h3><p>Prompt injection, tool boundaries, browser state, retrieval, memory, data exposure, and agent behavior.</p><a href="{{ '/services/ai-security/' | relative_url }}">AI security →</a></article>
-        <article class="market-card"><span class="market-card__code">04 / ENGINEERING</span><h3>How do we make a sensitive system safer by design?</h3><p>Least privilege, privilege separation, hardening, observability, recoverability, and secure operation.</p><a href="{{ '/services/secure-systems-engineering/' | relative_url }}">Secure systems engineering →</a></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="market-section market-section--grid" aria-labelledby="stronger-control">
-    <div class="wrap market-split">
-      <div class="market-message">
-        <p class="market-kicker">Why Black Bag</p>
-        <h2 id="stronger-control">A smaller practice can be a <span>stronger control.</span></h2>
-        <p>Black Bag Security is built deliberately to be regimented, organized, efficient, and effective.</p>
-        <div class="market-quote"><strong>The principal sets the tone.</strong><br>The organization applies it in totality.<br><span style="color:#8ee21d;font-weight:800">Excellence is institutional.</span></div>
-      </div>
-
-      <div class="market-visual" aria-label="Black Bag Security institutional delivery model">
-        <span class="market-visual__title">Institutional delivery model</span>
-        <div class="market-stack">
-          <div class="market-stack__band"><strong>The principal</strong><span>Sets the standard, defines policy, and leads by example.</span></div>
-          <div class="market-stack__band"><strong>Policy &amp; standards</strong><span>Methodology · Tools · Quality · Ethics · Security</span></div>
+  <section class="v24-section" aria-labelledby="institutional-control">
+    <div class="wrap v24-section__grid">
+      <div class="v24-copy">
+        <p class="v24-kicker">Why Black Bag</p>
+        <h2 class="v24-title" id="institutional-control">Institutional excellence.<br>Smaller practice.<br><span class="v24-accent">Stronger control.</span></h2>
+        <div class="v24-copy-points">
+          <div class="v24-copy-point"><span class="v24-copy-point__icon">★</span><span>Principal-led. Policy-driven. Process enforced.</span></div>
+          <div class="v24-copy-point"><span class="v24-copy-point__icon">✓</span><span>Uniform delivery. Consistent standards. Reviewable outcomes.</span></div>
         </div>
-        <div class="market-card-grid" style="margin-top:14px">
-          <article class="market-card"><span class="market-card__code">Operations</span><p>Planned. Tracked. Accountable.</p></article>
-          <article class="market-card"><span class="market-card__code">Assessors</span><p>Skilled. Aligned. Empowered.</p></article>
-          <article class="market-card"><span class="market-card__code">Quality</span><p>Reviewed. Verified. Consistent.</p></article>
-          <article class="market-card"><span class="market-card__code">Security &amp; knowledge</span><p>Protected. Documented. Improved.</p></article>
+      </div>
+
+      <div class="v24-canvas" aria-label="Black Bag Security institutional operating model">
+        <span class="v24-canvas__label v24-canvas__label--green">Institutional delivery model</span>
+        <div class="v24-institution">
+          <div class="v24-institution__principal"><strong>Principal</strong><span>Sets the standard. Defines the policy. Leads by example.</span></div>
+          <div class="v24-institution__policy"><strong>Policy &amp; standards</strong><span>Methodology · Tools · Quality · Ethics · Security</span></div>
+          <div class="v24-institution__functions">
+            <div class="v24-function"><span class="v24-function__icon">⚙</span><strong>Operations</strong><span>Planned.<br>Tracked.<br>Accountable.</span></div>
+            <div class="v24-function"><span class="v24-function__icon">○</span><strong>Assessors</strong><span>Skilled.<br>Aligned.<br>Empowered.</span></div>
+            <div class="v24-function"><span class="v24-function__icon">✓</span><strong>Quality assurance</strong><span>Reviewed.<br>Verified.<br>Consistent.</span></div>
+            <div class="v24-function"><span class="v24-function__icon">▣</span><strong>Security</strong><span>Protected.<br>Controlled.<br>Monitored.</span></div>
+            <div class="v24-function"><span class="v24-function__icon">▤</span><strong>Knowledge</strong><span>Documented.<br>Shared.<br>Improved.</span></div>
+          </div>
+          <div class="v24-institution__delivery"><strong>Uniform delivery of excellence</strong><i>→</i><span><strong>Client outcomes</strong><br>Consistent results. Stronger security.</span></div>
         </div>
-        <div class="market-outcome"><strong>Uniform delivery of excellence</strong><p>Consistent results. Trusted delivery. Stronger security.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="market-section market-section--soft" aria-labelledby="verified-remediation">
-    <div class="wrap">
-      <div class="market-section__head">
-        <div><p class="market-kicker">The engagement is an evidence chain</p><h2 id="verified-remediation">From authorization to <span>verified remediation.</span></h2></div>
-        <p>Clients need clear evidence of what matters, what to fix, and whether the fix worked.</p>
+  <section class="v24-section" aria-labelledby="focused-services">
+    <div class="wrap v24-section__grid">
+      <div class="v24-copy">
+        <p class="v24-kicker">What we do</p>
+        <h2 class="v24-title" id="focused-services">Focused services.<br><span class="v24-accent">Measurable impact.</span></h2>
+        <p>Four service lines, each built around a different security decision.</p>
       </div>
-      <div class="market-visual">
-        <span class="market-visual__title">Question → test path → proof → fix → verified outcome</span>
-        <div class="market-flow market-flow--5">
-          <article class="market-node" data-step="01"><strong>Authorize</strong><p>Objective · targets · rules</p></article>
-          <article class="market-node" data-step="02"><strong>Test</strong><p>Manual · tooling · bounded</p></article>
-          <article class="market-node" data-step="03"><strong>Prove</strong><p>Steps · artifacts · claim</p></article>
-          <article class="market-node" data-step="04"><strong>Remediate</strong><p>Owner · control change</p></article>
-          <article class="market-node" data-step="05"><strong>Verify</strong><p>Resolved · residual · close</p></article>
+
+      <div class="v24-canvas" aria-label="Black Bag Security service lines">
+        <span class="v24-canvas__label">Service map</span>
+        <div class="v24-linked-grid">
+          <article class="v24-linked-card"><div class="v24-linked-card__icon">◇</div><strong>Application &amp;<br>API Security</strong><p>Find and prove exploitable application and workflow failures.</p><a href="{{ '/services/application-api-security/' | relative_url }}">Explore →</a></article>
+          <article class="v24-linked-card"><div class="v24-linked-card__icon">◎</div><strong>Adversary<br>Validation</strong><p>Test defenses the way realistic adversaries operate.</p><a href="{{ '/services/adversary-validation/' | relative_url }}">Explore →</a></article>
+          <article class="v24-linked-card"><div class="v24-linked-card__icon">◉</div><strong>AI<br>Security</strong><p>Secure models, browser workflows, tools, data, and agents end to end.</p><a href="{{ '/services/ai-security/' | relative_url }}">Explore →</a></article>
+          <article class="v24-linked-card"><div class="v24-linked-card__icon">▦</div><strong>Secure Systems<br>Engineering</strong><p>Build secure by design, hardened for real operation.</p><a href="{{ '/services/secure-systems-engineering/' | relative_url }}">Explore →</a></article>
         </div>
-        <div class="market-outcome"><strong>Authorized work · reviewable proof · verified resolution</strong></div>
       </div>
     </div>
   </section>
 
-  <section class="market-section" aria-labelledby="reviewable-proof">
-    <div class="wrap market-split">
-      <div class="market-message">
-        <p class="market-kicker">What survives handoff</p>
-        <h2 id="reviewable-proof">The report summarizes the decision. <span>The evidence supports it.</span></h2>
-        <p>A material finding should still make sense after the engagement ends, when engineering is fixing it, leadership is prioritizing it, and assurance is asking what was actually established.</p>
-        <p><a class="market-link" href="{{ '/methodology/' | relative_url }}">See the evidence standard →</a></p>
+  <section class="v24-section" aria-labelledby="same-rigor">
+    <div class="wrap v24-section__grid">
+      <div class="v24-copy">
+        <p class="v24-kicker">One standard</p>
+        <h2 class="v24-title" id="same-rigor">Every engagement.<br><span class="v24-accent">Same rigor.</span></h2>
+        <p>Authority, testing, evidence, reporting, remediation, and retest remain connected from start to close.</p>
+        <div class="v24-actions"><a class="v24-btn" href="{{ '/methodology/' | relative_url }}">See the methodology →</a></div>
       </div>
-      <div class="market-visual">
-        <span class="market-visual__title">Illustrative finding lifecycle</span>
-        <div class="market-flow market-flow--4">
-          <article class="market-node" data-step="01"><strong>Claim</strong><p>State exactly what security boundary failed.</p></article>
-          <article class="market-node" data-step="02"><strong>Reproduce</strong><p>Preserve the path and necessary conditions.</p></article>
-          <article class="market-node" data-step="03"><strong>Remediate</strong><p>Connect the finding to the control change.</p></article>
-          <article class="market-node" data-step="04"><strong>Retest</strong><p>Separate intent from verified resolution.</p></article>
+
+      <div class="v24-canvas" aria-label="Black Bag Security engagement lifecycle">
+        <span class="v24-canvas__label">One standard governing every engagement</span>
+        <div class="v24-process">
+          <div class="v24-process-step"><div class="v24-process-step__icon">▣</div><strong>Authorize</strong><span>Define scope<br>and rules.</span></div>
+          <div class="v24-process-step"><div class="v24-process-step__icon">◎</div><strong>Test</strong><span>Research,<br>analyze, validate.</span></div>
+          <div class="v24-process-step"><div class="v24-process-step__icon">□</div><strong>Evidence</strong><span>Capture, correlate,<br>document.</span></div>
+          <div class="v24-process-step"><div class="v24-process-step__icon">▤</div><strong>Report</strong><span>Clear findings,<br>risk and impact.</span></div>
+          <div class="v24-process-step"><div class="v24-process-step__icon">⚒</div><strong>Remediate</strong><span>Fix, harden,<br>improve.</span></div>
+          <div class="v24-process-step"><div class="v24-process-step__icon">✓</div><strong>Retest</strong><span>Verify and<br>close the loop.</span></div>
         </div>
-        <div class="market-outcome"><strong>Engineering-ready handoff</strong><p>One body of evidence for leadership, engineering, and assurance.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="market-section market-section--grid" aria-labelledby="engineering-depth">
-    <div class="wrap">
-      <div class="market-section__head">
-        <div><p class="market-kicker">Engineering depth when the work demands it</p><h2 id="engineering-depth">We do not stop where the scanner stops.</h2></div>
-        <p>When standard tooling cannot answer the client’s question cleanly, Black Bag builds the validator, harness, secure system, or research workflow needed to make the condition observable and repeatable.</p>
+  <section class="v24-section" aria-labelledby="data-responsibility">
+    <div class="wrap v24-section__grid">
+      <div class="v24-copy">
+        <p class="v24-kicker">Your trust</p>
+        <h2 class="v24-title" id="data-responsibility">Your data.<br><span class="v24-accent">Our responsibility.</span></h2>
+        <p>Security work creates privileged access and sensitive evidence. Handling controls are part of the engagement, not an afterthought.</p>
+        <div class="v24-actions"><a class="v24-btn" href="{{ '/trust/' | relative_url }}">See the trust model →</a></div>
       </div>
-      <div class="market-card-grid market-card-grid--3">
-        <article class="market-card"><span class="market-card__code">Security Engagement Platform</span><h3>Engagement state that stays traceable</h3><p>Authorization, coverage, evidence, reporting, and retest remain connected throughout the work.</p></article>
-        <article class="market-card"><span class="market-card__code">AOTP</span><h3>AI-powered, human-governed testing</h3><p>Local planning, controlled execution, replay, and evidence preservation without surrendering engagement authority.</p></article>
-        <article class="market-card"><span class="market-card__code">Secure systems</span><h3>Engineering lessons carried into software</h3><p>OSMAP, OpenBSD Mailstack, and browser-AI research turn operating lessons into reusable security engineering.</p></article>
+
+      <div class="v24-canvas" aria-label="Client data and evidence handling chain">
+        <span class="v24-canvas__label">Controlled handling chain</span>
+        <div class="v24-trust-chain">
+          <div class="v24-trust-node"><div class="v24-trust-node__icon">▣</div><strong>Authorize</strong><span>Explicit approval.<br>Clear boundaries.</span></div>
+          <div class="v24-trust-node"><div class="v24-trust-node__icon">◫</div><strong>Collect</strong><span>Minimum necessary.<br>Secure methods.</span></div>
+          <div class="v24-trust-node"><div class="v24-trust-node__icon">▰</div><strong>Preserve</strong><span>Integrity verified.<br>Access controlled.</span></div>
+          <div class="v24-trust-node"><div class="v24-trust-node__icon">▽</div><strong>Sanitize</strong><span>Reduce exposure.<br>Protect privacy.</span></div>
+          <div class="v24-trust-node"><div class="v24-trust-node__icon">◇</div><strong>Deliver</strong><span>Secure transfer.<br>Reviewable artifact.</span></div>
+        </div>
       </div>
-      <p style="margin-top:24px"><a class="market-link" href="{{ '/arsenal/' | relative_url }}">Explore the Engineering Arsenal →</a></p>
     </div>
   </section>
 
-  <section class="market-close" aria-labelledby="home-close">
-    <div class="wrap market-close__panel">
-      <div>
-        <p class="market-kicker">Start with the system that matters</p>
-        <h2 id="home-close">Bring the security problem you cannot afford to misunderstand.</h2>
-        <p>We will define the question, bound the work, test the real failure path, preserve the proof, and help verify the correction.</p>
+  <section class="v24-section" aria-labelledby="engineering-proof">
+    <div class="wrap v24-section__grid">
+      <div class="v24-copy">
+        <p class="v24-kicker">Engineering proof</p>
+        <h2 class="v24-title" id="engineering-proof">Real systems.<br><span class="v24-accent">Inspectable engineering.</span></h2>
+        <p>The Arsenal shows the engineering depth behind the work without exposing client engagements.</p>
+        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/arsenal/' | relative_url }}">View the Engineering Arsenal →</a></div>
       </div>
-      <a class="market-btn market-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss the work</a>
+
+      <div class="v24-canvas" aria-label="Selected Black Bag Security engineering projects">
+        <span class="v24-canvas__label">Selected engineering and research</span>
+        <div class="v24-proof-grid">
+          <article class="v24-proof-card"><div class="v24-proof-card__head"><strong>AOTP</strong></div><div class="v24-proof-card__map"><span>Authority</span><i>→</i><span>AI testing</span></div><p>AI powered, human governed, evidence first security testing.</p><div class="v24-proof-card__tags"><span>LOCAL MODELS</span><span>REPLAY</span><span>EVIDENCE</span></div><a href="{{ '/arsenal/aotp/' | relative_url }}">Inspect →</a></article>
+          <article class="v24-proof-card"><div class="v24-proof-card__head"><strong>Security Engagement Platform</strong></div><div class="v24-proof-card__map"><span>Scope</span><i>→</i><span>Evidence</span></div><p>Authorization, executable scope, provenance, reporting, and retest as engagement state.</p><div class="v24-proof-card__tags"><span>AUTHORITY</span><span>PROVENANCE</span></div><a href="{{ '/arsenal/security-engagement-platform/' | relative_url }}">Inspect →</a></article>
+          <article class="v24-proof-card"><div class="v24-proof-card__head"><strong>OSMAP</strong></div><div class="v24-proof-card__map"><span>Browser</span><i>→</i><span>Mail</span></div><p>Secure mail access for high-consequence systems.</p><div class="v24-proof-card__tags"><span>RUST</span><span>OPENBSD</span><span>LEAST PRIVILEGE</span></div><a href="{{ '/arsenal/osmap/' | relative_url }}">Inspect →</a></article>
+          <article class="v24-proof-card"><div class="v24-proof-card__head"><strong>Browser AI Security</strong></div><div class="v24-proof-card__map"><span>Page state</span><i>→</i><span>Evidence</span></div><p>Repeatable evidence for browser-AI attack paths and trust failures.</p><div class="v24-proof-card__tags"><span>PLAYWRIGHT</span><span>OLLAMA</span><span>HASHING</span></div><a href="{{ '/arsenal/browser-safe-ai-security/' | relative_url }}">Inspect →</a></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="v24-close" id="assessment" aria-labelledby="home-close">
+    <div class="wrap v24-close__grid">
+      <div class="v24-copy">
+        <p class="v24-kicker">Start with a conversation</p>
+        <h2 class="v24-title" id="home-close">End with clarity.<br><span class="v24-accent">Build with confidence.</span></h2>
+        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Engage us →</a></div>
+      </div>
+
+      <div class="v24-canvas" aria-label="Inputs for starting an engagement">
+        <span class="v24-canvas__label">Five inputs are enough to begin</span>
+        <div class="v24-intake">
+          <div class="v24-intake-step"><div class="v24-intake-step__icon">▣</div><strong>Your system</strong><span>What you are building or operating.</span></div>
+          <div class="v24-intake-step"><div class="v24-intake-step__icon">?</div><strong>Your question</strong><span>What matters most right now.</span></div>
+          <div class="v24-intake-step"><div class="v24-intake-step__icon">◇</div><strong>Boundaries</strong><span>Scope, rules, access, and constraints.</span></div>
+          <div class="v24-intake-step"><div class="v24-intake-step__icon">◷</div><strong>Timing</strong><span>When the answer needs to be ready.</span></div>
+          <div class="v24-intake-step"><div class="v24-intake-step__icon">✓</div><strong>Outcome</strong><span>Actionable insight. Stronger security.</span></div>
+        </div>
+      </div>
     </div>
   </section>
 </div>
