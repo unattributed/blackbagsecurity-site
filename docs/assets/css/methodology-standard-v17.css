@@ -351,3 +351,12 @@
     background: #091520;
   }
 }
+
+/* Keep the communication band on the same Methodology page surface.
+ * Older composition layers intentionally used a contrasting light split band;
+ * the approved secondary-site direction keeps section rhythm without a colour break.
+ */
+.methodology-v2-body .method-v2-communication {
+  background: transparent;
+  box-shadow: none;
+}
