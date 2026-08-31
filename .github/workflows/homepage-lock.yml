@@ -6,11 +6,13 @@ on:
       - main
       - feature/competitive-design-review
       - feature/homepage-practice-control-graphic
+      - feature/client-acquisition-visual-redesign
   pull_request:
     branches:
       - main
       - feature/competitive-design-review
       - feature/homepage-practice-control-graphic
+      - feature/client-acquisition-visual-redesign
 
 permissions:
   contents: read
@@ -50,7 +52,8 @@ jobs:
             echo "PASS: $path"
           }
 
-          verify_blob "docs/index.html" "0281bcd9284a59106f7ad453c5200a688377eb04"
+          verify_blob "docs/index.html" "50f8ddebbaa191fed6ae3bd22b9747307e7f65be"
+          verify_blob "docs/_layouts/home-v2.html" "f0d17d63da585af2a856c581ae57bdbaf8c872b2"
           verify_blob "docs/assets/css/homepage-v2.css" "212b41c3620e61d4faff97199085919429a4e89c"
           verify_blob "docs/assets/css/homepage-v2-polish.css" "067a8eaf77d4cc34ec639b7d5c092ebc7e07a965"
           verify_blob "docs/assets/css/homepage-v2-depth.css" "98ddf5556de5b9b99cfbe1845817c80599fa07a2"
@@ -60,6 +63,9 @@ jobs:
           verify_blob "docs/assets/css/bbs-homepage-refinement-v12.css" "5b24acaa496abddbaecd6b7c0f7a8695ca66f89d"
           verify_blob "docs/assets/css/bbs-homepage-proof-v16.css" "35d00f15007329d1e117579fd8df19fe05cb4989"
           verify_blob "docs/assets/css/bbs-homepage-practice-v21.css" "03f5fad6c5508190d9229e55a64a456a501e3036"
-          verify_blob "docs/assets/js/app.js" "e2d2ebd24e9ee6fc2e4082073a82519162c4c379"
+          verify_blob "docs/assets/css/bbs-client-acquisition-v22.css" "fb0504fc3bc8f232aae4e70860cc32e1c6971aca"
+          verify_blob "docs/assets/css/bbs-visual-story-v23.css" "50c8e8fcbf44c154f162c0a3b658e97520140e1f"
+          verify_blob "docs/assets/css/bbs-infographic-site-v24.css" "b48354b84da260ce505bae0f277206346d8e770b"
+          verify_blob "docs/assets/js/app.js" "c01a2ac6743114bb4ca384be43c165efb66d977a"
 
           echo "PASS: approved homepage baseline is intact"
