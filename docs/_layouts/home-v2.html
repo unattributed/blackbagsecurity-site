@@ -30,21 +30,11 @@
   <link rel="stylesheet" href="{{ '/assets/css/homepage-v2-depth.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/homepage-v2-silhouette.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/homepage-v2-refine.css' | relative_url }}" />
-  {% if page.services_v2 %}
-  <link rel="stylesheet" href="{{ '/assets/css/services-v2.css' | relative_url }}" />
-  {% endif %}
-  {% if page.methodology_v2 %}
-  <link rel="stylesheet" href="{{ '/assets/css/methodology-v2.css' | relative_url }}" />
-  {% endif %}
-  {% if page.arsenal_v2 %}
-  <link rel="stylesheet" href="{{ '/assets/css/arsenal-v2.css' | relative_url }}" />
-  {% endif %}
-  {% if page.supporting_v2 %}
-  <link rel="stylesheet" href="{{ '/assets/css/supporting-v2.css' | relative_url }}" />
-  {% endif %}
-  {% if page.services_v2 or page.methodology_v2 or page.arsenal_v2 %}
-  <link rel="stylesheet" href="{{ '/assets/css/secondary-depth-v2.css' | relative_url }}" />
-  {% endif %}
+  {% if page.services_v2 %}<link rel="stylesheet" href="{{ '/assets/css/services-v2.css' | relative_url }}" />{% endif %}
+  {% if page.methodology_v2 %}<link rel="stylesheet" href="{{ '/assets/css/methodology-v2.css' | relative_url }}" />{% endif %}
+  {% if page.arsenal_v2 %}<link rel="stylesheet" href="{{ '/assets/css/arsenal-v2.css' | relative_url }}" />{% endif %}
+  {% if page.supporting_v2 %}<link rel="stylesheet" href="{{ '/assets/css/supporting-v2.css' | relative_url }}" />{% endif %}
+  {% if page.services_v2 or page.methodology_v2 or page.arsenal_v2 %}<link rel="stylesheet" href="{{ '/assets/css/secondary-depth-v2.css' | relative_url }}" />{% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/responsive-v2.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/bbs-theme-v4.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/bbs-signature-v6.css' | relative_url }}" />
@@ -57,30 +47,19 @@
   <link rel="stylesheet" href="{{ '/assets/css/bbs-winning-v10.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/bbs-homepage-refinement-v12.css' | relative_url }}" />
   {% endif %}
-  {% if page.homepage_v2 or page.arsenal_v2 %}
-  <link rel="stylesheet" href="{{ '/assets/css/bbs-engineering-visuals-v13.css' | relative_url }}" />
-  {% endif %}
-  {% if page.methodology_v2 %}
-  <link rel="stylesheet" href="{{ '/assets/css/methodology-tooling-v11.css' | relative_url }}" />
-  {% endif %}
+  {% if page.homepage_v2 or page.arsenal_v2 %}<link rel="stylesheet" href="{{ '/assets/css/bbs-engineering-visuals-v13.css' | relative_url }}" />{% endif %}
+  {% if page.methodology_v2 %}<link rel="stylesheet" href="{{ '/assets/css/methodology-tooling-v11.css' | relative_url }}" />{% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/bbs-site-readability-v14.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/bbs-competitive-review-v15.css' | relative_url }}" />
-  {% if page.homepage_v2 %}
-  <link rel="stylesheet" href="{{ '/assets/css/bbs-homepage-proof-v16.css' | relative_url }}" />
-  {% endif %}
-  {% unless page.homepage_v2 %}
-  <link rel="stylesheet" href="{{ '/assets/css/secondary-visuals-v18.css' | relative_url }}" />
-  {% endunless %}
+  {% if page.homepage_v2 %}<link rel="stylesheet" href="{{ '/assets/css/bbs-homepage-proof-v16.css' | relative_url }}" />{% endif %}
+  {% unless page.homepage_v2 %}<link rel="stylesheet" href="{{ '/assets/css/secondary-visuals-v18.css' | relative_url }}" />{% endunless %}
   {% if page.methodology_v2 %}
   <link rel="stylesheet" href="{{ '/assets/css/methodology-standard-v17.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/methodology-section-labels-v20.css' | relative_url }}" />
   {% endif %}
-  {% if page.marketing_v3 %}
-  <link rel="stylesheet" href="{{ '/assets/css/bbs-client-acquisition-v22.css' | relative_url }}" />
-  {% endif %}
+  {% if page.marketing_v3 %}<link rel="stylesheet" href="{{ '/assets/css/bbs-client-acquisition-v22.css' | relative_url }}" />{% endif %}
 
   <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml" />
-
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
 </head>
@@ -91,36 +70,33 @@
     <div class="wrap header-v2__inner">
       <a class="brand-v2" href="{{ '/' | relative_url }}" aria-label="Black Bag Security home">
         <img class="brand-v2__mark" src="{{ '/assets/img/logo-bag.svg' | relative_url }}" width="48" height="48" alt="" />
-        <span class="brand-v2__text">
-          <span class="brand-v2__name">BLACK BAG</span>
-          <span class="brand-v2__security">SECURITY</span>
-        </span>
+        <span class="brand-v2__text"><span class="brand-v2__name">BLACK BAG</span><span class="brand-v2__security">SECURITY</span></span>
       </a>
 
       <nav class="nav-v2" aria-label="Primary">
         <a{% if page.url contains '/services/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/services/' | relative_url }}">Services</a>
         <a{% if page.url contains '/methodology/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/methodology/' | relative_url }}">Methodology</a>
         <a{% if page.url contains '/arsenal/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/arsenal/' | relative_url }}">Arsenal</a>
+        {% if page.marketing_v3 %}
+        <a{% if page.url contains '/trust/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/trust/' | relative_url }}">Trust</a>
+        <a{% if page.url contains '/about/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/about/' | relative_url }}">About</a>
+        {% else %}
         <a{% if page.url contains '/about/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/about/' | relative_url }}">About</a>
         <a{% if page.url contains '/contact/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/contact/' | relative_url }}">Contact</a>
+        {% endif %}
       </nav>
 
       {% if page.marketing_v3 %}
       <a class="market-header-cta" href="{{ '/contact/#assessment' | relative_url }}">Discuss an assessment</a>
       {% else %}
-      <div class="header-v2__motto" aria-label="Security is engineering. Evidence earns trust.">
-        Security is engineering.
-        <strong>Evidence earns trust.</strong>
-      </div>
+      <div class="header-v2__motto" aria-label="Security is engineering. Evidence earns trust.">Security is engineering.<strong>Evidence earns trust.</strong></div>
       {% endif %}
     </div>
   </header>
 
   <main id="content" class="site-main">
     {% unless page.homepage_v2 or page.marketing_v3 %}
-      {% if page.lang == 'en' %}
-        {% include secondary-visual.html %}
-      {% endif %}
+      {% if page.lang == 'en' %}{% include secondary-visual.html %}{% endif %}
     {% endunless %}
     {{ content }}
   </main>
