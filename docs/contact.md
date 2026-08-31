@@ -8,83 +8,49 @@ ref: contact
 supporting_v2: true
 marketing_v3: true
 ---
-<div class="market-page">
-  <section class="market-hero" id="assessment" aria-labelledby="contact-title">
-    <div class="wrap market-hero__grid">
-      <div>
-        <p class="market-kicker">Start the conversation</p>
-        <h1 id="contact-title">Start with the problem, <span>not a procurement form.</span></h1>
-        <p class="market-lead">A useful first conversation only needs the system, the concern, the constraints, the timing, and the outcome you need. We can engineer the engagement from there.</p>
-        <div class="market-actions">
-          <a class="market-btn market-btn--accent" href="mailto:hello@blackbagsecurity.com">hello@blackbagsecurity.com</a>
-          <a class="market-btn" href="{{ '/services/' | relative_url }}">Review services</a>
+<div class="v24-page">
+  <section class="v24-hero" id="assessment" aria-labelledby="contact-title">
+    <div class="wrap v24-hero__grid">
+      <div class="v24-copy">
+        <p class="v24-kicker">Start the conversation</p>
+        <h1 id="contact-title">Start with the problem.<br><span class="v24-accent">We will shape the engagement.</span></h1>
+        <p class="v24-lead">A useful first conversation only needs the system, the concern, the constraints, the timing, and the outcome you need.</p>
+        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="mailto:hello@blackbagsecurity.com">hello@blackbagsecurity.com →</a></div>
+      </div>
+      <div class="v24-canvas" aria-label="Five inputs become one engagement">
+        <span class="v24-canvas__label">Five inputs become one engagement</span>
+        <div class="v24-intake">
+          <div class="v24-intake-step"><div class="v24-intake-step__icon">▣</div><strong>System</strong><span>What are we protecting or testing?</span></div>
+          <div class="v24-intake-step"><div class="v24-intake-step__icon">?</div><strong>Question</strong><span>What do you need to understand or prove?</span></div>
+          <div class="v24-intake-step"><div class="v24-intake-step__icon">◇</div><strong>Boundaries</strong><span>Scope · safety · access · data</span></div>
+          <div class="v24-intake-step"><div class="v24-intake-step__icon">◷</div><strong>Timing</strong><span>Start · release · audit · deadline</span></div>
+          <div class="v24-intake-step"><div class="v24-intake-step__icon">✓</div><strong>Outcome</strong><span>Assessment · validation · engineering · retest</span></div>
         </div>
-        <div class="market-proofbar"><span>Brief first contact is enough</span><span>No credentials in first email</span><span>Secure transfer available</span></div>
-      </div>
-      <div class="market-visual" aria-label="Engagement intake model">
-        <span class="market-visual__title">Five inputs become one engagement</span>
-        <div class="market-flow market-flow--5">
-          <article class="market-node" data-step="01"><strong>System</strong><p>What are we protecting or testing?</p></article>
-          <article class="market-node" data-step="02"><strong>Question</strong><p>What do you need to understand or prove?</p></article>
-          <article class="market-node" data-step="03"><strong>Boundaries</strong><p>Scope · safety · access · data</p></article>
-          <article class="market-node" data-step="04"><strong>Timing</strong><p>Start · release · audit · deadline</p></article>
-          <article class="market-node" data-step="05"><strong>Outcome</strong><p>Assessment · validation · engineering · retest</p></article>
-        </div>
-        <div class="market-outcome"><strong>Black Bag shapes the engagement</strong><p>Objective · authority · evidence standard · delivery plan</p></div>
+        <div class="v24-outcome"><strong>Black Bag shapes the engagement</strong><span>Objective · authority · evidence standard · delivery plan</span></div>
       </div>
     </div>
   </section>
 
-  <section class="market-section market-section--soft" aria-labelledby="scope-fast">
-    <div class="wrap">
-      <div class="market-section__head">
-        <div><p class="market-kicker">Scope quickly</p><h2 id="scope-fast">Five things that make the first conversation <span>productive.</span></h2></div>
-        <p>You do not need a finished statement of work. A few sentences covering these points are enough to begin.</p>
-      </div>
-      <div class="market-card-grid">
-        <article class="market-card"><span class="market-card__code">01 / System</span><h3>What is in front of us?</h3><p>Application, API, identity environment, infrastructure, AI workflow, appliance, platform, or another security-sensitive system.</p></article>
-        <article class="market-card"><span class="market-card__code">02 / Question</span><h3>What uncertainty needs to be reduced?</h3><p>What you need to understand, validate, protect, prove, or improve, including a threat scenario if one already exists.</p></article>
-        <article class="market-card"><span class="market-card__code">03 / Boundaries</span><h3>What must the work respect?</h3><p>Known scope, access, safety, production, regulatory, data-handling, geographic, or operational constraints.</p></article>
-        <article class="market-card"><span class="market-card__code">04 / Timing + outcome</span><h3>When do you need the answer and what must it support?</h3><p>Preferred start, delivery date, release dependency, audit window, remediation verification, architecture decision, or other concrete result.</p></article>
-      </div>
+  <section class="v24-section" aria-labelledby="scope-fast">
+    <div class="wrap v24-section__grid">
+      <div class="v24-copy"><p class="v24-kicker">Scope quickly</p><h2 class="v24-title" id="scope-fast">Five things that make the first conversation <span class="v24-accent">productive.</span></h2><p>You do not need a finished statement of work. A few sentences covering these points are enough to begin.</p></div>
+      <div class="v24-canvas" aria-label="First conversation inputs"><span class="v24-canvas__label">What to bring</span><div class="v24-linked-grid"><article class="v24-linked-card"><div class="v24-linked-card__icon">▣</div><strong>The system</strong><p>Application, API, identity environment, infrastructure, AI workflow, appliance, or platform.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">?</div><strong>The question</strong><p>What uncertainty needs to be reduced?</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">◇</div><strong>The boundaries</strong><p>Known scope, access, safety, production, regulatory, data, or operational constraints.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">◷</div><strong>Timing + outcome</strong><p>When the answer is needed and what decision it must support.</p></article></div></div>
     </div>
   </section>
 
-  <section class="market-section market-section--grid" aria-labelledby="what-next">
-    <div class="wrap market-split">
-      <div class="market-message">
-        <p class="market-kicker">What happens next</p>
-        <h2 id="what-next">The first conversation should make the work <span>clearer, not heavier.</span></h2>
-        <p>Black Bag will clarify the decision the work must support, identify access and safety prerequisites, define the evidence standard, and propose the engagement shape that fits the problem.</p>
-      </div>
-      <div class="market-visual">
-        <span class="market-visual__title">From first email to authorized work</span>
-        <div class="market-flow market-flow--4">
-          <article class="market-node" data-step="01"><strong>Clarify</strong><p>System · concern · consequence · stakeholders</p></article>
-          <article class="market-node" data-step="02"><strong>Bound</strong><p>Scope · access · safety · handling</p></article>
-          <article class="market-node" data-step="03"><strong>Shape</strong><p>Objectives · timing · evidence · deliverables</p></article>
-          <article class="market-node" data-step="04"><strong>Begin</strong><p>Authorized work starts with known prerequisites.</p></article>
-        </div>
-        <div class="market-outcome"><strong>Less procurement ambiguity. Faster technical readiness.</strong></div>
-      </div>
+  <section class="v24-section" aria-labelledby="what-next">
+    <div class="wrap v24-section__grid">
+      <div class="v24-copy"><p class="v24-kicker">What happens next</p><h2 class="v24-title" id="what-next">The first conversation should make the work <span class="v24-accent">clearer, not heavier.</span></h2><p>Black Bag will clarify the decision the work must support, identify access and safety prerequisites, define the evidence standard, and propose the engagement shape that fits the problem.</p></div>
+      <div class="v24-canvas" aria-label="From first email to authorized work"><span class="v24-canvas__label">From first email to authorized work</span><div class="v24-linked-grid"><article class="v24-linked-card"><div class="v24-linked-card__icon">01</div><strong>Clarify</strong><p>System · concern · consequence · stakeholders</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">02</div><strong>Bound</strong><p>Scope · access · safety · handling</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">03</div><strong>Shape</strong><p>Objectives · timing · evidence · deliverables</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">04</div><strong>Begin</strong><p>Authorized work starts with known prerequisites.</p></article></div><div class="v24-outcome"><strong>Less ambiguity. Faster technical readiness.</strong></div></div>
     </div>
   </section>
 
-  <section class="market-section" aria-labelledby="secure-contact">
-    <div class="wrap">
-      <div class="market-section__head"><div><p class="market-kicker">Sensitive communication</p><h2 id="secure-contact">Keep the first message simple. <span>Protect the sensitive material.</span></h2></div><p>Do not send credentials, production data, private keys, live session material, or other sensitive client information in the initial email. A secure channel can be established after first contact.</p></div>
-      <div class="market-card-grid market-card-grid--3">
-        <article class="market-card"><span class="market-card__code">Engagements</span><h3>hello@blackbagsecurity.com</h3><p>Use this for assessments, engineering work, AI security, retest, or an unfamiliar security problem you need help shaping.</p><a href="mailto:hello@blackbagsecurity.com">Email Black Bag →</a></article>
-        <article class="market-card"><span class="market-card__code">Secure transfer</span><h3>Establish the right channel after contact.</h3><p>PGP and client-approved secure portals or transfer channels can be used for sensitive engagement material.</p><a href="{{ '/trust/' | relative_url }}">See the trust model →</a></article>
-        <article class="market-card"><span class="market-card__code">Security disclosure</span><h3>security@blackbagsecurity.com</h3><p>For coordinated disclosure or a security concern affecting Black Bag Security itself.</p><a href="mailto:security@blackbagsecurity.com">Security contact →</a></article>
-      </div>
+  <section class="v24-section" aria-labelledby="secure-contact">
+    <div class="wrap v24-section__grid">
+      <div class="v24-copy"><p class="v24-kicker">Sensitive communication</p><h2 class="v24-title" id="secure-contact">Keep the first message simple. <span class="v24-accent">Protect the sensitive material.</span></h2><p>Do not send credentials, production data, private keys, live session material, or other sensitive client information in the initial email. A secure channel can be established after first contact.</p></div>
+      <div class="v24-canvas" aria-label="Communication paths"><span class="v24-canvas__label">Choose the right channel</span><div class="v24-linked-grid" style="grid-template-columns:repeat(3,minmax(0,1fr))"><article class="v24-linked-card"><div class="v24-linked-card__icon">✉</div><strong>Engagements</strong><p>hello@blackbagsecurity.com</p><a href="mailto:hello@blackbagsecurity.com">Email Black Bag →</a></article><article class="v24-linked-card"><div class="v24-linked-card__icon">▰</div><strong>Secure transfer</strong><p>PGP and client-approved secure portals or transfer channels can be established after contact.</p><a href="{{ '/trust/' | relative_url }}">Trust model →</a></article><article class="v24-linked-card"><div class="v24-linked-card__icon">!</div><strong>Security disclosure</strong><p>security@blackbagsecurity.com</p><a href="mailto:security@blackbagsecurity.com">Security contact →</a></article></div></div>
     </div>
   </section>
 
-  <section class="market-close" aria-labelledby="contact-close">
-    <div class="wrap market-close__panel">
-      <div><p class="market-kicker">The first email can be five lines</p><h2 id="contact-close">Tell us the system, the concern, the constraints, the timing, and the outcome.</h2><p>That is enough to start a serious conversation about the right security work.</p></div>
-      <a class="market-btn market-btn--accent" href="mailto:hello@blackbagsecurity.com">Email Black Bag Security</a>
-    </div>
-  </section>
+  <section class="v24-close" aria-labelledby="contact-close"><div class="wrap v24-close__grid"><div class="v24-copy"><p class="v24-kicker">The first email can be five lines</p><h2 class="v24-title" id="contact-close">Tell us the system, the concern, the constraints, the timing, and <span class="v24-accent">the outcome.</span></h2><p>That is enough to start a serious conversation about the right security work.</p><div class="v24-actions"><a class="v24-btn v24-btn--accent" href="mailto:hello@blackbagsecurity.com">Email Black Bag Security →</a></div></div><div class="v24-canvas" aria-label="Five-line first email"><span class="v24-canvas__label">Five-line first email</span><div class="v24-intake"><div class="v24-intake-step"><div class="v24-intake-step__icon">1</div><strong>System</strong><span>Name the environment.</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">2</div><strong>Concern</strong><span>State the security question.</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">3</div><strong>Constraints</strong><span>Call out boundaries.</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">4</div><strong>Timing</strong><span>State the deadline.</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">5</div><strong>Outcome</strong><span>Describe the decision needed.</span></div></div></div></div></section>
 </div>
