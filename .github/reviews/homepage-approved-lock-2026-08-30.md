@@ -2,16 +2,32 @@
 
 Status: **LOCKED / APPROVED**
 
-The site owner explicitly approved the current infographic-led homepage on 2026-08-31 after review of the development deployment at `https://dev.blackbagsecurity.com/` and instructed that the main page must not change.
+The site owner explicitly approved the infographic-led homepage on 2026-08-31 and instructed that the main page must not change. Later on 2026-08-31, the site owner explicitly reopened only the homepage uncertainty-to-verified-outcome hero graphic to correct a rendering defect, then instructed that the defect be fixed and reported back.
 
 ## Current approved design source
 
-- Approved homepage source commit: `01520ecc8de96f0c1562c2b65bd925970c6c6875`
-- Approved development deployment: GitHub Pages run `80`
-- Development URL reviewed: `https://dev.blackbagsecurity.com/`
+- Approved homepage source commit after journey rendering correction: `c3ad66dca6deec2a209ae7150165af2f35cb087f`
+- Approved development deployment containing the correction: GitHub Pages run `81`
+- Development URL: `https://dev.blackbagsecurity.com/`
 - Homepage purpose: client acquisition, executive confidence, clear service positioning, institutional delivery discipline, evidence-backed security work, engineering depth, and a direct path to engagement
 
 The approved homepage uses the infographic-led visual model established during the 2026-08-31 redesign. Each major section combines concise client-facing copy with a specific explanatory visual. The institutional delivery graphic remains the reference standard for visual density, hierarchy, and meaning.
+
+## Approved 2026-08-31 journey rendering correction
+
+The homepage content and section order did not change. The correction is presentation-only and applies solely to the hero `From uncertainty to verified outcome` infographic.
+
+The correction:
+
+1. Removes excessive unused vertical space from the infographic canvas.
+2. Increases stage-label, node, icon, and explanatory-text scale for normal browser zoom.
+3. Rebalances the five stages so they occupy the available canvas with equal visual weight.
+4. Moves the luminous journey path below the explanatory text so it no longer collides with the final verified state.
+5. Gives the final verified-outcome node stronger visual emphasis without changing its meaning.
+6. Preserves a separate stacked mobile treatment and removes the decorative path where it would reduce readability.
+7. Uses a homepage-only `bbs-homepage-journey-v25.css` layer so the correction cannot alter other site pages.
+
+No homepage copy, service positioning, section order, or other homepage visual story was reopened by this correction.
 
 ## Locked homepage composition
 
@@ -43,9 +59,10 @@ The homepage lock workflow verifies the Git blob identity of the files that dire
 - `docs/assets/css/bbs-client-acquisition-v22.css`
 - `docs/assets/css/bbs-visual-story-v23.css`
 - `docs/assets/css/bbs-infographic-site-v24.css`
+- `docs/assets/css/bbs-homepage-journey-v25.css`
 - `docs/assets/js/app.js`
 
-The lock workflow now runs on the active `feature/client-acquisition-visual-redesign` branch as well as the existing protected design branches and `main`.
+The lock workflow runs on the active `feature/client-acquisition-visual-redesign` branch as well as the existing protected design branches and `main`.
 
 ## Operating rule for future site work
 
