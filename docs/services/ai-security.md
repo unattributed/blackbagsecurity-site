@@ -1,66 +1,51 @@
 ---
 layout: home-v2
 title: AI Security | Black Bag Security
-description: Principal-led AI security assessment for prompt injection, browser-AI workflows, agent and tool authority, data exposure, policy controls, and reproducible evidence.
+description: Security testing for AI-enabled products, agents, browsers, retrieval, memory, tools, and data flows, focused on authority boundaries, evidence, remediation, and retest.
 permalink: /services/ai-security/
 lang: en
-ref: service-ai-security
+ref: ai-security
 services_v2: true
+marketing_v3: true
 ---
-<div class="services-v2-page">
-  <section class="service-detail-hero" aria-labelledby="service-title">
-    <div class="wrap">
-      <a class="service-detail-back" href="{{ '/services/' | relative_url }}">All services</a>
-      <div class="service-detail-hero__grid">
-        <div>
-          <div class="service-detail-hero__number"><span class="icon-mask icon-chip" aria-hidden="true"></span>Service 03</div>
-          <h1 id="service-title">AI security</h1>
-          <p class="service-detail-hero__lead">AI risk rarely lives in the model alone. It emerges from the system around it: untrusted content, retrieval, browsers, tools, identities, data, approvals, and the authority granted to model output. The assessment tests those boundaries as one workflow and records what protected behavior changes under adversarial input.</p>
+<div class="market-page">
+  <section class="market-hero" aria-labelledby="ai-title">
+    <div class="wrap market-hero__grid">
+      <div>
+        <p class="market-kicker">AI Security</p>
+        <h1 id="ai-title">AI changes what can see, decide, and act. <span>Test the authority, not just the prompt.</span></h1>
+        <p class="market-lead">Modern AI systems combine untrusted content, model behavior, retrieval, memory, tools, browser state, identities, and downstream actions. We test the whole trust chain.</p>
+        <div class="market-actions"><a class="market-btn market-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss an AI system</a><a class="market-btn" href="#ai-boundary">See the trust boundary</a></div>
+      </div>
+      <div class="market-visual" aria-label="AI trust boundary"><span class="market-visual__title">Where influence becomes authority</span>
+        <div class="market-flow market-flow--5">
+          <article class="market-node" data-step="01"><strong>Untrusted input</strong><p>Prompt · web · document · message</p></article>
+          <article class="market-node" data-step="02"><strong>Model</strong><p>Interpretation · planning · generation</p></article>
+          <article class="market-node" data-step="03"><strong>Authority gate</strong><p>Policy · identity · confirmation · scope</p></article>
+          <article class="market-node" data-step="04"><strong>Tools &amp; data</strong><p>Browser · API · retrieval · memory</p></article>
+          <article class="market-node" data-step="05"><strong>Action</strong><p>Read · write · send · execute</p></article>
         </div>
-        <aside class="service-detail-summary" aria-label="Service summary">
-          <div class="service-detail-summary__row"><strong>Best for</strong><p>AI-enabled products, browser-AI workflows, agentic systems, model-integrated applications, and security teams evaluating new AI controls.</p></div>
-          <div class="service-detail-summary__row"><strong>Core question</strong><p>Can untrusted input, excessive authority, weak source separation, or unsafe data access cause the workflow to violate an intended security boundary?</p></div>
-          <div class="service-detail-summary__row"><strong>Output</strong><p>Reproducible abuse cases, boundary analysis, control observations, supporting evidence, and mitigation priorities tied to actual system behavior.</p></div>
-        </aside>
+        <div class="market-outcome"><strong>Client question</strong><p>Can untrusted influence become trusted action outside the system’s intended authority?</p></div>
       </div>
     </div>
   </section>
 
-  <section class="service-detail-section" aria-labelledby="ai-what-we-test">
-    <div class="wrap">
-      <div class="service-detail-intro"><h2 id="ai-what-we-test">Test the authority around the model.</h2><p>The objective is not to label a model "secure." It is to determine whether the complete AI-enabled system keeps untrusted content, model output, user authority, tools, and sensitive data within their intended boundaries.</p></div>
-      <div class="service-detail-grid">
-        <article class="service-detail-card"><strong>Prompt Injection &amp; Source Confusion</strong><p>Direct and indirect instruction abuse, hidden or low-visibility content, source ambiguity, competing instructions, and cases where untrusted material gains decision influence.</p></article>
-        <article class="service-detail-card"><strong>Agent &amp; Tool Authority</strong><p>Tool invocation, parameter control, approval gates, action scope, privilege escalation, and the boundary between model suggestion and system execution.</p></article>
-        <article class="service-detail-card"><strong>Data &amp; Identity Boundaries</strong><p>Retrieval scope, memory, permissions, user separation, sensitive context, data leakage, and assumptions about who supplied or is entitled to information.</p></article>
-        <article class="service-detail-card"><strong>Browser-AI Workflows</strong><p>DOM versus rendered content, frame and source confusion, delayed content, visual deception, handoff paths, and browser-originated untrusted input.</p></article>
-        <article class="service-detail-card"><strong>Policy &amp; Control Effectiveness</strong><p>Guardrails, allowlists, deny rules, approval logic, fail-open behavior, exception paths, and whether policy still constrains the workflow under adversarial pressure.</p></article>
-        <article class="service-detail-card"><strong>Evidence &amp; Replay</strong><p>Structured cases, browser or HTTP evidence, deterministic artifacts, and repeatable local validation when the system and data boundary support it.</p></article>
-      </div>
-    </div>
-  </section>
+  <section class="market-section market-section--soft" id="ai-boundary" aria-labelledby="ai-method"><div class="wrap market-split"><div class="market-message"><p class="market-kicker">How we test</p><h2 id="ai-method">Treat the model as one component in a <span>larger security system.</span></h2><p>The important failures often occur where model output crosses into tools, authenticated browser state, private retrieval, persistent memory, external services, or business actions.</p></div>
+    <div class="market-visual"><span class="market-visual__title">AI attack surface</span><div class="market-stack">
+      <div class="market-stack__band"><strong>Influence</strong><span>Direct and indirect prompt injection, source confusion, malicious content, and adversarial instructions.</span></div>
+      <div class="market-stack__band"><strong>Context</strong><span>System prompts, retrieval, memory, browser state, user identity, and hidden application data.</span></div>
+      <div class="market-stack__band"><strong>Authority</strong><span>Tool permissions, approval gates, identity propagation, scope enforcement, and action boundaries.</span></div>
+      <div class="market-stack__band"><strong>Consequence</strong><span>Data exposure, unintended actions, cross-context influence, unsafe execution, or control bypass.</span></div>
+    </div></div>
+  </div></section>
 
-  <section class="service-detail-section" aria-labelledby="ai-outcomes">
-    <div class="wrap">
-      <h2 class="svc-section-title" id="ai-outcomes">What comes back from the engagement</h2>
-      <div class="service-detail-outcomes">
-        <article class="service-outcome"><span>01</span><strong>Demonstrated abuse paths</strong><p>Show how adversarial input changes the workflow and identify the protected action, data, or decision affected by that influence.</p></article>
-        <article class="service-outcome"><span>02</span><strong>Authority map</strong><p>Clarify where model output, browser content, tools, identities, retrieval, and data are trusted more than the architecture justifies.</p></article>
-        <article class="service-outcome"><span>03</span><strong>Control effectiveness</strong><p>Distinguish controls that materially constrain abuse from controls that are cosmetic, bypassable, overly permissive, or fail open.</p></article>
-        <article class="service-outcome"><span>04</span><strong>Safer design priorities</strong><p>Prioritize authority reduction, source isolation, approval gates, data minimization, and workflow changes according to the risk they actually remove.</p></article>
-      </div>
-    </div>
-  </section>
+  <section class="market-section" aria-labelledby="ai-focus"><div class="wrap"><div class="market-section__head"><div><p class="market-kicker">Where depth goes</p><h2 id="ai-focus">Test the places where AI becomes <span>operational authority.</span></h2></div><p>We focus on the boundaries that can turn persuasive text into a security consequence.</p></div>
+    <div class="market-card-grid"><article class="market-card"><span class="market-card__code">Prompt &amp; source trust</span><h3>Can untrusted content redirect the system?</h3><p>Direct injection, indirect injection, content provenance, source weighting, instruction hierarchy, and context confusion.</p></article><article class="market-card"><span class="market-card__code">Tools &amp; agents</span><h3>Can planning exceed intended authority?</h3><p>Tool invocation, multi-step behavior, permission boundaries, confirmation gates, retries, and delegated actions.</p></article><article class="market-card"><span class="market-card__code">Retrieval &amp; memory</span><h3>Can private context leak or persist incorrectly?</h3><p>Cross-user exposure, data scoping, memory contamination, retrieval boundaries, and sensitive context handling.</p></article><article class="market-card"><span class="market-card__code">Browser AI</span><h3>Can page content abuse authenticated browser state?</h3><p>DOM context, frame boundaries, extension or assistant behavior, browser actions, session state, and evidence capture.</p></article></div>
+  </div></section>
 
-  <section class="service-detail-section" aria-labelledby="ai-inputs">
-    <div class="wrap">
-      <h2 class="svc-section-title" id="ai-inputs">Inputs that materially improve the assessment</h2>
-      <div class="service-detail-needs">
-        <div class="service-detail-needs__panel"><h3>Technical context</h3><ul><li>Architecture of the AI workflow, including models, retrieval, tools, browser paths, memory, and external services.</li><li>Test identities and permissions that represent meaningful user, operator, or agent authority.</li><li>Documented policies, guardrails, approval rules, and assumptions the assessment should challenge.</li><li>Safe synthetic data or an agreed local reproduction path where possible.</li></ul></div>
-        <div class="service-detail-needs__panel"><h3>Operating authority</h3><ul><li>Explicit authorization for the models, applications, tools, and integrations in scope.</li><li>Restrictions on external model calls, sensitive data, or third-party systems.</li><li>Approved behavior for tool actions and any state-changing test cases.</li><li>Evidence-handling rules for prompts, outputs, browser captures, logs, and synthetic sensitive data.</li></ul></div>
-      </div>
-    </div>
-  </section>
+  <section class="market-section market-section--grid" aria-labelledby="ai-proof"><div class="wrap market-split"><div class="market-message"><p class="market-kicker">Evidence matters more than spectacle</p><h2 id="ai-proof">Make the AI failure path <span>repeatable.</span></h2><p>AI behavior can vary. A useful finding therefore needs controlled inputs, captured context, observable actions, boundary conditions, and enough replay information to distinguish a real security property from a one-off model response.</p></div>
+    <div class="market-visual"><span class="market-visual__title">Reproducible AI evidence</span><div class="market-flow market-flow--4"><article class="market-node" data-step="01"><strong>Input</strong><p>Preserve the influencing content and source.</p></article><article class="market-node" data-step="02"><strong>Context</strong><p>Record relevant model, browser, identity, or tool state.</p></article><article class="market-node" data-step="03"><strong>Action</strong><p>Capture the observable security consequence.</p></article><article class="market-node" data-step="04"><strong>Replay</strong><p>Repeat under bounded conditions and compare controls.</p></article></div><div class="market-outcome"><strong>Evidence before AI narrative</strong></div></div>
+  </div></section>
 
-  <section class="services-v2-cta"><div class="wrap"><div class="services-v2-cta__panel"><div><h2>Need evidence about what an AI-enabled system can be made to do?</h2><p>Start with the workflow, the authority it holds, the data it can reach, and the controls expected to contain it. The assessment can be shaped around those boundaries.</p></div><a class="home-btn home-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss the AI system</a></div></div></section>
+  <section class="market-close" aria-labelledby="ai-close"><div class="wrap market-close__panel"><div><p class="market-kicker">Start with the authority boundary</p><h2 id="ai-close">Tell us what the AI can access, what it can act on, and what must never cross that line.</h2><p>We will map the influence path, permission model, sensitive context, and evidence needed to test the system safely.</p></div><a class="market-btn market-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss the AI system</a></div></section>
 </div>
