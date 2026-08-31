@@ -1,85 +1,52 @@
 ---
 layout: home-v2
 title: Policies | Black Bag Security
-description: Plain-language policy overview for anti-bribery, confidentiality, data handling, and coordinated disclosure.
+description: Plain-language Black Bag Security policy overview for authorized conduct, anti-bribery, confidentiality, data handling, and coordinated disclosure.
 permalink: /policies/
 lang: en
 ref: policies
 supporting_v2: true
+marketing_v3: true
 ---
-<section class="section">
-  <div class="wrap">
-    <div class="section__head reveal" data-reveal>
-      <h1>The rules are part of the work.</h1>
-      <p>Plain-language policy surface for engagements: anti-bribery, confidentiality and data handling, and coordinated disclosure.</p>
+<div class="market-page">
+  <section class="market-hero" aria-labelledby="policy-title">
+    <div class="wrap market-hero__grid">
+      <div>
+        <p class="market-kicker">Policy surface</p>
+        <h1 id="policy-title">Policy is how intent becomes <span>repeatable behavior.</span></h1>
+        <p class="market-lead">The engagement standard is reinforced by clear rules for authorized conduct, ethics, confidentiality, client data, and disclosure. They are operational guardrails, not website boilerplate.</p>
+        <div class="market-actions"><a class="market-btn market-btn--accent" href="{{ '/contact/' | relative_url }}">Ask a policy question</a><a class="market-btn" href="{{ '/trust/' | relative_url }}">See trust practices</a></div>
+      </div>
+      <div class="market-visual" aria-label="Policy guardrails around delivery"><span class="market-visual__title">Policy around the delivery model</span>
+        <div class="market-card-grid market-card-grid--2">
+          <article class="market-card"><span class="market-card__code">Authorization</span><h3>Work only inside approved authority.</h3><p>Scope · windows · safety · stop conditions</p></article>
+          <article class="market-card"><span class="market-card__code">Ethics</span><h3>No improper influence on procurement or outcomes.</h3><p>Anti-bribery · anti-corruption · escalation</p></article>
+          <article class="market-card"><span class="market-card__code">Confidentiality</span><h3>Client material remains protected and purpose-limited.</h3><p>Ownership · minimization · access · retention</p></article>
+          <article class="market-card"><span class="market-card__code">Disclosure</span><h3>External communication follows authority and obligation.</h3><p>Coordination · approval · legal requirements</p></article>
+        </div>
+        <div class="market-outcome"><strong>Policy → consistent conduct → trusted delivery</strong></div>
+      </div>
     </div>
+  </section>
 
-    <div class="model-grid">
-      <article class="model-card reveal delay-1" data-reveal>
-        <h3>Anti-bribery posture</h3>
-        <p>No improper payments, gifts, or facilitation payments. Applicable anti-corruption requirements are treated as engagement constraints.</p>
-      </article>
-      <article class="model-card reveal delay-2" data-reveal>
-        <h3>Confidentiality model</h3>
-        <p>Client-owned data, least-collection, controlled storage and sharing, and retention by agreement.</p>
-      </article>
-      <article class="model-card reveal delay-3" data-reveal>
-        <h3>Disclosure overview</h3>
-        <p>Coordinated disclosure by default, with client approvals and situational timelines.</p>
-      </article>
+  <section class="market-section market-section--soft" aria-labelledby="policy-principles">
+    <div class="wrap"><div class="market-section__head"><div><p class="market-kicker">Operating guardrails</p><h2 id="policy-principles">The rules stay attached to <span>the work.</span></h2></div><p>These principles are translated into scoping, execution, evidence handling, communication, and delivery decisions rather than treated as separate administrative documents.</p></div>
+      <div class="market-card-grid">
+        <article class="market-card"><span class="market-card__code">Authorized conduct</span><h3>Permission is a technical input.</h3><p>Testing occurs only inside agreed scope, approved windows, production protections, no-go systems, safety limits, and escalation paths.</p></article>
+        <article class="market-card"><span class="market-card__code">Anti-bribery</span><h3>Commercial pressure does not alter professional conduct.</h3><p>Improper payments, kickbacks, facilitation payments, or gifts tied to procurement or engagement outcomes are not offered, requested, authorized, or accepted.</p></article>
+        <article class="market-card"><span class="market-card__code">Confidentiality</span><h3>Client material remains client-owned and need-to-know.</h3><p>Collection is purpose-limited, access is authorized, retention follows agreement, and artifacts use controlled storage and transfer.</p></article>
+        <article class="market-card"><span class="market-card__code">Disclosure</span><h3>Findings are coordinated, not marketed.</h3><p>External disclosure follows client approval, legal obligation, operational risk, remediation status, and contractual requirements.</p></article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="split">
-      <div class="stack stack--signal stack--principles reveal delay-1" data-reveal>
-        <h3>Anti-bribery</h3>
-        <ul class="outcomes">
-          <li>Applicable anti-corruption and anti-bribery requirements are respected in the jurisdictions where work is performed.</li>
-          <li>Improper payments, kickbacks, or facilitation payments are not offered, requested, authorized, or accepted.</li>
-          <li>Gifts or hospitality, if any, must be lawful, modest, and unrelated to procurement or engagement outcomes.</li>
-          <li>Suspected violations are escalated through appropriate internal or client channels when required.</li>
-        </ul>
-      </div>
-      <div class="stack stack--signal stack--data-handling reveal delay-2" data-reveal>
-        <h3>Confidentiality and data handling</h3>
-        <ul class="outcomes">
-          <li>Client data and evidence remain client-owned.</li>
-          <li>Collection is limited to what is necessary to support the engagement and material conclusions.</li>
-          <li>Retention and deletion windows are set by written agreement.</li>
-          <li>Artifacts are stored and transferred through controlled, approved channels.</li>
-          <li>Access to client material is limited to authorized personnel on a need-to-know basis.</li>
-          <li>Client data is not placed in unmanaged third-party AI systems. Any approved AI-assisted handling requires explicit boundaries.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+  <section class="market-section market-section--grid" aria-labelledby="data-policy"><div class="wrap market-split"><div class="market-message"><p class="market-kicker">Confidentiality &amp; data handling</p><h2 id="data-policy">Collect less. Control access. <span>Deliver only what is needed.</span></h2><p>Security testing can expose privileged information. Black Bag’s policy is to minimize collection while preserving enough evidence to support material conclusions.</p></div>
+    <div class="market-visual"><span class="market-visual__title">Data handling lifecycle</span><div class="market-flow market-flow--5"><article class="market-node" data-step="01"><strong>Collect</strong><p>Necessary material only</p></article><article class="market-node" data-step="02"><strong>Control</strong><p>Authorized need-to-know access</p></article><article class="market-node" data-step="03"><strong>Store</strong><p>Approved controlled environment</p></article><article class="market-node" data-step="04"><strong>Deliver</strong><p>Sanitized approved artifact</p></article><article class="market-node" data-step="05"><strong>Retain / delete</strong><p>Written engagement requirement</p></article></div><div class="market-outcome"><strong>Client data is not placed in unmanaged third-party AI systems.</strong></div></div>
+  </div></section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="split">
-      <div class="stack stack--signal stack--disclosure reveal delay-1" data-reveal>
-        <h3>Disclosure policy overview</h3>
-        <ul class="outcomes">
-          <li>Coordinated disclosure and stakeholder alignment are used by default.</li>
-          <li>Disclosure plans are scoped with client approval before external communication.</li>
-          <li>Timelines depend on operational risk, remediation status, contractual requirements, and legal constraints.</li>
-          <li>Client findings are not publicly disclosed without written permission unless disclosure is required by law.</li>
-        </ul>
-      </div>
-      <div class="stack stack--signal stack--scope reveal delay-2" data-reveal>
-        <h3>Responsible conduct</h3>
-        <ul class="outcomes">
-          <li>Work is performed only within authorized scope and approved test windows.</li>
-          <li>Production safety, stop conditions, and escalation paths remain part of execution.</li>
-          <li>Client identity and engagement details are not shared publicly without written permission.</li>
-        </ul>
-        <p class="mono"><a href="{{ '/trust/' | relative_url }}">Trust practices -></a></p>
-        <p class="mono"><a href="{{ '/contact/' | relative_url }}">Policy questions -></a></p>
-      </div>
-    </div>
-  </div>
-</section>
+  <section class="market-section" aria-labelledby="disclosure-policy"><div class="wrap market-split"><div class="market-message"><p class="market-kicker">Coordinated disclosure</p><h2 id="disclosure-policy">The client controls the engagement story <span>unless law requires otherwise.</span></h2><p>Client identity, findings, access, and engagement details are not publicly shared without written permission. Vendor or third-party coordination is handled through approved channels and timelines.</p></div>
+    <div class="market-visual"><span class="market-visual__title">Disclosure guardrail</span><div class="market-flow market-flow--3"><article class="market-node" data-step="01"><strong>Client authority</strong><p>What communication has been approved?</p></article><article class="market-node" data-step="02"><strong>Legal / contractual obligation</strong><p>What requirement overrides normal confidentiality?</p></article><article class="market-node" data-step="03"><strong>Coordinated action</strong><p>Right stakeholder · channel · timing · record</p></article></div></div>
+  </div></section>
+
+  <section class="market-close" aria-labelledby="policy-close"><div class="wrap market-close__panel"><div><p class="market-kicker">Policy questions are engagement questions</p><h2 id="policy-close">If your organization has specific ethical, confidentiality, residency, or disclosure requirements, make them explicit before work begins.</h2><p>Black Bag will incorporate approved constraints into the engagement operating model.</p></div><a class="market-btn market-btn--accent" href="{{ '/contact/' | relative_url }}">Discuss the requirements</a></div></section>
+</div>
