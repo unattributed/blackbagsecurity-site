@@ -66,7 +66,7 @@ jobs:
           verify_blob "docs/assets/css/bbs-client-acquisition-v22.css" "fb0504fc3bc8f232aae4e70860cc32e1c6971aca"
           verify_blob "docs/assets/css/bbs-visual-story-v23.css" "50c8e8fcbf44c154f162c0a3b658e97520140e1f"
           verify_blob "docs/assets/css/bbs-infographic-site-v24.css" "b48354b84da260ce505bae0f277206346d8e770b"
-          verify_blob "docs/assets/css/bbs-homepage-journey-v25.css" "165df6a7fb319490ed920a17d34b8b080f2f2287"
+          verify_blob "docs/assets/css/bbs-homepage-journey-v25.css" "6cca7c8bd4a2e352f053e7514cbdf21864d37b54"
           verify_blob "docs/assets/js/app.js" "c01a2ac6743114bb4ca384be43c165efb66d977a"
 
           echo "PASS: approved homepage baseline is intact"
