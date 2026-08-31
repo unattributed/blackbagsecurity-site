@@ -1,0 +1,423 @@
+/* Black Bag Security homepage practice-control graphic v21.
+ * Approved replacement for the former text-heavy "Why Black Bag" section.
+ */
+
+.win-practice-control {
+  --pc-bg: #071019;
+  --pc-panel: #0b151e;
+  --pc-panel-soft: #0e1821;
+  --pc-line: rgba(146, 170, 184, 0.28);
+  --pc-line-strong: rgba(142, 226, 29, 0.52);
+  --pc-text: #f1f5f2;
+  --pc-muted: #b7c1bb;
+  --pc-accent: #8ee21d;
+  position: relative;
+  overflow: hidden;
+  padding: clamp(72px, 7vw, 108px) 0;
+  color: var(--pc-text);
+  background:
+    radial-gradient(circle at 76% 38%, rgba(142, 226, 29, 0.08), transparent 30%),
+    linear-gradient(180deg, #071019 0%, #08121a 100%);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.win-practice-control::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .34;
+  background-image:
+    linear-gradient(rgba(142,226,29,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(142,226,29,.045) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(90deg, transparent, #000 58%, #000);
+}
+
+.win-practice-control .wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.win-practice-control__grid {
+  display: grid;
+  grid-template-columns: minmax(300px, .72fr) minmax(640px, 1.28fr);
+  gap: clamp(52px, 6vw, 94px);
+  align-items: center;
+}
+
+.win-practice-control__message {
+  max-width: 560px;
+}
+
+.win-practice-control__message .win-kicker {
+  margin-bottom: 17px;
+  color: var(--pc-accent);
+}
+
+.win-practice-control__message h2 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(42px, 4.2vw, 66px);
+  font-weight: 560;
+  line-height: .98;
+  letter-spacing: -.045em;
+}
+
+.win-practice-control__message h2 span {
+  color: var(--pc-accent);
+}
+
+.win-practice-control__lead {
+  margin: 30px 0 0;
+  color: #e8eeea;
+  font-size: clamp(18px, 1.45vw, 22px);
+  line-height: 1.55;
+}
+
+.win-practice-control__message > p:not(.win-kicker):not(.win-practice-control__lead) {
+  margin: 18px 0 0;
+  color: var(--pc-muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.win-practice-control__callout {
+  position: relative;
+  display: grid;
+  gap: 6px;
+  margin-top: 34px;
+  padding: 22px 24px 22px 78px;
+  border: 1px solid var(--pc-line);
+  border-radius: 8px;
+  background: rgba(8, 18, 26, .78);
+}
+
+.win-practice-control__callout::before {
+  content: "✓";
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 44px;
+  transform: translateY(-50%);
+  color: var(--pc-accent);
+  border: 2px solid var(--pc-accent);
+  border-radius: 16px 16px 20px 20px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.win-practice-control__callout strong {
+  color: #fff;
+  font-size: 15px;
+}
+
+.win-practice-control__callout span {
+  color: #e0e7e2;
+  font-size: 14px;
+}
+
+.win-practice-control__callout em {
+  color: var(--pc-accent);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.win-practice-system {
+  position: relative;
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+}
+
+.win-practice-system__principal,
+.win-practice-system__policy,
+.win-practice-system__outcome {
+  position: relative;
+  padding: 20px 24px;
+  text-align: center;
+  border: 1px solid var(--pc-line);
+  border-radius: 9px;
+  background: linear-gradient(180deg, rgba(255,255,255,.025), transparent), rgba(8,18,26,.9);
+}
+
+.win-practice-system__principal {
+  max-width: 78%;
+  margin: 0 auto 16px;
+}
+
+.win-practice-system__principal::after,
+.win-practice-system__policy::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -17px;
+  width: 1px;
+  height: 17px;
+  background: var(--pc-accent);
+}
+
+.win-practice-system__label {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--pc-accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.win-practice-system__principal strong,
+.win-practice-system__policy strong,
+.win-practice-system__outcome strong {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 650;
+  line-height: 1.15;
+}
+
+.win-practice-system__principal p,
+.win-practice-system__policy p,
+.win-practice-system__outcome p {
+  margin: 7px 0 0;
+  color: var(--pc-muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.win-practice-system__policy {
+  margin-bottom: 16px;
+  border-color: rgba(142,226,29,.28);
+}
+
+.win-practice-system__functions {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.win-practice-system__functions::before {
+  content: "";
+  position: absolute;
+  left: 9%;
+  right: 9%;
+  top: -17px;
+  height: 17px;
+  border-top: 1px dashed rgba(142,226,29,.7);
+  border-left: 1px dashed rgba(142,226,29,.7);
+  border-right: 1px dashed rgba(142,226,29,.7);
+  pointer-events: none;
+}
+
+.win-practice-function {
+  position: relative;
+  min-width: 0;
+  min-height: 180px;
+  padding: 22px 14px 18px;
+  border: 1px solid var(--pc-line);
+  border-radius: 8px;
+  background: rgba(10, 21, 30, .92);
+  text-align: center;
+}
+
+.win-practice-function::before {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 20px;
+  color: var(--pc-accent);
+  border: 1px solid rgba(142,226,29,.55);
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.win-practice-function:nth-child(1)::before { content: "01"; }
+.win-practice-function:nth-child(2)::before { content: "02"; }
+.win-practice-function:nth-child(3)::before { content: "03"; }
+.win-practice-function:nth-child(4)::before { content: "04"; }
+.win-practice-function:nth-child(5)::before { content: "05"; }
+
+.win-practice-function strong {
+  display: block;
+  min-height: 34px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.win-practice-function p {
+  margin: 14px 0 0;
+  color: var(--pc-muted);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.win-practice-delivery {
+  position: relative;
+  padding: 24px 20px 20px;
+  border: 1px solid rgba(142,226,29,.38);
+  border-radius: 9px;
+  background: rgba(8,18,26,.9);
+}
+
+.win-practice-delivery__title {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  padding: 0 14px;
+  transform: translateX(-50%);
+  color: var(--pc-accent);
+  background: #08121a;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.win-practice-delivery__steps {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0;
+}
+
+.win-practice-delivery__steps span {
+  position: relative;
+  padding: 32px 9px 0;
+  color: #eef3ef;
+  font-size: 10px;
+  line-height: 1.45;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.win-practice-delivery__steps span::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  transform: translateX(-50%);
+  border: 2px solid var(--pc-accent);
+  border-radius: 50%;
+  background: #08121a;
+}
+
+.win-practice-delivery__steps span:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -5px;
+  top: 4px;
+  color: rgba(142,226,29,.78);
+  font-size: 16px;
+}
+
+.win-practice-system__outcome {
+  width: 74%;
+  margin: 16px auto 0;
+  border-color: rgba(142,226,29,.48);
+}
+
+.win-practice-system__outcome::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -17px;
+  width: 1px;
+  height: 17px;
+  background: var(--pc-accent);
+}
+
+@media (max-width: 1180px) {
+  .win-practice-control__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .win-practice-control__message {
+    max-width: 760px;
+  }
+
+  .win-practice-system {
+    max-width: 980px;
+  }
+}
+
+@media (max-width: 820px) {
+  .win-practice-system__functions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .win-practice-system__functions::before,
+  .win-practice-system__principal::after,
+  .win-practice-system__policy::after,
+  .win-practice-system__outcome::before {
+    display: none;
+  }
+
+  .win-practice-function:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .win-practice-delivery__steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 18px;
+  }
+
+  .win-practice-delivery__steps span::after {
+    display: none;
+  }
+
+  .win-practice-system__principal,
+  .win-practice-system__outcome {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .win-practice-control {
+    padding: 58px 0;
+  }
+
+  .win-practice-control__message h2 {
+    font-size: clamp(39px, 12vw, 52px);
+  }
+
+  .win-practice-control__callout {
+    padding-left: 24px;
+  }
+
+  .win-practice-control__callout::before {
+    display: none;
+  }
+
+  .win-practice-system__functions,
+  .win-practice-delivery__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .win-practice-function:last-child {
+    grid-column: auto;
+  }
+
+  .win-practice-delivery__title {
+    position: static;
+    display: block;
+    margin-bottom: 12px;
+    transform: none;
+    text-align: center;
+    white-space: normal;
+  }
+}
