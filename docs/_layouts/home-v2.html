@@ -58,12 +58,13 @@
   <link rel="stylesheet" href="{{ '/assets/css/methodology-section-labels-v20.css' | relative_url }}" />
   {% endif %}
   {% if page.marketing_v3 %}<link rel="stylesheet" href="{{ '/assets/css/bbs-client-acquisition-v22.css' | relative_url }}" />{% endif %}
+  {% if page.lang == 'en' %}<link rel="stylesheet" href="{{ '/assets/css/bbs-visual-story-v23.css' | relative_url }}" />{% endif %}
 
   <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml" />
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
 </head>
-<body class="home-v2{% if page.services_v2 %} services-v2-body{% endif %}{% if page.methodology_v2 %} methodology-v2-body{% endif %}{% if page.arsenal_v2 %} arsenal-v2-body{% endif %}{% if page.supporting_v2 %} supporting-v2-body{% endif %}{% if page.marketing_v3 %} marketing-v3-body{% endif %}">
+<body class="home-v2{% if page.services_v2 %} services-v2-body{% endif %}{% if page.methodology_v2 %} methodology-v2-body{% endif %}{% if page.arsenal_v2 %} arsenal-v2-body{% endif %}{% if page.supporting_v2 %} supporting-v2-body{% endif %}{% if page.marketing_v3 %} marketing-v3-body{% endif %}{% if page.ref %} page-ref-{{ page.ref | slugify }}{% endif %}">
   <a class="skip" href="#content">Skip to content</a>
 
   <header class="site-header site-header--v2">
