@@ -75,13 +75,16 @@
   <link rel="stylesheet" href="{{ '/assets/css/methodology-standard-v17.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/methodology-section-labels-v20.css' | relative_url }}" />
   {% endif %}
+  {% if page.marketing_v3 %}
+  <link rel="stylesheet" href="{{ '/assets/css/bbs-client-acquisition-v22.css' | relative_url }}" />
+  {% endif %}
 
   <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml" />
 
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
   <script type="application/ld+json" src="{{ '/assets/data/website.json' | relative_url }}"></script>
 </head>
-<body class="home-v2{% if page.services_v2 %} services-v2-body{% endif %}{% if page.methodology_v2 %} methodology-v2-body{% endif %}{% if page.arsenal_v2 %} arsenal-v2-body{% endif %}{% if page.supporting_v2 %} supporting-v2-body{% endif %}">
+<body class="home-v2{% if page.services_v2 %} services-v2-body{% endif %}{% if page.methodology_v2 %} methodology-v2-body{% endif %}{% if page.arsenal_v2 %} arsenal-v2-body{% endif %}{% if page.supporting_v2 %} supporting-v2-body{% endif %}{% if page.marketing_v3 %} marketing-v3-body{% endif %}">
   <a class="skip" href="#content">Skip to content</a>
 
   <header class="site-header site-header--v2">
@@ -102,15 +105,19 @@
         <a{% if page.url contains '/contact/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/contact/' | relative_url }}">Contact</a>
       </nav>
 
+      {% if page.marketing_v3 %}
+      <a class="market-header-cta" href="{{ '/contact/#assessment' | relative_url }}">Discuss an assessment</a>
+      {% else %}
       <div class="header-v2__motto" aria-label="Security is engineering. Evidence earns trust.">
         Security is engineering.
         <strong>Evidence earns trust.</strong>
       </div>
+      {% endif %}
     </div>
   </header>
 
   <main id="content" class="site-main">
-    {% unless page.homepage_v2 %}
+    {% unless page.homepage_v2 or page.marketing_v3 %}
       {% if page.lang == 'en' %}
         {% include secondary-visual.html %}
       {% endif %}
