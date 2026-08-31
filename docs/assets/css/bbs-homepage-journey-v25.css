@@ -90,6 +90,19 @@
   pointer-events: none;
 }
 
+/* The source SVG viewBox is wider than the rendered path band. Stretch the
+ * decorative path across the five stage centres while keeping stroke weight
+ * visually constant. This avoids the browser's default aspect-ratio letterbox. */
+.visual-site-v24.page-ref-home .v24-journey__path svg {
+  transform: scaleX(2.15);
+  transform-origin: 50% 50%;
+}
+
+.visual-site-v24.page-ref-home .v24-journey__path .core,
+.visual-site-v24.page-ref-home .v24-journey__path .glow {
+  vector-effect: non-scaling-stroke;
+}
+
 .visual-site-v24.page-ref-home .v24-journey__path .glow {
   stroke-width: 15;
   opacity: .88;
