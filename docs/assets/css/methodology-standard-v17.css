@@ -360,3 +360,46 @@
   background: transparent;
   box-shadow: none;
 }
+
+/* Match the communication section heading hierarchy to the rest of Methodology.
+ * Eyebrow sits above the title; supporting copy occupies the right column.
+ */
+.methodology-v2-body .method-v2-communication__head {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  grid-template-areas:
+    "eyebrow copy"
+    "title copy";
+  column-gap: 70px;
+  row-gap: 10px;
+  align-items: start;
+}
+
+.methodology-v2-body .method-v2-communication__head .method-eyebrow {
+  grid-area: eyebrow;
+  margin: 0;
+}
+
+.methodology-v2-body .method-v2-communication__head h2 {
+  grid-area: title;
+}
+
+.methodology-v2-body .method-v2-communication__head > p:not(.method-eyebrow) {
+  grid-area: copy;
+  align-self: end;
+}
+
+@media (max-width: 780px) {
+  .methodology-v2-body .method-v2-communication__head {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "eyebrow"
+      "title"
+      "copy";
+    gap: 10px;
+  }
+
+  .methodology-v2-body .method-v2-communication__head > p:not(.method-eyebrow) {
+    margin-top: 8px;
+  }
+}
