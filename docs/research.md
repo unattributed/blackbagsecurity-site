@@ -14,7 +14,7 @@ marketing_v3: true
       <div class="proof43-copy">
         <p class="proof43-kicker">Proof</p>
         <h1 id="proof-title">The capability is <span class="proof43-accent">built, not borrowed.</span></h1>
-        <p class="proof43-lead">Original systems. Working architectures. Client-relevant engineering.</p>
+        <p class="proof43-lead">BBS engineers outcomes through purposeful code.</p>
         <div class="proof43-actions"><a class="proof43-btn" href="#proof-work">Inspect the work →</a></div>
       </div>
 
