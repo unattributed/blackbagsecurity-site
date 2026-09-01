@@ -18,11 +18,13 @@ marketing_v3: true
         <div class="proof43-actions"><a class="proof43-btn" href="#proof-work">Inspect the work →</a></div>
       </div>
 
-      <div class="proof43-visual" aria-label="Black Bag Security engineering capability lattice">
+      <div class="proof43-visual" aria-label="AOTP Operator Workspace, built by Black Bag Security as inspectable proof of engineering capability">
         <div class="proof43-visual__topline"><span>Engineering capability</span><strong>Inspectable proof</strong></div>
-        <div class="proof43-lattice">
-          <img src="{{ '/assets/img/arsenal-lattice.svg' | relative_url }}" alt="Connected engineering capability lattice spanning authority, AOTP, OSMAP, AI security, secure infrastructure, and evidence">
-          <div class="proof43-lattice__rail"><span>Offensive testing</span><span>Engagement control</span><span>Secure systems</span><span>AI security</span></div>
+        <div class="proof44-ux">
+          <div class="proof44-ux__frame">
+            <img src="{{ '/assets/img/aotp-operator-workspace-proof-v44.svg' | relative_url }}" alt="AOTP Operator Workspace showing governed campaign scope, evidence review, findings, approvals, reporting, exports, and retest controls">
+          </div>
+          <div class="proof44-ux__rail"><span>Scope &amp; authority</span><span>Evidence state</span><span>Findings &amp; reports</span><span>Retest</span></div>
         </div>
       </div>
     </div>
