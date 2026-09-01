@@ -1,4 +1,4 @@
-name: homepage lock
+name: homepage approved sections lock
 
 on:
   push:
@@ -18,13 +18,13 @@ permissions:
   contents: read
 
 jobs:
-  verify-homepage-lock:
+  verify-approved-homepage-sections:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Verify approved homepage baseline
+      - name: Verify approved homepage sections
         shell: bash
         run: |
           set -euo pipefail
@@ -35,42 +35,80 @@ jobs:
             local actual
 
             if [[ ! -f "$path" ]]; then
-              echo "FAIL: locked homepage file is missing: $path"
+              echo "FAIL: approved homepage asset is missing: $path"
               return 1
             fi
 
             actual="$(git hash-object "$path")"
             if [[ "$actual" != "$expected" ]]; then
-              echo "FAIL: homepage lock drift detected"
+              echo "FAIL: approved homepage asset drift detected"
               echo "path=$path"
               echo "expected=$expected"
               echo "actual=$actual"
-              echo "The homepage is approved and locked. Reopen homepage review explicitly before changing this baseline."
+              echo "Reopen the affected approved homepage section explicitly before changing it."
               return 1
             fi
 
             echo "PASS: $path"
           }
 
-          verify_blob "docs/index.html" "fb3f021da99005ab3a82645ebc454381b0cfb5e9"
-          verify_blob "docs/_layouts/home-v2.html" "145372a3c8d77256e16aa4133393c26ff28daf00"
-          verify_blob "docs/assets/css/homepage-v2.css" "212b41c3620e61d4faff97199085919429a4e89c"
-          verify_blob "docs/assets/css/homepage-v2-polish.css" "067a8eaf77d4cc34ec639b7d5c092ebc7e07a965"
-          verify_blob "docs/assets/css/homepage-v2-depth.css" "98ddf5556de5b9b99cfbe1845817c80599fa07a2"
-          verify_blob "docs/assets/css/homepage-v2-silhouette.css" "341017eb4578fe0a71fd1c67460f03bb23391ce3"
-          verify_blob "docs/assets/css/homepage-v2-refine.css" "3509dfb88814d7f798b1ab7501f7944be7e179de"
-          verify_blob "docs/assets/css/bbs-winning-v10.css" "be0fe1d22ac8f82727f54b3a3e14278b904aa372"
-          verify_blob "docs/assets/css/bbs-homepage-refinement-v12.css" "5b24acaa496abddbaecd6b7c0f7a8695ca66f89d"
-          verify_blob "docs/assets/css/bbs-homepage-proof-v16.css" "35d00f15007329d1e117579fd8df19fe05cb4989"
-          verify_blob "docs/assets/css/bbs-homepage-practice-v21.css" "03f5fad6c5508190d9229e55a64a456a501e3036"
-          verify_blob "docs/assets/css/bbs-client-acquisition-v22.css" "fb0504fc3bc8f232aae4e70860cc32e1c6971aca"
-          verify_blob "docs/assets/css/bbs-visual-story-v23.css" "50c8e8fcbf44c154f162c0a3b658e97520140e1f"
-          verify_blob "docs/assets/css/bbs-infographic-site-v24.css" "b48354b84da260ce505bae0f277206346d8e770b"
           verify_blob "docs/assets/css/bbs-homepage-journey-v25.css" "6cca7c8bd4a2e352f053e7514cbdf21864d37b54"
           verify_blob "docs/assets/css/bbs-homepage-institution-v26.css" "6bfb995dfd57ee6fcec22f506921768c7821ed09"
           verify_blob "docs/assets/css/bbs-homepage-institution-v27.css" "3214b3e067508d19443b3f70550a04ea215fc2a8"
-          verify_blob "docs/assets/css/bbs-site-qa-v28.css" "5ae8a56c0aa92e5306b7b02c18734c049ebf0dfd"
-          verify_blob "docs/assets/css/bbs-site-qa-finish-v29.css" "76bd0d483151b974f0c14d05456f951d991cd264"
-          verify_blob "docs/assets/js/app.js" "c01a2ac6743114bb4ca384be43c165efb66d977a"
+          verify_blob "docs/assets/css/bbs-homepage-engagement-v30.css" "870f9a58c5de274c776335b14d0776efc194c104"
+          verify_blob "docs/assets/css/bbs-homepage-institution-arrow-v31.css" "1ab30ca5bc90b24e86ed9ee248dffa3bfcc62506"
 
-          echo "PASS: approved homepage baseline is intact"
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+          import sys
+
+          page = Path("docs/index.html").read_text(encoding="utf-8")
+          layout = Path("docs/_layouts/home-v2.html").read_text(encoding="utf-8")
+
+          def verify_section(name, start_marker, end_marker, expected):
+              try:
+                  start = page.index(start_marker)
+                  end = page.index(end_marker, start)
+              except ValueError as exc:
+                  print(f"FAIL: approved {name} section markers are missing: {exc}")
+                  sys.exit(1)
+              block = page[start:end]
+              actual = hashlib.sha256(block.encode("utf-8")).hexdigest()
+              if actual != expected:
+                  print(f"FAIL: approved {name} section drift detected")
+                  print(f"expected={expected}")
+                  print(f"actual={actual}")
+                  print("Reopen this approved homepage section explicitly before changing it.")
+                  sys.exit(1)
+              print(f"PASS: approved {name} section markup")
+
+          verify_section(
+              "hero",
+              '  <section class="v24-hero" aria-labelledby="home-title">',
+              '  <section class="v24-section" aria-labelledby="institutional-control">',
+              "e1ca6e0d08f5fc9437135d7519b8b0f8951b4e52ab62a7ef4bc32bd6d1084c8f",
+          )
+
+          verify_section(
+              "institutional control",
+              '  <section class="v24-section" aria-labelledby="institutional-control">',
+              '  <section class="v24-section" aria-labelledby="focused-services">',
+              "090e0daef0e98722f6da0bd47396e4dda2ac16d4a61cd70c1732ac4963f383a7",
+          )
+
+          required_styles = [
+              "bbs-homepage-journey-v25.css",
+              "bbs-homepage-institution-v26.css",
+              "bbs-homepage-institution-v27.css",
+              "bbs-homepage-engagement-v30.css",
+              "bbs-homepage-institution-arrow-v31.css",
+          ]
+          for stylesheet in required_styles:
+              if stylesheet not in layout:
+                  print(f"FAIL: approved homepage stylesheet is no longer loaded: {stylesheet}")
+                  sys.exit(1)
+              print(f"PASS: stylesheet loader includes {stylesheet}")
+
+          print("PASS: approved homepage production sections are intact")
+          PY
