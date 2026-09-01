@@ -1,4 +1,4 @@
-name: homepage approved sections lock
+name: homepage immutable production lock
 
 on:
   push:
@@ -18,13 +18,13 @@ permissions:
   contents: read
 
 jobs:
-  verify-approved-homepage-sections:
+  verify-homepage-lock:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Verify approved homepage sections
+      - name: Verify immutable homepage baseline
         shell: bash
         run: |
           set -euo pipefail
@@ -35,35 +35,41 @@ jobs:
             local actual
 
             if [[ ! -f "$path" ]]; then
-              echo "FAIL: approved homepage asset is missing: $path"
+              echo "FAIL: locked homepage file is missing: $path"
               return 1
             fi
 
             actual="$(git hash-object "$path")"
             if [[ "$actual" != "$expected" ]]; then
-              echo "FAIL: approved homepage asset drift detected"
+              echo "FAIL: immutable homepage baseline drift detected"
               echo "path=$path"
               echo "expected=$expected"
               echo "actual=$actual"
-              echo "Reopen the affected approved homepage section explicitly before changing it."
+              echo "The homepage is production approved in its entirety. Explicitly reopen homepage review before changing it."
               return 1
             fi
 
             echo "PASS: $path"
           }
 
+          # Entire approved homepage markup, including all sections and CTA.
+          verify_blob "docs/index.html" "2cb97e25065e4ef4fe9b6a47e6352de29a0fb157"
+
+          # Approved homepage journey and institutional model.
           verify_blob "docs/assets/css/bbs-homepage-journey-v25.css" "6cca7c8bd4a2e352f053e7514cbdf21864d37b54"
           verify_blob "docs/assets/css/bbs-homepage-institution-v26.css" "6bfb995dfd57ee6fcec22f506921768c7821ed09"
           verify_blob "docs/assets/css/bbs-homepage-institution-v27.css" "3214b3e067508d19443b3f70550a04ea215fc2a8"
           verify_blob "docs/assets/css/bbs-homepage-engagement-v30.css" "870f9a58c5de274c776335b14d0776efc194c104"
           verify_blob "docs/assets/css/bbs-homepage-institution-arrow-v31.css" "1ab30ca5bc90b24e86ed9ee248dffa3bfcc62506"
 
+          # Approved focused-services visual.
           verify_blob "docs/assets/css/bbs-homepage-services-v32.css" "a2241519b87ddb80d9a96dce82d15120109da7c9"
           verify_blob "docs/assets/img/service-application-api-v32.svg" "f187ad88b79bc43d3edc457f70e52cd689eebba0"
           verify_blob "docs/assets/img/service-adversary-validation-v32.svg" "257a5c90127a56b98dabaeda823da59bfeb5e695"
           verify_blob "docs/assets/img/service-ai-security-v32.svg" "b1fc2a68bd8bd3d08c9f38bf180177143d3e7e5d"
           verify_blob "docs/assets/img/service-secure-systems-v32.svg" "a12bad05a0093184a1ddff10410367ef4dd0e389"
 
+          # Approved engagement-rigor visual.
           verify_blob "docs/assets/css/bbs-homepage-rigor-v33.css" "f602216200db742229002116fd04465c71626912"
           verify_blob "docs/assets/img/lifecycle-authorize-v33.svg" "0365a4a43666e28b3a66afe7fee20adcd6d695f6"
           verify_blob "docs/assets/img/lifecycle-test-v33.svg" "6cffad47e5b7cecec2da333fe1c811290759c475"
@@ -72,73 +78,28 @@ jobs:
           verify_blob "docs/assets/img/lifecycle-remediate-v33.svg" "8539d564126ee7acf33fc9451dc0c84a692788f1"
           verify_blob "docs/assets/img/lifecycle-retest-v33.svg" "d88167f466de455f017a9da3efbe9f663bef074d"
 
+          # Approved client-data visual.
           verify_blob "docs/assets/css/bbs-homepage-data-v34.css" "d60d8efcc1ef395d97d1fa8baa8b7cd3be008ec6"
           verify_blob "docs/assets/img/data-collect-v34.svg" "e978ef015821d29eecca78e22f96d6f5003e4e3f"
           verify_blob "docs/assets/img/data-preserve-v34.svg" "e600b46336775aad324a699ba9f04f509fa105c4"
           verify_blob "docs/assets/img/data-sanitize-v34.svg" "23626a54956006e2c4c78d25e66244c9a5df5864"
           verify_blob "docs/assets/img/data-deliver-v34.svg" "41b58ff39edcb409a1ceb8f3afc5bb789d844a7c"
 
+          # Approved engineering-proof visual.
+          verify_blob "docs/assets/css/bbs-homepage-engineering-proof-v35.css" "ce2ffbe01e03627431c098f4c7b835afc2a13e2a"
+          verify_blob "docs/assets/img/proof-code-automation-v35.svg" "b2cf87a36335f07ceee0d5a2eb9b7c46fc88b56d"
+          verify_blob "docs/assets/img/proof-testing-research-v35.svg" "254774a45c7f86aed68918102396aacb00bd50cf"
+          verify_blob "docs/assets/img/proof-defense-engineering-v35.svg" "d993d605aca5310d16786f78f745ebb05af0556b"
+          verify_blob "docs/assets/img/proof-infrastructure-security-v35.svg" "482252553c818c390095cf192e65481bc4ffda90"
+          verify_blob "docs/assets/img/proof-reporting-evidence-v35.svg" "5f32eb80faff84fb9ec5afaafab71d130a6e520c"
+
+          # Ensure all dedicated homepage layers remain loaded by the shared layout.
           python3 - <<'PY'
           from pathlib import Path
-          import hashlib
           import sys
 
-          page = Path("docs/index.html").read_text(encoding="utf-8")
           layout = Path("docs/_layouts/home-v2.html").read_text(encoding="utf-8")
-
-          def verify_section(name, start_marker, end_marker, expected):
-              try:
-                  start = page.index(start_marker)
-                  end = page.index(end_marker, start)
-              except ValueError as exc:
-                  print(f"FAIL: approved {name} section markers are missing: {exc}")
-                  sys.exit(1)
-              block = page[start:end]
-              actual = hashlib.sha256(block.encode("utf-8")).hexdigest()
-              if actual != expected:
-                  print(f"FAIL: approved {name} section drift detected")
-                  print(f"expected={expected}")
-                  print(f"actual={actual}")
-                  print("Reopen this approved homepage section explicitly before changing it.")
-                  sys.exit(1)
-              print(f"PASS: approved {name} section markup")
-
-          verify_section(
-              "hero",
-              '  <section class="v24-hero" aria-labelledby="home-title">',
-              '  <section class="v24-section" aria-labelledby="institutional-control">',
-              "e1ca6e0d08f5fc9437135d7519b8b0f8951b4e52ab62a7ef4bc32bd6d1084c8f",
-          )
-
-          verify_section(
-              "institutional control",
-              '  <section class="v24-section" aria-labelledby="institutional-control">',
-              '  <section class="v24-section" aria-labelledby="focused-services">',
-              "090e0daef0e98722f6da0bd47396e4dda2ac16d4a61cd70c1732ac4963f383a7",
-          )
-
-          verify_section(
-              "focused services",
-              '  <section class="v24-section" aria-labelledby="focused-services">',
-              '  <section class="v24-section" aria-labelledby="same-rigor">',
-              "a0c0df4e1548194a3e9900bdc17414d27ff443d2880d15bf94091241532399d3",
-          )
-
-          verify_section(
-              "same rigor",
-              '  <section class="v24-section" aria-labelledby="same-rigor">',
-              '  <section class="v24-section" aria-labelledby="data-responsibility">',
-              "75e1387b8562331be2c0eedc9398fcba8edead878d77082733cc00c858e5b68e",
-          )
-
-          verify_section(
-              "data responsibility",
-              '  <section class="v24-section" aria-labelledby="data-responsibility">',
-              '  <section class="v24-section" aria-labelledby="engineering-proof">',
-              "4944f2e191c0978bb9d1d3d02fb5390e3a8b52fd5fea7e903f22073c2787ebe4",
-          )
-
-          required_styles = [
+          required = [
               "bbs-homepage-journey-v25.css",
               "bbs-homepage-institution-v26.css",
               "bbs-homepage-institution-v27.css",
@@ -147,12 +108,13 @@ jobs:
               "bbs-homepage-services-v32.css",
               "bbs-homepage-rigor-v33.css",
               "bbs-homepage-data-v34.css",
+              "bbs-homepage-engineering-proof-v35.css",
           ]
-          for stylesheet in required_styles:
+          for stylesheet in required:
               if stylesheet not in layout:
-                  print(f"FAIL: approved homepage stylesheet is no longer loaded: {stylesheet}")
+                  print(f"FAIL: locked homepage stylesheet is no longer loaded: {stylesheet}")
                   sys.exit(1)
               print(f"PASS: stylesheet loader includes {stylesheet}")
 
-          print("PASS: approved homepage production sections are intact")
+          print("PASS: complete production-approved homepage baseline is intact")
           PY
