@@ -155,10 +155,47 @@ marketing_v3: true
         <p class="svc37-close-intro">You do not need to name the test. Tell us what is at stake, what you need to know, and what cannot go wrong. We will recommend the engagement.</p>
         <div class="svc36-actions"><a class="svc36-btn" href="{{ '/contact/#assessment' | relative_url }}">Start the conversation →</a></div>
       </div>
-      <div class="svc36-close-card" aria-label="Three inputs to start a security engagement">
-        <div><span><strong>System</strong><span>What is at stake.</span></span></div>
-        <div><span><strong>Decision</strong><span>What you need to know.</span></span></div>
-        <div><span><strong>Consequence</strong><span>What cannot go wrong.</span></span></div>
+
+      <div class="svc37-intake" aria-label="System, decision, and consequence inputs converge into the recommended Black Bag Security engagement">
+        <div class="svc37-intake__topline"><span>Engagement intake</span><strong>Three inputs → one recommendation</strong></div>
+        <div class="svc37-intake__body">
+          <div class="svc37-inputs">
+            <article class="svc37-input">
+              <span class="svc37-input__index">Input 1</span><h3>System</h3>
+              <span class="svc37-input__icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none"><path d="M32 8 49 18v20L32 48 15 38V18L32 8Z" stroke="currentColor" stroke-width="2"/><path d="m15 18 17 10 17-10M32 28v20" stroke="currentColor" stroke-width="2"/></svg>
+              </span>
+              <ul><li>Apps</li><li>APIs</li><li>Identities</li><li>Data</li></ul><span class="svc37-input__port" aria-hidden="true"></span>
+            </article>
+            <article class="svc37-input">
+              <span class="svc37-input__index">Input 2</span><h3>Decision</h3>
+              <span class="svc37-input__icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="18" stroke="currentColor" stroke-width="2"/><path d="M32 7v11M32 46v11M7 32h11M46 32h11" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="3" fill="currentColor"/></svg>
+              </span>
+              <ul><li>Prove</li><li>Protect</li><li>Understand</li><li>Change</li></ul><span class="svc37-input__port" aria-hidden="true"></span>
+            </article>
+            <article class="svc37-input svc37-input--consequence">
+              <span class="svc37-input__index">Input 3</span><h3>Consequence</h3>
+              <span class="svc37-input__icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none"><path d="M32 8 55 49H9L32 8Z" stroke="currentColor" stroke-width="2"/><path d="M32 22v14" stroke="currentColor" stroke-width="3"/><circle cx="32" cy="43" r="2" fill="currentColor"/></svg>
+              </span>
+              <ul><li>Exposure</li><li>Fraud</li><li>Downtime</li><li>Trust</li></ul><span class="svc37-input__port" aria-hidden="true"></span>
+            </article>
+          </div>
+
+          <div class="svc37-converge" aria-hidden="true"><span class="svc37-converge__mid"></span><span class="svc37-converge__node">→</span></div>
+
+          <div class="svc37-output">
+            <div class="svc37-output__label"><span>Output</span><strong>Recommended engagement</strong></div>
+            <div class="svc37-output__services">
+              <a class="svc37-output__service" href="{{ '/services/application-api-security/' | relative_url }}"><img src="{{ '/assets/img/service-application-api-v32.svg' | relative_url }}" alt=""><strong>Application &amp;<br>API Security</strong></a>
+              <a class="svc37-output__service" href="{{ '/services/adversary-validation/' | relative_url }}"><img src="{{ '/assets/img/service-adversary-validation-v32.svg' | relative_url }}" alt=""><strong>Adversary<br>Validation</strong></a>
+              <a class="svc37-output__service" href="{{ '/services/ai-security/' | relative_url }}"><img src="{{ '/assets/img/service-ai-security-v32.svg' | relative_url }}" alt=""><strong>AI<br>Security</strong></a>
+              <a class="svc37-output__service" href="{{ '/services/secure-systems-engineering/' | relative_url }}"><img src="{{ '/assets/img/service-secure-systems-v32.svg' | relative_url }}" alt=""><strong>Secure Systems<br>Engineering</strong></a>
+            </div>
+          </div>
+        </div>
+        <div class="svc37-intake__flow" aria-hidden="true"><span>Share</span><span>Analyze</span><span>Synthesize</span><span>Recommend</span></div>
       </div>
     </div>
   </section>
