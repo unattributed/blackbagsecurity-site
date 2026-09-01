@@ -1,22 +1,7 @@
 /* Black Bag Security Proof v44/v45: AOTP operator workspace as inspectable proof.
- * Uses the original BBS AOTP dashboard capture directly in the Proof hero.
+ * The Proof hero renders the BBS-built AOTP dashboard directly.
  * Scoped to the Proof landing page only.
  */
-
-/* Technical-writing refinement: make the hero support line explain client value. */
-.page-ref-arsenal .proof43-hero .proof43-lead {
-  font-size: 0;
-  line-height: 0;
-}
-
-.page-ref-arsenal .proof43-hero .proof43-lead::after {
-  content: "Purpose-built code turns difficult security problems into provable outcomes.";
-  display: block;
-  max-width: 590px;
-  color: #c5d0ce;
-  font-size: clamp(17px,1.35vw,20px);
-  line-height: 1.55;
-}
 
 .page-ref-arsenal .proof44-ux {
   position: relative;
@@ -29,24 +14,19 @@
   overflow: hidden;
   border: 1px solid rgba(74,155,180,.34);
   border-radius: 9px;
-  background:
-    url('/assets/img/aotp-operator-workspace-dashboard-v45.webp') center center / cover no-repeat,
-    #020b13;
+  background: #020b13;
   box-shadow:
     0 20px 52px rgba(0,0,0,.28),
     0 0 0 1px rgba(255,255,255,.012) inset;
 }
 
-/* Keep the existing image element as an intrinsic-ratio spacer and accessible
- * alt-text carrier, while the approved original dashboard is painted directly
- * as the frame background. This avoids the failed embedded-SVG rendering path. */
 .page-ref-arsenal .proof44-ux__frame img {
   display: block;
   width: 100%;
   height: auto;
   aspect-ratio: 1672 / 941;
-  object-fit: cover;
-  opacity: 0;
+  object-fit: contain;
+  opacity: 1;
 }
 
 .page-ref-arsenal .proof44-ux__rail {
