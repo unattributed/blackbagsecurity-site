@@ -58,6 +58,20 @@ jobs:
           verify_blob "docs/assets/css/bbs-homepage-engagement-v30.css" "870f9a58c5de274c776335b14d0776efc194c104"
           verify_blob "docs/assets/css/bbs-homepage-institution-arrow-v31.css" "1ab30ca5bc90b24e86ed9ee248dffa3bfcc62506"
 
+          verify_blob "docs/assets/css/bbs-homepage-services-v32.css" "a2241519b87ddb80d9a96dce82d15120109da7c9"
+          verify_blob "docs/assets/img/service-application-api-v32.svg" "f187ad88b79bc43d3edc457f70e52cd689eebba0"
+          verify_blob "docs/assets/img/service-adversary-validation-v32.svg" "257a5c90127a56b98dabaeda823da59bfeb5e695"
+          verify_blob "docs/assets/img/service-ai-security-v32.svg" "b1fc2a68bd8bd3d08c9f38bf180177143d3e7e5d"
+          verify_blob "docs/assets/img/service-secure-systems-v32.svg" "a12bad05a0093184a1ddff10410367ef4dd0e389"
+
+          verify_blob "docs/assets/css/bbs-homepage-rigor-v33.css" "f602216200db742229002116fd04465c71626912"
+          verify_blob "docs/assets/img/lifecycle-authorize-v33.svg" "0365a4a43666e28b3a66afe7fee20adcd6d695f6"
+          verify_blob "docs/assets/img/lifecycle-test-v33.svg" "6cffad47e5b7cecec2da333fe1c811290759c475"
+          verify_blob "docs/assets/img/lifecycle-evidence-v33.svg" "85ea6e2808e929dadaba25d6fff91c7db7aa6410"
+          verify_blob "docs/assets/img/lifecycle-report-v33.svg" "664790d981850eb12605d226e3a79e36464abb5f"
+          verify_blob "docs/assets/img/lifecycle-remediate-v33.svg" "8539d564126ee7acf33fc9451dc0c84a692788f1"
+          verify_blob "docs/assets/img/lifecycle-retest-v33.svg" "d88167f466de455f017a9da3efbe9f663bef074d"
+
           python3 - <<'PY'
           from pathlib import Path
           import hashlib
@@ -97,12 +111,28 @@ jobs:
               "090e0daef0e98722f6da0bd47396e4dda2ac16d4a61cd70c1732ac4963f383a7",
           )
 
+          verify_section(
+              "focused services",
+              '  <section class="v24-section" aria-labelledby="focused-services">',
+              '  <section class="v24-section" aria-labelledby="same-rigor">',
+              "a0c0df4e1548194a3e9900bdc17414d27ff443d2880d15bf94091241532399d3",
+          )
+
+          verify_section(
+              "same rigor",
+              '  <section class="v24-section" aria-labelledby="same-rigor">',
+              '  <section class="v24-section" aria-labelledby="data-responsibility">',
+              "75e1387b8562331be2c0eedc9398fcba8edead878d77082733cc00c858e5b68e",
+          )
+
           required_styles = [
               "bbs-homepage-journey-v25.css",
               "bbs-homepage-institution-v26.css",
               "bbs-homepage-institution-v27.css",
               "bbs-homepage-engagement-v30.css",
               "bbs-homepage-institution-arrow-v31.css",
+              "bbs-homepage-services-v32.css",
+              "bbs-homepage-rigor-v33.css",
           ]
           for stylesheet in required_styles:
               if stylesheet not in layout:
