@@ -1,0 +1,19 @@
+/* Black Bag Security site QA finish v29
+ * Final cache-busted correction discovered during rendered-artifact review.
+ * Keeps the Trust confidentiality bridge centered after the generic linked-card
+ * flex alignment introduced by v28.
+ */
+
+.visual-site-v24 .v24-linked-card.v24-linked-card--bridge {
+  display: grid;
+  place-items: center;
+  align-content: center;
+}
+
+.visual-site-v24 .v24-linked-card.v24-linked-card--bridge strong {
+  min-height: 0;
+}
+
+.visual-site-v24 .v24-linked-card.v24-linked-card--bridge p {
+  margin-top: 6px;
+}
