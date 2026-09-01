@@ -14,7 +14,7 @@ marketing_v3: true
       <div>
         <p class="svc36-kicker">Security services</p>
         <h1 id="services-title">Start with the decision.<br><span class="svc36-accent">We shape the security work.</span></h1>
-        <p class="svc36-lead">Tell us what must be understood, proven, protected, or changed. The engagement follows the decision.</p>
+        <p class="svc36-lead">Tell us what must be understood, proven, protected, or changed. Black Bag Security turns that decision into focused testing or engineering, with evidence tied to the action the client needs to take.</p>
         <div class="svc36-actions"><a class="svc36-btn" href="{{ '/contact/#assessment' | relative_url }}">Discuss an engagement →</a></div>
       </div>
 
@@ -48,11 +48,36 @@ marketing_v3: true
     </div>
   </section>
 
+  <section class="svc37-proof" aria-labelledby="services-proof-title">
+    <div class="wrap svc37-proof__grid">
+      <div class="svc37-proof__copy">
+        <p class="svc36-kicker">Why Black Bag Security</p>
+        <h2 class="svc36-heading" id="services-proof-title">Technical depth.<br><span class="svc36-accent">Decision-ready evidence.</span></h2>
+        <p class="svc37-proof__intro">The work stays focused on the security question that matters. Testing, evidence, remediation, and verification remain connected so the client can act on what was proven.</p>
+      </div>
+
+      <div class="svc37-proof__visual" aria-label="Black Bag Security engagement proof flow">
+        <div class="svc37-proof-flow">
+          <div class="svc37-proof-node svc37-proof-node--question"><span class="svc37-proof-node__mark"><span class="svc37-proof-node__icon" aria-hidden="true"></span></span><strong>Question</strong><span>Define what must be known or proven.</span></div>
+          <div class="svc37-proof-node svc37-proof-node--test"><span class="svc37-proof-node__mark"><span class="svc37-proof-node__icon" aria-hidden="true"></span></span><strong>Test</strong><span>Follow the relevant failure path.</span></div>
+          <div class="svc37-proof-node svc37-proof-node--evidence"><span class="svc37-proof-node__mark"><span class="svc37-proof-node__icon" aria-hidden="true"></span></span><strong>Evidence</strong><span>Preserve the proof behind the conclusion.</span></div>
+          <div class="svc37-proof-node svc37-proof-node--decision"><span class="svc37-proof-node__mark"><span class="svc37-proof-node__icon" aria-hidden="true"></span></span><strong>Decision</strong><span>Show what must change and why.</span></div>
+        </div>
+        <div class="svc37-proof-standards" aria-label="Black Bag Security engagement standards">
+          <div class="svc37-proof-standard">Principal-led</div>
+          <div class="svc37-proof-standard">Evidence-first</div>
+          <div class="svc37-proof-standard">Remediation-ready</div>
+          <div class="svc37-proof-standard">Verification-ready</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="svc36-section svc36-section--services" aria-labelledby="service-lines-title">
     <div class="wrap">
       <div class="svc36-section-head">
-        <div><p class="svc36-kicker">What you can engage</p><h2 class="svc36-heading" id="service-lines-title">Four services.<br><span class="svc36-accent">Different jobs.</span></h2></div>
-        <p class="svc36-section-intro">Each service answers a different security question. Choose the problem first, then the testing or engineering technique.</p>
+        <div><p class="svc36-kicker">What you can engage</p><h2 class="svc36-heading" id="service-lines-title">Four services.<br><span class="svc36-accent">Four security decisions.</span></h2></div>
+        <p class="svc36-section-intro">Choose the problem first. Black Bag Security selects the testing, research, or engineering technique needed to answer it.</p>
       </div>
 
       <div class="svc36-service-list">
@@ -72,7 +97,7 @@ marketing_v3: true
           <div class="svc36-service-diagram" aria-hidden="true"><span class="svc36-service-diagram__art"></span></div>
           <div class="svc36-service-copy">
             <span class="svc36-service-number">02 / Adversary Validation</span>
-            <h3>Test whether the defenses stop the outcome that matters.</h3>
+            <h3>Prove whether the defenses stop the outcome that matters.</h3>
             <p class="svc36-question">Will preventive, detective, and response controls hold against a realistic attack path?</p>
             <div class="svc36-capabilities" aria-label="Adversary validation focus areas"><span>Attack path</span><span>Prevention</span><span>Detection</span><span>Response</span><span>Control gaps</span></div>
             <p class="svc36-service-outcome"><strong>Client outcome</strong><br>What held, what failed, and where the defensive chain needs reinforcement.</p>
@@ -84,7 +109,7 @@ marketing_v3: true
           <div class="svc36-service-diagram" aria-hidden="true"><span class="svc36-service-diagram__art"></span></div>
           <div class="svc36-service-copy">
             <span class="svc36-service-number">03 / AI Security</span>
-            <h3>Constrain what models, tools, and agents are allowed to do.</h3>
+            <h3>Test what models, tools, and agents can be made to do.</h3>
             <p class="svc36-question">Can prompts, browser state, data, tools, or agent authority be manipulated beyond intended limits?</p>
             <div class="svc36-capabilities" aria-label="AI security focus areas"><span>Models</span><span>Browser state</span><span>Tools</span><span>Data</span><span>Agents</span></div>
             <p class="svc36-service-outcome"><strong>Client outcome</strong><br>Unsafe authority paths, trust-boundary failures, and the controls needed to contain them.</p>
@@ -110,8 +135,8 @@ marketing_v3: true
   <section class="svc36-section svc36-section--shape" aria-labelledby="engagement-shape-title">
     <div class="wrap">
       <div class="svc36-section-head">
-        <div><p class="svc36-kicker">How the work can be shaped</p><h2 class="svc36-heading" id="engagement-shape-title">Use the structure that <span class="svc36-accent">fits the problem.</span></h2></div>
-        <p class="svc36-section-intro">The engagement model should match how much is already known, how constrained the path must be, and whether the answer requires testing, engineering, or both.</p>
+        <div><p class="svc36-kicker">How the work can be shaped</p><h2 class="svc36-heading" id="engagement-shape-title">Buy the answer in the shape that <span class="svc36-accent">fits the problem.</span></h2></div>
+        <p class="svc36-section-intro">The engagement model matches how much is already known, how constrained the path must be, and whether the answer requires testing, engineering, or both.</p>
       </div>
 
       <div class="svc36-shapes">
@@ -126,7 +151,8 @@ marketing_v3: true
     <div class="wrap svc36-close__grid">
       <div>
         <p class="svc36-kicker">Start with the decision</p>
-        <h2 class="svc36-heading" id="services-close-title">Bring the outcome.<br><span class="svc36-accent">We’ll recommend the engagement.</span></h2>
+        <h2 class="svc36-heading" id="services-close-title">Bring the system.<br><span class="svc36-accent">The decision. The consequence.</span></h2>
+        <p class="svc37-close-intro">You do not need to name the test. Tell us what is at stake, what you need to know, and what cannot go wrong. We will recommend the engagement.</p>
         <div class="svc36-actions"><a class="svc36-btn" href="{{ '/contact/#assessment' | relative_url }}">Start the conversation →</a></div>
       </div>
       <div class="svc36-close-card" aria-label="Three inputs to start a security engagement">
