@@ -54,14 +54,60 @@ The approved delivery connector is a single arrow only. Decorative parallel line
 - `docs/assets/css/bbs-homepage-engagement-v30.css`, which contains the final institutional tier-centering correction
 - `docs/assets/css/bbs-homepage-institution-arrow-v31.css`, which enforces the approved single-arrow connector
 
+## Approved production section 3
+
+### Focused services. Measurable impact.
+
+Status: **APPROVED / LOCKED**
+
+Approved development rendering: GitHub Pages development deployment `#91`.
+
+The approved service map uses four restrained technical diagrams rather than explanatory text blocks. The visible service names and `Explore →` links are centered. The four approved service visuals are Application & API Security, Adversary Validation, AI Security, and Secure Systems Engineering.
+
+### Approved service visual assets
+
+- `docs/assets/css/bbs-homepage-services-v32.css`
+- `docs/assets/img/service-application-api-v32.svg`
+- `docs/assets/img/service-adversary-validation-v32.svg`
+- `docs/assets/img/service-ai-security-v32.svg`
+- `docs/assets/img/service-secure-systems-v32.svg`
+
+## Approved production section 4
+
+### Every engagement. Same rigor.
+
+Status: **APPROVED / LOCKED**
+
+Approved source baseline: `4ce351fa79aa4d580cc5632098bcc312f446c69d`.
+
+The approved engagement-lifecycle treatment keeps the six stages Authorize, Test, Evidence, Report, Remediate, and Retest, but removes the descriptive stage copy from the visible composition. The graphic is primarily communicated through purpose-built line icons, numbered stages, a connected control path, and the closing assurance `CONSISTENT METHOD • REVIEWABLE PROOF • VERIFIED OUTCOME`.
+
+### Approved lifecycle visual assets
+
+- `docs/assets/css/bbs-homepage-rigor-v33.css`
+- `docs/assets/img/lifecycle-authorize-v33.svg`
+- `docs/assets/img/lifecycle-test-v33.svg`
+- `docs/assets/img/lifecycle-evidence-v33.svg`
+- `docs/assets/img/lifecycle-report-v33.svg`
+- `docs/assets/img/lifecycle-remediate-v33.svg`
+- `docs/assets/img/lifecycle-retest-v33.svg`
+
+## Current section under review
+
+### Your data. Our responsibility.
+
+The current development treatment is approved in direction but remains open for rendered review before it is added to the production lock. The client-facing copy is `Minimum exposure. Controlled handling. Reviewable delivery.` and the visual presents Authorize, Collect, Preserve, Sanitize, and Deliver as a controlled handling path.
+
 ## Enforcement
 
-`.github/workflows/homepage-lock.yml` is now a progressive section lock rather than a whole-page file lock.
+`.github/workflows/homepage-lock.yml` is a progressive section lock rather than a whole-page file lock.
 
 It verifies:
 
 - the exact approved hero markup by SHA-256;
 - the exact approved institutional-section markup by SHA-256;
+- the exact approved Focused services markup by SHA-256;
+- the exact approved Every engagement markup by SHA-256;
 - the Git blob identities of the dedicated approved visual assets;
 - that the required approved stylesheets remain loaded by the homepage layout.
 
@@ -69,6 +115,6 @@ This lets development continue on unapproved homepage sections without permittin
 
 ## Operating rule
 
-Do not change either approved section during further development work. If a future request would alter one of these sections, stop and require explicit site-owner approval to reopen that specific section before making the change.
+Do not change any approved section during further development work. If a future request would alter one of these sections, stop and require explicit site-owner approval to reopen that specific section before making the change.
 
 Production remains unchanged until the remaining development review is complete and the approved development version is intentionally promoted.
