@@ -2,12 +2,12 @@
 
 Status: **LOCKED / APPROVED**
 
-The site owner explicitly approved the infographic-led homepage and instructed that the main page must not change unless a specific section is explicitly reopened. On 2026-09-01, the site owner reopened only the institutional-delivery graphic, approved the stronger visual direction, changed the governing role from `PRINCIPAL` to `FOUNDER`, and instructed that the approved concept be implemented on dev.
+The site owner explicitly approved the infographic-led homepage and instructed that the main page must not change unless a specific section is explicitly reopened. On 2026-09-01, the site owner reopened only the institutional-delivery graphic, approved the stronger visual direction, changed the governing role from `PRINCIPAL` to `FOUNDER`, and then requested a compact geometry correction because the first implementation was too large and improperly aligned.
 
 ## Current approved design source
 
-- Approved homepage site source after institutional-delivery refinement: `e67a78971964ec0a8ac04bb3fb2f0cac6fcc6612`
-- Approved development deployment containing the refinement: GitHub Pages run `83`
+- Approved homepage site source after compact institutional geometry correction: `023ae8aacd18d0c3ccc29672aff6892e53d884bb`
+- Approved development deployment containing the compact correction: GitHub Pages run `84`
 - Development URL: `https://dev.blackbagsecurity.com/`
 - Homepage purpose: client acquisition, executive confidence, clear service positioning, institutional delivery discipline, evidence-backed security work, engineering depth, and a direct path to engagement
 
@@ -19,7 +19,7 @@ The homepage hero `From uncertainty to verified outcome` graphic uses the locked
 
 ## Approved founder-led institutional-delivery refinement
 
-The institutional-delivery section is now governed by the following visual and message hierarchy:
+The institutional-delivery section uses the following visual and message hierarchy:
 
 1. `FOUNDER` sets the standard, defines policy, and leads by example.
 2. `POLICY & STANDARDS` governs methodology, tools, quality, ethics, and security.
@@ -29,7 +29,24 @@ The institutional-delivery section is now governed by the following visual and m
 
 The accompanying copy is `Founder-led. Policy-driven. Process enforced.`
 
-The approved implementation uses semantic HTML and purpose-built inline SVG iconography rather than a raster screenshot. The homepage-only `bbs-homepage-institution-v26.css` layer provides the stronger hierarchy, explicit control distribution, richer function cards, and differentiated client-outcome endpoint. The actual Pages artifact from run `83` was rendered at desktop size and visually inspected before relocking.
+The approved implementation uses semantic HTML and purpose-built inline SVG iconography rather than a raster screenshot. The homepage-only `bbs-homepage-institution-v26.css` layer supplies the richer visual language and the v27 layer corrects its geometry.
+
+### Approved compact geometry correction
+
+The `bbs-homepage-institution-v27.css` layer makes only presentation corrections to the founder-led institutional model:
+
+- constrains the graphic to a smaller right-column footprint instead of allowing it to dominate the section;
+- reduces overall height and internal padding;
+- aligns the Founder and Policy & Standards tiers to the same width and frame;
+- reduces tier icon and text scale while preserving hierarchy;
+- shortens all five operating-function cards and aligns their typography to a common baseline;
+- centers the horizontal distribution line and each vertical connector on the five function cards;
+- reduces connector-dot and stem weight;
+- gives Uniform Delivery of Excellence and Client Outcomes equal visual weight in the final row;
+- reduces the gap and arrow scale between delivery and outcome;
+- retains responsive stacking for tablet and mobile layouts.
+
+The complete Jekyll build, development hardening, artifact validation, artifact upload, and Pages deployment passed in development run `84`. The generated Pages artifact includes the v27 stylesheet and the updated homepage layout reference.
 
 No other homepage section, service positioning, section order, or copy was reopened by this change.
 
@@ -65,6 +82,7 @@ The homepage lock workflow verifies the Git blob identity of the files that dire
 - `docs/assets/css/bbs-infographic-site-v24.css`
 - `docs/assets/css/bbs-homepage-journey-v25.css`
 - `docs/assets/css/bbs-homepage-institution-v26.css`
+- `docs/assets/css/bbs-homepage-institution-v27.css`
 - `docs/assets/js/app.js`
 
 The lock workflow runs on the active `feature/client-acquisition-visual-redesign` branch as well as the existing protected design branches and `main`.
