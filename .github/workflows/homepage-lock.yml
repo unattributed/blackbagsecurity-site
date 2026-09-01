@@ -53,7 +53,7 @@ jobs:
           }
 
           verify_blob "docs/index.html" "fb3f021da99005ab3a82645ebc454381b0cfb5e9"
-          verify_blob "docs/_layouts/home-v2.html" "b63d8c875fa417ec5ad2c116d6777aa7d79a91f0"
+          verify_blob "docs/_layouts/home-v2.html" "84dfc6f0b646b86b6f70ae03132c89a2a0a4cd03"
           verify_blob "docs/assets/css/homepage-v2.css" "212b41c3620e61d4faff97199085919429a4e89c"
           verify_blob "docs/assets/css/homepage-v2-polish.css" "067a8eaf77d4cc34ec639b7d5c092ebc7e07a965"
           verify_blob "docs/assets/css/homepage-v2-depth.css" "98ddf5556de5b9b99cfbe1845817c80599fa07a2"
@@ -69,6 +69,7 @@ jobs:
           verify_blob "docs/assets/css/bbs-homepage-journey-v25.css" "6cca7c8bd4a2e352f053e7514cbdf21864d37b54"
           verify_blob "docs/assets/css/bbs-homepage-institution-v26.css" "6bfb995dfd57ee6fcec22f506921768c7821ed09"
           verify_blob "docs/assets/css/bbs-homepage-institution-v27.css" "3214b3e067508d19443b3f70550a04ea215fc2a8"
+          verify_blob "docs/assets/css/bbs-site-qa-v28.css" "5ae8a56c0aa92e5306b7b02c18734c049ebf0dfd"
           verify_blob "docs/assets/js/app.js" "c01a2ac6743114bb4ca384be43c165efb66d977a"
 
           echo "PASS: approved homepage baseline is intact"

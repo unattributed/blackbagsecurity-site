@@ -80,7 +80,7 @@ marketing_v3: true
       </div>
       <div class="v24-canvas" aria-label="Three audiences for engagement evidence">
         <span class="v24-canvas__label">One body of evidence, three readers</span>
-        <div class="v24-linked-grid" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+        <div class="v24-linked-grid v24-linked-grid--3">
           <article class="v24-linked-card"><div class="v24-linked-card__icon">▰</div><strong>Leadership</strong><p>Material risk, affected business outcome, limitations, priorities, and what needs attention next.</p></article>
           <article class="v24-linked-card"><div class="v24-linked-card__icon">⚒</div><strong>Engineering &amp; Security</strong><p>Conditions, evidence, attack path, root cause, remediation direction, and retest context.</p></article>
           <article class="v24-linked-card"><div class="v24-linked-card__icon">✓</div><strong>Assurance</strong><p>What was tested, what was established, what was blocked, and what remains unverified.</p></article>
@@ -98,7 +98,7 @@ marketing_v3: true
       </div>
       <div class="v24-canvas" aria-label="Engagement models">
         <span class="v24-canvas__label">Three ways to shape the work</span>
-        <div class="v24-linked-grid" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+        <div class="v24-linked-grid v24-linked-grid--3">
           <article class="v24-linked-card"><div class="v24-linked-card__icon">□</div><strong>Fixed scope</strong><p>Known targets, known objective, defined time-box and output.</p></article>
           <article class="v24-linked-card"><div class="v24-linked-card__icon">◎</div><strong>Objective-led</strong><p>Follow the evidence within agreed boundaries when the outcome matters more than prescribing the route.</p></article>
           <article class="v24-linked-card"><div class="v24-linked-card__icon">⚙</div><strong>Engineering / research sprint</strong><p>Architecture, hardening, reverse engineering, validation tooling, or controlled proof-of-concept work.</p></article>

@@ -20,9 +20,9 @@ marketing_v3: true
       <div class="v24-canvas" aria-label="Black Bag methodology governance model">
         <span class="v24-canvas__label">How the standard becomes delivery</span>
         <div class="v24-institution">
-          <div class="v24-institution__principal"><strong>Principal</strong><span>Sets the standard, defines policy, and establishes operating expectations.</span></div>
+          <div class="v24-institution__principal"><strong>Founder</strong><span>Sets the standard, defines policy, and establishes operating expectations.</span></div>
           <div class="v24-institution__policy"><strong>Black Bag methodology</strong><span>Policy · Process · TTPs · Quality · Ethics · Security</span></div>
-          <div class="v24-institution__functions" style="grid-template-columns:repeat(4,minmax(0,1fr))">
+          <div class="v24-institution__functions v24-institution__functions--4">
             <div class="v24-function"><span class="v24-function__icon">▣</span><strong>Scope &amp; authority</strong><span>What may be tested, where, when, and under which restrictions.</span></div>
             <div class="v24-function"><span class="v24-function__icon">◎</span><strong>Material judgment</strong><span>What the evidence supports and how the conclusion is stated.</span></div>
             <div class="v24-function"><span class="v24-function__icon">▰</span><strong>Confidentiality</strong><span>How client IP, credentials, data, and evidence are protected.</span></div>
@@ -58,7 +58,7 @@ marketing_v3: true
   <section class="v24-section" aria-labelledby="communication-title">
     <div class="wrap v24-section__grid">
       <div class="v24-copy"><p class="v24-kicker">Continuous communication</p><h2 class="v24-title" id="communication-title">No disappearing into <span class="v24-accent">a black box.</span></h2><p>Client communication is generated from the current evidence-backed engagement state, so progress, blockers, findings, limits, and next work remain consistent with what testing has actually established.</p></div>
-      <div class="v24-canvas" aria-label="Communication cadence"><span class="v24-canvas__label">Engagement communication</span><div class="v24-linked-grid" style="grid-template-columns:repeat(3,minmax(0,1fr))"><article class="v24-linked-card"><div class="v24-linked-card__icon">01</div><strong>Before testing</strong><p>Objectives · scope · access · responsibilities · cadence · escalation</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">02</div><strong>During testing</strong><p>Progress · blockers · scope questions · material observations · next objectives</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">03</div><strong>At closeout</strong><p>Findings · limits · residual risk · evidence state · retest status</p></article></div></div>
+      <div class="v24-canvas" aria-label="Communication cadence"><span class="v24-canvas__label">Engagement communication</span><div class="v24-linked-grid v24-linked-grid--3"><article class="v24-linked-card"><div class="v24-linked-card__icon">01</div><strong>Before testing</strong><p>Objectives · scope · access · responsibilities · cadence · escalation</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">02</div><strong>During testing</strong><p>Progress · blockers · scope questions · material observations · next objectives</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">03</div><strong>At closeout</strong><p>Findings · limits · residual risk · evidence state · retest status</p></article></div></div>
     </div>
   </section>
 
