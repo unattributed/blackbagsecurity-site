@@ -1,6 +1,6 @@
 /* Black Bag Security Proof hero v47.
- * Matches the approved mockup: one inspectable AOTP dashboard graphic,
- * no duplicate shell, no secondary rail, concise client-value copy.
+ * Matches the approved mockup: one AOTP dashboard inside the established
+ * Proof visual shell, with concise client-value copy.
  */
 
 .page-ref-arsenal .proof43-hero .proof43-lead {
@@ -19,33 +19,21 @@
   line-height: 1.55;
 }
 
-.page-ref-arsenal .proof43-hero .proof43-visual {
-  overflow: visible;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
-}
-
-.page-ref-arsenal .proof43-hero .proof43-visual::before,
-.page-ref-arsenal .proof43-hero .proof43-visual__topline,
-.page-ref-arsenal .proof43-hero .proof44-ux__rail {
-  display: none;
-}
-
 .page-ref-arsenal .proof43-hero .proof44-ux {
   position: relative;
   z-index: 2;
-  padding: 0;
+  padding: 14px 14px 0;
 }
 
 .page-ref-arsenal .proof43-hero .proof44-ux__frame {
   position: relative;
-  overflow: visible;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
+  overflow: hidden;
+  border: 1px solid rgba(74,155,180,.34);
+  border-radius: 9px;
+  background: #020b13;
+  box-shadow:
+    0 20px 52px rgba(0,0,0,.28),
+    0 0 0 1px rgba(255,255,255,.012) inset;
 }
 
 .page-ref-arsenal .proof43-hero .proof44-ux__frame img {
@@ -53,14 +41,48 @@
   width: 100%;
   height: auto;
   max-width: none;
-  aspect-ratio: auto;
-  object-fit: contain;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   opacity: 1;
   filter: none;
+}
+
+.page-ref-arsenal .proof43-hero .proof44-ux__rail {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  margin: 14px 0 14px;
+  border: 1px solid rgba(74,155,180,.28);
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(2,11,18,.66);
+}
+
+.page-ref-arsenal .proof43-hero .proof44-ux__rail span {
+  padding: 12px 8px;
+  color: #84ced7;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-ref-arsenal .proof43-hero .proof44-ux__rail span:nth-child(even) {
+  color: #b9dc76;
+}
+
+.page-ref-arsenal .proof43-hero .proof44-ux__rail span + span {
+  border-left: 1px solid rgba(74,155,180,.14);
 }
 
 @media (max-width: 760px) {
   .page-ref-arsenal .proof43-hero .proof43-lead::after {
     font-size: 16px;
+  }
+  .page-ref-arsenal .proof43-hero .proof44-ux {
+    padding: 10px 10px 0;
+  }
+  .page-ref-arsenal .proof43-hero .proof44-ux__rail {
+    grid-template-columns: repeat(2,minmax(0,1fr));
   }
 }
