@@ -1,103 +1,74 @@
-# Homepage approved lock baseline
+# Homepage approved production sections
 
-Status: **LOCKED / APPROVED**
+Status: **PARTIALLY LOCKED / APPROVED FOR PRODUCTION**
 
-The site owner explicitly approved the infographic-led homepage and instructed that the main page must not change unless a specific section is explicitly reopened. On 2026-09-01, the site owner reopened only the institutional-delivery graphic, approved the stronger visual direction, changed the governing role from `PRINCIPAL` to `FOUNDER`, and then requested a compact geometry correction because the first implementation was too large and improperly aligned.
+The homepage is being approved progressively, section by section. Approved sections are immutable unless the site owner explicitly reopens that specific section. Unapproved homepage sections remain available for development review.
 
-## Current approved design source
+## Approved production section 1
 
-- Approved homepage site source after compact institutional geometry correction: `023ae8aacd18d0c3ccc29672aff6892e53d884bb`
-- Approved development deployment containing the compact correction: GitHub Pages run `84`
-- Development URL: `https://dev.blackbagsecurity.com/`
-- Homepage purpose: client acquisition, executive confidence, clear service positioning, institutional delivery discipline, evidence-backed security work, engineering depth, and a direct path to engagement
+### Security testing and engineering for high-consequence systems.
 
-The approved homepage uses the infographic-led visual model established during the 2026-08-31 redesign. Each major section combines concise client-facing copy with a specific explanatory visual.
+Status: **APPROVED / LOCKED**
 
-## Approved journey rendering correction
+The approved hero includes:
 
-The homepage hero `From uncertainty to verified outcome` graphic uses the locked `bbs-homepage-journey-v25.css` treatment. It keeps the five stages balanced, makes the luminous path span the full progression, protects text clearance, and uses a separate stacked mobile treatment.
+- `Security testing and engineering for high-consequence systems.`
+- `Fewer surprises. Stronger systems. Evidence you can trust.`
+- the `From uncertainty to verified outcome` journey graphic;
+- the current five-stage journey from Question through Close;
+- the current responsive rendering supplied by `bbs-homepage-journey-v25.css`.
 
-## Approved founder-led institutional-delivery refinement
+This section must not be rewritten, reordered, restyled, or visually altered without explicit site-owner approval to reopen the hero.
 
-The institutional-delivery section uses the following visual and message hierarchy:
+## Approved production section 2
 
-1. `FOUNDER` sets the standard, defines policy, and leads by example.
-2. `POLICY & STANDARDS` governs methodology, tools, quality, ethics, and security.
-3. Policy distributes through Operations, Assessors, Quality Assurance, Security, and Knowledge.
-4. Those functions produce `UNIFORM DELIVERY OF EXCELLENCE`.
-5. Delivery resolves into `CLIENT OUTCOMES`, consistent results and stronger security.
+### Institutional excellence. Smaller practice. Stronger control.
 
-The accompanying copy is `Founder-led. Policy-driven. Process enforced.`
+Status: **APPROVED / LOCKED**
 
-The approved implementation uses semantic HTML and purpose-built inline SVG iconography rather than a raster screenshot. The homepage-only `bbs-homepage-institution-v26.css` layer supplies the richer visual language and the v27 layer corrects its geometry.
+Approved development rendering: GitHub Pages development deployment `#89`.
 
-### Approved compact geometry correction
+Approved source baseline: `414ec875b3e151bfeee0d803ece42b018565c4d5`.
 
-The `bbs-homepage-institution-v27.css` layer makes only presentation corrections to the founder-led institutional model:
+The approved institutional section includes the complete current message and visual hierarchy:
 
-- constrains the graphic to a smaller right-column footprint instead of allowing it to dominate the section;
-- reduces overall height and internal padding;
-- aligns the Founder and Policy & Standards tiers to the same width and frame;
-- reduces tier icon and text scale while preserving hierarchy;
-- shortens all five operating-function cards and aligns their typography to a common baseline;
-- centers the horizontal distribution line and each vertical connector on the five function cards;
-- reduces connector-dot and stem weight;
-- gives Uniform Delivery of Excellence and Client Outcomes equal visual weight in the final row;
-- reduces the gap and arrow scale between delivery and outcome;
-- retains responsive stacking for tablet and mobile layouts.
+1. `Institutional excellence. Smaller practice. Stronger control.`
+2. `Founder-led. Policy-driven. Process enforced.`
+3. `Uniform delivery. Consistent standards. Reviewable outcomes.`
+4. `FOUNDER`, centered on the full institutional band.
+5. `Sets the standard. Defines the policy. Leads by example.`
+6. `POLICY & STANDARDS`, centered on the full institutional band.
+7. `Methodology · Tools · Quality · Ethics · Security`.
+8. Operations, Assessors, Quality Assurance, Security, and Knowledge as the five governed operating functions.
+9. `UNIFORM DELIVERY OF EXCELLENCE` resolving through a single clean arrow to `CLIENT OUTCOMES`.
+10. `Consistent results. Stronger security.`
 
-The complete Jekyll build, development hardening, artifact validation, artifact upload, and Pages deployment passed in development run `84`. The generated Pages artifact includes the v27 stylesheet and the updated homepage layout reference.
+The approved Founder and Policy text blocks are centered against the full width of their bands. Their icons remain independent left-side anchors and do not affect text centering.
 
-No other homepage section, service positioning, section order, or copy was reopened by this change.
+The approved delivery connector is a single arrow only. Decorative parallel lines or multi-line connector treatments are not approved.
 
-## Locked homepage composition
+### Approved institutional visual assets
 
-The approved homepage contains these major visual stories and they are not to be redesigned, rewritten, reordered, or restyled without explicit site-owner approval:
-
-1. Security testing and engineering for high-consequence systems, with the uncertainty-to-verified-outcome journey.
-2. Institutional excellence, smaller practice, stronger control, with the founder-led Black Bag institutional delivery model.
-3. Focused services, measurable impact, with the four-service visual map.
-4. Every engagement, same rigor, with the engagement lifecycle graphic.
-5. Your data, our responsibility, with the controlled evidence-handling chain.
-6. Real systems, real results, using Black Bag's actual engineering work as proof of capability.
-7. End with clarity, build with confidence, with the client engagement-intake flow.
-
-## Repository enforcement
-
-The homepage lock workflow verifies the Git blob identity of the files that directly define the approved homepage and its current visual system:
-
-- `docs/index.html`
-- `docs/_layouts/home-v2.html`
-- `docs/assets/css/homepage-v2.css`
-- `docs/assets/css/homepage-v2-polish.css`
-- `docs/assets/css/homepage-v2-depth.css`
-- `docs/assets/css/homepage-v2-silhouette.css`
-- `docs/assets/css/homepage-v2-refine.css`
-- `docs/assets/css/bbs-winning-v10.css`
-- `docs/assets/css/bbs-homepage-refinement-v12.css`
-- `docs/assets/css/bbs-homepage-proof-v16.css`
-- `docs/assets/css/bbs-homepage-practice-v21.css`
-- `docs/assets/css/bbs-client-acquisition-v22.css`
-- `docs/assets/css/bbs-visual-story-v23.css`
-- `docs/assets/css/bbs-infographic-site-v24.css`
-- `docs/assets/css/bbs-homepage-journey-v25.css`
 - `docs/assets/css/bbs-homepage-institution-v26.css`
 - `docs/assets/css/bbs-homepage-institution-v27.css`
-- `docs/assets/js/app.js`
+- `docs/assets/css/bbs-homepage-engagement-v30.css`, which contains the final institutional tier-centering correction
+- `docs/assets/css/bbs-homepage-institution-arrow-v31.css`, which enforces the approved single-arrow connector
 
-The lock workflow runs on the active `feature/client-acquisition-visual-redesign` branch as well as the existing protected design branches and `main`.
+## Enforcement
 
-## Operating rule for future site work
+`.github/workflows/homepage-lock.yml` is now a progressive section lock rather than a whole-page file lock.
 
-The homepage is immutable unless the site owner explicitly reopens a specific homepage section. Future Services, Methodology, Trust, About, Contact, Industries, On-site, Policies, service-detail, or Arsenal work must be implemented without changing the locked homepage baseline. Page-specific or non-home styling should be used instead of modifying locked shared layers.
+It verifies:
 
-## Unlock procedure
+- the exact approved hero markup by SHA-256;
+- the exact approved institutional-section markup by SHA-256;
+- the Git blob identities of the dedicated approved visual assets;
+- that the required approved stylesheets remain loaded by the homepage layout.
 
-1. Obtain explicit site-owner approval to reopen a specific homepage section.
-2. Make only the approved homepage change.
-3. Render and review the change at normal browser zoom on the development site.
-4. Obtain explicit approval of the revised section.
-5. Update the expected blob hashes in `.github/workflows/homepage-lock.yml` and this approval record.
-6. Confirm the homepage lock workflow passes before treating the new version as approved.
+This lets development continue on unapproved homepage sections without permitting drift in sections already approved for production.
 
-No implicit homepage redesign, copy drift, visual restyling, section reordering, or shared-style change that alters the homepage is authorized.
+## Operating rule
+
+Do not change either approved section during further development work. If a future request would alter one of these sections, stop and require explicit site-owner approval to reopen that specific section before making the change.
+
+Production remains unchanged until the remaining development review is complete and the approved development version is intentionally promoted.
