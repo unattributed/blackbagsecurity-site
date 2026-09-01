@@ -72,6 +72,12 @@ jobs:
           verify_blob "docs/assets/img/lifecycle-remediate-v33.svg" "8539d564126ee7acf33fc9451dc0c84a692788f1"
           verify_blob "docs/assets/img/lifecycle-retest-v33.svg" "d88167f466de455f017a9da3efbe9f663bef074d"
 
+          verify_blob "docs/assets/css/bbs-homepage-data-v34.css" "d60d8efcc1ef395d97d1fa8baa8b7cd3be008ec6"
+          verify_blob "docs/assets/img/data-collect-v34.svg" "e978ef015821d29eecca78e22f96d6f5003e4e3f"
+          verify_blob "docs/assets/img/data-preserve-v34.svg" "e600b46336775aad324a699ba9f04f509fa105c4"
+          verify_blob "docs/assets/img/data-sanitize-v34.svg" "23626a54956006e2c4c78d25e66244c9a5df5864"
+          verify_blob "docs/assets/img/data-deliver-v34.svg" "41b58ff39edcb409a1ceb8f3afc5bb789d844a7c"
+
           python3 - <<'PY'
           from pathlib import Path
           import hashlib
@@ -125,6 +131,13 @@ jobs:
               "75e1387b8562331be2c0eedc9398fcba8edead878d77082733cc00c858e5b68e",
           )
 
+          verify_section(
+              "data responsibility",
+              '  <section class="v24-section" aria-labelledby="data-responsibility">',
+              '  <section class="v24-section" aria-labelledby="engineering-proof">',
+              "4944f2e191c0978bb9d1d3d02fb5390e3a8b52fd5fea7e903f22073c2787ebe4",
+          )
+
           required_styles = [
               "bbs-homepage-journey-v25.css",
               "bbs-homepage-institution-v26.css",
@@ -133,6 +146,7 @@ jobs:
               "bbs-homepage-institution-arrow-v31.css",
               "bbs-homepage-services-v32.css",
               "bbs-homepage-rigor-v33.css",
+              "bbs-homepage-data-v34.css",
           ]
           for stylesheet in required_styles:
               if stylesheet not in layout:
