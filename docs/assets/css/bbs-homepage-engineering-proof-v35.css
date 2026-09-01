@@ -1,0 +1,194 @@
+/* Homepage engineering proof visual v35.
+ * Approved treatment for "Real systems. Inspectable engineering."
+ * Replaces project-summary cards with a compact capability platform that
+ * communicates engineering depth visually while keeping client work private.
+ */
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-copy > p:not(.v24-kicker) {
+  max-width: 390px;
+  color: #d6dfdc;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-canvas {
+  padding: 24px 24px 20px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 48% 70%, rgba(36,204,232,.06), transparent 36%),
+    radial-gradient(circle at 78% 72%, rgba(157,244,0,.045), transparent 28%),
+    linear-gradient(180deg, rgba(6,20,30,.98), rgba(3,13,21,.99));
+}
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-canvas::after {
+  content: "";
+  position: absolute;
+  inset: 17px;
+  opacity: .22;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(36,204,232,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(36,204,232,.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(180deg, rgba(0,0,0,.7), transparent 92%);
+}
+
+.visual-site-v24.page-ref-home .v35-proof-platform {
+  position: relative;
+  z-index: 2;
+}
+
+.visual-site-v24.page-ref-home .v35-capabilities {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  padding: 6px 0 18px;
+}
+
+.visual-site-v24.page-ref-home .v35-capability {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 210px;
+  padding: 14px 8px 13px;
+  border: 1px solid rgba(74,155,180,.28);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(7,22,32,.94), rgba(3,13,21,.96));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.02),
+    0 9px 22px rgba(0,0,0,.14);
+  text-align: center;
+}
+
+.visual-site-v24.page-ref-home .v35-capability:nth-child(2),
+.visual-site-v24.page-ref-home .v35-capability:nth-child(4) {
+  border-color: rgba(157,244,0,.28);
+}
+
+.visual-site-v24.page-ref-home .v35-capability__icon {
+  width: 100%;
+  height: 138px;
+  margin-bottom: 6px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.visual-site-v24.page-ref-home .v35-capability:nth-child(1) .v35-capability__icon { background-image: url('/assets/img/proof-code-automation-v35.svg'); }
+.visual-site-v24.page-ref-home .v35-capability:nth-child(2) .v35-capability__icon { background-image: url('/assets/img/proof-testing-research-v35.svg'); }
+.visual-site-v24.page-ref-home .v35-capability:nth-child(3) .v35-capability__icon { background-image: url('/assets/img/proof-defense-engineering-v35.svg'); }
+.visual-site-v24.page-ref-home .v35-capability:nth-child(4) .v35-capability__icon { background-image: url('/assets/img/proof-infrastructure-security-v35.svg'); }
+.visual-site-v24.page-ref-home .v35-capability:nth-child(5) .v35-capability__icon { background-image: url('/assets/img/proof-reporting-evidence-v35.svg'); }
+
+.visual-site-v24.page-ref-home .v35-capability strong {
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4f7f5;
+  font-size: 10.5px;
+  line-height: 1.28;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.visual-site-v24.page-ref-home .v35-platform-base {
+  position: relative;
+  height: 40px;
+  margin: -1px 4% 12px;
+  border: 1px solid rgba(36,204,232,.26);
+  border-top-color: rgba(157,244,0,.42);
+  border-radius: 8px 8px 18px 18px;
+  background:
+    linear-gradient(180deg, rgba(14,36,46,.9), rgba(3,13,21,.98));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.025),
+    0 12px 28px rgba(0,0,0,.18);
+}
+
+.visual-site-v24.page-ref-home .v35-platform-base::before {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 9px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(36,204,232,.12), rgba(157,244,0,.65), rgba(36,204,232,.12));
+  box-shadow: 0 0 10px rgba(157,244,0,.18);
+}
+
+.visual-site-v24.page-ref-home .v35-assurance {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  border: 1px solid rgba(74,155,180,.32);
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(5,17,25,.78);
+}
+
+.visual-site-v24.page-ref-home .v35-assurance span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 9px 10px;
+  color: #c7d2d0;
+  font-size: 8.8px;
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: .09em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.visual-site-v24.page-ref-home .v35-assurance span + span {
+  border-left: 1px solid rgba(74,155,180,.22);
+}
+
+.visual-site-v24.page-ref-home .v35-assurance span:nth-child(2),
+.visual-site-v24.page-ref-home .v35-assurance span:nth-child(4) {
+  color: #d9f6a8;
+}
+
+@media (min-width: 901px) and (max-width: 1120px) {
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-canvas {
+    padding: 20px 18px 18px;
+  }
+  .visual-site-v24.page-ref-home .v35-capabilities { gap: 7px; }
+  .visual-site-v24.page-ref-home .v35-capability { min-height: 182px; padding-inline: 5px; }
+  .visual-site-v24.page-ref-home .v35-capability__icon { height: 112px; }
+  .visual-site-v24.page-ref-home .v35-capability strong { font-size: 9.2px; }
+  .visual-site-v24.page-ref-home .v35-assurance span { font-size: 8px; padding-inline: 6px; }
+}
+
+@media (max-width: 900px) {
+  .visual-site-v24.page-ref-home .v35-capabilities {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .visual-site-v24.page-ref-home .v35-capability:nth-child(4),
+  .visual-site-v24.page-ref-home .v35-capability:nth-child(5) {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 620px) {
+  .visual-site-v24.page-ref-home .v35-capabilities {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .visual-site-v24.page-ref-home .v35-capability:last-child {
+    grid-column: 1 / -1;
+  }
+  .visual-site-v24.page-ref-home .v35-assurance {
+    grid-template-columns: 1fr 1fr;
+  }
+  .visual-site-v24.page-ref-home .v35-assurance span:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid rgba(74,155,180,.22);
+  }
+  .visual-site-v24.page-ref-home .v35-assurance span:nth-child(4) {
+    border-top: 1px solid rgba(74,155,180,.22);
+  }
+}
