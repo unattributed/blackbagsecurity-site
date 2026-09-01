@@ -1,0 +1,244 @@
+/* Black Bag Security Services marketing focus v37
+ * Adds a compact proof-and-decision layer to the dedicated /services/ page.
+ * Scoped to /services/ only. The approved homepage remains untouched.
+ */
+
+.page-ref-services .svc37-proof {
+  position: relative;
+  padding: clamp(68px, 6vw, 92px) 0;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(74, 155, 180, .14);
+  background:
+    radial-gradient(circle at 16% 46%, rgba(37, 214, 239, .07), transparent 28%),
+    radial-gradient(circle at 82% 54%, rgba(157, 244, 0, .055), transparent 30%),
+    #05131d;
+}
+
+.page-ref-services .svc37-proof::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(37, 214, 239, .022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 214, 239, .02) 1px, transparent 1px);
+  background-size: 38px 38px;
+  mask-image: linear-gradient(90deg, transparent, rgba(0,0,0,.9) 15%, rgba(0,0,0,.9) 85%, transparent);
+}
+
+.page-ref-services .svc37-proof__grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(280px, .68fr) minmax(620px, 1.32fr);
+  gap: clamp(44px, 6vw, 86px);
+  align-items: center;
+}
+
+.page-ref-services .svc37-proof__copy .svc36-heading {
+  max-width: 520px;
+  font-size: clamp(36px, 3.8vw, 54px);
+}
+
+.page-ref-services .svc37-proof__intro {
+  max-width: 520px;
+  margin: 22px 0 0;
+  color: #aebfbd;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.page-ref-services .svc37-proof__visual {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(74,155,180,.36);
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(5,19,29,.96), rgba(3,13,21,.99));
+  box-shadow: 0 20px 52px rgba(0,0,0,.22);
+}
+
+.page-ref-services .svc37-proof__visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(37,214,239,.035), transparent 28%, transparent 72%, rgba(157,244,0,.03));
+}
+
+.page-ref-services .svc37-proof-flow {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  min-height: 190px;
+}
+
+.page-ref-services .svc37-proof-flow::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 70px;
+  left: 12%;
+  right: 12%;
+  border-top: 1px dashed rgba(37,214,239,.46);
+}
+
+.page-ref-services .svc37-proof-node {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px 14px 24px;
+  text-align: center;
+}
+
+.page-ref-services .svc37-proof-node + .svc37-proof-node {
+  border-left: 1px solid rgba(74,155,180,.12);
+}
+
+.page-ref-services .svc37-proof-node__mark {
+  display: grid;
+  place-items: center;
+  width: 82px;
+  height: 82px;
+  border: 1px solid rgba(37,214,239,.5);
+  border-radius: 50%;
+  background: #06131d;
+  box-shadow: 0 0 0 8px rgba(37,214,239,.02), 0 0 24px rgba(37,214,239,.08);
+}
+
+.page-ref-services .svc37-proof-node:nth-child(even) .svc37-proof-node__mark {
+  border-color: rgba(157,244,0,.58);
+  box-shadow: 0 0 0 8px rgba(157,244,0,.02), 0 0 24px rgba(157,244,0,.07);
+}
+
+.page-ref-services .svc37-proof-node__icon {
+  width: 46px;
+  height: 46px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.page-ref-services .svc37-proof-node--question .svc37-proof-node__icon { background-image: url('/assets/img/icon-target.svg'); }
+.page-ref-services .svc37-proof-node--test .svc37-proof-node__icon { background-image: url('/assets/img/icon-lifecycle.svg'); }
+.page-ref-services .svc37-proof-node--evidence .svc37-proof-node__icon { background-image: url('/assets/img/icon-evidence.svg'); }
+.page-ref-services .svc37-proof-node--decision .svc37-proof-node__icon { background-image: url('/assets/img/icon-deliverables.svg'); }
+
+.page-ref-services .svc37-proof-node strong {
+  margin-top: 14px;
+  color: #f2f6f4;
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.page-ref-services .svc37-proof-node span:last-child {
+  max-width: 150px;
+  margin-top: 5px;
+  color: #8ea3a6;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.page-ref-services .svc37-proof-standards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid rgba(74,155,180,.2);
+  background: rgba(2,11,18,.48);
+}
+
+.page-ref-services .svc37-proof-standard {
+  padding: 16px 13px;
+  color: #9fb0af;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .09em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-ref-services .svc37-proof-standard + .svc37-proof-standard {
+  border-left: 1px solid rgba(74,155,180,.15);
+}
+
+.page-ref-services .svc37-proof-standard:nth-child(2),
+.page-ref-services .svc37-proof-standard:nth-child(4) { color: #b9dc76; }
+
+.page-ref-services .svc37-proof-standard:nth-child(1),
+.page-ref-services .svc37-proof-standard:nth-child(3) { color: #76cfdb; }
+
+.page-ref-services .svc36-service-copy h3 strong {
+  color: inherit;
+}
+
+.page-ref-services .svc36-close .svc37-close-intro {
+  max-width: 620px;
+  margin: 22px 0 0;
+  color: #aebfbd;
+  font-size: 16px;
+  line-height: 1.58;
+}
+
+@media (max-width: 1080px) {
+  .page-ref-services .svc37-proof__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-ref-services .svc37-proof__copy {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 720px) {
+  .page-ref-services .svc37-proof {
+    padding: 64px 0;
+  }
+
+  .page-ref-services .svc37-proof-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page-ref-services .svc37-proof-flow::before {
+    display: none;
+  }
+
+  .page-ref-services .svc37-proof-node {
+    min-height: 178px;
+    border-bottom: 1px solid rgba(74,155,180,.12);
+  }
+
+  .page-ref-services .svc37-proof-node:nth-child(3) {
+    border-left: 0;
+  }
+
+  .page-ref-services .svc37-proof-standards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page-ref-services .svc37-proof-standard:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid rgba(74,155,180,.15);
+  }
+
+  .page-ref-services .svc37-proof-standard:nth-child(4) {
+    border-top: 1px solid rgba(74,155,180,.15);
+  }
+}
+
+@media (max-width: 460px) {
+  .page-ref-services .svc37-proof-flow,
+  .page-ref-services .svc37-proof-standards {
+    grid-template-columns: 1fr;
+  }
+
+  .page-ref-services .svc37-proof-node + .svc37-proof-node,
+  .page-ref-services .svc37-proof-standard + .svc37-proof-standard {
+    border-left: 0;
+  }
+
+  .page-ref-services .svc37-proof-standard {
+    border-top: 1px solid rgba(74,155,180,.15);
+  }
+}
