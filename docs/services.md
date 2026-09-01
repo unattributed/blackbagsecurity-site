@@ -1,116 +1,139 @@
 ---
 layout: home-v2
 title: Security Services | Black Bag Security
-description: Application and API security, adversary validation, AI security, and secure systems engineering focused on clear client outcomes, evidence, remediation, and retest.
+description: Application and API security, adversary validation, AI security, and secure systems engineering shaped around the security decision the client needs to make.
 permalink: /services/
 lang: en
 ref: services
 services_v2: true
 marketing_v3: true
 ---
-<div class="v24-page">
-  <section class="v24-hero" aria-labelledby="services-title">
-    <div class="wrap v24-hero__grid">
-      <div class="v24-copy">
-        <p class="v24-kicker">Security services built around decisions</p>
-        <h1 id="services-title">Bring the problem.<br><span class="v24-accent">We will engineer the answer.</span></h1>
-        <p class="v24-lead">The useful question is not which security service to buy. It is what you need to understand, prove, protect, or change before the risk becomes expensive.</p>
-        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss the problem →</a></div>
+<div class="svc36-page">
+  <section class="svc36-hero" aria-labelledby="services-title">
+    <div class="wrap svc36-hero__grid">
+      <div>
+        <p class="svc36-kicker">Security services</p>
+        <h1 id="services-title">Start with the decision.<br><span class="svc36-accent">We shape the security work.</span></h1>
+        <p class="svc36-lead">Tell us what must be understood, proven, protected, or changed. The engagement follows the decision.</p>
+        <div class="svc36-actions"><a class="svc36-btn" href="{{ '/contact/#assessment' | relative_url }}">Discuss an engagement →</a></div>
       </div>
-      <div class="v24-canvas" aria-label="Security service decision map">
-        <span class="v24-canvas__label">What do you need to know?</span>
-        <div class="v24-linked-grid">
-          <article class="v24-linked-card"><div class="v24-linked-card__icon">◇</div><strong>Exposure</strong><p>Can an application, API, identity, or workflow be abused?</p></article>
-          <article class="v24-linked-card"><div class="v24-linked-card__icon">◎</div><strong>Resistance</strong><p>Will preventive and detective controls stop a realistic attacker?</p></article>
-          <article class="v24-linked-card"><div class="v24-linked-card__icon">◉</div><strong>AI authority</strong><p>Can AI, agents, tools, or browser state be manipulated outside intended limits?</p></article>
-          <article class="v24-linked-card"><div class="v24-linked-card__icon">▦</div><strong>System design</strong><p>How should a sensitive system be hardened, contained, observed, and recovered?</p></article>
-        </div>
-        <div class="v24-outcome"><strong>One standard of delivery</strong><span>Authorized testing · reviewable proof · practical remediation · verified outcome</span></div>
+
+      <div class="svc36-decision-map" aria-label="Four security decisions mapped to Black Bag Security services">
+        <span class="svc36-decision-label">Choose by the question</span>
+        <svg class="svc36-decision-rails" viewBox="0 0 700 360" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M210 70 C300 85 315 140 350 180"/>
+          <path d="M490 70 C400 85 385 140 350 180"/>
+          <path d="M210 292 C300 275 315 220 350 180"/>
+          <path d="M490 292 C400 275 385 220 350 180"/>
+        </svg>
+        <div class="svc36-decision-core"><div><span>Your</span><strong>Decision</strong></div></div>
+
+        <a class="svc36-decision-node svc36-decision-node--a" href="{{ '/services/application-api-security/' | relative_url }}">
+          <span class="svc36-decision-icon" aria-hidden="true"></span>
+          <span class="svc36-decision-copy"><strong>Exposure</strong><span>What can be abused?</span></span>
+        </a>
+        <a class="svc36-decision-node svc36-decision-node--b" href="{{ '/services/adversary-validation/' | relative_url }}">
+          <span class="svc36-decision-icon" aria-hidden="true"></span>
+          <span class="svc36-decision-copy"><strong>Resistance</strong><span>Will the defenses hold?</span></span>
+        </a>
+        <a class="svc36-decision-node svc36-decision-node--c" href="{{ '/services/ai-security/' | relative_url }}">
+          <span class="svc36-decision-icon" aria-hidden="true"></span>
+          <span class="svc36-decision-copy"><strong>AI authority</strong><span>Can trust boundaries be crossed?</span></span>
+        </a>
+        <a class="svc36-decision-node svc36-decision-node--d" href="{{ '/services/secure-systems-engineering/' | relative_url }}">
+          <span class="svc36-decision-icon" aria-hidden="true"></span>
+          <span class="svc36-decision-copy"><strong>System design</strong><span>How should security be built in?</span></span>
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="v24-section" id="service-map" aria-labelledby="services-map-title">
-    <div class="wrap v24-section__grid">
-      <div class="v24-copy">
-        <p class="v24-kicker">Four starting points</p>
-        <h2 class="v24-title" id="services-map-title">Match the engagement to the <span class="v24-accent">security decision.</span></h2>
-        <p>The service changes with the question. The evidence standard, confidentiality, operating discipline, and accountability do not.</p>
+  <section class="svc36-section svc36-section--services" aria-labelledby="service-lines-title">
+    <div class="wrap">
+      <div class="svc36-section-head">
+        <div><p class="svc36-kicker">What you can engage</p><h2 class="svc36-heading" id="service-lines-title">Four services.<br><span class="svc36-accent">Different jobs.</span></h2></div>
+        <p class="svc36-section-intro">Each service answers a different security question. Choose the problem first, then the testing or engineering technique.</p>
       </div>
-      <div class="v24-canvas" aria-label="Four Black Bag Security service lines">
-        <span class="v24-canvas__label">Focused service lines</span>
-        <div class="v24-linked-grid">
-          <article class="v24-linked-card"><div class="v24-linked-card__icon">◇</div><strong>Application &amp;<br>API Security</strong><p>Prove whether protected data and actions are actually protected.</p><a href="{{ '/services/application-api-security/' | relative_url }}">Explore →</a></article>
-          <article class="v24-linked-card"><div class="v24-linked-card__icon">◎</div><strong>Adversary<br>Validation</strong><p>Prove whether your controls stop the outcome that matters.</p><a href="{{ '/services/adversary-validation/' | relative_url }}">Explore →</a></article>
-          <article class="v24-linked-card"><div class="v24-linked-card__icon">◉</div><strong>AI<br>Security</strong><p>Prove where AI can be influenced, exposed, or over-authorized.</p><a href="{{ '/services/ai-security/' | relative_url }}">Explore →</a></article>
-          <article class="v24-linked-card"><div class="v24-linked-card__icon">▦</div><strong>Secure Systems<br>Engineering</strong><p>Engineer the security property into the system itself.</p><a href="{{ '/services/secure-systems-engineering/' | relative_url }}">Explore →</a></article>
-        </div>
+
+      <div class="svc36-service-list">
+        <article class="svc36-service svc36-service--app">
+          <div class="svc36-service-diagram" aria-hidden="true"><span class="svc36-service-diagram__art"></span></div>
+          <div class="svc36-service-copy">
+            <span class="svc36-service-number">01 / Application &amp; API Security</span>
+            <h3>Find the path an attacker can actually use.</h3>
+            <p class="svc36-question">Can identities, sessions, APIs, protected data, or business workflows be abused?</p>
+            <div class="svc36-capabilities" aria-label="Application and API security focus areas"><span>Identity</span><span>Sessions</span><span>Authorization</span><span>APIs</span><span>Business logic</span></div>
+            <p class="svc36-service-outcome"><strong>Client outcome</strong><br>Exploitable paths, business impact, and the control that needs to change.</p>
+            <a class="svc36-service-link" href="{{ '/services/application-api-security/' | relative_url }}">Explore Application &amp; API Security →</a>
+          </div>
+        </article>
+
+        <article class="svc36-service svc36-service--adversary">
+          <div class="svc36-service-diagram" aria-hidden="true"><span class="svc36-service-diagram__art"></span></div>
+          <div class="svc36-service-copy">
+            <span class="svc36-service-number">02 / Adversary Validation</span>
+            <h3>Test whether the defenses stop the outcome that matters.</h3>
+            <p class="svc36-question">Will preventive, detective, and response controls hold against a realistic attack path?</p>
+            <div class="svc36-capabilities" aria-label="Adversary validation focus areas"><span>Attack path</span><span>Prevention</span><span>Detection</span><span>Response</span><span>Control gaps</span></div>
+            <p class="svc36-service-outcome"><strong>Client outcome</strong><br>What held, what failed, and where the defensive chain needs reinforcement.</p>
+            <a class="svc36-service-link" href="{{ '/services/adversary-validation/' | relative_url }}">Explore Adversary Validation →</a>
+          </div>
+        </article>
+
+        <article class="svc36-service svc36-service--ai">
+          <div class="svc36-service-diagram" aria-hidden="true"><span class="svc36-service-diagram__art"></span></div>
+          <div class="svc36-service-copy">
+            <span class="svc36-service-number">03 / AI Security</span>
+            <h3>Constrain what models, tools, and agents are allowed to do.</h3>
+            <p class="svc36-question">Can prompts, browser state, data, tools, or agent authority be manipulated beyond intended limits?</p>
+            <div class="svc36-capabilities" aria-label="AI security focus areas"><span>Models</span><span>Browser state</span><span>Tools</span><span>Data</span><span>Agents</span></div>
+            <p class="svc36-service-outcome"><strong>Client outcome</strong><br>Unsafe authority paths, trust-boundary failures, and the controls needed to contain them.</p>
+            <a class="svc36-service-link" href="{{ '/services/ai-security/' | relative_url }}">Explore AI Security →</a>
+          </div>
+        </article>
+
+        <article class="svc36-service svc36-service--systems">
+          <div class="svc36-service-diagram" aria-hidden="true"><span class="svc36-service-diagram__art"></span></div>
+          <div class="svc36-service-copy">
+            <span class="svc36-service-number">04 / Secure Systems Engineering</span>
+            <h3>Engineer the security property into the system.</h3>
+            <p class="svc36-question">How should a sensitive system be designed, hardened, isolated, observed, and recovered?</p>
+            <div class="svc36-capabilities" aria-label="Secure systems engineering focus areas"><span>Architecture</span><span>Hardening</span><span>Isolation</span><span>Observability</span><span>Recovery</span></div>
+            <p class="svc36-service-outcome"><strong>Client outcome</strong><br>A system whose security depends on deliberate architecture and operation, not assumption.</p>
+            <a class="svc36-service-link" href="{{ '/services/secure-systems-engineering/' | relative_url }}">Explore Secure Systems Engineering →</a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="v24-section" aria-labelledby="service-process">
-    <div class="wrap v24-section__grid">
-      <div class="v24-copy">
-        <p class="v24-kicker">What the client experiences</p>
-        <h2 class="v24-title" id="service-process">A controlled path from <span class="v24-accent">uncertainty to evidence.</span></h2>
-        <p>Good testing should reduce uncertainty as it progresses. Scope becomes explicit, attack paths become observable, findings become defensible, and remediation becomes verifiable.</p>
+  <section class="svc36-section svc36-section--shape" aria-labelledby="engagement-shape-title">
+    <div class="wrap">
+      <div class="svc36-section-head">
+        <div><p class="svc36-kicker">How the work can be shaped</p><h2 class="svc36-heading" id="engagement-shape-title">Use the structure that <span class="svc36-accent">fits the problem.</span></h2></div>
+        <p class="svc36-section-intro">The engagement model should match how much is already known, how constrained the path must be, and whether the answer requires testing, engineering, or both.</p>
       </div>
-      <div class="v24-canvas" aria-label="Engagement lifecycle">
-        <span class="v24-canvas__label">Engagement lifecycle</span>
-        <div class="v24-process">
-          <div class="v24-process-step"><div class="v24-process-step__icon">?</div><strong>Define</strong><span>The decision, target, consequence, and useful outcome.</span></div>
-          <div class="v24-process-step"><div class="v24-process-step__icon">▣</div><strong>Bound</strong><span>Authority, access, safety, data handling, and stop conditions.</span></div>
-          <div class="v24-process-step"><div class="v24-process-step__icon">◎</div><strong>Test</strong><span>Manual analysis plus purpose-fit tooling against realistic paths.</span></div>
-          <div class="v24-process-step"><div class="v24-process-step__icon">◇</div><strong>Prove</strong><span>Validate the claim and preserve proportionate evidence.</span></div>
-          <div class="v24-process-step"><div class="v24-process-step__icon">⚒</div><strong>Remediate</strong><span>Make the control change practical and explicit.</span></div>
-          <div class="v24-process-step"><div class="v24-process-step__icon">✓</div><strong>Close</strong><span>Retest and record the verified state.</span></div>
-        </div>
-        <div class="v24-outcome"><strong>Client outcome</strong><span>What failed. Why it matters. What to change. Whether the change worked.</span></div>
+
+      <div class="svc36-shapes">
+        <article class="svc36-shape"><span class="svc36-shape__mark" aria-hidden="true">□</span><h3>Fixed scope</h3><p>Known targets, defined objective, bounded time-box, and explicit output.</p><div class="svc36-shape__fit">Best fit: defined assessment or retest</div></article>
+        <article class="svc36-shape"><span class="svc36-shape__mark" aria-hidden="true">◎</span><h3>Objective-led</h3><p>The outcome is clear, while the route follows the evidence inside agreed boundaries.</p><div class="svc36-shape__fit">Best fit: complex attack paths and validation</div></article>
+        <article class="svc36-shape"><span class="svc36-shape__mark" aria-hidden="true">⚙</span><h3>Engineering sprint</h3><p>Architecture, hardening, tooling, reverse engineering, or controlled proof-of-concept work.</p><div class="svc36-shape__fit">Best fit: build, repair, or prove a capability</div></article>
       </div>
     </div>
   </section>
 
-  <section class="v24-section" aria-labelledby="service-output">
-    <div class="wrap v24-section__grid">
-      <div class="v24-copy">
-        <p class="v24-kicker">What leaves the engagement</p>
-        <h2 class="v24-title" id="service-output">Useful work survives <span class="v24-accent">delivery day.</span></h2>
-        <p>The goal is not a large document. It is a body of evidence that remains useful to the people who must make a decision, fix the condition, and verify closure.</p>
+  <section class="svc36-close" aria-labelledby="services-close-title">
+    <div class="wrap svc36-close__grid">
+      <div>
+        <p class="svc36-kicker">Start with the decision</p>
+        <h2 class="svc36-heading" id="services-close-title">Bring the outcome.<br><span class="svc36-accent">We’ll recommend the engagement.</span></h2>
+        <div class="svc36-actions"><a class="svc36-btn" href="{{ '/contact/#assessment' | relative_url }}">Start the conversation →</a></div>
       </div>
-      <div class="v24-canvas" aria-label="Three audiences for engagement evidence">
-        <span class="v24-canvas__label">One body of evidence, three readers</span>
-        <div class="v24-linked-grid v24-linked-grid--3">
-          <article class="v24-linked-card"><div class="v24-linked-card__icon">▰</div><strong>Leadership</strong><p>Material risk, affected business outcome, limitations, priorities, and what needs attention next.</p></article>
-          <article class="v24-linked-card"><div class="v24-linked-card__icon">⚒</div><strong>Engineering &amp; Security</strong><p>Conditions, evidence, attack path, root cause, remediation direction, and retest context.</p></article>
-          <article class="v24-linked-card"><div class="v24-linked-card__icon">✓</div><strong>Assurance</strong><p>What was tested, what was established, what was blocked, and what remains unverified.</p></article>
-        </div>
+      <div class="svc36-close-card" aria-label="Three inputs to start a security engagement">
+        <div><span><strong>System</strong><span>What is at stake.</span></span></div>
+        <div><span><strong>Decision</strong><span>What you need to know.</span></span></div>
+        <div><span><strong>Consequence</strong><span>What cannot go wrong.</span></span></div>
       </div>
-    </div>
-  </section>
-
-  <section class="v24-section" aria-labelledby="engagement-shapes">
-    <div class="wrap v24-section__grid">
-      <div class="v24-copy">
-        <p class="v24-kicker">Engagement shape</p>
-        <h2 class="v24-title" id="engagement-shapes">Use the structure that <span class="v24-accent">fits the problem.</span></h2>
-        <p>Not every difficult security question belongs in a conventional penetration-test box.</p>
-      </div>
-      <div class="v24-canvas" aria-label="Engagement models">
-        <span class="v24-canvas__label">Three ways to shape the work</span>
-        <div class="v24-linked-grid v24-linked-grid--3">
-          <article class="v24-linked-card"><div class="v24-linked-card__icon">□</div><strong>Fixed scope</strong><p>Known targets, known objective, defined time-box and output.</p></article>
-          <article class="v24-linked-card"><div class="v24-linked-card__icon">◎</div><strong>Objective-led</strong><p>Follow the evidence within agreed boundaries when the outcome matters more than prescribing the route.</p></article>
-          <article class="v24-linked-card"><div class="v24-linked-card__icon">⚙</div><strong>Engineering / research sprint</strong><p>Architecture, hardening, reverse engineering, validation tooling, or controlled proof-of-concept work.</p></article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="v24-close" aria-labelledby="services-close">
-    <div class="wrap v24-close__grid">
-      <div class="v24-copy"><p class="v24-kicker">You do not need the service name</p><h2 class="v24-title" id="services-close">Tell us what you cannot afford to <span class="v24-accent">get wrong.</span></h2><p>Describe the system, concern, consequence, timing, and constraints. We will shape the engagement around the decision you need to make.</p><div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Start the conversation →</a></div></div>
-      <div class="v24-canvas" aria-label="Engagement starting inputs"><span class="v24-canvas__label">Bring five things</span><div class="v24-intake"><div class="v24-intake-step"><div class="v24-intake-step__icon">▣</div><strong>System</strong><span>What is in front of us.</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">?</div><strong>Concern</strong><span>What you need to know.</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">◇</div><strong>Consequence</strong><span>What happens if it fails.</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">◷</div><strong>Timing</strong><span>When the answer matters.</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">✓</div><strong>Constraints</strong><span>What the work must respect.</span></div></div></div>
     </div>
   </section>
 </div>
