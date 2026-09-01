@@ -1,0 +1,96 @@
+name: services immutable production lock
+
+on:
+  push:
+    branches:
+      - main
+      - redesign/v2
+      - 'feature/**'
+  pull_request:
+    branches:
+      - main
+      - redesign/v2
+
+permissions:
+  contents: read
+
+jobs:
+  verify-services-lock:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify immutable Services baseline
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          verify_blob() {
+            local path="$1"
+            local expected="$2"
+            local actual
+
+            if [[ ! -f "$path" ]]; then
+              echo "FAIL: locked Services file is missing: $path"
+              return 1
+            fi
+
+            actual="$(git hash-object "$path")"
+            if [[ "$actual" != "$expected" ]]; then
+              echo "FAIL: immutable Services baseline drift detected"
+              echo "path=$path"
+              echo "expected=$expected"
+              echo "actual=$actual"
+              echo "The Services page is production approved. Explicitly reopen Services review before changing it."
+              return 1
+            fi
+
+            echo "PASS: $path"
+          }
+
+          # Complete approved Services overview markup.
+          verify_blob "docs/services.md" "89739e87b96b7d2bdfe8634956a7460de08276a1"
+
+          # Approved Services visual layers.
+          verify_blob "docs/assets/css/services-v2.css" "80d76d24baa0e735cebae59518bb799fa9887fb9"
+          verify_blob "docs/assets/css/bbs-services-page-v36.css" "1bb756894c2600745e5ce5e7b23268478bc08604"
+          verify_blob "docs/assets/css/bbs-services-marketing-v37.css" "b47e2165c61e9b9f18e17e9ff1ef6dc16ed94e81"
+          verify_blob "docs/assets/css/bbs-services-page-v37.css" "bc660cdb5a4328199b9656a43cac44f8166b8748"
+          verify_blob "docs/assets/css/bbs-services-output-alignment-v38.css" "46eae78887d31da6a1e5170ee658d53346d488a2"
+
+          # Service-family visual assets used by the hero and recommendation matrix.
+          verify_blob "docs/assets/img/service-application-api-v32.svg" "f187ad88b79bc43d3edc457f70e52cd689eebba0"
+          verify_blob "docs/assets/img/service-adversary-validation-v32.svg" "257a5c90127a56b98dabaeda823da59bfeb5e695"
+          verify_blob "docs/assets/img/service-ai-security-v32.svg" "b1fc2a68bd8bd3d08c9f38bf180177143d3e7e5d"
+          verify_blob "docs/assets/img/service-secure-systems-v32.svg" "a12bad05a0093184a1ddff10410367ef4dd0e389"
+
+          # Proof-flow icons that materially affect the approved render.
+          verify_blob "docs/assets/img/icon-target.svg" "89d4cc03bf761bc4159004f877486e8b95cb726b"
+          verify_blob "docs/assets/img/icon-lifecycle.svg" "10200ca61e376f2e7d2cdf2ed0c9c923e4364d99"
+          verify_blob "docs/assets/img/icon-evidence.svg" "347f6971854d32070e954b514220ac88309d30ae"
+          verify_blob "docs/assets/img/icon-deliverables.svg" "24760f2a752c7abcf6706cdc79ed6ce482b269da"
+
+          # Shared layout may continue evolving for other approved pages, but the
+          # Services-specific loaders must remain present and scoped to Services.
+          python3 - <<'PY'
+          from pathlib import Path
+          import sys
+
+          layout = Path("docs/_layouts/home-v2.html").read_text(encoding="utf-8")
+          required = [
+              "services-v2.css",
+              "bbs-services-page-v36.css",
+              "bbs-services-marketing-v37.css",
+              "bbs-services-page-v37.css",
+              "bbs-services-output-alignment-v38.css",
+          ]
+
+          for stylesheet in required:
+              if stylesheet not in layout:
+                  print(f"FAIL: locked Services stylesheet is no longer loaded: {stylesheet}")
+                  sys.exit(1)
+              print(f"PASS: stylesheet loader includes {stylesheet}")
+
+          print("PASS: complete production-approved Services baseline is intact")
+          PY
