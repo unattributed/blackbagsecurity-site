@@ -22,7 +22,7 @@ marketing_v3: true
         <div class="proof43-visual__topline"><span>Engineering capability</span><strong>Inspectable proof</strong></div>
         <div class="proof44-ux">
           <div class="proof44-ux__frame">
-            <img src="{{ '/assets/img/aotp-operator-workspace-proof-v44.svg' | relative_url }}" alt="AOTP Operator Workspace showing governed campaign scope, evidence review, findings, approvals, reporting, exports, and retest controls">
+            <img src="{{ '/assets/img/aotp-operator-workspace-proof-v44.webp' | relative_url }}" alt="AOTP Operator Workspace showing governed campaign scope, evidence review, findings, approvals, reporting, exports, and retest controls">
           </div>
           <div class="proof44-ux__rail"><span>Scope &amp; authority</span><span>Evidence state</span><span>Findings &amp; reports</span><span>Retest</span></div>
         </div>
