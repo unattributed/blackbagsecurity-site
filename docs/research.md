@@ -14,7 +14,7 @@ marketing_v3: true
       <div class="proof43-copy">
         <p class="proof43-kicker">Proof</p>
         <h1 id="proof-title">The capability is <span class="proof43-accent">built, not borrowed.</span></h1>
-        <p class="proof43-lead">Purpose-built code turns difficult security problems into evidence-backed outcomes.</p>
+        <p class="proof43-lead">When standard tooling falls short, we build the capability to turn uncertainty into proof.</p>
         <div class="proof43-actions"><a class="proof43-btn" href="#proof-work">Inspect the work →</a></div>
       </div>
 
