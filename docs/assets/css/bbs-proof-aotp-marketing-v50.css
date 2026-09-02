@@ -1,6 +1,5 @@
-/* Black Bag Security Proof v50: AOTP marketing visual.
- * Replaces architecture-diagram styling with a single premium proposition:
- * private client context, local AI, retained operator authority, evidence-backed outcomes.
+/* Black Bag Security Proof v50.1: AOTP marketing visual.
+ * Marketing-first composition: one dominant local-AI core, three client outcomes.
  * Scoped to the Proof AOTP section only.
  */
 
@@ -8,19 +7,26 @@
   overflow: hidden;
 }
 
+.page-ref-arsenal .proof50-aotp-visual .proof43-visual__topline {
+  position: relative;
+  z-index: 4;
+}
+
 .page-ref-arsenal .proof50-scene {
   position: relative;
   z-index: 2;
-  min-height: 500px;
-  margin: 20px;
+  min-height: 520px;
+  margin: 18px;
   overflow: hidden;
-  border: 1px solid rgba(37,214,239,.22);
+  border: 1px solid rgba(37,214,239,.24);
   border-radius: 12px;
   background:
-    radial-gradient(circle at 50% 42%, rgba(37,214,239,.15), transparent 28%),
-    radial-gradient(circle at 50% 42%, rgba(157,244,0,.055), transparent 42%),
-    linear-gradient(180deg, rgba(3,16,25,.98), rgba(2,10,17,.99));
-  box-shadow: inset 0 0 50px rgba(37,214,239,.025);
+    radial-gradient(circle at 50% 43%, rgba(37,214,239,.20), transparent 26%),
+    radial-gradient(circle at 50% 43%, rgba(157,244,0,.075), transparent 44%),
+    linear-gradient(180deg, rgba(3,17,27,.99), rgba(1,8,14,.99));
+  box-shadow:
+    inset 0 0 70px rgba(37,214,239,.035),
+    0 18px 50px rgba(0,0,0,.24);
 }
 
 .page-ref-arsenal .proof50-scene::before {
@@ -28,11 +34,27 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background-image:
-    linear-gradient(rgba(37,214,239,.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(37,214,239,.026) 1px, transparent 1px);
-  background-size: 36px 36px;
-  mask-image: radial-gradient(circle at 50% 42%, #000 0 54%, transparent 86%);
+  background:
+    linear-gradient(90deg, transparent 49.85%, rgba(37,214,239,.10) 50%, transparent 50.15%),
+    linear-gradient(0deg, transparent 49.85%, rgba(37,214,239,.06) 50%, transparent 50.15%);
+  opacity: .55;
+}
+
+.page-ref-arsenal .proof50-scene::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 44%;
+  width: 380px;
+  height: 380px;
+  transform: translate(-50%,-50%);
+  border: 1px solid rgba(37,214,239,.12);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 28px rgba(37,214,239,.018),
+    0 0 0 62px rgba(157,244,0,.012),
+    0 0 100px rgba(37,214,239,.10);
+  pointer-events: none;
 }
 
 .page-ref-arsenal .proof50-boundary-label {
@@ -42,25 +64,26 @@
   right: 22px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 22px;
   color: #79cbd5;
   font-size: 8px;
-  font-weight: 800;
+  font-weight: 850;
   letter-spacing: .13em;
   text-transform: uppercase;
 }
 
 .page-ref-arsenal .proof50-boundary-label b {
-  color: #b9dc76;
-  font-weight: 800;
+  color: #b9e66e;
+  font-weight: 850;
 }
 
+/* Dominant product idea: AOTP local AI. */
 .page-ref-arsenal .proof50-core {
   position: absolute;
-  top: 78px;
   left: 50%;
-  width: 248px;
-  height: 248px;
+  top: 62px;
+  width: 360px;
+  height: 360px;
   transform: translateX(-50%);
   display: grid;
   place-items: center;
@@ -69,16 +92,16 @@
 .page-ref-arsenal .proof50-core::before {
   content: "";
   position: absolute;
-  width: 170px;
-  height: 170px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background:
-    radial-gradient(circle at 42% 36%, rgba(229,255,255,.18), transparent 18%),
-    radial-gradient(circle, rgba(37,214,239,.19), rgba(4,23,34,.92) 58%, rgba(2,12,19,.98) 72%);
+    radial-gradient(circle at 42% 34%, rgba(255,255,255,.14), transparent 15%),
+    radial-gradient(circle, rgba(37,214,239,.24), rgba(4,25,37,.96) 58%, rgba(1,9,15,.99) 74%);
   box-shadow:
-    0 0 38px rgba(37,214,239,.2),
-    0 0 82px rgba(37,214,239,.09),
-    inset 0 0 22px rgba(157,244,0,.05);
+    0 0 58px rgba(37,214,239,.28),
+    0 0 120px rgba(37,214,239,.12),
+    inset 0 0 34px rgba(157,244,0,.06);
 }
 
 .page-ref-arsenal .proof50-core-ring {
@@ -88,10 +111,9 @@
 }
 
 .page-ref-arsenal .proof50-core-ring--outer {
-  width: 232px;
-  height: 232px;
-  border: 1px solid rgba(37,214,239,.22);
-  box-shadow: 0 0 0 10px rgba(37,214,239,.018);
+  width: 330px;
+  height: 330px;
+  border: 1px solid rgba(37,214,239,.23);
 }
 
 .page-ref-arsenal .proof50-core-ring--outer::before,
@@ -102,306 +124,325 @@
 }
 
 .page-ref-arsenal .proof50-core-ring--outer::before {
-  inset: 14px;
-  border-top: 1px solid rgba(157,244,0,.6);
-  border-right: 1px solid transparent;
-  border-bottom: 1px solid rgba(37,214,239,.16);
-  border-left: 1px solid transparent;
-  transform: rotate(-18deg);
+  inset: 18px;
+  border-top: 2px solid rgba(157,244,0,.76);
+  border-right: 2px solid transparent;
+  border-bottom: 1px solid rgba(37,214,239,.20);
+  border-left: 2px solid transparent;
+  transform: rotate(-20deg);
 }
 
 .page-ref-arsenal .proof50-core-ring--outer::after {
-  inset: 33px;
-  border: 1px dashed rgba(37,214,239,.2);
+  inset: 48px;
+  border: 1px dashed rgba(37,214,239,.20);
 }
 
 .page-ref-arsenal .proof50-core-ring--inner {
-  width: 188px;
-  height: 188px;
-  border: 1px solid rgba(157,244,0,.18);
+  width: 276px;
+  height: 276px;
+  border: 1px solid rgba(157,244,0,.22);
 }
 
 .page-ref-arsenal .proof50-core-copy {
   position: relative;
   z-index: 3;
-  width: 150px;
+  width: 218px;
   text-align: center;
 }
 
 .page-ref-arsenal .proof50-core-copy small {
   display: block;
-  margin-bottom: 7px;
-  color: #7fd3dd;
-  font-size: 8px;
-  font-weight: 800;
-  letter-spacing: .22em;
+  margin-bottom: 9px;
+  color: #83dbe4;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .25em;
 }
 
 .page-ref-arsenal .proof50-core-copy strong {
   display: block;
-  color: #f1f7f6;
-  font-size: 30px;
-  line-height: .95;
-  letter-spacing: -.045em;
+  color: #f4fbfa;
+  font-size: 46px;
+  font-weight: 740;
+  line-height: .92;
+  letter-spacing: -.055em;
+  text-shadow: 0 0 30px rgba(37,214,239,.16);
 }
 
 .page-ref-arsenal .proof50-core-copy span {
   display: block;
-  margin-top: 11px;
-  color: #9eb4b6;
-  font-size: 9px;
-  line-height: 1.45;
+  max-width: 190px;
+  margin: 15px auto 0;
+  color: #a5bfc1;
+  font-size: 11px;
+  line-height: 1.5;
 }
 
 .page-ref-arsenal .proof50-core-badge {
   position: absolute;
   z-index: 4;
-  bottom: 2px;
-  padding: 7px 11px;
-  border: 1px solid rgba(157,244,0,.34);
+  bottom: 18px;
+  padding: 8px 13px;
+  border: 1px solid rgba(157,244,0,.38);
   border-radius: 999px;
-  color: #c3e68a;
-  background: rgba(5,20,25,.92);
-  box-shadow: 0 8px 26px rgba(0,0,0,.26);
-  font-size: 7px;
+  color: #c9ef91;
+  background: rgba(3,17,22,.94);
+  box-shadow: 0 12px 34px rgba(0,0,0,.34);
+  font-size: 8px;
   font-weight: 900;
-  letter-spacing: .12em;
+  letter-spacing: .13em;
   text-transform: uppercase;
 }
 
+/* Marketing callouts, not mini dashboards. */
 .page-ref-arsenal .proof50-context-card,
 .page-ref-arsenal .proof50-authority-card {
   position: absolute;
-  top: 122px;
-  width: 190px;
-  min-height: 154px;
-  padding: 16px;
+  top: 154px;
+  width: 210px;
+  min-height: auto;
+  padding: 18px 18px 17px;
   border-radius: 10px;
-  background: linear-gradient(180deg, rgba(8,27,39,.96), rgba(4,16,25,.97));
-  box-shadow: 0 18px 42px rgba(0,0,0,.28);
+  background: linear-gradient(180deg, rgba(6,28,40,.94), rgba(3,16,24,.96));
+  box-shadow: 0 20px 50px rgba(0,0,0,.28);
 }
 
 .page-ref-arsenal .proof50-context-card {
   left: 24px;
-  border: 1px solid rgba(37,214,239,.34);
-  transform: rotate(-1.5deg);
+  border: 1px solid rgba(37,214,239,.38);
 }
 
 .page-ref-arsenal .proof50-authority-card {
   right: 24px;
-  border: 1px solid rgba(157,244,0,.28);
-  transform: rotate(1.4deg);
+  border: 1px solid rgba(157,244,0,.34);
 }
 
 .page-ref-arsenal .proof50-context-card small,
-.page-ref-arsenal .proof50-authority-card small,
-.page-ref-arsenal .proof50-proof-copy small,
-.page-ref-arsenal .proof50-finding small {
+.page-ref-arsenal .proof50-authority-card small {
   display: block;
-  margin-bottom: 7px;
-  color: #75cbd6;
-  font-size: 7px;
+  margin-bottom: 8px;
+  color: #79d1dc;
+  font-size: 8px;
   font-weight: 900;
-  letter-spacing: .15em;
+  letter-spacing: .14em;
   text-transform: uppercase;
 }
 
 .page-ref-arsenal .proof50-context-card strong,
 .page-ref-arsenal .proof50-authority-card strong {
   display: block;
-  color: #f0f5f3;
-  font-size: 13px;
-  line-height: 1.16;
+  color: #f3f8f7;
+  font-size: 18px;
+  font-weight: 690;
+  line-height: 1.12;
+  letter-spacing: -.02em;
 }
 
-.page-ref-arsenal .proof50-context-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap: 6px;
-  margin-top: 13px;
-}
-
-.page-ref-arsenal .proof50-context-grid span {
-  padding: 7px 8px;
-  border: 1px solid rgba(37,214,239,.16);
-  border-radius: 5px;
-  color: #92b6bb;
-  background: rgba(1,11,18,.46);
-  font-size: 7px;
-  font-weight: 750;
-  text-align: center;
+.page-ref-arsenal .proof50-context-grid,
+.page-ref-arsenal .proof50-authority-row {
+  display: none;
 }
 
 .page-ref-arsenal .proof50-context-card em {
   display: inline-flex;
-  margin-top: 11px;
-  padding: 4px 7px;
+  margin-top: 12px;
+  padding: 6px 9px;
   border-radius: 999px;
-  color: #a9dcdf;
+  color: #b9e9ed;
   background: rgba(37,214,239,.08);
-  font-size: 7px;
+  font-size: 8px;
   font-style: normal;
   font-weight: 900;
-  letter-spacing: .1em;
+  letter-spacing: .11em;
   text-transform: uppercase;
 }
 
-.page-ref-arsenal .proof50-authority-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 9px;
-  padding-top: 8px;
-  border-top: 1px solid rgba(255,255,255,.055);
-  color: #91a9aa;
-  font-size: 7px;
+.page-ref-arsenal .proof50-authority-card::after {
+  content: "Scope • Stop • Review";
+  display: block;
+  margin-top: 13px;
+  color: #bde77e;
+  font-size: 8px;
+  font-weight: 850;
+  letter-spacing: .11em;
+  text-transform: uppercase;
 }
 
-.page-ref-arsenal .proof50-authority-row b {
-  color: #baf26d;
-  font-size: 7px;
-  letter-spacing: .08em;
-}
-
+/* Proof becomes one strong outcome statement. */
 .page-ref-arsenal .proof50-proof-card {
   position: absolute;
-  left: 24px;
-  right: 24px;
+  left: 30px;
+  right: 30px;
   bottom: 24px;
   display: grid;
-  grid-template-columns: .75fr 1.6fr .9fr;
-  gap: 12px;
-  align-items: stretch;
-  padding: 12px;
-  border: 1px solid rgba(37,214,239,.24);
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+  align-items: center;
+  padding: 15px 16px 15px 18px;
+  border: 1px solid rgba(37,214,239,.22);
   border-radius: 10px;
-  background: linear-gradient(90deg, rgba(4,18,27,.96), rgba(5,23,31,.94));
-  box-shadow: 0 18px 46px rgba(0,0,0,.3);
+  background: linear-gradient(90deg, rgba(3,19,28,.96), rgba(6,27,32,.92));
+  box-shadow: 0 20px 48px rgba(0,0,0,.30);
 }
 
 .page-ref-arsenal .proof50-proof-copy {
-  align-self: center;
-  padding: 5px 8px;
+  padding: 0;
+}
+
+.page-ref-arsenal .proof50-proof-copy small {
+  display: block;
+  margin-bottom: 5px;
+  color: #78ced9;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
 }
 
 .page-ref-arsenal .proof50-proof-copy strong {
-  color: #eff5f2;
+  color: #f2f8f5;
+  font-size: 20px;
+  font-weight: 690;
+  letter-spacing: -.025em;
+}
+
+.page-ref-arsenal .proof50-proof-steps {
+  display: none;
+}
+
+.page-ref-arsenal .proof50-finding {
+  min-width: 190px;
+  padding: 11px 14px;
+  border: 1px solid rgba(157,244,0,.36);
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(157,244,0,.085), rgba(4,20,25,.72));
+}
+
+.page-ref-arsenal .proof50-finding small {
+  display: block;
+  margin-bottom: 5px;
+  color: #a9d46f;
+  font-size: 7px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.page-ref-arsenal .proof50-finding strong {
+  color: #dbf2b5;
   font-size: 12px;
   line-height: 1.2;
 }
 
-.page-ref-arsenal .proof50-proof-steps {
-  display: grid;
-  grid-template-columns: repeat(3,minmax(0,1fr));
-  gap: 7px;
-}
-
-.page-ref-arsenal .proof50-proof-steps span {
-  min-height: 62px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 9px;
-  border: 1px solid rgba(37,214,239,.13);
-  border-radius: 7px;
-  background: rgba(2,12,19,.58);
-}
-
-.page-ref-arsenal .proof50-proof-steps b {
-  color: #8fd6df;
-  font-size: 8px;
-}
-
-.page-ref-arsenal .proof50-proof-steps i {
-  margin-top: 4px;
-  color: #71898b;
-  font-size: 7px;
-  font-style: normal;
-}
-
-.page-ref-arsenal .proof50-finding {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px 12px;
-  border: 1px solid rgba(157,244,0,.32);
-  border-radius: 7px;
-  background: linear-gradient(135deg, rgba(157,244,0,.075), rgba(4,20,25,.72));
-}
-
-.page-ref-arsenal .proof50-finding small { color: #a3cb68; }
-.page-ref-arsenal .proof50-finding strong {
-  color: #d8edb2;
-  font-size: 10px;
-  line-height: 1.2;
-}
-
 .page-ref-arsenal .proof50-principles {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  grid-template-columns: repeat(4,minmax(0,1fr));
-  margin: 0 20px 20px;
-  overflow: hidden;
-  border: 1px solid rgba(74,155,180,.25);
-  border-radius: 8px;
-  background: rgba(2,11,18,.56);
+  display: none;
 }
-
-.page-ref-arsenal .proof50-principles span {
-  padding: 11px 8px;
-  color: #7fcbd5;
-  font-size: 7px;
-  font-weight: 900;
-  letter-spacing: .12em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.page-ref-arsenal .proof50-principles span:nth-child(2),
-.page-ref-arsenal .proof50-principles span:nth-child(4) { color: #b8db77; }
-.page-ref-arsenal .proof50-principles span + span { border-left: 1px solid rgba(74,155,180,.14); }
 
 @media (max-width: 1180px) {
   .page-ref-arsenal .proof50-context-card,
-  .page-ref-arsenal .proof50-authority-card { width: 170px; }
-  .page-ref-arsenal .proof50-core { width: 220px; height: 220px; }
-  .page-ref-arsenal .proof50-core-ring--outer { width: 212px; height: 212px; }
-}
-
-@media (max-width: 980px) {
-  .page-ref-arsenal .proof50-scene { min-height: 590px; }
-  .page-ref-arsenal .proof50-context-card { left: 18px; }
-  .page-ref-arsenal .proof50-authority-card { right: 18px; }
-  .page-ref-arsenal .proof50-proof-card { left: 18px; right: 18px; }
-}
-
-@media (max-width: 720px) {
-  .page-ref-arsenal .proof50-scene {
-    min-height: 780px;
-    margin: 12px;
+  .page-ref-arsenal .proof50-authority-card {
+    width: 185px;
   }
-  .page-ref-arsenal .proof50-boundary-label { left: 14px; right: 14px; gap: 10px; }
-  .page-ref-arsenal .proof50-boundary-label b { text-align: right; }
-  .page-ref-arsenal .proof50-core { top: 70px; }
+
+  .page-ref-arsenal .proof50-core {
+    width: 330px;
+    height: 330px;
+  }
+
+  .page-ref-arsenal .proof50-core-ring--outer {
+    width: 304px;
+    height: 304px;
+  }
+
+  .page-ref-arsenal .proof50-core-ring--inner {
+    width: 252px;
+    height: 252px;
+  }
+}
+
+@media (max-width: 920px) {
+  .page-ref-arsenal .proof50-scene {
+    min-height: 620px;
+  }
+
+  .page-ref-arsenal .proof50-core {
+    top: 66px;
+  }
+
   .page-ref-arsenal .proof50-context-card,
   .page-ref-arsenal .proof50-authority-card {
-    top: 320px;
-    width: calc(50% - 22px);
-    transform: none;
+    top: 350px;
+    width: calc(50% - 32px);
   }
-  .page-ref-arsenal .proof50-context-card { left: 14px; }
-  .page-ref-arsenal .proof50-authority-card { right: 14px; }
-  .page-ref-arsenal .proof50-proof-card {
+
+  .page-ref-arsenal .proof50-context-card { left: 20px; }
+  .page-ref-arsenal .proof50-authority-card { right: 20px; }
+}
+
+@media (max-width: 640px) {
+  .page-ref-arsenal .proof50-scene {
+    min-height: 760px;
+    margin: 12px;
+  }
+
+  .page-ref-arsenal .proof50-boundary-label {
     left: 14px;
     right: 14px;
-    bottom: 14px;
-    grid-template-columns: 1fr;
   }
-  .page-ref-arsenal .proof50-proof-copy { text-align: center; }
-  .page-ref-arsenal .proof50-finding { text-align: center; }
-  .page-ref-arsenal .proof50-principles { grid-template-columns: repeat(2,minmax(0,1fr)); margin: 0 12px 12px; }
-  .page-ref-arsenal .proof50-principles span:nth-child(3) { border-left: 0; border-top: 1px solid rgba(74,155,180,.14); }
-  .page-ref-arsenal .proof50-principles span:nth-child(4) { border-top: 1px solid rgba(74,155,180,.14); }
+
+  .page-ref-arsenal .proof50-boundary-label b {
+    text-align: right;
+  }
+
+  .page-ref-arsenal .proof50-core {
+    top: 74px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .page-ref-arsenal .proof50-core::before {
+    width: 218px;
+    height: 218px;
+  }
+
+  .page-ref-arsenal .proof50-core-ring--outer {
+    width: 278px;
+    height: 278px;
+  }
+
+  .page-ref-arsenal .proof50-core-ring--inner {
+    width: 232px;
+    height: 232px;
+  }
+
+  .page-ref-arsenal .proof50-core-copy strong {
+    font-size: 40px;
+  }
+
+  .page-ref-arsenal .proof50-context-card,
+  .page-ref-arsenal .proof50-authority-card {
+    top: 388px;
+    width: calc(50% - 21px);
+    padding: 14px;
+  }
+
+  .page-ref-arsenal .proof50-context-card { left: 12px; }
+  .page-ref-arsenal .proof50-authority-card { right: 12px; }
+
+  .page-ref-arsenal .proof50-context-card strong,
+  .page-ref-arsenal .proof50-authority-card strong {
+    font-size: 15px;
+  }
+
+  .page-ref-arsenal .proof50-proof-card {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .page-ref-arsenal .proof50-finding {
+    min-width: 0;
+  }
 }
