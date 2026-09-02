@@ -93,7 +93,7 @@
         <a{% if page.url contains '/services/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/services/' | relative_url }}">Services</a>
         <a{% if page.url contains '/methodology/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/methodology/' | relative_url }}">Method</a>
         <a{% if page.url contains '/arsenal/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/arsenal/' | relative_url }}">Proof</a>
-        {% if page.marketing_v3 %}
+        {% if page.homepage_v2 %}
         <a{% if page.url contains '/trust/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/trust/' | relative_url }}">Trust</a>
         <a{% if page.url contains '/about/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/about/' | relative_url }}">About</a>
         {% else %}
@@ -125,8 +125,10 @@
         <a href="{{ '/methodology/' | relative_url }}">Method</a>
         <a href="{{ '/arsenal/' | relative_url }}">Proof</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
+        {% if page.homepage_v2 %}
         <a href="{{ '/trust/' | relative_url }}">Trust</a>
         <a href="{{ '/industries/' | relative_url }}">Industries</a>
+        {% endif %}
         <a href="{{ '/contact/' | relative_url }}">Contact</a>
         <a href="{{ '/security.txt' | relative_url }}">Security</a>
       </nav>

@@ -5,7 +5,6 @@ description: Engineering proof of reproducible hardened infrastructure using Ope
 permalink: /arsenal/openbsd-mailstack/
 lang: en
 ref: arsenal-openbsd-mailstack
-arsenal_v2: true
 marketing_v3: true
 ---
 <div class="v24-page">

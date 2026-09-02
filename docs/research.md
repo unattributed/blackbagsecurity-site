@@ -5,7 +5,6 @@ description: Original security systems, tooling, and research that demonstrate t
 permalink: /arsenal/
 lang: en
 ref: arsenal
-arsenal_v2: true
 marketing_v3: true
 ---
 <div class="v24-page">

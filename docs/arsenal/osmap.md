@@ -5,7 +5,6 @@ description: Engineering proof of secure mail access using Rust, OpenBSD, privil
 permalink: /arsenal/osmap/
 lang: en
 ref: arsenal-osmap
-arsenal_v2: true
 marketing_v3: true
 ---
 <div class="v24-page">

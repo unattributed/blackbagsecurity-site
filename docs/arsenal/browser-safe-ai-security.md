@@ -5,7 +5,6 @@ description: Engineering proof of reproducible browser-AI security research usin
 permalink: /arsenal/browser-safe-ai-security/
 lang: en
 ref: arsenal-browser-safe-ai-security
-arsenal_v2: true
 marketing_v3: true
 ---
 <div class="v24-page">

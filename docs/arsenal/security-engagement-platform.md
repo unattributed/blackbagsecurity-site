@@ -5,7 +5,6 @@ description: Engineering proof of Black Bag Security standardizing authorized, i
 permalink: /arsenal/security-engagement-platform/
 lang: en
 ref: arsenal-security-engagement-platform
-arsenal_v2: true
 marketing_v3: true
 ---
 <div class="v24-page">

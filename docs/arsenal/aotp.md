@@ -1,11 +1,10 @@
 ---
 layout: home-v2
 title: Agentic Offensive Testing Platform | Black Bag Security
- description: Engineering proof of private AI accelerated, human-governed, evidence-first offensive testing with controlled execution, replay, validation, and explicit campaign authority.
+description: Engineering proof of private AI accelerated, human-governed, evidence-first offensive testing with controlled execution, replay, validation, and explicit campaign authority.
 permalink: /arsenal/aotp/
 lang: en
 ref: arsenal-aotp
-arsenal_v2: true
 marketing_v3: true
 ---
 <div class="v24-page">
