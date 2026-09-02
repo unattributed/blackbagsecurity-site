@@ -1,11 +1,9 @@
-name: homepage refinement once
+name: homepage-refinement-once
 
-on:
+'on':
   push:
-    branches:
-      - feature/sitewide-main-continuity-v54
-    paths:
-      - .github/workflows/homepage-refinement-once.yml
+    branches: [feature/sitewide-main-continuity-v54]
+    paths: [.github/workflows/homepage-refinement-once.yml]
 
 permissions:
   contents: write
@@ -14,110 +12,61 @@ jobs:
   refine:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout sitewide redesign branch
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           ref: feature/sitewide-main-continuity-v54
           fetch-depth: 0
-
-      - name: Refine MAIN page
-        shell: bash
+      - shell: bash
         run: |
           set -euo pipefail
-          python3 - <<'PY'
+          python3 <<'PY'
           from pathlib import Path
           import re
 
-          path = Path('docs/index.html')
-          text = path.read_text(encoding='utf-8')
+          p = Path('docs/index.html')
+          s = p.read_text(encoding='utf-8')
 
-          # 1. Simplify Institutional Excellence supporting copy and add About CTA.
-          old_points = '''        <div class="v24-copy-points">
+          old = '''        <div class="v24-copy-points">
           <div class="v24-copy-point"><span class="v24-copy-point__icon">★</span><span>Founder-led. Policy-driven. Process enforced.</span></div>
           <div class="v24-copy-point"><span class="v24-copy-point__icon">✓</span><span>Uniform delivery. Consistent standards. Reviewable outcomes.</span></div>
         </div>'''
-          new_points = '''        <p>Founder-led. Policy-driven. Process enforced.</p>
+          new = '''        <p>Founder-led. Policy-driven. Process enforced.</p>
         <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="/about/">About Black Bag Security →</a></div>'''
-          if old_points not in text:
-              raise SystemExit('institutional copy block not found')
-          text = text.replace(old_points, new_points, 1)
+          if old not in s:
+              raise SystemExit('institutional block missing')
+          s = s.replace(old, new, 1)
 
-          # 2. Remove Focused Services / Measurable Impact section completely.
-          start_marker = '  <section class="v24-section" aria-labelledby="focused-services">'
-          next_marker = '  <section class="v24-section" aria-labelledby="same-rigor">'
-          start = text.find(start_marker)
-          end = text.find(next_marker, start)
-          if start < 0 or end < 0:
-              raise SystemExit('focused services section boundaries not found')
-          text = text[:start] + text[end:]
+          a = s.find('  <section class="v24-section" aria-labelledby="focused-services">')
+          b = s.find('  <section class="v24-section" aria-labelledby="same-rigor">', a)
+          if a < 0 or b < 0:
+              raise SystemExit('focused services boundaries missing')
+          s = s[:a] + s[b:]
 
-          # 3. Match all remaining MAIN content CTAs to the Contact assessment CTA.
-          text = text.replace(
-              '<a class="v24-btn" href="/methodology/">See the methodology →</a>',
-              '<a class="v24-btn v24-btn--accent" href="/methodology/">See the methodology →</a>',
-              1,
-          )
-          text = text.replace(
-              '<a class="v24-btn" href="/trust/">See the trust model →</a>',
-              '<a class="v24-btn v24-btn--accent" href="/methodology/#client-protection">See client protection →</a>',
-              1,
-          )
+          s = s.replace('class="v24-btn" href="/methodology/"', 'class="v24-btn v24-btn--accent" href="/methodology/"', 1)
+          s = s.replace('class="v24-btn" href="/trust/">See the trust model →', 'class="v24-btn v24-btn--accent" href="/methodology/#client-protection">See client protection →', 1)
+          s = s.replace('The Arsenal shows the engineering depth behind the work without exposing client engagements.', 'Proof shows the engineering depth behind the work without exposing client engagements.', 1)
+          s = s.replace('View the Engineering Arsenal →', 'View Proof →', 1)
 
-          # 4. Keep public terminology aligned to Proof, not the internal route name.
-          text = text.replace(
-              'The Arsenal shows the engineering depth behind the work without exposing client engagements.',
-              'Proof shows the engineering depth behind the work without exposing client engagements.',
-              1,
-          )
-          text = text.replace(
-              'View the Engineering Arsenal →',
-              'View Proof →',
-              1,
-          )
+          for href in ('/arsenal/aotp/','/arsenal/security-engagement-platform/','/arsenal/osmap/','/arsenal/browser-safe-ai-security/'):
+              old_link = f'<a href="{href}">Inspect →</a>'
+              new_link = f'<a class="v24-btn v24-btn--accent" href="{href}">Inspect →</a>'
+              if old_link not in s:
+                  raise SystemExit('missing proof link ' + href)
+              s = s.replace(old_link, new_link, 1)
 
-          # Proof-card links use the exact same accent-button treatment.
-          proof_paths = [
-              '/arsenal/aotp/',
-              '/arsenal/security-engagement-platform/',
-              '/arsenal/osmap/',
-              '/arsenal/browser-safe-ai-security/',
-          ]
-          for href in proof_paths:
-              old = f'<a href="{href}">Inspect →</a>'
-              new = f'<a class="v24-btn v24-btn--accent" href="{href}">Inspect →</a>'
-              if old not in text:
-                  raise SystemExit(f'proof link not found: {href}')
-              text = text.replace(old, new, 1)
+          for token in ('Focused services.','Measurable impact.','Uniform delivery. Consistent standards. Reviewable outcomes.','View the Engineering Arsenal','The Arsenal shows'):
+              if token in s:
+                  raise SystemExit('forbidden content remains: ' + token)
 
-          # Validation gates.
-          forbidden = [
-              'Focused services.',
-              'Measurable impact.',
-              'Uniform delivery. Consistent standards. Reviewable outcomes.',
-              '<span class="v24-copy-point__icon">★</span>',
-              '<span class="v24-copy-point__icon">✓</span>',
-              'View the Engineering Arsenal',
-              'The Arsenal shows',
-          ]
-          for token in forbidden:
-              if token in text:
-                  raise SystemExit(f'forbidden MAIN content remains: {token}')
+          anchors = re.findall(r'<a\b[^>]*>', s)
+          bad = [x for x in anchors if 'v24-btn v24-btn--accent' not in x]
+          if bad:
+              raise SystemExit('nonstandard MAIN link remains: ' + ' | '.join(bad))
 
-          if '<p>Founder-led. Policy-driven. Process enforced.</p>' not in text:
-              raise SystemExit('standard institutional subtitle missing')
-          if 'href="/about/">About Black Bag Security →</a>' not in text:
-              raise SystemExit('About CTA missing')
-
-          anchors = re.findall(r'<a\b[^>]*>', text)
-          nonstandard = [a for a in anchors if 'v24-btn v24-btn--accent' not in a]
-          if nonstandard:
-              raise SystemExit('MAIN contains non-standard content links: ' + ' | '.join(nonstandard))
-
-          path.write_text(text, encoding='utf-8')
+          p.write_text(s, encoding='utf-8')
           PY
-
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git add docs/index.html
           git commit -m 'refine main conversion flow'
           git push origin HEAD:feature/sitewide-main-continuity-v54
