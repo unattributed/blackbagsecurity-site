@@ -1,0 +1,126 @@
+name: proof hero lock setup once
+
+on:
+  push:
+    branches:
+      - feature/proof-sales-v43
+    paths:
+      - .github/workflows/proof-hero-lock-setup-once.yml
+
+permissions:
+  contents: write
+
+jobs:
+  lock-proof-hero:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Proof branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/proof-sales-v43
+          fetch-depth: 0
+
+      - name: Record approved Proof hero baseline
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .github/reviews
+
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          source = Path('docs/research.md').read_text(encoding='utf-8')
+          m = re.search(r'  <section class="proof43-hero".*?</section>', source, flags=re.S)
+          if not m:
+              raise SystemExit('Proof hero section not found')
+          Path('.github/reviews/proof-hero-approved-2026-09-02.html').write_text(m.group(0) + '\n', encoding='utf-8')
+
+          css = Path('docs/assets/css/bbs-proof-aotp-ux-v44.css').read_text(encoding='utf-8')
+          Path('.github/reviews/proof-hero-approved-style-2026-09-02.css').write_text(css, encoding='utf-8')
+          PY
+
+          cat > .github/reviews/proof-hero-approved-lock-2026-09-02.md <<'EOF'
+          # Proof hero approved lock
+
+          Approved on 2026-09-02.
+
+          Locked section:
+          - Title: `The capability is built, not borrowed.`
+          - Subtitle: `When standard tooling falls short, we build the capability to turn uncertainty into proof.`
+          - Native AOTP Operator Workspace dashboard graphic and bottom capability rail.
+
+          The remainder of the Proof page remains under active design review.
+          Reopen this section explicitly before changing its copy, markup, or dedicated native-dashboard styling.
+          EOF
+
+          cat > .github/workflows/proof-hero-lock.yml <<'EOF'
+          name: proof hero immutable lock
+
+          on:
+            push:
+              branches:
+                - main
+                - redesign/v2
+                - 'feature/**'
+            pull_request:
+              branches:
+                - main
+                - redesign/v2
+
+          permissions:
+            contents: read
+
+          jobs:
+            verify-proof-hero-lock:
+              runs-on: ubuntu-latest
+              steps:
+                - name: Checkout repository
+                  uses: actions/checkout@v4
+
+                - name: Verify approved Proof hero
+                  shell: bash
+                  run: |
+                    set -euo pipefail
+                    python3 - <<'PY'
+                    from pathlib import Path
+                    import re
+                    import sys
+
+                    source = Path('docs/research.md').read_text(encoding='utf-8')
+                    m = re.search(r'  <section class="proof43-hero".*?</section>', source, flags=re.S)
+                    if not m:
+                        print('FAIL: Proof hero section is missing')
+                        sys.exit(1)
+
+                    current = m.group(0) + '\n'
+                    approved = Path('.github/reviews/proof-hero-approved-2026-09-02.html').read_text(encoding='utf-8')
+                    if current != approved:
+                        print('FAIL: approved Proof hero markup drift detected')
+                        print('Explicitly reopen the Proof hero before changing it.')
+                        sys.exit(1)
+                    print('PASS: approved Proof hero markup is intact')
+
+                    current_css = Path('docs/assets/css/bbs-proof-aotp-ux-v44.css').read_text(encoding='utf-8')
+                    approved_css = Path('.github/reviews/proof-hero-approved-style-2026-09-02.css').read_text(encoding='utf-8')
+                    if current_css != approved_css:
+                        print('FAIL: approved Proof hero dashboard styling drift detected')
+                        print('Explicitly reopen the Proof hero before changing it.')
+                        sys.exit(1)
+                    print('PASS: approved Proof hero dashboard styling is intact')
+
+                    loader = Path('docs/assets/css/arsenal-v2.css').read_text(encoding='utf-8')
+                    if "bbs-proof-aotp-ux-v44.css" not in loader:
+                        print('FAIL: approved Proof hero stylesheet is no longer loaded')
+                        sys.exit(1)
+                    print('PASS: Proof hero stylesheet loader is intact')
+                    PY
+          EOF
+
+          rm .github/workflows/proof-hero-lock-setup-once.yml
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .github/reviews .github/workflows/proof-hero-lock.yml .github/workflows/proof-hero-lock-setup-once.yml
+          git commit -m 'lock approved proof hero'
+          git push origin HEAD:feature/proof-sales-v43
