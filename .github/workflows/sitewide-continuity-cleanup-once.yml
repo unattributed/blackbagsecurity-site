@@ -1,0 +1,79 @@
+name: sitewide continuity cleanup once
+
+on:
+  push:
+    branches:
+      - feature/sitewide-main-continuity-v54
+    paths:
+      - .github/workflows/sitewide-continuity-cleanup-once.yml
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout sitewide redesign branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/sitewide-main-continuity-v54
+          fetch-depth: 0
+
+      - name: Normalize secondary marketing pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          proof_files = [
+              Path('docs/research.md'),
+              Path('docs/arsenal/aotp.md'),
+              Path('docs/arsenal/security-engagement-platform.md'),
+              Path('docs/arsenal/osmap.md'),
+              Path('docs/arsenal/openbsd-mailstack.md'),
+              Path('docs/arsenal/browser-safe-ai-security.md'),
+          ]
+
+          for path in proof_files:
+              text = path.read_text(encoding='utf-8')
+              text = text.replace('arsenal_v2: true\n', '')
+              path.write_text(text, encoding='utf-8')
+
+          aotp = Path('docs/arsenal/aotp.md')
+          text = aotp.read_text(encoding='utf-8')
+          text = text.replace('\n description:', '\ndescription:', 1)
+          aotp.write_text(text, encoding='utf-8')
+
+          about = Path('docs/about.md')
+          text = about.read_text(encoding='utf-8')
+          text = text.replace('<strong>Engineering Arsenal</strong><p>Build capabilities that make difficult work repeatable.</p><a href="{{ \'/arsenal/\' | relative_url }}">Explore the Arsenal →</a>', '<strong>Proof</strong><p>Inspect original systems, research, and engineering capability behind the work.</p><a href="{{ \'/arsenal/\' | relative_url }}">Explore Proof →</a>', 1)
+          about.write_text(text, encoding='utf-8')
+
+          contact = Path('docs/contact.md')
+          text = contact.read_text(encoding='utf-8')
+          text = text.replace('<a href="{{ \'/trust/\' | relative_url }}">Trust model →</a>', '<a href="{{ \'/methodology/#client-protection\' | relative_url }}">Client protection →</a>', 1)
+          contact.write_text(text, encoding='utf-8')
+
+          layout = Path('docs/_layouts/home-v2.html')
+          text = layout.read_text(encoding='utf-8')
+          old_nav = '''        {% if page.marketing_v3 %}\n        <a{% if page.url contains '/trust/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/trust/' | relative_url }}">Trust</a>\n        <a{% if page.url contains '/about/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/about/' | relative_url }}">About</a>\n        {% else %}\n        <a{% if page.url contains '/about/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/about/' | relative_url }}">About</a>\n        <a{% if page.url contains '/contact/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/contact/' | relative_url }}">Contact</a>\n        {% endif %}'''
+          new_nav = '''        {% if page.homepage_v2 %}\n        <a{% if page.url contains '/trust/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/trust/' | relative_url }}">Trust</a>\n        <a{% if page.url contains '/about/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/about/' | relative_url }}">About</a>\n        {% else %}\n        <a{% if page.url contains '/about/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/about/' | relative_url }}">About</a>\n        <a{% if page.url contains '/contact/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/contact/' | relative_url }}">Contact</a>\n        {% endif %}'''
+          if old_nav not in text:
+              raise SystemExit('expected primary navigation block not found')
+          text = text.replace(old_nav, new_nav, 1)
+
+          old_footer = '''      <nav aria-label="Footer">\n        <a href="{{ '/services/' | relative_url }}">Services</a>\n        <a href="{{ '/methodology/' | relative_url }}">Method</a>\n        <a href="{{ '/arsenal/' | relative_url }}">Proof</a>\n        <a href="{{ '/about/' | relative_url }}">About</a>\n        <a href="{{ '/trust/' | relative_url }}">Trust</a>\n        <a href="{{ '/industries/' | relative_url }}">Industries</a>\n        <a href="{{ '/contact/' | relative_url }}">Contact</a>\n        <a href="{{ '/security.txt' | relative_url }}">Security</a>\n      </nav>'''
+          new_footer = '''      <nav aria-label="Footer">\n        <a href="{{ '/services/' | relative_url }}">Services</a>\n        <a href="{{ '/methodology/' | relative_url }}">Method</a>\n        <a href="{{ '/arsenal/' | relative_url }}">Proof</a>\n        <a href="{{ '/about/' | relative_url }}">About</a>\n        {% if page.homepage_v2 %}\n        <a href="{{ '/trust/' | relative_url }}">Trust</a>\n        <a href="{{ '/industries/' | relative_url }}">Industries</a>\n        {% endif %}\n        <a href="{{ '/contact/' | relative_url }}">Contact</a>\n        <a href="{{ '/security.txt' | relative_url }}">Security</a>\n      </nav>'''
+          if old_footer not in text:
+              raise SystemExit('expected footer navigation block not found')
+          text = text.replace(old_footer, new_footer, 1)
+          layout.write_text(text, encoding='utf-8')
+          PY
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/research.md docs/arsenal docs/about.md docs/contact.md docs/_layouts/home-v2.html
+          git commit -m 'normalize sitewide main continuity'
+          git push origin HEAD:feature/sitewide-main-continuity-v54
