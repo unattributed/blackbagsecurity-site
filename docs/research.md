@@ -135,7 +135,7 @@ marketing_v3: true
 
   <section class="proof43-section proof43-section--dark" id="proof-work" aria-labelledby="aotp-proof-title">
     <div class="wrap proof43-section__grid">
-      <div class="proof43-copy"><p class="proof43-kicker">AOTP</p><h2 class="proof43-heading" id="aotp-proof-title">AI can accelerate testing. <span class="proof43-accent">Authority stays human.</span></h2><p>Local AI keeps assessment context local. Human operators govern execution, evidence, and what becomes a finding.</p><div class="proof43-project-meta"><span>Agentic planning</span><span>Campaign authority</span><span>Replay</span><span>Evidence</span></div><div class="proof43-actions"><a class="proof43-btn proof43-btn--quiet" href="{{ '/arsenal/aotp/' | relative_url }}">Inspect AOTP →</a></div></div>
+      <div class="proof43-copy"><p class="proof43-kicker">AOTP</p><h2 class="proof43-heading" id="aotp-proof-title">AI can accelerate testing. <span class="proof43-accent">Authority stays human.</span></h2><p>Privacy. AI acceleration. Human control.</p><div class="proof43-project-meta"><span>Agentic planning</span><span>Campaign authority</span><span>Replay</span><span>Evidence</span></div><div class="proof43-actions"><a class="proof43-btn proof43-btn--quiet" href="{{ '/arsenal/aotp/' | relative_url }}">Inspect AOTP →</a></div></div>
       <div class="proof43-visual"><div class="proof43-visual__topline"><span>Governed offensive testing</span><strong>AI proposes. Authority controls.</strong></div><div class="proof43-project-visual"><img src="{{ '/assets/img/aotp-governed-loop.svg' | relative_url }}" alt="AOTP governed offensive testing architecture"></div><div class="proof43-project-outcome">Evidence decides what becomes a finding</div></div>
     </div>
   </section>
