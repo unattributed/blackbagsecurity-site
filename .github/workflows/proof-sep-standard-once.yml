@@ -1,0 +1,52 @@
+name: proof sep standard once
+
+on:
+  push:
+    branches:
+      - feature/proof-sales-v43
+    paths:
+      - .github/workflows/proof-sep-standard-once.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update-sep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Proof branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/proof-sales-v43
+          fetch-depth: 0
+
+      - name: Replace SEP section and load visual
+        shell: bash
+        env:
+          OLD_B64: PHNlY3Rpb24gY2xhc3M9InByb29mNDMtc2VjdGlvbiBwcm9vZjQzLXNlY3Rpb24tLXNvZnQiIGFyaWEtbGFiZWxsZWRieT0ic2VwLXByb29mLXRpdGxlIj48ZGl2IGNsYXNzPSJ3cmFwIHByb29mNDMtc2VjdGlvbl9fZ3JpZCBwcm9vZjQzLXNlY3Rpb25fX2dyaWQtLXJldmVyc2UiPjxkaXYgY2xhc3M9InByb29mNDMtY29weSI+PHAgY2xhc3M9InByb29mNDMta2lja2VyIj5TZWN1cml0eSBFbmdhZ2VtZW50IFBsYXRmb3JtPC9wPjxoMiBjbGFzcz0icHJvb2Y0My1oZWFkaW5nIiBpZD0ic2VwLXByb29mLXRpdGxlIj5PbmUgZW5nYWdlbWVudCBzdGF0ZS4gPHNwYW4gY2xhc3M9InByb29mNDMtYWNjZW50Ij5BdXRob3JpdHkgdGhyb3VnaCByZXRlc3QuPC9zcGFuPjwvaDI+PHA+U2NvcGUsIGV2aWRlbmNlLCBjb3ZlcmFnZSwgcmVwb3J0aW5nLCBhbmQgcmV0ZXN0IHN0YXkgY29ubmVjdGVkLjwvcD48ZGl2IGNsYXNzPSJwcm9vZjQzLXByb2plY3QtbWV0YSI+PHNwYW4+QXV0aG9yaXphdGlvbjwvc3Bhbj48c3Bhbj5TY29wZTwvc3Bhbj48c3Bhbj5Qcm92ZW5hbmNlPC9zcGFuPjxzcGFuPlJldGVzdDwvc3Bhbj48L2Rpdj48ZGl2IGNsYXNzPSJwcm9vZjQzLWFjdGlvbnMiPjxhIGNsYXNzPSJwcm9vZjQzLWJ0biBwcm9vZjQzLWJ0bi0tcXVpZXQiIGhyZWY9Int7ICcvYXJzZW5hbC9zZWN1cml0eS1lbmdhZ2VtZW50LXBsYXRmb3JtLycgfCByZWxhdGl2ZV91cmwgfX0iPkluc3BlY3QgdGhlIHBsYXRmb3JtIOKGkjwvYT48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJwcm9vZjQzLXZpc3VhbCI+PGRpdiBjbGFzcz0icHJvb2Y0My12aXN1YWxfX3RvcGxpbmUiPjxzcGFuPkVuZ2FnZW1lbnQgY29udHJvbCBwbGFuZTwvc3Bhbj48c3Ryb25nPktub3cgd2hhdCBpcyB0cnVlIG5vdzwvc3Ryb25nPjwvZGl2PjxkaXYgY2xhc3M9InByb29mNDMtcHJvamVjdC12aXN1YWwiPjxpbWcgc3JjPSJ7eyAnL2Fzc2V0cy9pbWcvc2VwLWVuZ2FnZW1lbnQtc3RhdGUuc3ZnJyB8IHJlbGF0aXZlX3VybCB9fSIgYWx0PSJTZWN1cml0eSBFbmdhZ2VtZW50IFBsYXRmb3JtIGF1dGhvcml0YXRpdmUgc3RhdGUgYXJjaGl0ZWN0dXJlIj48L2Rpdj48ZGl2IGNsYXNzPSJwcm9vZjQzLXByb2plY3Qtb3V0Y29tZSI+T25lIGVuZ2FnZW1lbnQgaWRlbnRpdHkgZnJvbSBhdXRob3JpdHkgdGhyb3VnaCByZXRlc3Q8L2Rpdj48L2Rpdj48L2Rpdj48L3NlY3Rpb24+
+          NEW_B64: PHNlY3Rpb24gY2xhc3M9InByb29mNDMtc2VjdGlvbiBwcm9vZjQzLXNlY3Rpb24tLXNvZnQiIGFyaWEtbGFiZWxsZWRieT0ic2VwLXByb29mLXRpdGxlIj48ZGl2IGNsYXNzPSJ3cmFwIHByb29mNDMtc2VjdGlvbl9fZ3JpZCBwcm9vZjQzLXNlY3Rpb25fX2dyaWQtLXJldmVyc2UiPjxkaXYgY2xhc3M9InByb29mNDMtY29weSI+PHAgY2xhc3M9InByb29mNDMta2lja2VyIj5TZWN1cml0eSBFbmdhZ2VtZW50IFBsYXRmb3JtPC9wPjxoMiBjbGFzcz0icHJvb2Y0My1oZWFkaW5nIiBpZD0ic2VwLXByb29mLXRpdGxlIj5FdmVyeSBlbmdhZ2VtZW50IHN0YXJ0cyBmcm9tIDxzcGFuIGNsYXNzPSJwcm9vZjQzLWFjY2VudCI+dGhlIHNhbWUgc3RhbmRhcmQuPC9zcGFuPjwvaDI+PHA+U0VQIGlzIHRoZSBCQlMgZGVsaXZlcnkgc3lzdGVtIGZvciBhdXRob3JpemVkLCBpc29sYXRlZCwgZXZpZGVuY2UtcmVhZHkgc2VjdXJpdHkgZW5nYWdlbWVudHMuPC9wPjxkaXYgY2xhc3M9InByb29mNDMtcHJvamVjdC1tZXRhIj48c3Bhbj5Xcml0dGVuIGF1dGhvcml0eTwvc3Bhbj48c3Bhbj5Jc29sYXRlZCBydW50aW1lPC9zcGFuPjxzcGFuPkV2aWRlbmNlPC9zcGFuPjxzcGFuPlJldGVzdDwvc3Bhbj48L2Rpdj48ZGl2IGNsYXNzPSJwcm9vZjQzLWFjdGlvbnMiPjxhIGNsYXNzPSJwcm9vZjQzLWJ0biBwcm9vZjQzLWJ0bi0tcXVpZXQiIGhyZWY9Int7ICcvYXJzZW5hbC9zZWN1cml0eS1lbmdhZ2VtZW50LXBsYXRmb3JtLycgfCByZWxhdGl2ZV91cmwgfX0iPkluc3BlY3QgU0VQIOKGkjwvYT48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJwcm9vZjQzLXZpc3VhbCBwcm9vZjUxLXNlcC12aXN1YWwiPjxkaXYgY2xhc3M9InByb29mNDMtdmlzdWFsX190b3BsaW5lIj48c3Bhbj5CQlMgc2VjdXJpdHkgZW5nYWdlbWVudCBzdGFuZGFyZDwvc3Bhbj48c3Ryb25nPlJlcGVhdGFibGUgYnkgZGVzaWduPC9zdHJvbmc+PC9kaXY+PGRpdiBjbGFzcz0icHJvb2Y1MS1zdGFuZGFyZCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJTZWN1cml0eSBFbmdhZ2VtZW50IFBsYXRmb3JtIHZpc3VhbCBzaG93aW5nIHRoZSBCbGFjayBCYWcgU2VjdXJpdHkgc3RhbmRhcmQgZm9yIGF1dGhvcml6ZWQsIGlzb2xhdGVkLCBldmlkZW5jZS1yZWFkeSBzZWN1cml0eSBlbmdhZ2VtZW50IGRlbGl2ZXJ5Ij48ZGl2IGNsYXNzPSJwcm9vZjUxLXN0YW5kYXJkX19leWVicm93Ij48c3Bhbj5TdGFuZGFyZGl6ZWQgZGVsaXZlcnk8L3NwYW4+PGI+T25lIEJCUyBlbmdhZ2VtZW50IHN5c3RlbTwvYj48L2Rpdj48ZGl2IGNsYXNzPSJwcm9vZjUxLXNlYWwiPjxkaXYgY2xhc3M9InByb29mNTEtc2VhbF9fY29weSI+PHNtYWxsPlNFUDwvc21hbGw+PHN0cm9uZz5TVEFOREFSRCBERUxJVkVSWTwvc3Ryb25nPjxzcGFuPkF1dGhvcml6ZWQuIElzb2xhdGVkLiBFdmlkZW5jZS1yZWFkeS48L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0icHJvb2Y1MS1wcm9vZnBvaW50IHByb29mNTEtcHJvb2Zwb2ludC0tYXV0aG9yaXR5Ij48c21hbGw+V3JpdHRlbiBhdXRob3JpdHk8L3NtYWxsPjxzdHJvbmc+Qm91bmQgYmVmb3JlIHRlc3Rpbmc8L3N0cm9uZz48c3Bhbj5FeGFjdCB0YXJnZXRzLCB0ZXN0aW5nIHdpbmRvdywgYWxsb3dlZCBhY3Rpb25zLCBzdG9wIGNvbmRpdGlvbnMuPC9zcGFuPjwvZGl2PjxkaXYgY2xhc3M9InByb29mNTEtcHJvb2Zwb2ludCBwcm9vZjUxLXByb29mcG9pbnQtLXJ1bnRpbWUiPjxzbWFsbD5Qcml2YXRlIHJ1bnRpbWU8L3NtYWxsPjxzdHJvbmc+SXNvbGF0ZWQgcGVyIGVuZ2FnZW1lbnQ8L3N0cm9uZz48c3Bhbj5EZWRpY2F0ZWQgYnJvd3NlciwgcHJveHkgc3RhdGUsIGxvZ3MgYW5kIHdvcmtzcGFjZS48L3NwYW4+PC9kaXY+PGRpdiBjbGFzcz0icHJvb2Y1MS1wcm9vZnBvaW50IHByb29mNTEtcHJvb2Zwb2ludC0tZXZpZGVuY2UiPjxzbWFsbD5EZWxpdmVyeSByZWNvcmQ8L3NtYWxsPjxzdHJvbmc+RXZpZGVuY2Ugc3RheXMgc3RydWN0dXJlZDwvc3Ryb25nPjxzcGFuPkV2aWRlbmNlLCBmaW5kaW5ncywgY29tbXVuaWNhdGlvbnMgYW5kIHJlcG9ydGluZyBzdGF5IHRpZWQgdG8gdGhlIGVuZ2FnZW1lbnQuPC9zcGFuPjwvZGl2PjxkaXYgY2xhc3M9InByb29mNTEtcHJvb2Zwb2ludCBwcm9vZjUxLXByb29mcG9pbnQtLXJldGVzdCI+PHNtYWxsPlJldGVzdCBjb250aW51aXR5PC9zbWFsbD48c3Ryb25nPkhpc3Rvcnkgd2l0aG91dCBzdGFsZSBhdXRob3JpdHk8L3N0cm9uZz48c3Bhbj5OZXcgYXV0aG9yaXphdGlvbiwgcHJlc2VydmVkIGNvbnRleHQsIHNlcGFyYXRlIHJldGVzdCBldmlkZW5jZS48L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0icHJvb2Y1MS1zdGFuZGFyZF9fZm9vdGVyIj5PbmUgQkJTIGRlbGl2ZXJ5IHN0YW5kYXJkLiBFdmVyeSBhdXRob3JpemVkIGVuZ2FnZW1lbnQuPC9kaXY+PC9kaXY+PC9kaXY+PC9zZWN0aW9uPg==
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import base64, os
+          from pathlib import Path
+          p = Path('docs/research.md')
+          s = p.read_text()
+          old = base64.b64decode(os.environ['OLD_B64']).decode()
+          new = base64.b64decode(os.environ['NEW_B64']).decode()
+          assert s.count(old) == 1, f'old SEP section matches={s.count(old)}'
+          p.write_text(s.replace(old, new, 1))
+
+          css = Path('docs/assets/css/arsenal-v2.css')
+          c = css.read_text()
+          marker = "@import url('/assets/css/bbs-proof-aotp-marketing-v50.css');"
+          addition = marker + "\n@import url('/assets/css/bbs-proof-sep-standard-v51.css');"
+          if "bbs-proof-sep-standard-v51.css" not in c:
+              assert marker in c
+              css.write_text(c.replace(marker, addition, 1))
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/research.md docs/assets/css/arsenal-v2.css
+          git commit -m 'redesign proof sep delivery standard'
+          git push origin HEAD:feature/proof-sales-v43
