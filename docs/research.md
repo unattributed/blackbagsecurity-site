@@ -136,7 +136,54 @@ marketing_v3: true
   <section class="proof43-section proof43-section--dark" id="proof-work" aria-labelledby="aotp-proof-title">
     <div class="wrap proof43-section__grid">
       <div class="proof43-copy"><p class="proof43-kicker">AOTP</p><h2 class="proof43-heading" id="aotp-proof-title">AI can accelerate testing. <span class="proof43-accent">Authority stays human.</span></h2><p>Privacy. AI acceleration. Human control.</p><div class="proof43-project-meta"><span>Agentic planning</span><span>Campaign authority</span><span>Replay</span><span>Evidence</span></div><div class="proof43-actions"><a class="proof43-btn proof43-btn--quiet" href="{{ '/arsenal/aotp/' | relative_url }}">Inspect AOTP →</a></div></div>
-      <div class="proof43-visual"><div class="proof43-visual__topline"><span>Governed offensive testing</span><strong>AI proposes. Authority controls.</strong></div><div class="proof43-project-visual"><img src="{{ '/assets/img/aotp-governed-loop.svg' | relative_url }}" alt="AOTP governed offensive testing architecture"></div><div class="proof43-project-outcome">Evidence decides what becomes a finding</div></div>
+      <div class="proof43-visual proof49-aotp-visual">
+        <div class="proof43-visual__topline"><span>Local confidential execution</span><strong>Private by architecture</strong></div>
+        <div class="proof49-aotp-map" role="img" aria-label="AOTP architecture showing local campaign context and local AI, deterministic campaign authority, governed native tool execution to authorized targets, immutable evidence, replay validation, and human-reviewed findings">
+          <div class="proof49-local-boundary">
+            <div class="proof49-boundary-head"><span>Local trusted workstation</span><b>Client + campaign context stays local</b></div>
+
+            <div class="proof49-primary-flow">
+              <div class="proof49-stage proof49-stage--private">
+                <small>01 · Private context</small>
+                <strong>Local intelligence</strong>
+                <div class="proof49-chipset"><span>Campaign state</span><span>Encrypted vault</span><span>Local Ollama model</span></div>
+                <em>AI plans with bounded context</em>
+              </div>
+              <div class="proof49-arrow"><span>propose</span><b>→</b></div>
+              <div class="proof49-stage proof49-stage--authority">
+                <small>02 · Authority</small>
+                <strong>Deterministic control plane</strong>
+                <div class="proof49-chipset"><span>Scope + ROE</span><span>Budgets + stop conditions</span><span>Risk + approvals</span></div>
+                <em>Permit or deny every action</em>
+              </div>
+              <div class="proof49-arrow"><span>authorize</span><b>→</b></div>
+              <div class="proof49-stage proof49-stage--execution">
+                <small>03 · Execution</small>
+                <strong>Governed native tools</strong>
+                <div class="proof49-chipset proof49-chipset--tools"><span>Browser</span><span>HTTP / TLS</span><span>Scanner</span><span>Parrot tools</span></div>
+                <em>Only authorized calls execute</em>
+              </div>
+            </div>
+
+            <div class="proof49-execution-drop"><span>captured after side effect</span><b>↓</b></div>
+
+            <div class="proof49-evidence-flow">
+              <div class="proof49-result proof49-result--evidence"><small>04 · Evidence</small><strong>Immutable evidence</strong><span>Raw outputs · SHA-256 · provenance</span></div>
+              <div class="proof49-arrow proof49-arrow--compact"><b>→</b></div>
+              <div class="proof49-result proof49-result--verify"><small>05 · Verify</small><strong>Replay + validation</strong><span>Reproduce · compare · reject unsupported</span></div>
+              <div class="proof49-arrow proof49-arrow--compact"><b>→</b></div>
+              <div class="proof49-result proof49-result--human"><small>06 · Human decision</small><strong>Evidence-backed finding</strong><span>Review · report · retest</span></div>
+            </div>
+          </div>
+
+          <div class="proof49-target-path">
+            <span>Governed test traffic</span>
+            <div class="proof49-target-line"><b>→</b></div>
+            <div class="proof49-target-node"><small>Authorized target</small><strong>Active scope only</strong><em>Rules of engagement enforced</em></div>
+          </div>
+        </div>
+        <div class="proof49-principles"><span><b>AI</b> proposes</span><span><b>Policy</b> grants authority</span><span><b>Evidence</b> earns the finding</span></div>
+      </div>
     </div>
   </section>
 
