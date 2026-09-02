@@ -1,0 +1,41 @@
+name: proof aotp marketing loader once
+
+on:
+  push:
+    branches:
+      - feature/proof-sales-v43
+    paths:
+      - .github/workflows/proof-aotp-marketing-loader-once.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update-loader:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Proof branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/proof-sales-v43
+          fetch-depth: 0
+
+      - name: Switch AOTP visual stylesheet
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path('docs/assets/css/arsenal-v2.css')
+          source = path.read_text(encoding='utf-8')
+          old = "@import url('/assets/css/bbs-proof-aotp-architecture-v49.css');"
+          new = "@import url('/assets/css/bbs-proof-aotp-marketing-v50.css');"
+          if source.count(old) != 1:
+              raise SystemExit(f'expected one v49 loader import, found {source.count(old)}')
+          path.write_text(source.replace(old, new, 1), encoding='utf-8')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/assets/css/arsenal-v2.css
+          git commit -m 'load proof aotp marketing visual'
+          git push origin HEAD:feature/proof-sales-v43
