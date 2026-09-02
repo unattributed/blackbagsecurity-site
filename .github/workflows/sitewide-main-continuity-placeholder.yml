@@ -1,0 +1,8 @@
+name: sitewide main continuity placeholder
+on:
+  workflow_dispatch:
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo sitewide continuity branch
