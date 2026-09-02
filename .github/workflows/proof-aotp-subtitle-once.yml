@@ -1,0 +1,43 @@
+name: proof aotp subtitle once
+
+on:
+  push:
+    branches:
+      - feature/proof-sales-v43
+    paths:
+      - .github/workflows/proof-aotp-subtitle-once.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update-aotp-subtitle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Proof branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/proof-sales-v43
+          fetch-depth: 0
+
+      - name: Update AOTP subtitle
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          path = Path('docs/research.md')
+          source = path.read_text(encoding='utf-8')
+          old = 'Local AI keeps assessment context local. Human operators govern execution, evidence, and what becomes a finding.'
+          new = 'Privacy. AI acceleration. Human control.'
+          if source.count(old) != 1:
+              raise SystemExit(f'expected exactly one AOTP subtitle match, found {source.count(old)}')
+          path.write_text(source.replace(old, new, 1), encoding='utf-8')
+          PY
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/research.md
+          git commit -m 'refine proof aotp message'
+          git push origin HEAD:feature/proof-sales-v43
