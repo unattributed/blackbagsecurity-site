@@ -1,0 +1,49 @@
+name: proof sep remove bbs once
+
+on:
+  push:
+    branches:
+      - feature/proof-sales-v43
+    paths:
+      - .github/workflows/proof-sep-remove-bbs-once.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update-copy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Proof branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/proof-sales-v43
+          fetch-depth: 0
+
+      - name: Replace internal acronym in SEP marketing section
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          path = Path('docs/research.md')
+          text = path.read_text()
+          replacements = {
+              'SEP standardizes how BBS authorizes, isolates, evidences, reports, and retests security engagements.': 'SEP standardizes how Black Bag Security authorizes, isolates, evidences, reports, and retests security engagements.',
+              '<span>BBS security engagement standard</span><strong>Repeatable by design</strong>': '<span>Security engagement standard</span><strong>Repeatable by design</strong>',
+              '<span>Standardized engagement delivery</span><b>One BBS operating discipline</b>': '<span>Different engagements</span><b>One operating standard</b>',
+              '<small>BBS security engagement</small><b>SEP</b>': '<small>Security engagement</small><b>SEP</b>',
+              '<strong>One BBS standard.</strong>': '<strong>One delivery standard.</strong>',
+          }
+          for old, new in replacements.items():
+              if old not in text:
+                  raise SystemExit(f'missing expected text: {old}')
+              text = text.replace(old, new, 1)
+          path.write_text(text)
+          PY
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/research.md
+          git commit -m 'replace sep internal acronym in marketing copy'
+          git push origin HEAD:feature/proof-sales-v43
