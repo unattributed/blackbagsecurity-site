@@ -133,28 +133,9 @@ marketing_v3: true
     </div>
   </section>
 
-  <section class="proof43-section" aria-labelledby="why-build-title">
-    <div class="wrap">
-      <div class="proof43-section-head">
-        <div><p class="proof43-kicker">Why we build</p><h2 class="proof43-heading" id="why-build-title">When standard tooling stops, <span class="proof43-accent">engineering starts.</span></h2></div>
-        <p class="proof43-section-intro">Research. Build. Prove. Reuse.</p>
-      </div>
-      <div class="proof43-visual" aria-label="Difficult client problems move from investigation through engineering into reusable proof">
-        <div class="proof43-visual__topline"><span>From difficult problem to usable capability</span><strong>Build only what the answer needs</strong></div>
-        <div class="proof43-engineering-flow">
-          <div class="proof43-flow-node"><div class="proof43-flow-mark"><img src="{{ '/assets/img/icon-target.svg' | relative_url }}" alt=""></div><strong>Investigate</strong></div>
-          <div class="proof43-flow-node"><div class="proof43-flow-mark"><img src="{{ '/assets/img/icon-flask.svg' | relative_url }}" alt=""></div><strong>Research</strong></div>
-          <div class="proof43-flow-node"><div class="proof43-flow-mark"><img src="{{ '/assets/img/icon-code.svg' | relative_url }}" alt=""></div><strong>Build</strong></div>
-          <div class="proof43-flow-node"><div class="proof43-flow-mark"><img src="{{ '/assets/img/icon-evidence.svg' | relative_url }}" alt=""></div><strong>Prove</strong></div>
-        </div>
-        <div class="proof43-proof-standard"><span>Purpose-fit</span><span>Observable</span><span>Reproducible</span><span>Reusable</span></div>
-      </div>
-    </div>
-  </section>
-
   <section class="proof43-section proof43-section--dark" id="proof-work" aria-labelledby="aotp-proof-title">
     <div class="wrap proof43-section__grid">
-      <div class="proof43-copy"><p class="proof43-kicker">AOTP</p><h2 class="proof43-heading" id="aotp-proof-title">AI can accelerate testing. <span class="proof43-accent">Authority stays human.</span></h2><p>AI powered, human governed, evidence first security testing.</p><div class="proof43-project-meta"><span>Agentic planning</span><span>Campaign authority</span><span>Replay</span><span>Evidence</span></div><div class="proof43-actions"><a class="proof43-btn proof43-btn--quiet" href="{{ '/arsenal/aotp/' | relative_url }}">Inspect AOTP →</a></div></div>
+      <div class="proof43-copy"><p class="proof43-kicker">AOTP</p><h2 class="proof43-heading" id="aotp-proof-title">AI can accelerate testing. <span class="proof43-accent">Authority stays human.</span></h2><p>Local AI keeps assessment context local. Human operators govern execution, evidence, and what becomes a finding.</p><div class="proof43-project-meta"><span>Agentic planning</span><span>Campaign authority</span><span>Replay</span><span>Evidence</span></div><div class="proof43-actions"><a class="proof43-btn proof43-btn--quiet" href="{{ '/arsenal/aotp/' | relative_url }}">Inspect AOTP →</a></div></div>
       <div class="proof43-visual"><div class="proof43-visual__topline"><span>Governed offensive testing</span><strong>AI proposes. Authority controls.</strong></div><div class="proof43-project-visual"><img src="{{ '/assets/img/aotp-governed-loop.svg' | relative_url }}" alt="AOTP governed offensive testing architecture"></div><div class="proof43-project-outcome">Evidence decides what becomes a finding</div></div>
     </div>
   </section>
