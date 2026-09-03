@@ -95,6 +95,26 @@
     0 0 42px rgba(31, 202, 231, .045);
 }
 
+/* Adversary Validation is intentionally more visual on desktop.
+ * The approved graphic carries the section argument, so give it more
+ * reading area and reduce the amount of eye strain required to inspect it.
+ */
+@media (min-width: 1181px) {
+  .page-ref-services .svc57-section[aria-labelledby="adversary-title"] .svc57-grid {
+    grid-template-columns: minmax(0, 1.52fr) minmax(260px, .48fr);
+    gap: clamp(28px, 3.4vw, 56px);
+  }
+
+  .page-ref-services .svc57-section[aria-labelledby="adversary-title"] .svc57-copy {
+    max-width: 470px;
+  }
+
+  .page-ref-services .svc57-section[aria-labelledby="adversary-title"] .svc57-visual {
+    width: calc(100% + 28px);
+    margin-left: -28px;
+  }
+}
+
 .page-ref-services .svc57-tags {
   display: flex;
   flex-wrap: wrap;
