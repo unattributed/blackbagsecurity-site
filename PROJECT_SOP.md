@@ -49,15 +49,70 @@ Commands shown to the operator must reference only operator-real paths. Do not t
 
 The ChatGPT artifact transfer link is separate from the command that the operator runs. After the user downloads the file, commands must use the user's actual destination, normally `$HOME/Downloads` or another explicit operator-supplied path.
 
+Every complete operator Bash block must begin with literal `clear`.
+
+### Terminal persistence rule
+
+Operator-facing commands and launchers must not close the terminal window automatically, whether the operation succeeds or fails.
+
+This rule applies to:
+
+- pasteable Bash blocks,
+- scripts intended to be launched from a desktop shortcut or terminal launcher,
+- installer wrappers,
+- validation commands,
+- Git commit and push workflows.
+
+A complete operator command must preserve access to the terminal after every success and failure path so the operator can read the final output, copy evidence, inspect errors, and continue working.
+
+Do not rely on terminal-emulator configuration such as `hold`, `--wait`, or profile-specific behavior. Terminal persistence must be implemented by the delivered command or launcher itself.
+
+For a complete pasteable Bash block, the preferred pattern is:
+
+1. start with literal `clear`,
+2. run strict work inside a subshell or function,
+3. capture the return code outside that strict execution scope,
+4. print an explicit final PASS or FAIL state,
+5. replace the command shell with an interactive shell using `exec "${SHELL:-/bin/bash}" -i`.
+
+Example structure:
+
+```bash
+clear
+set +e
+(
+  set -euo pipefail
+  # bounded work here
+)
+RC=$?
+
+echo
+if [ "$RC" -eq 0 ]; then
+  echo "OPERATION=PASS"
+else
+  echo "OPERATION=FAIL"
+  echo "return_code=$RC"
+fi
+
+echo "Terminal remains open for review."
+exec "${SHELL:-/bin/bash}" -i
+```
+
+Do not place an unguarded top-level `set -euo pipefail` in an operator-facing block when an error could terminate a launcher-owned shell before the operator can review the failure.
+
+An inner script may use `exit` or strict Bash behavior as needed, but the operator-facing wrapper that launches it must preserve the terminal after the inner script returns.
+
+A command that can terminate the terminal window on success or failure is not ready for operator delivery.
+
 ### Failure behavior
 
-If an artifact was generated with a prohibited runtime path:
+If an artifact was generated with a prohibited runtime path or a command was delivered without terminal persistence:
 
-1. Do not ask the operator to adapt the invalid path manually.
-2. Rebuild or correct the artifact.
-3. Re-run bundle-content validation.
-4. Provide a corrected bundle and sidecar.
-5. Treat the original artifact as superseded.
+1. Do not ask the operator to adapt the invalid delivery manually.
+2. Rebuild or correct the artifact or command.
+3. Re-run bundle-content and operator-command validation.
+4. Provide a corrected bundle, sidecar, and complete command when applicable.
+5. Treat the original delivery as superseded.
 
 ## Artifact delivery standard
 
@@ -68,9 +123,10 @@ Reusable development deliveries should use:
 3. one complete pasteable Bash command,
 4. SHA-256 verification before extraction or execution,
 5. explicit PASS/FAIL gates,
-6. signed Git commit checkpoints when repository changes are committed by the operator.
+6. terminal persistence after success and failure,
+7. signed Git commit checkpoints when repository changes are committed by the operator.
 
-Operator-facing Bash blocks should begin with literal `clear` when a complete execution block is provided.
+Before delivery, validate both the bundle contents and the complete on-screen command against this SOP.
 
 ## Repository and preview separation
 
