@@ -167,3 +167,43 @@
     font-size: 10px;
   }
 }
+
+/* MAIN v59 AOTP hero image. */
+.visual-site-v24.page-ref-home .v24-hero .v59-home-hero-art {
+  margin: 0;
+  padding: 8px;
+  overflow: hidden;
+  border-color: rgba(59, 203, 232, .34);
+  background:
+    radial-gradient(circle at 78% 14%, rgba(157,244,0,.045), transparent 30%),
+    linear-gradient(180deg, rgba(5,18,28,.98), rgba(2,9,16,.995));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.035),
+    0 30px 82px rgba(0,0,0,.38),
+    0 0 44px rgba(36,204,232,.045);
+}
+
+.visual-site-v24.page-ref-home .v24-hero .v59-home-hero-art::before {
+  inset: 8px;
+}
+
+.visual-site-v24.page-ref-home .v24-hero .v59-home-hero-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 720px) {
+  .visual-site-v24.page-ref-home .v24-hero .v59-home-hero-art {
+    padding: 5px;
+  }
+
+  .visual-site-v24.page-ref-home .v24-hero .v59-home-hero-art::before {
+    inset: 5px;
+  }
+
+  .visual-site-v24.page-ref-home .v24-hero .v59-home-hero-art img {
+    border-radius: 6px;
+  }
+}
