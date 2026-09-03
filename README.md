@@ -4,6 +4,7 @@
 - Static Jekyll site served from the /docs directory for GitHub Pages.
 - No third-party JS, analytics, or CDN assets; fonts and media are local.
 - Content is primarily Markdown/HTML with a single shared layout.
+- Repository operating rules are defined in [PROJECT_SOP.md](PROJECT_SOP.md) and apply to artifact delivery, operator commands, preview deployment, and runtime-path handling.
 
 ## Repository layout
 - docs/ (Jekyll site root)
@@ -15,6 +16,7 @@
   - assets/fonts/ (local fonts)
   - robots.txt, security.txt, .well-known/security.txt
 - nginx/blackbagsecurity.com.conf (legacy self-hosting example; not used for GitHub Pages)
+- PROJECT_SOP.md (canonical project operating rules)
 
 ## Local preview
 Requires Ruby + Jekyll installed:
@@ -34,6 +36,7 @@ Requires Ruby + Jekyll installed:
 5) Ensure docs/_config.yml includes .well-known so /.well-known/security.txt is served.
 
 ## Content and contribution notes
+- Follow PROJECT_SOP.md for all operator-facing bundles, scripts, commands, artifact paths, and preview deployment work.
 - Use front matter title/description for SEO and social metadata.
 - Reveal animation uses the reveal class plus delay-* utilities in docs/assets/css/site.css.
 - Avoid introducing inline scripts/styles to keep CSP compatibility for self-hosted deployments.
