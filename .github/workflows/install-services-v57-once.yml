@@ -1,0 +1,169 @@
+name: install services v57 accepted graphics
+
+on:
+  push:
+    branches:
+      - feature/sitewide-main-continuity-v54
+    paths:
+      - .github/workflows/install-services-v57-once.yml
+
+permissions:
+  contents: write
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout redesign branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/sitewide-main-continuity-v54
+          fetch-depth: 0
+
+      - name: Decode and validate accepted graphics
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p docs/assets/img/services
+          base64 -d .services-v57-assets/hero.b64 > docs/assets/img/services/services-engagement-synthesis-v57.webp
+          base64 -d .services-v57-assets/application-api.b64 > docs/assets/img/services/services-application-api-v57.webp
+          base64 -d .services-v57-assets/adversary.b64 > docs/assets/img/services/services-adversary-validation-v57.webp
+          cat .services-v57-assets/ai-parts/part00.b64 .services-v57-assets/ai-parts/part01.b64 .services-v57-assets/ai-parts/part02.b64 .services-v57-assets/ai-parts/part03_04.b64 .services-v57-assets/ai-parts/part05_06.b64 | base64 -d > docs/assets/img/services/services-ai-security-v57.webp
+          base64 -d .services-v57-assets/systems.b64 > docs/assets/img/services/services-secure-systems-engineering-v57.webp
+          for f in docs/assets/img/services/services-*-v57.webp; do
+            test -s "$f"
+            printf '%s: ' "$f"
+            file "$f"
+            grep -aq 'WEBP' "$f"
+          done
+
+      - name: Install Services page and presentation
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > docs/services.md <<'EOF'
+---
+layout: home-v2
+title: Security Services | Black Bag Security
+description: Outcome-led security testing and engineering for applications, adversary resistance, AI systems, and high-consequence infrastructure.
+permalink: /services/
+lang: en
+ref: services
+marketing_v3: true
+---
+<div class="v24-page svc57-page">
+  <section class="v24-hero svc57-hero" aria-labelledby="services-title">
+    <div class="wrap svc57-hero__grid">
+      <div class="v24-copy svc57-copy">
+        <p class="v24-kicker">Security services</p>
+        <h1 id="services-title">Start with what is at stake.<br><span class="v24-accent">We shape the security work.</span></h1>
+        <p class="v24-lead">Bring us the system, the decision, and the consequence. Black Bag Security turns that into focused testing or engineering designed to produce a defensible answer.</p>
+        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss an engagement →</a></div>
+      </div>
+      <figure class="svc57-art svc57-art--hero">
+        <img src="{{ '/assets/img/services/services-engagement-synthesis-v57.webp' | relative_url }}" width="1536" height="1024" alt="System, decision, and consequence synthesized into a recommended Black Bag Security engagement" loading="eager" decoding="async" />
+      </figure>
+    </div>
+  </section>
+
+  <section class="v24-section" aria-labelledby="app-api-title">
+    <div class="wrap svc57-section__grid">
+      <div class="v24-copy svc57-copy">
+        <p class="v24-kicker">Application &amp; API Security</p>
+        <h2 class="v24-title" id="app-api-title">Prove what can actually be <span class="v24-accent">abused.</span></h2>
+        <p>We follow identity, session, authorization, API, data, and business-logic paths until the real security condition is understood and reproducible.</p>
+        <p class="svc57-value">Attack surface mapped. Controls tested. Evidence preserved. Risk demonstrated.</p>
+        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/services/application-api-security/' | relative_url }}">Explore Application &amp; API Security →</a></div>
+      </div>
+      <figure class="svc57-art"><img src="{{ '/assets/img/services/services-application-api-v57.webp' | relative_url }}" width="1536" height="1024" alt="Application and API security testing from attack-surface discovery through evidence-backed validated risk" loading="lazy" decoding="async" /></figure>
+    </div>
+  </section>
+
+  <section class="v24-section" aria-labelledby="adversary-title">
+    <div class="wrap svc57-section__grid svc57-section__grid--reverse">
+      <figure class="svc57-art"><img src="{{ '/assets/img/services/services-adversary-validation-v57.webp' | relative_url }}" width="1536" height="1024" alt="Adversary validation showing objective, scope, attack path, defensive controls, operator governance, proof, and validated exposure" loading="lazy" decoding="async" /></figure>
+      <div class="v24-copy svc57-copy">
+        <p class="v24-kicker">Adversary Validation</p>
+        <h2 class="v24-title" id="adversary-title">Test whether the defenses <span class="v24-accent">hold under pressure.</span></h2>
+        <p>We validate realistic adversary paths inside explicit authority and safety boundaries, then show which controls prevent, detect, contain, or fail.</p>
+        <p class="svc57-value">Realistic path. Governed execution. Demonstrated control effect.</p>
+        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/services/adversary-validation/' | relative_url }}">Explore Adversary Validation →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="v24-section" aria-labelledby="ai-title">
+    <div class="wrap svc57-section__grid">
+      <div class="v24-copy svc57-copy">
+        <p class="v24-kicker">AI Security</p>
+        <h2 class="v24-title" id="ai-title">Privacy. AI acceleration. <span class="v24-accent">Human control.</span></h2>
+        <p>We test models, agents, browsers, tools, identities, memory, and data without treating confidentiality or human authority as optional design choices.</p>
+        <p class="svc57-value">Private context stays local. AI accelerates analysis. Humans retain authority. Evidence earns the finding.</p>
+        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/services/ai-security/' | relative_url }}">Explore AI Security →</a></div>
+      </div>
+      <figure class="svc57-art"><img src="{{ '/assets/img/services/services-ai-security-v57.webp' | relative_url }}" width="1536" height="1024" alt="Private local AI security workflow with protected context, human control, and evidence-backed outcomes" loading="lazy" decoding="async" /></figure>
+    </div>
+  </section>
+
+  <section class="v24-section" aria-labelledby="systems-title">
+    <div class="wrap svc57-section__grid svc57-section__grid--reverse">
+      <figure class="svc57-art"><img src="{{ '/assets/img/services/services-secure-systems-engineering-v57.webp' | relative_url }}" width="1536" height="1024" alt="Secure systems engineering spanning architecture, policy, isolation, hardened services, sanitization, trust boundaries, and resilient delivery" loading="lazy" decoding="async" /></figure>
+      <div class="v24-copy svc57-copy">
+        <p class="v24-kicker">Secure Systems Engineering</p>
+        <h2 class="v24-title" id="systems-title">Security that is <span class="v24-accent">built into the system.</span></h2>
+        <p>When testing identifies a deeper architectural problem, we can engineer the missing control: privilege boundaries, isolation, hardening, sanitization, observability, recovery, or purpose-built tooling.</p>
+        <p class="svc57-value">Secure by design. Hardened for operation. Built to survive real consequences.</p>
+        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/services/secure-systems-engineering/' | relative_url }}">Explore Secure Systems Engineering →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="v24-close svc57-close" aria-labelledby="services-close-title">
+    <div class="wrap svc57-close__grid">
+      <div class="v24-copy">
+        <p class="v24-kicker">Start with the consequence</p>
+        <h2 class="v24-title" id="services-close-title">You do not need to know <span class="v24-accent">which test to buy.</span></h2>
+        <p>Tell us the system, what cannot go wrong, and the decision you need to make. We will recommend the work and define the evidence needed to support the answer.</p>
+        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Start the conversation →</a></div>
+      </div>
+      <div class="svc57-close__outcomes" aria-label="Black Bag Security engagement outcomes"><span>Right work</span><i>→</i><span>Right evidence</span><i>→</i><strong>Decision ready</strong></div>
+    </div>
+  </section>
+</div>
+EOF
+
+          cat > docs/assets/css/bbs-services-images-v57.css <<'EOF'
+/* Black Bag Security Services v57, accepted image-led marketing presentation. */
+.page-ref-services .svc57-hero__grid,.page-ref-services .svc57-section__grid,.page-ref-services .svc57-close__grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.35fr);gap:clamp(34px,5vw,78px);align-items:center}.page-ref-services .svc57-section__grid--reverse{grid-template-columns:minmax(0,1.35fr) minmax(0,.82fr)}.page-ref-services .svc57-copy{max-width:560px}.page-ref-services .svc57-art{position:relative;margin:0;overflow:hidden;border:1px solid rgba(62,171,198,.36);border-radius:12px;background:#020b13;box-shadow:0 26px 70px rgba(0,0,0,.34),0 0 42px rgba(36,204,232,.045),inset 0 1px 0 rgba(255,255,255,.035)}.page-ref-services .svc57-art::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(157,244,0,.025)}.page-ref-services .svc57-art img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}.page-ref-services .svc57-art--hero{box-shadow:0 34px 82px rgba(0,0,0,.4),0 0 52px rgba(36,204,232,.055)}.page-ref-services .svc57-value{margin-top:22px!important;padding-top:18px;border-top:1px solid rgba(63,166,190,.24);color:#dbe5e2!important;font-size:13px!important;font-weight:650;letter-spacing:.015em}.page-ref-services .svc57-close__grid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}.page-ref-services .svc57-close__outcomes{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:12px;align-items:center;min-height:180px;padding:28px;border:1px solid rgba(62,171,198,.3);border-radius:12px;background:linear-gradient(145deg,rgba(6,22,33,.96),rgba(2,11,18,.99));box-shadow:0 24px 60px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.03)}.page-ref-services .svc57-close__outcomes span,.page-ref-services .svc57-close__outcomes strong{display:grid;place-items:center;min-height:88px;padding:14px;border:1px solid rgba(36,204,232,.28);border-radius:8px;color:#dce6e3;font-size:11px;text-align:center;text-transform:uppercase;letter-spacing:.055em}.page-ref-services .svc57-close__outcomes strong{color:var(--v24-green);border-color:rgba(157,244,0,.48);background:rgba(157,244,0,.025)}.page-ref-services .svc57-close__outcomes i{color:var(--v24-cyan);font-style:normal}@media(max-width:1180px){.page-ref-services .svc57-hero__grid,.page-ref-services .svc57-section__grid,.page-ref-services .svc57-section__grid--reverse,.page-ref-services .svc57-close__grid{grid-template-columns:1fr;gap:30px}.page-ref-services .svc57-section__grid--reverse .svc57-art{order:2}.page-ref-services .svc57-section__grid--reverse .svc57-copy{order:1}.page-ref-services .svc57-copy{max-width:720px}}@media(max-width:680px){.page-ref-services .svc57-art{border-radius:9px}.page-ref-services .svc57-close__outcomes{grid-template-columns:1fr;min-height:0;padding:18px}.page-ref-services .svc57-close__outcomes i{transform:rotate(90deg);text-align:center}}
+EOF
+
+          python3 - <<'PY'
+from pathlib import Path
+p=Path('docs/_layouts/home-v2.html')
+s=p.read_text(encoding='utf-8')
+old="  {% if page.ref == 'services' %}<link rel=\"stylesheet\" href=\"{{ '/assets/css/bbs-services-marketing-v55.css' | relative_url }}\" />{% endif %}\n  {% if page.ref == 'services' %}<link rel=\"stylesheet\" href=\"{{ '/assets/css/bbs-services-hero-fit-v56.css' | relative_url }}\" />{% endif %}\n"
+new="  {% if page.ref == 'services' %}<link rel=\"stylesheet\" href=\"{{ '/assets/css/bbs-services-images-v57.css' | relative_url }}\" />{% endif %}\n"
+if old not in s: raise SystemExit('services v55/v56 loader block not found')
+p.write_text(s.replace(old,new,1),encoding='utf-8')
+PY
+
+      - name: Validate installed Services source
+        shell: bash
+        run: |
+          set -euo pipefail
+          for n in engagement-synthesis application-api adversary-validation ai-security secure-systems-engineering; do grep -q "services-${n}-v57.webp" docs/services.md; done
+          grep -q 'bbs-services-images-v57.css' docs/_layouts/home-v2.html
+          ! grep -q 'svc55-selector' docs/services.md
+          ! grep -q 'svc55-service-grid' docs/services.md
+
+      - name: Remove temporary staging and commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .services-v57-assets .services-v57-bundle .tmp
+          rm -f .github/workflows/verify-services-v57-bundle-once.yml .github/workflows/install-services-v57-once.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'install accepted services marketing graphics'
+          git push origin HEAD:feature/sitewide-main-continuity-v54
