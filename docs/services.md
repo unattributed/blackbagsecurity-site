@@ -111,18 +111,19 @@ marketing_v3: true
   </section>
 
   <section class="v24-close svc57-close" aria-labelledby="services-close-title">
-    <div class="wrap v24-close__grid">
-      <div class="v24-copy">
+    <div class="wrap v24-close__grid svc58-close__grid">
+      <div class="v24-copy svc58-close__copy">
         <p class="v24-kicker">Start with the consequence</p>
         <h2 class="v24-title" id="services-close-title">You do not need to know <span class="v24-accent">which test to buy.</span></h2>
         <p>Tell us the system, what cannot go wrong, and the decision you need to make. We will recommend the engagement and define the evidence needed to support it.</p>
         <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Start the conversation →</a></div>
       </div>
-      <div class="svc57-close__proof" aria-label="Black Bag Security engagement principles">
-        <div><strong>Right work</strong><span>Selected for the decision.</span></div>
-        <div><strong>Right evidence</strong><span>Designed to support the conclusion.</span></div>
-        <div><strong>Decision ready</strong><span>Clear enough to act, remediate, and verify.</span></div>
-      </div>
+      <figure class="svc57-visual svc58-close__visual">
+        <img src="{{ '/assets/img/services/services-engagement-recommendation-v58.png' | relative_url }}"
+             width="1672" height="941"
+             alt="Black Bag Security synthesizes the system, required decision, and potential consequence into the recommended security engagement."
+             loading="lazy" decoding="async" />
+      </figure>
     </div>
   </section>
 </div>
