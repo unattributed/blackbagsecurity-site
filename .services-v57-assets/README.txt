@@ -1,0 +1,1 @@
+Temporary staging marker for SERVICES v57 accepted marketing assets. Binary assets are committed through Git data objects and this staging marker is removed after installation.
