@@ -1,129 +1,120 @@
 ---
-layout: home-v2
-title: Security Services | Black Bag Security
-description: Outcome-led security testing and engineering for applications, adversary resistance, AI systems, and high-consequence infrastructure.
+layout: marketing
+title: Services | Black Bag Security
+description: Penetration testing, adversary validation, AI security, and secure systems engineering shaped around the decision and evidence your organization needs.
 permalink: /services/
 lang: en
 ref: services
-marketing_v3: true
 ---
-<div class="v24-page svc57-page">
-  <section class="v24-hero svc57-hero" aria-labelledby="services-title">
-    <div class="wrap svc57-grid svc57-grid--hero">
-      <div class="v24-copy svc57-copy">
-        <p class="v24-kicker">Security services</p>
-        <h1 id="services-title">Start with what is at stake.<br><span class="v24-accent">We shape the security work.</span></h1>
-        <p class="v24-lead">Bring us the system, the decision, and the consequence. Black Bag Security turns that into focused testing or engineering designed to produce a defensible answer.</p>
-        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss an engagement →</a></div>
+<div class="m-page">
+  <section class="m-hero" aria-labelledby="services-title">
+    <div class="marketing-wrap m-hero__grid">
+      <div class="m-copy">
+        <p class="m-eyebrow">Services</p>
+        <h1 id="services-title">Start with what is at stake. <span class="m-accent">We shape the security work.</span></h1>
+        <p class="m-lead">Bring us the system, the decision, and the consequence. Black Bag Security turns that into focused testing or engineering designed to produce a defensible answer.</p>
+        <div class="m-actions"><a class="m-button" href="{{ '/contact/#assessment' | relative_url }}">Discuss the problem</a></div>
       </div>
-
-      <figure class="svc57-visual svc57-visual--hero">
-        <img src="{{ '/assets/img/services/services-engagement-synthesis-v57.png' | relative_url }}"
-             width="1536" height="1024"
-             alt="System, decision, and consequence are synthesized into the appropriate Black Bag Security engagement."
-             loading="eager" decoding="async" />
-      </figure>
-    </div>
-  </section>
-
-  <section class="v24-section svc57-section" aria-labelledby="app-api-title">
-    <div class="wrap svc57-grid">
-      <div class="v24-copy svc57-copy">
-        <p class="v24-kicker">Application &amp; API Security</p>
-        <h2 class="v24-title" id="app-api-title">Prove what can <span class="v24-accent">actually be abused.</span></h2>
-        <p>We test identity, sessions, authorization, APIs, data flows, and business logic to separate theoretical weakness from reproducible security impact.</p>
-        <div class="svc57-tags" aria-label="Application and API security focus areas">
-          <span>Identity</span><span>Session</span><span>Authorization</span><span>API</span><span>Business logic</span>
+      <aside class="m-panel" aria-label="How work is shaped">
+        <div class="m-panel__head">How work is shaped</div>
+        <div class="m-panel__body">
+          <ul class="m-checks">
+            <li><div><strong>Decision</strong><span>What must the engagement establish?</span></div></li>
+            <li><div><strong>Consequence</strong><span>What happens if the control fails?</span></div></li>
+            <li><div><strong>Boundaries</strong><span>What can be tested safely and lawfully?</span></div></li>
+            <li><div><strong>Evidence</strong><span>What will make the conclusion defensible?</span></div></li>
+          </ul>
         </div>
-        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/services/application-api-security/' | relative_url }}">Explore Application &amp; API Security →</a></div>
-      </div>
-
-      <figure class="svc57-visual">
-        <img src="{{ '/assets/img/services/services-application-api-v57.png' | relative_url }}"
-             width="1536" height="1024"
-             alt="Application and API attack surface, authentication controls, live testing, evidence, and validated risk."
-             loading="lazy" decoding="async" />
-      </figure>
+      </aside>
     </div>
   </section>
 
-  <section class="v24-section svc57-section" aria-labelledby="adversary-title">
-    <div class="wrap svc57-grid svc57-grid--reverse">
-      <div class="v24-copy svc57-copy">
-        <p class="v24-kicker">Adversary Validation</p>
-        <h2 class="v24-title" id="adversary-title">Test whether the controls <span class="v24-accent">hold under pressure.</span></h2>
-        <p>We follow realistic attacker paths inside agreed authority and safety limits to show which preventive, detective, and response controls materially change the outcome.</p>
-        <div class="svc57-tags" aria-label="Adversary validation focus areas">
-          <span>Objective</span><span>Scope</span><span>Controls</span><span>Operator</span><span>Proof</span>
+  <section class="m-section" aria-labelledby="service-lines">
+    <div class="marketing-wrap">
+      <div class="m-section__intro">
+        <p class="m-eyebrow">Core service lines</p>
+        <h2 id="service-lines">Four ways to reduce <span class="m-accent">security uncertainty.</span></h2>
+        <p>The service line is the starting shape, not a rigid package. Scope and evidence are tailored to the system and the decision you need to make.</p>
+      </div>
+
+      <article class="m-service">
+        <div>
+          <h3>Application &amp; API Security</h3>
+          <p>Prove what can actually be abused across authentication, authorization, sessions, APIs, data flows, business logic, and exposed application behavior.</p>
+          <div class="m-tags"><span>Web applications</span><span>APIs</span><span>Identity</span><span>Business logic</span><span>Evidence-led testing</span></div>
         </div>
-        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/services/adversary-validation/' | relative_url }}">Explore Adversary Validation →</a></div>
-      </div>
+        <a href="{{ '/services/application-api-security/' | relative_url }}">Explore service</a>
+      </article>
 
-      <figure class="svc57-visual">
-        <img src="{{ '/assets/img/services/services-adversary-validation-v57.png' | relative_url }}"
-             width="1536" height="1024"
-             alt="Governed adversary validation from objective and scope through defensive controls, operator decisions, proof, and validated exposure."
-             loading="lazy" decoding="async" />
-      </figure>
-    </div>
-  </section>
-
-  <section class="v24-section svc57-section" aria-labelledby="ai-title">
-    <div class="wrap svc57-grid">
-      <div class="v24-copy svc57-copy">
-        <p class="v24-kicker">AI Security</p>
-        <h2 class="v24-title" id="ai-title">Secure the authority around AI, <span class="v24-accent">not just the model.</span></h2>
-        <p>We test where models, agents, browsers, tools, identities, memory, and data cross operational trust boundaries. Local-AI workflows can keep sensitive client and campaign context private while human operators retain authority.</p>
-        <div class="svc57-tags" aria-label="AI security focus areas">
-          <span>Privacy</span><span>Local AI</span><span>Human control</span><span>Evidence</span>
+      <article class="m-service">
+        <div>
+          <h3>Adversary Validation</h3>
+          <p>Test whether preventive, detective, and response controls materially change a realistic attacker path, without turning the exercise into uncontrolled theatre.</p>
+          <div class="m-tags"><span>Attack paths</span><span>Control validation</span><span>Detection</span><span>Response</span><span>Bounded execution</span></div>
         </div>
-        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/services/ai-security/' | relative_url }}">Explore AI Security →</a></div>
-      </div>
+        <a href="{{ '/services/adversary-validation/' | relative_url }}">Explore service</a>
+      </article>
 
-      <figure class="svc57-visual">
-        <img src="{{ '/assets/img/services/services-ai-security-v57.png' | relative_url }}"
-             width="1536" height="1024"
-             alt="Private client context, local AI acceleration, retained human authority, and an evidence-backed outcome."
-             loading="lazy" decoding="async" />
-      </figure>
-    </div>
-  </section>
-
-  <section class="v24-section svc57-section" aria-labelledby="systems-title">
-    <div class="wrap svc57-grid svc57-grid--reverse">
-      <div class="v24-copy svc57-copy">
-        <p class="v24-kicker">Secure Systems Engineering</p>
-        <h2 class="v24-title" id="systems-title">When testing is not enough, <span class="v24-accent">engineer the control.</span></h2>
-        <p>We build deliberate security properties into architecture, privilege, isolation, policy, hardening, content handling, observability, recovery, and day-to-day operation.</p>
-        <div class="svc57-tags" aria-label="Secure systems engineering focus areas">
-          <span>Architecture</span><span>Policy</span><span>Isolation</span><span>Hardening</span><span>Recovery</span>
+      <article class="m-service">
+        <div>
+          <h3>AI Security</h3>
+          <p>Secure the authority around AI, not just the model. We examine agents, browsers, tools, identities, prompts, memory, data access, execution boundaries, and human approval paths.</p>
+          <div class="m-tags"><span>Agents</span><span>LLMs</span><span>Tool use</span><span>Browser security</span><span>Data boundaries</span></div>
         </div>
-        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/services/secure-systems-engineering/' | relative_url }}">Explore Secure Systems Engineering →</a></div>
-      </div>
+        <a href="{{ '/services/ai-security/' | relative_url }}">Explore service</a>
+      </article>
 
-      <figure class="svc57-visual">
-        <img src="{{ '/assets/img/services/services-secure-systems-engineering-v57.png' | relative_url }}"
-             width="1536" height="1024"
-             alt="Secure systems engineering across architecture, policy, isolation, hardened services, sanitization, and trust boundaries."
-             loading="lazy" decoding="async" />
-      </figure>
+      <article class="m-service">
+        <div>
+          <h3>Secure Systems Engineering</h3>
+          <p>When testing is not enough, engineer the control into architecture, privilege, isolation, hardening, content handling, recovery, and operation.</p>
+          <div class="m-tags"><span>Architecture</span><span>Hardening</span><span>Isolation</span><span>Secure mail</span><span>Operational controls</span></div>
+        </div>
+        <a href="{{ '/services/secure-systems-engineering/' | relative_url }}">Explore service</a>
+      </article>
     </div>
   </section>
 
-  <section class="v24-close svc57-close" aria-labelledby="services-close-title">
-    <div class="wrap v24-close__grid svc58-close__grid">
-      <div class="v24-copy svc58-close__copy">
-        <p class="v24-kicker">Start with the consequence</p>
-        <h2 class="v24-title" id="services-close-title">You do not need to know <span class="v24-accent">which test to buy.</span></h2>
-        <p>Tell us the system, what cannot go wrong, and the decision you need to make. We will recommend the engagement and define the evidence needed to support it.</p>
-        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Start the conversation →</a></div>
+  <section class="m-section m-section--soft" aria-labelledby="engagement-models">
+    <div class="marketing-wrap">
+      <div class="m-section__intro">
+        <p class="m-eyebrow">Engagement shapes</p>
+        <h2 id="engagement-models">Buy the answer you need, <span class="m-accent">not unnecessary activity.</span></h2>
+        <p>Different decisions need different depths of work. We select the smallest engagement shape that can support a credible conclusion.</p>
       </div>
-      <figure class="svc57-visual svc58-close__visual">
-        <img src="{{ '/assets/img/services/services-engagement-recommendation-v58.png' | relative_url }}"
-             width="1672" height="941"
-             alt="Black Bag Security synthesizes the system, required decision, and potential consequence into the recommended security engagement."
-             loading="lazy" decoding="async" />
-      </figure>
+      <div class="m-grid">
+        <article class="m-card"><span class="m-card__label">Focused assessment</span><h3>A bounded question</h3><p>Validate a specific component, release, attack path, control, or concern with defined evidence and closure criteria.</p></article>
+        <article class="m-card"><span class="m-card__label">Full assessment</span><h3>Broader system assurance</h3><p>Map and test a wider application, API, identity, infrastructure, or AI attack surface using an agreed methodology.</p></article>
+        <article class="m-card"><span class="m-card__label">Engineering engagement</span><h3>Build the control</h3><p>Move from identified weakness to architecture, implementation, hardening, validation, and operational handoff.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="m-section" aria-labelledby="deliverables-title">
+    <div class="marketing-wrap m-split">
+      <div class="m-copy">
+        <p class="m-eyebrow">What you receive</p>
+        <h2 id="deliverables-title">Evidence for engineers. <span class="m-accent">Judgment for decision-makers.</span></h2>
+        <p>Deliverables connect technical proof to business consequence, remediation, and closure. We distinguish established facts from assumptions and unresolved uncertainty.</p>
+      </div>
+      <div class="m-grid m-grid--2">
+        <article class="m-card"><h3>Technical evidence</h3><p>Reproducible artifacts, request and response context, affected paths, conditions, limitations, and technical reasoning.</p></article>
+        <article class="m-card"><h3>Actionable findings</h3><p>Risk, impact, remediation guidance, prioritization, and the evidence required to validate the fix.</p></article>
+        <article class="m-card"><h3>Executive clarity</h3><p>What matters, why it matters, what remains uncertain, and what decision the evidence supports.</p></article>
+        <article class="m-card"><h3>Retest closure</h3><p>The original failure path is replayed against the remediation so closure is verified, not assumed.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="m-close" aria-labelledby="services-close">
+    <div class="marketing-wrap m-close__grid">
+      <div class="m-copy">
+        <p class="m-eyebrow">You do not need to know which test to buy</p>
+        <h2 id="services-close">Tell us the system and the consequence. <span class="m-accent">We will recommend the work.</span></h2>
+        <p>The first conversation can be brief. We will help translate the security question into an engagement with clear authority, evidence, deliverables, and closure.</p>
+        <div class="m-actions"><a class="m-button" href="{{ '/contact/#assessment' | relative_url }}">Shape an engagement</a></div>
+      </div>
+      <div class="m-contact-box"><strong>Engagement enquiries</strong><a href="mailto:hello@blackbagsecurity.com">hello@blackbagsecurity.com</a><p>Start with the system, concern, constraints, timing, and outcome.</p></div>
     </div>
   </section>
 </div>
