@@ -12,50 +12,74 @@ ref: arsenal
       <div class="m-copy">
         <p class="m-eyebrow">Proof</p>
         <h1 id="proof-title">Original engineering. <span class="m-accent">Inspectable capability.</span></h1>
-        <p class="m-lead">Black Bag Security builds systems around the same problems encountered in serious security work: authority, isolation, evidence, secure operations, AI trust boundaries, and repeatable delivery.</p>
+        <p class="m-lead">Black Bag Security builds systems around authority, isolation, evidence, secure operations, AI trust boundaries, and repeatable delivery. These are working expressions of how the practice solves difficult security problems.</p>
         <div class="m-actions"><a class="m-button" href="{{ '/contact/#assessment' | relative_url }}">Discuss an engagement</a></div>
       </div>
-      <aside class="m-panel" aria-label="Why proof matters">
-        <div class="m-panel__head">Why proof matters</div>
-        <div class="m-panel__body"><ul class="m-checks"><li><div><strong>Built, not merely described</strong><span>Working systems expose design tradeoffs that slideware can hide.</span></div></li><li><div><strong>Security properties are explicit</strong><span>Authority, privilege, evidence, isolation, and data boundaries are design inputs.</span></div></li><li><div><strong>Lessons return to client work</strong><span>Engineering improves testing, and testing improves engineering.</span></div></li></ul></div>
+      <aside class="m-assurance" aria-label="Engineering proof standard">
+        <div class="m-assurance__head"><span>Engineering proof standard</span><span>Inspectable</span></div>
+        <div class="m-assurance__layers">
+          <div class="m-assurance__layer"><span class="m-assurance__index">01 / PROP</span><div><strong>Security property</strong><p>Authority, privilege, isolation, integrity, or trust boundary is explicit.</p></div><span class="m-state">DEFINED</span></div>
+          <div class="m-assurance__layer"><span class="m-assurance__index">02 / IMPL</span><div><strong>Implementation</strong><p>The control exists in software, architecture, workflow, or operation.</p></div><span class="m-state">BUILT</span></div>
+          <div class="m-assurance__layer"><span class="m-assurance__index">03 / VAL</span><div><strong>Validation</strong><p>The behavior can be tested, observed, challenged, and improved.</p></div><span class="m-state">TESTABLE</span></div>
+          <div class="m-assurance__layer"><span class="m-assurance__index">04 / USE</span><div><strong>Operational purpose</strong><p>The system reduces uncertainty or risk in real security work.</p></div><span class="m-state">PRACTICAL</span></div>
+        </div>
       </aside>
     </div>
   </section>
 
   <section class="m-section" aria-labelledby="projects-title">
     <div class="marketing-wrap">
-      <div class="m-section__intro"><p class="m-eyebrow">Selected engineering and research</p><h2 id="projects-title">Systems built around <span class="m-accent">hard security problems.</span></h2><p>These projects are not product theatre. They demonstrate how the practice reasons about real operational constraints and turns them into controlled systems.</p></div>
+      <div class="m-section__intro">
+        <p class="m-eyebrow">Selected engineering and research</p>
+        <h2 id="projects-title">Built around <span class="m-accent">hard security problems.</span></h2>
+        <p>The value is not that every client needs these exact systems. The value is that Black Bag can reason across software, architecture, operations, offensive security, evidence, automation, and AI when standard tools stop being enough.</p>
+      </div>
 
-      <article class="m-proof">
-        <div><span class="m-proof__type">Security Engagement Platform</span><h3>One standard. Every engagement.</h3></div>
-        <div><p>SEP standardizes authorized, isolated, evidence-ready engagement delivery from kickoff through reporting and retest. It turns repeatability into a delivery-system property instead of operator memory.</p><a href="{{ '/arsenal/security-engagement-platform/' | relative_url }}">Inspect SEP</a></div>
+      <article class="m-capability">
+        <div class="m-capability__id"><span>SEP / 001</span><span>Delivery system</span></div>
+        <div class="m-capability__body">
+          <div><h3>Security Engagement Platform</h3><p>One operating standard for authorized, isolated, evidence-ready security engagements from preparation through testing, reporting, and retest.</p><a href="{{ '/arsenal/security-engagement-platform/' | relative_url }}">Inspect SEP</a></div>
+          <ul class="m-capability__properties"><li><span>Problem</span>delivery variance</li><li><span>Control</span>engagement isolation</li><li><span>Evidence</span>integrity ready</li><li><span>Closure</span>retest connected</li></ul>
+        </div>
       </article>
 
-      <article class="m-proof">
-        <div><span class="m-proof__type">AOTP</span><h3>AI powered. Human governed. Evidence first.</h3></div>
-        <div><p>AOTP explores local AI acceleration for offensive security while campaign authority, execution control, evidence state, replay, and final judgment remain deterministic and human accountable.</p><a href="{{ '/arsenal/aotp/' | relative_url }}">Inspect AOTP</a></div>
+      <article class="m-capability">
+        <div class="m-capability__id"><span>AOTP / 002</span><span>Agentic security</span></div>
+        <div class="m-capability__body">
+          <div><h3>AI powered. Human governed. Private by design. Evidence first.</h3><p>AOTP is a local operator control plane for agentic offensive security. AI can accelerate planning and analysis, but campaign authority, execution, evidence state, replay, promotion to finding, and final judgment remain governed and accountable.</p><a href="{{ '/arsenal/aotp/' | relative_url }}">Inspect AOTP</a></div>
+          <ul class="m-capability__properties"><li><span>Authority</span>operator retained</li><li><span>Context</span>locally bounded</li><li><span>Execution</span>governed tools</li><li><span>Findings</span>proof gated</li></ul>
+        </div>
       </article>
 
-      <article class="m-proof">
-        <div><span class="m-proof__type">OSMAP</span><h3>Secure mail operations with repeatable operator control.</h3></div>
-        <div><p>OSMAP turns security-sensitive mail administration into explicit workflows around identity, policy, access, and operational evidence instead of fragile manual procedure.</p><a href="{{ '/arsenal/osmap/' | relative_url }}">Inspect OSMAP</a></div>
+      <article class="m-capability">
+        <div class="m-capability__id"><span>OSMAP / 003</span><span>Secure operations</span></div>
+        <div class="m-capability__body">
+          <div><h3>Secure mail operations with repeatable operator control.</h3><p>OSMAP turns security-sensitive mail administration into explicit workflows around identity, policy, access, and operational evidence instead of fragile manual procedure.</p><a href="{{ '/arsenal/osmap/' | relative_url }}">Inspect OSMAP</a></div>
+          <ul class="m-capability__properties"><li><span>Problem</span>fragile administration</li><li><span>Identity</span>explicit</li><li><span>Policy</span>controlled</li><li><span>Operation</span>repeatable</li></ul>
+        </div>
       </article>
 
-      <article class="m-proof">
-        <div><span class="m-proof__type">OpenBSD Mailstack</span><h3>Secure mail for high-consequence systems.</h3></div>
-        <div><p>Hardened mail infrastructure combines a deliberately small attack surface with content handling and operational controls intended for environments where compromise has outsized consequence.</p><a href="{{ '/arsenal/openbsd-mailstack/' | relative_url }}">Inspect OpenBSD Mailstack</a></div>
+      <article class="m-capability">
+        <div class="m-capability__id"><span>MAIL / 004</span><span>Hardened platform</span></div>
+        <div class="m-capability__body">
+          <div><h3>Secure mail for high-consequence systems.</h3><p>OpenBSD-based mail infrastructure combines a deliberately small attack surface with hardened operation and content handling for environments where compromise has outsized consequence.</p><a href="{{ '/arsenal/openbsd-mailstack/' | relative_url }}">Inspect OpenBSD Mailstack</a></div>
+          <ul class="m-capability__properties"><li><span>Platform</span>OpenBSD</li><li><span>Surface</span>deliberately reduced</li><li><span>Content</span>sanitized</li><li><span>Operation</span>hardened</li></ul>
+        </div>
       </article>
 
-      <article class="m-proof">
-        <div><span class="m-proof__type">Browser-Safe AI Security</span><h3>AI assistance inside explicit trust boundaries.</h3></div>
-        <div><p>Research into how browser, model, tool, identity, and data boundaries can keep AI-assisted workflows useful without granting uncontrolled authority or exposing sensitive context by default.</p><a href="{{ '/arsenal/browser-safe-ai-security/' | relative_url }}">Inspect Browser-Safe AI Security</a></div>
+      <article class="m-capability">
+        <div class="m-capability__id"><span>BSAI / 005</span><span>AI trust boundary</span></div>
+        <div class="m-capability__body">
+          <div><h3>AI assistance inside explicit trust boundaries.</h3><p>Browser-Safe AI Security explores how browser, model, tool, identity, and data boundaries can keep AI-assisted workflows useful without granting uncontrolled authority or exposing sensitive context by default.</p><a href="{{ '/arsenal/browser-safe-ai-security/' | relative_url }}">Inspect Browser-Safe AI Security</a></div>
+          <ul class="m-capability__properties"><li><span>Boundary</span>browser and model</li><li><span>Identity</span>separated</li><li><span>Data</span>purpose bounded</li><li><span>Authority</span>explicit</li></ul>
+        </div>
       </article>
     </div>
   </section>
 
   <section class="m-section m-section--soft" aria-labelledby="connection-title">
     <div class="marketing-wrap m-split">
-      <div class="m-copy"><p class="m-eyebrow">Why this belongs on a services website</p><h2 id="connection-title">Engineering proof reduces the distance between <span class="m-accent">claim and capability.</span></h2><p>The value is not that every client needs these exact systems. The value is that the practice can reason across architecture, software, operations, automation, offensive testing, evidence, and AI when standard tools stop being enough.</p></div>
+      <div class="m-copy"><p class="m-eyebrow">Why this belongs on a services website</p><h2 id="connection-title">Engineering proof reduces the distance between <span class="m-accent">claim and capability.</span></h2><p>Testing exposes real operational problems. Engineering turns those lessons into stronger controls, tools, evidence workflows, and delivery systems. Those systems then improve the next engagement.</p></div>
       <blockquote class="m-quote">A security firm should be able to show how it solves difficult security problems, not only list the tools it knows.</blockquote>
     </div>
   </section>
@@ -63,7 +87,7 @@ ref: arsenal
   <section class="m-close" aria-labelledby="proof-close">
     <div class="marketing-wrap m-close__grid">
       <div class="m-copy"><p class="m-eyebrow">Put the capability to work</p><h2 id="proof-close">Bring the system that does not fit <span class="m-accent">the standard checklist.</span></h2><p>We can shape focused testing, engineering, or a combined engagement around the actual technical question.</p><div class="m-actions"><a class="m-button" href="{{ '/contact/#assessment' | relative_url }}">Start the conversation</a></div></div>
-      <div class="m-contact-box"><strong>Original systems. Practical purpose.</strong><p>Testing informs engineering. Engineering improves the next engagement.</p></div>
+      <div class="m-contact-box"><strong>Original systems. Practical purpose.</strong><p>Testing informs engineering. Engineering improves testing. Evidence connects both to the decision.</p></div>
     </div>
   </section>
 </div>
