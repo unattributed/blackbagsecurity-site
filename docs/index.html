@@ -12,27 +12,40 @@ ref: home
       <div class="m-copy">
         <p class="m-eyebrow">Black Bag Security</p>
         <h1 id="home-title">Security testing and engineering for <span class="m-accent">high-consequence systems.</span></h1>
-        <p class="m-lead">Evidence-led penetration testing, adversary validation, AI security, and secure systems engineering. Senior technical judgment stays close to the work from authorization through verified closure.</p>
+        <p class="m-lead">When the answer has to survive technical review, executive scrutiny, and remediation, we keep authority, testing, evidence, and closure connected from the first decision to the last retest.</p>
         <div class="m-actions">
           <a class="m-button" href="{{ '/contact/#assessment' | relative_url }}">Discuss an engagement</a>
-          <a class="m-button m-button--secondary" href="{{ '/services/' | relative_url }}">Explore services</a>
+          <a class="m-button m-button--secondary" href="{{ '/arsenal/' | relative_url }}">Inspect our capability</a>
         </div>
       </div>
 
-      <aside class="m-panel" aria-label="What clients can expect">
-        <div class="m-panel__head">What clients can expect</div>
-        <div class="m-panel__body">
-          <ul class="m-checks">
-            <li><div><strong>Explicit authority</strong><span>Scope, limits, access, safety, and escalation are known before execution.</span></div></li>
-            <li><div><strong>Evidence before assertion</strong><span>Signals become findings only when the evidence supports the claim.</span></div></li>
-            <li><div><strong>Protected client context</strong><span>Credentials, architecture, data, and evidence are treated as sensitive assets.</span></div></li>
-            <li><div><strong>Verified closure</strong><span>Remediation is retested against the original failure condition.</span></div></li>
-          </ul>
+      <aside class="m-assurance" aria-label="Black Bag Security delivery control model">
+        <div class="m-assurance__head"><span>Black Bag delivery model</span><span>Evidence led</span></div>
+        <div class="m-assurance__layers">
+          <div class="m-assurance__layer">
+            <span class="m-assurance__index">01 / AUTH</span>
+            <div><strong>Authority</strong><p>Scope, rules, safety, access, stop conditions, escalation.</p></div>
+            <span class="m-state">DEFINED</span>
+          </div>
+          <div class="m-assurance__layer">
+            <span class="m-assurance__index">02 / EXEC</span>
+            <div><strong>Execution</strong><p>Purposeful testing against the decision the engagement must support.</p></div>
+            <span class="m-state">CONTROLLED</span>
+          </div>
+          <div class="m-assurance__layer">
+            <span class="m-assurance__index">03 / EVID</span>
+            <div><strong>Evidence</strong><p>Signals are preserved, replayed, challenged, and bounded.</p></div>
+            <span class="m-state">DEFENSIBLE</span>
+          </div>
+          <div class="m-assurance__layer">
+            <span class="m-assurance__index">04 / CLOSE</span>
+            <div><strong>Closure</strong><p>The original failure condition is retested after remediation.</p></div>
+            <span class="m-state">VERIFIED</span>
+          </div>
         </div>
-        <div class="m-metric" aria-label="Engagement principles">
-          <div><strong>Authorize</strong><span>before capability</span></div>
-          <div><strong>Prove</strong><span>before reporting</span></div>
-          <div><strong>Verify</strong><span>before closure</span></div>
+        <div class="m-assurance__foot">
+          <div><span>Technical ownership</span><strong>Senior judgment stays close to the work</strong></div>
+          <div><span>Client visibility</span><strong>Known status, blockers, evidence, limitations</strong></div>
         </div>
       </aside>
     </div>
@@ -41,37 +54,42 @@ ref: home
   <section class="m-section" aria-labelledby="services-title">
     <div class="marketing-wrap">
       <div class="m-section__intro">
-        <p class="m-eyebrow">Focused services</p>
-        <h2 id="services-title">Start with the risk, <span class="m-accent">not a testing menu.</span></h2>
-        <p>Bring us the system, the decision, and the consequence. We shape the security work around what must be established and the evidence needed to support it.</p>
+        <p class="m-eyebrow">Start with the decision</p>
+        <h2 id="services-title">What do you need to <span class="m-accent">establish?</span></h2>
+        <p>Do not start by choosing from a scanner menu. Start with the system, the consequence, and the question your stakeholders need answered. We shape the smallest credible engagement around that decision.</p>
       </div>
 
-      <div class="m-grid m-grid--2">
-        <article class="m-card m-card--feature">
-          <span class="m-card__number">01</span>
-          <h3>Application &amp; API Security</h3>
-          <p>Prove what can actually be abused across identity, sessions, authorization, APIs, data flows, and business logic.</p>
-          <a href="{{ '/services/application-api-security/' | relative_url }}">Explore application and API security</a>
+      <div class="m-decision-grid">
+        <article class="m-decision">
+          <div class="m-decision__top"><span class="m-decision__id">SERVICE / 01</span><span class="m-decision__when">Application and API</span></div>
+          <h3>Can this system actually be abused?</h3>
+          <p>Test identity, authorization, sessions, APIs, data flows, exposed behavior, and business logic far enough to distinguish exploitable conditions from noise.</p>
+          <div class="m-decision__outcome"><strong>Outcome</strong><br>Evidence-backed attack paths, affected conditions, remediation priorities, and retest criteria. <a href="{{ '/services/application-api-security/' | relative_url }}">Explore service</a></div>
         </article>
-        <article class="m-card m-card--feature">
-          <span class="m-card__number">02</span>
-          <h3>Adversary Validation</h3>
-          <p>Test whether preventive, detective, and response controls materially change a realistic attacker path.</p>
-          <a href="{{ '/services/adversary-validation/' | relative_url }}">Explore adversary validation</a>
+
+        <article class="m-decision">
+          <div class="m-decision__top"><span class="m-decision__id">SERVICE / 02</span><span class="m-decision__when">Adversary validation</span></div>
+          <h3>Do our controls materially change the attacker path?</h3>
+          <p>Exercise realistic paths under explicit authority and determine where prevention, detection, response, identity, and operational controls hold or fail.</p>
+          <div class="m-decision__outcome"><strong>Outcome</strong><br>Control effectiveness tied to observed attacker behavior, not theatre. <a href="{{ '/services/adversary-validation/' | relative_url }}">Explore service</a></div>
         </article>
-        <article class="m-card m-card--feature">
-          <span class="m-card__number">03</span>
-          <h3>AI Security</h3>
-          <p>Test the authority and trust boundaries around models, agents, browsers, tools, identities, memory, and sensitive data.</p>
-          <a href="{{ '/services/ai-security/' | relative_url }}">Explore AI security</a>
+
+        <article class="m-decision">
+          <div class="m-decision__top"><span class="m-decision__id">SERVICE / 03</span><span class="m-decision__when">AI security</span></div>
+          <h3>Where does AI authority exceed its trust boundary?</h3>
+          <p>Examine models, agents, browsers, tools, identities, memory, data access, execution boundaries, and approval paths as one governed system.</p>
+          <div class="m-decision__outcome"><strong>Outcome</strong><br>Clear authority boundaries, abuse paths, control gaps, and practical remediation. <a href="{{ '/services/ai-security/' | relative_url }}">Explore service</a></div>
         </article>
-        <article class="m-card m-card--feature">
-          <span class="m-card__number">04</span>
-          <h3>Secure Systems Engineering</h3>
-          <p>When testing is not enough, engineer the control into architecture, privilege, isolation, hardening, recovery, and operation.</p>
-          <a href="{{ '/services/secure-systems-engineering/' | relative_url }}">Explore secure systems engineering</a>
+
+        <article class="m-decision">
+          <div class="m-decision__top"><span class="m-decision__id">SERVICE / 04</span><span class="m-decision__when">Secure systems engineering</span></div>
+          <h3>What if testing identifies a control that needs to be built?</h3>
+          <p>Carry security properties into architecture, privilege, isolation, hardening, content handling, recovery, and operational procedure.</p>
+          <div class="m-decision__outcome"><strong>Outcome</strong><br>A working control that can be operated, inspected, tested, and improved. <a href="{{ '/services/secure-systems-engineering/' | relative_url }}">Explore service</a></div>
         </article>
       </div>
+
+      <div class="m-actions"><a class="m-button m-button--secondary" href="{{ '/services/' | relative_url }}">View all services</a></div>
     </div>
   </section>
 
@@ -79,18 +97,34 @@ ref: home
     <div class="marketing-wrap">
       <div class="m-section__intro">
         <p class="m-eyebrow">Black Bag Method</p>
-        <h2 id="method-title">Aggressive security work. <span class="m-accent">Controlled from start to close.</span></h2>
-        <p>The operating model keeps authority, execution, evidence, communication, remediation, and retest connected to the decision the engagement must support.</p>
+        <h2 id="method-title">A finding is the end of a <span class="m-accent">proof chain.</span></h2>
+        <p>Serious testing is not the production of alerts. The method keeps each conclusion traceable to authority, observed behavior, technical proof, evidence, impact, and closure.</p>
       </div>
-      <div class="m-process" aria-label="Black Bag Security engagement lifecycle">
-        <article><strong>Authorize</strong><span>Scope, rules, limits</span></article>
-        <article><strong>Test</strong><span>Research, analyze, validate</span></article>
-        <article><strong>Evidence</strong><span>Capture, preserve, correlate</span></article>
-        <article><strong>Report</strong><span>Risk, impact, action</span></article>
-        <article><strong>Remediate</strong><span>Fix, harden, improve</span></article>
-        <article><strong>Retest</strong><span>Replay, verify, close</span></article>
+
+      <div class="m-trace" aria-label="Decision trace from authority to closure">
+        <div class="m-trace__row">
+          <span class="m-trace__key">Authority</span>
+          <div><strong>What is permitted?</strong><p>Objectives, scope, credentials, limits, safety conditions, escalation, and prohibited actions.</p></div>
+          <span class="m-trace__gate">Execution bounded</span>
+        </div>
+        <div class="m-trace__row">
+          <span class="m-trace__key">Observation</span>
+          <div><strong>What happened?</strong><p>Tool output and unexpected behavior remain signals until the condition can be understood and challenged.</p></div>
+          <span class="m-trace__gate">Candidate</span>
+        </div>
+        <div class="m-trace__row">
+          <span class="m-trace__key">Proof</span>
+          <div><strong>What does the evidence establish?</strong><p>Replay, negative controls, affected path, impact, limitations, and reproducible evidence support promotion to a finding.</p></div>
+          <span class="m-trace__gate">Finding</span>
+        </div>
+        <div class="m-trace__row">
+          <span class="m-trace__key">Closure</span>
+          <div><strong>Did the failure condition change?</strong><p>Retest starts from the original proof and records the current result instead of assuming remediation worked.</p></div>
+          <span class="m-trace__gate">Verified outcome</span>
+        </div>
       </div>
-      <div class="m-actions"><a class="m-button m-button--secondary" href="{{ '/methodology/' | relative_url }}">See how we work</a></div>
+
+      <div class="m-actions"><a class="m-button m-button--secondary" href="{{ '/methodology/' | relative_url }}">Inspect the method</a></div>
     </div>
   </section>
 
@@ -99,29 +133,33 @@ ref: home
       <div class="m-section__intro">
         <p class="m-eyebrow">Engineering proof</p>
         <h2 id="proof-title">Capability should be <span class="m-accent">inspectable.</span></h2>
-        <p>Original platforms and research show how Black Bag Security turns hard security problems into working systems, not just recommendations.</p>
+        <p>Black Bag builds systems around problems we repeatedly see in consequential security work. The point is not product theatre. The point is showing how we reason when standard tooling is insufficient.</p>
       </div>
 
-      <article class="m-proof">
-        <div><span class="m-proof__type">Security Engagement Platform</span><h3>Repeatable, evidence-ready engagement delivery.</h3></div>
-        <div><p>Authorized, isolated workspaces keep testing, evidence, reporting, and retest connected to one engagement state.</p><a href="{{ '/arsenal/security-engagement-platform/' | relative_url }}">Inspect SEP</a></div>
+      <article class="m-capability">
+        <div class="m-capability__id"><span>SEP / 001</span><span>Delivery system</span></div>
+        <div class="m-capability__body">
+          <div><h3>Security Engagement Platform</h3><p>Repeatable, isolated, evidence-ready engagement delivery from preparation through testing, reporting, and retest.</p><a href="{{ '/arsenal/security-engagement-platform/' | relative_url }}">Inspect SEP</a></div>
+          <ul class="m-capability__properties"><li><span>Authority</span>engagement bound</li><li><span>Evidence</span>integrity ready</li><li><span>Isolation</span>per engagement</li><li><span>Closure</span>retest connected</li></ul>
+        </div>
       </article>
-      <article class="m-proof">
-        <div><span class="m-proof__type">AOTP</span><h3>AI powered. Human governed. Evidence first.</h3></div>
-        <div><p>AI accelerates planning and analysis while operators retain authority over execution, evidence, and conclusions.</p><a href="{{ '/arsenal/aotp/' | relative_url }}">Inspect AOTP</a></div>
+
+      <article class="m-capability">
+        <div class="m-capability__id"><span>AOTP / 002</span><span>Agentic security</span></div>
+        <div class="m-capability__body">
+          <div><h3>AI powered. Human governed. Private by design. Evidence first.</h3><p>Local agentic assistance accelerates planning and analysis while deterministic authority, governed execution, evidence, replay, and final judgment remain under operator control.</p><a href="{{ '/arsenal/aotp/' | relative_url }}">Inspect AOTP</a></div>
+          <ul class="m-capability__properties"><li><span>Authority</span>human controlled</li><li><span>Sensitive context</span>locally bounded</li><li><span>Execution</span>governed</li><li><span>Conclusions</span>evidence backed</li></ul>
+        </div>
       </article>
-      <article class="m-proof">
-        <div><span class="m-proof__type">OSMAP</span><h3>Secure mail operations without surrendering control.</h3></div>
-        <div><p>Security engineering around operational mail administration, identity, policy, and repeatable operator workflows.</p><a href="{{ '/arsenal/osmap/' | relative_url }}">Inspect OSMAP</a></div>
+
+      <article class="m-capability">
+        <div class="m-capability__id"><span>OSMAP / 003</span><span>Secure operations</span></div>
+        <div class="m-capability__body">
+          <div><h3>Secure mail operations with repeatable operator control.</h3><p>Explicit workflows around identity, policy, access, administration, and operational evidence reduce dependence on fragile manual procedure.</p><a href="{{ '/arsenal/osmap/' | relative_url }}">Inspect OSMAP</a></div>
+          <ul class="m-capability__properties"><li><span>Identity</span>explicit</li><li><span>Policy</span>controlled</li><li><span>Operations</span>repeatable</li><li><span>Evidence</span>preserved</li></ul>
+        </div>
       </article>
-      <article class="m-proof">
-        <div><span class="m-proof__type">OpenBSD Mailstack</span><h3>Secure mail for high-consequence systems.</h3></div>
-        <div><p>Hardened infrastructure and deliberate content handling reduce attack surface while preserving operational usability.</p><a href="{{ '/arsenal/openbsd-mailstack/' | relative_url }}">Inspect OpenBSD Mailstack</a></div>
-      </article>
-      <article class="m-proof">
-        <div><span class="m-proof__type">Browser-Safe AI Security</span><h3>Keep AI assistance inside explicit trust boundaries.</h3></div>
-        <div><p>Research and engineering for browser, model, tool, identity, and data boundaries in AI-assisted security workflows.</p><a href="{{ '/arsenal/browser-safe-ai-security/' | relative_url }}">Inspect Browser-Safe AI Security</a></div>
-      </article>
+
       <div class="m-actions"><a class="m-button m-button--secondary" href="{{ '/arsenal/' | relative_url }}">View all proof</a></div>
     </div>
   </section>
@@ -130,11 +168,11 @@ ref: home
     <div class="marketing-wrap m-split">
       <div class="m-copy">
         <p class="m-eyebrow">The practice</p>
-        <h2 id="practice-title">Small by design. <span class="m-accent">Institutional in delivery.</span></h2>
-        <p>Black Bag Security keeps senior technical judgment close to difficult work, while company-owned methodology, quality controls, evidence standards, and operating procedures make delivery repeatable.</p>
+        <h2 id="practice-title">Built by an operator. <span class="m-accent">Presented for an executive.</span></h2>
+        <p>Black Bag Security is small by design, but the delivery standard is institutional: explicit authority, repeatable preparation, protected client context, evidence discipline, direct accountability, and verified closure.</p>
         <div class="m-actions"><a class="m-button m-button--secondary" href="{{ '/about/' | relative_url }}">About Black Bag Security</a></div>
       </div>
-      <blockquote class="m-quote">“Fewer handoffs, explicit authority, defensible evidence, and direct accountability.”</blockquote>
+      <blockquote class="m-quote">Technical depth should make the business decision clearer, not force the buyer to translate security theatre into risk.</blockquote>
     </div>
   </section>
 
@@ -142,8 +180,8 @@ ref: home
     <div class="marketing-wrap m-close__grid">
       <div class="m-copy">
         <p class="m-eyebrow">Start with the consequence</p>
-        <h2 id="close-title">Tell us what cannot go wrong. <span class="m-accent">We will shape the engagement.</span></h2>
-        <p>A useful first conversation only needs the system, the concern, the constraints, the timing, and the outcome you need.</p>
+        <h2 id="close-title">Tell us what cannot go wrong. <span class="m-accent">We will shape the work.</span></h2>
+        <p>A useful first conversation only needs the system, the concern, the constraints, the timing, and the outcome your organization needs.</p>
         <div class="m-actions"><a class="m-button" href="{{ '/contact/#assessment' | relative_url }}">Start the conversation</a></div>
       </div>
       <div class="m-contact-box">
