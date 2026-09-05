@@ -6,7 +6,7 @@
   <meta name="description" content="{{ page.description | default: site.description | strip | escape }}" />
   <meta name="msvalidate.01" content="1FE51893A5AC95D625ED3C04BA06D71C" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; frame-ancestors 'none'; form-action 'self'" />
-  <meta name="theme-color" content="#020a12" />
+  <meta name="theme-color" content="#0b0f14" />
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
 
   <title>{{ page.title | default: site.title }}</title>
@@ -78,6 +78,7 @@
   {% if page.ref == 'services' %}<link rel="stylesheet" href="{{ '/assets/css/bbs-services-marketing-v55.css' | relative_url }}" />{% endif %}
   {% if page.ref == 'services' %}<link rel="stylesheet" href="{{ '/assets/css/bbs-services-hero-fit-v56.css' | relative_url }}" />{% endif %}
   {% if page.ref == 'services' %}<link rel="stylesheet" href="{{ '/assets/css/bbs-services-images-v57.css' | relative_url }}" />{% endif %}
+  {% if page.marketing_v3 %}<link rel="stylesheet" href="{{ '/assets/css/marketing-legacy.css' | relative_url }}" />{% endif %}
 
   <link rel="icon" href="{{ '/assets/img/logo-bag.svg' | relative_url }}" type="image/svg+xml" />
   <script type="application/ld+json" src="{{ '/assets/data/organization.json' | relative_url }}"></script>
@@ -97,17 +98,12 @@
         <a{% if page.url contains '/services/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/services/' | relative_url }}">Services</a>
         <a{% if page.url contains '/methodology/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/methodology/' | relative_url }}">Method</a>
         <a{% if page.url contains '/arsenal/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/arsenal/' | relative_url }}">Proof</a>
-        {% if page.homepage_v2 %}
-        <a{% if page.url contains '/trust/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/trust/' | relative_url }}">Trust</a>
-        <a{% if page.url contains '/about/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/about/' | relative_url }}">About</a>
-        {% else %}
         <a{% if page.url contains '/about/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/about/' | relative_url }}">About</a>
         <a{% if page.url contains '/contact/' %} class="is-active" aria-current="page"{% endif %} href="{{ '/contact/' | relative_url }}">Contact</a>
-        {% endif %}
       </nav>
 
       {% if page.marketing_v3 %}
-      <a class="market-header-cta" href="{{ '/contact/#assessment' | relative_url }}">Engage us →</a>
+      <a class="market-header-cta" href="{{ '/contact/#assessment' | relative_url }}">Discuss an engagement</a>
       {% else %}
       <div class="header-v2__motto" aria-label="Security is engineering. Evidence earns trust.">Security is engineering.<strong>Evidence earns trust.</strong></div>
       {% endif %}
@@ -129,10 +125,6 @@
         <a href="{{ '/methodology/' | relative_url }}">Method</a>
         <a href="{{ '/arsenal/' | relative_url }}">Proof</a>
         <a href="{{ '/about/' | relative_url }}">About</a>
-        {% if page.homepage_v2 %}
-        <a href="{{ '/trust/' | relative_url }}">Trust</a>
-        <a href="{{ '/industries/' | relative_url }}">Industries</a>
-        {% endif %}
         <a href="{{ '/contact/' | relative_url }}">Contact</a>
         <a href="{{ '/security.txt' | relative_url }}">Security</a>
       </nav>
