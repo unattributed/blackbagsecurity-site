@@ -1,0 +1,22 @@
+/* Principal silhouette rendering.
+ * Use the repository SVG directly as the single source of truth.
+ * Avoid CSS background-image substitution so Firefox and Chromium render
+ * the same asset and geometry.
+ */
+.home-v2-principal__portrait {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  background: #eeeeec;
+}
+
+.home-v2-principal__portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  opacity: 1;
+  object-fit: contain;
+  object-position: center bottom;
+}

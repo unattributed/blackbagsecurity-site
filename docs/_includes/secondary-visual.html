@@ -1,0 +1,323 @@
+{% assign ref = page.ref %}
+
+{% if ref == 'methodology' %}
+<section class="method-standard secondary-visual secondary-visual--methodology" aria-labelledby="method-standard-title">
+  <div class="wrap">
+    <div class="method-standard__top">
+      <div class="method-standard__copy">
+        <p class="method-standard__eyebrow">Black Bag Methodology</p>
+        <h1 id="method-standard-title">One standard governs every engagement.</h1>
+        <p class="method-standard__lead">Policies, processes, and TTPs define how work is authorized, executed, evidenced, communicated, and retested, so every team member delivers to the same standard.</p>
+      </div>
+      <div class="method-standard__wheel" aria-label="Black Bag methodology pillars">
+        <div class="method-standard__core">BBS</div>
+        <div class="method-standard__pillar method-standard__pillar--evidence">Evidence first</div>
+        <div class="method-standard__pillar method-standard__pillar--accountability">Accountability</div>
+        <div class="method-standard__pillar method-standard__pillar--confidentiality">Client confidentiality</div>
+        <div class="method-standard__pillar method-standard__pillar--technology">Technology with purpose</div>
+      </div>
+    </div>
+
+    <div class="method-standard__controls" aria-label="Methodology controls">
+      <article class="method-standard__control">
+        <span class="icon-mask icon-target" aria-hidden="true"></span>
+        <span class="method-standard__index">01 /</span>
+        <h2>Scope and authority</h2>
+        <p>What may be tested, where, when, and under which restrictions.</p>
+      </article>
+      <article class="method-standard__control">
+        <span class="icon-mask icon-evidence" aria-hidden="true"></span>
+        <span class="method-standard__index">02 /</span>
+        <h2>Material judgment</h2>
+        <p>What the evidence supports, its significance, and how the conclusion is stated.</p>
+      </article>
+      <article class="method-standard__control">
+        <span class="icon-mask icon-data" aria-hidden="true"></span>
+        <span class="method-standard__index">03 /</span>
+        <h2>Confidentiality</h2>
+        <p>How client IP, credentials, data, and evidence are handled, minimized, and disclosed.</p>
+      </article>
+      <article class="method-standard__control">
+        <span class="icon-mask icon-principles" aria-hidden="true"></span>
+        <span class="method-standard__index">04 /</span>
+        <h2>Uniform delivery</h2>
+        <p>Every team member works to the same methodology, evidence standard, and mission.</p>
+      </article>
+    </div>
+
+    <div class="method-standard__mission">One mission. One standard. Evidence-backed delivery.</div>
+  </div>
+</section>
+
+{% elsif ref == 'services' %}
+<section class="secondary-visual secondary-visual--services secondary-visual--dark" aria-labelledby="secondary-services-title">
+  <div class="wrap secondary-visual__frame">
+    <div class="secondary-visual__intro">
+      <p class="secondary-visual__eyebrow">Services</p>
+      <h1 id="secondary-services-title">Different security problems. One delivery standard.</h1>
+      <p>Start with the decision that needs to be made. The engagement shape follows the system, the attack surface, and the consequence of getting the answer wrong.</p>
+    </div>
+
+    <div class="secondary-orbit secondary-orbit--services" aria-label="Four Black Bag Security service paths">
+      <div class="secondary-orbit__core"><span>QUESTION</span><strong>What must be proven?</strong></div>
+      <a class="secondary-orbit__node secondary-orbit__node--nw" href="{{ '/services/application-api-security/' | relative_url }}"><span>01</span><strong>Applications &amp; APIs</strong><small>identity · authority · data</small></a>
+      <a class="secondary-orbit__node secondary-orbit__node--ne" href="{{ '/services/adversary-validation/' | relative_url }}"><span>02</span><strong>Adversary validation</strong><small>attack path · controls · detection</small></a>
+      <a class="secondary-orbit__node secondary-orbit__node--sw" href="{{ '/services/ai-security/' | relative_url }}"><span>03</span><strong>AI security</strong><small>model · tools · data · action</small></a>
+      <a class="secondary-orbit__node secondary-orbit__node--se" href="{{ '/services/secure-systems-engineering/' | relative_url }}"><span>04</span><strong>Secure systems</strong><small>privilege · hardening · recovery</small></a>
+    </div>
+
+    <div class="secondary-chain" aria-label="Common engagement path">
+      <span>DEFINE</span><i aria-hidden="true">→</i><span>BOUND</span><i aria-hidden="true">→</i><span>TEST</span><i aria-hidden="true">→</i><span>PROVE</span><i aria-hidden="true">→</i><span>REMEDIATE</span><i aria-hidden="true">→</i><span>VERIFY</span>
+    </div>
+    <p class="secondary-visual__footer">The service changes with the problem. The evidence standard does not.</p>
+  </div>
+</section>
+
+{% elsif ref == 'service-application-api-security' %}
+<section class="secondary-visual secondary-visual--service secondary-visual--service-app secondary-visual--dark" aria-labelledby="secondary-app-title">
+  <div class="wrap secondary-visual__frame">
+    <a class="secondary-visual__back" href="{{ '/services/' | relative_url }}">All services</a>
+    <div class="secondary-visual__intro secondary-visual__intro--compact">
+      <p class="secondary-visual__eyebrow">Service 01 / Application &amp; API Security</p>
+      <h1 id="secondary-app-title">Test the trust boundaries the application actually implements.</h1>
+      <p>The question is whether identity, authority, data, or business capability can cross a boundary the system intended to enforce.</p>
+    </div>
+    <div class="secondary-boundary-flow" aria-label="Application and API trust boundary flow">
+      <div><span>01</span><strong>Identity</strong><small>login · MFA · recovery</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>02</span><strong>Session</strong><small>tokens · replay · expiry</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>03</span><strong>Authority</strong><small>roles · objects · actions</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>04</span><strong>Data</strong><small>API · records · exposure</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>05</span><strong>Business action</strong><small>state · integrity · workflow</small></div>
+    </div>
+    <div class="secondary-summary-row">
+      <div><span>CORE QUESTION</span><strong>Can a boundary be crossed?</strong></div>
+      <div><span>PROOF</span><strong>Reproducible behavior</strong></div>
+      <div><span>CLOSURE</span><strong>Root cause + retest</strong></div>
+    </div>
+  </div>
+</section>
+
+{% elsif ref == 'service-adversary-validation' %}
+<section class="secondary-visual secondary-visual--service secondary-visual--service-adversary secondary-visual--dark" aria-labelledby="secondary-adv-title">
+  <div class="wrap secondary-visual__frame">
+    <a class="secondary-visual__back" href="{{ '/services/' | relative_url }}">All services</a>
+    <div class="secondary-visual__intro secondary-visual__intro--compact">
+      <p class="secondary-visual__eyebrow">Service 02 / Adversary Validation</p>
+      <h1 id="secondary-adv-title">Follow the attack path to the protected outcome.</h1>
+      <p>Individual controls matter only in context. The exercise shows what actually stops the attacker, what exposes the path, and what remains possible.</p>
+    </div>
+    <div class="secondary-boundary-flow secondary-boundary-flow--adversary" aria-label="Adversary validation path">
+      <div><span>01</span><strong>Objective</strong><small>protected outcome</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>02</span><strong>Identity</strong><small>access · privilege · trust</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>03</span><strong>Prevention</strong><small>blocked · friction · bypass</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>04</span><strong>Detection</strong><small>signal · telemetry · silence</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>05</span><strong>Outcome</strong><small>reached · contained · exposed</small></div>
+    </div>
+    <div class="secondary-summary-row">
+      <div><span>AUTHORITY</span><strong>Explicit rules of engagement</strong></div>
+      <div><span>RESULT</span><strong>Validated attack narrative</strong></div>
+      <div><span>EVIDENCE</span><strong>Replayable control behavior</strong></div>
+    </div>
+  </div>
+</section>
+
+{% elsif ref == 'service-ai-security' %}
+<section class="secondary-visual secondary-visual--service secondary-visual--service-ai secondary-visual--dark" aria-labelledby="secondary-ai-title">
+  <div class="wrap secondary-visual__frame">
+    <a class="secondary-visual__back" href="{{ '/services/' | relative_url }}">All services</a>
+    <div class="secondary-visual__intro secondary-visual__intro--compact">
+      <p class="secondary-visual__eyebrow">Service 03 / AI Security</p>
+      <h1 id="secondary-ai-title">Test the authority around the model.</h1>
+      <p>AI risk emerges where untrusted content, model output, identities, tools, data, and approvals meet. The workflow is the attack surface.</p>
+    </div>
+    <div class="secondary-boundary-flow secondary-boundary-flow--ai" aria-label="AI workflow security boundary flow">
+      <div><span>01</span><strong>Untrusted input</strong><small>prompt · page · retrieval</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>02</span><strong>Model</strong><small>interpret · plan · suggest</small></div>
+      <i aria-hidden="true">→</i>
+      <div class="is-gated"><span>03</span><strong>Authority gate</strong><small>policy · approval · scope</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>04</span><strong>Tools &amp; data</strong><small>read · write · retrieve</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>05</span><strong>Action</strong><small>bounded or unsafe</small></div>
+    </div>
+    <div class="secondary-summary-row">
+      <div><span>TEST</span><strong>Boundary violation</strong></div>
+      <div><span>CONTROL</span><strong>Human + system authority</strong></div>
+      <div><span>OUTPUT</span><strong>Reproducible abuse cases</strong></div>
+    </div>
+  </div>
+</section>
+
+{% elsif ref == 'service-secure-systems-engineering' %}
+<section class="secondary-visual secondary-visual--service secondary-visual--service-systems secondary-visual--dark" aria-labelledby="secondary-systems-title">
+  <div class="wrap secondary-visual__frame">
+    <a class="secondary-visual__back" href="{{ '/services/' | relative_url }}">All services</a>
+    <div class="secondary-visual__intro secondary-visual__intro--compact">
+      <p class="secondary-visual__eyebrow">Service 04 / Secure Systems Engineering</p>
+      <h1 id="secondary-systems-title">Engineer the failure boundary, not just the happy path.</h1>
+      <p>Good architecture limits attacker authority, contains compromise, produces useful evidence, and stays recoverable when assumptions fail.</p>
+    </div>
+    <div class="secondary-rings" aria-label="Secure systems containment model">
+      <div class="secondary-rings__ring secondary-rings__ring--5"><span>RECOVERY</span></div>
+      <div class="secondary-rings__ring secondary-rings__ring--4"><span>OBSERVABILITY</span></div>
+      <div class="secondary-rings__ring secondary-rings__ring--3"><span>PRIVILEGE</span></div>
+      <div class="secondary-rings__ring secondary-rings__ring--2"><span>SERVICE</span></div>
+      <div class="secondary-rings__ring secondary-rings__ring--1"><strong>SAFE OPERATION</strong></div>
+    </div>
+    <div class="secondary-summary-row">
+      <div><span>REDUCE</span><strong>Unnecessary authority</strong></div>
+      <div><span>CONTAIN</span><strong>Compromise blast radius</strong></div>
+      <div><span>RECOVER</span><strong>Verified secure state</strong></div>
+    </div>
+  </div>
+</section>
+
+{% elsif ref == 'about' %}
+<section class="secondary-visual secondary-visual--about secondary-visual--dark" aria-labelledby="secondary-about-title">
+  <div class="wrap secondary-visual__frame">
+    <div class="secondary-visual__intro">
+      <p class="secondary-visual__eyebrow">About Black Bag Security</p>
+      <h1 id="secondary-about-title">Technical memory, carried forward as an operating standard.</h1>
+      <p>Decades of systems work inform one current mission: understand the real security condition, engineer the proof when necessary, and leave evidence that survives review and remediation.</p>
+    </div>
+    <div class="secondary-timeline" aria-label="Black Bag Security engineering lineage">
+      <div><span>1984+</span><strong>Computing systems</strong><small>software · operating systems · integration</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>1990s</span><strong>Unix / BSD / Linux</strong><small>boundaries · privilege · operations</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>2000s+</span><strong>Offensive security</strong><small>applications · identity · infrastructure</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>Now</span><strong>Secure + agentic systems</strong><small>engineering · AI · evidence</small></div>
+    </div>
+    <div class="secondary-mission-grid">
+      <div><span>01</span><strong>Understand</strong><small>Find the condition that matters.</small></div>
+      <div><span>02</span><strong>Engineer</strong><small>Build when existing tools cannot answer it.</small></div>
+      <div><span>03</span><strong>Prove</strong><small>Bind material claims to evidence.</small></div>
+      <div><span>04</span><strong>Close</strong><small>Carry the reasoning through retest.</small></div>
+    </div>
+  </div>
+</section>
+
+{% elsif ref == 'trust' %}
+<section class="secondary-visual secondary-visual--trust secondary-visual--dark" aria-labelledby="secondary-trust-title">
+  <div class="wrap secondary-visual__frame">
+    <div class="secondary-visual__intro">
+      <p class="secondary-visual__eyebrow">Trust</p>
+      <h1 id="secondary-trust-title">Security work should not create a new security problem.</h1>
+      <p>Authority, evidence integrity, confidentiality, and controlled delivery are part of the engagement architecture.</p>
+    </div>
+    <div class="secondary-delivery-chain" aria-label="Secure evidence handling and delivery chain">
+      <div><span>01</span><strong>Authorize</strong><small>scope · handling · stop conditions</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>02</span><strong>Collect</strong><small>minimum necessary evidence</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>03</span><strong>Preserve</strong><small>context · integrity · provenance</small></div>
+      <i aria-hidden="true">→</i>
+      <div class="is-boundary"><span>04</span><strong>Sanitize</strong><small>client-safe material only</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>05</span><strong>Deliver</strong><small>approved channel · verified receipt</small></div>
+    </div>
+    <p class="secondary-visual__footer">Minimize what is retained. Preserve what matters. Deliver only what is necessary.</p>
+  </div>
+</section>
+
+{% elsif ref == 'contact' %}
+<section class="secondary-visual secondary-visual--contact secondary-visual--dark" aria-labelledby="secondary-contact-title">
+  <div class="wrap secondary-visual__frame">
+    <div class="secondary-visual__intro">
+      <p class="secondary-visual__eyebrow">Start an engagement</p>
+      <h1 id="secondary-contact-title">Start with the problem, not the service name.</h1>
+      <p>A useful first message can be short. Five inputs are enough to shape the first conversation without sending credentials or sensitive production data.</p>
+    </div>
+    <div class="secondary-intake-flow" aria-label="Five inputs for initial engagement scoping">
+      <div><span>01</span><strong>System</strong><small>What are we protecting?</small></div>
+      <i aria-hidden="true">+</i>
+      <div><span>02</span><strong>Question</strong><small>What must be understood?</small></div>
+      <i aria-hidden="true">+</i>
+      <div><span>03</span><strong>Boundaries</strong><small>What constraints apply?</small></div>
+      <i aria-hidden="true">+</i>
+      <div><span>04</span><strong>Timing</strong><small>What date matters?</small></div>
+      <i aria-hidden="true">+</i>
+      <div><span>05</span><strong>Outcome</strong><small>What result is useful?</small></div>
+      <i aria-hidden="true">→</i>
+      <div class="is-result"><strong>ENGAGEMENT</strong><small>scope follows the problem</small></div>
+    </div>
+    <div class="secondary-summary-row secondary-summary-row--contact">
+      <div><span>ENGAGEMENTS</span><strong><a href="mailto:hello@blackbagsecurity.com">hello@blackbagsecurity.com</a></strong></div>
+      <div><span>SECURITY</span><strong><a href="mailto:security@blackbagsecurity.com">security@blackbagsecurity.com</a></strong></div>
+      <div><span>FIRST CONTACT</span><strong>No credentials or sensitive data</strong></div>
+    </div>
+  </div>
+</section>
+
+{% elsif ref == 'industries' %}
+<section class="secondary-visual secondary-visual--industries secondary-visual--dark" aria-labelledby="secondary-industries-title">
+  <div class="wrap secondary-visual__frame">
+    <div class="secondary-visual__intro">
+      <p class="secondary-visual__eyebrow">Where the work fits</p>
+      <h1 id="secondary-industries-title">Fit is defined by consequence, not the industry label.</h1>
+      <p>Black Bag Security is strongest where technical conclusions must survive scrutiny and the system carries real constraints.</p>
+    </div>
+    <div class="secondary-consequence-map" aria-label="High-consequence system characteristics">
+      <div class="secondary-consequence-map__core"><strong>HIGH-CONSEQUENCE SYSTEM</strong><small>getting the answer wrong matters</small></div>
+      <div class="secondary-consequence-map__node secondary-consequence-map__node--1"><span>AUTHORITY</span><small>privileged actions</small></div>
+      <div class="secondary-consequence-map__node secondary-consequence-map__node--2"><span>UPTIME</span><small>operational continuity</small></div>
+      <div class="secondary-consequence-map__node secondary-consequence-map__node--3"><span>DATA</span><small>sensitive information</small></div>
+      <div class="secondary-consequence-map__node secondary-consequence-map__node--4"><span>RESILIENCE</span><small>safe recovery</small></div>
+      <div class="secondary-consequence-map__node secondary-consequence-map__node--5"><span>EVIDENCE</span><small>defensible decisions</small></div>
+    </div>
+    <div class="secondary-tag-row"><span>Regulated systems</span><span>Security-sensitive applications</span><span>Identity-heavy environments</span><span>Infrastructure</span><span>AI-enabled workflows</span></div>
+  </div>
+</section>
+
+{% elsif ref == 'onsite' %}
+<section class="secondary-visual secondary-visual--onsite secondary-visual--dark" aria-labelledby="secondary-onsite-title">
+  <div class="wrap secondary-visual__frame">
+    <div class="secondary-visual__intro">
+      <p class="secondary-visual__eyebrow">On-site engagements</p>
+      <h1 id="secondary-onsite-title">Physical presence does not relax the control model.</h1>
+      <p>When location materially changes the work, access, supervision, safety, evidence, and escalation remain explicit.</p>
+    </div>
+    <div class="secondary-boundary-flow secondary-boundary-flow--onsite" aria-label="On-site engagement control path">
+      <div><span>01</span><strong>Scope</strong><small>objective · location · authority</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>02</span><strong>Supervision</strong><small>escort · access · windows</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>03</span><strong>Execute safely</strong><small>no-go systems · stop conditions</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>04</span><strong>Evidence</strong><small>minimum · permitted · controlled</small></div>
+      <i aria-hidden="true">→</i>
+      <div><span>05</span><strong>Escalate / report</strong><small>impact · findings · next action</small></div>
+    </div>
+    <p class="secondary-visual__footer">Location changes the operating context. It does not change the evidence standard.</p>
+  </div>
+</section>
+
+{% elsif ref == 'policies' %}
+<section class="secondary-visual secondary-visual--policies secondary-visual--dark" aria-labelledby="secondary-policies-title">
+  <div class="wrap secondary-visual__frame">
+    <div class="secondary-visual__intro">
+      <p class="secondary-visual__eyebrow">Policies</p>
+      <h1 id="secondary-policies-title">The rules are part of the delivery system.</h1>
+      <p>Policy is not separate from technical work. It defines the boundaries within which the work can be trusted.</p>
+    </div>
+    <div class="secondary-policy-guardrails" aria-label="Policy guardrails around engagement delivery">
+      <div><span>01</span><strong>Authorization</strong><small>scope · conduct · safety</small></div>
+      <div><span>02</span><strong>Anti-bribery</strong><small>independence · lawful conduct</small></div>
+      <div class="secondary-policy-guardrails__core"><strong>DELIVERY</strong><small>one mission · one standard</small></div>
+      <div><span>03</span><strong>Confidentiality</strong><small>data · evidence · access</small></div>
+      <div><span>04</span><strong>Disclosure</strong><small>coordination · approval · timing</small></div>
+    </div>
+    <p class="secondary-visual__footer">Rules constrain the work so the result remains defensible.</p>
+  </div>
+</section>
+{% endif %}

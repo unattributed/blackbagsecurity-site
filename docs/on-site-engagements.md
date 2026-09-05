@@ -1,86 +1,46 @@
 ---
-layout: default
-title: On-Site Engagements | Black Bag Security
-description: On-site offensive security engagements with scoped access, safety controls, and evidence-driven reporting.
+layout: home-v2
+title: On-Site Security Engagements | Black Bag Security
+description: On-site security assessment, validation, incident support, and technical advisory with explicit safety, supervision, evidence, and escalation controls.
 permalink: /on-site-engagements/
 lang: en
 ref: onsite
+supporting_v2: true
+marketing_v3: true
 ---
-<section class="section">
-  <div class="wrap">
-    <div class="section__head reveal" data-reveal>
-      <h1>On-Site Engagements</h1>
-      <p>On-site delivery for assessment, validation, incident support, and technical advisory when location and operational context matter.</p>
+<div class="v24-page">
+  <section class="v24-hero" aria-labelledby="onsite-title">
+    <div class="wrap v24-hero__grid">
+      <div class="v24-copy">
+        <p class="v24-kicker">On-site engagements</p>
+        <h1 id="onsite-title">Physical presence should increase control, <span class="v24-accent">not ambiguity.</span></h1>
+        <p class="v24-lead">When location, facility access, production context, hardware, supervision, or data residency materially changes the work, Black Bag can deliver on-site under explicit safety and evidence controls.</p>
+        <div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss an on-site scope →</a></div>
+      </div>
+      <div class="v24-canvas" aria-label="Controlled physical delivery path"><span class="v24-canvas__label">Controlled physical delivery</span><div class="v24-intake"><div class="v24-intake-step"><div class="v24-intake-step__icon">▣</div><strong>Scope</strong><span>Systems · locations · windows · no-go areas</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">○</div><strong>Supervision</strong><span>Escort · access · local authority</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">◎</div><strong>Execute</strong><span>Bounded testing · safety controls</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">◇</div><strong>Evidence</strong><span>Permitted capture · secure handling</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">!</div><strong>Escalate</strong><span>Impact · finding · stop condition · report</span></div></div><div class="v24-outcome"><strong>On-site access adds operational context without weakening control.</strong></div></div>
     </div>
+  </section>
 
-    <div class="split">
-      <div class="stack stack--signal stack--scope reveal delay-1" data-reveal>
-        <h3>Purpose and fit</h3>
-        <ul class="outcomes">
-          <li><span class="mono">Assessment:</span> scoped testing of facilities, networks, applications, and operator workflows.</li>
-          <li><span class="mono">Validation:</span> attack-path and control verification in agreed production or production-adjacent windows.</li>
-          <li><span class="mono">Incident support:</span> targeted adversary simulation to validate response hypotheses.</li>
-          <li><span class="mono">Advisory:</span> technical workshops for hardening priorities and remediation planning.</li>
-        </ul>
-      </div>
-      <div class="stack stack--signal stack--safety reveal delay-2" data-reveal>
-        <h3>Access and safety controls</h3>
-        <ul class="outcomes">
-          <li>On-site work runs with a designated client escort or approved supervision model.</li>
-          <li>Rules of engagement define stop conditions, no-go systems, and escalation paths.</li>
-          <li>Test windows and production protections are agreed before kickoff.</li>
-          <li>Activity pauses immediately when risk exceeds agreed thresholds.</li>
-        </ul>
-      </div>
+  <section class="v24-section" id="onsite-model" aria-labelledby="onsite-fit">
+    <div class="wrap v24-section__grid">
+      <div class="v24-copy"><p class="v24-kicker">When on-site adds value</p><h2 class="v24-title" id="onsite-fit">Use physical presence when <span class="v24-accent">the environment changes the answer.</span></h2><p>Travel is not the service. On-site delivery is justified when local access, hardware, network position, supervision, operating windows, or legal constraints materially affect the technical work.</p></div>
+      <div class="v24-canvas" aria-label="Reasons for on-site delivery"><span class="v24-canvas__label">Where location changes the engagement</span><div class="v24-linked-grid"><article class="v24-linked-card"><div class="v24-linked-card__icon">▧</div><strong>Sensitive networks</strong><p>Access cannot or should not be exposed remotely.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">▦</div><strong>Hardware &amp; appliances</strong><p>The physical system is part of the attack surface.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">○</div><strong>Supervised testing</strong><p>Client oversight is part of the safety model.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">⌖</div><strong>Residency &amp; handling</strong><p>Evidence must remain inside an approved geography or environment.</p></article></div></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="split">
-      <div class="stack stack--signal stack--evidence reveal delay-1" data-reveal>
-        <h3>Evidence handling</h3>
-        <ul class="outcomes">
-          <li>Collection is minimized to what is required to prove impact.</li>
-          <li>Evidence exports follow chain-of-custody notes (collector, time, system, transfer).</li>
-          <li>Photos, video, and screen captures are taken only where explicitly permitted.</li>
-          <li>Storage and transfer use client-approved secure channels.</li>
-          <li>For in-country or residency requirements, handling locations can be aligned to agreed constraints where operationally feasible.</li>
-        </ul>
-      </div>
-      <div class="stack stack--signal stack--transparency reveal delay-2" data-reveal>
-        <h3>Communication and reporting</h3>
-        <ul class="outcomes">
-          <li>Daily syncs with technical leads and engagement owners.</li>
-          <li>Immediate escalation for critical findings or unexpected operational impact.</li>
-          <li>Draft findings review to validate context before finalization.</li>
-          <li>Optional remediation validation or retest after fixes.</li>
-        </ul>
-      </div>
+  <section class="v24-section" aria-labelledby="onsite-safety">
+    <div class="wrap v24-section__grid">
+      <div class="v24-copy"><p class="v24-kicker">Safety model</p><h2 class="v24-title" id="onsite-safety">Know who can act, what can be touched, and <span class="v24-accent">when the work stops.</span></h2><p>On-site execution is governed by the same institutional standard as remote work, with additional facility, supervision, and production-safety controls made explicit before testing begins.</p></div>
+      <div class="v24-canvas" aria-label="Access and safety controls"><span class="v24-canvas__label">Access and safety controls</span><div class="v24-linked-grid"><article class="v24-linked-card"><div class="v24-linked-card__icon">▣</div><strong>Authority</strong><p>Approved targets, facilities, test windows, access methods, and prohibited systems.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">○</div><strong>Supervision</strong><p>Client escort, technical point of contact, governance authority, and escalation ownership.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">!</div><strong>Stop conditions</strong><p>Operational impact, unexpected behavior, safety threshold, or scope ambiguity pauses activity.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">↻</div><strong>Recovery</strong><p>Known rollback, restoration, and communication paths for work near sensitive operations.</p></article></div><div class="v24-outcome"><strong>Bounded work remains bounded even when the environment is complex.</strong></div></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="split">
-      <div class="stack stack--signal stack--inputs reveal delay-1" data-reveal>
-        <h3>Inputs needed from your team</h3>
-        <ul class="outcomes">
-          <li>Primary and backup points of contact for technical and governance decisions.</li>
-          <li>Network diagrams, data-flow context, and asset inventories where sharing is allowed.</li>
-          <li>Test accounts and access methods with least-privilege boundaries.</li>
-          <li>Facility rules, escort requirements, and acceptable use constraints.</li>
-          <li>Applicable legal and contractual constraints, including cross-border restrictions.</li>
-        </ul>
-      </div>
-      <div class="stack stack--signal stack--secure reveal delay-2" data-reveal>
-        <h3>Regulated and cross-border environments</h3>
-        <p>Execution and evidence handling can be tailored to your sector controls, privacy requirements, and transfer restrictions.</p>
-        <p>Legal interpretation should be provided by your counsel or compliance team. We align operations to approved requirements and documented constraints.</p>
-        <p class="mono"><a href="{{ '/contact/' | relative_url }}">Discuss an on-site scope -></a></p>
-      </div>
+  <section class="v24-section" aria-labelledby="onsite-evidence">
+    <div class="wrap v24-section__grid">
+      <div class="v24-copy"><p class="v24-kicker">Evidence and communication</p><h2 class="v24-title" id="onsite-evidence">Capture what proves the result. <span class="v24-accent">Protect everything else.</span></h2><p>Physical access can expose more sensitive context than a remote engagement. Evidence collection therefore stays purpose-limited and client-approved.</p></div>
+      <div class="v24-canvas" aria-label="On-site evidence and communication model"><span class="v24-canvas__label">Three control surfaces</span><div class="v24-linked-grid v24-linked-grid--3"><article class="v24-linked-card"><div class="v24-linked-card__icon">◇</div><strong>Evidence handling</strong><p>Collect the minimum required to support material conclusions.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">↗</div><strong>Communication</strong><p>Keep technical and governance owners aligned.</p></article><article class="v24-linked-card"><div class="v24-linked-card__icon">⌖</div><strong>Cross-border constraints</strong><p>Operate to approved requirements, not assumptions.</p></article></div></div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="v24-close" aria-labelledby="onsite-close"><div class="wrap v24-close__grid"><div class="v24-copy"><p class="v24-kicker">Plan the physical boundary before travel</p><h2 class="v24-title" id="onsite-close">Tell us why location matters, what access is required, and what operational constraints must be <span class="v24-accent">protected.</span></h2><p>We will determine whether on-site delivery materially improves the engagement and define the safety model before arrival.</p><div class="v24-actions"><a class="v24-btn v24-btn--accent" href="{{ '/contact/#assessment' | relative_url }}">Discuss an on-site scope →</a></div></div><div class="v24-canvas" aria-label="On-site scoping inputs"><span class="v24-canvas__label">Plan before arrival</span><div class="v24-intake"><div class="v24-intake-step"><div class="v24-intake-step__icon">⌖</div><strong>Location</strong><span>Why physical presence matters.</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">▣</div><strong>Access</strong><span>What must be reached.</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">○</div><strong>Supervision</strong><span>Who controls local authority.</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">!</div><strong>Safety</strong><span>What cannot be disrupted.</span></div><div class="v24-intake-step"><div class="v24-intake-step__icon">◇</div><strong>Evidence</strong><span>What may be captured and where.</span></div></div></div></div></section>
+</div>

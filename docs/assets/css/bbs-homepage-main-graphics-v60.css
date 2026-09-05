@@ -1,0 +1,73 @@
+/* Black Bag Security MAIN supporting marketing graphics v60.
+ * Four approved supporting visuals. The AOTP hero remains locked at v59.
+ */
+
+.visual-site-v24.page-ref-home .v60-home-panel-art {
+  position: relative;
+  justify-self: end;
+  width: min(100%, 1020px);
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(59, 203, 232, .28);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 82% 15%, rgba(157, 244, 0, .055), transparent 28%),
+    linear-gradient(180deg, rgba(6, 20, 30, .985), rgba(3, 13, 21, .995));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .03),
+    0 24px 48px rgba(0, 0, 0, .26);
+}
+
+.visual-site-v24.page-ref-home .v24-section:has(#institutional-control) .v60-home-panel-art,
+.visual-site-v24.page-ref-home .v24-section:has(#same-rigor) .v60-home-panel-art,
+.visual-site-v24.page-ref-home .v24-section:has(#data-responsibility) .v60-home-panel-art,
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v60-home-panel-art {
+  width: min(100%, 1020px);
+  padding: 10px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 15%, rgba(157, 244, 0, .055), transparent 28%),
+    linear-gradient(180deg, rgba(6, 20, 30, .985), rgba(3, 13, 21, .995));
+}
+
+.visual-site-v24.page-ref-home .v60-home-panel-art::before,
+.visual-site-v24.page-ref-home .v60-home-panel-art::after {
+  content: none !important;
+  display: none !important;
+}
+
+.visual-site-v24.page-ref-home .v60-home-panel-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(65, 152, 180, .18);
+  border-radius: 12px;
+  background: #05121c;
+}
+
+@media (max-width: 980px) {
+  .visual-site-v24.page-ref-home .v60-home-panel-art,
+  .visual-site-v24.page-ref-home .v24-section:has(#institutional-control) .v60-home-panel-art,
+  .visual-site-v24.page-ref-home .v24-section:has(#same-rigor) .v60-home-panel-art,
+  .visual-site-v24.page-ref-home .v24-section:has(#data-responsibility) .v60-home-panel-art,
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v60-home-panel-art {
+    width: 100%;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 720px) {
+  .visual-site-v24.page-ref-home .v60-home-panel-art,
+  .visual-site-v24.page-ref-home .v24-section:has(#institutional-control) .v60-home-panel-art,
+  .visual-site-v24.page-ref-home .v24-section:has(#same-rigor) .v60-home-panel-art,
+  .visual-site-v24.page-ref-home .v24-section:has(#data-responsibility) .v60-home-panel-art,
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v60-home-panel-art {
+    padding: 5px;
+    border-radius: 14px;
+  }
+
+  .visual-site-v24.page-ref-home .v60-home-panel-art img {
+    border-radius: 9px;
+  }
+}

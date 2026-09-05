@@ -1,0 +1,455 @@
+/* Black Bag Security palette interaction audit.
+ * Final colour-state layer for the redesigned v2 pages.
+ * Purpose: remove residual light-theme hover/focus states, reduce accent
+ * saturation, and make interactive feedback consistent across the site.
+ * Loaded after original-palette-v2.css.
+ */
+
+body.home-v2 {
+  --bbs-lime-ui: rgba(182, 255, 59, .80);
+  --bbs-lime-ui-hover: rgba(182, 255, 59, .90);
+  --bbs-lime-line: rgba(182, 255, 59, .38);
+  --bbs-cyan-ui: rgba(77, 225, 255, .84);
+  --bbs-cyan-line: rgba(77, 225, 255, .34);
+  --bbs-raised: #131e2b;
+  --bbs-raised-2: #101923;
+  --bbs-deep: #081018;
+  --bbs-hover: #162333;
+  --bbs-focus-ring: rgba(77, 225, 255, .78);
+}
+
+/* ---------- Global interactive behaviour ---------- */
+.home-v2 a,
+.home-v2 button,
+.home-v2 [tabindex] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.home-v2 a:focus-visible,
+.home-v2 button:focus-visible,
+.home-v2 [tabindex]:focus-visible {
+  outline: 2px solid var(--bbs-focus-ring);
+  outline-offset: 3px;
+}
+
+.home-v2-page a:hover,
+.services-v2-page a:hover,
+.method-v2-page a:hover,
+.arsenal-v2-page a:hover,
+.home-v2-page a:focus-visible,
+.services-v2-page a:focus-visible,
+.method-v2-page a:focus-visible,
+.arsenal-v2-page a:focus-visible {
+  color: var(--bbs-cyan-ui);
+  text-shadow: none;
+}
+
+.home-v2 .nav-v2 a:hover,
+.home-v2 .nav-v2 a:focus-visible,
+.home-v2 .footer-v2 a:hover,
+.home-v2 .footer-v2 a:focus-visible {
+  color: var(--bbs-cyan-ui);
+  text-shadow: none;
+}
+
+/* ---------- Buttons: one restrained primary accent ---------- */
+.home-v2-page .home-btn,
+.services-v2-page .home-btn,
+.method-v2-page .home-btn,
+.arsenal-v2-page .home-btn {
+  color: var(--bbs-ink);
+  border-color: rgba(148, 163, 184, .34);
+  background: rgba(15, 22, 34, .88);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, .22),
+    inset 0 1px 0 rgba(255, 255, 255, .035);
+  transition:
+    transform 140ms ease,
+    background-color 140ms ease,
+    border-color 140ms ease,
+    color 140ms ease,
+    box-shadow 140ms ease;
+}
+
+.home-v2-page .home-btn::before,
+.services-v2-page .home-btn::before,
+.method-v2-page .home-btn::before,
+.arsenal-v2-page .home-btn::before {
+  background: none;
+}
+
+.home-v2-page .home-btn:hover,
+.home-v2-page .home-btn:focus-visible,
+.services-v2-page .home-btn:hover,
+.services-v2-page .home-btn:focus-visible,
+.method-v2-page .home-btn:hover,
+.method-v2-page .home-btn:focus-visible,
+.arsenal-v2-page .home-btn:hover,
+.arsenal-v2-page .home-btn:focus-visible {
+  color: var(--bbs-ink);
+  border-color: var(--bbs-cyan-line);
+  background: var(--bbs-hover);
+  transform: translateY(-1px);
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, .26),
+    inset 0 1px 0 rgba(255, 255, 255, .045);
+}
+
+.home-v2-page .home-btn:active,
+.services-v2-page .home-btn:active,
+.method-v2-page .home-btn:active,
+.arsenal-v2-page .home-btn:active {
+  transform: translateY(0);
+  background: var(--bbs-raised-2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .22);
+}
+
+.home-v2-page .home-btn--accent,
+.services-v2-page .home-btn--accent,
+.method-v2-page .home-btn--accent,
+.arsenal-v2-page .home-btn--accent {
+  color: #081018;
+  border-color: rgba(182, 255, 59, .58);
+  background: var(--bbs-lime-ui);
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, .24),
+    0 0 0 1px rgba(182, 255, 59, .05);
+}
+
+.home-v2-page .home-btn--accent:hover,
+.home-v2-page .home-btn--accent:focus-visible,
+.services-v2-page .home-btn--accent:hover,
+.services-v2-page .home-btn--accent:focus-visible,
+.method-v2-page .home-btn--accent:hover,
+.method-v2-page .home-btn--accent:focus-visible,
+.arsenal-v2-page .home-btn--accent:hover,
+.arsenal-v2-page .home-btn--accent:focus-visible {
+  color: #081018;
+  border-color: rgba(182, 255, 59, .78);
+  background: var(--bbs-lime-ui-hover);
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, .28),
+    0 0 18px rgba(182, 255, 59, .08);
+}
+
+.home-v2-page .home-btn--accent:active,
+.services-v2-page .home-btn--accent:active,
+.method-v2-page .home-btn--accent:active,
+.arsenal-v2-page .home-btn--accent:active {
+  background: rgba(182, 255, 59, .74);
+}
+
+/* ---------- Homepage cards ---------- */
+.home-v2-service-card,
+.home-v2-research-card,
+.home-v2-commitment {
+  border-color: var(--bbs-line);
+  background: linear-gradient(145deg, var(--bbs-raised) 0%, var(--bbs-paper) 100%);
+}
+
+.home-v2-service-card:hover,
+.home-v2-service-card:focus-visible,
+.home-v2-research-card:hover,
+.home-v2-research-card:focus-within,
+.home-v2-commitment:hover,
+.home-v2-commitment:focus-visible {
+  color: var(--bbs-ink);
+  border-color: var(--bbs-cyan-line);
+  background: linear-gradient(145deg, #162333 0%, #0d151f 100%);
+  box-shadow:
+    0 18px 38px rgba(0, 0, 0, .34),
+    inset 0 1px 0 rgba(255, 255, 255, .04);
+}
+
+.home-v2-service-card:hover h3,
+.home-v2-service-card:focus-visible h3,
+.home-v2-research-card:hover h3,
+.home-v2-research-card:focus-within h3,
+.home-v2-commitment:hover h3,
+.home-v2-commitment:focus-visible h3 {
+  color: var(--bbs-ink);
+}
+
+.home-v2-service-card:hover p,
+.home-v2-service-card:focus-visible p,
+.home-v2-research-card:hover p,
+.home-v2-research-card:focus-within p,
+.home-v2-commitment:hover p,
+.home-v2-commitment:focus-visible p {
+  color: var(--bbs-muted);
+}
+
+.home-v2-service-card::after {
+  color: #081018;
+  background: var(--bbs-lime-ui);
+  box-shadow: none;
+}
+
+.home-v2-service-card:hover::after,
+.home-v2-service-card:focus-visible::after {
+  background: var(--bbs-lime-ui-hover);
+}
+
+.home-v2-service-card::before,
+.home-v2-research-card::before {
+  background: linear-gradient(90deg, var(--bbs-cyan-ui), rgba(77, 225, 255, 0));
+}
+
+.home-v2-why__item:hover,
+.home-v2-why__item:focus-visible {
+  background: rgba(77, 225, 255, .035);
+}
+
+/* Keep icons crisp rather than luminous. */
+.home-v2-service-card .icon-mask,
+.home-v2-commitment .icon-mask,
+.home-v2-why .icon-mask,
+.svc-principle .icon-mask,
+.method-promise-card .icon-mask,
+.arsenal-project-block .icon-mask {
+  filter: none;
+}
+
+/* ---------- Services ---------- */
+.svc-line-card,
+.svc-specialist-card,
+.svc-model-card,
+.service-detail-card,
+.service-outcome,
+.service-detail-needs__panel,
+.services-v2-hero__principles,
+.service-detail-summary {
+  color: var(--bbs-ink);
+  border-color: var(--bbs-line);
+  background: linear-gradient(145deg, var(--bbs-raised) 0%, var(--bbs-paper) 100%);
+}
+
+.svc-line-card:hover,
+.svc-line-card:focus-within,
+.svc-specialist-card:hover,
+.svc-specialist-card:focus-within,
+.svc-model-card:hover,
+.svc-model-card:focus-within,
+.service-detail-card:hover,
+.service-detail-card:focus-within,
+.service-outcome:hover,
+.service-outcome:focus-within,
+.service-detail-needs__panel:hover,
+.service-detail-needs__panel:focus-within {
+  color: var(--bbs-ink);
+  border-color: var(--bbs-cyan-line);
+  background: linear-gradient(145deg, #162333 0%, #0d151f 100%);
+  box-shadow:
+    0 22px 44px rgba(0, 0, 0, .34),
+    inset 0 1px 0 rgba(255, 255, 255, .04);
+}
+
+.svc-line-card:hover h3,
+.svc-line-card:focus-within h3,
+.svc-specialist-card:hover strong,
+.svc-specialist-card:focus-within strong,
+.svc-model-card:hover h3,
+.svc-model-card:focus-within h3,
+.service-detail-card:hover strong,
+.service-detail-card:focus-within strong,
+.service-outcome:hover strong,
+.service-outcome:focus-within strong,
+.service-detail-needs__panel:hover h3,
+.service-detail-needs__panel:focus-within h3 {
+  color: var(--bbs-ink);
+}
+
+.svc-line-card:hover p,
+.svc-line-card:focus-within p,
+.svc-specialist-card:hover p,
+.svc-specialist-card:focus-within p,
+.svc-model-card:hover p,
+.svc-model-card:focus-within p,
+.service-detail-card:hover p,
+.service-detail-card:focus-within p,
+.service-outcome:hover p,
+.service-outcome:focus-within p,
+.service-detail-needs__panel:hover p,
+.service-detail-needs__panel:focus-within p {
+  color: var(--bbs-muted);
+}
+
+.svc-line-card::before,
+.service-detail-card::before,
+.service-outcome::before,
+.service-detail-needs__panel::before {
+  background: linear-gradient(90deg, var(--bbs-cyan-ui), transparent 72%);
+  opacity: .28;
+}
+
+.svc-line-card:hover::before,
+.svc-line-card:focus-within::before,
+.service-detail-card:hover::before,
+.service-detail-card:focus-within::before {
+  opacity: .62;
+}
+
+.svc-line-card__focus span::before {
+  background: var(--bbs-lime-ui);
+}
+
+.services-v2-page .svc-text-link,
+.services-v2-page .svc-text-link::after {
+  color: var(--bbs-cyan-ui);
+}
+
+/* ---------- Methodology ---------- */
+.method-promise-card,
+.method-v2-standards__grid article,
+.method-v2-readers__grid article,
+.method-v2-communication__grid article,
+.method-v2-delivery__grid article,
+.method-v2-hero__expect,
+.method-v2-evidence__statement blockquote {
+  color: var(--bbs-ink);
+  border-color: var(--bbs-line);
+  background: linear-gradient(145deg, var(--bbs-raised) 0%, var(--bbs-paper) 100%);
+}
+
+.method-promise-card:hover,
+.method-promise-card:focus-within,
+.method-v2-standards__grid article:hover,
+.method-v2-standards__grid article:focus-within,
+.method-v2-readers__grid article:hover,
+.method-v2-readers__grid article:focus-within,
+.method-v2-communication__grid article:hover,
+.method-v2-communication__grid article:focus-within,
+.method-v2-delivery__grid article:hover,
+.method-v2-delivery__grid article:focus-within {
+  color: var(--bbs-ink);
+  border-color: var(--bbs-cyan-line);
+  background: linear-gradient(145deg, #162333 0%, #0d151f 100%);
+  box-shadow:
+    0 22px 44px rgba(0, 0, 0, .34),
+    inset 0 1px 0 rgba(255, 255, 255, .04);
+}
+
+.method-promise-card::before,
+.method-v2-evidence__statement blockquote {
+  border-color: var(--bbs-lime-line);
+}
+
+.method-v2-evidence__statement blockquote {
+  border-left-color: var(--bbs-lime-ui);
+}
+
+/* ---------- Arsenal ---------- */
+.arsenal-card,
+.arsenal-project-block,
+.arsenal-project-summary,
+.arsenal-repo-link {
+  color: var(--bbs-ink);
+  border-color: var(--bbs-line);
+  background: linear-gradient(145deg, var(--bbs-raised) 0%, var(--bbs-paper) 100%);
+}
+
+.arsenal-card:nth-child(2) {
+  color: var(--bbs-ink);
+  background: linear-gradient(145deg, #101923 0%, #081018 100%);
+}
+
+.arsenal-card:hover,
+.arsenal-card:focus-within,
+.arsenal-project-block:hover,
+.arsenal-project-block:focus-within,
+.arsenal-repo-link:hover,
+.arsenal-repo-link:focus-visible {
+  color: var(--bbs-ink);
+  border-color: var(--bbs-cyan-line);
+  background: linear-gradient(145deg, #162333 0%, #0d151f 100%);
+  box-shadow:
+    0 24px 48px rgba(0, 0, 0, .36),
+    inset 0 1px 0 rgba(255, 255, 255, .04);
+}
+
+.arsenal-card:hover h3,
+.arsenal-card:focus-within h3,
+.arsenal-project-block:hover h3,
+.arsenal-project-block:focus-within h3 {
+  color: var(--bbs-ink);
+}
+
+.arsenal-card:hover p,
+.arsenal-card:focus-within p,
+.arsenal-project-block:hover p,
+.arsenal-project-block:focus-within p {
+  color: var(--bbs-muted);
+}
+
+.arsenal-card::before,
+.arsenal-project-block::before,
+.arsenal-project-summary::before {
+  background: linear-gradient(90deg, var(--bbs-cyan-ui), transparent 72%);
+  opacity: .30;
+}
+
+.arsenal-card:hover::before,
+.arsenal-card:focus-within::before,
+.arsenal-project-block:hover::before,
+.arsenal-project-block:focus-within::before {
+  opacity: .62;
+}
+
+.arsenal-repo-link::after,
+.arsenal-project-back::before {
+  color: var(--bbs-cyan-ui);
+}
+
+.arsenal-status-item:hover {
+  padding-left: 10px;
+  background: linear-gradient(90deg, rgba(77, 225, 255, .045), transparent 76%);
+}
+
+/* ---------- Accent moderation ---------- */
+.home-v2-hero__eyebrow,
+.home-v2-research-card__year,
+.home-v2-principal__eyebrow,
+.svc-eyebrow,
+.svc-process-step__number,
+.method-eyebrow,
+.arsenal-card__meta,
+.arsenal-project-kicker {
+  color: rgba(182, 255, 59, .86);
+}
+
+.home-v2-service-card .icon-mask,
+.home-v2-research-card__mark,
+.home-v2-why .icon-mask,
+.svc-principle strong,
+.method-v2-evidence__qualities .icon-mask {
+  color: var(--bbs-cyan-ui);
+}
+
+/* Lines and dividers should recede, not glow. */
+.home-v2-page .section-title::after,
+.services-v2-page .svc-section-title::after,
+.method-v2-page .method-v2-lifecycle__grid,
+.arsenal-v2-page .section-title::after {
+  border-color: var(--bbs-line);
+  background-color: var(--bbs-line);
+}
+
+/* Reduced motion remains authoritative. */
+@media (prefers-reduced-motion: reduce) {
+  .home-v2 .home-btn,
+  .home-v2-service-card,
+  .home-v2-research-card,
+  .home-v2-commitment,
+  .svc-line-card,
+  .svc-specialist-card,
+  .svc-model-card,
+  .service-detail-card,
+  .service-outcome,
+  .method-promise-card,
+  .arsenal-card,
+  .arsenal-project-block,
+  .arsenal-repo-link {
+    transition: none;
+    transform: none;
+  }
+}

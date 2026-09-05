@@ -1,12 +1,27 @@
 title: Black Bag Security
 description: >-
-  Black Bag Security, offensive security, red team operations, vulnerability
-  research, and adversary emulation.
+  Principal-led offensive security, secure systems engineering, and AI security
+  research with reproducible evidence and clear technical judgment.
 url: "https://www.blackbagsecurity.com"
 baseurl: ""
+lang: en
 
 include:
   - .well-known
+
+# The reimagined site is English-only. Legacy localized content remains in
+# repository history/source but is excluded from the redesigned build and sitemap.
+# Trailing slashes keep these exclusions directory-specific.
+exclude:
+  - ar/
+  - de/
+  - es/
+  - fr/
+  - he/
+  - ja/
+  - ko/
+  - pt-br/
+  - th/
 
 plugins:
   - jekyll-sitemap

@@ -13,7 +13,7 @@
           window.localStorage.setItem("bbs-language-choice", value);
         }
       } catch (err) {
-        // ignore storage errors
+        // Ignore storage errors. Language navigation still works without persistence.
       }
     });
   });

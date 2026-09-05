@@ -1,0 +1,53 @@
+/* Black Bag Security methodology section-label correction v19.
+ * Final Methodology-only accent and heading hierarchy overrides.
+ */
+
+.methodology-v2-body .method-v2-communication .method-eyebrow,
+.methodology-v2-body .method-v2-evidence .method-eyebrow,
+.methodology-v2-body .method-v2-delivery .method-eyebrow,
+.methodology-v2-body .method-v2-readers .method-eyebrow {
+  color: #8ee21d !important;
+}
+
+/* Match Reporting to the corrected Continuous Communication hierarchy.
+ * Eyebrow and title share the left column on separate rows; supporting copy sits right.
+ */
+.methodology-v2-body .method-v2-readers__head {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  grid-template-areas:
+    "eyebrow copy"
+    "title copy";
+  column-gap: 70px;
+  row-gap: 10px;
+  align-items: start;
+}
+
+.methodology-v2-body .method-v2-readers__head .method-eyebrow {
+  grid-area: eyebrow;
+  margin: 0;
+}
+
+.methodology-v2-body .method-v2-readers__head h2 {
+  grid-area: title;
+}
+
+.methodology-v2-body .method-v2-readers__head > p:not(.method-eyebrow) {
+  grid-area: copy;
+  align-self: end;
+}
+
+@media (max-width: 780px) {
+  .methodology-v2-body .method-v2-readers__head {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "eyebrow"
+      "title"
+      "copy";
+    gap: 10px;
+  }
+
+  .methodology-v2-body .method-v2-readers__head > p:not(.method-eyebrow) {
+    margin-top: 8px;
+  }
+}

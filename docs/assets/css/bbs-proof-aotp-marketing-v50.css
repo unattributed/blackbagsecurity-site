@@ -1,0 +1,448 @@
+/* Black Bag Security Proof v50.1: AOTP marketing visual.
+ * Marketing-first composition: one dominant local-AI core, three client outcomes.
+ * Scoped to the Proof AOTP section only.
+ */
+
+.page-ref-arsenal .proof50-aotp-visual {
+  overflow: hidden;
+}
+
+.page-ref-arsenal .proof50-aotp-visual .proof43-visual__topline {
+  position: relative;
+  z-index: 4;
+}
+
+.page-ref-arsenal .proof50-scene {
+  position: relative;
+  z-index: 2;
+  min-height: 520px;
+  margin: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(37,214,239,.24);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 50% 43%, rgba(37,214,239,.20), transparent 26%),
+    radial-gradient(circle at 50% 43%, rgba(157,244,0,.075), transparent 44%),
+    linear-gradient(180deg, rgba(3,17,27,.99), rgba(1,8,14,.99));
+  box-shadow:
+    inset 0 0 70px rgba(37,214,239,.035),
+    0 18px 50px rgba(0,0,0,.24);
+}
+
+.page-ref-arsenal .proof50-scene::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, transparent 49.85%, rgba(37,214,239,.10) 50%, transparent 50.15%),
+    linear-gradient(0deg, transparent 49.85%, rgba(37,214,239,.06) 50%, transparent 50.15%);
+  opacity: .55;
+}
+
+.page-ref-arsenal .proof50-scene::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 44%;
+  width: 380px;
+  height: 380px;
+  transform: translate(-50%,-50%);
+  border: 1px solid rgba(37,214,239,.12);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 28px rgba(37,214,239,.018),
+    0 0 0 62px rgba(157,244,0,.012),
+    0 0 100px rgba(37,214,239,.10);
+  pointer-events: none;
+}
+
+.page-ref-arsenal .proof50-boundary-label {
+  position: absolute;
+  top: 18px;
+  left: 22px;
+  right: 22px;
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+  color: #79cbd5;
+  font-size: 8px;
+  font-weight: 850;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.page-ref-arsenal .proof50-boundary-label b {
+  color: #b9e66e;
+  font-weight: 850;
+}
+
+/* Dominant product idea: AOTP local AI. */
+.page-ref-arsenal .proof50-core {
+  position: absolute;
+  left: 50%;
+  top: 62px;
+  width: 360px;
+  height: 360px;
+  transform: translateX(-50%);
+  display: grid;
+  place-items: center;
+}
+
+.page-ref-arsenal .proof50-core::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 42% 34%, rgba(255,255,255,.14), transparent 15%),
+    radial-gradient(circle, rgba(37,214,239,.24), rgba(4,25,37,.96) 58%, rgba(1,9,15,.99) 74%);
+  box-shadow:
+    0 0 58px rgba(37,214,239,.28),
+    0 0 120px rgba(37,214,239,.12),
+    inset 0 0 34px rgba(157,244,0,.06);
+}
+
+.page-ref-arsenal .proof50-core-ring {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.page-ref-arsenal .proof50-core-ring--outer {
+  width: 330px;
+  height: 330px;
+  border: 1px solid rgba(37,214,239,.23);
+}
+
+.page-ref-arsenal .proof50-core-ring--outer::before,
+.page-ref-arsenal .proof50-core-ring--outer::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.page-ref-arsenal .proof50-core-ring--outer::before {
+  inset: 18px;
+  border-top: 2px solid rgba(157,244,0,.76);
+  border-right: 2px solid transparent;
+  border-bottom: 1px solid rgba(37,214,239,.20);
+  border-left: 2px solid transparent;
+  transform: rotate(-20deg);
+}
+
+.page-ref-arsenal .proof50-core-ring--outer::after {
+  inset: 48px;
+  border: 1px dashed rgba(37,214,239,.20);
+}
+
+.page-ref-arsenal .proof50-core-ring--inner {
+  width: 276px;
+  height: 276px;
+  border: 1px solid rgba(157,244,0,.22);
+}
+
+.page-ref-arsenal .proof50-core-copy {
+  position: relative;
+  z-index: 3;
+  width: 218px;
+  text-align: center;
+}
+
+.page-ref-arsenal .proof50-core-copy small {
+  display: block;
+  margin-bottom: 9px;
+  color: #83dbe4;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .25em;
+}
+
+.page-ref-arsenal .proof50-core-copy strong {
+  display: block;
+  color: #f4fbfa;
+  font-size: 46px;
+  font-weight: 740;
+  line-height: .92;
+  letter-spacing: -.055em;
+  text-shadow: 0 0 30px rgba(37,214,239,.16);
+}
+
+.page-ref-arsenal .proof50-core-copy span {
+  display: block;
+  max-width: 190px;
+  margin: 15px auto 0;
+  color: #a5bfc1;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.page-ref-arsenal .proof50-core-badge {
+  position: absolute;
+  z-index: 4;
+  bottom: 18px;
+  padding: 8px 13px;
+  border: 1px solid rgba(157,244,0,.38);
+  border-radius: 999px;
+  color: #c9ef91;
+  background: rgba(3,17,22,.94);
+  box-shadow: 0 12px 34px rgba(0,0,0,.34);
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+/* Marketing callouts, not mini dashboards. */
+.page-ref-arsenal .proof50-context-card,
+.page-ref-arsenal .proof50-authority-card {
+  position: absolute;
+  top: 154px;
+  width: 210px;
+  min-height: auto;
+  padding: 18px 18px 17px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(6,28,40,.94), rgba(3,16,24,.96));
+  box-shadow: 0 20px 50px rgba(0,0,0,.28);
+}
+
+.page-ref-arsenal .proof50-context-card {
+  left: 24px;
+  border: 1px solid rgba(37,214,239,.38);
+}
+
+.page-ref-arsenal .proof50-authority-card {
+  right: 24px;
+  border: 1px solid rgba(157,244,0,.34);
+}
+
+.page-ref-arsenal .proof50-context-card small,
+.page-ref-arsenal .proof50-authority-card small {
+  display: block;
+  margin-bottom: 8px;
+  color: #79d1dc;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.page-ref-arsenal .proof50-context-card strong,
+.page-ref-arsenal .proof50-authority-card strong {
+  display: block;
+  color: #f3f8f7;
+  font-size: 18px;
+  font-weight: 690;
+  line-height: 1.12;
+  letter-spacing: -.02em;
+}
+
+.page-ref-arsenal .proof50-context-grid,
+.page-ref-arsenal .proof50-authority-row {
+  display: none;
+}
+
+.page-ref-arsenal .proof50-context-card em {
+  display: inline-flex;
+  margin-top: 12px;
+  padding: 6px 9px;
+  border-radius: 999px;
+  color: #b9e9ed;
+  background: rgba(37,214,239,.08);
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.page-ref-arsenal .proof50-authority-card::after {
+  content: "Scope • Stop • Review";
+  display: block;
+  margin-top: 13px;
+  color: #bde77e;
+  font-size: 8px;
+  font-weight: 850;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+/* Proof becomes one strong outcome statement. */
+.page-ref-arsenal .proof50-proof-card {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 24px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+  align-items: center;
+  padding: 15px 16px 15px 18px;
+  border: 1px solid rgba(37,214,239,.22);
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(3,19,28,.96), rgba(6,27,32,.92));
+  box-shadow: 0 20px 48px rgba(0,0,0,.30);
+}
+
+.page-ref-arsenal .proof50-proof-copy {
+  padding: 0;
+}
+
+.page-ref-arsenal .proof50-proof-copy small {
+  display: block;
+  margin-bottom: 5px;
+  color: #78ced9;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.page-ref-arsenal .proof50-proof-copy strong {
+  color: #f2f8f5;
+  font-size: 20px;
+  font-weight: 690;
+  letter-spacing: -.025em;
+}
+
+.page-ref-arsenal .proof50-proof-steps {
+  display: none;
+}
+
+.page-ref-arsenal .proof50-finding {
+  min-width: 190px;
+  padding: 11px 14px;
+  border: 1px solid rgba(157,244,0,.36);
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(157,244,0,.085), rgba(4,20,25,.72));
+}
+
+.page-ref-arsenal .proof50-finding small {
+  display: block;
+  margin-bottom: 5px;
+  color: #a9d46f;
+  font-size: 7px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.page-ref-arsenal .proof50-finding strong {
+  color: #dbf2b5;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.page-ref-arsenal .proof50-principles {
+  display: none;
+}
+
+@media (max-width: 1180px) {
+  .page-ref-arsenal .proof50-context-card,
+  .page-ref-arsenal .proof50-authority-card {
+    width: 185px;
+  }
+
+  .page-ref-arsenal .proof50-core {
+    width: 330px;
+    height: 330px;
+  }
+
+  .page-ref-arsenal .proof50-core-ring--outer {
+    width: 304px;
+    height: 304px;
+  }
+
+  .page-ref-arsenal .proof50-core-ring--inner {
+    width: 252px;
+    height: 252px;
+  }
+}
+
+@media (max-width: 920px) {
+  .page-ref-arsenal .proof50-scene {
+    min-height: 620px;
+  }
+
+  .page-ref-arsenal .proof50-core {
+    top: 66px;
+  }
+
+  .page-ref-arsenal .proof50-context-card,
+  .page-ref-arsenal .proof50-authority-card {
+    top: 350px;
+    width: calc(50% - 32px);
+  }
+
+  .page-ref-arsenal .proof50-context-card { left: 20px; }
+  .page-ref-arsenal .proof50-authority-card { right: 20px; }
+}
+
+@media (max-width: 640px) {
+  .page-ref-arsenal .proof50-scene {
+    min-height: 760px;
+    margin: 12px;
+  }
+
+  .page-ref-arsenal .proof50-boundary-label {
+    left: 14px;
+    right: 14px;
+  }
+
+  .page-ref-arsenal .proof50-boundary-label b {
+    text-align: right;
+  }
+
+  .page-ref-arsenal .proof50-core {
+    top: 74px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .page-ref-arsenal .proof50-core::before {
+    width: 218px;
+    height: 218px;
+  }
+
+  .page-ref-arsenal .proof50-core-ring--outer {
+    width: 278px;
+    height: 278px;
+  }
+
+  .page-ref-arsenal .proof50-core-ring--inner {
+    width: 232px;
+    height: 232px;
+  }
+
+  .page-ref-arsenal .proof50-core-copy strong {
+    font-size: 40px;
+  }
+
+  .page-ref-arsenal .proof50-context-card,
+  .page-ref-arsenal .proof50-authority-card {
+    top: 388px;
+    width: calc(50% - 21px);
+    padding: 14px;
+  }
+
+  .page-ref-arsenal .proof50-context-card { left: 12px; }
+  .page-ref-arsenal .proof50-authority-card { right: 12px; }
+
+  .page-ref-arsenal .proof50-context-card strong,
+  .page-ref-arsenal .proof50-authority-card strong {
+    font-size: 15px;
+  }
+
+  .page-ref-arsenal .proof50-proof-card {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .page-ref-arsenal .proof50-finding {
+    min-width: 0;
+  }
+}

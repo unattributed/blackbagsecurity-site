@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 190" role="img" aria-labelledby="title desc">
+  <title id="title">Secure systems engineering</title>
+  <desc id="desc">A layered system architecture with protected core services and a hardened control plane.</desc>
+  <g fill="none" stroke="#9df400" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m160 34 42 22-42 22-42-22z" stroke-opacity=".68"/>
+    <path d="m118 56 42 22 42-22v31l-42 22-42-22z" stroke-opacity=".54"/>
+    <path d="m102 91 58 30 58-30 29 15-87 45-87-45z" stroke-opacity=".38"/>
+    <path d="M73 106v24l87 45 87-45v-24M102 91v24M218 91v24" stroke-opacity=".34"/>
+    <rect x="86" y="84" width="22" height="31" rx="2"/><rect x="212" y="84" width="22" height="31" rx="2"/>
+    <rect x="102" y="119" width="20" height="25" rx="2"/><rect x="198" y="119" width="20" height="25" rx="2"/>
+    <path d="M132 135h56M140 145h40M142 155h36" stroke-opacity=".5"/>
+  </g>
+  <g fill="#06131d" stroke="#9df400" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M160 39l20 8v16c0 12-7 21-20 27-13-6-20-15-20-27V47z"/>
+    <path d="m152 63 6 6 12-14" fill="none"/>
+  </g>
+  <g fill="none" stroke="#52d9ef" stroke-width="1.15" stroke-dasharray="3 5" stroke-opacity=".35">
+    <path d="M55 145h26M239 145h26M72 71h28M220 71h28"/>
+  </g>
+</svg>

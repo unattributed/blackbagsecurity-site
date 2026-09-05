@@ -1,0 +1,286 @@
+/* Black Bag Security readability and visual QA v7.
+ * Final accessibility/readability authority for the redesigned English site.
+ * Keeps technical micro-labels compact while ensuring normal prose is comfortable
+ * at 100% browser zoom on common desktop and mobile displays.
+ */
+
+/* ---------- shared chrome ---------- */
+.home-v2 .nav-v2 a {
+  font-size: .82rem;
+  letter-spacing: .085em;
+}
+.home-v2 .header-v2__motto {
+  font-size: .72rem;
+  line-height: 1.5;
+}
+.home-v2 .footer-v2,
+.home-v2 .footer-v2 a {
+  font-size: .76rem;
+  line-height: 1.5;
+}
+.home-v2 .section-title {
+  font-size: .96rem;
+  letter-spacing: .065em;
+}
+.home-v2 .home-btn {
+  font-size: .8rem;
+}
+
+/* ---------- homepage readability ---------- */
+.home-v2-page > .home-v2-hero .home-v2-hero__eyebrow {
+  font-size: .86rem;
+}
+.home-v2-page > .home-v2-hero .home-v2-hero__lead {
+  font-size: 1.08rem;
+  line-height: 1.78;
+}
+.home-v2-why__item h3 { font-size: 1rem; }
+.home-v2-why__item p {
+  font-size: .95rem;
+  line-height: 1.68;
+}
+.home-v2-service-card h3 { font-size: 1.42rem; }
+.home-v2-service-card p {
+  font-size: 1rem;
+  line-height: 1.72;
+}
+.home-v2-timeline__copy strong { font-size: .9rem; }
+.home-v2-timeline__copy p {
+  font-size: .92rem;
+  line-height: 1.65;
+}
+.home-v2-principal__bio p {
+  font-size: 1rem;
+  line-height: 1.76;
+}
+.home-v2-principal__credentials span { font-size: .78rem; }
+.home-v2-principal__proof-item strong { font-size: .92rem; }
+.home-v2-principal__proof-item p {
+  font-size: .9rem;
+  line-height: 1.62;
+}
+.home-v2-commitment h3 { font-size: .98rem; }
+.home-v2-commitment p {
+  font-size: .94rem;
+  line-height: 1.62;
+}
+
+/* ---------- services readability ---------- */
+.services-v2-page .svc-eyebrow,
+.services-v2-page .service-detail-hero__number,
+.services-v2-page .service-detail-back { font-size: .82rem; }
+.services-v2-hero__lead,
+.service-detail-hero__lead {
+  font-size: 1.08rem;
+  line-height: 1.78;
+}
+.svc-principle strong,
+.service-detail-summary strong { font-size: .82rem; }
+.svc-principle p,
+.service-detail-summary p {
+  font-size: .92rem;
+  line-height: 1.62;
+}
+.services-v2-lines__intro p,
+.services-v2-specialist__head p,
+.service-detail-intro p {
+  font-size: 1rem;
+  line-height: 1.72;
+}
+.svc-line-card__number,
+.svc-process-step__number { font-size: .78rem; }
+.svc-line-card__statement {
+  font-size: .98rem;
+  line-height: 1.7;
+}
+.svc-line-card__focus span {
+  font-size: .84rem;
+  line-height: 1.5;
+}
+.svc-text-link { font-size: .82rem; }
+.services-v2-process__lead {
+  font-size: 1rem;
+  line-height: 1.72;
+}
+.svc-process-step h3 { font-size: 1.16rem; }
+.svc-process-step p,
+.svc-specialist-card p,
+.svc-model-card p,
+.service-detail-card p,
+.service-outcome p,
+.service-detail-needs__panel p {
+  font-size: .95rem;
+  line-height: 1.68;
+}
+.svc-specialist-card strong,
+.service-detail-card strong,
+.service-outcome strong { font-size: 1rem; }
+
+/* ---------- methodology readability ---------- */
+.method-v2-page .method-eyebrow { font-size: .82rem; }
+.method-v2-hero__lead {
+  font-size: 1.08rem;
+  line-height: 1.78;
+}
+.method-expect p,
+.method-v2-intro > p,
+.method-v2-lifecycle__head > p,
+.method-v2-communication__head > p,
+.method-v2-readers__head > p {
+  font-size: .98rem;
+  line-height: 1.7;
+}
+.method-promise-card h3 { font-size: 1.24rem; }
+.method-promise-card p {
+  font-size: .96rem;
+  line-height: 1.68;
+}
+.method-step > span { font-size: .78rem; }
+.method-step h3 { font-size: 1.34rem; }
+.method-step p {
+  font-size: .96rem;
+  line-height: 1.68;
+}
+.method-v2-evidence__statement > p,
+.method-v2-evidence__qualities p,
+.method-v2-standards__grid p,
+.method-v2-communication__grid p,
+.method-v2-delivery__grid p,
+.method-v2-retest p,
+.method-v2-readers__grid p {
+  font-size: .96rem;
+  line-height: 1.68;
+}
+.method-v2-evidence__qualities strong,
+.method-v2-standards__grid h3,
+.method-v2-communication__grid strong,
+.method-v2-delivery__grid h3,
+.method-v2-retest__states strong,
+.method-v2-readers__grid h3 { font-size: 1rem; }
+.method-v2-evidence__statement blockquote {
+  font-size: 1.28rem;
+  line-height: 1.58;
+}
+.method-inline-link { font-size: .86rem; }
+
+/* ---------- arsenal readability ---------- */
+.arsenal-card__meta { font-size: .76rem; }
+.arsenal-card h3 { font-size: 1.9rem; }
+.arsenal-card:nth-child(-n+2) h3 { font-size: 2.5rem; }
+.arsenal-card p {
+  font-size: .96rem;
+  line-height: 1.7;
+}
+.arsenal-card a { font-size: .82rem; }
+.arsenal-project-back,
+.arsenal-project-kicker { font-size: .8rem; }
+.arsenal-project-lead {
+  font-size: 1.08rem;
+  line-height: 1.78;
+}
+.arsenal-project-summary strong { font-size: .78rem; }
+.arsenal-project-summary p {
+  font-size: .92rem;
+  line-height: 1.62;
+}
+.arsenal-project-intro p {
+  font-size: 1rem;
+  line-height: 1.74;
+}
+.arsenal-project-block h3 { font-size: 1.2rem; }
+.arsenal-project-block p,
+.arsenal-status-item p {
+  font-size: .94rem;
+  line-height: 1.67;
+}
+.arsenal-status-item strong { font-size: 1rem; }
+.arsenal-repo-link { font-size: .82rem; }
+
+/* Arsenal closing statement is intentionally a dark technical band. */
+.arsenal-v2-page > .home-v2-why {
+  color: var(--bbs-ink);
+  background:
+    radial-gradient(circle at 86% 12%, rgba(182,255,59,.07), transparent 28%),
+    radial-gradient(circle at 12% 88%, rgba(77,225,255,.07), transparent 30%),
+    linear-gradient(180deg, #081018 0%, #0b0f14 100%);
+  border-top: 1px solid rgba(77,225,255,.18);
+  border-bottom: 1px solid rgba(148,163,184,.14);
+}
+.arsenal-v2-page > .home-v2-why .section-title,
+.arsenal-v2-page > .home-v2-why h3 { color: var(--bbs-ink); }
+.arsenal-v2-page > .home-v2-why p {
+  color: var(--bbs-copy, #b8c2cc);
+  font-size: .95rem;
+  line-height: 1.68;
+}
+.arsenal-v2-page > .home-v2-why .home-v2-why__item {
+  color: var(--bbs-ink);
+  background: transparent;
+  border-color: rgba(148,163,184,.18);
+}
+.arsenal-v2-page > .home-v2-why .icon-mask { color: var(--bbs-cyan); }
+
+/* ---------- supporting-page readability ---------- */
+.supporting-v2-body .section:first-child { padding-top: 124px; }
+.supporting-v2-body .section__head p {
+  max-width: 860px;
+  font-size: 1.06rem;
+  line-height: 1.76;
+}
+.supporting-v2-body .stack h3,
+.supporting-v2-body .cap-card h3,
+.supporting-v2-body .model-card h3,
+.supporting-v2-body .contact__card h3 { font-size: 1.22rem; }
+.supporting-v2-body .stack p,
+.supporting-v2-body .cap-card p,
+.supporting-v2-body .model-card p,
+.supporting-v2-body .contact__card p,
+.supporting-v2-body .outcomes li {
+  font-size: .96rem;
+  line-height: 1.72;
+}
+.supporting-v2-body .mono {
+  font-size: .88rem;
+  line-height: 1.6;
+}
+.supporting-v2-body .pill,
+.supporting-v2-body .cap-tag { font-size: .76rem; }
+
+/* ---------- wide-screen reading measure ---------- */
+@media (min-width: 1280px) {
+  .supporting-v2-body .stack,
+  .supporting-v2-body .cap-card,
+  .supporting-v2-body .model-card,
+  .supporting-v2-body .contact__card { padding: 34px 32px; }
+}
+
+/* ---------- tablet/mobile ---------- */
+@media (max-width: 900px) {
+  .home-v2 .nav-v2 a { font-size: .76rem; }
+  .home-v2-page > .home-v2-hero .home-v2-hero__lead,
+  .services-v2-hero__lead,
+  .service-detail-hero__lead,
+  .method-v2-hero__lead,
+  .arsenal-project-lead,
+  .supporting-v2-body .section__head p { font-size: 1rem; }
+}
+
+@media (max-width: 760px) {
+  .supporting-v2-body .section:first-child { padding-top: 64px; }
+  .home-v2-why__item p,
+  .home-v2-service-card p,
+  .home-v2-timeline__copy p,
+  .home-v2-principal__bio p,
+  .home-v2-commitment p,
+  .svc-line-card__statement,
+  .svc-process-step p,
+  .method-promise-card p,
+  .method-step p,
+  .arsenal-card p,
+  .arsenal-project-block p,
+  .supporting-v2-body .stack p,
+  .supporting-v2-body .cap-card p,
+  .supporting-v2-body .model-card p,
+  .supporting-v2-body .contact__card p,
+  .supporting-v2-body .outcomes li { font-size: .98rem; }
+}

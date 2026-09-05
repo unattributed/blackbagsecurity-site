@@ -1,0 +1,209 @@
+/* Black Bag Security homepage journey correction v25.
+ * Surgical correction for the approved homepage hero infographic.
+ * Keeps the approved content and visual language while fixing scale,
+ * path alignment, vertical balance, and final-state text clearance.
+ */
+
+.visual-site-v24.page-ref-home .v24-hero .v24-canvas {
+  padding: 26px 28px 24px;
+}
+
+.visual-site-v24.page-ref-home .v24-hero .v24-canvas__label {
+  margin-bottom: 12px;
+  font-size: 11px;
+  letter-spacing: .115em;
+}
+
+.visual-site-v24.page-ref-home .v24-journey {
+  min-height: 270px;
+  padding: 22px 10px 4px;
+}
+
+.visual-site-v24.page-ref-home .v24-journey__mesh {
+  inset: 76px -18px -8px;
+  opacity: .52;
+  mask-image: linear-gradient(180deg, transparent 0%, #000 24%, #000 88%, transparent 100%);
+}
+
+.visual-site-v24.page-ref-home .v24-journey__nodes {
+  min-height: 176px;
+  gap: 12px;
+  align-items: start;
+}
+
+.visual-site-v24.page-ref-home .v24-journey-node {
+  position: relative;
+  min-width: 0;
+  padding: 0 3px;
+}
+
+.visual-site-v24.page-ref-home .v24-journey-node small {
+  min-height: 28px;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: .075em;
+}
+
+.visual-site-v24.page-ref-home .v24-orb {
+  width: 64px;
+  height: 64px;
+  margin-top: 10px;
+  font-size: 24px;
+  border-width: 1.5px;
+  box-shadow: 0 0 26px rgba(157,244,0,.10);
+}
+
+.visual-site-v24.page-ref-home .v24-journey-node strong {
+  margin-top: 9px;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.visual-site-v24.page-ref-home .v24-journey-node p {
+  max-width: 138px;
+  margin-top: 5px;
+  color: #c8d2cf;
+  font-size: 11px;
+  line-height: 1.38;
+}
+
+.visual-site-v24.page-ref-home .v24-journey-node:last-child .v24-orb {
+  width: 74px;
+  height: 74px;
+  margin-top: 5px;
+  border-radius: 16px;
+  font-size: 31px;
+  border-width: 1.5px;
+  box-shadow: 0 0 42px rgba(157,244,0,.28), inset 0 0 24px rgba(157,244,0,.08);
+}
+
+.visual-site-v24.page-ref-home .v24-journey-node:last-child p {
+  max-width: 150px;
+}
+
+.visual-site-v24.page-ref-home .v24-journey__path {
+  left: 5%;
+  right: 5%;
+  top: 181px;
+  bottom: auto;
+  height: 72px;
+  pointer-events: none;
+}
+
+/* The source SVG viewBox is wider than the rendered path band. Stretch the
+ * decorative path across the five stage centres while keeping stroke weight
+ * visually constant. This avoids the browser's default aspect-ratio letterbox. */
+.visual-site-v24.page-ref-home .v24-journey__path svg {
+  transform: scaleX(2.15);
+  transform-origin: 50% 50%;
+}
+
+.visual-site-v24.page-ref-home .v24-journey__path .core,
+.visual-site-v24.page-ref-home .v24-journey__path .glow {
+  vector-effect: non-scaling-stroke;
+}
+
+.visual-site-v24.page-ref-home .v24-journey__path .glow {
+  stroke-width: 15;
+  opacity: .88;
+}
+
+.visual-site-v24.page-ref-home .v24-journey__path .core {
+  stroke-width: 5.5;
+}
+
+@media (max-width: 1120px) and (min-width: 721px) {
+  .visual-site-v24.page-ref-home .v24-journey {
+    min-height: 278px;
+  }
+
+  .visual-site-v24.page-ref-home .v24-journey__path {
+    top: 187px;
+  }
+}
+
+@media (max-width: 720px) {
+  .visual-site-v24.page-ref-home .v24-hero .v24-canvas {
+    padding: 22px 20px;
+  }
+
+  .visual-site-v24.page-ref-home .v24-journey {
+    min-height: 0;
+    padding: 14px 0 2px;
+  }
+
+  .visual-site-v24.page-ref-home .v24-journey__nodes {
+    min-height: 0;
+    gap: 16px;
+  }
+
+  .visual-site-v24.page-ref-home .v24-journey-node {
+    grid-template-columns: 92px 58px 1fr;
+    min-height: 58px;
+  }
+
+  .visual-site-v24.page-ref-home .v24-journey-node small {
+    font-size: 9px;
+  }
+
+  .visual-site-v24.page-ref-home .v24-orb,
+  .visual-site-v24.page-ref-home .v24-journey-node:last-child .v24-orb {
+    width: 52px;
+    height: 52px;
+    margin: 0;
+    border-radius: 50%;
+    font-size: 21px;
+  }
+
+  .visual-site-v24.page-ref-home .v24-journey-node strong {
+    margin-top: 0;
+    font-size: 12px;
+  }
+
+  .visual-site-v24.page-ref-home .v24-journey-node p,
+  .visual-site-v24.page-ref-home .v24-journey-node:last-child p {
+    max-width: none;
+    margin-top: 3px;
+    font-size: 10px;
+  }
+}
+
+/* MAIN v59 AOTP hero image. */
+.visual-site-v24.page-ref-home .v24-hero .v59-home-hero-art {
+  margin: 0;
+  padding: 8px;
+  overflow: hidden;
+  border-color: rgba(59, 203, 232, .34);
+  background:
+    radial-gradient(circle at 78% 14%, rgba(157,244,0,.045), transparent 30%),
+    linear-gradient(180deg, rgba(5,18,28,.98), rgba(2,9,16,.995));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.035),
+    0 30px 82px rgba(0,0,0,.38),
+    0 0 44px rgba(36,204,232,.045);
+}
+
+.visual-site-v24.page-ref-home .v24-hero .v59-home-hero-art::before {
+  inset: 8px;
+}
+
+.visual-site-v24.page-ref-home .v24-hero .v59-home-hero-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 720px) {
+  .visual-site-v24.page-ref-home .v24-hero .v59-home-hero-art {
+    padding: 5px;
+  }
+
+  .visual-site-v24.page-ref-home .v24-hero .v59-home-hero-art::before {
+    inset: 5px;
+  }
+
+  .visual-site-v24.page-ref-home .v24-hero .v59-home-hero-art img {
+    border-radius: 6px;
+  }
+}

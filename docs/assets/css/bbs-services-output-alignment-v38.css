@@ -1,0 +1,54 @@
+/* Black Bag Security Services output alignment v38
+ * Centers the recommended-engagement heading and service tile content.
+ * Scoped to /services/ only. Production homepage remains untouched.
+ */
+
+.page-ref-services .svc37-output__label {
+  position: relative;
+  display: block;
+  min-height: 18px;
+  margin-bottom: 13px;
+  text-align: center;
+}
+
+.page-ref-services .svc37-output__label span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.page-ref-services .svc37-output__label strong {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.page-ref-services .svc37-output__service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 16px 13px;
+  text-align: center;
+}
+
+.page-ref-services .svc37-output__service img {
+  display: block;
+  margin: 0 auto;
+}
+
+.page-ref-services .svc37-output__service strong {
+  display: block;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 1280px) {
+  .page-ref-services .svc37-output__service {
+    gap: 7px;
+    padding: 14px 10px;
+  }
+}

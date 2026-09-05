@@ -1,0 +1,8 @@
+/* Black Bag Security Method client visibility v42
+ * Removes the horizontal connector rail from the client visibility stage graphic.
+ * All approved icons, stage labels, numbering, panel treatment, and status rail remain unchanged.
+ */
+
+.page-ref-methodology .method41-visibility::before {
+  display: none !important;
+}

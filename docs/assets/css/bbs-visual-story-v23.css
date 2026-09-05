@@ -1,0 +1,664 @@
+/* Black Bag Security visual story system v23.
+ * Purpose: turn every buyer-facing section into a message + diagram composition.
+ * This layer is intentionally presentation-only. Existing copy, claims and page
+ * structure remain authoritative.
+ */
+
+:root {
+  --story-bg: #061019;
+  --story-bg-2: #08131c;
+  --story-panel: rgba(9, 19, 27, .96);
+  --story-panel-2: rgba(11, 24, 34, .98);
+  --story-line: rgba(142, 226, 29, .28);
+  --story-line-cyan: rgba(49, 201, 232, .30);
+  --story-green: #8ee21d;
+  --story-cyan: #31c9e8;
+  --story-text: #f5f7f4;
+  --story-muted: #b8c3bd;
+  --story-grid: rgba(49, 201, 232, .045);
+  --story-icon-1: url('/assets/img/icon-code.svg');
+  --story-icon-2: url('/assets/img/icon-evidence.svg');
+  --story-icon-3: url('/assets/img/icon-data-handling.svg');
+  --story-icon-4: url('/assets/img/icon-deliverables.svg');
+  --story-icon-5: url('/assets/img/icon-chip.svg');
+  --story-icon-6: url('/assets/img/icon-doc.svg');
+}
+
+/* --------------------------------------------------------------------------
+   Global visual language
+   -------------------------------------------------------------------------- */
+
+body.home-v2 {
+  background:
+    radial-gradient(circle at 86% 8%, rgba(142,226,29,.07), transparent 25%),
+    radial-gradient(circle at 12% 18%, rgba(49,201,232,.055), transparent 24%),
+    linear-gradient(180deg, #050c13 0%, #071019 46%, #050c13 100%);
+}
+
+body.home-v2::before {
+  opacity: .20;
+  background-image:
+    linear-gradient(var(--story-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--story-grid) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+body.home-v2 .site-header--v2 {
+  border-bottom: 1px solid rgba(142,226,29,.14);
+  background: rgba(4, 11, 17, .94);
+  box-shadow: 0 14px 38px rgba(0,0,0,.34);
+}
+
+body.home-v2 .brand-v2__mark {
+  filter: drop-shadow(0 0 13px rgba(142,226,29,.27));
+}
+
+/* --------------------------------------------------------------------------
+   Marketing pages: every major section becomes message + graphic
+   -------------------------------------------------------------------------- */
+
+.marketing-v3-body .market-hero {
+  min-height: 0;
+  padding: clamp(70px, 7vw, 105px) 0;
+  background:
+    linear-gradient(90deg, rgba(4,12,19,.99) 0 40%, rgba(6,16,25,.96) 40% 100%),
+    var(--story-bg);
+}
+
+.marketing-v3-body .market-hero::after,
+.marketing-v3-body .market-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .45;
+  background:
+    radial-gradient(circle at 72% 50%, rgba(142,226,29,.05), transparent 24%),
+    linear-gradient(var(--story-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--story-grid) 1px, transparent 1px);
+  background-size: auto, 42px 42px, 42px 42px;
+  mask-image: linear-gradient(90deg, transparent 0 32%, #000 49% 100%);
+}
+
+.marketing-v3-body .market-hero__grid,
+.marketing-v3-body .market-split {
+  grid-template-columns: minmax(280px, .40fr) minmax(0, .60fr);
+  gap: clamp(42px, 5vw, 72px);
+}
+
+.marketing-v3-body .market-hero h1 {
+  font-size: clamp(46px, 5vw, 74px);
+  line-height: 1.01;
+}
+
+.marketing-v3-body .market-lead {
+  max-width: 600px;
+  font-size: clamp(17px, 1.25vw, 21px);
+}
+
+.marketing-v3-body .market-visual {
+  padding: clamp(24px, 2.7vw, 36px);
+  border-color: rgba(142,226,29,.32);
+  background:
+    radial-gradient(circle at 82% 16%, rgba(142,226,29,.055), transparent 26%),
+    linear-gradient(rgba(49,201,232,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(49,201,232,.045) 1px, transparent 1px),
+    rgba(7,17,26,.96);
+  background-size: auto, 34px 34px, 34px 34px, auto;
+  box-shadow: 0 28px 72px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.035);
+}
+
+.marketing-v3-body .market-visual::before {
+  inset: 10px;
+  border-color: rgba(49,201,232,.10);
+}
+
+.marketing-v3-body .market-visual__title {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 23px;
+  letter-spacing: .12em;
+}
+
+.marketing-v3-body .market-visual__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 18px;
+  height: 1px;
+  background: var(--story-green);
+  box-shadow: 0 0 12px rgba(142,226,29,.5);
+}
+
+.marketing-v3-body .market-section {
+  padding: clamp(70px, 6.4vw, 96px) 0;
+  background: #071019;
+  border-bottom: 1px solid rgba(142,226,29,.08);
+}
+
+.marketing-v3-body .market-section:nth-of-type(odd) {
+  background: #08131c;
+}
+
+.marketing-v3-body .market-section:nth-of-type(even) {
+  background: #061019;
+}
+
+/* Standard sections: left message, right infographic canvas. */
+.marketing-v3-body .market-section > .wrap:not(.market-split) {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(260px, .34fr) minmax(0, .66fr);
+  column-gap: clamp(42px, 5vw, 72px);
+  row-gap: 18px;
+  align-items: start;
+}
+
+.marketing-v3-body .market-section > .wrap:not(.market-split) > .market-section__head {
+  grid-column: 1;
+  grid-row: 1 / span 20;
+  display: block;
+  margin: 0;
+  padding: 4px 0 0;
+}
+
+.marketing-v3-body .market-section > .wrap:not(.market-split) > .market-section__head ~ * {
+  grid-column: 2;
+}
+
+.marketing-v3-body .market-section__head::before,
+.marketing-v3-body .market-message::before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 0 19px;
+  background: var(--story-green);
+  -webkit-mask: var(--story-icon-2) center / 34px 34px no-repeat;
+  mask: var(--story-icon-2) center / 34px 34px no-repeat;
+  filter: drop-shadow(0 0 10px rgba(142,226,29,.24));
+}
+
+.marketing-v3-body .market-page > .market-section:nth-of-type(2) .market-section__head::before,
+.marketing-v3-body .market-page > .market-section:nth-of-type(2) .market-message::before {
+  -webkit-mask-image: var(--story-icon-1);
+  mask-image: var(--story-icon-1);
+}
+.marketing-v3-body .market-page > .market-section:nth-of-type(3) .market-section__head::before,
+.marketing-v3-body .market-page > .market-section:nth-of-type(3) .market-message::before {
+  -webkit-mask-image: var(--story-icon-2);
+  mask-image: var(--story-icon-2);
+}
+.marketing-v3-body .market-page > .market-section:nth-of-type(4) .market-section__head::before,
+.marketing-v3-body .market-page > .market-section:nth-of-type(4) .market-message::before {
+  -webkit-mask-image: var(--story-icon-3);
+  mask-image: var(--story-icon-3);
+}
+.marketing-v3-body .market-page > .market-section:nth-of-type(5) .market-section__head::before,
+.marketing-v3-body .market-page > .market-section:nth-of-type(5) .market-message::before {
+  -webkit-mask-image: var(--story-icon-4);
+  mask-image: var(--story-icon-4);
+}
+.marketing-v3-body .market-page > .market-section:nth-of-type(6) .market-section__head::before,
+.marketing-v3-body .market-page > .market-section:nth-of-type(6) .market-message::before {
+  -webkit-mask-image: var(--story-icon-5);
+  mask-image: var(--story-icon-5);
+}
+.marketing-v3-body .market-page > .market-section:nth-of-type(n+7) .market-section__head::before,
+.marketing-v3-body .market-page > .market-section:nth-of-type(n+7) .market-message::before {
+  -webkit-mask-image: var(--story-icon-6);
+  mask-image: var(--story-icon-6);
+}
+
+.marketing-v3-body .market-section__head h2,
+.marketing-v3-body .market-message h2 {
+  font-size: clamp(36px, 3.6vw, 55px);
+  line-height: 1.02;
+}
+
+.marketing-v3-body .market-section__head > p,
+.marketing-v3-body .market-message > p {
+  margin-top: 20px;
+  max-width: 470px;
+  font-size: 15px;
+  line-height: 1.72;
+}
+
+/* Card groups become connected infographic boards instead of loose tiles. */
+.marketing-v3-body .market-card-grid,
+.marketing-v3-body .market-stack,
+.marketing-v3-body .market-metric {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  border: 1px solid rgba(49,201,232,.16);
+  border-radius: 10px;
+  background:
+    linear-gradient(rgba(49,201,232,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(49,201,232,.035) 1px, transparent 1px),
+    rgba(7,17,26,.83);
+  background-size: 30px 30px, 30px 30px, auto;
+  box-shadow: 0 22px 58px rgba(0,0,0,.24);
+}
+
+.marketing-v3-body .market-card-grid::before,
+.marketing-v3-body .market-stack::before {
+  content: "";
+  position: absolute;
+  left: 9%;
+  right: 9%;
+  top: 50%;
+  height: 1px;
+  z-index: 0;
+  background: linear-gradient(90deg, transparent, rgba(142,226,29,.42), rgba(49,201,232,.34), transparent);
+  box-shadow: 0 0 12px rgba(142,226,29,.12);
+}
+
+.marketing-v3-body .market-card {
+  position: relative;
+  z-index: 2;
+  padding: 22px 20px 20px;
+  border-color: rgba(142,226,29,.20);
+  background:
+    radial-gradient(circle at 80% 10%, rgba(142,226,29,.045), transparent 24%),
+    rgba(8,19,28,.97);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.025), 0 14px 34px rgba(0,0,0,.24);
+}
+
+.marketing-v3-body .market-card:nth-child(even) {
+  border-color: rgba(49,201,232,.22);
+}
+
+.marketing-v3-body .market-card::before {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 16px;
+  background: var(--story-green);
+  -webkit-mask: var(--story-icon-1) center / 30px 30px no-repeat;
+  mask: var(--story-icon-1) center / 30px 30px no-repeat;
+}
+.marketing-v3-body .market-card:nth-child(2)::before {
+  background: var(--story-cyan);
+  -webkit-mask-image: var(--story-icon-2);
+  mask-image: var(--story-icon-2);
+}
+.marketing-v3-body .market-card:nth-child(3)::before {
+  -webkit-mask-image: var(--story-icon-3);
+  mask-image: var(--story-icon-3);
+}
+.marketing-v3-body .market-card:nth-child(4)::before {
+  background: var(--story-cyan);
+  -webkit-mask-image: var(--story-icon-4);
+  mask-image: var(--story-icon-4);
+}
+.marketing-v3-body .market-card:nth-child(5)::before {
+  -webkit-mask-image: var(--story-icon-5);
+  mask-image: var(--story-icon-5);
+}
+.marketing-v3-body .market-card:nth-child(n+6)::before {
+  background: var(--story-cyan);
+  -webkit-mask-image: var(--story-icon-6);
+  mask-image: var(--story-icon-6);
+}
+
+.marketing-v3-body .market-card__code {
+  margin-bottom: 11px;
+  font-size: 10px;
+}
+
+.marketing-v3-body .market-card h3 {
+  font-size: 18px;
+  line-height: 1.28;
+}
+
+.marketing-v3-body .market-card p {
+  font-size: 12.5px;
+  line-height: 1.62;
+}
+
+/* Stacked controls read as connected process bands. */
+.marketing-v3-body .market-stack {
+  display: grid;
+  gap: 11px;
+}
+
+.marketing-v3-body .market-stack__band {
+  position: relative;
+  z-index: 2;
+  grid-template-columns: 74px 1fr;
+  min-height: 76px;
+  padding: 15px 18px 15px 82px;
+  border-color: rgba(142,226,29,.18);
+  background: rgba(8,19,28,.96);
+}
+
+.marketing-v3-body .market-stack__band::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 50%;
+  width: 36px;
+  height: 36px;
+  transform: translateY(-50%);
+  background: var(--story-green);
+  -webkit-mask: var(--story-icon-2) center / 28px 28px no-repeat;
+  mask: var(--story-icon-2) center / 28px 28px no-repeat;
+}
+.marketing-v3-body .market-stack__band:nth-child(2)::before {
+  background: var(--story-cyan);
+  -webkit-mask-image: var(--story-icon-3);
+  mask-image: var(--story-icon-3);
+}
+.marketing-v3-body .market-stack__band:nth-child(3)::before {
+  -webkit-mask-image: var(--story-icon-4);
+  mask-image: var(--story-icon-4);
+}
+.marketing-v3-body .market-stack__band:nth-child(4)::before {
+  background: var(--story-cyan);
+  -webkit-mask-image: var(--story-icon-5);
+  mask-image: var(--story-icon-5);
+}
+.marketing-v3-body .market-stack__band:nth-child(n+5)::before {
+  -webkit-mask-image: var(--story-icon-6);
+  mask-image: var(--story-icon-6);
+}
+
+.marketing-v3-body .market-stack__band strong {
+  color: var(--story-green);
+}
+
+.marketing-v3-body .market-stack__band:nth-child(even) strong {
+  color: var(--story-cyan);
+}
+
+/* Flow graphics become a visibly governed path. */
+.marketing-v3-body .market-flow {
+  position: relative;
+  gap: 18px;
+}
+
+.marketing-v3-body .market-flow::before {
+  content: "";
+  position: absolute;
+  left: 6%;
+  right: 6%;
+  top: 43px;
+  height: 2px;
+  z-index: 0;
+  background: linear-gradient(90deg, rgba(142,226,29,.82), rgba(49,201,232,.50), rgba(142,226,29,.82));
+  box-shadow: 0 0 16px rgba(142,226,29,.22);
+}
+
+.marketing-v3-body .market-node {
+  z-index: 2;
+  min-height: 164px;
+  padding: 18px 14px 16px;
+  text-align: center;
+  border-color: rgba(142,226,29,.18);
+  background: rgba(7,17,26,.98);
+}
+
+.marketing-v3-body .market-node::before {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 15px;
+  border-color: rgba(142,226,29,.68);
+  background: #071019;
+  box-shadow: 0 0 0 5px rgba(142,226,29,.035), 0 0 18px rgba(142,226,29,.12);
+}
+
+.marketing-v3-body .market-node:not(:last-child)::after {
+  display: none;
+}
+
+.marketing-v3-body .market-outcome {
+  position: relative;
+  z-index: 3;
+  border-color: rgba(142,226,29,.40);
+  background: linear-gradient(90deg, rgba(142,226,29,.035), rgba(49,201,232,.025));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+/* Closing action feels like the final node in the visual system. */
+.marketing-v3-body .market-close {
+  background:
+    linear-gradient(rgba(49,201,232,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(49,201,232,.035) 1px, transparent 1px),
+    #061019;
+  background-size: 38px 38px, 38px 38px, auto;
+}
+
+.marketing-v3-body .market-close__panel {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(142,226,29,.34);
+  background:
+    radial-gradient(circle at 86% 50%, rgba(142,226,29,.08), transparent 22%),
+    rgba(7,17,26,.96);
+}
+
+.marketing-v3-body .market-close__panel::after {
+  content: "SYSTEM  →  QUESTION  →  BOUNDARY  →  OUTCOME";
+  position: absolute;
+  right: 34px;
+  bottom: 22px;
+  color: rgba(142,226,29,.46);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+/* --------------------------------------------------------------------------
+   Homepage: keep approved content, give every section the same visual grammar.
+   -------------------------------------------------------------------------- */
+
+.win-home > section {
+  border-bottom: 1px solid rgba(142,226,29,.08);
+}
+
+.win-home .win-surfaces,
+.win-home .win-method,
+.win-home .win-proof,
+.win-home .win-principal,
+.win-home .win-close {
+  background:
+    radial-gradient(circle at 78% 46%, rgba(142,226,29,.045), transparent 28%),
+    linear-gradient(rgba(49,201,232,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(49,201,232,.03) 1px, transparent 1px),
+    #071019;
+  background-size: auto, 42px 42px, 42px 42px, auto;
+}
+
+.win-home .win-surfaces .wrap {
+  display: grid;
+  grid-template-columns: minmax(260px,.34fr) minmax(0,.66fr);
+  gap: clamp(42px,5vw,72px);
+  align-items: start;
+}
+
+.win-home .win-section-head {
+  display: block;
+  margin: 0;
+}
+
+.win-home .win-section-head > p:last-child {
+  margin-top: 20px;
+}
+
+.win-home .win-surface-grid {
+  position: relative;
+  padding: 20px;
+  border: 1px solid rgba(49,201,232,.15);
+  border-radius: 10px;
+  background: rgba(7,17,26,.88);
+}
+
+.win-home .win-surface-grid::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(142,226,29,.44), rgba(49,201,232,.38), transparent);
+}
+
+.win-home .win-surface-card {
+  position: relative;
+  z-index: 2;
+  border-color: rgba(142,226,29,.20);
+  background: rgba(8,19,28,.97);
+}
+
+.win-home .win-surface-card:nth-child(even) {
+  border-color: rgba(49,201,232,.22);
+}
+
+.win-home .win-method__grid,
+.win-home .win-proof__grid,
+.win-home .win-principal__grid {
+  grid-template-columns: minmax(260px,.36fr) minmax(0,.64fr);
+  gap: clamp(42px,5vw,72px);
+}
+
+.win-home .win-method__steps {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 14px;
+  padding: 20px;
+  border: 1px solid rgba(49,201,232,.14);
+  border-radius: 10px;
+  background: rgba(7,17,26,.90);
+}
+
+.win-home .win-method__steps::before {
+  content: "";
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  top: 50%;
+  height: 1px;
+  background: rgba(142,226,29,.34);
+}
+
+.win-home .win-method__steps article {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  border: 1px solid rgba(142,226,29,.18);
+  border-radius: 8px;
+  background: rgba(8,19,28,.98);
+}
+
+.win-home .win-finding-record,
+.win-home .win-dossier,
+.win-home .win-practice-system {
+  border-color: rgba(142,226,29,.30);
+  box-shadow: 0 28px 70px rgba(0,0,0,.30), inset 0 1px 0 rgba(255,255,255,.03);
+}
+
+.win-home .win-principal__portrait {
+  border: 1px solid rgba(142,226,29,.22);
+  background:
+    radial-gradient(circle at 50% 30%, rgba(142,226,29,.08), transparent 40%),
+    rgba(7,17,26,.96);
+}
+
+/* --------------------------------------------------------------------------
+   Arsenal legacy structures that are not market-* still receive diagram framing.
+   -------------------------------------------------------------------------- */
+
+.arsenal-v2-body .arsenal-project-visual,
+.arsenal-v2-body .arsenal-project-grid,
+.arsenal-v2-body .arsenal-status-list,
+.arsenal-v2-body .arsenal-engagement-engineering__grid,
+.arsenal-v2-body .arsenal-grid {
+  border-radius: 10px;
+  border-color: rgba(49,201,232,.16);
+  background:
+    linear-gradient(rgba(49,201,232,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(49,201,232,.035) 1px, transparent 1px),
+    rgba(7,17,26,.88);
+  background-size: 30px 30px, 30px 30px, auto;
+}
+
+.arsenal-v2-body .arsenal-project-block,
+.arsenal-v2-body .arsenal-status-item,
+.arsenal-v2-body .arsenal-card,
+.arsenal-v2-body .arsenal-engagement-engineering__item {
+  border-color: rgba(142,226,29,.18);
+  background: rgba(8,19,28,.97);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive: preserve meaning before decoration.
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 980px) {
+  .marketing-v3-body .market-hero__grid,
+  .marketing-v3-body .market-split,
+  .marketing-v3-body .market-section > .wrap:not(.market-split),
+  .win-home .win-surfaces .wrap,
+  .win-home .win-method__grid,
+  .win-home .win-proof__grid,
+  .win-home .win-principal__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .marketing-v3-body .market-section > .wrap:not(.market-split) > .market-section__head,
+  .marketing-v3-body .market-section > .wrap:not(.market-split) > .market-section__head ~ * {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .marketing-v3-body .market-section__head,
+  .marketing-v3-body .market-message,
+  .win-home .win-section-head {
+    max-width: 760px;
+  }
+
+  .marketing-v3-body .market-card-grid::before,
+  .marketing-v3-body .market-stack::before,
+  .win-home .win-surface-grid::before,
+  .win-home .win-method__steps::before {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .marketing-v3-body .market-hero,
+  .marketing-v3-body .market-section,
+  .marketing-v3-body .market-close {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .marketing-v3-body .market-card-grid,
+  .marketing-v3-body .market-card-grid--2,
+  .marketing-v3-body .market-card-grid--3,
+  .marketing-v3-body .market-flow,
+  .marketing-v3-body .market-flow--3,
+  .marketing-v3-body .market-flow--4,
+  .marketing-v3-body .market-flow--5,
+  .win-home .win-method__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .marketing-v3-body .market-flow::before {
+    display: none;
+  }
+
+  .marketing-v3-body .market-stack__band {
+    grid-template-columns: 1fr;
+    padding-left: 66px;
+  }
+
+  .marketing-v3-body .market-close__panel::after {
+    display: none;
+  }
+}

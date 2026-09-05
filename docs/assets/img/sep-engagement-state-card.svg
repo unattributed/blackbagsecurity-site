@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
+  <title id="title">Security Engagement Platform control flow</title>
+  <desc id="desc">A balanced three-stage engagement control flow showing authorization, governed operation, and evidence with retest.</desc>
+
+  <rect width="1000" height="500" fill="#08111a"/>
+  <rect x="28" y="28" width="944" height="444" rx="20"
+        fill="#0b1620" stroke="#1b5b6d" stroke-width="2"/>
+
+  <g font-family="ui-monospace, Menlo, Consolas, monospace">
+    <text x="70" y="82"
+          fill="#b6ff3b"
+          font-size="23"
+          font-weight="700"
+          letter-spacing="2.1">SECURITY ENGAGEMENT PLATFORM</text>
+
+    <text x="70" y="116"
+          fill="#9eb0bd"
+          font-size="16.5"
+          letter-spacing=".35">AUTHORITY → EXECUTION → EVIDENCE → RETEST</text>
+
+    <rect x="70" y="168" width="260" height="158" rx="13"
+          fill="#0a151e" stroke="#74ce00" stroke-width="2"/>
+
+    <text x="96" y="207"
+          fill="#b6ff3b"
+          font-size="16"
+          font-weight="700"
+          letter-spacing=".35">01 / AUTHORIZE</text>
+
+    <text x="96" y="250"
+          fill="#eef4f8"
+          font-size="22.5"
+          font-weight="700">Written scope</text>
+
+    <text x="96" y="287"
+          fill="#aebbc5"
+          font-size="14.5"
+          letter-spacing=".1">targets · dates · rules</text>
+
+    <rect x="370" y="168" width="260" height="158" rx="13"
+          fill="#0a151e" stroke="#2689a0" stroke-width="2"/>
+
+    <text x="396" y="207"
+          fill="#4de1ff"
+          font-size="16"
+          font-weight="700"
+          letter-spacing=".35">02 / OPERATE</text>
+
+    <text x="396" y="250"
+          fill="#eef4f8"
+          font-size="22.5"
+          font-weight="700">Governed tests</text>
+
+    <text x="396" y="287"
+          fill="#aebbc5"
+          font-size="14.5"
+          letter-spacing=".1">browser · API · ZAP</text>
+
+    <rect x="670" y="168" width="260" height="158" rx="13"
+          fill="#0a151e" stroke="#74ce00" stroke-width="2"/>
+
+    <text x="696" y="207"
+          fill="#b6ff3b"
+          font-size="16"
+          font-weight="700"
+          letter-spacing=".35">03 / PROVE</text>
+
+    <text x="696" y="250"
+          fill="#eef4f8"
+          font-size="22.5"
+          font-weight="700">Evidence state</text>
+
+    <text x="696" y="287"
+          fill="#aebbc5"
+          font-size="14.5"
+          letter-spacing=".1">proof · report · retest</text>
+
+    <path d="M330 247 H370"
+          stroke="#4de1ff"
+          stroke-width="3"
+          stroke-linecap="round"/>
+    <polygon points="370,247 356,239 356,255" fill="#4de1ff"/>
+
+    <path d="M630 247 H670"
+          stroke="#4de1ff"
+          stroke-width="3"
+          stroke-linecap="round"/>
+    <polygon points="670,247 656,239 656,255" fill="#4de1ff"/>
+
+    <rect x="70" y="370" width="860" height="58" rx="9"
+          fill="#071019" stroke="#243746" stroke-width="1.2"/>
+
+    <text x="500" y="406"
+          text-anchor="middle"
+          fill="#c9d4dc"
+          font-size="15.5"
+          letter-spacing=".45">AUTHORITATIVE STATE · HUMAN CONTROL · REVIEWABLE PROOF</text>
+  </g>
+</svg>

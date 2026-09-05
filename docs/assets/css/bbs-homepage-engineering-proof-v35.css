@@ -1,0 +1,187 @@
+/* Homepage engineering proof visual v35.
+ * Approved treatment for "Real systems. Inspectable engineering."
+ * Recasts the existing proof markup as a five-pillar engineering capability platform.
+ */
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-copy > p:not(.v24-kicker) {
+  max-width: 390px;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+}
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-copy > p:not(.v24-kicker)::after {
+  content: "Built here. Proven in practice.";
+  display: block;
+  color: #d6dfdc;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-canvas {
+  padding: 24px 24px 20px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 48% 70%, rgba(36,204,232,.06), transparent 36%),
+    radial-gradient(circle at 78% 72%, rgba(157,244,0,.045), transparent 28%),
+    linear-gradient(180deg, rgba(6,20,30,.98), rgba(3,13,21,.99));
+}
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-canvas::after {
+  content: "";
+  position: absolute;
+  inset: 17px;
+  opacity: .22;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(36,204,232,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(36,204,232,.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(180deg, rgba(0,0,0,.7), transparent 92%);
+}
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-canvas__label {
+  position: relative;
+  z-index: 3;
+  margin-bottom: 14px;
+}
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  padding: 6px 0 0;
+}
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-grid::before,
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card {
+  position: relative;
+  min-height: 210px;
+  border: 1px solid rgba(74,155,180,.28);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(7,22,32,.94), rgba(3,13,21,.96));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.02),
+    0 9px 22px rgba(0,0,0,.14);
+  overflow: hidden;
+}
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-grid::before {
+  content: "CODE & AUTOMATION";
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 150px 8px 17px;
+  color: #f4f7f5;
+  background:
+    url('/assets/img/proof-code-automation-v35.svg') 50% 18px / 92% 126px no-repeat,
+    linear-gradient(180deg, rgba(7,22,32,.94), rgba(3,13,21,.96));
+  font-size: 10.5px;
+  font-weight: 800;
+  line-height: 1.28;
+  letter-spacing: .06em;
+  text-align: center;
+}
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card:nth-child(2),
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card:nth-child(4) {
+  border-color: rgba(157,244,0,.28);
+}
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card > * {
+  display: none !important;
+}
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card::before {
+  content: "";
+  position: absolute;
+  inset: 14px 10px 52px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card::after {
+  position: absolute;
+  left: 7px;
+  right: 7px;
+  bottom: 17px;
+  color: #f4f7f5;
+  font-size: 10.5px;
+  font-weight: 800;
+  line-height: 1.28;
+  letter-spacing: .06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card:nth-child(1)::before { background-image: url('/assets/img/proof-testing-research-v35.svg'); }
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card:nth-child(1)::after { content: "Testing & Research"; }
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card:nth-child(2)::before { background-image: url('/assets/img/proof-defense-engineering-v35.svg'); }
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card:nth-child(2)::after { content: "Defense Engineering"; }
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card:nth-child(3)::before { background-image: url('/assets/img/proof-infrastructure-security-v35.svg'); }
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card:nth-child(3)::after { content: "Infrastructure Security"; }
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card:nth-child(4)::before { background-image: url('/assets/img/proof-reporting-evidence-v35.svg'); }
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card:nth-child(4)::after { content: "Reporting & Evidence"; }
+
+.visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-grid::after {
+  content: "REAL-WORLD RISK  •  ENGINEERED WITH RIGOR  •  VERIFIABLE BY DESIGN  •  CONFIDENTIAL BY COMMITMENT";
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  margin-top: 2px;
+  padding: 10px 16px;
+  border: 1px solid rgba(74,155,180,.32);
+  border-radius: 8px;
+  color: #c7d2d0;
+  background: rgba(5,17,25,.78);
+  font-size: 8.8px;
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: .11em;
+  text-align: center;
+}
+
+@media (min-width: 901px) and (max-width: 1120px) {
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-canvas { padding: 20px 18px 18px; }
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-grid { gap: 7px; }
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-grid::before,
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card { min-height: 182px; }
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-grid::before {
+    padding-top: 127px;
+    background-size: 92% 104px;
+  }
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card::before { inset-bottom: 47px; }
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-grid::before,
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card::after { font-size: 9.2px; }
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-grid::after { font-size: 8px; }
+}
+
+@media (max-width: 900px) {
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-grid::after {
+    font-size: 7.9px;
+    letter-spacing: .08em;
+  }
+}
+
+@media (max-width: 620px) {
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-card:last-of-type {
+    grid-column: 1 / -1;
+  }
+  .visual-site-v24.page-ref-home .v24-section:has(#engineering-proof) .v24-proof-grid::after {
+    min-height: 68px;
+    padding-inline: 12px;
+    line-height: 1.55;
+  }
+}

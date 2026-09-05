@@ -1,0 +1,270 @@
+/* Black Bag Security SERVICES image-led marketing system v57.
+ * MAIN remains the visual and conversion benchmark.
+ * Scoped to /services/ only.
+ */
+.page-ref-services .svc57-page {
+  --svc57-line: rgba(67, 164, 188, .28);
+  --svc57-line-strong: rgba(59, 203, 232, .44);
+}
+
+.page-ref-services .svc57-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr);
+  gap: clamp(38px, 5.2vw, 88px);
+  align-items: center;
+}
+
+.page-ref-services .svc57-grid--hero {
+  grid-template-columns: minmax(300px, .74fr) minmax(0, 1.26fr);
+}
+
+.page-ref-services .svc57-grid--reverse .svc57-copy {
+  order: 2;
+}
+
+.page-ref-services .svc57-grid--reverse .svc57-visual {
+  order: 1;
+}
+
+.page-ref-services .svc57-copy {
+  max-width: 560px;
+}
+
+.page-ref-services .svc57-section {
+  position: relative;
+  padding-top: clamp(82px, 8vw, 126px);
+  padding-bottom: clamp(82px, 8vw, 126px);
+}
+
+.page-ref-services .svc57-section::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: min(1180px, calc(100% - 48px));
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, rgba(57, 165, 190, .26), transparent);
+}
+
+.page-ref-services .svc57-visual {
+  position: relative;
+  margin: 0;
+  padding: 8px;
+  overflow: hidden;
+  border: 1px solid var(--svc57-line);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 86% 14%, rgba(163, 255, 0, .055), transparent 30%),
+    radial-gradient(circle at 16% 78%, rgba(32, 199, 230, .06), transparent 34%),
+    linear-gradient(180deg, rgba(5, 18, 28, .99), rgba(2, 9, 16, .995));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.035),
+    0 24px 70px rgba(0,0,0,.34),
+    0 0 0 1px rgba(8, 46, 60, .16);
+}
+
+.page-ref-services .svc57-visual::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  pointer-events: none;
+  border: 1px solid rgba(99, 183, 202, .08);
+  border-radius: 8px;
+  box-shadow: inset 0 0 44px rgba(3, 15, 23, .12);
+}
+
+.page-ref-services .svc57-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transform: translateZ(0);
+  transition: transform .28s ease, filter .28s ease;
+}
+
+.page-ref-services .svc57-visual:hover img {
+  transform: scale(1.006);
+  filter: saturate(1.025) contrast(1.01);
+}
+
+.page-ref-services .svc57-visual--hero {
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.04),
+    0 30px 86px rgba(0,0,0,.40),
+    0 0 42px rgba(31, 202, 231, .045);
+}
+
+/* Adversary Validation is intentionally more visual on desktop.
+ * The approved graphic carries the section argument, so give it more
+ * reading area and reduce the amount of eye strain required to inspect it.
+ */
+@media (min-width: 1181px) {
+  .page-ref-services .svc57-section[aria-labelledby="adversary-title"] .svc57-grid {
+    grid-template-columns: minmax(0, 1.52fr) minmax(260px, .48fr);
+    gap: clamp(28px, 3.4vw, 56px);
+  }
+
+  .page-ref-services .svc57-section[aria-labelledby="adversary-title"] .svc57-copy {
+    max-width: 470px;
+  }
+
+  .page-ref-services .svc57-section[aria-labelledby="adversary-title"] .svc57-visual {
+    width: calc(100% + 28px);
+    margin-left: -28px;
+  }
+}
+
+.page-ref-services .svc57-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.page-ref-services .svc57-tags span {
+  padding: 7px 10px;
+  border: 1px solid rgba(71, 162, 184, .24);
+  border-radius: 999px;
+  color: #b9c8c7;
+  background: rgba(4, 18, 27, .78);
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+}
+
+.page-ref-services .svc57-close__proof {
+  display: grid;
+  gap: 12px;
+}
+
+.page-ref-services .svc57-close__proof > div {
+  position: relative;
+  padding: 20px 22px 20px 56px;
+  border: 1px solid rgba(67, 164, 188, .28);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(7, 24, 35, .96), rgba(3, 13, 21, .98));
+}
+
+.page-ref-services .svc57-close__proof > div::before {
+  content: "✓";
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(163, 255, 0, .58);
+  border-radius: 50%;
+  color: var(--v24-green);
+  font-size: 12px;
+  box-shadow: 0 0 18px rgba(163, 255, 0, .055);
+}
+
+.page-ref-services .svc57-close__proof strong {
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: .015em;
+}
+
+.page-ref-services .svc57-close__proof span {
+  display: block;
+  margin-top: 5px;
+  color: #aebdbc;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1180px) {
+  .page-ref-services .svc57-grid,
+  .page-ref-services .svc57-grid--hero {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .page-ref-services .svc57-grid--reverse .svc57-copy,
+  .page-ref-services .svc57-grid--reverse .svc57-visual {
+    order: initial;
+  }
+
+  .page-ref-services .svc57-copy {
+    max-width: 720px;
+  }
+
+  .page-ref-services .svc57-visual {
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .page-ref-services .svc57-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .page-ref-services .svc57-visual {
+    padding: 5px;
+    border-radius: 9px;
+  }
+
+  .page-ref-services .svc57-visual img,
+  .page-ref-services .svc57-visual::after {
+    border-radius: 6px;
+  }
+
+  .page-ref-services .svc57-tags {
+    gap: 6px;
+  }
+
+  .page-ref-services .svc57-tags span {
+    padding: 6px 8px;
+    font-size: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-ref-services .svc57-visual img {
+    transition: none;
+  }
+}
+
+/* SERVICES v58 approved closing recommendation graphic. */
+.page-ref-services .svc58-close__grid {
+  display: grid;
+  grid-template-columns: minmax(260px, .62fr) minmax(0, 1.38fr);
+  gap: clamp(34px, 4.4vw, 72px);
+  align-items: center;
+}
+
+.page-ref-services .svc58-close__copy {
+  max-width: 520px;
+}
+
+.page-ref-services .svc58-close__visual {
+  width: calc(100% + 24px);
+  margin-right: -24px;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.04),
+    0 30px 86px rgba(0,0,0,.40),
+    0 0 42px rgba(31, 202, 231, .045);
+}
+
+@media (max-width: 1180px) {
+  .page-ref-services .svc58-close__grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .page-ref-services .svc58-close__copy {
+    max-width: 720px;
+  }
+
+  .page-ref-services .svc58-close__visual {
+    width: 100%;
+    margin-right: 0;
+  }
+}

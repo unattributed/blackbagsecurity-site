@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Browser AI security boundary testing</title>
+  <desc id="desc">A contextual architecture diagram showing untrusted browser content, DOM and frame state, Playwright observation, a local Ollama-backed target, HTTP and proxy capture, and structured evidence with deterministic hashes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101a25"/><stop offset="1" stop-color="#070b10"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#8fa4b4" stroke-opacity=".055"/></pattern>
+  </defs>
+  <rect width="960" height="560" rx="18" fill="url(#bg)"/><rect width="960" height="560" rx="18" fill="url(#grid)"/>
+  <rect x="1" y="1" width="958" height="558" rx="17" fill="none" stroke="#4de1ff" stroke-opacity=".28"/>
+  <text x="46" y="52" fill="#b6ff3b" font-family="monospace" font-size="14" font-weight="700" letter-spacing="2">BROWSER-SAFE AI SECURITY / ATTACK-PATH VALIDATION</text>
+  <text x="46" y="78" fill="#8fa0ad" font-family="monospace" font-size="11" letter-spacing="1.4">PLAYWRIGHT · OLLAMA · DOM / FRAMES · HTTP / PROXY · JSONL · HASHES</text>
+
+  <g font-family="monospace">
+    <rect x="48" y="132" width="180" height="130" rx="10" fill="#0b151f" stroke="#e78364" stroke-opacity=".48"/>
+    <text x="68" y="162" fill="#e78364" font-size="11">UNTRUSTED PAGE</text><text x="68" y="194" fill="#eef4f8" font-size="15" font-weight="700">Content surface</text><text x="68" y="220" fill="#8495a2" font-size="10">visible text · hidden DOM</text><text x="68" y="241" fill="#8495a2" font-size="10">frames · QR · delayed state</text>
+
+    <rect x="278" y="112" width="218" height="170" rx="10" fill="#0c1720" stroke="#4de1ff" stroke-opacity=".48"/>
+    <text x="300" y="144" fill="#4de1ff" font-size="11">BROWSER STATE</text><text x="300" y="178" fill="#eef4f8" font-size="16" font-weight="700">Rendered + machine view</text><text x="300" y="205" fill="#8495a2" font-size="10">DOM · screenshot · frame tree</text><text x="300" y="227" fill="#8495a2" font-size="10">navigation · user approval</text><text x="300" y="249" fill="#8495a2" font-size="10">source / render mismatch</text>
+
+    <rect x="546" y="132" width="166" height="130" rx="10" fill="#0b151f" stroke="#b6ff3b" stroke-opacity=".5"/>
+    <text x="568" y="162" fill="#b6ff3b" font-size="11">PLAYWRIGHT</text><text x="568" y="194" fill="#eef4f8" font-size="15" font-weight="700">Observe / drive</text><text x="568" y="220" fill="#8495a2" font-size="10">controlled local labs</text><text x="568" y="241" fill="#8495a2" font-size="10">repeatable state capture</text>
+
+    <rect x="762" y="132" width="150" height="130" rx="10" fill="#0b151f" stroke="#b6ff3b" stroke-opacity=".5"/>
+    <text x="784" y="162" fill="#b6ff3b" font-size="11">LOCAL TARGET</text><text x="784" y="194" fill="#eef4f8" font-size="15" font-weight="700">Ollama-backed</text><text x="784" y="220" fill="#8495a2" font-size="10">synthetic data</text><text x="784" y="241" fill="#8495a2" font-size="10">deliberately weak UI</text>
+  </g>
+  <g stroke="#4de1ff" stroke-opacity=".45" fill="none"><path d="M228 197h50"/><path d="M496 197h50"/><path d="M712 197h50"/></g>
+  <g fill="#4de1ff"><path d="m272 193 8 4-8 4z"/><path d="m540 193 8 4-8 4z"/><path d="m756 193 8 4-8 4z"/></g>
+
+  <g font-family="monospace">
+    <rect x="86" y="350" width="220" height="110" rx="10" fill="#08121a" stroke="#90a2b1" stroke-opacity=".24"/>
+    <text x="108" y="382" fill="#4de1ff" font-size="11">NETWORK EVIDENCE</text><text x="108" y="414" fill="#eef4f8" font-size="14" font-weight="700">HTTP / proxy capture</text><text x="108" y="439" fill="#8495a2" font-size="10">requests · responses · timing</text>
+
+    <rect x="370" y="350" width="220" height="110" rx="10" fill="#08121a" stroke="#90a2b1" stroke-opacity=".24"/>
+    <text x="392" y="382" fill="#4de1ff" font-size="11">STRUCTURED RECORD</text><text x="392" y="414" fill="#eef4f8" font-size="14" font-weight="700">JSON / JSONL</text><text x="392" y="439" fill="#8495a2" font-size="10">state · observations · outcomes</text>
+
+    <rect x="654" y="350" width="220" height="110" rx="10" fill="#08121a" stroke="#b6ff3b" stroke-opacity=".4"/>
+    <text x="676" y="382" fill="#b6ff3b" font-size="11">REVIEWABLE PROOF</text><text x="676" y="414" fill="#eef4f8" font-size="14" font-weight="700">Manifest + hashes</text><text x="676" y="439" fill="#8495a2" font-size="10">deterministic packaging</text>
+  </g>
+  <path d="M628 262v54c0 18-14 32-32 32H196" fill="none" stroke="#4de1ff" stroke-opacity=".32"/><path d="M306 405h64M590 405h64" fill="none" stroke="#4de1ff" stroke-opacity=".42"/>
+  <path d="m364 401 8 4-8 4zM648 401l8 4-8 4z" fill="#4de1ff"/>
+  <text x="46" y="516" fill="#677986" font-family="monospace" font-size="10" letter-spacing="1.2">PAGE STATE + MODEL-VISIBLE CONTEXT + NETWORK BEHAVIOR + RESULTING ARTIFACTS</text>
+</svg>

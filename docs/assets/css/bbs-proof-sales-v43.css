@@ -1,0 +1,571 @@
+/* Black Bag Security Proof page v43
+ * Sales-focused engineering proof landing page at /arsenal/.
+ * Follows the approved Main, Services, and Method visual language while keeping Proof structurally distinct.
+ */
+
+.page-ref-arsenal .proof43-page {
+  --p43-cyan: #25d6ef;
+  --p43-green: #9df400;
+  --p43-bg: #03101a;
+  --p43-panel: rgba(5,19,29,.97);
+  --p43-border: rgba(74,155,180,.36);
+  color: #edf4f2;
+  background: var(--p43-bg);
+}
+
+.page-ref-arsenal .proof43-page * { box-sizing: border-box; }
+.page-ref-arsenal .proof43-accent { color: var(--p43-green); }
+
+.page-ref-arsenal .proof43-kicker {
+  margin: 0 0 15px;
+  color: var(--p43-cyan);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.page-ref-arsenal .proof43-hero h1,
+.page-ref-arsenal .proof43-heading {
+  margin: 0;
+  color: #f4f7f5;
+  font-weight: 760;
+  letter-spacing: -.045em;
+}
+
+.page-ref-arsenal .proof43-hero h1 {
+  max-width: 690px;
+  font-size: clamp(50px,5.5vw,84px);
+  line-height: .97;
+}
+
+.page-ref-arsenal .proof43-heading {
+  max-width: 660px;
+  font-size: clamp(39px,4.25vw,62px);
+  line-height: 1.01;
+}
+
+.page-ref-arsenal .proof43-lead,
+.page-ref-arsenal .proof43-copy > p:not(.proof43-kicker),
+.page-ref-arsenal .proof43-section-intro {
+  max-width: 570px;
+  margin: 21px 0 0;
+  color: #afbfbd;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.page-ref-arsenal .proof43-lead {
+  max-width: 600px;
+  color: #c5d0ce;
+  font-size: clamp(17px,1.35vw,20px);
+}
+
+.page-ref-arsenal .proof43-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 29px;
+}
+
+.page-ref-arsenal .proof43-btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border: 1px solid rgba(157,244,0,.7);
+  border-radius: 6px;
+  color: var(--p43-green);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background .18s ease,color .18s ease,transform .18s ease;
+}
+
+.page-ref-arsenal .proof43-btn--quiet {
+  border-color: rgba(74,155,180,.48);
+  color: #b9c8c8;
+}
+
+.page-ref-arsenal .proof43-btn:hover,
+.page-ref-arsenal .proof43-btn:focus-visible {
+  color: #071019;
+  background: var(--p43-green);
+  transform: translateY(-1px);
+}
+
+.page-ref-arsenal .proof43-btn--quiet:hover,
+.page-ref-arsenal .proof43-btn--quiet:focus-visible {
+  color: #06131d;
+  background: var(--p43-cyan);
+}
+
+.page-ref-arsenal .proof43-hero,
+.page-ref-arsenal .proof43-section,
+.page-ref-arsenal .proof43-close {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(74,155,180,.13);
+}
+
+.page-ref-arsenal .proof43-hero::before,
+.page-ref-arsenal .proof43-section::before,
+.page-ref-arsenal .proof43-close::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(37,214,239,.021) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(37,214,239,.018) 1px,transparent 1px);
+  background-size: 38px 38px;
+  mask-image: linear-gradient(90deg,transparent,rgba(0,0,0,.84) 15%,rgba(0,0,0,.84) 85%,transparent);
+}
+
+.page-ref-arsenal .proof43-hero {
+  padding: clamp(90px,8vw,130px) 0 clamp(88px,8vw,124px);
+  background:
+    radial-gradient(circle at 75% 45%,rgba(37,214,239,.075),transparent 31%),
+    radial-gradient(circle at 88% 57%,rgba(157,244,0,.045),transparent 25%),
+    #03101a;
+}
+
+.page-ref-arsenal .proof43-section {
+  padding: clamp(82px,7.6vw,116px) 0;
+  background: #04111a;
+}
+
+.page-ref-arsenal .proof43-section:nth-of-type(even) { background: #030f18; }
+.page-ref-arsenal .proof43-section--dark { background: #020d15; }
+.page-ref-arsenal .proof43-section--soft { background: #05131d; }
+
+.page-ref-arsenal .proof43-close {
+  padding: clamp(88px,8vw,124px) 0;
+  background:
+    radial-gradient(circle at 72% 48%,rgba(37,214,239,.065),transparent 31%),
+    radial-gradient(circle at 90% 54%,rgba(157,244,0,.045),transparent 24%),
+    #020d15;
+}
+
+.page-ref-arsenal .proof43-hero__grid,
+.page-ref-arsenal .proof43-section__grid,
+.page-ref-arsenal .proof43-close__grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(310px,.67fr) minmax(660px,1.33fr);
+  gap: clamp(48px,6vw,90px);
+  align-items: center;
+}
+
+.page-ref-arsenal .proof43-section__grid--reverse .proof43-copy { order: 2; }
+.page-ref-arsenal .proof43-section__grid--reverse .proof43-visual { order: 1; }
+
+.page-ref-arsenal .proof43-section-head {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(300px,.78fr) minmax(420px,1.22fr);
+  gap: clamp(46px,7vw,108px);
+  align-items: end;
+  margin-bottom: 42px;
+}
+
+.page-ref-arsenal .proof43-section-head .proof43-section-intro { margin: 0; }
+
+/* Shared approved-style visual shell */
+.page-ref-arsenal .proof43-visual {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--p43-border);
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 54% 54%,rgba(37,214,239,.055),transparent 34%),
+    linear-gradient(180deg,rgba(6,20,30,.98),rgba(3,13,21,.99));
+  box-shadow: 0 24px 68px rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.018);
+}
+
+.page-ref-arsenal .proof43-visual::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  pointer-events: none;
+  opacity: .25;
+  background-image:
+    linear-gradient(rgba(36,204,232,.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(36,204,232,.035) 1px,transparent 1px);
+  background-size: 30px 30px;
+  mask-image: linear-gradient(180deg,rgba(0,0,0,.7),transparent 94%);
+}
+
+.page-ref-arsenal .proof43-visual__topline {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 45px;
+  padding: 0 18px;
+  border-bottom: 1px solid rgba(74,155,180,.18);
+  color: var(--p43-cyan);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.page-ref-arsenal .proof43-visual__topline strong {
+  color: var(--p43-green);
+  font-size: 10px;
+  letter-spacing: .12em;
+}
+
+/* Hero */
+.page-ref-arsenal .proof43-lattice {
+  position: relative;
+  z-index: 2;
+  min-height: 450px;
+  padding: 22px 26px 18px;
+}
+
+.page-ref-arsenal .proof43-lattice img {
+  display: block;
+  width: min(690px,100%);
+  height: 345px;
+  margin: 0 auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 18px rgba(37,214,239,.07));
+}
+
+.page-ref-arsenal .proof43-lattice__rail {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  margin-top: 7px;
+  border: 1px solid rgba(74,155,180,.28);
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(2,11,18,.58);
+}
+
+.page-ref-arsenal .proof43-lattice__rail span {
+  padding: 13px 8px;
+  color: #83ccd5;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .11em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-ref-arsenal .proof43-lattice__rail span:nth-child(even) { color: #b9dc76; }
+.page-ref-arsenal .proof43-lattice__rail span + span { border-left: 1px solid rgba(74,155,180,.15); }
+
+/* Why engineering exists */
+.page-ref-arsenal .proof43-engineering-flow {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  min-height: 246px;
+}
+
+.page-ref-arsenal .proof43-engineering-flow::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 101px;
+  left: 12%;
+  right: 12%;
+  border-top: 1px dashed rgba(37,214,239,.48);
+}
+
+.page-ref-arsenal .proof43-flow-node {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 12px 24px;
+  text-align: center;
+}
+
+.page-ref-arsenal .proof43-flow-node + .proof43-flow-node { border-left: 1px solid rgba(74,155,180,.12); }
+
+.page-ref-arsenal .proof43-flow-mark {
+  display: grid;
+  place-items: center;
+  width: 116px;
+  height: 116px;
+  border: 1px solid rgba(37,214,239,.5);
+  border-radius: 50%;
+  background: #06131d;
+  box-shadow: 0 0 0 8px rgba(37,214,239,.02),0 0 24px rgba(37,214,239,.08);
+}
+
+.page-ref-arsenal .proof43-flow-node:nth-child(even) .proof43-flow-mark {
+  border-color: rgba(157,244,0,.58);
+  box-shadow: 0 0 0 8px rgba(157,244,0,.02),0 0 24px rgba(157,244,0,.07);
+}
+
+.page-ref-arsenal .proof43-flow-mark img {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+}
+
+.page-ref-arsenal .proof43-flow-node strong {
+  margin-top: 16px;
+  color: #f2f6f4;
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.page-ref-arsenal .proof43-proof-standard {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  border-top: 1px solid rgba(74,155,180,.2);
+  background: rgba(2,11,18,.48);
+}
+
+.page-ref-arsenal .proof43-proof-standard span {
+  padding: 15px 12px;
+  color: #76cfdb;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-ref-arsenal .proof43-proof-standard span:nth-child(even) { color: #b9dc76; }
+.page-ref-arsenal .proof43-proof-standard span + span { border-left: 1px solid rgba(74,155,180,.15); }
+
+/* Project proof sections */
+.page-ref-arsenal .proof43-project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.page-ref-arsenal .proof43-project-meta span {
+  padding: 7px 9px;
+  border: 1px solid rgba(74,155,180,.3);
+  border-radius: 4px;
+  color: #8fcbd2;
+  background: rgba(5,17,25,.58);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.page-ref-arsenal .proof43-project-meta span:nth-child(even) {
+  border-color: rgba(157,244,0,.27);
+  color: #b9dc76;
+}
+
+.page-ref-arsenal .proof43-project-visual {
+  position: relative;
+  z-index: 2;
+  min-height: 455px;
+  padding: 18px 20px 20px;
+}
+
+.page-ref-arsenal .proof43-project-visual img {
+  display: block;
+  width: 100%;
+  height: 385px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 16px rgba(37,214,239,.055));
+}
+
+.page-ref-arsenal .proof43-project-outcome {
+  position: relative;
+  z-index: 2;
+  margin: 0 20px 20px;
+  padding: 13px 16px;
+  border: 1px solid rgba(157,244,0,.3);
+  border-radius: 7px;
+  color: #c8d6d3;
+  background: rgba(5,17,25,.8);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Client-specific engineering */
+.page-ref-arsenal .proof43-client-build {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(5,minmax(0,1fr));
+  gap: 11px;
+  padding: 28px 24px 24px;
+}
+
+.page-ref-arsenal .proof43-client-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 222px;
+  padding: 18px 10px 15px;
+  border: 1px solid rgba(74,155,180,.34);
+  border-radius: 9px;
+  background: linear-gradient(180deg,rgba(7,22,32,.96),rgba(3,13,21,.98));
+  text-align: center;
+}
+
+.page-ref-arsenal .proof43-client-node:nth-child(even) { border-color: rgba(157,244,0,.28); }
+
+.page-ref-arsenal .proof43-client-node img {
+  width: 100%;
+  height: 125px;
+  object-fit: contain;
+}
+
+.page-ref-arsenal .proof43-client-node strong {
+  margin-top: 10px;
+  color: #f4f7f5;
+  font-size: 10px;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.page-ref-arsenal .proof43-client-footer {
+  position: relative;
+  z-index: 2;
+  margin: 0 24px 22px;
+  padding: 13px 16px;
+  border: 1px solid rgba(74,155,180,.3);
+  border-radius: 8px;
+  color: #b9c7c7;
+  background: rgba(5,17,25,.78);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Close */
+.page-ref-arsenal .proof43-close__grid {
+  grid-template-columns: minmax(320px,.68fr) minmax(650px,1.32fr);
+}
+
+.page-ref-arsenal .proof43-close-map {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 12px;
+  padding: 30px 24px 24px;
+}
+
+.page-ref-arsenal .proof43-close-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 230px;
+  padding: 17px 8px 14px;
+  border: 1px solid rgba(74,155,180,.34);
+  border-radius: 9px;
+  background: rgba(4,16,24,.9);
+  text-align: center;
+}
+
+.page-ref-arsenal .proof43-close-node:nth-child(even) { border-color: rgba(157,244,0,.3); }
+.page-ref-arsenal .proof43-close-node img { width: 100%; height: 145px; object-fit: contain; }
+.page-ref-arsenal .proof43-close-node strong {
+  margin-top: 8px;
+  color: #f4f7f5;
+  font-size: 10px;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.page-ref-arsenal .proof43-close-state {
+  position: relative;
+  z-index: 2;
+  margin: 0 24px 22px;
+  padding: 13px 16px;
+  border: 1px solid rgba(157,244,0,.43);
+  border-radius: 8px;
+  color: var(--p43-green);
+  background: rgba(4,17,25,.88);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1180px) {
+  .page-ref-arsenal .proof43-hero__grid,
+  .page-ref-arsenal .proof43-section__grid,
+  .page-ref-arsenal .proof43-close__grid {
+    grid-template-columns: minmax(290px,.65fr) minmax(560px,1.35fr);
+    gap: 42px;
+  }
+  .page-ref-arsenal .proof43-project-visual img { height: 340px; }
+  .page-ref-arsenal .proof43-client-build { gap: 8px; }
+}
+
+@media (max-width: 980px) {
+  .page-ref-arsenal .proof43-hero__grid,
+  .page-ref-arsenal .proof43-section__grid,
+  .page-ref-arsenal .proof43-close__grid,
+  .page-ref-arsenal .proof43-section-head {
+    grid-template-columns: 1fr;
+  }
+  .page-ref-arsenal .proof43-section__grid--reverse .proof43-copy,
+  .page-ref-arsenal .proof43-section__grid--reverse .proof43-visual { order: initial; }
+  .page-ref-arsenal .proof43-copy { max-width: 720px; }
+  .page-ref-arsenal .proof43-section-head { gap: 16px; }
+  .page-ref-arsenal .proof43-section-head .proof43-section-intro { margin-top: 0; }
+  .page-ref-arsenal .proof43-client-build { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .page-ref-arsenal .proof43-close-map { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+
+@media (max-width: 720px) {
+  .page-ref-arsenal .proof43-hero { padding-top: 70px; }
+  .page-ref-arsenal .proof43-hero h1 { font-size: clamp(46px,12vw,68px); }
+  .page-ref-arsenal .proof43-heading { font-size: clamp(36px,9.8vw,52px); }
+  .page-ref-arsenal .proof43-lattice { min-height: 0; padding: 14px; }
+  .page-ref-arsenal .proof43-lattice img { height: auto; }
+  .page-ref-arsenal .proof43-lattice__rail { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .page-ref-arsenal .proof43-lattice__rail span:nth-child(3) { border-left: 0; border-top: 1px solid rgba(74,155,180,.15); }
+  .page-ref-arsenal .proof43-lattice__rail span:nth-child(4) { border-top: 1px solid rgba(74,155,180,.15); }
+  .page-ref-arsenal .proof43-engineering-flow { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .page-ref-arsenal .proof43-engineering-flow::before { display: none; }
+  .page-ref-arsenal .proof43-flow-node:nth-child(3) { border-left: 0; border-top: 1px solid rgba(74,155,180,.12); }
+  .page-ref-arsenal .proof43-flow-node:nth-child(4) { border-top: 1px solid rgba(74,155,180,.12); }
+  .page-ref-arsenal .proof43-proof-standard { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .page-ref-arsenal .proof43-proof-standard span:nth-child(3) { border-left: 0; border-top: 1px solid rgba(74,155,180,.15); }
+  .page-ref-arsenal .proof43-proof-standard span:nth-child(4) { border-top: 1px solid rgba(74,155,180,.15); }
+  .page-ref-arsenal .proof43-project-visual { min-height: 0; padding: 12px; }
+  .page-ref-arsenal .proof43-project-visual img { height: auto; min-height: 260px; }
+  .page-ref-arsenal .proof43-client-build { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+
+@media (max-width: 500px) {
+  .page-ref-arsenal .proof43-engineering-flow,
+  .page-ref-arsenal .proof43-proof-standard,
+  .page-ref-arsenal .proof43-client-build,
+  .page-ref-arsenal .proof43-close-map,
+  .page-ref-arsenal .proof43-lattice__rail {
+    grid-template-columns: 1fr;
+  }
+  .page-ref-arsenal .proof43-flow-node + .proof43-flow-node,
+  .page-ref-arsenal .proof43-proof-standard span + span,
+  .page-ref-arsenal .proof43-lattice__rail span + span {
+    border-left: 0;
+    border-top: 1px solid rgba(74,155,180,.15);
+  }
+  .page-ref-arsenal .proof43-client-node { min-height: 200px; }
+}

@@ -1,0 +1,108 @@
+/* Black Bag Security Services hero fit v56
+ * Prevents the approved Services selector graphic from compressing text out of bounds.
+ * Scoped to /services/ only.
+ */
+
+.page-ref-services .svc55-selector:not(.svc55-selector--compact) {
+  grid-template-columns: minmax(345px, 1.34fr) minmax(110px, .46fr) minmax(260px, 1fr);
+  gap: 16px;
+}
+
+.page-ref-services .svc55-selector__inputs {
+  grid-template-columns: repeat(3, minmax(105px, 1fr));
+  gap: 10px;
+}
+
+.page-ref-services .svc55-input {
+  min-width: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.page-ref-services .svc55-input strong,
+.page-ref-services .svc55-input li {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+.page-ref-services .svc55-input strong {
+  white-space: nowrap;
+  font-size: 12px;
+  letter-spacing: .025em;
+}
+
+.page-ref-services .svc55-input li {
+  white-space: nowrap;
+  padding-left: 13px;
+  font-size: 8px;
+  letter-spacing: .025em;
+}
+
+.page-ref-services .svc55-recommend__grid a strong {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+/* Give the marketing graphic enough horizontal room before compact layouts begin. */
+@media (min-width: 1101px) {
+  .page-ref-services .v24-hero__grid {
+    grid-template-columns: minmax(300px, .7fr) minmax(0, 1.5fr);
+    gap: clamp(34px, 4vw, 58px);
+  }
+}
+
+/* At medium desktop/tablet widths, stack copy over the graphic rather than crushing it. */
+@media (max-width: 1100px) {
+  .page-ref-services .v24-hero__grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .page-ref-services .svc55-intro {
+    max-width: 680px;
+  }
+
+  .page-ref-services .svc55-selector:not(.svc55-selector--compact) {
+    grid-template-columns: minmax(345px, 1.34fr) minmax(110px, .46fr) minmax(260px, 1fr);
+  }
+}
+
+/* Below this width, simplify the selector structure but preserve three readable inputs. */
+@media (max-width: 780px) {
+  .page-ref-services .svc55-selector:not(.svc55-selector--compact) {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    min-height: 0;
+  }
+
+  .page-ref-services .svc55-selector:not(.svc55-selector--compact) .svc55-selector__inputs {
+    grid-template-columns: repeat(3, minmax(105px, 1fr));
+  }
+
+  .page-ref-services .svc55-selector:not(.svc55-selector--compact) .svc55-synthesis__orb::before,
+  .page-ref-services .svc55-selector:not(.svc55-selector--compact) .svc55-synthesis__orb::after,
+  .page-ref-services .svc55-selector:not(.svc55-selector--compact) .svc55-input::after {
+    display: none;
+  }
+
+  .page-ref-services .svc55-selector:not(.svc55-selector--compact) .svc55-recommend__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .page-ref-services .svc55-selector:not(.svc55-selector--compact) .svc55-selector__inputs {
+    grid-template-columns: 1fr;
+  }
+
+  .page-ref-services .svc55-selector:not(.svc55-selector--compact) .svc55-input {
+    min-height: 0;
+  }
+
+  .page-ref-services .svc55-selector:not(.svc55-selector--compact) .svc55-input__icon {
+    margin-top: 18px;
+    margin-bottom: 16px;
+  }
+}

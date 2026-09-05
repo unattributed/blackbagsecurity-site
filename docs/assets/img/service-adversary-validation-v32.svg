@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 190" role="img" aria-labelledby="title desc">
+  <title id="title">Adversary validation</title>
+  <desc id="desc">A target field with a bounded adversary path, detection points, and a verified endpoint.</desc>
+  <g fill="none" stroke="#52d9ef" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="151" cy="92" r="58" stroke-opacity=".28"/>
+    <circle cx="151" cy="92" r="40" stroke-opacity=".42"/>
+    <circle cx="151" cy="92" r="21" stroke-opacity=".68"/>
+    <circle cx="151" cy="92" r="5"/>
+    <path d="M151 20v22M151 142v22M79 92h22M201 92h22" stroke-opacity=".42"/>
+    <path d="M60 150C88 145 85 121 110 118s30 18 53 4 9-31 34-36 30-2 46-30" stroke-dasharray="4 6" stroke-opacity=".7"/>
+    <circle cx="60" cy="150" r="5"/><circle cx="110" cy="118" r="4"/><circle cx="163" cy="122" r="4"/><circle cx="197" cy="86" r="4"/>
+    <path d="M243 56h28v-24" stroke-opacity=".5"/>
+  </g>
+  <g fill="#06131d" stroke="#9df400" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="271" cy="32" r="14"/>
+    <path d="m264 32 5 5 9-11" fill="none"/>
+  </g>
+  <g fill="#06131d" stroke="#52d9ef" stroke-width="1.4">
+    <path d="m47 42 17-10 17 10v20L64 72 47 62z"/>
+    <path d="M58 45h12M64 39v12"/>
+  </g>
+</svg>

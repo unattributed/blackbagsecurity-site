@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
+<title id="title">OSMAP secure mail access architecture</title><desc id="desc">A balanced three-stage OSMAP flow showing nginx access, Rust control, and hardened mail services.</desc>
+<rect width="1000" height="500" fill="#08111a" /><rect x="28" y="28" width="944" height="444" rx="20" fill="#0b1620" stroke="#1b5b6d" stroke-width="2" />
+<g font-family="DejaVu Sans Mono, ui-monospace, monospace">
+<text x="68.975" y="68.207" dominant-baseline="hanging" fill="#b6ff3b" font-size="23" font-weight="700" letter-spacing="2.1" textLength="537.689" lengthAdjust="spacingAndGlyphs">OSMAP / OPENBSD SECURE MAIL ACCESS</text>
+<text x="68.887" y="106.186" dominant-baseline="hanging" fill="#9eb0bd" font-size="16" letter-spacing=".25" textLength="413.562" lengthAdjust="spacingAndGlyphs">RUST · OPENBSD · NGINX · DOVECOT · POSTFIX</text>
+<rect x="60" y="168" width="270" height="158" rx="13" fill="#0a151e" stroke="#2689a0" stroke-width="2" />
+<text x="83.088" y="197.772" dominant-baseline="hanging" fill="#4de1ff" font-size="15.5" font-weight="700" letter-spacing=".25" textLength="103.288" lengthAdjust="spacingAndGlyphs">01 / ACCESS</text>
+<text x="82.260" y="238.791" dominant-baseline="hanging" fill="#eef4f8" font-size="22" font-weight="700" textLength="174.655" lengthAdjust="spacingAndGlyphs">nginx boundary</text>
+<text x="83.680" y="278.669" dominant-baseline="hanging" fill="#aebbc5" font-size="14" letter-spacing=".05" textLength="185.613" lengthAdjust="spacingAndGlyphs">TLS · browser boundary</text>
+<rect x="365" y="168" width="270" height="158" rx="13" fill="#0a151e" stroke="#74ce00" stroke-width="2" />
+<text x="388.087" y="197.763" dominant-baseline="hanging" fill="#b6ff3b" font-size="15.5" font-weight="700" letter-spacing=".25" textLength="93.986" lengthAdjust="spacingAndGlyphs">02 / OSMAP</text>
+<text x="387.598" y="237.089" dominant-baseline="hanging" fill="#eef4f8" font-size="22" font-weight="700" textLength="156.02" lengthAdjust="spacingAndGlyphs">Rust control</text>
+<text x="387.917" y="278.783" dominant-baseline="hanging" fill="#aebbc5" font-size="14" letter-spacing=".05" textLength="184.759" lengthAdjust="spacingAndGlyphs">least privilege · TOTP</text>
+<rect x="670" y="168" width="270" height="158" rx="13" fill="#0a151e" stroke="#2689a0" stroke-width="2" />
+<text x="693.089" y="197.780" dominant-baseline="hanging" fill="#4de1ff" font-size="15.5" font-weight="700" letter-spacing=".25" textLength="84.435" lengthAdjust="spacingAndGlyphs">03 / MAIL</text>
+<text x="693.091" y="238.224" dominant-baseline="hanging" fill="#eef4f8" font-size="22" font-weight="700" textLength="169.479" lengthAdjust="spacingAndGlyphs">Mail services</text>
+<text x="693.073" y="278.716" dominant-baseline="hanging" fill="#aebbc5" font-size="14" letter-spacing=".05" textLength="142.632" lengthAdjust="spacingAndGlyphs">Dovecot · Postfix</text>
+<path d="M330 247 H365" stroke="#4de1ff" stroke-width="3" stroke-linecap="round" /><polygon points="365,247 352,239.5 352,254.5" fill="#4de1ff" /><path d="M635 247 H670" stroke="#4de1ff" stroke-width="3" stroke-linecap="round" /><polygon points="670,247 657,239.5 657,254.5" fill="#4de1ff" />
+<rect x="60" y="370" width="880" height="58" rx="9" fill="#071019" stroke="#243746" stroke-width="1.2" /><text x="499.956" y="397.064" dominant-baseline="hanging" text-anchor="middle" fill="#c9d4dc" font-size="15" letter-spacing=".35" textLength="429.217" lengthAdjust="spacingAndGlyphs">SECURE MAIL ACCESS · LEAST PRIVILEGE · OPENBSD</text></g></svg>

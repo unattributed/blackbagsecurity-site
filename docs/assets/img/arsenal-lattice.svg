@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 410" role="img" aria-labelledby="title desc">
+  <title id="title">Engineering Arsenal system lattice</title>
+  <desc id="desc">Connected engineering nodes representing authority, offensive testing, secure software, infrastructure, and AI security.</desc>
+  <defs>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4de1ff" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#b6ff3b" stop-opacity=".9"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#4de1ff" stop-opacity=".13"/>
+      <stop offset=".55" stop-color="#b6ff3b" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#0b0f14" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <rect width="620" height="410" fill="none"/>
+  <circle cx="315" cy="205" r="170" fill="url(#glow)"/>
+  <g fill="none" stroke="#9aa6b2" stroke-opacity=".18">
+    <path d="M315 205 L126 82 L88 205 L146 334 Z"/>
+    <path d="M315 205 L493 78 L544 201 L486 332 Z"/>
+    <path d="M126 82 L493 78 M88 205 L544 201 M146 334 L486 332" stroke-dasharray="3 7"/>
+    <circle cx="315" cy="205" r="86"/>
+    <circle cx="315" cy="205" r="132" stroke-dasharray="2 7"/>
+  </g>
+  <g fill="none" stroke="url(#edge)" stroke-width="1.4" stroke-opacity=".74">
+    <path d="M315 205 L126 82"/>
+    <path d="M315 205 L493 78"/>
+    <path d="M315 205 L88 205"/>
+    <path d="M315 205 L544 201"/>
+    <path d="M315 205 L146 334"/>
+    <path d="M315 205 L486 332"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="1.15" font-weight="700">
+    <g transform="translate(74 54)"><rect width="114" height="28" fill="#080c12" stroke="#4de1ff" stroke-opacity=".22"/><text x="12" y="18" fill="#e6edf5">AUTHORITY</text></g>
+    <g transform="translate(438 48)"><rect width="122" height="28" fill="#080c12" stroke="#b6ff3b" stroke-opacity=".24"/><text x="12" y="18" fill="#e6edf5">AOTP</text></g>
+    <g transform="translate(18 190)"><rect width="118" height="28" fill="#080c12" stroke="#4de1ff" stroke-opacity=".22"/><text x="12" y="18" fill="#e6edf5">OSMAP</text></g>
+    <g transform="translate(486 186)"><rect width="118" height="28" fill="#080c12" stroke="#b6ff3b" stroke-opacity=".24"/><text x="12" y="18" fill="#e6edf5">AI SECURITY</text></g>
+    <g transform="translate(86 330)"><rect width="126" height="28" fill="#080c12" stroke="#4de1ff" stroke-opacity=".22"/><text x="12" y="18" fill="#e6edf5">MAILSTACK</text></g>
+    <g transform="translate(422 328)"><rect width="136" height="28" fill="#080c12" stroke="#b6ff3b" stroke-opacity=".24"/><text x="12" y="18" fill="#e6edf5">EVIDENCE</text></g>
+  </g>
+  <g>
+    <circle cx="315" cy="205" r="53" fill="#080c12" stroke="url(#edge)" stroke-width="1.5"/>
+    <circle cx="315" cy="205" r="41" fill="#0f1622" stroke="#9aa6b2" stroke-opacity=".18"/>
+    <path d="M291 211h48v32h-48z" fill="#b6ff3b"/>
+    <path d="M300 211v-10c0-9 6-16 15-16s15 7 15 16v10" fill="none" stroke="#b6ff3b" stroke-width="4"/>
+    <path d="M291 211l24 16 24-16" fill="none" stroke="#081018" stroke-width="2"/>
+    <text x="315" y="274" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" letter-spacing="1.3" fill="#4de1ff">ENGINEERING CONTROL</text>
+  </g>
+  <g fill="#b6ff3b">
+    <circle cx="126" cy="82" r="5"/><circle cx="493" cy="78" r="5"/><circle cx="88" cy="205" r="5"/><circle cx="544" cy="201" r="5"/><circle cx="146" cy="334" r="5"/><circle cx="486" cy="332" r="5"/>
+  </g>
+  <g fill="#4de1ff"><circle cx="227" cy="147" r="3"/><circle cx="407" cy="143" r="3"/><circle cx="226" cy="269" r="3"/><circle cx="410" cy="267" r="3"/></g>
+</svg>

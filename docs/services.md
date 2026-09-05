@@ -1,142 +1,120 @@
 ---
-layout: default
+layout: marketing
 title: Services | Black Bag Security
-description: Objective-based red team operations, penetration testing, and vulnerability research with evidence-driven reporting.
+description: Penetration testing, adversary validation, AI security, and secure systems engineering shaped around the decision and evidence your organization needs.
 permalink: /services/
 lang: en
 ref: services
 ---
-<section class="section">
-  <div class="wrap">
-    <div class="section__head reveal" data-reveal>
-      <h1>Services</h1>
-      <p>Offense-led engagements for high-consequence systems, delivered with secure handling, clear reporting, and retest support.</p>
-    </div>
-
-    <div class="cap-grid">
-      <article class="cap-card reveal delay-1" data-reveal>
-        <h3>Objective-based red team and adversary emulation</h3>
-        <ul class="outcomes">
-          <li><span class="mono">What it is:</span> Objective-led campaigns that mirror realistic adversary tradecraft.</li>
-          <li><span class="mono">What you get:</span> Campaign plan, evidence pack, executive brief, remediation priorities, retest memo.</li>
-          <li><span class="mono">What we need from you:</span> Objectives, rules of engagement, access paths, test accounts, safe windows.</li>
-          <li><span class="mono">How findings are delivered:</span> Weekly checkpoints and a final report with artifacts and reproduction steps.</li>
-        </ul>
-      </article>
-
-      <article class="cap-card reveal delay-2" data-reveal>
-        <h3>Penetration testing and attack path validation</h3>
-        <ul class="outcomes">
-          <li><span class="mono">What it is:</span> Scoped testing of defined assets to validate exploitability and impact.</li>
-          <li><span class="mono">What you get:</span> Prioritized findings, evidence, remediation guidance, optional retest.</li>
-          <li><span class="mono">Typical timeline:</span> 2 to 4 weeks, scope dependent.</li>
-          <li><span class="mono">What we need from you:</span> Asset inventory, test accounts, network ranges, change windows.</li>
-          <li><span class="mono">How findings are delivered:</span> Structured report with impact context and supporting evidence.</li>
-        </ul>
-      </article>
-
-      <article class="cap-card reveal delay-3" data-reveal>
-        <h3>Vulnerability research and exploit validation</h3>
-        <ul class="outcomes">
-          <li><span class="mono">What it is:</span> Deep technical analysis of binaries, firmware, and protocols beyond scanners.</li>
-          <li><span class="mono">What you get:</span> Root cause analysis, proof of impact, and remediation guidance.</li>
-          <li><span class="mono">Typical timeline:</span> 4 to 12 weeks in research sprints.</li>
-          <li><span class="mono">What we need from you:</span> Target artifacts, build context, lab access, and reproduction environment.</li>
-          <li><span class="mono">How findings are delivered:</span> Technical report with artifacts, evidence, and fix recommendations.</li>
-        </ul>
-      </article>
-
-      <article class="cap-card reveal delay-4" data-reveal>
-        <h3>Reverse engineering and binary analysis</h3>
-        <ul class="outcomes">
-          <li><span class="mono">What it is:</span> Reverse engineering to validate exploit paths and defensive assumptions, embedded in red team or standalone.</li>
-          <li><span class="mono">What you get:</span> Technical findings, annotated artifacts, and mitigation guidance.</li>
-          <li><span class="mono">Typical timeline:</span> 2 to 6 weeks, scope dependent.</li>
-          <li><span class="mono">What we need from you:</span> Binaries, symbols where available, test environment, and access constraints.</li>
-          <li><span class="mono">How findings are delivered:</span> Evidence pack with reproducible steps and validated impact.</li>
-        </ul>
-      </article>
-
-      <article class="cap-card reveal delay-5" data-reveal>
-        <h3>Application security</h3>
-        <ul class="outcomes">
-          <li><span class="mono">What it is:</span> Secure code review plus secure software bill of materials (SBOM) analysis for critical paths, embedded in red team or standalone.</li>
-          <li><span class="mono">What you get:</span> Findings with prioritization, remediation guidance, and retest support.</li>
-          <li><span class="mono">Typical timeline:</span> 2 to 6 weeks, codebase dependent.</li>
-          <li><span class="mono">What we need from you:</span> Repo access, build context, dependency manifests, test data handling rules, and environment access.</li>
-          <li><span class="mono">How findings are delivered:</span> Evidence pack and secure report, using IDPRO and other best-of-breed tooling.</li>
-        </ul>
-      </article>
-
-      <article class="cap-card reveal delay-6" data-reveal>
-        <h3>AI / LLM security evaluation</h3>
-        <ul class="outcomes">
-          <li><span class="mono">What it is:</span> Testing of model abuse paths, data leakage, and control effectiveness.</li>
-          <li><span class="mono">What you get:</span> Attack narratives, control gaps, and mitigation guidance.</li>
-          <li><span class="mono">Typical timeline:</span> 2 to 6 weeks, scope dependent.</li>
-          <li><span class="mono">What we need from you:</span> Model access, policy constraints, and data handling rules.</li>
-          <li><span class="mono">How findings are delivered:</span> Evidence pack and prioritized mitigation plan.</li>
-        </ul>
-      </article>
-
-      <article class="cap-card reveal delay-6" data-reveal>
-        <h3>Agentic engineering for cybersecurity operations</h3>
-        <ul class="outcomes">
-          <li><span class="mono">What it is:</span> Human-directed agentic workflow engineering for offensive security and technical research tasks.</li>
-          <li><span class="mono">What you get:</span> Faster analysis cycles, broader scenario coverage, and operator-verified evidence quality.</li>
-          <li><span class="mono">Typical timeline:</span> 2 to 6 weeks standalone or embedded in active engagements.</li>
-          <li><span class="mono">What we need from you:</span> Workflow boundaries, approved tooling paths, and explicit data handling requirements.</li>
-          <li><span class="mono">Data protection:</span> Private client data is safeguarded at all times through minimal collection, strict access control, and approved transfer channels only.</li>
-        </ul>
-      </article>
-    </div>
-    <p class="mono reveal delay-2" data-reveal><a href="{{ '/on-site-engagements/' | relative_url }}">On-site engagement operating model -></a></p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section__head reveal" data-reveal>
-      <h2>How we engage</h2>
-      <p>Choose the model that matches your risk posture, timeline, and internal constraints.</p>
-    </div>
-
-    <div class="model-grid">
-      <article class="model-card reveal delay-1" data-reveal>
-        <h3>Fixed scope</h3>
-        <p>Defined assets, timeline, and deliverables. Best for compliance and time-boxed validation.</p>
-      </article>
-      <article class="model-card reveal delay-2" data-reveal>
-        <h3>Objective-based</h3>
-        <p>Outcome-driven scope with flexible tradecraft. Best for detection and response validation.</p>
-      </article>
-      <article class="model-card reveal delay-3" data-reveal>
-        <h3>Retainer</h3>
-        <p>Ongoing support for continuous testing, advisory, and rapid response needs.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="split">
-      <div class="stack stack--signal stack--deliverables reveal delay-1" data-reveal>
-        <h3>Deliverables</h3>
-        <ul class="outcomes">
-          <li>Evidence pack with reproduction steps and artifacts.</li>
-          <li>Executive brief with risk framing and priority fixes.</li>
-          <li>Remediation guidance and retest validation.</li>
-        </ul>
+<div class="m-page">
+  <section class="m-hero" aria-labelledby="services-title">
+    <div class="marketing-wrap m-hero__grid">
+      <div class="m-copy">
+        <p class="m-eyebrow">Services</p>
+        <h1 id="services-title">Start with what is at stake. <span class="m-accent">We shape the security work.</span></h1>
+        <p class="m-lead">Bring us the system, the decision, and the consequence. Black Bag Security turns that into focused testing or engineering designed to produce a defensible answer.</p>
+        <div class="m-actions"><a class="m-button" href="{{ '/contact/#assessment' | relative_url }}">Discuss the problem</a></div>
       </div>
-      <div class="stack stack--signal stack--inputs reveal delay-2" data-reveal>
-        <h3>Engagement inputs</h3>
-        <ul class="outcomes">
-          <li>Clear objectives and risk owners.</li>
-          <li>Rules of engagement and escalation paths.</li>
-          <li>Access methods and approved test windows.</li>
-        </ul>
+      <aside class="m-panel" aria-label="How work is shaped">
+        <div class="m-panel__head">How work is shaped</div>
+        <div class="m-panel__body">
+          <ul class="m-checks">
+            <li><div><strong>Decision</strong><span>What must the engagement establish?</span></div></li>
+            <li><div><strong>Consequence</strong><span>What happens if the control fails?</span></div></li>
+            <li><div><strong>Boundaries</strong><span>What can be tested safely and lawfully?</span></div></li>
+            <li><div><strong>Evidence</strong><span>What will make the conclusion defensible?</span></div></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="m-section" aria-labelledby="service-lines">
+    <div class="marketing-wrap">
+      <div class="m-section__intro">
+        <p class="m-eyebrow">Core service lines</p>
+        <h2 id="service-lines">Four ways to reduce <span class="m-accent">security uncertainty.</span></h2>
+        <p>The service line is the starting shape, not a rigid package. Scope and evidence are tailored to the system and the decision you need to make.</p>
+      </div>
+
+      <article class="m-service">
+        <div>
+          <h3>Application &amp; API Security</h3>
+          <p>Prove what can actually be abused across authentication, authorization, sessions, APIs, data flows, business logic, and exposed application behavior.</p>
+          <div class="m-tags"><span>Web applications</span><span>APIs</span><span>Identity</span><span>Business logic</span><span>Evidence-led testing</span></div>
+        </div>
+        <a href="{{ '/services/application-api-security/' | relative_url }}">Explore service</a>
+      </article>
+
+      <article class="m-service">
+        <div>
+          <h3>Adversary Validation</h3>
+          <p>Test whether preventive, detective, and response controls materially change a realistic attacker path, without turning the exercise into uncontrolled theatre.</p>
+          <div class="m-tags"><span>Attack paths</span><span>Control validation</span><span>Detection</span><span>Response</span><span>Bounded execution</span></div>
+        </div>
+        <a href="{{ '/services/adversary-validation/' | relative_url }}">Explore service</a>
+      </article>
+
+      <article class="m-service">
+        <div>
+          <h3>AI Security</h3>
+          <p>Secure the authority around AI, not just the model. We examine agents, browsers, tools, identities, prompts, memory, data access, execution boundaries, and human approval paths.</p>
+          <div class="m-tags"><span>Agents</span><span>LLMs</span><span>Tool use</span><span>Browser security</span><span>Data boundaries</span></div>
+        </div>
+        <a href="{{ '/services/ai-security/' | relative_url }}">Explore service</a>
+      </article>
+
+      <article class="m-service">
+        <div>
+          <h3>Secure Systems Engineering</h3>
+          <p>When testing is not enough, engineer the control into architecture, privilege, isolation, hardening, content handling, recovery, and operation.</p>
+          <div class="m-tags"><span>Architecture</span><span>Hardening</span><span>Isolation</span><span>Secure mail</span><span>Operational controls</span></div>
+        </div>
+        <a href="{{ '/services/secure-systems-engineering/' | relative_url }}">Explore service</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="m-section m-section--soft" aria-labelledby="engagement-models">
+    <div class="marketing-wrap">
+      <div class="m-section__intro">
+        <p class="m-eyebrow">Engagement shapes</p>
+        <h2 id="engagement-models">Buy the answer you need, <span class="m-accent">not unnecessary activity.</span></h2>
+        <p>Different decisions need different depths of work. We select the smallest engagement shape that can support a credible conclusion.</p>
+      </div>
+      <div class="m-grid">
+        <article class="m-card"><span class="m-card__label">Focused assessment</span><h3>A bounded question</h3><p>Validate a specific component, release, attack path, control, or concern with defined evidence and closure criteria.</p></article>
+        <article class="m-card"><span class="m-card__label">Full assessment</span><h3>Broader system assurance</h3><p>Map and test a wider application, API, identity, infrastructure, or AI attack surface using an agreed methodology.</p></article>
+        <article class="m-card"><span class="m-card__label">Engineering engagement</span><h3>Build the control</h3><p>Move from identified weakness to architecture, implementation, hardening, validation, and operational handoff.</p></article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="m-section" aria-labelledby="deliverables-title">
+    <div class="marketing-wrap m-split">
+      <div class="m-copy">
+        <p class="m-eyebrow">What you receive</p>
+        <h2 id="deliverables-title">Evidence for engineers. <span class="m-accent">Judgment for decision-makers.</span></h2>
+        <p>Deliverables connect technical proof to business consequence, remediation, and closure. We distinguish established facts from assumptions and unresolved uncertainty.</p>
+      </div>
+      <div class="m-grid m-grid--2">
+        <article class="m-card"><h3>Technical evidence</h3><p>Reproducible artifacts, request and response context, affected paths, conditions, limitations, and technical reasoning.</p></article>
+        <article class="m-card"><h3>Actionable findings</h3><p>Risk, impact, remediation guidance, prioritization, and the evidence required to validate the fix.</p></article>
+        <article class="m-card"><h3>Executive clarity</h3><p>What matters, why it matters, what remains uncertain, and what decision the evidence supports.</p></article>
+        <article class="m-card"><h3>Retest closure</h3><p>The original failure path is replayed against the remediation so closure is verified, not assumed.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="m-close" aria-labelledby="services-close">
+    <div class="marketing-wrap m-close__grid">
+      <div class="m-copy">
+        <p class="m-eyebrow">You do not need to know which test to buy</p>
+        <h2 id="services-close">Tell us the system and the consequence. <span class="m-accent">We will recommend the work.</span></h2>
+        <p>The first conversation can be brief. We will help translate the security question into an engagement with clear authority, evidence, deliverables, and closure.</p>
+        <div class="m-actions"><a class="m-button" href="{{ '/contact/#assessment' | relative_url }}">Shape an engagement</a></div>
+      </div>
+      <div class="m-contact-box"><strong>Engagement enquiries</strong><a href="mailto:hello@blackbagsecurity.com">hello@blackbagsecurity.com</a><p>Start with the system, concern, constraints, timing, and outcome.</p></div>
+    </div>
+  </section>
+</div>

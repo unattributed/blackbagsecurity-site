@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 190" role="img" aria-labelledby="title desc">
+  <title id="title">AI security</title>
+  <desc id="desc">An AI authority boundary connecting model, data, tools, and governed action.</desc>
+  <g fill="none" stroke="#52d9ef" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="158" cy="92" r="52" stroke-opacity=".26"/>
+    <circle cx="158" cy="92" r="38" stroke-dasharray="3 5" stroke-opacity=".38"/>
+    <path d="M145 64c-13 0-21 10-17 21-9 5-10 18-1 24-4 11 5 23 18 21M171 64c13 0 21 10 17 21 9 5 10 18 1 24 4 11-5 23-18 21"/>
+    <path d="M151 65v64M165 65v64M128 85h23M165 85h23M127 108h24M165 108h24" stroke-opacity=".62"/>
+    <circle cx="143" cy="77" r="3"/><circle cx="174" cy="78" r="3"/><circle cx="141" cy="98" r="3"/><circle cx="176" cy="99" r="3"/><circle cx="144" cy="119" r="3"/><circle cx="173" cy="118" r="3"/>
+    <path d="M106 92H72M210 92h34M158 40V22M158 144v20" stroke-opacity=".48"/>
+  </g>
+  <g fill="#06131d" stroke="#52d9ef" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="54" cy="83" rx="17" ry="6"/><path d="M37 83v20c0 3 7 6 17 6s17-3 17-6V83M37 93c0 3 7 6 17 6s17-3 17-6"/>
+    <path d="m256 72 17 10v20l-17 10-17-10V82z"/>
+    <path d="M251 84h10M256 79v10M250 102l12-12"/>
+    <rect x="136" y="12" width="44" height="22" rx="4"/><path d="M146 20h24M146 26h16"/>
+  </g>
+  <g fill="#06131d" stroke="#9df400" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M158 145l18 7v14c0 11-6 18-18 23-12-5-18-12-18-23v-14z"/>
+    <path d="m150 166 6 6 11-14" fill="none"/>
+  </g>
+</svg>

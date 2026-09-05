@@ -1,0 +1,210 @@
+/* Black Bag Security site QA and layout correction v28
+ * Fresh-eye corrective pass. Fixes CSP-blocked grid geometry, restores
+ * two-column marketing composition at normal laptop widths, and normalizes
+ * visual alignment without weakening the site's Content Security Policy.
+ */
+
+/* Explicit grid modifiers replace blocked inline style attributes. */
+.visual-site-v24 .v24-linked-grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.visual-site-v24 .v24-linked-grid--boundary {
+  grid-template-columns: minmax(0, 1fr) 96px minmax(0, 1fr);
+  align-items: stretch;
+}
+.visual-site-v24 .v24-linked-card--bridge {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100px;
+}
+.visual-site-v24 .v24-institution__functions--4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.visual-site-v24 .v24-proof-grid--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 12px;
+}
+
+/* Common alignment and density. */
+.visual-site-v24 .v24-section {
+  padding-top: clamp(52px, 5vw, 76px);
+  padding-bottom: clamp(52px, 5vw, 76px);
+}
+.visual-site-v24 .v24-hero {
+  padding-top: clamp(62px, 6vw, 90px);
+  padding-bottom: clamp(56px, 5.5vw, 84px);
+}
+.visual-site-v24 .v24-copy {
+  align-self: center;
+}
+.visual-site-v24 .v24-canvas {
+  width: 100%;
+  align-self: center;
+}
+.visual-site-v24 .v24-linked-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 172px;
+  padding: 18px 15px 15px;
+}
+.visual-site-v24 .v24-linked-card strong {
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.visual-site-v24 .v24-linked-card p {
+  width: 100%;
+}
+.visual-site-v24 .v24-linked-card a {
+  margin-top: auto;
+  padding-top: 12px;
+}
+.visual-site-v24 .v24-linked-grid::before {
+  left: 7%;
+  right: 7%;
+}
+.visual-site-v24 .v24-outcome {
+  margin-top: 14px;
+  padding: 13px 16px;
+}
+.visual-site-v24 .v24-process-step,
+.visual-site-v24 .v24-intake-step,
+.visual-site-v24 .v24-trust-node {
+  min-width: 0;
+}
+.visual-site-v24 .v24-process-step strong,
+.visual-site-v24 .v24-intake-step strong,
+.visual-site-v24 .v24-trust-node strong {
+  line-height: 1.25;
+}
+
+/* Keep the intended copy-left / graphic-right composition at normal laptop widths.
+ * v24 stacked the entire site at 1120px, which made graphics oversized at 1000px.
+ */
+@media (min-width: 901px) and (max-width: 1120px) {
+  .visual-site-v24 .v24-hero__grid,
+  .visual-site-v24 .v24-section__grid,
+  .visual-site-v24 .v24-close__grid {
+    grid-template-columns: minmax(250px, .62fr) minmax(0, 1.38fr);
+    gap: 34px;
+    align-items: center;
+  }
+  .visual-site-v24 .v24-hero__grid {
+    grid-template-columns: minmax(270px, .68fr) minmax(0, 1.32fr);
+  }
+  .visual-site-v24 .v24-copy {
+    max-width: 390px;
+    font-size: 14px;
+    line-height: 1.62;
+  }
+  .visual-site-v24 .v24-hero h1 {
+    font-size: clamp(38px, 4.5vw, 51px);
+  }
+  .visual-site-v24 .v24-title {
+    font-size: clamp(31px, 3.7vw, 43px);
+  }
+  .visual-site-v24 .v24-lead {
+    margin-top: 17px;
+    font-size: 17px;
+    line-height: 1.48;
+  }
+  .visual-site-v24 .v24-canvas {
+    padding: 22px;
+  }
+  .visual-site-v24 .v24-canvas__label {
+    margin-bottom: 16px;
+  }
+  .visual-site-v24 .v24-linked-card {
+    min-height: 154px;
+    padding: 16px 11px 13px;
+  }
+  .visual-site-v24 .v24-linked-card__icon {
+    margin-bottom: 10px;
+  }
+  .visual-site-v24 .v24-linked-card strong {
+    min-height: 28px;
+    font-size: 10.8px;
+  }
+  .visual-site-v24 .v24-linked-card p {
+    margin-top: 6px;
+    font-size: 9.5px;
+  }
+  .visual-site-v24 .v24-process {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 24px;
+  }
+  .visual-site-v24 .v24-process::before {
+    display: none;
+  }
+  .visual-site-v24 .v24-intake {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 24px;
+  }
+  .visual-site-v24 .v24-intake-step::after {
+    display: none;
+  }
+  .visual-site-v24 .v24-trust-chain {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 20px;
+  }
+  .visual-site-v24 .v24-trust-node::after {
+    display: none;
+  }
+  .visual-site-v24 .v24-institution__functions--4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .visual-site-v24 .v24-institution__functions--4 .v24-function:last-child {
+    grid-column: auto;
+  }
+  .visual-site-v24.page-ref-home .v24-section:has(#institutional-control) .v24-canvas {
+    width: 100%;
+    max-width: 100%;
+    justify-self: stretch;
+  }
+}
+
+/* Tablet. The content stacks, but internal graphic geometry stays deliberate. */
+@media (max-width: 900px) {
+  .visual-site-v24 .v24-linked-grid--3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .visual-site-v24 .v24-institution__functions--4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .visual-site-v24 .v24-institution__functions--4 .v24-function:last-child {
+    grid-column: auto;
+  }
+  .visual-site-v24 .v24-linked-grid--boundary {
+    grid-template-columns: minmax(0, 1fr) 84px minmax(0, 1fr);
+  }
+  .visual-site-v24 .v24-proof-grid--2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile. Every information path becomes a clean single-column reading order. */
+@media (max-width: 720px) {
+  .visual-site-v24 .v24-linked-grid--3,
+  .visual-site-v24 .v24-linked-grid--boundary,
+  .visual-site-v24 .v24-institution__functions--4,
+  .visual-site-v24 .v24-proof-grid--2 {
+    grid-template-columns: 1fr;
+  }
+  .visual-site-v24 .v24-linked-card--bridge {
+    min-height: 126px;
+  }
+  .visual-site-v24 .v24-linked-card {
+    min-height: 0;
+  }
+  .visual-site-v24 .v24-linked-card strong {
+    min-height: 0;
+  }
+  .visual-site-v24 .v24-section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+}

@@ -1,0 +1,22 @@
+/* Black Bag Security institutional delivery connector v31.
+ * Approved simplification: replace the decorated multi-line connector
+ * between Uniform Delivery of Excellence and Client Outcomes with one arrow.
+ */
+
+.visual-site-v24.page-ref-home .v24-institution__delivery > i {
+  display: grid;
+  place-items: center;
+  align-self: center;
+  justify-self: center;
+  color: var(--v24-green);
+  font-size: 25px;
+  line-height: 1;
+  font-style: normal;
+  text-shadow: 0 0 12px rgba(157,244,0,.34);
+}
+
+.visual-site-v24.page-ref-home .v24-institution__delivery > i::before,
+.visual-site-v24.page-ref-home .v24-institution__delivery > i::after {
+  content: none;
+  display: none;
+}

@@ -1,0 +1,413 @@
+/* Black Bag Security methodology standard v17.
+ * Approved visual framework for the methodology page.
+ * Converts the opening governance narrative into one responsive, meaningful visual.
+ */
+
+.method-standard {
+  --standard-bg: #07111a;
+  --standard-panel: #0b1722;
+  --standard-panel-deep: #08131d;
+  --standard-line: rgba(176, 198, 214, .22);
+  --standard-line-strong: rgba(176, 198, 214, .38);
+  --standard-text: #f1f5f7;
+  --standard-muted: #b8c4cc;
+  --standard-gold: #f0b84f;
+  --standard-gold-soft: rgba(240, 184, 79, .18);
+  --standard-cyan: #4de1ff;
+  position: relative;
+  overflow: hidden;
+  padding: clamp(68px, 7vw, 104px) 0 clamp(58px, 6vw, 88px);
+  color: var(--standard-text);
+  background:
+    radial-gradient(circle at 76% 23%, rgba(77, 225, 255, .055), transparent 30%),
+    radial-gradient(circle at 18% 86%, rgba(240, 184, 79, .04), transparent 27%),
+    linear-gradient(180deg, #061019 0%, #08131d 100%);
+  border-bottom: 1px solid rgba(77, 225, 255, .14);
+}
+
+.method-standard::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  pointer-events: none;
+  border: 1px solid rgba(176, 198, 214, .15);
+  clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px);
+}
+
+.method-standard .wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.method-standard__top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(390px, .75fr);
+  gap: clamp(56px, 7vw, 110px);
+  align-items: center;
+}
+
+.method-standard__copy {
+  max-width: 760px;
+}
+
+.method-standard__eyebrow {
+  margin: 0 0 18px;
+  color: var(--standard-gold);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.method-standard h1 {
+  margin: 0;
+  max-width: 760px;
+  color: var(--standard-text);
+  font-size: clamp(48px, 5.4vw, 76px);
+  font-weight: 650;
+  line-height: .98;
+  letter-spacing: -.045em;
+}
+
+.method-standard__lead {
+  max-width: 750px;
+  margin: 26px 0 0;
+  color: var(--standard-muted);
+  font-size: clamp(17px, 1.25vw, 20px);
+  line-height: 1.65;
+}
+
+.method-standard__wheel {
+  position: relative;
+  justify-self: center;
+  width: min(100%, 430px);
+  aspect-ratio: 1;
+  border: 1px solid var(--standard-line-strong);
+  border-radius: 50%;
+  background:
+    linear-gradient(45deg, transparent calc(50% - .5px), rgba(176,198,214,.22) 50%, transparent calc(50% + .5px)),
+    linear-gradient(-45deg, transparent calc(50% - .5px), rgba(176,198,214,.22) 50%, transparent calc(50% + .5px)),
+    radial-gradient(circle at center, rgba(240,184,79,.07) 0 27%, transparent 27.5%),
+    radial-gradient(circle at center, rgba(77,225,255,.04), transparent 68%),
+    #091520;
+  box-shadow: inset 0 0 0 12px rgba(255,255,255,.012), 0 26px 70px rgba(0,0,0,.26);
+}
+
+.method-standard__wheel::before {
+  content: "";
+  position: absolute;
+  inset: 13%;
+  border: 1px solid rgba(176,198,214,.12);
+  border-radius: 50%;
+}
+
+.method-standard__core {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  display: grid;
+  place-items: center;
+  width: 31%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--standard-gold);
+  border-radius: 50%;
+  color: var(--standard-gold);
+  background: #09131c;
+  box-shadow: 0 0 0 7px rgba(240,184,79,.04), 0 0 30px rgba(240,184,79,.08);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: clamp(19px, 2vw, 28px);
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.method-standard__pillar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 36%;
+  gap: 8px;
+  color: #e2e9ed;
+  text-align: center;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.35;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+
+.method-standard__pillar::before {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(240,184,79,.48);
+  border-radius: 50%;
+  color: var(--standard-gold);
+  background: #08131d;
+  font-size: 14px;
+  font-weight: 850;
+}
+
+.method-standard__pillar--evidence {
+  top: 7%;
+  left: 32%;
+}
+.method-standard__pillar--evidence::before { content: "✓"; }
+
+.method-standard__pillar--accountability {
+  top: 39%;
+  right: 1%;
+}
+.method-standard__pillar--accountability::before { content: "A"; }
+
+.method-standard__pillar--confidentiality {
+  bottom: 6%;
+  left: 32%;
+}
+.method-standard__pillar--confidentiality::before { content: "◆"; }
+
+.method-standard__pillar--technology {
+  top: 39%;
+  left: 1%;
+}
+.method-standard__pillar--technology::before { content: "<>"; font-size: 11px; }
+
+.method-standard__controls {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: clamp(52px, 6vw, 82px);
+  border: 1px solid var(--standard-line-strong);
+  border-radius: 9px;
+  overflow: hidden;
+  background: rgba(8, 19, 29, .78);
+}
+
+.method-standard__control {
+  position: relative;
+  min-width: 0;
+  min-height: 286px;
+  padding: 30px 28px 32px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.018), transparent 72%),
+    rgba(9, 22, 33, .82);
+}
+
+.method-standard__control + .method-standard__control {
+  border-left: 1px solid var(--standard-line);
+}
+
+.method-standard__control .icon-mask {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 30px;
+  color: var(--standard-gold);
+}
+
+.method-standard__index {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--standard-gold);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: .05em;
+}
+
+.method-standard__control h2 {
+  margin: 0;
+  color: var(--standard-text);
+  font-size: clamp(20px, 1.55vw, 27px);
+  font-weight: 650;
+  line-height: 1.08;
+  letter-spacing: -.025em;
+}
+
+.method-standard__control p {
+  margin: 22px 0 0;
+  color: var(--standard-muted);
+  font-size: 16px;
+  line-height: 1.58;
+}
+
+.method-standard__control::after {
+  content: "";
+  position: absolute;
+  left: 28px;
+  bottom: 20px;
+  width: 38px;
+  height: 1px;
+  background: var(--standard-gold);
+  opacity: .8;
+}
+
+.method-standard__mission {
+  margin-top: 22px;
+  padding: 24px 28px;
+  border: 1px solid rgba(240,184,79,.48);
+  border-radius: 7px;
+  color: #f3c46c;
+  background: rgba(7, 16, 25, .72);
+  text-align: center;
+  font-size: clamp(21px, 2.2vw, 34px);
+  font-weight: 540;
+  line-height: 1.22;
+  letter-spacing: -.02em;
+}
+
+@media (max-width: 1080px) {
+  .method-standard__top {
+    grid-template-columns: 1fr;
+  }
+
+  .method-standard__wheel {
+    width: min(100%, 520px);
+  }
+
+  .method-standard__controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .method-standard__control:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid var(--standard-line);
+  }
+
+  .method-standard__control:nth-child(4) {
+    border-top: 1px solid var(--standard-line);
+  }
+}
+
+@media (max-width: 700px) {
+  .method-standard {
+    padding-top: 58px;
+  }
+
+  .method-standard::before {
+    inset: 10px;
+  }
+
+  .method-standard__wheel {
+    width: min(100%, 410px);
+  }
+
+  .method-standard__pillar {
+    font-size: 10px;
+  }
+
+  .method-standard__controls {
+    grid-template-columns: 1fr;
+  }
+
+  .method-standard__control {
+    min-height: 0;
+    padding: 27px 24px 50px;
+  }
+
+  .method-standard__control + .method-standard__control,
+  .method-standard__control:nth-child(3),
+  .method-standard__control:nth-child(4) {
+    border-left: 0;
+    border-top: 1px solid var(--standard-line);
+  }
+
+  .method-standard__control .icon-mask {
+    margin-bottom: 22px;
+  }
+
+  .method-standard__control p {
+    margin-top: 16px;
+  }
+
+  .method-standard__mission {
+    padding: 21px 18px;
+  }
+}
+
+@media (max-width: 470px) {
+  .method-standard__wheel {
+    aspect-ratio: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--standard-line);
+  }
+
+  .method-standard__wheel::before,
+  .method-standard__core {
+    display: none;
+  }
+
+  .method-standard__pillar {
+    position: static;
+    width: auto;
+    min-height: 128px;
+    justify-content: center;
+    padding: 18px 12px;
+    background: #091520;
+  }
+}
+
+/* Keep the communication band on the same Methodology page surface.
+ * Older composition layers intentionally used a contrasting light split band;
+ * the approved secondary-site direction keeps section rhythm without a colour break.
+ */
+.methodology-v2-body .method-v2-communication {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Match the communication section heading hierarchy to the rest of Methodology.
+ * Eyebrow sits above the title; supporting copy occupies the right column.
+ */
+.methodology-v2-body .method-v2-communication__head {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  grid-template-areas:
+    "eyebrow copy"
+    "title copy";
+  column-gap: 70px;
+  row-gap: 10px;
+  align-items: start;
+}
+
+.methodology-v2-body .method-v2-communication__head .method-eyebrow {
+  grid-area: eyebrow;
+  margin: 0;
+}
+
+.methodology-v2-body .method-v2-communication__head h2 {
+  grid-area: title;
+}
+
+.methodology-v2-body .method-v2-communication__head > p:not(.method-eyebrow) {
+  grid-area: copy;
+  align-self: end;
+}
+
+@media (max-width: 780px) {
+  .methodology-v2-body .method-v2-communication__head {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "eyebrow"
+      "title"
+      "copy";
+    gap: 10px;
+  }
+
+  .methodology-v2-body .method-v2-communication__head > p:not(.method-eyebrow) {
+    margin-top: 8px;
+  }
+}
+
+/* Keep light-surface Methodology section labels on one established green token. */
+.methodology-v2-body .method-v2-communication .method-eyebrow,
+.methodology-v2-body .method-v2-evidence .method-eyebrow,
+.methodology-v2-body .method-v2-delivery .method-eyebrow,
+.methodology-v2-body .method-v2-readers .method-eyebrow {
+  color: var(--method-accent-dark);
+}
